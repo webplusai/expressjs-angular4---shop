@@ -9,7 +9,7 @@ app.use(bodyParser.urlencoded({
 	extended: true
 }));
 
-app.get('/', function(req, res, next) {
+app.get('*', function(req, res, next) {
 	res.sendFile(path.join(__dirname + '/../dist/index.html'));
 });
 

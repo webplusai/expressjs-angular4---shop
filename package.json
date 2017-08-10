@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng build && nodemon ./src/index.js",
     "build": "ng build",
+    "build:watch": "tsc -p src/ -w",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
