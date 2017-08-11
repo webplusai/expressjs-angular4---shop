@@ -1,1 +1,64 @@
-<h1> Header </h1>
+<div md-subheader class="md-no-sticky" layout="column">
+    <md-toolbar class="md-accent" layout="row" md-whiteframe="1">
+        <div class="md-toolbar-tools right">
+            <button md-button hide-gt-sm class="md-icon-button md-big" ng-click="vm.buildToggler('left')"><md-icon md-font-set="material-icons">menu</md-icon></button>
+            <div hide-gt-sm class="toolbar-separator"></div>
+            <img style="max-width: 40%;" src=img/logo.jpg alt="">
+            <div flex></div>
+            <div layout="column" hide-xs hide-sm>
+                <div layout="row">
+                    <button md-button>
+                        <md-icon md-font-set="material-icons">description</md-icon>
+                        EMH Private Sale
+                    </button>
+                    <button md-button>
+                        <md-icon md-font-set="material-icons">public</md-icon>
+                        News
+                    </button>
+                    <button md-button>
+                        <md-icon md-font-set="material-icons">local_shipping</md-icon>
+                        Free Delivery
+                    </button>
+                    <button md-button ui-sref="login.index">
+                        <md-icon md-font-set="material-icons">lock</md-icon>
+                        Login
+                    </button>
+                    <button md-button ui-sref="login.register">
+                        <md-icon md-font-set="material-icons">person</md-icon>
+                        Sign Up
+                    </button>
+                </div>
+                <div layout="row" layout-align="end center">
+                    <form name="form">
+                        <div layout="row">
+                            <md-input-container md-theme="dark">
+                                <label>Search</label>
+                                <input mdInput required name="search" ng-model="vm.search">
+                                <div ng-messages="form.search.$error">
+                                    <div ng-message="required">This is required.</div>
+                                </div>
+                            </md-input-container>
+<!--                             <md-input-container md-theme="dark">
+                                <label></label>
+                                <md-select aria-label="Category" ng-model="vm.category" ng-init="vm.category = 0">
+                                    <md-option ng-value="0">All Categories</md-option>
+                                    <md-option ng-repeat="select in [1,2,3,4,5]" ng-value="select">Category {{select}}</md-option>
+                                </md-select>
+                            </md-input-container> -->
+                            <button md-button class="md-icon-button"><md-icon md-font-set="material-icons">search</md-icon></button>
+                        </div>
+
+                    </form>
+                    <button md-button>
+                        <md-icon md-font-set="material-icons">local_grocery_store</md-icon>
+                        0 Item - 0.00$
+                    </button>
+                </div>
+            </div>
+            <div hide-gt-sm class="toolbar-separator"></div>
+            <button md-button hide-gt-sm class="md-icon-button md-big" ><md-icon md-font-set="material-icons">local_grocery_store</md-icon></button>
+            <div hide-gt-sm class="toolbar-separator"></div>
+            <button md-button hide-gt-sm class="md-icon-button md-big" ng-click="vm.buildToggler('right')"><md-icon md-font-set="material-icons">menu</md-icon></button>
+        </div>
+    </md-toolbar>
+</div>
