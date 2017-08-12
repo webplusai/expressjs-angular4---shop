@@ -5,5 +5,8 @@ import { Component } from '@angular/core';
 	template: `<site-header></site-header>
 				<router-outlet name='front'></router-outlet>
 				<site-footer></site-footer>`,
+	host: {
+		'class': 'layout-column'
+	}
 })
 export class FrontComponent { }
