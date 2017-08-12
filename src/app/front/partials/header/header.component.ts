@@ -21,4 +21,8 @@ export class HeaderComponent {
 			Validators.required
 		]);
 	}
+
+	openLeftSideNav() {
+		document.getElementById("leftSideNav").dispatchEvent(new Event("click"));
+	}
 }

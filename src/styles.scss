@@ -16,6 +16,20 @@ body {
 	margin: 0;
 }
 
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+site-content .mat-sidenav-backdrop.mat-sidenav-shown {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+site-content .mat-sidenav-container {
+	height: 100%;
+	background-color: #fff;
+}
+
 site-header .mat-select {
 	margin-top: 1.5em;
 	margin-bottom: 1.8em;

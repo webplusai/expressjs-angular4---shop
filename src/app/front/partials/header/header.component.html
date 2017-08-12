@@ -46,58 +46,57 @@
         </md-list-item>
     </md-list>
 </md-sidenav> -->
-
-<md-toolbar color="accent">
-	<button type="button" md-icon-button fxHide.md fxHide.lg (click)="sidenav.open()"><md-icon md-font-set="material-icons">menu</md-icon></button>
-	<img style="max-width: 40%;" src="assets/img/logo.jpg" alt="">
-	<div fxLayout="column" fxHide.sm fxHide.xs fxLayoutAlign="right">
-        <div fxLayout="row">
-            <button md-button>
-                <md-icon md-font-set="material-icons">description</md-icon>
-                EMH Private Sale
-            </button>
-            <button md-button>
-                <md-icon md-font-set="material-icons">public</md-icon>
-                News
-            </button>
-            <button md-button>
-                <md-icon md-font-set="material-icons">local_shipping</md-icon>
-                Free Delivery
-            </button>
-            <button md-button ui-sref="login.index">
-                <md-icon md-font-set="material-icons">lock</md-icon>
-                Login
-            </button>
-            <button md-button ui-sref="login.register">
-                <md-icon md-font-set="material-icons">person</md-icon>
-                Sign Up
-            </button>
+    <md-toolbar color="accent">
+        <button md-icon-button fxHide.md fxHide.lg (click)="openLeftSideNav()"><md-icon md-font-set="material-icons">menu</md-icon></button>
+    	<img style="max-width: 40%;" src="assets/img/logo.jpg" alt="">
+    	<div fxLayout="column" fxHide.sm fxHide.xs fxLayoutAlign="right">
+            <div fxLayout="row">
+                <button md-button>
+                    <md-icon md-font-set="material-icons">description</md-icon>
+                    EMH Private Sale
+                </button>
+                <button md-button>
+                    <md-icon md-font-set="material-icons">public</md-icon>
+                    News
+                </button>
+                <button md-button>
+                    <md-icon md-font-set="material-icons">local_shipping</md-icon>
+                    Free Delivery
+                </button>
+                <button md-button ui-sref="login.index">
+                    <md-icon md-font-set="material-icons">lock</md-icon>
+                    Login
+                </button>
+                <button md-button ui-sref="login.register">
+                    <md-icon md-font-set="material-icons">person</md-icon>
+                    Sign Up
+                </button>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="end center">
+                <form name="form" class="search-form">
+                    <div fxLayout="row" fxLayoutAlign="end center">
+                    	<md-input-container md-theme="dark">
+                    		<input mdInput placeholder="Search*" [formControl]="searchControl">
+                    		<md-error *ngIf="searchControl.hasError('required')">
+                    			This is <strong> required </strong>
+                    		</md-error>
+                    	</md-input-container>
+                        <md-select placeholder="All Categories" floatPlaceholder="never">
+                            <md-option *ngFor="let category of categories" [value]="category.value">
+                                {{ category.viewValue }}
+                            </md-option>
+                        </md-select>
+                    	<button md-icon-button class="search-button"><md-icon md-font-set="material-icons">search</md-icon></button>
+                    </div>
+                </form>
+                <button md-button>
+                    <md-icon md-font-set="material-icons">local_grocery_store</md-icon>
+                    0 Item - 0.00$
+                </button>
+            </div>
         </div>
-        <div fxLayout="row" fxLayoutAlign="end center">
-            <form name="form" class="search-form">
-                <div fxLayout="row" fxLayoutAlign="end center">
-                	<md-input-container md-theme="dark">
-                		<input mdInput placeholder="Email*" [formControl]="searchControl">
-                		<md-error *ngIf="searchControl.hasError('required')">
-                			Email is <strong> required </strong>
-                		</md-error>
-                	</md-input-container>
-                    <md-select placeholder="All Categories" floatPlaceholder="never">
-                        <md-option *ngFor="let category of categories" [value]="category.value">
-                            {{ category.viewValue }}
-                        </md-option>
-                    </md-select>
-                	<button md-icon-button class="search-button"><md-icon md-font-set="material-icons">search</md-icon></button>
-                </div>
-            </form>
-            <button md-button>
-                <md-icon md-font-set="material-icons">local_grocery_store</md-icon>
-                0 Item - 0.00$
-            </button>
+        <div fxLayout="row" fxHide.md fxHide.lg>
+            <button md-icon-button><md-icon md-font-set="material-icons">local_grocery_store</md-icon></button>
+            <button md-icon-button><md-icon md-font-set="material-icons">menu</md-icon></button>
         </div>
-    </div>
-    <div fxLayout="row" fxHide.md fxHide.lg>
-        <button md-icon-button><md-icon md-font-set="material-icons">local_grocery_store</md-icon></button>
-        <button md-icon-button><md-icon md-font-set="material-icons">menu</md-icon></button>
-    </div>
-</md-toolbar>
+    </md-toolbar>

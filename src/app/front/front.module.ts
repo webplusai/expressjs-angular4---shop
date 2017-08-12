@@ -9,6 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FrontComponent } from './front.component';
 import { HomeComponent } from './pages/home/home.component';
+import { LeftSidenavComponent } from './partials/sidenav/left.component';
 import { HeaderComponent } 		from 	'./partials/header/header.component';
 import { FooterComponent } 		from 	'./partials/footer/footer.component';
 
@@ -19,13 +20,14 @@ import { FooterComponent } 		from 	'./partials/footer/footer.component';
 		FormsModule,
 		ReactiveFormsModule,
 		CommonModule,
-		FlexLayoutModule
+		FlexLayoutModule,
 	],
 	declarations: [
 		HomeComponent,
 		FrontComponent,
 		HeaderComponent,
-		FooterComponent
+		FooterComponent,
+		LeftSidenavComponent
 	]
 })
 export class FrontModule { }
