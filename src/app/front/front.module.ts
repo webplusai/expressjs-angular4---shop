@@ -13,6 +13,8 @@ import { HeaderComponent } 		from 	'./partials/header/header.component';
 import { FooterComponent } 		from 	'./partials/footer/footer.component';
 import { LeftSidenavComponent } from './partials/sidenav/left.component';
 import { RightSidenavComponent } from './partials/sidenav/right.component';
+import { SlideshowComponent } from './partials/slideshow/slideshow.component';
+import { MenuMegaComponent } from './partials/menu-mega/menu-mega.component';
 
 @NgModule({
 	imports: [
@@ -21,7 +23,7 @@ import { RightSidenavComponent } from './partials/sidenav/right.component';
 		FormsModule,
 		ReactiveFormsModule,
 		CommonModule,
-		FlexLayoutModule,
+		FlexLayoutModule
 	],
 	declarations: [
 		HomeComponent,
@@ -29,7 +31,9 @@ import { RightSidenavComponent } from './partials/sidenav/right.component';
 		HeaderComponent,
 		FooterComponent,
 		LeftSidenavComponent,
-		RightSidenavComponent
+		RightSidenavComponent,
+		SlideshowComponent,
+		MenuMegaComponent
 	]
 })
 export class FrontModule { }
