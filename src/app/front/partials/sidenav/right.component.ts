@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
-	selector: 'site-header',
-	templateUrl: 'header.component.html'
+	selector: 'right-sidenav',
+	templateUrl: './right.component.html'
 })
-export class HeaderComponent {
+export class RightSidenavComponent {
 
 	public searchControl: FormControl;
 	categories = [
@@ -20,13 +20,5 @@ export class HeaderComponent {
 		this.searchControl = new FormControl('', [
 			Validators.required
 		]);
-	}
-
-	openLeftSidenav() {
-		document.getElementById("leftSideNav").dispatchEvent(new Event("click"));
-	}
-
-	openRightSidenav() {
-		document.getElementById("rightSideNav").dispatchEvent(new Event("click"));
 	}
 }

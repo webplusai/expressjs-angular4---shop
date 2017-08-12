@@ -9,9 +9,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FrontComponent } from './front.component';
 import { HomeComponent } from './pages/home/home.component';
-import { LeftSidenavComponent } from './partials/sidenav/left.component';
 import { HeaderComponent } 		from 	'./partials/header/header.component';
 import { FooterComponent } 		from 	'./partials/footer/footer.component';
+import { LeftSidenavComponent } from './partials/sidenav/left.component';
+import { RightSidenavComponent } from './partials/sidenav/right.component';
 
 @NgModule({
 	imports: [
@@ -27,7 +28,8 @@ import { FooterComponent } 		from 	'./partials/footer/footer.component';
 		FrontComponent,
 		HeaderComponent,
 		FooterComponent,
-		LeftSidenavComponent
+		LeftSidenavComponent,
+		RightSidenavComponent
 	]
 })
 export class FrontModule { }

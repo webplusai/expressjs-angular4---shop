@@ -1,0 +1,46 @@
+<form name="form" fxLayout="column" class="mat-padding">
+	<md-input-container>
+		<input mdInput  placeholder="Search*" [formControl]="searchControl">
+		<md-error *ngIf="searchControl.hasError('required')">
+			This is <strong> required </strong>
+		</md-error>
+	</md-input-container>
+	<md-select placeholder="All Categories" floatPlaceholder="never">
+		<md-option *ngFor="let category of categories" [value]="category.value">
+			{{ category.viewValue }}
+		</md-option>
+	</md-select>
+	<button md-button><md-icon>search</md-icon>Search Product</button>
+</form>
+<md-list>
+	<md-list-item ng-href="javascript:">
+		<button md-button>
+			<md-icon md-font-set="material-icons">description</md-icon>
+			<p>EMH Private Sale</p>
+		</button>
+	</md-list-item>
+	<md-list-item ng-href="javascript:">
+		<button md-button>
+			<md-icon md-font-set="material-icons">public</md-icon>
+			<p>News</p>
+		</button>
+	</md-list-item>
+	<md-list-item ng-href="javascript:">
+		<button md-button>
+			<md-icon md-font-set="material-icons">local_shipping</md-icon>
+			<p>Free Delivery</p>
+		</button>
+	</md-list-item>
+	<md-list-item ui-sref="login.index">
+		<button md-button>
+			<md-icon md-font-set="material-icons">lock</md-icon>
+			<p>Login</p>
+		</button>
+	</md-list-item>
+	<md-list-item ui-sref="login.register">
+		<button md-button>
+			<md-icon md-font-set="material-icons">person</md-icon>
+			<p>Sign Up</p>
+		</button>
+	</md-list-item>
+</md-list>
