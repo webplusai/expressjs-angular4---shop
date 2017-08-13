@@ -19,8 +19,4 @@ export class SlideshowComponent {
 	selectChange($event) {
 		this.selectedTab = $event.index;
 	}
-
-	focusChange(index) {
-		
-	}
 }

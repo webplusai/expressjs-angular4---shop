@@ -16,6 +16,7 @@ import { RightSidenavComponent } from './partials/sidenav/right.component';
 import { SlideshowComponent } from './partials/slideshow/slideshow.component';
 import { MenuMegaComponent } from './partials/menu-mega/menu-mega.component';
 import { StoreFilterComponent } from './partials/store-filter/store-filter.component';
+import { StoreGridComponent } from './partials/store-grid/store-grid.component';
 
 @NgModule({
 	imports: [
@@ -35,7 +36,8 @@ import { StoreFilterComponent } from './partials/store-filter/store-filter.compo
 		RightSidenavComponent,
 		SlideshowComponent,
 		MenuMegaComponent,
-		StoreFilterComponent
+		StoreFilterComponent,
+		StoreGridComponent
 	]
 })
 export class FrontModule { }
