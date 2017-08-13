@@ -1,0 +1,31 @@
+<md-card fxLayout.lt-lg="column" fxLayout.gt-md="row" class="color-primary">
+	<div fxLayout.lt-md="column" fxLayout.gt-sm="row" fxFlex.lt-md="100" fxFlex.gt-sm="40">
+		<md-select placeholder="Type Of Store" floatPlaceholder="never" fxFlex.xs="100" fxFlex.gt-xs="50">
+			<md-option *ngFor="let tos of storeTypes" [value]="tos">
+				{{ tos }}
+			</md-option>
+		</md-select>
+		<md-select placeholder="Type Of Vendor" floatPlaceholder="never" fxFlex.xs="100" fxFlex.gt-xs="50">
+			<md-option *ngFor="let tov of vendorTypes" [value]="tov">
+				{{ tov }}
+			</md-option>
+		</md-select>
+	</div>
+	<div fxLayout.lt-md="column" fxLayout.gt-sm="row" fxFlex.lt-md="100" fxFlex.gt-sm="60">
+		<md-select placeholder="Gender Type" floatPlaceholder="never" fxFlex.xs="100" fxFlex.gt-xs="33">
+			<md-option *ngFor="let gt of genderTypes" [value]="gt">
+				{{ gt }}
+			</md-option>
+		</md-select>
+		<md-select placeholder="Store Location" floatPlaceholder="never" fxFlex.xs="100" fxFlex.gt-xs="33">
+			<md-option *ngFor="let sl of storeLocations" [value]="sl">
+				{{ sl }}
+			</md-option>
+		</md-select>
+		<md-select placeholder="Best Store" floatPlaceholder="never" fxFlex.xs="100" fxFlex.gt-xs="33">
+			<md-option *ngFor="let i of [1, 2, 3, 4, 5]" [value]="i">
+				{{ i }} star
+			</md-option>
+		</md-select>
+	</div>
+</md-card>
