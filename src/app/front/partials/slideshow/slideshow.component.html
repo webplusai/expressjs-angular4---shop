@@ -1,7 +1,7 @@
-<md-tab-group headerPosition="below" [selectedIndex]="selectedTab" (selectChange)="selectChange($event)" (focusChange)="focusChange(index)">
-	<md-tab> <img src="assets/img/banner1.jpg"> </md-tab>
-	<md-tab> <img src="assets/img/banner2.jpg"> </md-tab>
-	<md-tab> <img src="assets/img/banner3.jpg"> </md-tab>
-	<md-tab> <img src="assets/img/banner4.jpg"> </md-tab>
-	<md-tab> <img src="assets/img/banner5.jpg"> </md-tab>
+<md-tab-group fxLayout="column" fxLayoutAlign="end center" headerPosition="below" [selectedIndex]="selectedTab" (selectChange)="selectChange($event)" (focusChange)="focusChange(index)">
+	<md-tab> <div class="slideshow-image" style="background-image: url(assets/img/banner1.jpg)"> </div> </md-tab>
+	<md-tab> <div class="slideshow-image" style="background-image: url(assets/img/banner2.jpg)"> </div> </md-tab>
+	<md-tab> <div class="slideshow-image" style="background-image: url(assets/img/banner3.jpg)"> </div> </md-tab>
+	<md-tab> <div class="slideshow-image" style="background-image: url(assets/img/banner4.jpg)"> </div> </md-tab>
+	<md-tab> <div class="slideshow-image" style="background-image: url(assets/img/banner5.jpg)"> </div> </md-tab>
 </md-tab-group>
