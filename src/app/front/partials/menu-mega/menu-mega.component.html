@@ -1,6 +1,62 @@
 <md-list fxHide.xs fxHide.sm>
     <md-list-item *ngFor="let menuItem of menuItems" class="color-primary">
-        <button md-button fxLayout="row" class="full-size"> <p class="inline"> {{ menuItem }} </p> <md-icon>keyboard_arrow_right</md-icon> </button>
+        <button md-button fxLayout="row" class="full-size" [mdMenuTriggerFor]="appMenu"> <p class="inline"> {{ menuItem }} </p> <md-icon>keyboard_arrow_right</md-icon> </button>
+        <md-menu #appMenu="mdMenu" xPosition="after">
+            <!-- <md-menu-item> -->
+                <div fxLayout="column">
+                    <div fxLayout="row">
+                        <div style="min-width: 300px;">
+                            <md-toolbar fxLayout="row">
+                                <img src="assets/img/profile.jpg">
+                                <span> Men </span>
+                            </md-toolbar>
+                            <md-list>
+                                <md-list-item *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+                                    <button md-button> Children Sub category {{ item }} </button>
+                                </md-list-item>
+                            </md-list>
+                        </div>
+                        <div style="min-width: 300px;">
+                            <md-toolbar fxLayout="row">
+                                <img src="assets/img/profile.jpg">
+                                <span> Women </span>
+                            </md-toolbar>
+                            <md-list>
+                                <md-list-item *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+                                    <button md-button> Children Sub category {{ item }} </button>
+                                </md-list-item>
+                            </md-list>
+                        </div>
+                    </div>
+                    <div fxLayout="row">
+                        <div style="min-width: 300px;">
+                            <md-toolbar fxLayout="row">
+                                <img src="assets/img/profile.jpg">
+                                <span> Children </span>
+                            </md-toolbar>
+                            <md-list>
+                                <md-list-item *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+                                    <button md-button> Children Sub category {{ item }} </button>
+                                </md-list-item>
+                            </md-list>
+                        </div>
+                        <div style="min-width: 300px;">
+                            <md-toolbar fxLayout="row">
+                                <img src="assets/img/profile.jpg">
+                                <span> Babies </span>
+                            </md-toolbar>
+                            <md-list>
+                                <md-list-item *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
+                                    <button md-button> Children Sub category {{ item }} </button>
+                                </md-list-item>
+                            </md-list>
+                        </div>
+                    </div>
+                </div>
+            <!-- </md-menu-item> -->
+            <!-- <button md-menu-item> Settings </button>
+            <button md-menu-item> Help </button> -->
+        </md-menu>
     </md-list-item>
 </md-list>
 <!-- <md-list class="app-menu-mega" hide-xs hide-sm>

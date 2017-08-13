@@ -19,6 +19,43 @@ html, body {
 	margin: 0;
 }
 
+.cdk-overlay-pane {
+	margin-left: 200px;
+	top: 80px !important;
+	.mat-menu-panel {
+		max-width: initial;
+		.mat-menu-content {
+			padding: 16px 0px;
+			background-color: #efefef;
+			div > div > div {
+				padding: 0px 16px;
+			}
+			img {
+				width: 35px;
+				margin-right: 20px;
+				border-radius: 50%;
+			}
+			.mat-list-item-content {
+				padding: 0px;
+				height: 30px;
+				.mat-button {
+					color: rgba(0, 0, 0, 0.87);
+					width: 100%;
+					text-align: left;
+				}
+			}
+			.mat-toolbar {
+				background-color: #ccc;
+				color: rgba(0, 0, 0, 0.87);
+				min-height: 50px;
+				.mat-toolbar-row {
+					height: 50px;
+				}
+			}
+		}
+	}
+}
+
 .color-primary {
 	background-color: mat-color($primary);
 }
@@ -69,8 +106,11 @@ left-sidenav, menu-mega {
 	width: 320px;
 }
 
-menu-mega .mat-list {
-	padding-top: 0px;
+menu-mega {
+	.mat-list {
+		min-width: 200px;
+		padding-top: 0px;
+	}
 }
 
 right-sidenav {
