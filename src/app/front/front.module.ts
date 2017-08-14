@@ -6,6 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormGroup, Validators, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FrontRoutingModule } from './front-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SlickModule } from 'ngx-slick';
 
 import { FrontComponent } from './front.component';
 import { HomeComponent } from './pages/home/home.component';
@@ -26,7 +27,8 @@ import { ColloborationPanelComponent } from './partials/colloboration-panel/coll
 		FormsModule,
 		ReactiveFormsModule,
 		CommonModule,
-		FlexLayoutModule
+		FlexLayoutModule,
+		SlickModule.forRoot()
 	],
 	declarations: [
 		HomeComponent,

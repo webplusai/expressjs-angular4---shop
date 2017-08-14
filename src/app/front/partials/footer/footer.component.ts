@@ -9,6 +9,7 @@ import { FormControl, Validators } from '@angular/forms';
 export class FooterComponent {
 	public emailFormControl: FormControl;
 
+	slideConfig = { "slidesToShow": 4, "slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 3000 };
 	ngOnInit() {
 		this.emailFormControl = new FormControl('', [
 			Validators.required

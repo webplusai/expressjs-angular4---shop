@@ -24,4 +24,14 @@ form .mat-input-container {
 	.mat-icon {
 		margin-right: 30px;
 	}
+	.mat-list-item .mat-button {
+		width: 100%;
+		height: 100%;
+		vertical-align: middle;
+		text-align: left;
+		p {
+			display: inline-block;
+			margin: 0px;
+		}
+	}
 }

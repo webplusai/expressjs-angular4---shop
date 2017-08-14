@@ -44,16 +44,22 @@
             </h3>
             <md-list>
                 <md-list-item>
-                    <md-icon>email</md-icon>
-                    <p> Contact Us </p>
+                    <button md-button>
+                        <md-icon>email</md-icon>
+                        <p> Contact Us </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>help</md-icon>
-                    <p> Help </p>
+                    <button md-button>
+                        <md-icon>help</md-icon>
+                        <p> Help </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>question_answer</md-icon>
-                    <p> FAQs </p>
+                    <button md-button>
+                        <md-icon>question_answer</md-icon>
+                        <p> FAQs </p>
+                    </button>
                 </md-list-item>
             </md-list>
         </div>
@@ -67,20 +73,28 @@
             </h3>
             <md-list>
                 <md-list-item>
-                    <md-icon>chrome_reader_mode</md-icon>
-                    <p> About Equality Mode House </p>
+                    <button md-button>
+                        <md-icon>chrome_reader_mode</md-icon>
+                        <p> About Equality Mode House </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>chrome_reader_mode</md-icon>
-                    <p> Delivery Information </p>
+                    <button md-button>
+                        <md-icon>chrome_reader_mode</md-icon>
+                        <p> Delivery Information </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>verified_user</md-icon>
-                    <p> Privacy Policy </p>
+                    <button md-button>
+                        <md-icon>verified_user</md-icon>
+                        <p> Privacy Policy </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>verified_user</md-icon>
-                    <p> Terms & Conditions </p>
+                    <button md-button>
+                        <md-icon>verified_user</md-icon>
+                        <p> Terms & Conditions </p>
+                    </button>
                 </md-list-item>
             </md-list>
         </div>
@@ -91,20 +105,28 @@
             </h3>
             <md-list>
                 <md-list-item>
-                    <md-icon>face</md-icon>
-                    <p> Facebook </p>
+                    <button md-button>
+                        <md-icon>face</md-icon>
+                        <p> Facebook </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>face</md-icon>
-                    <p> Youtube </p>
+                    <button md-button>
+                        <md-icon>face</md-icon>
+                        <p> Youtube </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>forum</md-icon>
-                    <p> Our Community </p>
+                    <button md-button>
+                        <md-icon>forum</md-icon>
+                        <p> Our Community </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>group</md-icon>
-                    <p> Emh Private Daily Profiles </p>
+                    <button md-button>
+                        <md-icon>group</md-icon>
+                        <p> Emh Private Daily Profiles </p>
+                    </button>
                 </md-list-item>
             </md-list>
         </div>
@@ -115,20 +137,28 @@
             </h3>
             <md-list>
                 <md-list-item>
-                    <md-icon>account_circle</md-icon>
-                    <p> My Account </p>
+                    <button md-button>
+                        <md-icon>account_circle</md-icon>
+                        <p> My Account </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>history</md-icon>
-                    <p> Order History </p>
+                    <button md-button>
+                        <md-icon>history</md-icon>
+                        <p> Order History </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>favorite</md-icon>
-                    <p> Wish List </p>
+                    <button md-button>
+                        <md-icon>favorite</md-icon>
+                        <p> Wish List </p>
+                    </button>
                 </md-list-item>
                 <md-list-item>
-                    <md-icon>new_releases</md-icon>
-                    <p> Newsletter </p>
+                    <button md-button>
+                        <md-icon>new_releases</md-icon>
+                        <p> Newsletter </p>
+                    </button>
                 </md-list-item>
             </md-list>
         </div>
@@ -138,3 +168,7 @@
 <div>
     <h3> Our Referrer Partners: </h3>
 </div>
+
+<ngx-slick class="carousel" [config]="slideConfig" class="color-primary">
+    <div ngxSlickItem *ngFor="let i of [1, 2, 3, 4, 5, 6]"> <img src="assets/img/partner.png" width="100%"> </div>
+</ngx-slick>
