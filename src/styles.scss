@@ -33,7 +33,7 @@ html, body {
 
 .color-accent {
 	background-color: mat-color($accent);
-	color: mat-color($accent-reverse);
+	color: mat-color($accent-reverse) !important;
 }
 
 .color-accent-reverse {
