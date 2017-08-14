@@ -1,15 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'colloboration-panel',
-  templateUrl: './colloboration-panel.component.html',
-  styleUrls: ['./colloboration-panel.component.scss']
+	selector: 'colloboration-panel',
+	templateUrl: './colloboration-panel.component.html',
+	styleUrls: ['./colloboration-panel.component.scss']
 })
 export class ColloborationPanelComponent implements OnInit {
 
-  constructor() { }
+	slideConfig = { "slidesToShow": 4, "slidesToScroll": 1 };
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

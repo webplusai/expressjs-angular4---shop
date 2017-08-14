@@ -288,3 +288,11 @@ store-grid {
 site-footer .mat-list .mat-list-item .mat-list-item-content {
 	color: #000;
 }
+
+colloboration-panel ngx-slick .slick-arrow {
+	margin: 0px -30px;
+}
+
+colloboration-panel ngx-slick .slick-arrow:before {
+	color: #009688;
+}
