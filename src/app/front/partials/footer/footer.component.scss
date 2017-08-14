@@ -1,0 +1,27 @@
+h3, p {
+	color: #000;
+}
+
+.mat-icon {
+	vertical-align: middle;
+}
+
+.mat-button {
+	text-transform: uppercase;
+}
+
+.mat-raised-button {
+	text-transform: uppercase;
+	padding: 0px 10px;
+	margin: 0px 5px;
+}
+
+form .mat-input-container {
+	display: block;
+}
+
+.mat-list {
+	.mat-icon {
+		margin-right: 30px;
+	}
+}
