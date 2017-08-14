@@ -18,7 +18,9 @@ import { SlideshowComponent } 					from 	'./partials/slideshow/slideshow.compone
 import { MenuMegaComponent } 					from 	'./partials/menu-mega/menu-mega.component';
 import { StoreFilterComponent } 				from 	'./partials/store-filter/store-filter.component';
 import { StoreGridComponent } 					from 	'./partials/store-grid/store-grid.component';
-import { ColloborationPanelComponent } 			from 	'./partials/colloboration-panel/colloboration-panel.component';
+import { CollaborationPanelComponent } 			from 	'./partials/collaboration-panel/collaboration-panel.component';
+import { ActionPanelComponent } from './partials/action-panel/action-panel.component';
+import { PartnerPanelComponent } from './partials/partner-panel/partner-panel.component';
 
 @NgModule({
 	imports: [
@@ -41,7 +43,9 @@ import { ColloborationPanelComponent } 			from 	'./partials/colloboration-panel/
 		MenuMegaComponent,
 		StoreFilterComponent,
 		StoreGridComponent,
-		ColloborationPanelComponent
+		CollaborationPanelComponent,
+		ActionPanelComponent,
+		PartnerPanelComponent
 	]
 })
 export class FrontModule { }
