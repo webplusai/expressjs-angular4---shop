@@ -1,0 +1,9 @@
+collaborator-panel ngx-slick {
+	margin: 0px 100px;
+	.slick-arrow {
+		margin: 0px -30px;
+	}
+	.slick-prev:before, .slick-next:before {
+		color: #009688;
+	}
+}

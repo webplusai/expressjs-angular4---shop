@@ -1,0 +1,29 @@
+right-sidenav {
+	form {
+		margin-bottom: 1em;
+	}
+
+	.mat-button {
+		color: rgba(0, 0, 0, 0.54);
+		font-size: 16px;
+	}
+
+	.mat-icon {
+		margin-right: 20px;
+	}
+
+	.mat-list .mat-list-item .mat-list-item-content {
+		padding: 0px;
+		.mat-button {
+			text-align: left;
+		}
+	}
+
+	.mat-input-wrapper {
+		color: rgb(0, 191, 165);
+	}
+
+	md-input-container, md-select {
+		margin: 18px;
+	}
+}

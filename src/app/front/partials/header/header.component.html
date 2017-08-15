@@ -1,27 +1,11 @@
 <md-toolbar color="accent">
-    <button md-icon-button fxHide.md fxHide.lg (click)="openLeftSidenav()"><md-icon md-font-set="material-icons">menu</md-icon></button>
+    <button md-icon-button fxHide.gt-sm (click)="openLeftSidenav()"><md-icon md-font-set="material-icons">menu</md-icon></button>
 	<img style="max-width: 40%;" src="assets/img/logo.jpg" alt="">
 	<div fxLayout="column" fxHide.sm fxHide.xs fxLayoutAlign="right">
         <div fxLayout="row">
-            <button md-button>
-                <md-icon md-font-set="material-icons">description</md-icon>
-                EMH Private Sale
-            </button>
-            <button md-button>
-                <md-icon md-font-set="material-icons">public</md-icon>
-                News
-            </button>
-            <button md-button>
-                <md-icon md-font-set="material-icons">local_shipping</md-icon>
-                Free Delivery
-            </button>
-            <button md-button ui-sref="login.index">
-                <md-icon md-font-set="material-icons">lock</md-icon>
-                Login
-            </button>
-            <button md-button ui-sref="login.register">
-                <md-icon md-font-set="material-icons">person</md-icon>
-                Sign Up
+            <button md-button *ngFor="let button of headerButtons">
+                <md-icon>{{ button.icon }}</md-icon>
+                {{ button.text }}
             </button>
         </div>
         <div fxLayout="row" fxLayoutAlign="end center">
@@ -47,7 +31,7 @@
             </button>
         </div>
     </div>
-    <div fxLayout="row" fxHide.md fxHide.lg>
+    <div fxLayout="row" fxHide.gt-sm>
         <button md-icon-button><md-icon>local_grocery_store</md-icon></button>
         <button md-icon-button><md-icon (click)="openRightSidenav()">menu</md-icon></button>
     </div>

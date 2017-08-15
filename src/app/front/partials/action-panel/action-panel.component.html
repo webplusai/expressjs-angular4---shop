@@ -43,22 +43,10 @@
                 Customer Service
             </h3>
             <md-list>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>email</md-icon>
-                        <p> Contact Us </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>help</md-icon>
-                        <p> Help </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>question_answer</md-icon>
-                        <p> FAQs </p>
+                <md-list-item *ngFor="let contact of contactData">
+                    <button md-button class="full-size">
+                        <md-icon> {{ contact.icon }} </md-icon>
+                        <p class="inline"> {{ contact.text }} </p>
                     </button>
                 </md-list-item>
             </md-list>
@@ -66,98 +54,16 @@
     </div>
 
     <div fxLayout.lt-md="column" fxLayout.gt-sm="row" fxFlex.lt-md="100" fxFlex.gt-sm="60">
-        <div fxFlex.xs="100" fxFlex.gt-xs="33" class="mat-padding">
+        <div fxFlex.xs="100" fxFlex.gt-xs="33" class="mat-padding" *ngFor="let data of infData">
             <h3>
-                <md-icon>info</md-icon>
-                Information
+                <md-icon>{{ data.header.icon }}</md-icon>
+                {{ data.header.text }}
             </h3>
             <md-list>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>chrome_reader_mode</md-icon>
-                        <p> About Equality Mode House </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>chrome_reader_mode</md-icon>
-                        <p> Delivery Information </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>verified_user</md-icon>
-                        <p> Privacy Policy </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>verified_user</md-icon>
-                        <p> Terms & Conditions </p>
-                    </button>
-                </md-list-item>
-            </md-list>
-        </div>
-        <div fxFlex.xs="100" fxFlex.gt-xs="33" class="mat-padding">
-            <h3>
-                <md-icon>share</md-icon>
-                Stay Connected
-            </h3>
-            <md-list>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>face</md-icon>
-                        <p> Facebook </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>face</md-icon>
-                        <p> Youtube </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>forum</md-icon>
-                        <p> Our Community </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>group</md-icon>
-                        <p> Emh Private Daily Profiles </p>
-                    </button>
-                </md-list-item>
-            </md-list>
-        </div>
-        <div fxFlex.xs="100" fxFlex.gt-xs="33" class="mat-padding">
-            <h3>
-                <md-icon>account_circle</md-icon>
-                My Account
-            </h3>
-            <md-list>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>account_circle</md-icon>
-                        <p> My Account </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>history</md-icon>
-                        <p> Order History </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>favorite</md-icon>
-                        <p> Wish List </p>
-                    </button>
-                </md-list-item>
-                <md-list-item>
-                    <button md-button>
-                        <md-icon>new_releases</md-icon>
-                        <p> Newsletter </p>
+                <md-list-item *ngFor="let item of data.list">
+                    <button md-button class="full-size">
+                        <md-icon> {{ item.icon }} </md-icon>
+                        <p class="inline"> {{ item.text }} </p>
                     </button>
                 </md-list-item>
             </md-list>

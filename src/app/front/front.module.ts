@@ -18,7 +18,7 @@ import { SlideshowComponent } 					from 	'./partials/slideshow/slideshow.compone
 import { MenuMegaComponent } 					from 	'./partials/menu-mega/menu-mega.component';
 import { StoreFilterComponent } 				from 	'./partials/store-filter/store-filter.component';
 import { StoreGridComponent } 					from 	'./partials/store-grid/store-grid.component';
-import { CollaborationPanelComponent } 			from 	'./partials/collaboration-panel/collaboration-panel.component';
+import { CollaboratorPanelComponent } 			from 	'./partials/collaborator-panel/collaborator-panel.component';
 import { ActionPanelComponent } from './partials/action-panel/action-panel.component';
 import { PartnerPanelComponent } from './partials/partner-panel/partner-panel.component';
 
@@ -43,7 +43,7 @@ import { PartnerPanelComponent } from './partials/partner-panel/partner-panel.co
 		MenuMegaComponent,
 		StoreFilterComponent,
 		StoreGridComponent,
-		CollaborationPanelComponent,
+		CollaboratorPanelComponent,
 		ActionPanelComponent,
 		PartnerPanelComponent
 	]

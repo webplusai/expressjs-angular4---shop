@@ -1,8 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
 	selector: 'slideshow',
-	templateUrl: './slideshow.component.html'
+	templateUrl: './slideshow.component.html',
+	styleUrls: [ './slideshow.component.scss' ],
+	encapsulation: ViewEncapsulation.None
 })
 export class SlideshowComponent {
 	public selectedTab = 0;

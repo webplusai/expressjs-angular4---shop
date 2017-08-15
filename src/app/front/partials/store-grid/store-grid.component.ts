@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
 	selector: 'store-grid',
 	templateUrl: './store-grid.component.html',
-	styleUrls: ['./store-grid.component.scss']
+	styleUrls: ['./store-grid.component.scss'],
+	encapsulation: ViewEncapsulation.None
 })
 export class StoreGridComponent implements OnInit {
 

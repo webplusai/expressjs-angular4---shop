@@ -13,34 +13,10 @@
 	<button md-button><md-icon>search</md-icon>Search Product</button>
 </form>
 <md-list>
-	<md-list-item ng-href="javascript:">
-		<button md-button>
-			<md-icon md-font-set="material-icons">description</md-icon>
-			<p>EMH Private Sale</p>
-		</button>
-	</md-list-item>
-	<md-list-item ng-href="javascript:">
-		<button md-button>
-			<md-icon md-font-set="material-icons">public</md-icon>
-			<p>News</p>
-		</button>
-	</md-list-item>
-	<md-list-item ng-href="javascript:">
-		<button md-button>
-			<md-icon md-font-set="material-icons">local_shipping</md-icon>
-			<p>Free Delivery</p>
-		</button>
-	</md-list-item>
-	<md-list-item ui-sref="login.index">
-		<button md-button>
-			<md-icon md-font-set="material-icons">lock</md-icon>
-			<p>Login</p>
-		</button>
-	</md-list-item>
-	<md-list-item ui-sref="login.register">
-		<button md-button>
-			<md-icon md-font-set="material-icons">person</md-icon>
-			<p>Sign Up</p>
+	<md-list-item *ngFor="let button of listButtons">
+		<button md-button class="full-width">
+			<md-icon> {{ button.icon }} </md-icon>
+			<p class="inline"> {{ button.text }} </p>
 		</button>
 	</md-list-item>
 </md-list>
