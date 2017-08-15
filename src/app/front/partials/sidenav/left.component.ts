@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'left-sidenav',
+	selector: 'app-left-sidenav',
 	templateUrl: './left.component.html',
 	styleUrls: [ './left.component.scss' ]
 })

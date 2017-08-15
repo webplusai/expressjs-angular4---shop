@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-	selector: 'collaborator-panel',
+	selector: 'app-collaborator-panel',
 	templateUrl: './collaborator-panel.component.html',
 	styleUrls: ['./collaborator-panel.component.scss'],
 	encapsulation: ViewEncapsulation.None

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'menu-mega',
+	selector: 'app-menu-mega',
 	templateUrl: './menu-mega.component.html',
 	styleUrls: [ './menu-mega.component.scss' ]
 })

@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-	selector: 'store-grid',
+	selector: 'app-store-grid',
 	templateUrl: './store-grid.component.html',
 	styleUrls: ['./store-grid.component.scss'],
 	encapsulation: ViewEncapsulation.None

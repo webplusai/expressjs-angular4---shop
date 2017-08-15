@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
-	selector: 'slideshow',
+	selector: 'app-slideshow',
 	templateUrl: './slideshow.component.html',
 	styleUrls: [ './slideshow.component.scss' ],
 	encapsulation: ViewEncapsulation.None

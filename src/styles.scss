@@ -58,7 +58,7 @@ html, body {
 	display: inline;
 }
 
-left-sidenav, menu-mega {
+app-left-sidenav, app-menu-mega {
 	.mat-list .mat-list-item .mat-list-item-content {
 		padding: 0px;
 		.mat-button-wrapper {
@@ -120,11 +120,11 @@ left-sidenav, menu-mega {
 	width: 320px;
 }
 
-site-content .mat-sidenav-backdrop.mat-sidenav-shown {
+app .mat-sidenav-backdrop.mat-sidenav-shown {
 	background-color: rgba(30, 30, 30, 0.6);
 }
 
-site-content .mat-sidenav-container {
+app .mat-sidenav-container {
 	height: 100%;
 	background-color: #fff;
 }

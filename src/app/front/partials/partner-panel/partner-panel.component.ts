@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-	selector: 'partner-panel',
+	selector: 'app-partner-panel',
 	templateUrl: './partner-panel.component.html',
 	styleUrls: ['./partner-panel.component.scss']
 })

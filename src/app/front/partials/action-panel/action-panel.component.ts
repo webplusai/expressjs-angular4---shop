@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
-	selector: 'action-panel',
+	selector: 'app-action-panel',
 	templateUrl: './action-panel.component.html',
 	styleUrls: ['./action-panel.component.scss'],
 })

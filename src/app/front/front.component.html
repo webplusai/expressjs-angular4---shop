@@ -1,13 +1,13 @@
 <md-sidenav-container>
 	<md-sidenav #leftsidenav class="color-primary">
-		<left-sidenav> </left-sidenav>
+		<app-left-sidenav> </app-left-sidenav>
 	</md-sidenav>
 	<md-sidenav #rightsidenav align="end" class="color-primary">
-		<right-sidenav> </right-sidenav>
+		<app-right-sidenav> </app-right-sidenav>
 	</md-sidenav>
 	<button md-icon-button id="leftSideNav" fxHide (click)="leftsidenav.open()"><md-icon md-font-set="material-icons">menu</md-icon></button>
 	<button md-icon-button id="rightSideNav" fxHide (click)="rightsidenav.open()"><md-icon md-font-set="material-icons">menu</md-icon></button>
-	<site-header></site-header>
+	<app-header></app-header>
 	<router-outlet name='front'></router-outlet>
-	<site-footer></site-footer>
+	<app-footer></app-footer>
 </md-sidenav-container>

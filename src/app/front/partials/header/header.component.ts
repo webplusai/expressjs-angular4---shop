@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
-	selector: 'site-header',
+	selector: 'app-header',
 	templateUrl: 'header.component.html',
 	styleUrls: [ './header.component.scss' ],
 	encapsulation: ViewEncapsulation.None

@@ -2,7 +2,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { FormControl, Validators } from '@angular/forms';
 
 @Component({
-	selector: 'right-sidenav',
+	selector: 'app-right-sidenav',
 	templateUrl: './right.component.html',
 	styleUrls: [ './right.component.scss' ],
 	encapsulation: ViewEncapsulation.None
