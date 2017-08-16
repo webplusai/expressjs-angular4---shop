@@ -17,47 +17,14 @@
 								<md-list-item>
 									<p class="">You have 8 pending tasks</p>
 								</md-list-item>
-								<md-list-item>
+								<md-list-item *ngFor="let notification of taskNotifications">
 									<div class="task-info clearfix">
 										<div class="desc pull-left">
-											<h5>Target Sell</h5>
-											<p>25% , Deadline  12 June’13</p>
+											<h5> {{ notification.title }} </h5>
+											<p> {{ notification.date }} </p>
 										</div>
 										<span class="notification-pie-chart pull-right" data-percent="45">
-											<span class="percent"></span>
-										</span>
-									</div>
-								</md-list-item>
-								<md-list-item>
-									<div class="task-info clearfix">
-										<div class="desc pull-left">
-											<h5>Product Delivery</h5>
-											<p>45% , Deadline  12 June’13</p>
-										</div>
-										<span class="notification-pie-chart pull-right" data-percent="78">
-											<span class="percent"></span>
-										</span>
-									</div>
-								</md-list-item>
-								<md-list-item>
-									<div class="task-info clearfix">
-										<div class="desc pull-left">
-											<h5>Payment collection</h5>
-											<p>87% , Deadline  12 June’13</p>
-										</div>
-										<span class="notification-pie-chart pull-right" data-percent="60">
-											<span class="percent"></span>
-										</span>
-									</div>
-								</md-list-item>
-								<md-list-item>
-									<div class="task-info clearfix">
-										<div class="desc pull-left">
-											<h5>Target Sell</h5>
-											<p>33% , Deadline  12 June’13</p>
-										</div>
-										<span class="notification-pie-chart pull-right" data-percent="90">
-											<span class="percent"></span>
+											<span class="percent"> </span>
 										</span>
 									</div>
 								</md-list-item>
@@ -77,53 +44,17 @@
 								<md-list-item> 
 									<p class="red">You have 4 Mails</p> 
 								</md-list-item>
-								<md-list-item>
-									<span class="photo"><img alt="avatar" src="assets/img/avatar-mini.jpg"></span>
+								<md-list-item *ngFor="let notification of mailNotifications">
+									<span class="photo"><img alt="avatar" src="{{ notification.avatar }}"></span>
 									<div fxLayout="column">
 										<span class="subject">
-	                                        <span class="from">Jonathan Smith</span>
-	                                        <span class="time">Just now</span>
-	                                    </span>
-	                                    <span class="message">
-	                                        Hello, this is an example msg.
-	                                    </span>
+											<span class="from"> {{ notification.from }} </span>
+											<span class="time"> {{ notification.time }} </span>
+										</span>
+										<span class="message">
+											{{ notification.message }}
+										</span>
 									</div>
-								</md-list-item>
-								<md-list-item>
-									<span class="photo"><img alt="avatar" src="assets/img/avatar-mini-2.jpg"></span>
-									<div fxLayout="column">
-	                                    <span class="subject">
-	                                        <span class="from">Jane Doe</span>
-	                                        <span class="time">2 min ago</span>
-	                                    </span>
-	                                    <span class="message">
-	                                        Nice admin template
-	                                    </span>
-	                                </div>
-								</md-list-item>
-								<md-list-item>
-									<span class="photo"><img alt="avatar" src="assets/img/avatar-mini-3.jpg"></span>
-									<div fxLayout="column">
-	                                    <span class="subject">
-	                                        <span class="from">Tasi sam</span>
-	                                        <span class="time">2 days ago</span>
-	                                    </span>
-	                                    <span class="message">
-	                                        This is an example msg.
-	                                    </span>
-	                                </div>
-								</md-list-item>
-								<md-list-item>
-									<span class="photo"><img alt="avatar" src="assets/img/avatar-mini.jpg"></span>
-									<div fxLayout="column">
-	                                    <span class="subject">
-	                                        <span class="from">Mr. Perfect</span>
-	                                        <span class="time">2 hour ago</span>
-	                                    </span>
-	                                    <span class="message">
-	                                        Hi there, its a test
-	                                    </span>
-	                                </div>
 								</md-list-item>
 								<md-list-item>
 									<p>See all messages</p>
@@ -141,29 +72,13 @@
 								<md-list-item>
 									<p> Notifications </p>
 								</md-list-item>
-								<md-list-item>
+								<md-list-item *ngFor="let i of [1, 2, 3]">
 									<div class="alert alert-info clearfix" fxLayout="row" fxLayoutAlign="start center">
-	                                    <i class="material-icons">info</i>
-	                                    <div class="noti-info">
-	                                        <a href=""> Server #1 overloaded.</a>
-	                                    </div>
-	                                </div>
-								</md-list-item>
-								<md-list-item>
-									<div class="alert alert-danger clearfix" fxLayout="row" fxLayoutAlign="start center">
-	                                    <i class="material-icons">info</i>
-	                                    <div class="noti-info">
-	                                        <a href=""> Server #2 overloaded.</a>
-	                                    </div>
-	                                </div>
-								</md-list-item>
-								<md-list-item>
-									<div class="alert alert-success clearfix" fxLayout="row" fxLayoutAlign="start center">
-	                                    <i class="material-icons">info</i>
-	                                    <div class="noti-info">
-	                                        <a href=""> Server #3 overloaded.</a>
-	                                    </div>
-	                                </div>
+										<i class="material-icons">info</i>
+										<div class="noti-info">
+											<span> Server #{{i}} overloaded. </span>
+										</div>
+									</div>
 								</md-list-item>
 							</md-list>
 						</md-card>
@@ -179,26 +94,14 @@
 						<b class="caret"></b>
 						<md-card>
 							<md-list>
-								<md-list-item>
-									<i class="material-icons">account_circle</i> Profile
-								</md-list-item>
-								<md-list-item>
-									<i class="material-icons">settings</i> Settings
-								</md-list-item>
-								<md-list-item>
-									<i class="material-icons">vpn_key</i> Log Out
+								<md-list-item *ngFor="let item of menuItems">
+									<i class="material-icons">{{ item.icon }}</i> {{ item.text }}
 								</md-list-item>
 							</md-list>
 						</md-card>
 					</button>
 					<button md-icon-button> <i class="material-icons">menu</i> </button>
 				</div>
-				
-						<!-- <ul class="dropdown-menu extended logout">
-							<li><a href="#/Profile"></li>
-							<li><a href=""></li>
-							<li><a href="" ng-click="logout()"></a></li>
-						</ul> -->
 			</md-nav-list>
 		</div>
 	</md-card>
