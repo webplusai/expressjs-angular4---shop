@@ -14,7 +14,7 @@ $theme: mat-dark-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 
 $light-theme: mat-light-theme($primary, $accent, $warn);
-admin-login {
+admin-login, admin {
 	@include angular-material-theme($light-theme);
 }
 

@@ -9,6 +9,7 @@ import { AdminRoutingModule } from './admin-routing.module';
 import { AdminComponent } from './admin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
+import { HeaderComponent } from './partials/header/header.component';
 
 @NgModule({
 	imports: [
@@ -22,7 +23,8 @@ import { LoginComponent } from './pages/login/login.component';
 	declarations: [
 		AdminComponent,
 		DashboardComponent,
-		LoginComponent
+		LoginComponent,
+		HeaderComponent
 	]
 })
 export class AdminModule { }
