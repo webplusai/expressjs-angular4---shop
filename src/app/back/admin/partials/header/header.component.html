@@ -1,24 +1,205 @@
 <div class="mat-toolbar" fxLayout="row" fxLayoutAlign="start center">
-	<div class="brand">
-        <a [routerLink]="" class="logo" fxLayout="row" fxLayoutAlign="center center">
-            <img src="assets/img/EMHHighQuality.svg" width="180" alt="">
-        </a>
-    </div>
-    <md-card fxLayout="row" fxLayoutAlign="start center">
-    	<button md-icon-button class="menu"> <i class="material-icons">menu</i> </button>
-    	<md-nav-list class="notify-buttons">
-    		<div class="inline">
-    			<button md-icon-button> <i class="material-icons">list</i></button>
-    			<span class="badge bg-success">8</span>
-    		</div>
-    		<div class="inline">
-    			<button md-icon-button> <i class="material-icons">mail_outline</i> </button>
-    			<span class="badge bg-important">4</span>
-    		</div>
-    		<div class="inline">
-    			<button md-icon-button> <i class="material-icons">notifications_none</i> </button>
-    			<span class="badge bg-warning">3</span>
-    		</div>
-    	</md-nav-list>
-    </md-card>
+	<div class="brand" fxLayout="row" fxLayoutAlign="center center">
+		<a [routerLink]="" class="logo">
+			<img src="assets/img/EMHHighQuality.svg" width="180" alt="">
+		</a>
+		<button md-icon-button class="menu"> <i class="material-icons">menu</i> </button>
+	</div>
+	<md-card fxLayout="row" fxLayoutAlign="start center">
+		<div fxLayout="row" class="header-content">
+			<md-nav-list>
+				<div class="inline nav-menu-item">
+					<button md-icon-button> 
+						<i class="material-icons">list</i>
+						<span class="badge bg-success">8</span>
+						<md-card>
+							<md-list>
+								<md-list-item>
+									<p class="">You have 8 pending tasks</p>
+								</md-list-item>
+								<md-list-item>
+									<div class="task-info clearfix">
+										<div class="desc pull-left">
+											<h5>Target Sell</h5>
+											<p>25% , Deadline  12 June’13</p>
+										</div>
+										<span class="notification-pie-chart pull-right" data-percent="45">
+											<span class="percent"></span>
+										</span>
+									</div>
+								</md-list-item>
+								<md-list-item>
+									<div class="task-info clearfix">
+										<div class="desc pull-left">
+											<h5>Product Delivery</h5>
+											<p>45% , Deadline  12 June’13</p>
+										</div>
+										<span class="notification-pie-chart pull-right" data-percent="78">
+											<span class="percent"></span>
+										</span>
+									</div>
+								</md-list-item>
+								<md-list-item>
+									<div class="task-info clearfix">
+										<div class="desc pull-left">
+											<h5>Payment collection</h5>
+											<p>87% , Deadline  12 June’13</p>
+										</div>
+										<span class="notification-pie-chart pull-right" data-percent="60">
+											<span class="percent"></span>
+										</span>
+									</div>
+								</md-list-item>
+								<md-list-item>
+									<div class="task-info clearfix">
+										<div class="desc pull-left">
+											<h5>Target Sell</h5>
+											<p>33% , Deadline  12 June’13</p>
+										</div>
+										<span class="notification-pie-chart pull-right" data-percent="90">
+											<span class="percent"></span>
+										</span>
+									</div>
+								</md-list-item>
+								<md-list-item>
+									<a href="">See All Tasks</a>
+								</md-list-item>
+							</md-list>
+						</md-card>
+					</button>
+				</div>
+				<div class="inline nav-menu-item">
+					<button md-icon-button> 
+						<i class="material-icons">mail_outline</i>
+						<span class="badge bg-important">4</span>
+						<md-card>
+							<md-list>
+								<md-list-item> 
+									<p class="red">You have 4 Mails</p> 
+								</md-list-item>
+								<md-list-item>
+									<span class="photo"><img alt="avatar" src="assets/img/avatar-mini.jpg"></span>
+									<div fxLayout="column">
+										<span class="subject">
+	                                        <span class="from">Jonathan Smith</span>
+	                                        <span class="time">Just now</span>
+	                                    </span>
+	                                    <span class="message">
+	                                        Hello, this is an example msg.
+	                                    </span>
+									</div>
+								</md-list-item>
+								<md-list-item>
+									<span class="photo"><img alt="avatar" src="assets/img/avatar-mini-2.jpg"></span>
+									<div fxLayout="column">
+	                                    <span class="subject">
+	                                        <span class="from">Jane Doe</span>
+	                                        <span class="time">2 min ago</span>
+	                                    </span>
+	                                    <span class="message">
+	                                        Nice admin template
+	                                    </span>
+	                                </div>
+								</md-list-item>
+								<md-list-item>
+									<span class="photo"><img alt="avatar" src="assets/img/avatar-mini-3.jpg"></span>
+									<div fxLayout="column">
+	                                    <span class="subject">
+	                                        <span class="from">Tasi sam</span>
+	                                        <span class="time">2 days ago</span>
+	                                    </span>
+	                                    <span class="message">
+	                                        This is an example msg.
+	                                    </span>
+	                                </div>
+								</md-list-item>
+								<md-list-item>
+									<span class="photo"><img alt="avatar" src="assets/img/avatar-mini.jpg"></span>
+									<div fxLayout="column">
+	                                    <span class="subject">
+	                                        <span class="from">Mr. Perfect</span>
+	                                        <span class="time">2 hour ago</span>
+	                                    </span>
+	                                    <span class="message">
+	                                        Hi there, its a test
+	                                    </span>
+	                                </div>
+								</md-list-item>
+								<md-list-item>
+									<p>See all messages</p>
+								</md-list-item>
+							</md-list>
+						</md-card>
+					</button>
+				</div>
+				<div class="inline nav-menu-item">
+					<button md-icon-button> 
+						<i class="material-icons">notifications_none</i> 
+						<span class="badge bg-warning">3</span>
+						<md-card>
+							<md-list>
+								<md-list-item>
+									<p> Notifications </p>
+								</md-list-item>
+								<md-list-item>
+									<div class="alert alert-info clearfix" fxLayout="row" fxLayoutAlign="start center">
+	                                    <i class="material-icons">info</i>
+	                                    <div class="noti-info">
+	                                        <a href=""> Server #1 overloaded.</a>
+	                                    </div>
+	                                </div>
+								</md-list-item>
+								<md-list-item>
+									<div class="alert alert-danger clearfix" fxLayout="row" fxLayoutAlign="start center">
+	                                    <i class="material-icons">info</i>
+	                                    <div class="noti-info">
+	                                        <a href=""> Server #2 overloaded.</a>
+	                                    </div>
+	                                </div>
+								</md-list-item>
+								<md-list-item>
+									<div class="alert alert-success clearfix" fxLayout="row" fxLayoutAlign="start center">
+	                                    <i class="material-icons">info</i>
+	                                    <div class="noti-info">
+	                                        <a href=""> Server #3 overloaded.</a>
+	                                    </div>
+	                                </div>
+								</md-list-item>
+							</md-list>
+						</md-card>
+					</button>
+				</div>
+			</md-nav-list>
+			<md-nav-list class="inline">
+				<div fxLayout="row" fxLayoutAlign="start center" class="inline nav-menu-item">
+					<input type="text" class="form-control search" placeholder="Search">
+					<button md-button>
+						<img alt="" class="avatar" src="assets/img/avatar1_small.jpg">
+						<span class="username">John Doe</span>
+						<b class="caret"></b>
+						<md-card>
+							<md-list>
+								<md-list-item>
+									<i class="material-icons">account_circle</i> Profile
+								</md-list-item>
+								<md-list-item>
+									<i class="material-icons">settings</i> Settings
+								</md-list-item>
+								<md-list-item>
+									<i class="material-icons">vpn_key</i> Log Out
+								</md-list-item>
+							</md-list>
+						</md-card>
+					</button>
+					<button md-icon-button> <i class="material-icons">menu</i> </button>
+				</div>
+				
+						<!-- <ul class="dropdown-menu extended logout">
+							<li><a href="#/Profile"></li>
+							<li><a href=""></li>
+							<li><a href="" ng-click="logout()"></a></li>
+						</ul> -->
+			</md-nav-list>
+		</div>
+	</md-card>
 </div>

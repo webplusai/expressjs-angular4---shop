@@ -124,6 +124,10 @@ app-left-sidenav, app-menu-mega {
 	width: 320px;
 }
 
+admin .header-content .mat-list-item-content {
+	height: initial !important;
+}
+
 app .mat-sidenav-backdrop.mat-sidenav-shown {
 	background-color: rgba(30, 30, 30, 0.6);
 }
