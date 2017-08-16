@@ -1,0 +1,43 @@
+.mat-card {
+	max-width: 330px;
+	padding: 0px;
+	font-family: 'Open Sans',sans-serif;
+
+	.mat-card-title {
+		text-align: center;
+		text-transform: uppercase;
+		font-family: 'Titillium Web', sans-serif;
+		font-weight: 200;
+		padding: 35px 15px;
+		background: #aec785;
+		color: #fff;
+		border-radius: 5px 5px 0 0;
+		border-bottom: 10px solid #a0b87e;
+		margin-bottom: 0px;
+		font-size: 18px;
+	}
+
+	.mat-card-content {
+		padding: 20px;
+
+		.input-group {
+			background: #eaeaec;
+			padding: 20px;
+			margin: -20px -20px 20px;
+
+			.mat-input-container {
+				width: 100%;
+			}
+		}
+
+		.mat-button {
+			width: 100%;
+			margin-top: 14px;
+			padding: 10px 15px;
+			background: #1fb5ac;
+			text-transform: uppercase;
+			color: #fff;
+			font-size: 18px;
+		}
+	}
+}

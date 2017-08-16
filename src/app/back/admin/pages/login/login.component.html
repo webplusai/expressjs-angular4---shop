@@ -1,0 +1,28 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="full-size">
+	<md-card>
+		<md-card-title> Sign in now </md-card-title>
+		<md-card-content>
+			<form #signinForm="ngForm" (submit)="signin(signinForm)" action="dashboard" [formGroup]="form">
+				<div class="input-group">
+					<md-input-container>
+						<input mdInput placeholder="User ID" [formControl]="emailInput" [(ngModel)]="email">
+						<md-error *ngIf="emailInput.hasError('required')">
+							Email is <strong> required </strong>
+						</md-error>
+						<md-error *ngIf="emailInput.hasError('pattern')">
+							Please enter a valid email address
+						</md-error>
+					</md-input-container>
+					<md-input-container>
+						<input mdInput placeholder="Password" [formControl]="passwordInput" [(ngModel)]="password">
+						<md-error *ngIf="passwordInput.hasError('required')">
+							Password is <strong> required </strong>
+						</md-error>
+					</md-input-container>
+				</div>
+				<md-checkbox> Remember me! </md-checkbox>
+				<button md-button> Sign in </button>
+			</form>
+		</md-card-content>
+	</md-card>
+</div>

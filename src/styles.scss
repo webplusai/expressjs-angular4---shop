@@ -11,8 +11,12 @@ $warn: mat-palette($mat-red);
 $accent-reverse: mat-palette($mat-grey, 0);
 
 $theme: mat-dark-theme($primary, $accent, $warn);
-
 @include angular-material-theme($theme);
+
+$light-theme: mat-light-theme($primary, $accent, $warn);
+admin-login {
+	@include angular-material-theme($light-theme);
+}
 
 html, body {
 	width: 100%;
