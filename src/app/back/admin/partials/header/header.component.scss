@@ -12,10 +12,19 @@
 		}
 	}
 
+	@media (max-width: 959px) {
+		.brand {
+			width: 100%;
+			justify-content: space-between !important;
+			padding: 0px 30px;
+		}
+	}
+
 	.mat-card {
 		padding: 0px;
-		height: 80px;
+		min-height: 80px;
 		flex: 1;
+		width: 100%;
 
 		.header-content {
 			justify-content: space-between;
@@ -25,6 +34,7 @@
 		.mat-nav-list {
 			padding-top: 0px;
 			margin: 0px 25px;
+			min-height: 50px;
 
 			.avatar {
 				border-radius: 50%;
@@ -173,6 +183,12 @@
 				font-size: 13px;
 			}
 		}
+
+		@media (max-width: 400px) {
+			.mat-nav-list {
+				place-content: flex-start !important;
+			}
+		}
 	}
 
 	.menu {
@@ -185,6 +201,13 @@
 
 		i.material-icons {
 			line-height: 20px;
+		}
+	}
+
+	@media (max-width: 959px) {
+		.menu {
+			position: relative;
+			right: 0px;
 		}
 	}
 }
