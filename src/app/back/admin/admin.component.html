@@ -7,9 +7,11 @@
 
 	<md-sidenav-container id="leftSideNavContainer">
 		<md-sidenav #leftsidenav mode="side" opened="true" class="sidenav">
-			Left Sidebar
+			<admin-leftnav> </admin-leftnav>
 		</md-sidenav>
 		<button md-button id="leftSideNav" class="sidenav-button" (click)="toggleLeftSidenav(leftsidenav, rightsidenav)"> </button>
-		<router-outlet name="admin"></router-outlet>
+		<div class="admin-content">
+			<router-outlet name="admin"></router-outlet>
+		</div>
 	</md-sidenav-container>
 </md-sidenav-container>

@@ -10,6 +10,7 @@ import { AdminComponent } from './admin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './partials/header/header.component';
+import { LeftSidenavComponent } from './partials/sidenav/left/left.component';
 
 @NgModule({
 	imports: [
@@ -24,7 +25,8 @@ import { HeaderComponent } from './partials/header/header.component';
 		AdminComponent,
 		DashboardComponent,
 		LoginComponent,
-		HeaderComponent
+		HeaderComponent,
+		LeftSidenavComponent
 	]
 })
 export class AdminModule { }

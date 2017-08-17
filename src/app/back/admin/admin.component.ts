@@ -1,10 +1,9 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
 	selector: 'admin',
 	templateUrl: './admin.component.html',
 	styleUrls: [ './admin.component.scss' ],
-	encapsulation: ViewEncapsulation.None
 })
 export class AdminComponent {
 
@@ -14,8 +13,7 @@ export class AdminComponent {
 	toggleLeftSidenav(leftSidenav, rightSidenav) {
 		leftSidenav.toggle();
 		this.leftSideNavOpened = leftSidenav.opened;
-		if (rightSidenav.opened)
-			rightSidenav.toggle();
+		rightSidenav.close();
 	}
 
 	toggleRightSidenav(leftSidenav, rightSidenav) {

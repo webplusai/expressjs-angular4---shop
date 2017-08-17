@@ -1,0 +1,19 @@
+<md-list>
+	<md-list-item *ngFor="let item of menuItems" (click)="toggleMenuItem($event, item)">
+		<button md-button class="full-size">
+			<p class="button-content inline">
+				<md-icon> {{ item.icon }} </md-icon>
+				{{ item.text }}
+			</p>
+			<md-icon class="arrow-right" *ngIf="item.subMenuItems">keyboard_arrow_right</md-icon>
+			<md-icon class="arrow-down" *ngIf="item.subMenuItems">keyboard_arrow_down</md-icon>
+		</button>
+		<!-- <md-list *ngIf="item.subMenuItems">
+			<md-list-item *ngFor="let subItem of item.subMenuItems">
+				<button md-button class="full-size">
+					{{ subItem }}
+				</button>
+			</md-list-item>
+		</md-list> -->
+	</md-list-item>
+</md-list>
