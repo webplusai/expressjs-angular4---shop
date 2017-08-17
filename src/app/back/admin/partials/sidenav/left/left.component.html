@@ -1,18 +1,22 @@
 <md-list>
 	<md-list-item *ngFor="let item of menuItems">
-		<button md-button class="full-size menu-button" (click)="toggleMenuItem($event, item)">
-			<p class="button-content inline">
-				<md-icon> {{ item.icon }} </md-icon>
-				{{ item.text }}
-			</p>
-			<md-icon class="arrow-right" *ngIf="item.subMenuItems">keyboard_arrow_right</md-icon>
-			<md-icon class="arrow-down" *ngIf="item.subMenuItems">keyboard_arrow_down</md-icon>
-		</button>
+		<a [routerLink]="item.link ? ['/admin/' + item.link] : null" class="full-size">
+			<button md-button class="full-size menu-button" (click)="toggleMenuItem($event, item)">
+				<p class="button-content inline">
+					<md-icon> {{ item.icon }} </md-icon>
+					{{ item.text }}
+				</p>
+				<md-icon class="arrow-right" *ngIf="item.subMenuItems">keyboard_arrow_right</md-icon>
+				<md-icon class="arrow-down" *ngIf="item.subMenuItems">keyboard_arrow_down</md-icon>
+			</button>
+		</a>
 		<md-list *ngIf="item.subMenuItems" class="full-width sub-menu">
 			<md-list-item *ngFor="let subItem of item.subMenuItems">
-				<button md-button class="full-size" (click)="toggleSubMenuItem($event)">
-					{{ subItem }}
-				</button>
+				<a [routerLink]="['/admin/' + subItem.link]" class="full-size">
+					<button md-button class="full-size" (click)="toggleSubMenuItem($event)">
+						{{ subItem.text }}
+					</button>
+				</a>
 			</md-list-item>
 		</md-list>
 	</md-list-item>

@@ -82,7 +82,7 @@ admin {
 			min-height: 48px;
 		}
 
-		.mat-list-item.selected > .mat-list-item-content > .mat-button {
+		.mat-list-item.selected > .mat-list-item-content > a > .mat-button {
 			background: #000;
 		}
 	}
