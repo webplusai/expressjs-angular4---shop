@@ -32,4 +32,12 @@ export class HeaderComponent implements OnInit {
 	ngOnInit() {
 	}
 
+	leftSidenav() {
+		document.getElementById("leftSideNav").dispatchEvent(new Event("click"));
+	}
+
+	rightSidenav() {
+		document.getElementById("rightSideNav").dispatchEvent(new Event("click"));
+	}
+
 }

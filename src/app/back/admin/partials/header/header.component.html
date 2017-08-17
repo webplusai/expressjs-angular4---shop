@@ -3,7 +3,7 @@
 		<a [routerLink]="" class="logo">
 			<img src="assets/img/EMHHighQuality.svg" width="180" alt="">
 		</a>
-		<button md-icon-button class="menu"> <i class="material-icons">menu</i> </button>
+		<button md-icon-button class="menu" (click)="leftSidenav()"> <i class="material-icons">menu</i> </button>
 	</div>
 	<md-card fxLayout="row" fxLayoutAlign="start center">
 		<div fxLayout.gt-sm="row" fxLayout.xs="column" class="header-content">
@@ -102,7 +102,7 @@
 							</md-list>
 						</md-card>
 					</button>
-					<button md-icon-button> <i class="material-icons">menu</i> </button>
+					<button md-icon-button (click)="rightSidenav()"> <i class="material-icons">menu</i> </button>
 				</div>
 			</md-nav-list>
 		</div>

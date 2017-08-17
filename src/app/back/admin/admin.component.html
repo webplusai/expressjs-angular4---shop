@@ -1,4 +1,15 @@
 <md-sidenav-container>
 	<admin-header> </admin-header>
-	<router-outlet name="admin"></router-outlet>
+	<md-sidenav #rightsidenav mode="side" align="end" class="sidenav">
+		Right Sidebar
+	</md-sidenav>
+	<button md-button id="rightSideNav" class="sidenav-button" (click)="toggleRightSidenav(leftsidenav, rightsidenav);"> </button>
+
+	<md-sidenav-container id="leftSideNavContainer">
+		<md-sidenav #leftsidenav mode="side" opened="true" class="sidenav">
+			Left Sidebar
+		</md-sidenav>
+		<button md-button id="leftSideNav" class="sidenav-button" (click)="toggleLeftSidenav(leftsidenav, rightsidenav)"> </button>
+		<router-outlet name="admin"></router-outlet>
+	</md-sidenav-container>
 </md-sidenav-container>
