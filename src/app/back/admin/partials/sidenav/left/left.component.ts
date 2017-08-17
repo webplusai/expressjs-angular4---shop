@@ -43,8 +43,14 @@ export class LeftSidenavComponent implements OnInit {
 
 		if (!e.hasClass('opened'))
 			$('admin-leftnav .mat-list-item').removeClass('opened');
-		if (item.subMenuItems)
+		if (item.subMenuItems) {
 			e.toggleClass('opened');
+		}
+	}
+
+	toggleSubMenuItem($event) {
+		$('admin-leftnav .mat-list-item .sub-menu .mat-list-item').removeClass('selected');
+		$($event.target).closest('.mat-list-item').addClass('selected');
 	}
 
 }

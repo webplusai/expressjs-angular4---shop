@@ -78,6 +78,12 @@ admin {
 			padding: 0px;
 			display: flex;
 			flex-direction: column;
+			height: initial;
+			min-height: 48px;
+		}
+
+		.mat-list-item.selected > .mat-list-item-content > .mat-button {
+			background: #000;
 		}
 	}
 
