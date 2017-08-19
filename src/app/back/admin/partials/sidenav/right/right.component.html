@@ -1,0 +1,36 @@
+<div class="right-sidenav-container">
+	<input type="text" class="search" placeholder="Search">
+
+	<md-card class="work-progress">
+		<md-card-title>
+			Work Progress(5)
+		</md-card-title>
+		<md-card-content>
+			<md-list *ngFor="let progress of workProgressList">
+				<md-list-item>
+					<p class="title"> {{ progress.title }} </p>
+					<span class="percent"> {{ progress.percent }} </span>
+					<span class="deadline"> Deadline {{ progress.deadline }} </span>
+				</md-list-item>
+			</md-list>
+		</md-card-content>
+	</md-card>
+
+	<md-card class="contact-online">
+		<md-card-title>
+			Contact Online(5)
+		</md-card-title>
+		<md-card-content>
+			<md-list *ngFor="let contact of contactOnlineList">
+				<md-list-item fxLayout="row" fxLayoutAlign="start center">
+					<img src="assets/img/{{ contact.photo }}">
+					<div fxLayout="column">
+						<span class="name"> {{ contact.name }} </span>
+						<span class="status"> {{ contact.status }} </span>
+					</div>
+					<md-icon>question_answer</md-icon>
+				</md-list-item>
+			</md-list>
+		</md-card-content>
+	</md-card>
+</div>

@@ -11,6 +11,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { LeftSidenavComponent } from './partials/sidenav/left/left.component';
+import { RightSidenavComponent } from './partials/sidenav/right/right.component';
 
 @NgModule({
 	imports: [
@@ -26,7 +27,8 @@ import { LeftSidenavComponent } from './partials/sidenav/left/left.component';
 		DashboardComponent,
 		LoginComponent,
 		HeaderComponent,
-		LeftSidenavComponent
+		LeftSidenavComponent,
+		RightSidenavComponent
 	]
 })
 export class AdminModule { }

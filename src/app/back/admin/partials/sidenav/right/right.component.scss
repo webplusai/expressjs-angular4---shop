@@ -1,0 +1,33 @@
+.right-sidenav-container {
+	background: rgb(50, 50, 58);
+	height: 100%;
+
+	.mat-card {
+		background: none;
+    	padding: 0px;
+	}
+
+	.work-progress .mat-card-title {
+	    font-size: 13px;
+	    text-transform: uppercase;
+	    color: #fff;
+	    background-color: rgb(250, 133, 100);
+	    padding: 20px 20px 20px 30px;
+	    margin: 0px;
+	}
+
+	.search {
+		width: calc(100% - 40px);
+	    margin: 20px;
+	    height: 35px;
+	    background: rgba(0, 0, 0, 0.3);
+	    border: none;
+	    padding: 10px;
+	    color: rgb(112, 112, 118);
+	    font-size: 12px;
+	}
+
+	.search:focus {
+		box-shadow: none;
+	}
+}

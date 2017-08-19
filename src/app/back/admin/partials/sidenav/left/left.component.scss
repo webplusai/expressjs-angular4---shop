@@ -40,16 +40,22 @@
 		}
 
 		.sub-menu {
-			display: none;
-			-webkit-transition: all .3s ease;
-			-moz-transition: all .3s ease;
+			max-height: 0px;
+			overflow: hidden;
+			transition: all .3s ease;
+
+			/*-moz-transition: all .3s ease;
 			-ms-transition: all .3s ease;
 			-o-transition: all .3s ease;
-			transition: all .3s ease;
+			transition: all .3s ease;*/
 
 			.mat-button {
 				padding-left: 50px;
 			}
+
+			/*.mat-list-item .mat-button {
+				display: none;
+			}*/
 		}
 	}
 
@@ -65,7 +71,7 @@
 		}
 
 		.sub-menu {
-			display: block;
+			max-height: 200px;
 		}
 	}
 }
