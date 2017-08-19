@@ -6,11 +6,16 @@
 			Work Progress(5)
 		</md-card-title>
 		<md-card-content>
-			<md-list *ngFor="let progress of workProgressList">
-				<md-list-item>
-					<p class="title"> {{ progress.title }} </p>
-					<span class="percent"> {{ progress.percent }} </span>
-					<span class="deadline"> Deadline {{ progress.deadline }} </span>
+			<md-list>
+				<md-list-item *ngFor="let progress of workProgressList; let last = last; let index = index;" [ngStyle]="{'padding-top': '20px'}">
+					<div class="title"> {{ progress.title }} </div>
+					<div class="detail">
+						<span class="percent"> {{ progress.percent }} </span>
+						<span class="deadline"> Deadline {{ progress.deadline }} </span>
+					</div>
+					<div *ngIf="last" class="progress-wrapper">
+						<div class="progress-bar" [ngStyle]="{'width': progress.percent}"> </div>
+					</div>
 				</md-list-item>
 			</md-list>
 		</md-card-content>
@@ -21,14 +26,14 @@
 			Contact Online(5)
 		</md-card-title>
 		<md-card-content>
-			<md-list *ngFor="let contact of contactOnlineList">
-				<md-list-item fxLayout="row" fxLayoutAlign="start center">
-					<img src="assets/img/{{ contact.photo }}">
-					<div fxLayout="column">
+			<md-list>
+				<md-list-item fxLayout="row" fxLayoutAlign="start center" *ngFor="let contact of contactOnlineList" [ngStyle]="{'padding': '15px 0px'}">
+					<img class="avatar" src="assets/img/{{ contact.photo }}">
+					<div fxLayout="column" [ngStyle]="{'flex': 1}">
 						<span class="name"> {{ contact.name }} </span>
 						<span class="status"> {{ contact.status }} </span>
 					</div>
-					<md-icon>question_answer</md-icon>
+					<md-icon [ngStyle]="{'color': contact.color}">question_answer</md-icon>
 				</md-list-item>
 			</md-list>
 		</md-card-content>

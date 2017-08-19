@@ -16,10 +16,10 @@ export class RightSidenavComponent implements OnInit {
 	];
 
 	contactOnlineList = [
-		{ photo: 'avatar1_small.jpg', 	name: 'Jonathan Smith', 	status: 'Work for fun', 	color: 'rgb(255, 108, 96)' },
-		{ photo: 'avatar1.jpg', 		name: 'Anjelina Joe', 		status: 'Available', 		color: 'rgb(169, 216, 110)' },
-		{ photo: 'chat-avatar2.jpg', 	name: 'John Doe', 			status: 'Away from Desk', 	color: 'rgb(252, 179, 34)' },
-		{ photo: 'avatar1_small.jpg', 	name: 'Mark Henry', 		status: 'Working', 			color: 'rgb(129, 117, 199)' }
+		{ photo: 'avatar1_small.jpg', 	name: 'Jonathan Smith', 	status: 'Work for fun', 	color: '#ff6c60' },
+		{ photo: 'avatar1.jpg', 		name: 'Anjelina Joe', 		status: 'Available', 		color: '#a9d86e' },
+		{ photo: 'chat-avatar2.jpg', 	name: 'John Doe', 			status: 'Away from Desk', 	color: '#fcb322' },
+		{ photo: 'avatar1_small.jpg', 	name: 'Mark Henry', 		status: 'Working', 			color: '#8175c7' }
 	];
 
 	constructor() { }

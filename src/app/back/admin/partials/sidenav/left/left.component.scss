@@ -42,20 +42,16 @@
 		.sub-menu {
 			max-height: 0px;
 			overflow: hidden;
-			transition: all .3s ease;
 
-			/*-moz-transition: all .3s ease;
-			-ms-transition: all .3s ease;
-			-o-transition: all .3s ease;
-			transition: all .3s ease;*/
+			-webkit-transition: all .5s ease;
+			-moz-transition: all .5s ease;
+			-ms-transition: all .5s ease;
+			-o-transition: all .5s ease;
+			transition: all .5s ease;
 
 			.mat-button {
 				padding-left: 50px;
 			}
-
-			/*.mat-list-item .mat-button {
-				display: none;
-			}*/
 		}
 	}
 

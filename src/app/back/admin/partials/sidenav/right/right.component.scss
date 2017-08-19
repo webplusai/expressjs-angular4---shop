@@ -5,15 +5,72 @@
 	.mat-card {
 		background: none;
     	padding: 0px;
+
+    	.mat-list {
+    		padding: 0px;
+
+    		.mat-list-item {
+    			border-bottom: 1px solid #3c3c44;
+
+    			.avatar {
+				    width: 30px;
+				    height: 30px;
+				    border-radius: 15px;
+				    margin-right: 15px;
+    			}
+
+    			div.detail {
+					font-size: 10px;
+					color: #8f8f9b;
+    			}
+
+    			div.title {
+					font-size: 12px;
+					text-transform: uppercase;
+					color: #fff;
+    			}
+
+    			.name {
+    				color: #fff;
+    				font-size: 14px;
+    			}
+
+    			.progress-wrapper {
+    				height: 10px;
+				    width: 100%;
+				    background: #f0f2f7;
+				    border-radius: 5px;
+				    overflow: hidden;
+
+				    .progress-bar {
+				    	height: 10px;
+				    	background: #00c0ef;
+				    	border-radius: 5px 0px 0px 5px;
+				    }
+    			}
+
+    			.status {
+					color: #8f8f9b;
+    				font-size: 10px;
+    			}
+    		}
+    	}
+
+    	.mat-card-title {
+			font-size: 13px;
+		    text-transform: uppercase;
+		    color: #fff;
+		    padding: 20px 20px 20px 30px;
+		    margin: 0px;
+		}
 	}
 
 	.work-progress .mat-card-title {
-	    font-size: 13px;
-	    text-transform: uppercase;
-	    color: #fff;
 	    background-color: rgb(250, 133, 100);
-	    padding: 20px 20px 20px 30px;
-	    margin: 0px;
+	}
+
+	.contact-online .mat-card-title {
+		background-color: #45c9c4;
 	}
 
 	.search {
