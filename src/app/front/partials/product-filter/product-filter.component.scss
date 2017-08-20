@@ -1,0 +1,33 @@
+.mat-input-container label, .mat-select span {
+  color: #000;
+}
+
+.mat-input-infix, .mat-select {
+	border: 1px solid #999;
+}
+
+.mat-input-underline {
+	display: none;
+}
+
+.mat-input-wrapper {
+	padding-bottom: 0px;
+}
+
+app-product-filter {
+
+	label {
+		margin-bottom: 0px;
+	}
+
+	.mat-select {
+		margin: 0px 10px;
+		min-width: 150px;
+	}
+
+	.product-filter-wrapper {
+		justify-content: space-between !important;
+		color: #000;
+		padding: 20px 10px;
+	}
+}

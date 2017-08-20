@@ -22,6 +22,7 @@ import { CollaboratorPanelComponent } 			from 	'./partials/collaborator-panel/co
 import { ActionPanelComponent } from './partials/action-panel/action-panel.component';
 import { PartnerPanelComponent } from './partials/partner-panel/partner-panel.component';
 import { CategoryComponent } from './pages/category/category.component';
+import { ProductFilterComponent } from './partials/product-filter/product-filter.component';
 
 @NgModule({
 	imports: [
@@ -47,7 +48,8 @@ import { CategoryComponent } from './pages/category/category.component';
 		CollaboratorPanelComponent,
 		ActionPanelComponent,
 		PartnerPanelComponent,
-		CategoryComponent
+		CategoryComponent,
+		ProductFilterComponent
 	]
 })
 export class FrontModule { }

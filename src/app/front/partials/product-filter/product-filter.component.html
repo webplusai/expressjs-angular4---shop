@@ -1,0 +1,25 @@
+<div fxLayout="row" fxLayoutAlign="start center" class="product-filter-wrapper">
+	<label class="info" [ngStyle]="{'text-transform': 'uppercase'}"> Product 1-16 of 20 products </label>
+	<div fxLayout="row" fxLayoutAlign="start center">
+		<md-select placeholder="Price">
+			<md-option *ngFor="let price of priceList" [value]="price"> {{ price }} </md-option>
+		</md-select>
+
+		<md-select placeholder="Color">
+			<md-option *ngFor="let color of colorList" [value]="color"> {{ color }} </md-option>
+		</md-select>
+		
+		<md-select placeholder="Brand">
+			<md-option *ngFor="let brand of brandList" [value]="brand"> {{ brand }} </md-option>
+		</md-select>
+
+		<label [ngStyle]="{'margin-right': '10px'}"> Price </label>
+		<md-input-container>
+			<input mdInput placeholder="Min">
+		</md-input-container>
+		<label [ngStyle]="{'margin': '0px 5px'}"> - </label>
+		<md-input-container>
+			<input mdInput placeholder="Max">
+		</md-input-container>
+	</div>
+</div>
