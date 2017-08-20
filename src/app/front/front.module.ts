@@ -21,6 +21,7 @@ import { StoreGridComponent } 					from 	'./partials/store-grid/store-grid.compo
 import { CollaboratorPanelComponent } 			from 	'./partials/collaborator-panel/collaborator-panel.component';
 import { ActionPanelComponent } from './partials/action-panel/action-panel.component';
 import { PartnerPanelComponent } from './partials/partner-panel/partner-panel.component';
+import { CategoryComponent } from './pages/category/category.component';
 
 @NgModule({
 	imports: [
@@ -45,7 +46,8 @@ import { PartnerPanelComponent } from './partials/partner-panel/partner-panel.co
 		StoreGridComponent,
 		CollaboratorPanelComponent,
 		ActionPanelComponent,
-		PartnerPanelComponent
+		PartnerPanelComponent,
+		CategoryComponent
 	]
 })
 export class FrontModule { }
