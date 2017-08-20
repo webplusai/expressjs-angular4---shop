@@ -1,23 +1,21 @@
-app-header {
-	.mat-select {
-		margin-top: 1.5em;
-		margin-bottom: 1.8em;
-	}
+.mat-select {
+	margin-top: 1.5em;
+	margin-bottom: 1.8em;
+}
 
-	.mat-toolbar {
-		font-size: 16px;
-		line-height: 1;
-		display: table;
-		padding: 0px;
+.mat-toolbar {
+	font-size: 16px;
+	line-height: 1;
+	display: table;
+	padding: 0px;
 
-		.mat-toolbar-layout {
-			display: table-cell;
-			vertical-align: middle;
+	.mat-toolbar-layout {
+		display: table-cell;
+		vertical-align: middle;
 
-			.mat-toolbar-row {
-				height: inherit;
-				justify-content: space-between;
-			}
+		.mat-toolbar-row {
+			height: inherit;
+			justify-content: space-between;
 		}
 	}
 }

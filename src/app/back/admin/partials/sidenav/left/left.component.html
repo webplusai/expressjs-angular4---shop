@@ -1,9 +1,9 @@
-<md-list>
+<md-list [ngStyle]="{'padding-top': '0px', 'background': '#008447'}">
 	<md-list-item *ngFor="let item of menuItems">
 		<a [routerLink]="item.link ? ['/admin/' + item.link] : null" class="full-size">
 			<button md-button class="full-size menu-button" (click)="toggleMenuItem($event, item)">
-				<p class="button-content inline">
-					<md-icon> {{ item.icon }} </md-icon>
+				<p class="button-content inline" [ngStyle]="{'flex': '1'}">
+					<md-icon [ngStyle]="{'vertical-align': 'middle'}"> {{ item.icon }} </md-icon>
 					{{ item.text }}
 				</p>
 				<md-icon class="arrow-right" *ngIf="item.subMenuItems">keyboard_arrow_right</md-icon>
@@ -13,7 +13,7 @@
 		<md-list *ngIf="item.subMenuItems" class="full-width sub-menu">
 			<md-list-item *ngFor="let subItem of item.subMenuItems">
 				<a [routerLink]="['/admin/' + subItem.link]" class="full-size">
-					<button md-button class="full-size" (click)="toggleSubMenuItem($event)">
+					<button md-button class="full-size" (click)="toggleSubMenuItem($event)" [ngStyle]="{'padding-left': '50px'}">
 						{{ subItem.text }}
 					</button>
 				</a>

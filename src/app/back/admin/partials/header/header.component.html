@@ -1,18 +1,18 @@
-<div class="mat-toolbar" fxLayout.lg="row" fxLayout.lt-md="column" fxLayoutAlign="start center">
+<div class="mat-toolbar" fxLayout.lg="row" fxLayout.lt-md="column" fxLayoutAlign="start center" [ngStyle]="{'min-height': '80px'}">
 	<div class="brand" fxLayout="row" fxLayoutAlign="center center">
-		<a [routerLink]="" class="logo">
+		<a [routerLink]="" class="logo" [ngStyle]="{'text-decoration': 'none'}">
 			<img src="assets/img/EMHHighQuality.svg" width="180" alt="">
 		</a>
 		<button md-icon-button class="menu" (click)="leftSidenav()"> <i class="material-icons">menu</i> </button>
 	</div>
 	<md-card fxLayout="row" fxLayoutAlign="start center">
-		<div fxLayout.gt-sm="row" fxLayout.xs="column" class="header-content">
+		<div fxLayout.gt-sm="row" fxLayout.xs="column" class="header-content" [ngStyle]="{'justify-content': 'space-between', 'width': '100%'}">
 			<md-nav-list fxLayout="row" fxLayoutAlign.gt-sm="start center" fxLayoutAlign.xs="start end">
 				<div fxLayout="row" fxLayoutAlign="start center">
 					<div class="inline nav-menu-item">
 						<button md-icon-button> 
 							<i class="material-icons">list</i>
-							<span class="badge bg-success">8</span>
+							<span class="badge" [ngStyle]="{'background': '#a9d86e'}">8</span>
 							<md-card>
 								<md-list>
 									<md-list-item>
@@ -39,20 +39,20 @@
 					<div class="inline nav-menu-item">
 						<button md-icon-button> 
 							<i class="material-icons">mail_outline</i>
-							<span class="badge bg-important">4</span>
+							<span class="badge bg-important" [ngStyle]="{'background': '#ff6c60'}">4</span>
 							<md-card>
 								<md-list>
 									<md-list-item> 
 										<p class="red">You have 4 Mails</p> 
 									</md-list-item>
 									<md-list-item *ngFor="let notification of mailNotifications">
-										<span class="photo"><img alt="avatar" src="{{ notification.avatar }}"></span>
+										<span class="photo"><img alt="avatar" src="{{ notification.avatar }}" [ngStyle]="{'margin-right': '10px', 'border-radius': '3px'}"></span>
 										<div fxLayout="column">
-											<span class="subject">
-												<span class="from"> {{ notification.from }} </span>
+											<span class="subject" [ngStyle]="{'line-height': '1.5', 'text-align': 'left'}">
+												<span [ngStyle]="{'font-size': '12px', 'font-weight': '600'}"> {{ notification.from }} </span>
 												<span class="time"> {{ notification.time }} </span>
 											</span>
-											<span class="message">
+											<span class="message" [ngStyle]="{'font-size': '11px', 'line-height': '1.5'}">
 												{{ notification.message }}
 											</span>
 										</div>
@@ -67,15 +67,15 @@
 					<div class="inline nav-menu-item">
 						<button md-icon-button> 
 							<i class="material-icons">notifications_none</i> 
-							<span class="badge bg-warning">3</span>
+							<span class="badge bg-warning" [ngStyle]="{'background': '#fcb323'}">3</span>
 							<md-card>
 								<md-list>
 									<md-list-item>
 										<p> Notifications </p>
 									</md-list-item>
 									<md-list-item *ngFor="let i of [1, 2, 3]">
-										<div class="alert alert-info clearfix" fxLayout="row" fxLayoutAlign="start center">
-											<i class="material-icons">info</i>
+										<div class="alert alert-info clearfix" fxLayout="row" fxLayoutAlign="start center" [ngStyle]="{'margin-bottom': '0px', 'width': '100%'}">
+											<i class="material-icons" [ngStyle]="{'margin-right': '20px', 'font-size': '50px', 'line-height': '50px'}">info</i>
 											<div class="noti-info">
 												<span> Server #{{i}} overloaded. </span>
 											</div>
@@ -91,8 +91,8 @@
 				<div fxLayout="row" fxLayoutAlign="start center" class="inline nav-menu-item">
 					<input type="text" class="form-control search" placeholder="Search">
 					<button md-button>
-						<img alt="" class="avatar" src="assets/img/avatar1_small.jpg">
-						<span class="username">John Doe</span>
+						<img alt="" src="assets/img/avatar1_small.jpg" [ngStyle]="{'border-radius': '50%'}">
+						<span [ngStyle]="{'font-size': '13px'}">John Doe</span>
 						<b class="caret"></b>
 						<md-card>
 							<md-list>

@@ -1,20 +1,20 @@
-<div class="right-sidenav-container">
+<div class="right-sidenav-container" [ngStyle]="{'background': 'rgb(50, 50, 58)', 'height': '100%'}">
 	<input type="text" class="search" placeholder="Search">
 
 	<md-card class="work-progress">
-		<md-card-title>
+		<md-card-title [ngStyle]="{'background-color': 'rgb(250, 133, 100)'}">
 			Work Progress(5)
 		</md-card-title>
 		<md-card-content>
 			<md-list>
 				<md-list-item *ngFor="let progress of workProgressList; let last = last; let index = index;" [ngStyle]="{'padding-top': '20px'}">
-					<div class="title"> {{ progress.title }} </div>
-					<div class="detail">
+					<div [ngStyle]="{'font-size': '12px', 'text-transform': 'uppercase', 'color': '#fff'}"> {{ progress.title }} </div>
+					<div [ngStyle]="{'font-size': '10px', 'color': '#8f8f9b'}">
 						<span class="percent"> {{ progress.percent }} </span>
 						<span class="deadline"> Deadline {{ progress.deadline }} </span>
 					</div>
 					<div *ngIf="last" class="progress-wrapper">
-						<div class="progress-bar" [ngStyle]="{'width': progress.percent}"> </div>
+						<div class="progress-bar" [ngStyle]="{'width': progress.percent, 'height': '10px', 'background': '#00c0ef', 'border-radius': '5px 0px 0px 5px'}"> </div>
 					</div>
 				</md-list-item>
 			</md-list>
@@ -22,7 +22,7 @@
 	</md-card>
 
 	<md-card class="contact-online">
-		<md-card-title>
+		<md-card-title [ngStyle]="{'background-color': '#45c9c4'}">
 			Contact Online(5)
 		</md-card-title>
 		<md-card-content>
@@ -30,8 +30,8 @@
 				<md-list-item fxLayout="row" fxLayoutAlign="start center" *ngFor="let contact of contactOnlineList" [ngStyle]="{'padding': '15px 0px'}">
 					<img class="avatar" src="assets/img/{{ contact.photo }}">
 					<div fxLayout="column" [ngStyle]="{'flex': 1}">
-						<span class="name"> {{ contact.name }} </span>
-						<span class="status"> {{ contact.status }} </span>
+						<span [ngStyle]="{'color': '#fff', 'font-size': '14px'}"> {{ contact.name }} </span>
+						<span [ngStyle]="{'color': '#8f8f9b', 'font-size': '10px'}"> {{ contact.status }} </span>
 					</div>
 					<md-icon [ngStyle]="{'color': contact.color}">question_answer</md-icon>
 				</md-list-item>

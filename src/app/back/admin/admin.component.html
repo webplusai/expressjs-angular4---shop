@@ -1,16 +1,16 @@
-<md-sidenav-container>
+<md-sidenav-container [ngStyle]="{'height': '100%'}">
 	<admin-header> </admin-header>
-	<md-sidenav #rightsidenav mode="side" align="end" class="sidenav">
+	<md-sidenav #rightsidenav mode="side" align="end" [ngStyle]="{'width': '240px'}">
 		<admin-rightnav> </admin-rightnav>
 	</md-sidenav>
-	<button md-button id="rightSideNav" class="sidenav-button" (click)="toggleRightSidenav(leftsidenav, rightsidenav);"> </button>
+	<button md-button id="rightSideNav" class="hidden" (click)="toggleRightSidenav(leftsidenav, rightsidenav);"> </button>
 
-	<md-sidenav-container id="leftSideNavContainer">
-		<md-sidenav #leftsidenav mode="side" opened="true" class="sidenav">
+	<md-sidenav-container id="leftSideNavContainer" [ngStyle]="{'height': 'calc(100% - 80px)', 'background': 'none'}">
+		<md-sidenav #leftsidenav mode="side" opened="true" [ngStyle]="{'width': '240px'}">
 			<admin-leftnav> </admin-leftnav>
 		</md-sidenav>
-		<button md-button id="leftSideNav" class="sidenav-button" (click)="toggleLeftSidenav(leftsidenav, rightsidenav)"> </button>
-		<div class="admin-content">
+		<button md-button id="leftSideNav" class="hidden" (click)="toggleLeftSidenav(leftsidenav, rightsidenav)"> </button>
+		<div class="admin-content" [ngStyle]="{'padding': '15px'}">
 			<router-outlet name="admin"></router-outlet>
 		</div>
 	</md-sidenav-container>

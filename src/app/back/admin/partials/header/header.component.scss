@@ -1,15 +1,10 @@
 .mat-toolbar {
-	min-height: 80px;
 	.brand {
 		width: 240px;
 		height: 80px;
 		background: #000;
 		position: relative;
 		z-index: 2;
-
-		a.logo {
-			text-decoration: none;
-		}
 	}
 
 	@media (max-width: 959px) {
@@ -36,26 +31,10 @@
 			margin: 0px 25px;
 			min-height: 50px;
 
-			.avatar {
-				border-radius: 50%;
-			}
-
 			.badge {
 				position: absolute;
 				top: -5px;
 				right: -5px;
-			}
-
-			.bg-success {
-				background: #a9d86e;
-			}
-
-			.bg-important {
-				background: #ff6c60;
-			}
-
-			.bg-warning {
-				background: #fcb323;
 			}
 
 			.inline {
@@ -85,17 +64,6 @@
 					.mat-list-item {
 						margin: 10px 0px;
 
-						.alert {
-							margin-bottom: 0px;
-							width: 100%;
-
-							i {
-								margin-right: 20px;
-								font-size: 50px;
-								line-height: 50px;
-							}
-						}
-
 						h5 {
 							color: #32323a;
 							text-transform: uppercase;
@@ -107,28 +75,8 @@
 							text-align: left;
 						}
 
-						.from {
-							font-size: 12px;
-							font-weight: 600;
-						}
-
-						.message {
-							font-size: 11px;
-		    				line-height: 1.5;
-						}
-
 						p {
 							margin-bottom: 0px;
-						}
-
-						.photo img {
-							margin-right: 10px;
-							border-radius: 3px;
-						}
-
-						.subject {
-							line-height: 1.5;
-							text-align: left;
 						}
 
 						.task-info {
@@ -180,10 +128,6 @@
 				color: #c8c8c8;
 				padding: 0px 25px;
 			}
-
-			.username {
-				font-size: 13px;
-			}
 		}
 
 		@media (max-width: 400px) {
@@ -200,10 +144,6 @@
 		width: 32px;
 		height: 32px;
 		line-height: 32px;
-
-		i.material-icons {
-			line-height: 20px;
-		}
 	}
 
 	@media (max-width: 959px) {
