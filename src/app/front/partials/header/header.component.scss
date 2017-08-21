@@ -1,6 +1,16 @@
+.mat-input-container {
+	label {
+		color: #fff;
+	}
+}
+
 .mat-select {
 	margin-top: 1.5em;
 	margin-bottom: 1.8em;
+
+	span {
+		color: #fff;
+	}
 }
 
 .mat-toolbar {

@@ -1,0 +1,52 @@
+.mat-card {
+	padding: 0px;
+    background: #eee;
+    overflow: hidden;
+
+    .mat-card-title {
+		background: #ddd;
+    	margin: 0px;
+    	font-size: 18px;
+
+    	.mat-icon {
+    		color: #03f9cf;
+    	}
+
+    	.mat-button {
+    		padding: 10px 20px;
+            text-align: left;
+    	}
+    }
+
+    .mat-card-content {
+		padding: 10px 20px;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        -transition: all .5s ease;
+    }
+
+    .button-minus {
+        display: block;
+    }
+
+    .button-plus {
+        display: none;
+    }
+}
+
+.mat-card.closed {
+    .button-minus {
+        display: none;
+    }
+
+    .button-plus {
+        display: block;
+    }
+
+    .mat-card-content {
+        max-height: 0px !important;
+        padding: 0px;
+    }
+}

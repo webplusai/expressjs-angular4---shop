@@ -22,7 +22,8 @@ import { CollaboratorPanelComponent } 			from 	'./partials/collaborator-panel/co
 import { ActionPanelComponent } from './partials/action-panel/action-panel.component';
 import { PartnerPanelComponent } from './partials/partner-panel/partner-panel.component';
 import { CategoryComponent } from './pages/category/category.component';
-import { ProductFilterComponent } from './partials/product-filter/product-filter.component';
+import { ProductFilterComponent } from './partials/category/product-filter/product-filter.component';
+import { SidebarComponent } from './partials/category/sidebar/sidebar.component';
 
 @NgModule({
 	imports: [
@@ -49,7 +50,8 @@ import { ProductFilterComponent } from './partials/product-filter/product-filter
 		ActionPanelComponent,
 		PartnerPanelComponent,
 		CategoryComponent,
-		ProductFilterComponent
+		ProductFilterComponent,
+		SidebarComponent
 	]
 })
 export class FrontModule { }

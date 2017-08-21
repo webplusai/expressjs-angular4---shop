@@ -10,7 +10,7 @@ $accent: mat-palette($mat-grey, 1000);
 $warn: mat-palette($mat-red);
 $accent-reverse: mat-palette($mat-grey, 0);
 
-$theme: mat-dark-theme($primary, $accent, $warn);
+$theme: mat-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
 
 $light-theme: mat-light-theme($primary, $accent, $warn);
@@ -119,6 +119,15 @@ app {
 	.mat-sidenav-container {
 		height: 100%;
 		background-color: #fff;
+	}
+
+	app-category app-sidebar {
+		.mat-button-wrapper {
+			width: 100%;
+		    justify-content: space-between;
+		    display: flex;
+		    align-items: center;
+		}
 	}
 }
 

@@ -11,7 +11,7 @@
         <div fxLayout="row" fxLayoutAlign="end center">
             <form name="form" class="search-form">
                 <div fxLayout="row" fxLayoutAlign="end center">
-                	<md-input-container md-theme="dark">
+                	<md-input-container [ngStyle]="{'color': '#fff'}">
                 		<input mdInput placeholder="Search*" [formControl]="searchControl">
                 		<md-error *ngIf="searchControl.hasError('required')">
                 			This is <strong> required </strong>
