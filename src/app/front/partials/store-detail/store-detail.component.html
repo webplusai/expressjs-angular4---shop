@@ -1,0 +1,24 @@
+<div [ngStyle]="{'width': '240px'}">
+	<div class="store-image" [ngStyle]="{'position': 'relative'}">
+		<img src="assets/img/store-back.png" class="full-width">
+		<div class="owner-image" [ngStyle]="{'background-image': 'url(assets/img/store-owner.png)'}"> </div>
+	</div>
+
+	<div class="store-details" fxLayout="column">
+		<span class="owner-name"> Sara </span>
+		<span class="register-date"> 14-9-2016 </span>
+		<div class="evaluation" fxLayout="row" [ngStyle]="{'justify-content': 'space-between'}">
+			<span> Evaluation </span>
+			<span> 0 Evaluation </span>
+		</div>
+
+		<div class="social-icons">
+			<button md-icon-button [ngStyle]="{'background': '#3b5998'}"> <i class="fa fa-facebook"> </i> </button>
+			<button md-icon-button [ngStyle]="{'background': '#55acee'}"> <i class="fa fa-twitter"> </i> </button>
+			<button md-icon-button [ngStyle]="{'background': '#dd4b39'}"> <i class="fa fa-google-plus"> </i> </button>
+			<button md-icon-button [ngStyle]="{'background': '#cb2027'}"> <i class="fa fa-pinterest-p"> </i> </button>
+		</div>
+
+		<button md-button class="contact-button"> <md-icon>mail</md-icon> Contact to Vendor </button>
+	</div>
+</div>

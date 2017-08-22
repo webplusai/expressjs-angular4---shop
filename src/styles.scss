@@ -131,23 +131,21 @@ app {
 		background-color: #fff;
 	}
 
-	app-category {
-		app-product-filter-sidebar {
-			.mat-button-wrapper {
-				width: 100%;
-			    justify-content: space-between;
-			    display: flex;
-			    align-items: center;
-			}
-		}
-
-		app-product-grid {
+	app-product-filter-sidebar {
+		.mat-button-wrapper {
 			width: 100%;
-			padding: 0px 20px;
+		    justify-content: space-between;
+		    display: flex;
+		    align-items: center;
+		}
+	}
 
-			.mat-tab-body-wrapper {
-				width: 100%;
-			}
+	app-product-grid {
+		width: 100%;
+		padding: 0px 20px;
+
+		.mat-tab-body-wrapper {
+			width: 100%;
 		}
 	}
 }

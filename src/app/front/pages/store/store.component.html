@@ -1,3 +1,22 @@
-<p>
-  store works!
-</p>
+<app-product-filter> </app-product-filter>
+<div fxLayout="row">
+	<div fxLayout="column">
+		<app-store-detail> </app-store-detail>
+		<app-product-filter-sidebar> </app-product-filter-sidebar>
+	</div>
+	<div fxLayout="column" [ngStyle]="{'width': '100%'}">
+		<div class="vendor-symbol">
+			Vendor
+		</div>
+		<div class="vendor-description">
+			<div class="inner-wrapper">
+				<p> Lorem ipsum dolor sit amet, nec ex delenit hendrerit repudiandae, no vim exerci eirmod. Assum insolens in his, hinc nonumes vix in. Ea quod assentior expetendis vim, ea hasnominatl inimicus, nemore laoreet ei est. Recteque reformidans vel ne, in eos duis delectus vltuperatorbus. </p>
+
+				<br>
+
+				<p> Pro sapientem hendrerit conclusionemque in, eam tation sigulls rationibus et. Nullam invenire eam cu. Duo et aetemo aliquid officiis. Vis te eloquentiam referrentur deferruisset, sea nullam allquip temporibus no. Qui cu euripidis peritinacia. Et nec error tritani. Duo cu consul admodum albucus, nisl deferruisset ut est. </p>
+			</div>
+		</div>
+		<app-product-grid> </app-product-grid>
+	</div>
+</div>

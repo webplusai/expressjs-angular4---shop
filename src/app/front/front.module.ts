@@ -27,6 +27,7 @@ import { ProductFilterSidebarComponent }		from 	'./partials/product-filter-sideb
 import { ProductGridComponent } 				from 	'./partials/product-grid/product-grid.component';
 import { PrivateSaleComponent } 				from 	'./pages/private-sale/private-sale.component';
 import { StoreComponent } from './pages/store/store.component';
+import { StoreDetailComponent } from './partials/store-detail/store-detail.component';
 
 @NgModule({
 	imports: [
@@ -57,7 +58,8 @@ import { StoreComponent } from './pages/store/store.component';
 		ProductFilterSidebarComponent,
 		ProductGridComponent,
 		PrivateSaleComponent,
-		StoreComponent
+		StoreComponent,
+		StoreDetailComponent
 	]
 })
 export class FrontModule { }
