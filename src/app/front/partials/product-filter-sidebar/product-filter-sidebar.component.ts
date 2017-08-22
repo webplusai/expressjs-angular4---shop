@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import * as $ from 'jquery';
 
 @Component({
-	selector: 'app-sidebar',
-	templateUrl: './sidebar.component.html',
-	styleUrls: ['./sidebar.component.scss']
+	selector: 'app-product-filter-sidebar',
+	templateUrl: './product-filter-sidebar.component.html',
+	styleUrls: ['./product-filter-sidebar.component.scss']
 })
-export class SidebarComponent implements OnInit {
+export class ProductFilterSidebarComponent implements OnInit {
 
 	sidebarItems = [
 		{ 
