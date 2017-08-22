@@ -1,0 +1,24 @@
+.mat-card {
+	padding: 0px;
+    width: 98%;
+    height: 98%;
+    box-shadow: 0px 0px 10px #aaa !important;
+
+    .mat-card-content {
+		width: 100%;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.mat-card-footer {
+		font-size: 18px;
+	    text-align: center;
+	    padding: 20px 0px;
+	    background: #eee;
+	    border: 1px solid #ddd;
+	    text-transform: uppercase;
+	    color: #02f8cf;
+	}
+}

@@ -31,7 +31,7 @@ const routes: Routes = [
 	},
 	{
 		path: 'private-sale',
-		component: PrivateSaleComponent,
+		component: FrontComponent,
 		children: [
 			{
 				path: '',

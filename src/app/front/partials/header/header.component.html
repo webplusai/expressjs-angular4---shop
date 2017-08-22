@@ -3,10 +3,12 @@
 	<img style="max-width: 40%;" src="assets/img/logo.jpg" alt="">
 	<div fxLayout="column" fxHide.sm fxHide.xs fxLayoutAlign="right">
         <div fxLayout="row">
-            <button md-button *ngFor="let button of headerButtons">
-                <md-icon>{{ button.icon }}</md-icon>
-                {{ button.text }}
-            </button>
+            <a *ngFor="let button of headerButtons" [routerLink]="['/' + button.link]">
+                <button md-button>
+                    <md-icon>{{ button.icon }}</md-icon>
+                    {{ button.text }}
+                </button>
+            </a>
         </div>
         <div fxLayout="row" fxLayoutAlign="end center">
             <form name="form" class="search-form">

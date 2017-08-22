@@ -19,11 +19,11 @@ export class HeaderComponent {
 	];
 
 	headerButtons = [
-		{ icon: 'description', text: 'EMH Private Sale' },
-		{ icon: 'public', text: 'News' },
-		{ icon: 'local_shipping', text: 'Free Delivery' },
-		{ icon: 'lock', text: 'Login' },
-		{ icon: 'person', text: 'Sign Up' }
+		{ icon: 'description', text: 'EMH Private Sale', link: 'private-sale' },
+		{ icon: 'public', text: 'News', link: 'news' },
+		{ icon: 'local_shipping', text: 'Free Delivery', link: 'free-delivery'  },
+		{ icon: 'lock', text: 'Login', link: 'login' },
+		{ icon: 'person', text: 'Sign Up', link: 'signup' }
 	];
 
 	ngOnInit() {
