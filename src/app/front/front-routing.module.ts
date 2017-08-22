@@ -4,6 +4,7 @@ import { Routes, RouterModule } 	from 	'@angular/router';
 import { FrontComponent } 			from 	'./front.component';
 import { HomeComponent } 			from 	'./pages/home/home.component';
 import { CategoryComponent }		from 	'./pages/category/category.component';
+import { PrivateSaleComponent }		from 	'./pages/private-sale/private-sale.component';
 
 const routes: Routes = [
 	{
@@ -24,6 +25,17 @@ const routes: Routes = [
 			{
 				path: '',
 				component: CategoryComponent,
+				outlet: 'front'
+			}
+		]
+	},
+	{
+		path: 'private-sale',
+		component: PrivateSaleComponent,
+		children: [
+			{
+				path: '',
+				component: PrivateSaleComponent,
 				outlet: 'front'
 			}
 		]

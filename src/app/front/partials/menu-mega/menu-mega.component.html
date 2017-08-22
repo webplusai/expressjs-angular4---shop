@@ -11,7 +11,7 @@
                         </md-toolbar>
                         <md-list>
                             <md-list-item *ngFor="let item of [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]">
-                                <button md-button> Sub Sub Category {{ item }} </button>
+                                <a [routerLink]="['/category']" [ngStyle]="{'text-decoration': 'none', 'color': 'inherit'}" class="full-width"> <button md-button> Sub Sub Category {{ item }} </button> </a>
                             </md-list-item>
                         </md-list>
                     </div>

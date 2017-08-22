@@ -1,0 +1,37 @@
+app-product-grid {
+	.mat-card {
+		padding: 0px 24px;
+		border-top: 1px solid #eee;
+		width: 98%;
+		height: 98%;
+	}
+
+	.mat-tab-group {
+		flex-direction: column-reverse !important;
+
+		.mat-tab-header {
+			margin-top: 70px;
+		}
+
+		.mat-tab-label {
+			padding: 0px;
+		    min-width: 48px;
+		    border-radius: 2px;
+		    border: 1px solid #aaa;
+    		margin: 10px;
+    		opacity: 1;
+		}
+
+		.mat-tab-label.mat-tab-label-active {
+			background: #03f9cf;
+			color: #fff;
+			border: none;
+		}
+	}
+
+	.product-info {
+		padding: 10px 24px;
+	    background: #f2f2f2;
+	    margin: 0px -24px;
+	}	
+}

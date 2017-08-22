@@ -24,6 +24,8 @@ import { PartnerPanelComponent } from './partials/partner-panel/partner-panel.co
 import { CategoryComponent } from './pages/category/category.component';
 import { ProductFilterComponent } from './partials/category/product-filter/product-filter.component';
 import { SidebarComponent } from './partials/category/sidebar/sidebar.component';
+import { ProductGridComponent } from './partials/category/product-grid/product-grid.component';
+import { PrivateSaleComponent } from './pages/private-sale/private-sale.component';
 
 @NgModule({
 	imports: [
@@ -51,7 +53,9 @@ import { SidebarComponent } from './partials/category/sidebar/sidebar.component'
 		PartnerPanelComponent,
 		CategoryComponent,
 		ProductFilterComponent,
-		SidebarComponent
+		SidebarComponent,
+		ProductGridComponent,
+		PrivateSaleComponent
 	]
 })
 export class FrontModule { }
