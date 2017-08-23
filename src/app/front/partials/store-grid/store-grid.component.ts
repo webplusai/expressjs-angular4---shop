@@ -20,12 +20,12 @@ export class StoreGridComponent implements OnInit {
 	ngOnInit() {
 		this.cols = 4;
 
-		setInterval(() => {
+		/*setInterval(() => {
 			if (this.selectedTab == 4)
 				this.selectedTab = 0;
 			else
 				this.selectedTab++;
-		}, 3000);
+		}, 3000);*/
 
 		var before = document.getElementsByClassName("mat-tab-header-pagination-before");
 		var after = document.getElementsByClassName("mat-tab-header-pagination-after");
