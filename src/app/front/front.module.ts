@@ -28,6 +28,8 @@ import { ProductGridComponent } 				from 	'./partials/product-grid/product-grid.
 import { PrivateSaleComponent } 				from 	'./pages/private-sale/private-sale.component';
 import { StoreComponent } from './pages/store/store.component';
 import { StoreDetailComponent } from './partials/store-detail/store-detail.component';
+import { ProductComponent } from './pages/product/product.component';
+import { ProductExtraComponent } from './partials/product-extra/product-extra.component';
 
 @NgModule({
 	imports: [
@@ -59,7 +61,9 @@ import { StoreDetailComponent } from './partials/store-detail/store-detail.compo
 		ProductGridComponent,
 		PrivateSaleComponent,
 		StoreComponent,
-		StoreDetailComponent
+		StoreDetailComponent,
+		ProductComponent,
+		ProductExtraComponent
 	]
 })
 export class FrontModule { }

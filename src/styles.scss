@@ -131,6 +131,35 @@ app {
 		background-color: #fff;
 	}
 
+	app-product {
+
+		.mat-input-infix {
+		    border-top: 0px;
+    		background: #eee;
+		}
+		.mat-select span {
+			color: #aaa;
+		}
+
+		.mat-select-placeholder {
+			padding-left: 10px;
+		}
+
+		.mat-select-placeholder.mat-floating-placeholder {
+			color: #000;
+			padding-left: 0px;
+		}
+
+		.mat-select-value-text {
+			padding-left: 10px;
+		}
+
+		input[type=number]::-webkit-inner-spin-button, 
+		input[type=number]::-webkit-outer-spin-button {  
+		   opacity: 1;
+		}
+	}
+
 	app-product-filter-sidebar {
 		.mat-button-wrapper {
 			width: 100%;

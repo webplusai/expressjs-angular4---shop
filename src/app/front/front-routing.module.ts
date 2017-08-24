@@ -6,6 +6,7 @@ import { HomeComponent } 			from 	'./pages/home/home.component';
 import { CategoryComponent }		from 	'./pages/category/category.component';
 import { PrivateSaleComponent }		from 	'./pages/private-sale/private-sale.component';
 import { StoreComponent }			from 	'./pages/store/store.component';
+import { ProductComponent }			from 	'./pages/product/product.component';
 
 const routes: Routes = [
 	{
@@ -48,6 +49,17 @@ const routes: Routes = [
 			{
 				path: '',
 				component: StoreComponent,
+				outlet: 'front'
+			}
+		]
+	},
+	{
+		path: 'product',
+		component: FrontComponent,
+		children: [
+			{
+				path: '',
+				component: ProductComponent,
 				outlet: 'front'
 			}
 		]

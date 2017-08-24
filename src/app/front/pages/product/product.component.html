@@ -1,0 +1,60 @@
+<div class="breadcrumb">
+	<a *ngFor="let item of breadcrumbItems" [routerLink]="['/' + item.link]">
+		{{ item.text }} > 
+	</a>
+</div>
+
+<div class="product-wrapper" fxLayout="column">
+	<div class="product-main">
+		<div class="product-images" fxFlex="17">
+			<img src="assets/img/product-image1.png">
+			<img src="assets/img/product-image2.png">
+			<img src="assets/img/product-image3.png">
+		</div>
+
+		<div class="featured-image" fxFlex="33" [ngStyle]="{'background-image': 'url(assets/img/featured-image.png)'}"> </div>
+
+		<div class="product-information" fxFlex="50" fxLayout="column">
+			<span [ngStyle]="{'color': '#009688'}">
+				<md-icon *ngFor="let j of [1, 2, 3, 4, 5]">star_border</md-icon>
+			</span>
+			<h3 class="product-title"> Woman Handbag Collection </h3>
+			<div class="price-review" fxLayout="row" [ngStyle]="{'justify-content': 'space-between'}">
+				<span>
+					Price: <span class="price"> $275 </span>
+				</span>
+				<span>
+					12 Review
+				</span>
+			</div>
+			<div class="product-description">
+				Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibhumils euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+			</div>
+			<div class="options" [ngStyle]="{'justify-content': 'space-between'}">
+				<md-select placeholder="Color" fxFlex="46">
+					<md-option value="Red"> Red </md-option>
+					<md-option value="Green"> Green </md-option>
+					<md-option value="Blue"> Blue </md-option>
+				</md-select>
+				<md-select placeholder="Size" fxFlex="46">
+					<md-option value="Extra small"> Extra small </md-option>
+					<md-option value="Small"> Small </md-option>
+					<md-option value="Medium"> Medium </md-option>
+					<md-option value="Large"> Large </md-option>
+					<md-option value="Extra large"> Extra large </md-option>
+				</md-select>
+			</div>
+			<div class="cart">
+				<md-input-container class="cart-amount">
+					<input mdInput type="number" value="1" min="0">
+				</md-input-container>
+				<button md-button class="btn-add-to-cart"> ADD TO CART </button>
+			</div>
+			<div class="category">
+				<label> CATEGORY: </label>
+				<span> Women Hand Bags </span>
+			</div>
+		</div>
+	</div>
+</div>
+<app-product-extra> </app-product-extra>
