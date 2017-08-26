@@ -26,12 +26,14 @@ import { ProductFilterComponent } 				from 	'./partials/product-filter/product-f
 import { ProductFilterSidebarComponent }		from 	'./partials/product-filter-sidebar/product-filter-sidebar.component';
 import { ProductGridComponent } 				from 	'./partials/product-grid/product-grid.component';
 import { PrivateSaleComponent } 				from 	'./pages/private-sale/private-sale.component';
-import { StoreComponent } from './pages/store/store.component';
-import { StoreDetailComponent } from './partials/store-detail/store-detail.component';
-import { ProductComponent } from './pages/product/product.component';
-import { ProductExtraComponent } from './partials/product-extra/product-extra.component';
-import { StoreSummaryComponent } from './partials/store-summary/store-summary.component';
-import { ProductCardComponent } from './partials/product-card/product-card.component';
+import { StoreComponent } 						from 	'./pages/store/store.component';
+import { StoreDetailComponent } 				from 	'./partials/store-detail/store-detail.component';
+import { ProductComponent } 					from 	'./pages/product/product.component';
+import { ProductExtraComponent } 				from 	'./partials/product-extra/product-extra.component';
+import { StoreSummaryComponent } 				from 	'./partials/store-summary/store-summary.component';
+import { ProductCardComponent } 				from 	'./partials/product-card/product-card.component';
+import { LoginComponent } 						from 	'./pages/login/login.component';
+import { LoginWrapperComponent } 				from 	'./login-wrapper.component';
 
 @NgModule({
 	imports: [
@@ -67,7 +69,9 @@ import { ProductCardComponent } from './partials/product-card/product-card.compo
 		ProductComponent,
 		ProductExtraComponent,
 		StoreSummaryComponent,
-		ProductCardComponent
+		ProductCardComponent,
+		LoginComponent,
+		LoginWrapperComponent
 	]
 })
 export class FrontModule { }

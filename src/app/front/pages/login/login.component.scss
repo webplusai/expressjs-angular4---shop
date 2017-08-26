@@ -1,0 +1,19 @@
+.btn-login {
+	background: rgb(0, 137, 123);
+}
+
+button[type="submit"] {
+    color: #fff;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+form.ng-invalid .btn-login {
+	background: rgba(0, 0, 0, 0.12);
+}
+
+.mat-raised-button {
+	color: #fff;
+	margin: 6px 0px;
+	min-height: 36px;
+}

@@ -1,0 +1,50 @@
+<div fxLayout="column" fxLayoutAlign="start" [ngStyle]="{'padding': '15% 10%'}">
+	<img fxHide.gt-sm src="assets/img/logo.jpg" [ngStyle]="{'width': '40%'}">
+
+	<h2 [ngStyle]="{'font-size': '20px', 'color': '#000'}">
+		Login to your account <br>
+		<small [ngStyle]="{'font-size': '75%', 'color': '#000'}">
+			Sed mollis velit facilisis facilisis viverra
+		</small>
+	</h2>
+
+	<form #signinForm="ngForm" (submit)="signin(signinForm)" [formGroup]="form">
+		<div fxLayout="row" fxLayoutAlign="start center">
+			<md-icon [ngStyle]="{'margin-right': '15px'}">email</md-icon>
+			<md-input-container [ngStyle]="{'width': '100%'}">
+				<input mdInput placeholder="Email *" [formControl]="emailInput">
+				<md-error *ngIf="emailInput.hasError('required')">
+					Your email must be between 10 and 100 characters long and look like an e-mail address
+				</md-error>
+				<md-error *ngIf="emailInput.hasError('email')">
+					Your email must be between 10 and 100 characters long and look like an e-mail address
+				</md-error>
+			</md-input-container>
+		</div>
+
+		<div fxLayout="row" fxLayoutAlign="start center" [ngStyle]="{'margin-top': '50px'}">
+			<md-icon [ngStyle]="{'margin-right': '15px'}">vpn_key</md-icon>
+			<md-input-container [ngStyle]="{'width': '100%'}">
+				<input mdInput placeholder="Password *" [formControl]="passwordInput">
+				<md-error *ngIf="passwordInput.hasError('required')">
+					This is required
+				</md-error>
+			</md-input-container>
+		</div>
+
+		<div fxLayout="row" fxLayoutAlign="start center" [ngStyle]="{'margin-top': '30px', 'justify-content': 'space-between'}">
+			<md-checkbox [ngStyle]="{'margin-top': '5px'}"> Remember Me </md-checkbox>
+			<button type="button" md-button> FORGOT PASSWORD? </button>
+		</div>
+		<button type="submit" class="full-width btn-login" md-button [disabled]="signinForm.invalid || signinForm.pristine"> LOG IN </button>
+	</form>
+	<div fxLayout="row" fxLayoutAlign="center center" [ngStyle]="{'padding': '20px', 'margin-top': '10px'}">
+		<span> -- OR -- </span>
+	</div>
+	<button md-raised-button [ngStyle]="{'background': '#d73d32'}"> Login with Google </button>
+	<button md-raised-button [ngStyle]="{'background': '#3f5c9a'}"> Login with Facebook </button>
+	<div fxLayout="row" fxLayoutAlign="center center" [ngStyle]="{'justify-content': 'space-between', 'margin-top': '10px'}">
+		<span [ngStyle]="{'font-size': '12px'}"> Don't have an account? </span>
+		<a [routerLink]="['/signup']" [ngStyle]="{'text-decoration': 'none', 'color': 'rgb(0, 150, 136)'}"> CREATE AN ACCOUNT </a>
+	</div>
+</div>
