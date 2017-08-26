@@ -1,0 +1,14 @@
+<md-card fxLayout="column">
+	<img src="assets/img/red-girl.png" [ngStyle]="{'margin-bottom': '10px'}" class="full-width">
+	<div fxLayout="column" class="product-info">
+		<span class="product-title" [ngStyle]="{'font-size': '20px'}"> Louise Hand Bag </span>
+		<span [ngStyle]="{'font-weight': '900', 'font-size': '30px'}"> 125$ </span>
+		<span [ngStyle]="{'color': '#03f9cf'}">
+			<md-icon *ngFor="let j of [1, 2, 3, 4, 5]" [ngStyle]="{'font-size': '21px'}">star_border</md-icon>
+		</span>
+		<div fxLayout="row" [ngStyle]="{'justify-content': 'space-between'}">
+			<span class="order-count"> Orders(228) </span>
+			<md-icon [ngStyle]="{'color': '#03f9cf'}">favorite_border</md-icon>
+		</div>
+	</div>
+</md-card>

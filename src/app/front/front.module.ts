@@ -31,6 +31,7 @@ import { StoreDetailComponent } from './partials/store-detail/store-detail.compo
 import { ProductComponent } from './pages/product/product.component';
 import { ProductExtraComponent } from './partials/product-extra/product-extra.component';
 import { StoreSummaryComponent } from './partials/store-summary/store-summary.component';
+import { ProductCardComponent } from './partials/product-card/product-card.component';
 
 @NgModule({
 	imports: [
@@ -65,7 +66,8 @@ import { StoreSummaryComponent } from './partials/store-summary/store-summary.co
 		StoreDetailComponent,
 		ProductComponent,
 		ProductExtraComponent,
-		StoreSummaryComponent
+		StoreSummaryComponent,
+		ProductCardComponent
 	]
 })
 export class FrontModule { }
