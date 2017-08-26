@@ -9,7 +9,7 @@
 	</h2>
 
 	<form #signinForm="ngForm" (submit)="signin(signinForm)" [formGroup]="form">
-		<div fxLayout="row" fxLayoutAlign="start center">
+		<div fxLayout="row" fxLayoutAlign="start center" class="input-wrapper">
 			<md-icon [ngStyle]="{'margin-right': '15px'}">email</md-icon>
 			<md-input-container [ngStyle]="{'width': '100%'}">
 				<input mdInput placeholder="Email *" [formControl]="emailInput">
@@ -22,7 +22,7 @@
 			</md-input-container>
 		</div>
 
-		<div fxLayout="row" fxLayoutAlign="start center" [ngStyle]="{'margin-top': '50px'}">
+		<div fxLayout="row" fxLayoutAlign="start center"  class="input-wrapper">
 			<md-icon [ngStyle]="{'margin-right': '15px'}">vpn_key</md-icon>
 			<md-input-container [ngStyle]="{'width': '100%'}">
 				<input mdInput placeholder="Password *" [formControl]="passwordInput">

@@ -131,6 +131,12 @@ app {
 		background-color: #fff;
 	}
 
+	app-partner-panel {
+		.slick-arrow {
+			display: none;
+		}
+	}
+
 	app-product {
 
 		.mat-ink-bar {

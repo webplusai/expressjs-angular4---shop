@@ -8,6 +8,7 @@ import { PrivateSaleComponent }		from 	'./pages/private-sale/private-sale.compon
 import { StoreComponent }			from 	'./pages/store/store.component';
 import { ProductComponent }			from 	'./pages/product/product.component';
 import { LoginComponent }			from 	'./pages/login/login.component';
+import { SignupComponent }			from 	'./pages/signup/signup.component';
 import { LoginWrapperComponent }	from 	'./login-wrapper.component';
 
 const routes: Routes = [
@@ -73,6 +74,17 @@ const routes: Routes = [
 			{
 				path: '',
 				component: LoginComponent,
+				outlet: 'login'
+			}
+		]
+	},
+	{
+		path: 'signup',
+		component: LoginWrapperComponent,
+		children: [
+			{
+				path: '',
+				component: SignupComponent,
 				outlet: 'login'
 			}
 		]

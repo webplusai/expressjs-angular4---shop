@@ -1,0 +1,74 @@
+<div fxLayout="column" fxLayoutAlign="start" [ngStyle]="{'padding': '15% 10%'}">
+	<img fxHide.gt-sm src="assets/img/logo.jpg" [ngStyle]="{'width': '40%'}">
+
+	<h2 [ngStyle]="{'font-size': '20px', 'color': '#000'}">
+		Create an account <br>
+		<small [ngStyle]="{'font-size': '75%', 'color': '#000'}">
+			Sed mollis velit facilisis facilisis viverra
+		</small>
+	</h2>
+
+	<form #signupForm="ngForm" (submit)="signup(signupForm)" [formGroup]="form">
+
+		<div fxLayout="row" fxLayoutAlign="start center" class="input-wrapper">
+			<md-icon>person</md-icon>
+			<md-input-container>
+				<input mdInput placeholder="Name *" [formControl]="nameInput">
+				<md-error *ngIf="nameInput.hasError('required')">
+					This is required
+				</md-error>
+			</md-input-container>
+		</div>
+
+		<div fxLayout="row" fxLayoutAlign="start center" class="input-wrapper">
+			<md-icon>email</md-icon>
+			<md-input-container>
+				<input mdInput placeholder="Email *" [formControl]="emailInput">
+				<md-error *ngIf="emailInput.hasError('required')">
+					Your email must be between 10 and 100 characters long and look like an e-mail address
+				</md-error>
+				<md-error *ngIf="emailInput.hasError('email')">
+					Your email must be between 10 and 100 characters long and look like an e-mail address
+				</md-error>
+			</md-input-container>
+		</div>
+
+		<div fxLayout="row" fxLayoutAlign="start center" class="input-wrapper">
+			<md-icon>vpn_key</md-icon>
+			<md-input-container>
+				<input mdInput placeholder="Password *" [formControl]="passwordInput">
+				<md-error *ngIf="passwordInput.hasError('required')">
+					This is required
+				</md-error>
+			</md-input-container>
+		</div>
+
+		<div fxLayout="row" fxLayoutAlign="start center" class="input-wrapper">
+			<md-icon>vpn_key</md-icon>
+			<md-input-container>
+				<input mdInput placeholder="Password (Confirm)*" [formControl]="passwordConfirmInput">
+				<md-error *ngIf="passwordConfirmInput.hasError('required')">
+					This is required
+				</md-error>
+			</md-input-container>
+		</div>
+
+		<div fxLayout="column" [ngStyle]="{'margin-top': '30px'}">
+			<md-checkbox [ngStyle]="{'margin-top': '5px', 'width': '100%'}" [formControl]="tocCheckbox"> 
+				I read and accept 
+				<a href="javascript:void(0);" [ngStyle]="{'text-decoration': 'none', 'color': 'rgb(0, 150, 136)'}"> terms and conditions </a> 
+			</md-checkbox>
+			<md-error *ngIf="tocCheckbox.hasError('required')">
+				You must accept the terms of service before you can proceed
+			</md-error>
+		</div>
+		<button type="submit" class="full-width btn-login" md-button [disabled]="signupForm.invalid || signupForm.pristine"> SIGN UP </button>
+	</form>
+	<div fxLayout="row" fxLayoutAlign="center center" [ngStyle]="{'padding': '20px', 'margin-top': '10px'}">
+		<span> -- OR -- </span>
+	</div>
+	<div fxLayout="row" fxLayoutAlign="center center" [ngStyle]="{'justify-content': 'space-between', 'margin-top': '10px'}">
+		<span [ngStyle]="{'font-size': '12px'}"> Already have an account? </span>
+		<a [routerLink]="['/login']" [ngStyle]="{'text-decoration': 'none', 'color': 'rgb(0, 150, 136)'}"> LOG IN </a>
+	</div>
+</div>
