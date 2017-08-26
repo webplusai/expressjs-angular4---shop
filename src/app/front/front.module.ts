@@ -30,6 +30,7 @@ import { StoreComponent } from './pages/store/store.component';
 import { StoreDetailComponent } from './partials/store-detail/store-detail.component';
 import { ProductComponent } from './pages/product/product.component';
 import { ProductExtraComponent } from './partials/product-extra/product-extra.component';
+import { StoreSummaryComponent } from './partials/store-summary/store-summary.component';
 
 @NgModule({
 	imports: [
@@ -63,7 +64,8 @@ import { ProductExtraComponent } from './partials/product-extra/product-extra.co
 		StoreComponent,
 		StoreDetailComponent,
 		ProductComponent,
-		ProductExtraComponent
+		ProductExtraComponent,
+		StoreSummaryComponent
 	]
 })
 export class FrontModule { }

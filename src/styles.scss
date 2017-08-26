@@ -133,10 +133,15 @@ app {
 
 	app-product {
 
+		.mat-ink-bar {
+			display: block;
+		}
+
 		.mat-input-infix {
 		    border-top: 0px;
     		background: #eee;
 		}
+
 		.mat-select span {
 			color: #aaa;
 		}
@@ -152,6 +157,19 @@ app {
 
 		.mat-select-value-text {
 			padding-left: 10px;
+		}
+
+		.mat-tab-body {
+			padding: 10px;
+		}
+
+		.mat-tab-labels {
+			background-color: #ddd;
+
+			.mat-tab-label-active {
+				background-color: #fff;
+				opacity: 1;
+			}
 		}
 
 		input[type=number]::-webkit-inner-spin-button, 

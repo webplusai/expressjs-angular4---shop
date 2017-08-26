@@ -1,0 +1,12 @@
+<div class="store-summary" fxLayout="column" fxLayoutAlign="start center">
+	<img src="assets/img/store-summary.png">
+	<label class="store-name"> Bag's shop </label>
+	<span [ngStyle]="{'color': '#009688'}">
+		<md-icon *ngFor="let j of [1, 2, 3, 4, 5]">star_border</md-icon>
+	</span>
+	<span class="review-count"> (131) </span>
+	<button md-button>
+		<md-icon>mail</md-icon>
+		Contact the seller
+	</button>
+</div>
