@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import * as $ from 'jquery';
 
 @Component({
@@ -16,16 +17,16 @@ export class LeftSidenavComponent implements OnInit {
 		{ icon: 'dashboard', 			text: 'Dashboard',					link: 'dashboard' },
 		{ icon: 'important_devices', 	text: 'EMH products Management', 	
 																			subMenuItems: [ 
-																				{ text: 'Categories', 			link: 'category' }, 
-																				{ text: 'Products', 			link: 'product' }, 
+																				{ text: 'Categories', 			link: 'categories' }, 
+																				{ text: 'Products', 			link: 'products' }, 
 																				{ text: 'EMH voucher', 			link: 'emh-voucher' }, 
 																				{ text: 'EMH beauty box', 		link: 'emh-beauty-box' } 
 																			] },
 		{ icon: 'library_books', 		text: 'Customers', 					
 																			subMenuItems: [
-																				{ text: 'Buyers', 				link: 'buyer' }, 
-																				{ text: 'Vendors', 				link: 'vendor' },
-																				{ text: 'Bloggers', 			link: 'blogger' }, 
+																				{ text: 'Buyers', 				link: 'buyers' }, 
+																				{ text: 'Vendors', 				link: 'vendors' },
+																				{ text: 'Bloggers', 			link: 'bloggers' }, 
 																				{ text: 'News',					link: 'news' }
 																			] },
 		{ icon: 'apps', 				text: 'Sales', 						
@@ -84,7 +85,9 @@ export class LeftSidenavComponent implements OnInit {
 																			] },
 	];
 
-	constructor() { }
+	constructor(private router: Router) {
+		
+	}
 
 	ngOnInit() {
 	}

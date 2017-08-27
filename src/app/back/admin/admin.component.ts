@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
 	selector: 'admin',
@@ -9,6 +10,16 @@ export class AdminComponent {
 
 	leftSideNavOpened = true;
 	rightSideNavOpened = false;
+
+	private title;
+	private breadcrumb;
+
+	constructor(private router: Router) {
+		router.events.subscribe((val) => {
+			this.title = router.url.split('/')[2];
+			this.title = this.title.charAt(0).toUpperCase() + this.title.slice(1);
+	    });
+	}
 
 	toggleLeftSidenav(leftSidenav, rightSidenav) {
 		leftSidenav.toggle();
@@ -24,5 +35,8 @@ export class AdminComponent {
 			leftSidenav.close();
 		else if (this.leftSideNavOpened)
 			leftSidenav.open();
+	}
+
+	ngOnInit() {
 	}
 }

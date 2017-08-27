@@ -4,6 +4,7 @@ import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { DataTableModule } from 'angular-4-data-table';
 import { AdminRoutingModule } from './admin-routing.module';
 
 import { AdminComponent } from './admin.component';
@@ -12,6 +13,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { LeftSidenavComponent } from './partials/sidenav/left/left.component';
 import { RightSidenavComponent } from './partials/sidenav/right/right.component';
+import { BuyersComponent } from './pages/buyers/buyers.component';
 
 @NgModule({
 	imports: [
@@ -20,15 +22,17 @@ import { RightSidenavComponent } from './partials/sidenav/right/right.component'
 		FlexLayoutModule,
 		FormsModule,
 		ReactiveFormsModule,
-		CommonModule
+		CommonModule,
+		DataTableModule
 	],
 	declarations: [
 		AdminComponent,
-		DashboardComponent,
 		LoginComponent,
 		HeaderComponent,
 		LeftSidenavComponent,
-		RightSidenavComponent
+		RightSidenavComponent,
+		BuyersComponent,
+		DashboardComponent
 	]
 })
 export class AdminModule { }
