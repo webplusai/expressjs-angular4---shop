@@ -6,6 +6,7 @@ import { LoginComponent } from  './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BuyersListComponent } from './pages/buyers/buyers-list.component';
 import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
+import { VendorsListComponent } from './pages/vendors/vendors-list.component';
 
 const routes: Routes = [
 	{
@@ -42,6 +43,14 @@ const routes: Routes = [
 				data: {
 					title: 'Buyers',
 					breadcrumb: [ ['Home', 'dashboard'], ['Buyers', 'buyers'] ]
+				}
+			},
+			{
+				path: 'vendors',
+				component: VendorsListComponent,
+				data: {
+					title: 'Vendors',
+					breadcrumb: [ ['Home', 'dashboard'], ['Vendors', 'vendors'] ]
 				}
 			}
 		]

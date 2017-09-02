@@ -17,6 +17,7 @@ import { LeftSidenavComponent } from './partials/sidenav/left/left.component';
 import { RightSidenavComponent } from './partials/sidenav/right/right.component';
 import { BuyersListComponent } from './pages/buyers/buyers-list.component';
 import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
+import { VendorsListComponent } from './pages/vendors/vendors-list.component';
 
 @NgModule({
 	imports: [
@@ -38,7 +39,8 @@ import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
 		RightSidenavComponent,
 		BuyersListComponent,
 		DashboardComponent,
-		BuyersFormComponent
+		BuyersFormComponent,
+		VendorsListComponent
 	]
 })
 export class AdminModule { }

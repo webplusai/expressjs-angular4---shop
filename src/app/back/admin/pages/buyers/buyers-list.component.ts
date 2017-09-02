@@ -59,15 +59,6 @@ export class BuyersListComponent implements OnInit {
 				if (!this.dataSource) return;
 				this.dataSource.nameFilter = this.nameFilter.nativeElement.value;
 			});
-
-		/*Observable.fromEvent(this.groupFilter.nativeElement, 'change')
-			.debounceTime(150)
-			.distinctUntilChanged()
-			.subscribe(() => {
-				console.log("A");
-				if (!this.dataSource) return;
-				this.dataSource.groupFilter = this.groupFilter.nativeElement.value;
-			});*/
 	}
 }
 
