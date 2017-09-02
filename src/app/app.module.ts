@@ -2,6 +2,7 @@ import { NgModule } 				from 	'@angular/core';
 import { BrowserAnimationsModule } 	from 	'@angular/platform-browser/animations';
 
 import { AppRoutingModule } 		from 	'./app-routing.module';
+import { NativeDateAdapter } 		from 	'@angular/material';
 
 import { AppComponent } 			from 	'./app.component';
 
@@ -13,7 +14,7 @@ import { AppComponent } 			from 	'./app.component';
 		BrowserAnimationsModule,
 		AppRoutingModule
 	],
-	providers: [],
+	providers: [ NativeDateAdapter ],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

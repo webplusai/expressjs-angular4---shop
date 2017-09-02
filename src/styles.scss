@@ -6,9 +6,9 @@
 
 $primary: mat-palette($mat-teal);
 $primary-text: mat-palette($mat-teal, 50);
-$accent: mat-palette($mat-grey, 1000);
+$accent: mat-palette($mat-grey, 900);
 $warn: mat-palette($mat-red);
-$accent-reverse: mat-palette($mat-grey, 0);
+$accent-reverse: mat-palette($mat-grey, 50);
 
 $theme: mat-light-theme($primary, $accent, $warn);
 @include angular-material-theme($theme);
@@ -46,16 +46,16 @@ html, body {
 }
 
 .full-width {
-	width: 100%;
+	width: 100% !important;
 }
 
 .full-height {
-	height: 100%;
+	height: 100% !important;
 }
 
 .full-size {
-	width: 100%;
-	height: 100%;
+	width: 100% !important;
+	height: 100% !important;
 }
 
 .inline {

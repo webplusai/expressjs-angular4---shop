@@ -1,0 +1,85 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Customer </span>
+	</h3>
+</div>
+
+<form #buyersForm="ngForm" (ngSubmit)="createBuyer(buyersForm)" [formGroup]="form" class="form-content" [ngStyle]="{'margin': '30px'}">
+	<md-select placeholder="Customer Group">
+		<md-option value="Default"> Default </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="First Name*" [formControl]="firstName">
+		<md-error *ngIf="firstName.hasError('required')">
+			First name is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Last Name*" [formControl]="lastName">
+		<md-error *ngIf="lastName.hasError('required')">
+			Last name is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="E-Mail*" [formControl]="email">
+		<md-error *ngIf="email.hasError('required')">
+			Email is <strong> required </strong>
+		</md-error>
+		<md-error *ngIf="email.hasError('pattern')">
+			Please enter a valid email address
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Telephone*" [formControl]="telephone">
+		<md-error *ngIf="telephone.hasError('required')">
+			Telephone is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Fax">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Password*" [formControl]="password">
+		<md-error *ngIf="password.hasError('required')">
+			Password is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Confirm*" [formControl]="confirm">
+		<md-error *ngIf="password.hasError('required')">
+			Please confirm your password
+		</md-error>
+	</md-form-field>
+
+	<md-select placeholder="Newsletter">
+		<md-option value="Enabled"> Enabled </md-option>
+		<md-option value="Disabled"> Disabled </md-option>
+	</md-select>
+
+	<md-select placeholder="Status">
+		<md-option value="Enabled"> Enabled </md-option>
+		<md-option value="Disabled"> Disabled </md-option>
+	</md-select>
+
+	<md-select placeholder="Approved">
+		<md-option value="Yes"> Yes </md-option>
+		<md-option value="No"> No </md-option>
+	</md-select>
+
+	<md-select placeholder="Safe">
+		<md-option value="Yes"> Yes </md-option>
+		<md-option value="No"> No </md-option>
+	</md-select>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Buyer </button>
+	</div>
+</form>

@@ -4,7 +4,8 @@ import { Routes, RouterModule, Router } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { LoginComponent } from  './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { BuyersComponent } from './pages/buyers/buyers.component';
+import { BuyersListComponent } from './pages/buyers/buyers-list.component';
+import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
 
 const routes: Routes = [
 	{
@@ -15,9 +16,9 @@ const routes: Routes = [
 		path: '',
 		component: AdminComponent,
 		data: {
-					title: 'Dashboard',
-					breadcrumb: [ ['Home', 'dashboard'], ['Dashboard', 'dashboard'] ]
-				},
+			title: 'Dashboard',
+			breadcrumb: [ ['Home', 'dashboard'], ['Dashboard', 'dashboard'] ]
+		},
 		children: [
 			{
 				path: 'dashboard',
@@ -29,7 +30,15 @@ const routes: Routes = [
 			},
 			{
 				path: 'buyers',
-				component: BuyersComponent,
+				component: BuyersListComponent,
+				data: {
+					title: 'Buyers',
+					breadcrumb: [ ['Home', 'dashboard'], ['Buyers', 'buyers'] ]
+				}
+			},
+			{
+				path: 'buyers/create',
+				component: BuyersFormComponent,
 				data: {
 					title: 'Buyers',
 					breadcrumb: [ ['Home', 'dashboard'], ['Buyers', 'buyers'] ]
@@ -49,6 +58,5 @@ const routes: Routes = [
 })
 export class AdminRoutingModule {
 	constructor(private router: Router) {
-		console.log(this.router.config);
 	}
 }

@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@angular/material';
+import { CdkTableModule } from '@angular/cdk/table';
+import { MdDatepickerModule } from '@angular/material';
+import { MdNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
-import { DataTableModule } from 'angular-4-data-table';
 import { AdminRoutingModule } from './admin-routing.module';
 
 import { AdminComponent } from './admin.component';
@@ -13,7 +15,8 @@ import { LoginComponent } from './pages/login/login.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { LeftSidenavComponent } from './partials/sidenav/left/left.component';
 import { RightSidenavComponent } from './partials/sidenav/right/right.component';
-import { BuyersComponent } from './pages/buyers/buyers.component';
+import { BuyersListComponent } from './pages/buyers/buyers-list.component';
+import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
 
 @NgModule({
 	imports: [
@@ -23,7 +26,9 @@ import { BuyersComponent } from './pages/buyers/buyers.component';
 		FormsModule,
 		ReactiveFormsModule,
 		CommonModule,
-		DataTableModule
+		CdkTableModule,
+		MdDatepickerModule,
+		MdNativeDateModule
 	],
 	declarations: [
 		AdminComponent,
@@ -31,8 +36,9 @@ import { BuyersComponent } from './pages/buyers/buyers.component';
 		HeaderComponent,
 		LeftSidenavComponent,
 		RightSidenavComponent,
-		BuyersComponent,
-		DashboardComponent
+		BuyersListComponent,
+		DashboardComponent,
+		BuyersFormComponent
 	]
 })
 export class AdminModule { }
