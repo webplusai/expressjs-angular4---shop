@@ -7,6 +7,9 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { BuyersListComponent } from './pages/buyers/buyers-list.component';
 import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
 import { VendorsListComponent } from './pages/vendors/vendors-list.component';
+import { VendorsFormComponent } from './pages/vendors/vendors-form.component';
+import { CategoriesListComponent } from './pages/categories/categories-list.component';
+import { CategoriesFormComponent } from './pages/categories/categories-form.component';
 
 const routes: Routes = [
 	{
@@ -51,6 +54,30 @@ const routes: Routes = [
 				data: {
 					title: 'Vendors',
 					breadcrumb: [ ['Home', 'dashboard'], ['Vendors', 'vendors'] ]
+				}
+			},
+			{
+				path: 'vendors/create',
+				component: VendorsFormComponent,
+				data: {
+					title: 'Vendors',
+					breadcrumb: [ ['Home', 'dashboard'], ['Vendors', 'vendors'] ]
+				}
+			},
+			{
+				path: 'categories',
+				component: CategoriesListComponent,
+				data: {
+					title: 'Categories',
+					breadcrumb: [ ['Home', 'dashboard'], ['Categories', 'categories'] ]
+				}
+			},
+			{
+				path: 'categories/create',
+				component: CategoriesFormComponent,
+				data: {
+					title: 'Categories',
+					breadcrumb: [ ['Home', 'dashboard'], ['Categories', 'categories'] ]
 				}
 			}
 		]

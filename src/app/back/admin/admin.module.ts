@@ -6,6 +6,8 @@ import { MdDatepickerModule } from '@angular/material';
 import { MdNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { TinyMceModule } from 'angular-tinymce';
+import { tinymceDefaultSettings } from 'angular-tinymce';
 
 import { AdminRoutingModule } from './admin-routing.module';
 
@@ -18,6 +20,9 @@ import { RightSidenavComponent } from './partials/sidenav/right/right.component'
 import { BuyersListComponent } from './pages/buyers/buyers-list.component';
 import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
 import { VendorsListComponent } from './pages/vendors/vendors-list.component';
+import { VendorsFormComponent } from './pages/vendors/vendors-form.component';
+import { CategoriesListComponent } from './pages/categories/categories-list.component';
+import { CategoriesFormComponent } from './pages/categories/categories-form.component';
 
 @NgModule({
 	imports: [
@@ -29,7 +34,8 @@ import { VendorsListComponent } from './pages/vendors/vendors-list.component';
 		CommonModule,
 		CdkTableModule,
 		MdDatepickerModule,
-		MdNativeDateModule
+		MdNativeDateModule,
+		TinyMceModule.forRoot(tinymceDefaultSettings())
 	],
 	declarations: [
 		AdminComponent,
@@ -40,7 +46,10 @@ import { VendorsListComponent } from './pages/vendors/vendors-list.component';
 		BuyersListComponent,
 		DashboardComponent,
 		BuyersFormComponent,
-		VendorsListComponent
+		VendorsListComponent,
+		VendorsFormComponent,
+		CategoriesListComponent,
+		CategoriesFormComponent
 	]
 })
 export class AdminModule { }

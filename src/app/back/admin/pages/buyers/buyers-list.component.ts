@@ -25,7 +25,7 @@ const userList = [
 ];
 
 @Component({
-	selector: 'app-buyers-list',
+	selector: 'admin-buyers-list',
 	templateUrl: './buyers-list.component.html',
 	styleUrls: ['./buyers-list.component.scss']
 })

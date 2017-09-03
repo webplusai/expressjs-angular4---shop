@@ -1,0 +1,195 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> New seller </span>
+	</h3>
+</div>
+
+<form #buyersForm="ngForm" (ngSubmit)="createBuyer(buyersForm)" [formGroup]="form" class="form-content" [ngStyle]="{'margin': '30px 0px'}">
+	<md-tab-group>
+		<md-tab label="General">
+			<div class="tab-general">
+				<h3> User Data </h3>
+
+				<md-select placeholder="User">
+					<md-option value="User1"> User1 </md-option>
+					<md-option value="User2"> User2 </md-option>
+					<md-option value="User3"> User3 </md-option>
+				</md-select>
+
+				<md-form-field>
+					<input mdInput placeholder="First Name*" [formControl]="firstName">
+					<md-error *ngIf="firstName.hasError('required')">
+						First name is <strong> required </strong>
+					</md-error>
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Last Name*" [formControl]="lastName">
+					<md-error *ngIf="lastName.hasError('required')">
+						Last name is <strong> required </strong>
+					</md-error>
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="E-Mail*" [formControl]="email">
+					<md-error *ngIf="email.hasError('required')">
+						Email is <strong> required </strong>
+					</md-error>
+					<md-error *ngIf="email.hasError('pattern')">
+						Please enter a valid email address
+					</md-error>
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Password*" [formControl]="password">
+					<md-error *ngIf="password.hasError('required')">
+						Password is <strong> required </strong>
+					</md-error>
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Confirm*" [formControl]="confirm">
+					<md-error *ngIf="password.hasError('required')">
+						Please confirm your password
+					</md-error>
+				</md-form-field>
+
+				<h3> Seller Data </h3>
+
+				<md-form-field>
+					<input mdInput placeholder="Nickname*" [formControl]="nickname">
+					<md-error *ngIf="nickname.hasError('required')">
+						Nickname is <strong> required </strong>
+					</md-error>
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="SEO keyword">
+				</md-form-field>
+
+				<md-select placeholder="Seller Group">
+					<md-option value="Group1"> Group1 </md-option>
+					<md-option value="Group2"> Group2 </md-option>
+				</md-select>
+
+				<md-select placeholder="Product validation">
+					<md-option value="No validation"> No validation </md-option>
+					<md-option value="Manual approval"> Manual approval </md-option>
+				</md-select>
+
+				<angular-tinymce [formControl]='tinyMCE'> </angular-tinymce>
+
+				<md-select placeholder="Status">
+					<md-option value="Active"> Active </md-option>
+					<md-option value="Inactive"> Inactive </md-option>
+					<md-option value="Disabled"> Disabled </md-option>
+					<md-option value="Deleted"> Deleted </md-option>
+					<md-option value="Unpaid signup fee"> Unpaid signup fee </md-option>
+					<md-option value="Incomplete"> Incomplete </md-option>
+				</md-select>
+			</div>
+		</md-tab>
+
+		<md-tab label="Commissions & fees">
+			<div class="tab-commissions-fees" [ngStyle]="{'padding': '30px'}">
+				<div class="sales-fee">
+					<label class="label-title"> Sales fee </label>
+
+					<md-form-field>
+						<input mdInput>
+					</md-form-field>
+
+					<label class="label-plus"> + </label>
+
+					<md-form-field>
+						<input mdInput>
+					</md-form-field>
+
+					<label class="label-percent"> % </label>
+				</div>
+
+				<div class="listing-fee">
+					<label class="label-title"> Listing fee / method </label>
+
+					<md-form-field>
+						<input mdInput>
+					</md-form-field>
+
+					<label class="label-plus"> + </label>
+
+					<md-form-field>
+						<input mdInput>
+					</md-form-field>
+
+					<label class="label-percent"> % </label>
+
+					<md-select placeholder="Payment method">
+						<md-option value="Seller balance">
+							Seller balance
+						</md-option>
+						<md-option value="[MM] Payment Gateways">
+							[MM] Payment Gateways
+						</md-option>
+					</md-select>
+				</div>
+			</div>
+		</md-tab>
+
+		<md-tab label="Badges">
+
+		</md-tab>
+
+		<md-tab label="User settings">
+			<div class="tab-user-settings" [ngStyle]="{'padding-top': '30px'}">
+				<md-form-field>
+					<input mdInput placeholder="Full name">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Address Line 1">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Address Line 2">					
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="City">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="State/Province/Region">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Zip/Postal Code">
+				</md-form-field>
+
+				<md-select placeholder="Country">
+					<md-option *ngFor="let i of [1, 2, 3, 4, 5]" value="Country {{i}}">
+						Country {{i}}
+					</md-option>
+				</md-select>
+
+				<h3> Information </h3>
+
+				<md-form-field>
+					<input mdInput placeholder="Website">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Company">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Phone">
+				</md-form-field>
+			</div>
+		</md-tab>
+	</md-tab-group>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Buyer </button>
+	</div>
+</form>

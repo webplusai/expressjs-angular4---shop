@@ -4,7 +4,7 @@ import { FormControl, Validators, FormGroup } from '@angular/forms';
 const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 @Component({
-	selector: 'app-buyers-form',
+	selector: 'admin-buyers-form',
 	templateUrl: 'buyers-form.component.html',
 	styleUrls: [ 'buyers-form.component.scss' ]
 })

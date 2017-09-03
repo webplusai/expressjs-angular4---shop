@@ -25,13 +25,13 @@ const sellerList = [
 ];
 
 @Component({
-	selector: 'app-vendors-list',
+	selector: 'admin-vendors-list',
 	templateUrl: './vendors-list.component.html',
 	styleUrls: ['./vendors-list.component.scss']
 })
 export class VendorsListComponent implements OnInit {
 
-	displayedColumns = ['seller', 'email', 'product', 'sales', 'earnings', 'balance', 'status', 'date_created'];
+	displayedColumns = ['seller', 'email', 'product', 'sales', 'earnings', 'balance', 'status', 'date_created', 'action'];
 	tableData = new TableData();
 	dataSource: UserDataSource | null;
 
