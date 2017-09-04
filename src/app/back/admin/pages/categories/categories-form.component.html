@@ -1,0 +1,153 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Category </span>
+	</h3>
+</div>
+
+<md-tab-group>
+	<md-tab label="General">
+		<div class="tab-general" [ngStyle]="{'margin-top': '30px'}">
+			<md-form-field>
+				<input mdInput placeholder="Category Name">
+			</md-form-field>
+
+			<span [ngStyle]="{'margin-left': '30px', 'color': 'rgba(0, 0, 0, 0.54)'}"> Description </span>
+			<angular-tinymce> </angular-tinymce>
+
+			<md-form-field>
+				<input mdInput placeholder="Meta Tag Title">
+			</md-form-field>
+
+			<md-form-field>
+				<textarea mdInput placeholder="Meta Tag Description"></textarea>
+			</md-form-field>
+
+			<md-form-field>
+				<textarea mdInput placeholder="Meta Tag Keywords"></textarea>
+			</md-form-field>
+		</div>
+	</md-tab>
+
+	<md-tab label="Data">
+		<div class="tab-data" [ngStyle]="{'margin-top': '30px'}">
+			<md-form-field>
+				<input mdInput placeholder="Parent">
+			</md-form-field>
+
+			<md-form-field>
+				<input mdInput placeholder="Filters">
+			</md-form-field>
+
+			<div class="filters">
+
+			</div>
+
+			<div class="stores">
+				<md-checkbox> Default </md-checkbox>
+			</div>
+
+			<md-form-field>
+				<input mdInput placeholder="SEO URL">
+			</md-form-field>
+
+			<div class="image" [ngStyle]="{'margin-left': '30px', 'margin-bottom': '20px'}">
+				<div [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Image </div>
+				<img width="100" height="100" class="category-image" src="http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png" (click)="togglePopover()">
+				<div class="popover hidden" role="tooltip">
+					<div class="popover-arrow"> </div>
+					<div class="popover-content">
+						<input type="file" id="imgInput" (change)="readURL($event)" style="display:none" accept="image/*"/> 
+						<button md-button class="action-button" [ngStyle]="{'background': 'rgb(30, 145, 207)'}" (click)="uploadImage()"> <md-icon>create</md-icon> </button>
+						<button md-button class="action-button" [ngStyle]="{'background': 'rgb(245, 107, 107)'}" (click)="removeImage()"> <md-icon>delete</md-icon> </button>
+					</div>
+				</div>
+			</div>
+
+			<md-checkbox [ngStyle]="{'margin-left': '30px'}"> Top </md-checkbox>
+
+			<md-form-field>
+				<input mdInput placeholder="Columns">
+			</md-form-field>
+
+			<md-form-field>
+				<input mdInput placeholder="Sort Order">
+			</md-form-field>
+
+			<md-select placeholder="Status">
+				<md-option value="Enabled"> Enabled </md-option>
+				<md-option value="Disabled"> Disabled </md-option>
+			</md-select>
+		</div>
+	</md-tab>
+
+	<md-tab label="Design">
+		<div class="tab-design" [ngStyle]="{'padding': '30px'}">
+			<md-table #table [dataSource]="dataSource">
+				<ng-container mdColumnDef="stores">
+					<md-header-cell *mdHeaderCellDef> Stores </md-header-cell>
+					<md-cell *mdCellDef="let element"> {{ element.stores }} </md-cell>
+				</ng-container>
+
+				<ng-container mdColumnDef="layout">
+					<md-header-cell *mdHeaderCellDef> Layout Overrides </md-header-cell>
+					<md-cell *mdCellDef="let element">
+						<md-select [ngStyle]="{'padding-top': '0px'}">
+							<md-option *ngFor="let layout of layouts" value="{{layout}}">
+								{{ layout }}
+							</md-option>
+						</md-select>
+					</md-cell>
+				</ng-container>
+
+				<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+				<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+			</md-table>
+		</div>
+	</md-tab>
+
+	<md-tab label="Fees">
+		<div class="tab-fees" [ngStyle]="{'padding': '30px'}">
+			<div class="sales-fee">
+				<label class="label-title"> Sales fee </label>
+
+				<md-form-field>
+					<input mdInput>
+				</md-form-field>
+
+				<label class="label-plus"> + </label>
+
+				<md-form-field>
+					<input mdInput>
+				</md-form-field>
+
+				<label class="label-percent"> % </label>
+			</div>
+
+			<div class="listing-fee">
+				<label class="label-title"> Listing fee / method </label>
+
+				<md-form-field>
+					<input mdInput>
+				</md-form-field>
+
+				<label class="label-plus"> + </label>
+
+				<md-form-field>
+					<input mdInput>
+				</md-form-field>
+
+				<label class="label-percent"> % </label>
+
+				<md-select placeholder="Payment method">
+					<md-option value="Seller balance">
+						Seller balance
+					</md-option>
+					<md-option value="[MM] Payment Gateways">
+						[MM] Payment Gateways
+					</md-option>
+				</md-select>
+			</div>
+		</div>
+	</md-tab>
+</md-tab-group>

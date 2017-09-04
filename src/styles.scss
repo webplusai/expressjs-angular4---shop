@@ -112,7 +112,7 @@ admin {
 		}
 	}
 
-	admin-vendors-form {
+	admin-vendors-form, admin-categories-form {
 		angular-tinymce > .mce-container {
 			width: initial !important;
 			margin-left: 30px;
