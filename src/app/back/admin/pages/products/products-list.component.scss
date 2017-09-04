@@ -1,0 +1,44 @@
+.action-button {
+	border-radius: 5px;
+	padding: 0px 5px;
+    min-width: initial;
+    margin: 2px;
+    color: #fff;
+    font-size: 1px;
+
+    .mat-icon {
+		font-size: 15px;
+		line-height: 15px;
+		height: 15px;
+    }
+}
+
+.mat-select {
+	margin-top: 1.2em;
+    margin-bottom: 1.8em;
+    padding-top: 0px;
+}
+
+.mat-table {
+	border: 1px solid #ddd;
+}
+
+.quantity {
+    background: #8fbb6c;
+    padding: 5px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.title {
+    border-top: 2px solid #777;
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-top: 30px;
+
+    h3 {
+        margin-top: 10px;
+    }
+}

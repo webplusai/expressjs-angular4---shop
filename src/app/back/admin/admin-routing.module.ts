@@ -10,6 +10,7 @@ import { VendorsListComponent } from './pages/vendors/vendors-list.component';
 import { VendorsFormComponent } from './pages/vendors/vendors-form.component';
 import { CategoriesListComponent } from './pages/categories/categories-list.component';
 import { CategoriesFormComponent } from './pages/categories/categories-form.component';
+import { ProductsListComponent } from './pages/products/products-list.component';
 
 const routes: Routes = [
 	{
@@ -77,6 +78,14 @@ const routes: Routes = [
 				component: CategoriesFormComponent,
 				data: {
 					title: 'Categories',
+					breadcrumb: [ ['Home', 'dashboard'], ['Categories', 'categories'] ]
+				}
+			},
+			{
+				path: 'products',
+				component: ProductsListComponent,
+				data: {
+					title: 'Products',
 					breadcrumb: [ ['Home', 'dashboard'], ['Categories', 'categories'] ]
 				}
 			}

@@ -23,6 +23,7 @@ import { VendorsListComponent } from './pages/vendors/vendors-list.component';
 import { VendorsFormComponent } from './pages/vendors/vendors-form.component';
 import { CategoriesListComponent } from './pages/categories/categories-list.component';
 import { CategoriesFormComponent } from './pages/categories/categories-form.component';
+import { ProductsListComponent } from './pages/products/products-list.component';
 
 @NgModule({
 	imports: [
@@ -49,7 +50,8 @@ import { CategoriesFormComponent } from './pages/categories/categories-form.comp
 		VendorsListComponent,
 		VendorsFormComponent,
 		CategoriesListComponent,
-		CategoriesFormComponent
+		CategoriesFormComponent,
+		ProductsListComponent
 	]
 })
 export class AdminModule { }
