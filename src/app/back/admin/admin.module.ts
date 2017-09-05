@@ -25,6 +25,10 @@ import { CategoriesListComponent } from './pages/categories/categories-list.comp
 import { CategoriesFormComponent } from './pages/categories/categories-form.component';
 import { ProductsListComponent } from './pages/products/products-list.component';
 import { ProductsFormComponent } from './pages/products/products-form.component';
+import { GeneralComponent } from './pages/products/tabs/general/general.component';
+import { DataComponent } from './pages/products/tabs/data/data.component';
+import { LinksComponent } from './pages/products/tabs/links/links.component';
+import { AttributeComponent } from './pages/products/tabs/attribute/attribute.component';
 
 @NgModule({
 	imports: [
@@ -53,7 +57,11 @@ import { ProductsFormComponent } from './pages/products/products-form.component'
 		CategoriesListComponent,
 		CategoriesFormComponent,
 		ProductsListComponent,
-		ProductsFormComponent
+		ProductsFormComponent,
+		GeneralComponent,
+		DataComponent,
+		LinksComponent,
+		AttributeComponent
 	]
 })
 export class AdminModule { }

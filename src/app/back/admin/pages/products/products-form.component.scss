@@ -1,43 +1,20 @@
-.list-panel {
-	border: 1px solid #ccc;
-    min-height: 100px;
-    border-radius: 4px;
-    margin-top: -20px;
-    background: #eee;
-    padding: 10px;
-    margin-bottom: 20px;
-}
+admin-products-form {
+	.product-tab {
+		padding: 30px;
+	}
 
-.product-tab {
-	padding: 30px;
-}
+	.tab-general, .tab-data, .tab-links {
+	    .mat-form-field {
+	        display: block;
+	    }
 
-.tab-general, .tab-data, .tab-links {
-    .mat-form-field {
-        display: block;
-    }
+	    .mat-select {
+	        display: block;
+	        margin-bottom: 20px;
+	    }
 
-    .mat-select {
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .mat-form-field, .mat-select {
-        width: 100%;
-    }
-}
-
-textarea {
-	height: 100px;
-}
-
-.title {
-    border-top: 2px solid #777;
-    border-bottom: 1px solid #ddd;
-    padding: 5px 10px;
-    margin-top: 30px;
-
-    h3 {
-        margin-top: 10px;
-    }
+	    .mat-form-field, .mat-select {
+	        width: 100%;
+	    }
+	}
 }
