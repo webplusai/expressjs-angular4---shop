@@ -23,7 +23,6 @@
     min-height: 100px;
     border-radius: 4px;
     border: 1px solid #ddd;
-    margin-left: 30px;
     margin-bottom: 30px;
     padding: 20px;
     background: #eee;
@@ -60,8 +59,7 @@
     }
 
     .mat-form-field, .mat-select {
-        width: calc(100% - 30px);
-        margin-left: 30px;
+        width: 100%;
     }
 }
 

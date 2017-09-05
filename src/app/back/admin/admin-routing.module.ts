@@ -11,6 +11,7 @@ import { VendorsFormComponent } from './pages/vendors/vendors-form.component';
 import { CategoriesListComponent } from './pages/categories/categories-list.component';
 import { CategoriesFormComponent } from './pages/categories/categories-form.component';
 import { ProductsListComponent } from './pages/products/products-list.component';
+import { ProductsFormComponent } from './pages/products/products-form.component';
 
 const routes: Routes = [
 	{
@@ -86,7 +87,15 @@ const routes: Routes = [
 				component: ProductsListComponent,
 				data: {
 					title: 'Products',
-					breadcrumb: [ ['Home', 'dashboard'], ['Categories', 'categories'] ]
+					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
+				}
+			},
+			{
+				path: 'products/create',
+				component: ProductsFormComponent,
+				data: {
+					title: 'Products',
+					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
 				}
 			}
 		]

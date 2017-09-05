@@ -24,6 +24,7 @@ import { VendorsFormComponent } from './pages/vendors/vendors-form.component';
 import { CategoriesListComponent } from './pages/categories/categories-list.component';
 import { CategoriesFormComponent } from './pages/categories/categories-form.component';
 import { ProductsListComponent } from './pages/products/products-list.component';
+import { ProductsFormComponent } from './pages/products/products-form.component';
 
 @NgModule({
 	imports: [
@@ -51,7 +52,8 @@ import { ProductsListComponent } from './pages/products/products-list.component'
 		VendorsFormComponent,
 		CategoriesListComponent,
 		CategoriesFormComponent,
-		ProductsListComponent
+		ProductsListComponent,
+		ProductsFormComponent
 	]
 })
 export class AdminModule { }

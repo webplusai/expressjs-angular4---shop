@@ -1,0 +1,232 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> New seller </span>
+	</h3>
+</div>
+
+<form #productsForm="ngForm" (ngSubmit)="createProduct(productsForm)" [formGroup]="form">
+	<md-tab-group>
+		<md-tab label="General">
+			<div class="tab-general product-tab">
+				<md-form-field>
+					<input mdInput placeholder="Category Name">
+				</md-form-field>
+
+				<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Description </span>
+				<angular-tinymce> </angular-tinymce>
+
+				<md-form-field>
+					<input mdInput placeholder="Meta Tag Title">
+				</md-form-field>
+
+				<md-form-field>
+					<textarea mdInput placeholder="Meta Tag Description"></textarea>
+				</md-form-field>
+
+				<md-form-field>
+					<textarea mdInput placeholder="Meta Tag Keywords"></textarea>
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Product Tags">
+				</md-form-field>
+			</div>
+		</md-tab>
+
+		<md-tab label="Data">
+			<div class="tab-data product-tab">
+				<md-form-field>
+					<input mdInput placeholder="Model">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="SKU">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="UPC">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="EAN">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="JAN">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="ISBN">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="MPN">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Location">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Price">
+				</md-form-field>
+
+				<md-select placeholder="Tax Class">
+					<md-option *ngFor="let tax of ['Taxable Goods', 'Downloadable Products']" value="{{tax}}">
+						{{ tax }}
+					</md-option>
+				</md-select>
+
+				<md-form-field>
+					<input mdInput placeholder="Quantity">
+				</md-form-field>
+
+				<md-form-field>
+					<input mdInput placeholder="Minimum Quantity">
+				</md-form-field>
+
+				<md-select placeholder="Subtract Stock">
+					<md-option value="Yes"> Yes </md-option>
+					<md-option value="No"> No </md-option>
+				</md-select>
+
+				<md-select placeholder="Out Of Stock Status">
+					<md-option *ngFor="let status of ['2-3 Days', 'In Stock', 'Out Of Stock', 'Pre-Order']" value="{{status}}">
+						{{ status }}
+					</md-option>
+				</md-select>
+
+				<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)', 'margin-right': '10px'}"> Requires Shipping </span>
+				<md-radio-group placeholder="Requires Shipping">
+					<md-radio-button value="Yes"> Yes </md-radio-button>
+					<md-radio-button value="No"> No </md-radio-button>
+				</md-radio-group>
+
+				<md-form-field>
+					<input mdInput placeholder="SEO URL">
+				</md-form-field>
+
+				<md-form-field [ngStyle]="{'width': '300px', 'margin-bottom': '10px'}">
+					<input mdInput [mdDatepicker]="picker" placeholder="Date Available">
+					<md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+					<md-datepicker #picker> </md-datepicker>
+				</md-form-field>
+
+				<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Dimensions ( L x W x H) </span>
+				<div fxLayout="row">
+					<md-form-field fxFlex="33">
+						<input mdInput placeholder="Length">
+					</md-form-field>
+
+					<md-form-field fxFlex="33">
+						<input mdInput placeholder="Width">
+					</md-form-field>
+
+					<md-form-field fxFlex="33">
+						<input mdInput placeholder="Height">
+					</md-form-field>
+				</div>
+
+				<md-select placeholder="Length Class">
+					<md-option value="Centimeter"> Centimeter </md-option>
+					<md-option value="Millimeter"> Millimeter </md-option>
+					<md-option value="Inch"> Inch </md-option>
+				</md-select>
+
+				<md-form-field>
+					<input mdInput placeholder="Weight">
+				</md-form-field>
+
+				<md-select placeholder="Weight Class">
+					<md-option value="Kilogram"> Kilogram </md-option>
+					<md-option value="Gram"> Gram </md-option>
+					<md-option value="Pound"> Pound </md-option>
+					<md-option value="Ounce"> Ounce </md-option>
+				</md-select>
+
+				<md-select placeholder="Status">
+					<md-option value="Yes"> Yes </md-option>
+					<md-option value="No"> No </md-option>
+				</md-select>
+
+				<md-form-field>
+					<input mdInput placeholder="Sort Order">
+				</md-form-field>
+			</div>
+		</md-tab>
+
+		<md-tab label="Links">
+			<div class="tab-links product-tab">
+				<md-select placeholder="Manufacturer">
+					<md-option *ngFor="let item of ['-- None --', 'Apple', 'Canon', 'HTC', 'Hewlett-Packard', 'Palm']" value="{{item}}">
+						{{ item }}
+					</md-option>
+				</md-select>
+
+				<md-select placeholder="Categories" (change)="selectChange(category, categoriesList)" [formControl]="category">
+					<md-option value="Cameras"> Cameras </md-option>
+					<md-option value="Components"> Components </md-option>
+					<md-option value="Components > Mice and Trackballs"> Components > Mice and Trackballs </md-option>
+					<md-option value="Components > Monitors"> Components > Monitors </md-option>
+					<md-option value="Components > Monitors > Test1"> Components > Monitors > Test1 </md-option>
+				</md-select>
+				<div class="categories-panel list-panel">
+					<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of categoriesList; let i = index" class="list-item">
+						<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(categoriesList, i)">remove_circle</md-icon>
+						<span [ngStyle]="{'font-size': '12px'}">{{item}}</span>
+					</div>
+				</div>
+
+				<md-select placeholder="Filters" (change)="selectChange(filter, filtersList)" [formControl]="filter">
+					<md-option value="Filter1"> Filter1 </md-option>
+					<md-option value="Filter2"> Filter2 </md-option>
+					<md-option value="Filter3"> Filter3 </md-option>
+				</md-select>
+				<div class="filters-panel list-panel">
+					<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of filtersList; let i = index" class="list-item">
+						<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(filtersList, i)">remove_circle</md-icon>
+						<span [ngStyle]="{'font-size': '12px'}">{{item}}</span>
+					</div>
+				</div>
+
+				<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)', 'display': 'block', 'margin-bottom': '20px'}"> Stores </span>
+				<div class="stores-panel list-panel">
+					<md-checkbox> Default </md-checkbox>
+				</div>
+
+				<md-select placeholder="Downloads" (change)="selectChange(download, downloadsList)" [formControl]="download">
+					<md-option value="Download1"> Download1 </md-option>
+					<md-option value="Download2"> Download2 </md-option>
+					<md-option value="Download3"> Download3 </md-option>
+				</md-select>
+				<div class="downloads-panel list-panel">
+					<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of downloadsList; let i = index" class="list-item">
+						<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(downloadsList, i)">remove_circle</md-icon>
+						<span [ngStyle]="{'font-size': '12px'}">{{item}}</span>
+					</div>
+				</div>
+
+				<md-select placeholder="Related Products" (change)="selectChange(relatedProduct, relatedProductsList)" [formControl]="relatedProduct">
+					<md-option value="Apple Cinema 30"> Apple Cinema 30" </md-option>
+					<md-option value="Canon EOS 5D"> Canon EOS 5D </md-option>
+					<md-option value="HP LP3065"> HP LP 3065 </md-option>
+					<md-option value="HTC Touch HD"> HTC Touch HD </md-option>
+					<md-option value="iMac"> iMac </md-option>
+				</md-select>
+				<div class="related-products-panel list-panel">
+					<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of relatedProductsList; let i = index" class="list-item">
+						<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(relatedProductsList, i)">remove_circle</md-icon>
+						<span [ngStyle]="{'font-size': '12px'}">{{item}}</span>
+					</div>
+				</div>
+			</div>
+		</md-tab>
+
+		<md-tab label="Attribute">
+			<div class="tab-attribute product-tab">
+
+			</div>
+		</md-tab>
+	</md-tab-group>
+</form>
