@@ -1,0 +1,122 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Recurring Orders List </span>
+	</h3>
+</div>
+
+<div class="filter-panel" [ngStyle]="{'margin-top': '20px'}">
+	<div fxLayout="row" fxLayoutAlign="start center">
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #recurringIDFilter placeholder="Recurring ID">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #orderIDFilter placeholder="Order ID">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #paymentReferenceFilter placeholder="Payment Reference">
+			</md-form-field>
+		</div>
+
+	</div>
+
+	<div fxLayout="row" fxLayoutAlign="start center">
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #customerFilter placeholder="Customer">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-select class="full-width" #statusFilter placeholder="Status">
+				<md-option value="Enabled"> Enabled </md-option>
+				<md-option value="Disabled"> Disabled </md-option>
+			</md-select>
+		</div>
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput [mdDatepicker]="picker" #dateAddedFilter placeholder="Date Added">
+				<md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+				<md-datepicker #picker></md-datepicker>
+			</md-form-field>
+		</div>
+
+	</div>
+
+	<div fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': '#1e91cf'}"> <md-icon>autorenew</md-icon> Filter </button>
+	</div>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/recurring-orders/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Recurring ID Column -->
+	<ng-container cdkColumnDef="recurring_id">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Recurring ID </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.recurring_id}} </md-cell>
+	</ng-container>
+
+	<!-- Order ID Column -->
+	<ng-container cdkColumnDef="order_id">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Order ID </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.order_id}} </md-cell>
+	</ng-container>
+
+	<!-- Payment Reference Column -->
+	<ng-container cdkColumnDef="payment_reference">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Payment Reference </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.payment_reference}} </md-cell>
+	</ng-container>
+
+	<!-- Customer Column -->
+	<ng-container cdkColumnDef="customer">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> customer </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.customer}} </md-cell>
+	</ng-container>
+
+	<!-- Status Column -->
+	<ng-container cdkColumnDef="status">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.status}} </md-cell>
+	</ng-container>
+
+	<!-- Date Added Column -->
+	<ng-container cdkColumnDef="date_added">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date_added}} </md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row"> 
+			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+
