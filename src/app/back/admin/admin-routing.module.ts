@@ -16,6 +16,7 @@ import { BloggersListComponent } from './pages/bloggers/bloggers-list.component'
 import { BloggersFormComponent } from './pages/bloggers/bloggers-form.component';
 import { NewsListComponent } from './pages/news/news-list.component';
 import { NewsFormComponent } from './pages/news/news-form.component';
+import { TransactionsListComponent } from './pages/transactions/transactions-list.component';
 
 const routes: Routes = [
 	{
@@ -132,6 +133,14 @@ const routes: Routes = [
 				data: {
 					title: 'News',
 					breadcrumb: [ ['Home', 'dashboard'], ['News', 'news'] ]
+				}
+			},
+			{
+				path: 'transactions',
+				component: TransactionsListComponent,
+				data: {
+					title: 'Transactions',
+					breadcrumb: [ ['Home', 'dashboard'], ['Transactions', 'transactions'] ]
 				}
 			}
 		]

@@ -31,10 +31,10 @@ export class LeftSidenavComponent implements OnInit {
 																			] },
 		{ icon: 'apps', 				text: 'Sales', 						
 																			subMenuItems: [ 
-																				{ text: 'Orders', 				link: 'order' },
-																				{ text: 'Transactions', 		link: 'transaction' },
-																				{ text: 'Recurring order', 		link: 'recurring-order' }, 
-																				{ text: 'Returns', 				link: 'return' }
+																				{ text: 'Orders', 				link: 'orders' },
+																				{ text: 'Transactions', 		link: 'transactions' },
+																				{ text: 'Recurring orders', 		link: 'recurring-orders' }, 
+																				{ text: 'Returns', 				link: 'returns' }
 																			] },
 		{ icon: 'list', 				text: 'Staffs', 					
 																			subMenuItems: [ 
@@ -45,19 +45,19 @@ export class LeftSidenavComponent implements OnInit {
 		{ icon: 'mail_outline', 		text: 'Advertisements', 			
 																			subMenuItems: [ 
 																				{ text: 'Affiliation', 			link: 'afilliation' }, 
-																				{ text: 'Adverts', 				link: 'advert' }
+																				{ text: 'Adverts', 				link: 'adverts' }
 																			] },
 		{ icon: 'assessment', 			text: 'Message',					link: 'message' },
-		{ icon: 'assessment', 			text: 'Comments',					link: 'comment' },
+		{ icon: 'assessment', 			text: 'Comments',					link: 'comments' },
 		{ icon: 'assessment', 			text: 'Media',						link: 'media' },
 		{ icon: 'assessment', 			text: 'Newsletter',					link: 'newsletter' },
 		{ icon: 'assessment', 			text: 'Design', 					
 																			subMenuItems: [ 
 																				{ text: 'Slideshare', 			link: 'slideshare' },
-																				{ text: 'Partners', 			link: 'partner' },
+																				{ text: 'Partners', 			link: 'partners' },
 																				{ text: 'Collaboration', 		link: 'collaboration' }
 																			] },
-		{ icon: 'shopping_basket',		text: 'Payments',					link: 'payment' },
+		{ icon: 'shopping_basket',		text: 'Payments',					link: 'payments' },
 		{ icon: 'shopping_basket',		text: 'Shipping',					link: 'shipping' },
 		{ icon: 'shopping_basket',		text: 'Language Editor', 			
 																			subMenuItems: [ 
@@ -75,11 +75,11 @@ export class LeftSidenavComponent implements OnInit {
 		{ icon: 'settings', 			text: 'System Management', 			
 																			subMenuItems: [ 
 																				{ text: 'Setting', link: 'setting' },
-																				{ text: 'Localisations', link: 'localisation' }
+																				{ text: 'Localisations', link: 'localisations' }
 																			] },
 		{ icon: 'shopping_basket', 		text: 'Reports', 					
 																			subMenuItems: [ 
-																				{ text: 'Statistics', link: 'statistic' }, 
+																				{ text: 'Statistics', link: 'statistics' }, 
 																				{ text: 'Debug/Error', link: 'debug-error' },
 																				{ text: 'Restoration', link: 'restoration' } 
 																			] },

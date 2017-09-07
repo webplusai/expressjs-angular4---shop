@@ -1,0 +1,89 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Transactions List </span>
+	</h3>
+</div>
+
+<div class="filter-panel" [ngStyle]="{'margin-top': '20px'}">
+	<div fxLayout="row" fxLayoutAlign="start center">
+
+		<div fxFlex="25" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #sellerFilter placeholder="Seller">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="25" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #netAmountFilter placeholder="Net Amount">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="25" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #descriptionFilter placeholder="Description">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="25" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #dateFilter placeholder="Date">
+			</md-form-field>
+		</div>
+
+	</div>
+
+	<div fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': '#1e91cf'}"> <md-icon>autorenew</md-icon> Filter </button>
+	</div>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/transactions/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Index Column -->
+	<ng-container cdkColumnDef="index">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> # </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.index}} </md-cell>
+	</ng-container>
+
+	<!-- Seller Column -->
+	<ng-container cdkColumnDef="seller">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.seller}} </md-cell>
+	</ng-container>
+
+	<!-- Net Amount Column -->
+	<ng-container cdkColumnDef="net_amount">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Net Amount </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.net_amount}} </md-cell>
+	</ng-container>
+
+	<!-- Description Column -->
+	<ng-container cdkColumnDef="description">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.description}} </md-cell>
+	</ng-container>
+
+	<!-- Date Column -->
+	<ng-container cdkColumnDef="date">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date}} </md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+
