@@ -20,6 +20,8 @@ import { TransactionsListComponent } from './pages/transactions/transactions-lis
 import { TransactionsFormComponent } from './pages/transactions/transactions-form.component';
 import { RecurringOrdersListComponent } from './pages/recurring-orders/recurring-orders-list.component';
 import { RecurringOrdersFormComponent } from './pages/recurring-orders/recurring-orders-form.component';
+import { ReturnsListComponent } from './pages/returns/returns-list.component';
+import { ReturnsFormComponent } from './pages/returns/returns-form.component';
 
 const routes: Routes = [
 	{
@@ -168,6 +170,22 @@ const routes: Routes = [
 				data: {
 					title: 'Recurring Order',
 					breadcrumb: [ ['Home', 'dashboard'], ['Recurring Orders', 'recurring-orders'] ]
+				}
+			},
+			{
+				path: 'returns',
+				component: ReturnsListComponent,
+				data: {
+					title: 'Returns',
+					breadcrumb: [ ['Home', 'dashboard'], ['Returns', 'returns'] ]
+				}
+			},
+			{
+				path: 'returns/create',
+				component: ReturnsFormComponent,
+				data: {
+					title: 'Returns',
+					breadcrumb: [ ['Home', 'dashboard'], ['Returns', 'returns'] ]
 				}
 			}
 		]

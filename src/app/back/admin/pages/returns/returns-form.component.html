@@ -1,0 +1,104 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Product Return </span>
+	</h3>
+</div>
+
+<form #retunsForm="ngForm" (ngSubmit)="createTransaction(returnsForm)" [formGroup]="form" class="form-content" [ngStyle]="{'padding': '30px'}">
+
+	<h3> Order Information </h3>
+
+	<div class="order-information" [ngStyle]="{'padding': '30px'}">
+		<md-form-field>
+			<input mdInput placeholder="Order ID" [formControl]="orderIDInput">
+		</md-form-field>
+
+		<md-form-field [ngStyle]="{'width': '300px'}">
+			<input mdInput [mdDatepicker]="picker" placeholder="Order Date">
+			<md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+			<md-datepicker #picker></md-datepicker>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Customer">
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="First Name" [formControl]="firstNameInput">
+			<md-error *ngIf="firstNameInput.hasError('required')">
+				First name is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Last Name" [formControl]="lastNameInput">
+			<md-error *ngIf="lastNameInput.hasError('requried')">
+				Last name is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="E-Mail" [formControl]="emailInput">
+			<md-error *ngIf="emailInput.hasError('required')">
+				Email is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Telephone" [formControl]="telephoneInput">
+			<md-error *ngIf="telephoneInput.hasError('required')">
+				Telephone is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+	</div>
+
+	<h3> Product Information & Reason for Return </h3>
+
+	<div class="product-information" [ngStyle]="{'padding': '30px'}">
+		<md-form-field>
+			<input mdInput placeholder="Product" [formControl]="productInput">
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Model" [formControl]="modelInput">
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Quantity">
+		</md-form-field>
+
+		<md-select placeholder="Return Reason">
+			<md-option value="Dead On Arrival"> Dead On Arrival </md-option>
+			<md-option value="Faulty, please supply details"> Faulty, please supply details </md-option>
+			<md-option value="Order Error"> Order Error </md-option>
+			<md-option value="Other, please supply details"> Other, please supply details </md-option>
+			<md-option value="Received Wrong Item"> Received Wrong Item </md-option>
+		</md-select>
+
+		<md-select placeholder="Opened">
+			<md-option value="Opened"> Opened </md-option>
+			<md-option value="Unopened"> Unopened </md-option>
+		</md-select>
+
+		<md-form-field>
+			<textarea mdInput placeholder="Comment"></textarea>
+		</md-form-field>
+
+		<md-select placeholder="Return Action">
+			<md-option value="Credit Issued"> Credit Issued </md-option>
+			<md-option value="Refunded"> Refunded </md-option>
+			<md-option value="Replacement Sent"> Replacement Sent </md-option>
+		</md-select>
+
+		<md-select placeholder="Return Status">
+			<md-option value="Awaiting Products"> Awaiting Products </md-option>
+			<md-option value="Complete"> Complete </md-option>
+			<md-option value="Pending"> Pending </md-option>
+		</md-select>
+	</div>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Return </button>
+	</div>
+</form>

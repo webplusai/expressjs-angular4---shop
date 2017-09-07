@@ -37,6 +37,8 @@ import { TransactionsListComponent } from './pages/transactions/transactions-lis
 import { TransactionsFormComponent } from './pages/transactions/transactions-form.component';
 import { RecurringOrdersListComponent } from './pages/recurring-orders/recurring-orders-list.component';
 import { RecurringOrdersFormComponent } from './pages/recurring-orders/recurring-orders-form.component';
+import { ReturnsListComponent } from './pages/returns/returns-list.component';
+import { ReturnsFormComponent } from './pages/returns/returns-form.component';
 
 @NgModule({
 	imports: [
@@ -77,7 +79,9 @@ import { RecurringOrdersFormComponent } from './pages/recurring-orders/recurring
 		TransactionsListComponent,
 		TransactionsFormComponent,
 		RecurringOrdersListComponent,
-		RecurringOrdersFormComponent
+		RecurringOrdersFormComponent,
+		ReturnsListComponent,
+		ReturnsFormComponent
 	]
 })
 export class AdminModule { }
