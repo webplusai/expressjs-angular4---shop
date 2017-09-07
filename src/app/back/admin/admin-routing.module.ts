@@ -19,6 +19,7 @@ import { NewsFormComponent } from './pages/news/news-form.component';
 import { TransactionsListComponent } from './pages/transactions/transactions-list.component';
 import { TransactionsFormComponent } from './pages/transactions/transactions-form.component';
 import { RecurringOrdersListComponent } from './pages/recurring-orders/recurring-orders-list.component';
+import { RecurringOrdersFormComponent } from './pages/recurring-orders/recurring-orders-form.component';
 
 const routes: Routes = [
 	{
@@ -158,7 +159,15 @@ const routes: Routes = [
 				component: RecurringOrdersListComponent,
 				data: {
 					title: 'Recurring Orders',
-					breadcrumb: [ ['Home', 'dashboard'], ['Transactions', 'transactions'] ]
+					breadcrumb: [ ['Home', 'dashboard'], ['Recurring Orders', 'recurring-orders'] ]
+				}
+			},
+			{
+				path: 'recurring-orders/create',
+				component: RecurringOrdersFormComponent,
+				data: {
+					title: 'Recurring Order',
+					breadcrumb: [ ['Home', 'dashboard'], ['Recurring Orders', 'recurring-orders'] ]
 				}
 			}
 		]

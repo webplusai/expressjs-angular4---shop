@@ -1,0 +1,41 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> New Recurring Order </span>
+	</h3>
+</div>
+
+<form #recurringOrders="ngForm" (ngSubmit)="createTransaction(recurringOrdersForm)" class="form-content" [ngStyle]="{'padding': '30px'}">
+	<md-form-field>
+		<input mdInput placeholder="Recurring ID">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Order ID">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Payment Reference">
+	</md-form-field>
+
+	<md-select placeholder="Customer">
+		<md-option value="Customer1"> Customer1 </md-option>
+		<md-option value="Customer2"> Customer2 </md-option>
+		<md-option value="Customer3"> Customer3 </md-option>
+	</md-select>
+
+	<md-select placeholder="Status">
+		<md-option value="Enabled"> Enabled </md-option>
+		<md-option value="Disabled"> Disabled </md-option>
+	</md-select>
+
+	<md-form-field [ngStyle]="{'width': '300px'}">
+		<input mdInput [mdDatepicker]="picker" placeholder="Date Added">
+		<md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+		<md-datepicker #picker></md-datepicker>
+	</md-form-field>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Recurring Order </button>
+	</div>
+</form>
