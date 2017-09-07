@@ -1,0 +1,35 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> New transaction </span>
+	</h3>
+</div>
+
+<form #transactionsForm="ngForm" (ngSubmit)="createTransaction(transactionsForm)" [formGroup]="form" class="form-content" [ngStyle]="{'padding': '30px'}">
+	<md-select placeholder="From">
+		<md-option value="User1"> User1 </md-option>
+		<md-option value="User2"> User2 </md-option>
+		<md-option value="User3"> User3 </md-option>
+	</md-select>
+
+	<md-select placeholder="To">
+		<md-option value="User1"> User1 </md-option>
+		<md-option value="User2"> User2 </md-option>
+		<md-option value="User3"> User3 </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="Amount*" [formControl]="amountInput">
+		<md-error *ngIf="amountInput.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<textarea mdInput placeholder="Description"></textarea>
+	</md-form-field>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Transaction </button>
+	</div>
+</form>

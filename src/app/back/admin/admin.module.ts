@@ -34,6 +34,7 @@ import { BloggersFormComponent } from './pages/bloggers/bloggers-form.component'
 import { NewsListComponent } from './pages/news/news-list.component';
 import { NewsFormComponent } from './pages/news/news-form.component';
 import { TransactionsListComponent } from './pages/transactions/transactions-list.component';
+import { TransactionsFormComponent } from './pages/transactions/transactions-form.component';
 
 @NgModule({
 	imports: [
@@ -71,7 +72,8 @@ import { TransactionsListComponent } from './pages/transactions/transactions-lis
 		BloggersFormComponent,
 		NewsListComponent,
 		NewsFormComponent,
-		TransactionsListComponent
+		TransactionsListComponent,
+		TransactionsFormComponent
 	]
 })
 export class AdminModule { }

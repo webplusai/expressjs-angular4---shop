@@ -17,6 +17,7 @@ import { BloggersFormComponent } from './pages/bloggers/bloggers-form.component'
 import { NewsListComponent } from './pages/news/news-list.component';
 import { NewsFormComponent } from './pages/news/news-form.component';
 import { TransactionsListComponent } from './pages/transactions/transactions-list.component';
+import { TransactionsFormComponent } from './pages/transactions/transactions-form.component';
 
 const routes: Routes = [
 	{
@@ -141,6 +142,14 @@ const routes: Routes = [
 				data: {
 					title: 'Transactions',
 					breadcrumb: [ ['Home', 'dashboard'], ['Transactions', 'transactions'] ]
+				}
+			},
+			{
+				path: 'transactions/create',
+				component: TransactionsFormComponent,
+				data: {
+					title: 'Transactions',
+					breadcrumbb: [ ['Home', 'dashboard'], ['Transactions', 'transactions'] ]
 				}
 			}
 		]

@@ -1,0 +1,17 @@
+.mat-form-field {
+    display: block;
+}
+
+.mat-select {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mat-form-field, .mat-select {
+    width: calc(100% - 30px);
+    margin-left: 30px;
+}
+
+textarea {
+    height: 100px;
+}
