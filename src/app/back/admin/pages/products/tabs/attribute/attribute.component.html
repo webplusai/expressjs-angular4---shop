@@ -1,3 +1,30 @@
 <div class="tab-attribute product-tab">
+	<md-table [dataSource]="dataSource">
+		<ng-container mdColumnDef="attribute">
+			<md-header-cell *mdHeaderCellDef> Attribute </md-header-cell>
+			<md-cell *mdCellDef="let element">
+				<md-form-field *ngIf="!element.isLast">
+					<input mdInput placeholder="Attribute">
+				</md-form-field>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="text">
+			<md-header-cell *mdHeaderCellDef> Text </md-header-cell>
+			<md-cell *mdCellDef="let element">
+				<md-form-field *ngIf="!element.isLast">
+					<textarea mdInput placeholder="Text"></textarea>
+				</md-form-field>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef> </md-header-cell>
+			<md-cell *mdCellDef="let element">
+				<md-icon *ngIf="element.isLast" (click)="addAttribute()">add_circle</md-icon>
+				<md-icon *ngIf="!element.isLast" (click)="removeAttribute(element.index)">remove_circle</md-icon>
+			</md-cell>
+		</ng-container>
 
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
 </div>

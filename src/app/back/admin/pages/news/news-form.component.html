@@ -1,0 +1,28 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> New seller </span>
+	</h3>
+</div>
+
+<form #productsForm="ngForm" (ngSubmit)="createProduct(productsForm)">
+	<md-form-field>
+		<input mdInput placeholder="Title">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Description">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Author">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Category">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Date Posted">
+	</md-form-field>
+</form>

@@ -12,6 +12,10 @@ import { CategoriesListComponent } from './pages/categories/categories-list.comp
 import { CategoriesFormComponent } from './pages/categories/categories-form.component';
 import { ProductsListComponent } from './pages/products/products-list.component';
 import { ProductsFormComponent } from './pages/products/products-form.component';
+import { BloggersListComponent } from './pages/bloggers/bloggers-list.component';
+import { BloggersFormComponent } from './pages/bloggers/bloggers-form.component';
+import { NewsListComponent } from './pages/news/news-list.component';
+import { NewsFormComponent } from './pages/news/news-form.component';
 
 const routes: Routes = [
 	{
@@ -96,6 +100,38 @@ const routes: Routes = [
 				data: {
 					title: 'Products',
 					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
+				}
+			},
+			{
+				path: 'bloggers',
+				component: BloggersListComponent,
+				data: {
+					title: 'Bloggers',
+					breadcrumb: [ ['Home', 'dashboard'], ['Bloggers', 'bloggers'] ]
+				}
+			},
+			{
+				path: 'bloggers/create',
+				component: BloggersFormComponent,
+				data: {
+					title: 'Bloggers',
+					breadcrumb: [ ['Home', 'dashboard'], ['Bloggers', 'bloggers'] ]
+				}
+			},
+			{
+				path: 'news',
+				component: NewsListComponent,
+				data: {
+					title: 'News',
+					breadcrumb: [ ['Home', 'dashboard'], ['News', 'news'] ]
+				}
+			},
+			{
+				path: 'news/create',
+				component: NewsFormComponent,
+				data: {
+					title: 'News',
+					breadcrumb: [ ['Home', 'dashboard'], ['News', 'news'] ]
 				}
 			}
 		]

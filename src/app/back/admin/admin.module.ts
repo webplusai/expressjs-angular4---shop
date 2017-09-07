@@ -29,6 +29,10 @@ import { GeneralComponent } from './pages/products/tabs/general/general.componen
 import { DataComponent } from './pages/products/tabs/data/data.component';
 import { LinksComponent } from './pages/products/tabs/links/links.component';
 import { AttributeComponent } from './pages/products/tabs/attribute/attribute.component';
+import { BloggersListComponent } from './pages/bloggers/bloggers-list.component';
+import { BloggersFormComponent } from './pages/bloggers/bloggers-form.component';
+import { NewsListComponent } from './pages/news/news-list.component';
+import { NewsFormComponent } from './pages/news/news-form.component';
 
 @NgModule({
 	imports: [
@@ -61,7 +65,11 @@ import { AttributeComponent } from './pages/products/tabs/attribute/attribute.co
 		GeneralComponent,
 		DataComponent,
 		LinksComponent,
-		AttributeComponent
+		AttributeComponent,
+		BloggersListComponent,
+		BloggersFormComponent,
+		NewsListComponent,
+		NewsFormComponent
 	]
 })
 export class AdminModule { }
