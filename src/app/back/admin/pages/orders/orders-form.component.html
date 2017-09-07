@@ -1,0 +1,35 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Order </span>
+	</h3>
+</div>
+
+<form #retunsForm="ngForm" (ngSubmit)="createTransaction(returnsForm)" [formGroup]="form" class="form-content" [ngStyle]="{'padding': '30px'}">
+
+	<md-tab-group>
+		<md-tab label="Customer Details">
+			<admin-orders-tab-customer-details> </admin-order-tab-customer-details>
+		</md-tab>
+
+		<md-tab label="Products">
+			<admin-orders-tab-products> </admin-orders-tab-products>
+		</md-tab>
+
+		<md-tab label="Payment Details">
+			<admin-orders-tab-payment-details> </admin-orders-tab-payment-details>
+		</md-tab>
+
+		<md-tab label="Shipping Details">
+			<admin-orders-tab-shipping-details> </admin-orders-tab-shipping-details>
+		</md-tab>
+
+		<md-tab label="Totals">
+			<admin-orders-tab-totals> </admin-orders-tab-totals>
+		</md-tab>
+	</md-tab-group>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Return </button>
+	</div>
+</form>

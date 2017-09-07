@@ -39,6 +39,13 @@ import { RecurringOrdersListComponent } from './pages/recurring-orders/recurring
 import { RecurringOrdersFormComponent } from './pages/recurring-orders/recurring-orders-form.component';
 import { ReturnsListComponent } from './pages/returns/returns-list.component';
 import { ReturnsFormComponent } from './pages/returns/returns-form.component';
+import { OrdersListComponent } from './pages/orders/orders-list.component';
+import { OrdersFormComponent } from './pages/orders/orders-form.component';
+import { CustomerDetailsComponent } from './pages/orders/tabs/customer-details/customer-details.component';
+import { ProductsComponent } from './pages/orders/tabs/products/products.component';
+import { PaymentDetailsComponent } from './pages/orders/tabs/payment-details/payment-details.component';
+import { TotalsComponent } from './pages/orders/tabs/totals/totals.component';
+import { ShippingDetailsComponent } from './pages/orders/tabs/shipping-details/shipping-details.component';
 
 @NgModule({
 	imports: [
@@ -81,7 +88,14 @@ import { ReturnsFormComponent } from './pages/returns/returns-form.component';
 		RecurringOrdersListComponent,
 		RecurringOrdersFormComponent,
 		ReturnsListComponent,
-		ReturnsFormComponent
+		ReturnsFormComponent,
+		OrdersListComponent,
+		OrdersFormComponent,
+		CustomerDetailsComponent,
+		ProductsComponent,
+		PaymentDetailsComponent,
+		TotalsComponent,
+		ShippingDetailsComponent
 	]
 })
 export class AdminModule { }

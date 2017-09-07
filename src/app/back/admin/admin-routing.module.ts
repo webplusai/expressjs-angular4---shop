@@ -22,6 +22,8 @@ import { RecurringOrdersListComponent } from './pages/recurring-orders/recurring
 import { RecurringOrdersFormComponent } from './pages/recurring-orders/recurring-orders-form.component';
 import { ReturnsListComponent } from './pages/returns/returns-list.component';
 import { ReturnsFormComponent } from './pages/returns/returns-form.component';
+import { OrdersListComponent } from './pages/orders/orders-list.component';
+import { OrdersFormComponent } from './pages/orders/orders-form.component';
 
 const routes: Routes = [
 	{
@@ -186,6 +188,22 @@ const routes: Routes = [
 				data: {
 					title: 'Returns',
 					breadcrumb: [ ['Home', 'dashboard'], ['Returns', 'returns'] ]
+				}
+			},
+			{
+				path: 'orders',
+				component: OrdersListComponent,
+				data: {
+					title: 'Orders',
+					breadcrumb: [ ['Home', 'dashboard'], ['Orders', 'orders'] ]
+				}
+			},
+			{
+				path: 'orders/create',
+				component: OrdersFormComponent,
+				data: {
+					title: 'Orders',
+					breadcrumb: [ ['Home', 'dashboard'], ['Orders', 'orders'] ]
 				}
 			}
 		]
