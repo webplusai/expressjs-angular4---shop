@@ -25,6 +25,7 @@ import { ReturnsFormComponent } from './pages/returns/returns-form.component';
 import { OrdersListComponent } from './pages/orders/orders-list.component';
 import { OrdersFormComponent } from './pages/orders/orders-form.component';
 import { SuperAdministratorListComponent } from './pages/super-administrator/super-administrator-list.component';
+import { SuperAdministratorFormComponent } from './pages/super-administrator/super-administrator-form.component';
 
 const routes: Routes = [
 	{
@@ -210,6 +211,14 @@ const routes: Routes = [
 			{
 				path: 'super-administrator',
 				component: SuperAdministratorListComponent,
+				data: {
+					title: 'Super Administrator',
+					breadcrumb: [ ['Home', 'dashboard'], ['Super Administrator', 'super-administrator'] ]
+				}
+			},
+			{
+				path: 'super-administrator/create',
+				component: SuperAdministratorFormComponent,
 				data: {
 					title: 'Super Administrator',
 					breadcrumb: [ ['Home', 'dashboard'], ['Super Administrator', 'super-administrator'] ]

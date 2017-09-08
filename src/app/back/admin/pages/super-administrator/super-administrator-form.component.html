@@ -1,0 +1,66 @@
+<div [ngStyle]="{'padding': '30px'}">
+	<md-form-field>
+		<input mdInput placeholder="Username" [formControl]="username">
+		<md-error *ngIf="username.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-select placeholder="User Group">
+		<md-option value="Administrator"> Administrator </md-option>
+		<md-option value="Demonstration"> Demonstration </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="First Name" [formControl]="firstName">
+		<md-error *ngIf="firstName.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Last Name" [formControl]="lastName">
+		<md-error *ngIf="lastName.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="E-Mail" [formControl]="email">
+		<md-error *ngIf="email.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<div class="image" [ngStyle]="{'margin-bottom': '20px'}">
+		<div [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Image </div>
+		<img width="100" height="100" class="category-image" src="http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png" (click)="togglePopover()">
+		<div class="popover hidden" role="tooltip">
+			<div class="popover-arrow"> </div>
+			<div class="popover-content">
+				<input type="file" id="imgInput" (change)="readURL($event)" style="display:none" accept="image/*"/> 
+				<button md-button class="action-button" [ngStyle]="{'background': 'rgb(30, 145, 207)'}" (click)="uploadImage()"> <md-icon>create</md-icon> </button>
+				<button md-button class="action-button" [ngStyle]="{'background': 'rgb(245, 107, 107)'}" (click)="removeImage()"> <md-icon>delete</md-icon> </button>
+			</div>
+		</div>
+	</div>
+
+	<md-form-field>
+		<input mdInput placeholder="Password" [formControl]="password">
+		<md-error *ngIf="password.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Confirm" [formControl]="confirm">
+		<md-error *ngIf="confirm.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-select placeholder="Status">
+		<md-option value="Enabled"> Enabled </md-option>
+		<md-option value="Disabled"> Disabled </md-option>
+	</md-select>
+</div>

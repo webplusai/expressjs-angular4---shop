@@ -47,6 +47,7 @@ import { PaymentDetailsComponent } from './pages/orders/tabs/payment-details/pay
 import { TotalsComponent } from './pages/orders/tabs/totals/totals.component';
 import { ShippingDetailsComponent } from './pages/orders/tabs/shipping-details/shipping-details.component';
 import { SuperAdministratorListComponent } from './pages/super-administrator/super-administrator-list.component';
+import { SuperAdministratorFormComponent } from './pages/super-administrator/super-administrator-form.component';
 
 @NgModule({
 	imports: [
@@ -97,7 +98,8 @@ import { SuperAdministratorListComponent } from './pages/super-administrator/sup
 		PaymentDetailsComponent,
 		TotalsComponent,
 		ShippingDetailsComponent,
-		SuperAdministratorListComponent
+		SuperAdministratorListComponent,
+		SuperAdministratorFormComponent
 	]
 })
 export class AdminModule { }
