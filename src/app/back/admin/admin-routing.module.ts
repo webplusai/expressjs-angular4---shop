@@ -28,6 +28,7 @@ import { SuperAdministratorListComponent } from './pages/super-administrator/sup
 import { SuperAdministratorFormComponent } from './pages/super-administrator/super-administrator-form.component';
 import { ModeratorsListComponent } from './pages/moderators/moderators-list.component';
 import { ModeratorsFormComponent } from './pages/moderators/moderators-form.component';
+import { StaffSettingListComponent } from './pages/staff-setting/staff-setting-list.component';
 
 const routes: Routes = [
 	{
@@ -240,6 +241,14 @@ const routes: Routes = [
 				data: {
 					title: 'Moderators',
 					breadcrumb: [ ['Home', 'dashboard'], ['Moderators', 'moderators'] ]
+				}
+			},
+			{
+				path: 'staff-setting',
+				component: StaffSettingListComponent,
+				data: {
+					title: 'Staff Setting',
+					breadcrumb: [ ['Home', 'dashboard'], ['Staff Setting', 'staff-setting'] ]
 				}
 			}
 		]

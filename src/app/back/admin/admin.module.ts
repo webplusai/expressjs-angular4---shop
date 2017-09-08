@@ -50,6 +50,7 @@ import { SuperAdministratorListComponent } from './pages/super-administrator/sup
 import { SuperAdministratorFormComponent } from './pages/super-administrator/super-administrator-form.component';
 import { ModeratorsListComponent } from './pages/moderators/moderators-list.component';
 import { ModeratorsFormComponent } from './pages/moderators/moderators-form.component';
+import { StaffSettingListComponent } from './pages/staff-setting/staff-setting-list.component';
 
 @NgModule({
 	imports: [
@@ -103,7 +104,8 @@ import { ModeratorsFormComponent } from './pages/moderators/moderators-form.comp
 		SuperAdministratorListComponent,
 		SuperAdministratorFormComponent,
 		ModeratorsListComponent,
-		ModeratorsFormComponent
+		ModeratorsFormComponent,
+		StaffSettingListComponent
 	]
 })
 export class AdminModule { }
