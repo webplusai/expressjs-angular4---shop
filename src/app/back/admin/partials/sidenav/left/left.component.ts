@@ -40,7 +40,7 @@ export class LeftSidenavComponent implements OnInit {
 																			subMenuItems: [ 
 																				{ text: 'Super administrator', 	link: 'super-administrator' },
 																				{ text: 'Staff setting', 		link: 'staff-setting' },
-																				{ text: 'Moderators', 			link: 'moderator' }
+																				{ text: 'Moderators', 			link: 'moderators' }
 																			] },
 		{ icon: 'mail_outline', 		text: 'Advertisements', 			
 																			subMenuItems: [ 
