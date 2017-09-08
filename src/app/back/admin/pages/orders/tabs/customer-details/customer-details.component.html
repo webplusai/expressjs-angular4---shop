@@ -1,3 +1,55 @@
-<p>
-  customer-details works!
-</p>
+<md-select placeholder="Store">
+	<md-option value="Default"> Default </md-option>
+</md-select>
+
+<md-select placeholder="Currency">
+	<md-option value="Euro"> Euro </md-option>
+	<md-option value="Pound Sterling"> Pound Sterling </md-option>
+	<md-option value="US Dollar"> US Dollar </md-option>
+</md-select>
+
+<md-select placeholder="Customer">
+	<md-option value="Customer1"> Customer1 </md-option>
+	<md-option value="Customer2"> Customer2 </md-option>
+	<md-option value="Customer3"> Customer3 </md-option>
+</md-select>
+
+<md-select placeholder="Customer Group">
+	<md-option vaue="Default"> Default </md-option>
+</md-select>
+
+<md-form-field>
+	<input mdInput placeholder="First Name*" [formControl]="firstName">
+	<md-error *ngIf="firstName.hasError('required')">
+		This field is <strong> required </strong>
+	</md-error>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Last Name*" [formControl]="lastName">
+	<md-error *ngIf="lastName.hasError('required')">
+		This field is <strong> required </strong>
+	</md-error>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="E-Mail*" [formControl]="email">
+	<md-error *ngIf="email.hasError('required')">
+		This field is <strong> required </strong>
+	</md-error>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Telephone*" [formControl]="telephone">
+	<md-error *ngIf="telephone.hasError('required')">
+		This field is <strong> required </strong>
+	</md-error>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Fax">
+</md-form-field>
+
+<div fxLayout="row" fxLayoutAlign="end center">
+	<button md-button type="button" class="btn-primary"> <md-icon>arrow_forward</md-icon> Continue </button>
+</div>

@@ -1,15 +1,40 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-payment-details',
-  templateUrl: './payment-details.component.html',
-  styleUrls: ['./payment-details.component.scss']
+	selector: 'admin-orders-tab-payment-details',
+	templateUrl: './payment-details.component.html',
+	styleUrls: ['./payment-details.component.scss']
 })
 export class PaymentDetailsComponent implements OnInit {
 
-  constructor() { }
+	firstName = new FormControl('', [
+		Validators.required
+	]);
 
-  ngOnInit() {
-  }
+	lastName = new FormControl('', [
+		Validators.required
+	]);
+
+	address1 = new FormControl('', [
+		Validators.required
+	]);
+
+	city = new FormControl('', [
+		Validators.required
+	]);
+
+	country = new FormControl('', [
+		Validators.required
+	]);
+
+	region_state = new FormControl('', [
+		Validators.required
+	]);
+
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

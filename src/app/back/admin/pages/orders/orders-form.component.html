@@ -5,11 +5,11 @@
 	</h3>
 </div>
 
-<form #retunsForm="ngForm" (ngSubmit)="createTransaction(returnsForm)" [formGroup]="form" class="form-content" [ngStyle]="{'padding': '30px'}">
+<form #retunsForm="ngForm" (ngSubmit)="createTransaction(returnsForm)" class="form-content" [ngStyle]="{'padding': '30px'}">
 
 	<md-tab-group>
 		<md-tab label="Customer Details">
-			<admin-orders-tab-customer-details> </admin-order-tab-customer-details>
+			<admin-orders-tab-customer-details> </admin-orders-tab-customer-details>
 		</md-tab>
 
 		<md-tab label="Products">
@@ -28,8 +28,4 @@
 			<admin-orders-tab-totals> </admin-orders-tab-totals>
 		</md-tab>
 	</md-tab-group>
-
-	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
-		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Return </button>
-	</div>
 </form>

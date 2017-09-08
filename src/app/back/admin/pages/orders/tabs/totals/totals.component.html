@@ -1,3 +1,95 @@
-<p>
-  totals works!
-</p>
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Product ID Column -->
+	<ng-container cdkColumnDef="product">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Product </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.product}} </md-cell>
+	</ng-container>
+
+	<!-- Model Column -->
+	<ng-container cdkColumnDef="model">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Model </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.model}} </md-cell>
+	</ng-container>
+
+	<!-- Quantity Column -->
+	<ng-container cdkColumnDef="quantity">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Quantity </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.quantity}} </md-cell>
+	</ng-container>
+
+	<!-- Unit Price Column -->
+	<ng-container cdkColumnDef="unit_price">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> unit_price </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.unit_price}} </md-cell>
+	</ng-container>
+
+	<!-- Total Column -->
+	<ng-container cdkColumnDef="total">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Total </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.total}} </md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<h3> Order Details </h3>
+
+<div fxLayout="column" class="apply-control">
+	<div fxLayout="row">
+		<md-select placeholder="Shipping Method">
+			<md-option value="Flat Shipping Rate - $5.00"> Flat Shipping Rate - $5.00 </md-option>
+		</md-select>
+		<button md-button type="button" class="btn-primary" [ngStyle]="{'margin-top': '7.5px'}"> Apply </button>
+	</div>
+
+	<div fxLayout="row">
+		<md-select placeholder="Payment Method">
+			<md-option value="Cash on Delivery"> Cash on Delivery </md-option>
+		</md-select>
+		<button md-button type="button" class="btn-primary" [ngStyle]="{'margin-top': '7.5px'}"> Apply </button>
+	</div>
+
+	<div fxLayout="row">
+		<md-form-field>
+			<input mdInput="Coupon">
+		</md-form-field>
+		<button md-button type="button" class="btn-primary"> Apply </button>
+	</div>
+
+	<div fxLayout="row">
+		<md-form-field>
+			<input mdInput="Voucher">
+		</md-form-field>
+		<button md-button type="button" class="btn-primary"> Apply </button>
+	</div>
+
+	<div fxLayout="row">
+		<md-form-field>
+			<input mdInput="Reward">
+		</md-form-field>
+		<button md-button type="button" class="btn-primary"> Apply </button>
+	</div>
+</div>
+
+<md-select placeholder="Order Status">
+	<md-option *ngFor="let status of orderStatuses" value="{{status}}"> {{ status }} </md-option>
+</md-select>
+
+<md-form-field>
+	<textarea mdInput placeholder="Comment"></textarea>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Affiliate">
+</md-form-field>
+
+<div fxLayout="row" [ngStyle]="{'justify-content': 'space-between', 'margin-top': '20px'}">
+	<button md-button type="button" class="btn-outline"> <md-icon>arrow_back</md-icon> Back </button>
+
+	<div fxLayout="row">
+		<button md-button type="button" class="btn-refresh"><md-icon class="white-icon">autorenew</md-icon></button>
+		<button md-button type="button" class="btn-primary"> <md-icon class="white-icon">arrow_forward</md-icon> Continue </button>
+	</div>
+</div>

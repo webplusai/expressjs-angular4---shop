@@ -1,3 +1,120 @@
-<p>
-  products works!
-</p>
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Product ID Column -->
+	<ng-container cdkColumnDef="product">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Product </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.product}} </md-cell>
+	</ng-container>
+
+	<!-- Model Column -->
+	<ng-container cdkColumnDef="model">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Model </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.model}} </md-cell>
+	</ng-container>
+
+	<!-- Quantity Column -->
+	<ng-container cdkColumnDef="quantity">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Quantity </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.quantity}} </md-cell>
+	</ng-container>
+
+	<!-- Unit Price Column -->
+	<ng-container cdkColumnDef="unit_price">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> unit_price </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.unit_price}} </md-cell>
+	</ng-container>
+
+	<!-- Total Column -->
+	<ng-container cdkColumnDef="total">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Total </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.total}} </md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row"> 
+			<button class="action-button btn-primary" type="button" md-button><md-icon>add_circle</md-icon></button>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-tab-group [ngStyle]="{'margin-top': '20px'}">
+	<md-tab label="Products">
+		<h3> Add Product(s) </h3>
+		<md-select placeholder="Choose Product">
+			<md-option value="Apple Cinema 30"> Apple Cinema 30 </md-option>
+			<md-option value="Canon EOS 5D"> Canon EOS 5D </md-option>
+			<md-option value="HP LP 3065"> HP LP 3065 </md-option>
+			<md-option value="HTC Touch HD"> HTC Touch HD </md-option>
+			<md-option value="iMac"> iMac </md-option>
+		</md-select>
+		<md-form-field>
+			<input mdInput placeholder="Quantity">
+		</md-form-field>
+		<h3> Choose Option(s) </h3>
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button type="button" class="btn-primary"> <md-icon class="white-icon">add_circle</md-icon> Add Product </button>
+		</div>
+	</md-tab>
+
+	<md-tab label="Vouchers">
+		<h3> Add Voucher(s) </h3>
+		<md-form-field>
+			<input mdInput placeholder="Receipient's Name*" [formControl]="receipientName">
+			<md-error *ngIf="receipientName.hasError('requried')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Receipient's E-mail*" [formControl]="receipientEmail">
+			<md-error *ngIf="receipientEmail.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Sender's Name*" [formControl]="senderName">
+			<md-error *ngIf="senderName.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Sender's E-mail*" [formControl]="senderEmail">
+			<md-error *ngIf="senderEmail.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-select placeholder="Gift Certificate Theme*" [formControl]="certificateTheme">
+			<md-option value="Birthday"> Birthday </md-option>
+			<md-option value="Christmas"> Christmas </md-option>
+			<md-option value="General"> General </md-option>
+		</md-select>
+
+		<md-form-field>
+			<textarea mdInput placeholder="Message"></textarea>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Amount" [formControl]="amount">
+			<md-error *ngIf="amount.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button type="button" class="btn-primary"><md-icon class="white-icon">add_circle</md-icon> Add Voucher </button>
+		</div>
+	</md-tab>
+</md-tab-group>
+
+<div fxLayout="row" [ngStyle]="{'justify-content': 'space-between', 'margin-top': '20px'}">
+	<button md-button type="button" class="btn-outline"> <md-icon>arrow_back</md-icon> Back </button>
+	<button md-button type="button" class="btn-primary"> <md-icon class="white-icon">arrow_forward</md-icon> Continue </button>
+</div>

@@ -1,0 +1,51 @@
+.apply-control {
+	.mat-select {
+		display: inline-blick;
+		width: initial;
+		flex: 1;
+	}
+
+	.mat-form-field {
+		width: initial;
+		flex: 1;
+	}
+
+	.mat-button {
+		height: 40px;
+		line-height: 40px;
+	}
+}
+
+.btn-outline {
+	border: 1px solid #aaa;
+	border-radius: 4px;
+}
+
+.btn-primary {
+	background: #1e91cf;
+	color: #fff;
+}
+
+.btn-refresh {
+	background: rgb(243, 135, 51);
+    min-width: initial;
+    padding: 0px 10px;
+    margin-right: 5px;
+}
+
+.mat-form-field {
+    display: block;
+}
+
+.mat-select {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.mat-form-field, .mat-select {
+    width: 100%;
+}
+
+.white-icon {
+	color: #fff;
+}

@@ -1,3 +1,72 @@
-<p>
-  payment-details works!
-</p>
+<md-select placeholder="Choose Address">
+	<md-option value="Address1"> Address1 </md-option>
+	<md-option value="Address2"> Address2 </md-option>
+	<md-option value="Address3"> Address3 </md-option>
+</md-select>
+
+<md-form-field>
+	<input mdInput placeholder="First Name*" [formControl]="firstName">
+	<md-error *ngIf="firstName.hasError('required')">
+		This field is <strong> required </strong>
+	</md-error>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Last Name*" [formControl]="lastName">
+	<md-error *ngIf="lastName.hasError('required')">
+		This field is <strong> required </strong>
+	</md-error>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Company">
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Address1*" [formControl]="address1">
+	<md-error *ngIf="address1.hasError('required')">
+		This field is <strong> required </strong>
+	</md-error>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Address2">
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="City*" [formControl]="city">
+	<md-error *ngIf="city.hasError('required')">
+		This field is <strong> required </strong>
+	</md-error>
+</md-form-field>
+
+<md-form-field>
+	<input mdInput placeholder="Postcode">
+</md-form-field>
+
+<md-select placeholder="Country*" [formControl]="country">
+	<md-option value="Country 1"> Country 1 </md-option>
+	<md-option value="Country 2"> Country 2 </md-option>
+	<md-option value="Country 3"> Country 3 </md-option>
+	<md-option value="Country 4"> Country 4 </md-option>
+	<md-option value="Country 5"> Country 5 </md-option>
+</md-select>
+<md-error *ngIf="country.hasError('required')">
+	This field is <strong> required </strong>
+</md-error>
+
+<md-select placeholder="Region/State*" [formControl]="region_state">
+	<md-option value="State1"> State1 </md-option>
+	<md-option value="State2"> State2 </md-option>
+	<md-option value="State3"> State3 </md-option>
+	<md-option value="State4"> State4 </md-option>
+	<md-option value="State5"> State5 </md-option>
+</md-select>
+<md-error *ngIf="region_state.hasError('required')">
+	This field is <strong> required </strong>
+</md-error>
+
+<div fxLayout="row" [ngStyle]="{'justify-content': 'space-between', 'margin-top': '20px'}">
+	<button md-button type="button" class="btn-outline"> <md-icon>arrow_back</md-icon> Back </button>
+	<button md-button type="button" class="btn-primary"> <md-icon class="white-icon">arrow_forward</md-icon> Continue </button>
+</div>
