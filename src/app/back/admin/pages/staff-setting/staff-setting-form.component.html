@@ -1,0 +1,18 @@
+<div [ngStyle]="{'padding': '30px'}">
+	<md-form-field>
+		<input mdInput placeholder="User Group Name*" [formControl]="userGroupName">
+		<md-error *ngIf="userGroupName.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<span [ngStyle]="{'margin': '15px 0px'}"> Access Permission </span>
+	<div class="permissions">
+		<md-checkbox *ngFor="let permission of permissions" [attr.checked]="accessCheck"> {{ permission }} </md-checkbox>
+	</div>
+
+	<span [ngStyle]="{'margin': '15px 0px'}"> Modify Permission </span>
+	<div class="permissions">
+		<md-checkbox *ngFor="let permission of permissions"> {{ permission }} </md-checkbox>
+	</div>
+</div>

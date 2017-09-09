@@ -1,0 +1,16 @@
+.mat-form-field, .mat-checkbox, span {
+	display: block;
+}
+
+.mat-form-field {
+	width: 100%;
+}
+
+.permissions {
+	background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+}
