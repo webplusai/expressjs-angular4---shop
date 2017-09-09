@@ -30,6 +30,8 @@ import { ModeratorsListComponent } from './pages/moderators/moderators-list.comp
 import { ModeratorsFormComponent } from './pages/moderators/moderators-form.component';
 import { StaffSettingListComponent } from './pages/staff-setting/staff-setting-list.component';
 import { StaffSettingFormComponent } from './pages/staff-setting/staff-setting-form.component';
+import { AffiliationListComponent } from './pages/affiliation/affiliation-list.component';
+import { AffiliationFormComponent } from './pages/affiliation/affiliation-form.component';
 
 const routes: Routes = [
 	{
@@ -258,6 +260,22 @@ const routes: Routes = [
 				data: {
 					title: 'Staff Setting',
 					breadcrumb: [ ['Home', 'dashboard'], ['Staff Setting', 'staff-setting'] ]
+				}
+			}, 
+			{
+				path: 'affiliation',
+				component: AffiliationListComponent,
+				data: {
+					title: 'Affiliation',
+					breadcrumb: [ ['Home', 'dashboard'], ['Affiliation', 'affiliation'] ]
+				}
+			},
+			{
+				path: 'affiliation/create',
+				component: AffiliationFormComponent,
+				data: {
+					title: 'Affiliation',
+					breadcrumb: [ ['Home', 'dashboard'], ['Affiliation', 'affiliation'] ]
 				}
 			}
 		]

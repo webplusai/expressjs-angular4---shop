@@ -1,0 +1,94 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Affilation </span>
+	</h3>
+</div>
+
+<h3> Abstract Commissions </h3>
+
+<md-table [dataSource]="dataSourceTotal" [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Seller Column -->
+	<ng-container cdkColumnDef="total">
+		<md-header-cell *cdkHeaderCellDef> Total </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.total}} </md-cell>
+	</ng-container>
+
+	<!-- Pay Column -->
+	<ng-container cdkColumnDef="pay">
+		<md-header-cell *cdkHeaderCellDef> Pay </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.pay}} </md-cell>
+	</ng-container>
+
+	<!-- Waiting Column -->
+	<ng-container cdkColumnDef="waiting">
+		<md-header-cell *cdkHeaderCellDef> Waiting </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.waiting}} </md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumnsTotal"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumnsTotal;"></md-row>
+</md-table>
+
+<h3> Historical Order </h3>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/affiliation/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSourceHistoricalOrder" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Reference Order Column -->
+	<ng-container cdkColumnDef="reference_order">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Reference Order </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.reference_order}} </md-cell>
+	</ng-container>
+
+	<!-- Date Column -->
+	<ng-container cdkColumnDef="date">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date}} </md-cell>
+	</ng-container>
+
+	<!-- Client Column -->
+	<ng-container cdkColumnDef="client">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> client </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.client}} </md-cell>
+	</ng-container>
+
+	<!-- Commission Total Column -->
+	<ng-container cdkColumnDef="commission_total">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Commission Total </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.commission_total}} </md-cell>
+	</ng-container>
+
+	<!-- State Commission Column -->
+	<ng-container cdkColumnDef="state_commission">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> State Commission </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			<span class="state-commission"> {{row.state_commission}} </span>
+		</md-cell>
+	</ng-container>
+
+	<!-- State Payment Commission Column -->
+	<ng-container cdkColumnDef="state_payment_commission">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> State Payment Commission </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			<span class="state-payment-commission"> {{row.state_payment_commission}}  </span>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumnsHistoricalOrder"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumnsHistoricalOrder;"></md-row>
+</md-table>
+
+<md-paginator
+	#paginatorHistoricalOrder
+	[length]="tableDataHistoricalOrder.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

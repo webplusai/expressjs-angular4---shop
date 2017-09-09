@@ -1,0 +1,41 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Create Historical Order </span>
+	</h3>
+</div>
+
+<form #historicalOrdersForm="ngForm" (ngSubmit)="createHistoricalOrder(historicalOrdersForm)" class="form-content" [ngStyle]="{'padding': '30px'}">
+	
+	<md-form-field>
+		<input mdInput placeholder="Reference Order">
+	</md-form-field>
+
+	<md-form-field [ngStyle]="{'width': '300px'}">
+		<input mdInput [mdDatepicker]="picker" placeholder="Date">
+		<md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+		<md-datepicker #picker></md-datepicker>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Client">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Commission Total">
+	</md-form-field>
+
+	<md-select placeholder="State Commission">
+		<md-option value="Commission Not Yet Accepted"> Commission Not Yet Accepted </md-option>
+		<md-option value="Commission Accepted"> Commission Accepted </md-option>
+	</md-select>
+
+	<md-select placeholder="State Payment Commission">
+		<md-option value="Payment Waiting"> Payment Waiting </md-option>
+		<md-option value="Commission paid"> Commission paid </md-option>
+	</md-select>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Historical Order </button>
+	</div>
+</form>

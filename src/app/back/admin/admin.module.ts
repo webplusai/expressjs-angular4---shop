@@ -52,6 +52,8 @@ import { ModeratorsListComponent } from './pages/moderators/moderators-list.comp
 import { ModeratorsFormComponent } from './pages/moderators/moderators-form.component';
 import { StaffSettingListComponent } from './pages/staff-setting/staff-setting-list.component';
 import { StaffSettingFormComponent } from './pages/staff-setting/staff-setting-form.component';
+import { AffiliationListComponent } from './pages/affiliation/affiliation-list.component';
+import { AffiliationFormComponent } from './pages/affiliation/affiliation-form.component';
 
 @NgModule({
 	imports: [
@@ -107,7 +109,9 @@ import { StaffSettingFormComponent } from './pages/staff-setting/staff-setting-f
 		ModeratorsListComponent,
 		ModeratorsFormComponent,
 		StaffSettingListComponent,
-		StaffSettingFormComponent
+		StaffSettingFormComponent,
+		AffiliationListComponent,
+		AffiliationFormComponent
 	]
 })
 export class AdminModule { }

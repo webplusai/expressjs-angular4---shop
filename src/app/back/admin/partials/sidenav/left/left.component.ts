@@ -44,7 +44,7 @@ export class LeftSidenavComponent implements OnInit {
 																			] },
 		{ icon: 'mail_outline', 		text: 'Advertisements', 			
 																			subMenuItems: [ 
-																				{ text: 'Affiliation', 			link: 'afilliation' }, 
+																				{ text: 'Affiliation', 			link: 'affiliation' }, 
 																				{ text: 'Adverts', 				link: 'adverts' }
 																			] },
 		{ icon: 'assessment', 			text: 'Message',					link: 'message' },
