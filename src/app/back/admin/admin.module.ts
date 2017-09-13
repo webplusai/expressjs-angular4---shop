@@ -62,6 +62,7 @@ import { InboxComponent } from './pages/message/tabs/inbox/inbox.component';
 import { CommentsComponent } from './pages/comments/comments.component';
 import { MediaComponent } from './pages/media/media.component';
 import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
+import { SlideshowComponent } from './pages/slideshow/slideshow.component';
 
 @NgModule({
 	imports: [
@@ -127,7 +128,8 @@ import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
 		InboxComponent,
 		CommentsComponent,
 		MediaComponent,
-		NewsLetterComponent
+		NewsLetterComponent,
+		SlideshowComponent
 	]
 })
 export class AdminModule { }

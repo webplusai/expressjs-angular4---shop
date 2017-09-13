@@ -53,7 +53,7 @@ export class LeftSidenavComponent implements OnInit {
 		{ icon: 'assessment', 			text: 'Newsletter',					link: 'newsletter' },
 		{ icon: 'assessment', 			text: 'Design', 					
 																			subMenuItems: [ 
-																				{ text: 'Slideshare', 			link: 'slideshare' },
+																				{ text: 'Slideshow', 			link: 'slideshow' },
 																				{ text: 'Partners', 			link: 'partners' },
 																				{ text: 'Collaboration', 		link: 'collaboration' }
 																			] },

@@ -38,6 +38,7 @@ import { MessageComponent } from './pages/message/message.component';
 import { CommentsComponent } from './pages/comments/comments.component';
 import { MediaComponent } from './pages/media/media.component';
 import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
+import { SlideshowComponent } from './pages/slideshow/slideshow.component';
 
 const routes: Routes = [
 	{
@@ -330,6 +331,14 @@ const routes: Routes = [
 				data: {
 					title: 'NewsLetter',
 					breadcrumb: [ ['Home', 'dashboard'], ['NewsLetter', 'newsletter'] ]
+				}
+			},
+			{
+				path: 'slideshow',
+				component: SlideshowComponent,
+				data: {
+					title: 'Slideshow',
+					breadcrumb: [ ['Home', 'dashboard'], ['Slideshow', 'slideshow'] ]
 				}
 			}
 		]
