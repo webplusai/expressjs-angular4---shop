@@ -39,6 +39,11 @@ import { CommentsComponent } from './pages/comments/comments.component';
 import { MediaComponent } from './pages/media/media.component';
 import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
 import { SlideshowComponent } from './pages/slideshow/slideshow.component';
+import { PartnersComponent } from './pages/partners/partners.component';
+import { CollaborationComponent } from './pages/collaboration/collaboration.component';
+import { ShippingComponent } from './pages/shipping/shipping.component';
+import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscription-plan-list.component';
+import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
 
 const routes: Routes = [
 	{
@@ -339,6 +344,46 @@ const routes: Routes = [
 				data: {
 					title: 'Slideshow',
 					breadcrumb: [ ['Home', 'dashboard'], ['Slideshow', 'slideshow'] ]
+				}
+			},
+			{
+				path: 'partners',
+				component: PartnersComponent,
+				data: {
+					title: 'Partners',
+					breadcrumb: [ ['Home', 'dashboard'], ['Partners', 'partners'] ]
+				}
+			},
+			{
+				path: 'collaboration',
+				component: CollaborationComponent,
+				data: {
+					title: 'Collaboration',
+					breadcrumb: [ ['Home', 'dashboard'], ['Collaboration', 'collaboration'] ]
+				}
+			},
+			{
+				path: 'shipping',
+				component: ShippingComponent,
+				data: {
+					title: 'Shipping',
+					breadcrumb: [ ['Home', 'dashboard'], ['Shipping', 'shipping'] ]
+				}
+			},
+			{
+				path: 'subscription-plan',
+				component: SubscriptionPlanListComponent,
+				data: {
+					title: 'Subscription Plan',
+					breadcrumb: [ ['Home', 'dashboard'], ['Subscription Plan', 'subscription-plan'] ]
+				}
+			},
+			{
+				path: 'subscription-plan/create',
+				component: SubscriptionPlanFormComponent,
+				data: {
+					title: 'Subscription Plan',
+					breadcrumbm: [ ['Home', 'dashboard'], ['Subscription Plan', 'subscription-plan'] ]
 				}
 			}
 		]

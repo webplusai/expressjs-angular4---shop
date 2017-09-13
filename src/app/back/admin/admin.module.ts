@@ -63,6 +63,11 @@ import { CommentsComponent } from './pages/comments/comments.component';
 import { MediaComponent } from './pages/media/media.component';
 import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
 import { SlideshowComponent } from './pages/slideshow/slideshow.component';
+import { PartnersComponent } from './pages/partners/partners.component';
+import { CollaborationComponent } from './pages/collaboration/collaboration.component';
+import { ShippingComponent } from './pages/shipping/shipping.component';
+import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscription-plan-list.component';
+import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
 
 @NgModule({
 	imports: [
@@ -129,7 +134,12 @@ import { SlideshowComponent } from './pages/slideshow/slideshow.component';
 		CommentsComponent,
 		MediaComponent,
 		NewsLetterComponent,
-		SlideshowComponent
+		SlideshowComponent,
+		PartnersComponent,
+		CollaborationComponent,
+		ShippingComponent,
+		SubscriptionPlanListComponent,
+		SubscriptionPlanFormComponent
 	]
 })
 export class AdminModule { }

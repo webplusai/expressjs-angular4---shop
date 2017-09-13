@@ -1,0 +1,93 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Group </span>
+	</h3>
+</div>
+
+<form #groupForm="ngForm" (ngSubmit)="createGroup(groupForm)" [formGroup]="form" class="form-content" [ngStyle]="{'margin': '30px'}">
+
+	<div class="image" [ngStyle]="{'margin-bottom': '20px'}">
+		<div [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Image </div>
+		<img width="100" height="100" class="category-image" src="http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png" (click)="togglePopover()">
+		<div class="popover hidden" role="tooltip">
+			<div class="popover-arrow"> </div>
+			<div class="popover-content">
+				<input type="file" id="imgInput" (change)="readURL($event)" style="display:none" accept="image/*"/> 
+				<button md-button class="action-button" [ngStyle]="{'background': 'rgb(30, 145, 207)'}" (click)="uploadImage()"> <md-icon>create</md-icon> </button>
+				<button md-button class="action-button" [ngStyle]="{'background': 'rgb(245, 107, 107)'}" (click)="removeImage()"><md-icon>delete</md-icon> </button>
+			</div>
+		</div>
+	</div>
+
+	<md-form-field>
+		<input mdInput placeholder="Expire In" [formControl]="expireInput">
+		<md-error *ngIf="expireInput.hasError('required')">
+			This is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-select placeholder="Membership Group">
+		<md-option value="Gold"> Gold </md-option>
+		<md-option value="Silver"> Silver </md-option>
+		<md-option value="Bronze"> Bronze </md-option>
+	</md-select>
+
+	<md-select placeholder="Membership Type">
+		<md-option *ngFor="let item of ['One time Membership', 'Subscription Type Membership']" value="{{item}}"> {{ item }} </md-option>
+	</md-select>
+
+	<md-select placeholder="Trial Period">
+		<md-option value="Yes"> Yes </md-option>
+		<md-option value="No"> No </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="No. of trial" [formControl]="trialInput">
+		<md-error *ngIf="trialInput.hasError('required')">
+			This is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="No. of Products" [formControl]="productInput">
+		<md-error *ngIf="productInput.hasError('required')">
+			This is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Price" [formControl]="priceInput">
+		<md-error *ngIf="priceInput.hasError('required')">
+			This is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-select placeholder="Customemr Group">
+		<md-option value="Default"> Default </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="Duration" [formControl]="durationInput">
+		<md-error *ngIf="durationInput.hasError('required')">
+			This is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Cycle" [formControl]="cycleInput">
+		<md-error *ngIf="cycleInput.hasError('required')">
+			This is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-select placeholder="Frequency">
+		<md-option value="Daily"> Daily </md-option>
+		<md-option value="Weekly"> Monthly </md-option>
+		<md-option value="Monthly"> Monthly </md-option>
+	</md-select>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Group </button>
+	</div>
+</form>

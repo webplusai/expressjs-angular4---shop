@@ -70,7 +70,7 @@ export class LeftSidenavComponent implements OnInit {
 																			subMenuItems: [ 
 																				{ text: 'Landing page',			link: 'landing-page' }
 																			] },
-		{ icon: 'shopping_basket',		text: 'Subscription plan',			link: 'subscription_plan' },
+		{ icon: 'shopping_basket',		text: 'Subscription plan',			link: 'subscription-plan' },
 		{ icon: 'shopping_basket',		text: 'EMH TV',						link: 'emh_tv' },
 		{ icon: 'settings', 			text: 'System Management', 			
 																			subMenuItems: [ 

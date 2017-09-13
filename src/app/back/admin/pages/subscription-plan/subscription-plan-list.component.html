@@ -1,0 +1,65 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Group List </span>
+	</h3>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/subscription-plan/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Group Image Column -->
+	<ng-container cdkColumnDef="group_image">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Group Image </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			<img src="{{ row.group_image }}">
+		</md-cell>
+	</ng-container>
+
+	<!-- Membership Group Column -->
+	<ng-container cdkColumnDef="membership_group">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Membership Group </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.membership_group}} </md-cell>
+	</ng-container>
+
+	<!-- Membership Type Column -->
+	<ng-container cdkColumnDef="membership_type">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Membership Type </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.membership_type}} </md-cell>
+	</ng-container>
+
+	<!-- No of Products Column -->
+	<ng-container cdkColumnDef="no_of_products">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> No. of Products </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.no_of_products}} </md-cell>
+	</ng-container>
+
+	<!-- Price Column -->
+	<ng-container cdkColumnDef="price">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Price </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.price}} </md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row"> 
+			<button class="action-button" md-button [ngStyle]="{'background': 'rgb(30, 145, 207)'}"><md-icon>create</md-icon></button>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

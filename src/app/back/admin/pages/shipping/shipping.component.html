@@ -1,0 +1,96 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Shpping settings </span>
+	</h3>
+</div>
+
+<div fxLayout="column" [ngStyle]="{'margin-top': '30px'}">
+	<span class="italic-label"> Shipping from </span>
+	<input class="form-control" [ngStyle]="{'width': '200px'}">
+
+	<span class="italic-label" [ngStyle]="{'margin-top': '30px'}"> Processing time </span>
+	<div fxLayout="row">
+		<span class="processing-time prefix"> Up to </span>
+		<input class="form-control" [ngStyle]="{'width': '100px', 'border-radius': '0px'}">
+		<span class="processing-time suffix"> days </span>
+	</div>
+</div>
+
+<h3 class="ship-to-label"> Ships to </h3>
+
+<md-table #table [dataSource]="dataSource" mdSort>
+
+	<!-- Destination Column -->
+	<ng-container cdkColumnDef="destination">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Destination </md-header-cell>
+		<md-cell *cdkCellDef="let row; let i = index">
+			<input class="form-control" [(ngModel)]="shippingList[i].destination" placeholder="Destination">
+		</md-cell>
+	</ng-container>
+
+	<!-- Shipping Company Column -->
+	<ng-container cdkColumnDef="shipping_company">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Shipping company </md-header-cell>
+		<md-cell *cdkCellDef="let row; let i = index">
+			<input class="form-control" [(ngModel)]="shippingList[i].shipping_company" placeholder="Link">
+		</md-cell>
+	</ng-container>
+
+	<!-- Delivery Column -->
+	<ng-container cdkColumnDef="delivery_time">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Delivery Time </md-header-cell>
+		<md-cell *cdkCellDef="let row; let i = index">
+			<select class="form-control" [(ngModel)]="shippingList[i].delivery_time">
+				<option value="1-3 days"> 1-3 days </option>
+				<option value="3-5 days"> 3-5 days </option>
+				<option value="5-7 days"> 5-7 days </option>
+				<option value="7-  days"> 7-  days </option>
+			</select>
+		</md-cell>
+	</ng-container>
+
+	<!-- Weight Column -->
+	<ng-container cdkColumnDef="weight">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Weight(kg) </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index">
+			<input class="form-control prefix" [(ngModel)]="shippingList[i].weight_from">
+			<span [ngStyle]="{'padding': '5px', 'border': '1px solid #ccc', 'background': '#f0f0f0'}"> To </span>
+			<input class="form-control suffix" [(ngModel)]="shippingList[i].weight_to">
+		</md-cell>
+	</ng-container>
+
+	<!-- Cost Column -->
+	<ng-container cdkColumnDef="cost">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Cost(fixed + per weight unit) </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index">
+			<input class="form-control" [(ngModel)]="shippingList[i].cost_fixed">
+			<span [ngStyle]="{'padding': '6px 2px'}"> + </span>
+			<input class="form-control" [(ngModel)]="shippingList[i].cost_per_weight">
+		</md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '40px'}"> </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index" [ngStyle]="{'flex': 'none', 'width': '40px'}">
+			<button md-button *ngIf="!row.last" class="icon-button" (click)="removeRow(i)" [ngStyle]="{'color': '#ff0000'}">
+				<md-icon>clear</md-icon>
+			</button>
+		</md-cell>
+	</ng-container>	
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<div fxLayout="row" [ngStyle]="{'justify-content': 'space-between', 'margin-top': '20px'}">
+	<button md-button (click)="addRow()" [ngStyle]="{'border': '1px solid #ccc'}">
+		<md-icon>add</md-icon>
+		Add Method
+	</button>
+
+	<button md-button [ngStyle]="{'background': 'rgb(30, 145, 207)'}">
+		Save
+	</button>
+</div>

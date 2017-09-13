@@ -1,7 +1,7 @@
 <div class="title">
 	<h3 fxLayout="row" fxLayoutAlign="start center">
 		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
-		<span> Slideshow </span>
+		<span> Partners </span>
 	</h3>
 </div>
 
@@ -22,7 +22,7 @@
 	<ng-container cdkColumnDef="title">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Title </md-header-cell>
 		<md-cell *cdkCellDef="let row; let i = index">
-			<input *ngIf="!row.last" class="form-control" [(ngModel)]="slideshowList[i].title" placeholder="Title">
+			<input *ngIf="!row.last" class="form-control" [(ngModel)]="partnersList[i].title" placeholder="Title">
 		</md-cell>
 	</ng-container>
 
@@ -30,7 +30,7 @@
 	<ng-container cdkColumnDef="link">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Link </md-header-cell>
 		<md-cell *cdkCellDef="let row; let i = index">
-			<input *ngIf="!row.last" class="form-control" [(ngModel)]="slideshowList[i].link" placeholder="Link">
+			<input *ngIf="!row.last" class="form-control" [(ngModel)]="partnersList[i].link" placeholder="Link">
 		</md-cell>
 	</ng-container>
 
@@ -56,7 +56,7 @@
 	<ng-container cdkColumnDef="sort_order">
 		<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '100px'}"> Sort Order </md-header-cell>
 		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index" [ngStyle]="{'flex': 'none', 'width': '100px'}">
-			<input *ngIf="!row.last" class="form-control" [(ngModel)]="slideshowList[i].sort_order" placeholder="Sort Order">
+			<input *ngIf="!row.last" class="form-control" [(ngModel)]="partnersList[i].sort_order" placeholder="Sort Order">
 		</md-cell>
 	</ng-container>
 

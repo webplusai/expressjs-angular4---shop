@@ -1,0 +1,38 @@
+.category-image {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.mat-form-field {
+	display: block;
+}
+
+.mat-select {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.mat-form-field, .mat-select {
+	width: 100%;
+}
+
+.popover {
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.popover-arrow {
+    width: 15px;
+    height: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    margin-left: -9px;
+    background: #fff;
+    border-right: none;
+    border-top: none;
+}
