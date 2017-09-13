@@ -37,6 +37,7 @@ import { AdvertsFormComponent } from './pages/adverts/adverts-form.component';
 import { MessageComponent } from './pages/message/message.component';
 import { CommentsComponent } from './pages/comments/comments.component';
 import { MediaComponent } from './pages/media/media.component';
+import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
 
 const routes: Routes = [
 	{
@@ -319,8 +320,16 @@ const routes: Routes = [
 				path: 'media',
 				component: MediaComponent,
 				data: {
-					titld: 'Media',
+					title: 'Media',
 					breadcrumb: [ ['Home', 'dashboard'], ['Media', 'media'] ]
+				}
+			},
+			{
+				path: 'newsletter',
+				component: NewsLetterComponent,
+				data: {
+					title: 'NewsLetter',
+					breadcrumb: [ ['Home', 'dashboard'], ['NewsLetter', 'newsletter'] ]
 				}
 			}
 		]

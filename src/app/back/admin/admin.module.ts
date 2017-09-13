@@ -61,6 +61,7 @@ import { ComposeEmailComponent } from './pages/message/tabs/compose-email/compos
 import { InboxComponent } from './pages/message/tabs/inbox/inbox.component';
 import { CommentsComponent } from './pages/comments/comments.component';
 import { MediaComponent } from './pages/media/media.component';
+import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
 
 @NgModule({
 	imports: [
@@ -125,7 +126,8 @@ import { MediaComponent } from './pages/media/media.component';
 		ComposeEmailComponent,
 		InboxComponent,
 		CommentsComponent,
-		MediaComponent
+		MediaComponent,
+		NewsLetterComponent
 	]
 })
 export class AdminModule { }
