@@ -54,6 +54,13 @@ import { StaffSettingListComponent } from './pages/staff-setting/staff-setting-l
 import { StaffSettingFormComponent } from './pages/staff-setting/staff-setting-form.component';
 import { AffiliationListComponent } from './pages/affiliation/affiliation-list.component';
 import { AffiliationFormComponent } from './pages/affiliation/affiliation-form.component';
+import { AdvertsListComponent } from './pages/adverts/adverts-list.component';
+import { AdvertsFormComponent }  from './pages/adverts/adverts-form.component';
+import { MessageComponent } from './pages/message/message.component';
+import { ComposeEmailComponent } from './pages/message/tabs/compose-email/compose-email.component';
+import { InboxComponent } from './pages/message/tabs/inbox/inbox.component';
+import { CommentsComponent } from './pages/comments/comments.component';
+import { MediaComponent } from './pages/media/media.component';
 
 @NgModule({
 	imports: [
@@ -111,7 +118,14 @@ import { AffiliationFormComponent } from './pages/affiliation/affiliation-form.c
 		StaffSettingListComponent,
 		StaffSettingFormComponent,
 		AffiliationListComponent,
-		AffiliationFormComponent
+		AffiliationFormComponent,
+		AdvertsListComponent,
+		AdvertsFormComponent,
+		MessageComponent,
+		ComposeEmailComponent,
+		InboxComponent,
+		CommentsComponent,
+		MediaComponent
 	]
 })
 export class AdminModule { }

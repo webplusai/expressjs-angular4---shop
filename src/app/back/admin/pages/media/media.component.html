@@ -1,0 +1,83 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Media </span>
+	</h3>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="end center" class="tool-buttons">
+	<button md-button>
+		<md-icon>file_upload</md-icon>
+		Upload New File
+	</button>
+
+	<button md-button>
+		<md-icon>folder</md-icon>
+		Add New
+	</button>
+
+	<button md-button>
+		<md-icon>delete</md-icon>
+		Delete
+	</button>
+</div>
+
+<md-tab-group>
+	<md-tab label="All">
+		<md-grid-list cols="4">
+			<md-grid-tile *ngFor="let item of allList">
+				<img *ngIf="item.type=='img'" src="{{item.link}}" class="full-size">
+				<md-icon *ngIf="item.type=='vid'">video_library</md-icon>
+				<md-icon *ngIf="item.type=='aud'">library_music</md-icon>
+				<md-icon *ngIf="item.type=='doc'">description</md-icon>
+				<md-grid-tile-footer>
+					{{ item.name }}
+				</md-grid-tile-footer>
+			</md-grid-tile>
+		</md-grid-list>
+	</md-tab>
+
+	<md-tab label="Images">
+		<md-grid-list cols="4">
+			<md-grid-tile *ngFor="let item of imgList">
+				<img src="{{item.link}}" class="full-size">
+				<md-grid-tile-footer>
+					{{ item.name }}
+				</md-grid-tile-footer>
+			</md-grid-tile>
+		</md-grid-list>
+	</md-tab>
+
+	<md-tab label="Audio">
+		<md-grid-list cols="4">
+			<md-grid-tile *ngFor="let item of audList">
+				<md-icon>library_music</md-icon>
+				<md-grid-tile-footer>
+					{{ item.name }}
+				</md-grid-tile-footer>
+			</md-grid-tile>
+		</md-grid-list>
+	</md-tab>
+
+	<md-tab label="Video">
+		<md-grid-list cols="4">
+			<md-grid-tile *ngFor="let item of vidList">
+				<md-icon>video_library</md-icon>
+				<md-grid-tile-footer>
+					{{ item.name }}
+				</md-grid-tile-footer>
+			</md-grid-tile>
+		</md-grid-list>
+	</md-tab>
+
+	<md-tab label="Documents">
+		<md-grid-list cols="4">
+			<md-grid-tile *ngFor="let item of docList">
+				<md-icon>description</md-icon>
+				<md-grid-tile-footer>
+					{{ item.name }}
+				</md-grid-tile-footer>
+			</md-grid-tile>
+		</md-grid-list>
+	</md-tab>
+</md-tab-group>

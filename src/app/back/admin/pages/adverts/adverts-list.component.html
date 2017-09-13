@@ -1,0 +1,82 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Adverts List </span>
+	</h3>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/adverts/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Month Column -->
+	<ng-container cdkColumnDef="month">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Month </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.month}} </md-cell>
+	</ng-container>
+
+	<!-- Date Column -->
+	<ng-container cdkColumnDef="date">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date </md-header-cell>
+		<md-cell *cdkCellDef="let row">
+			<div *ngFor="let data of row.data">
+				{{ data.date }}
+			</div>
+		</md-cell>
+	</ng-container>
+
+	<!-- Description Column -->
+	<ng-container cdkColumnDef="description">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			<div *ngFor="let data of row.data">
+				{{ data.description }}
+			</div>
+		</md-cell>
+	</ng-container>
+
+	<!-- Earnings/Credits Column -->
+	<ng-container cdkColumnDef="earning_credits">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Earnings/Credits </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			<div *ngFor="let data of row.data">
+				{{ data.earning_credits }}
+			</div>
+		</md-cell>
+	</ng-container>
+
+	<!-- Payments/Debits Column -->
+	<ng-container cdkColumnDef="payments_debits">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Payments/Debits </md-header-cell>
+		<md-cell *cdkCellDef="let row">
+			<div *ngFor="let data of row.data">
+				{{ data.payments_debits }}
+			</div>
+		</md-cell>
+	</ng-container>
+
+	<!-- Monthly Balance Column -->
+	<ng-container cdkColumnDef="monthly_balance">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Monthly Balance </md-header-cell>
+		<md-cell *cdkCellDef="let row">
+			<div *ngFor="let data of row.data">
+				{{ data.monthly_balance }}
+			</div>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+
+

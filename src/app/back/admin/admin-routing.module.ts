@@ -32,6 +32,11 @@ import { StaffSettingListComponent } from './pages/staff-setting/staff-setting-l
 import { StaffSettingFormComponent } from './pages/staff-setting/staff-setting-form.component';
 import { AffiliationListComponent } from './pages/affiliation/affiliation-list.component';
 import { AffiliationFormComponent } from './pages/affiliation/affiliation-form.component';
+import { AdvertsListComponent } from './pages/adverts/adverts-list.component';
+import { AdvertsFormComponent } from './pages/adverts/adverts-form.component';
+import { MessageComponent } from './pages/message/message.component';
+import { CommentsComponent } from './pages/comments/comments.component';
+import { MediaComponent } from './pages/media/media.component';
 
 const routes: Routes = [
 	{
@@ -276,6 +281,46 @@ const routes: Routes = [
 				data: {
 					title: 'Affiliation',
 					breadcrumb: [ ['Home', 'dashboard'], ['Affiliation', 'affiliation'] ]
+				}
+			},
+			{
+				path: 'adverts',
+				component: AdvertsListComponent,
+				data: {
+					title: 'Adverts',
+					breadcrumb: [ ['Home', 'dashboard'], ['Adverts', 'adverts'] ]
+				}
+			},
+			{
+				path: 'adverts/create',
+				component: AdvertsFormComponent,
+				data: {
+					title: 'Adverts',
+					breadcrumb: [ ['Home', 'dashboard'], ['Adverts', 'toggle'] ]
+				}
+			},
+			{
+				path: 'message',
+				component: MessageComponent,
+				data: {
+					title: 'Message',
+					breadcrumb: [ ['Home', 'dashboard'], ['Message', 'message'] ]
+				}
+			},
+			{
+				path: 'comments',
+				component: CommentsComponent,
+				data: {
+					title: 'Comments',
+					breadcrumb: [ ['Home', 'dashboard'], ['Comments', 'comments'] ]
+				}
+			},
+			{
+				path: 'media',
+				component: MediaComponent,
+				data: {
+					titld: 'Media',
+					breadcrumb: [ ['Home', 'dashboard'], ['Media', 'media'] ]
 				}
 			}
 		]

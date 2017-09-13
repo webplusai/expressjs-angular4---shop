@@ -1,0 +1,55 @@
+<md-tab-group headerPosition="left" selectedIndex="1">
+	<md-tab label="Tab 1">
+		<ng-template md-tab-label>
+			<button md-button class="btn-compose full-size"> Compose Message </button>
+		</ng-template>
+		<admin-message-tab-compose-email> </admin-message-tab-compose-email>
+	</md-tab>
+	<md-tab label="Tab 2">
+		<ng-template md-tab-label>
+			<div class="label-content">
+				<md-icon>folder_open</md-icon>
+				<span> Inbox </span>
+			</div>
+			<span class="badge" [ngStyle]="{'background': '#dd4b39'}"> 9 </span>
+		</ng-template>
+		<admin-message-tab-inbox> </admin-message-tab-inbox>
+	</md-tab>
+	<md-tab label="Tab 3">
+		<ng-template md-tab-label>
+			<div class="label-content">
+				<md-icon>mail</md-icon>
+				<span> Send Mail </span>
+			</div>
+		</ng-template>
+		<admin-message-tab-inbox> </admin-message-tab-inbox>
+	</md-tab>
+	<md-tab label="Tab 4">
+		<ng-template md-tab-label>
+			<div class="label-content">
+				<md-icon>brightness_high</md-icon>
+				<span> Important </span>
+			</div>
+		</ng-template>
+		<admin-message-tab-inbox> </admin-message-tab-inbox>
+	</md-tab>
+	<md-tab label="Tab 5">
+		<ng-template md-tab-label>
+			<div class="label-content">
+				<md-icon>description</md-icon>
+				<span> Drafts </span>
+			</div>
+			<span class="badge" [ngStyle]="{'background': '#00c0ef'}"> 123 </span>
+		</ng-template>
+		<admin-message-tab-inbox> </admin-message-tab-inbox>
+	</md-tab>
+	<md-tab label="Tab 6">
+		<ng-template md-tab-label>
+			<div class="label-content">
+				<md-icon>delete</md-icon>
+				<span> Trash </span>
+			</div>
+		</ng-template>
+		<admin-message-tab-inbox> </admin-message-tab-inbox>
+	</md-tab>
+</md-tab-group>

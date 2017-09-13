@@ -1,0 +1,95 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<span> Inbox(34) </span>
+	</h3>
+</div>
+
+<div class="filter-panel" [ngStyle]="{'margin-top': '20px'}">
+	<div fxLayout="row" fxLayoutAlign="end center">
+		<div fxFlex="25" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #filter placeholder="Search Mail">
+			</md-form-field>
+		</div>
+	</div>
+	<div fxLayout="row" class="filter-buttons">
+		<button md-button [mdMenuTriggerFor]="select"> 
+			<md-checkbox [ngStyle]="{'margin-right': '5px'}"></md-checkbox>
+			<md-icon>arrow_drop_down</md-icon>
+		</button>
+		<md-menu #select="mdMenu">
+			<button md-menu-item *ngFor="let item of ['All', 'None', 'Read', 'Unread', 'Starred', 'Unstarred']" [ngStyle]="{'height': '30px', 'line-height': '30px'}"> {{ item }} </button>
+		</md-menu>
+		<button md-button class="btn-refresh">
+			<md-icon>loop</md-icon>
+		</button>
+		<button md-button [mdMenuTriggerFor]="more">
+			More <md-icon>arrow_drop_down</md-icon>
+		</button>
+		<md-menu #more="mdMenu">
+			<button md-menu-item *ngFor="let item of ['Mark as read', 'Mark as unread', 'Mark as important', 'Add to Tasks', 'Add star', 'Filter messages like these', 'Mute']" [ngStyle]="{'height': '30px', 'line-height': '30px'}"> {{ item }} </button>
+		</md-menu>
+		<button md-button [mdMenuTriggerFor]="moveTo">
+			Move To <md-icon>arrow_drop_down</md-icon>
+		</button>
+		<md-menu #moveTo="mdMenu">
+			<button md-menu-item *ngFor="let item of ['Inbox', 'Sent', 'Important', 'Drafts', 'Trash']" [ngStyle]="{'height': '30px', 'line-height': '30px'}"> {{ item }} </button>
+		</md-menu>
+	</div>
+</div>
+
+<md-table #table [dataSource]="dataSource" [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Customer Name Column -->
+	<ng-container cdkColumnDef="checkbox">
+		<md-header-cell *cdkHeaderCellDef> </md-header-cell>
+		<md-cell *cdkCellDef="let row" [ngStyle]="{'width': '50px', 'flex': 'none'}">
+			<md-checkbox> </md-checkbox>
+		</md-cell>
+	</ng-container>
+
+	<!-- E-Mail Column -->
+	<ng-container cdkColumnDef="star">
+		<md-header-cell *cdkHeaderCellDef> </md-header-cell>
+		<md-cell *cdkCellDef="let row" [ngStyle]="{'width': '50px', 'flex': 'none'}">
+			<md-icon>star</md-icon>
+		</md-cell>
+	</ng-container>
+
+	<!-- Customer Group Column -->
+	<ng-container cdkColumnDef="sender">
+		<md-header-cell *cdkHeaderCellDef> </md-header-cell>
+		<md-cell *cdkCellDef="let row" [ngStyle]="{'flex': '2'}"> {{row.sender}} </md-cell>
+	</ng-container>
+
+	<!-- Status Column -->
+	<ng-container cdkColumnDef="message">
+		<md-header-cell *cdkHeaderCellDef> </md-header-cell>
+		<md-cell *cdkCellDef="let row" [ngStyle]="{'flex': '3'}"> {{row.message}} </md-cell>
+	</ng-container>
+
+	<!-- IP Column -->
+	<ng-container cdkColumnDef="attachment">
+		<md-header-cell *cdkHeaderCellDef> </md-header-cell>
+		<md-cell *cdkCellDef="let row" [ngStyle]="{'width': '50px', 'flex': 'none'}"> 
+			<md-icon>attach_file</md-icon>
+		</md-cell>
+	</ng-container>
+
+	<!-- Date Added Column -->
+	<ng-container cdkColumnDef="date">
+		<md-header-cell *cdkHeaderCellDef> </md-header-cell>
+		<md-cell *cdkCellDef="let row" [ngStyle]="{'flex': '1'}"> {{row.date}} </md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

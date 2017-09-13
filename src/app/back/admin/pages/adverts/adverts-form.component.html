@@ -1,0 +1,33 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Create Historical Order </span>
+	</h3>
+</div>
+
+<form #advertsForm="ngForm" (ngSubmit)="createAdverts(advertsForm)" class="form-content" [ngStyle]="{'padding': '30px'}">
+	
+	<md-form-field>
+		<input mdInput placeholder="Month">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Date">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Earning/Credits">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Payments/Debits">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Monthly Base Reference">
+	</md-form-field>
+
+	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Advert </button>
+	</div>
+</form>

@@ -1,0 +1,48 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Comments List </span>
+	</h3>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/comments/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Rating Column -->
+	<ng-container cdkColumnDef="rating">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> </md-header-cell>
+		<md-cell *cdkCellDef="let row">
+			<div> Rating: {{ row.rating }} </div>
+			<div> 
+				<span [ngStyle]="{'color': '#767676'}">
+					<md-icon *ngFor="let j of [1, 2, 3, 4, 5]" [ngStyle]="{'font-size': '21px'}">star_border</md-icon>
+				</span>
+			</div>
+			<div> {{ row.date }} </div>
+			<div> {{ row.customer }} </div>
+		</md-cell>
+	</ng-container>
+
+	<!-- Content Column -->
+	<ng-container cdkColumnDef="content">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			{{ row.content }}
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+
