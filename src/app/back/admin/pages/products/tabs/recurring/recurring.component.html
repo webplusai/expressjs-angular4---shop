@@ -1,0 +1,34 @@
+<div class="tab-recurring product-tab">
+	<md-table [dataSource]="dataSource">
+		<ng-container mdColumnDef="recurring_profile">
+			<md-header-cell *mdHeaderCellDef> Recurring Profile </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="recurringList[i].recurring_profile">
+					<option value="Recurring"> Recurring </option>
+				</select>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="customer_group">
+			<md-header-cell *mdHeaderCellDef> Customer Group </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="recurringList[i].text">
+					<option value="Default"> Default </option>
+				</select>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'flex': 'none', 'width': '60px'}">
+				<button md-button type="button" (click)="addRow()" class="action-button" *ngIf="element.last" [ngStyle]="{'background': '#f56b6b'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
+				</button>
+				<button md-button type="button" (click)="removeRow(i)" class="action-button" *ngIf="!element.last" [ngStyle]="{'background': '#1e91cf'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

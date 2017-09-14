@@ -71,6 +71,8 @@ import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscri
 import { PaymentsListComponent } from './pages/payments/payments-list.component';
 import { PaymentsFormComponent } from './pages/payments/payments-form.component';
 import { EMHTVComponent } from './pages/emhtv/emhtv.component';
+import { OptionComponent } from './pages/products/tabs/option/option.component';
+import { RecurringComponent } from './pages/products/tabs/recurring/recurring.component';
 
 @NgModule({
 	imports: [
@@ -145,7 +147,9 @@ import { EMHTVComponent } from './pages/emhtv/emhtv.component';
 		SubscriptionPlanFormComponent,
 		PaymentsListComponent,
 		PaymentsFormComponent,
-		EMHTVComponent
+		EMHTVComponent,
+		OptionComponent,
+		RecurringComponent
 	]
 })
 export class AdminModule { }
