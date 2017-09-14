@@ -73,6 +73,7 @@ import { PaymentsFormComponent } from './pages/payments/payments-form.component'
 import { EMHTVComponent } from './pages/emhtv/emhtv.component';
 import { OptionComponent } from './pages/products/tabs/option/option.component';
 import { RecurringComponent } from './pages/products/tabs/recurring/recurring.component';
+import { DiscountComponent } from './pages/products/tabs/discount/discount.component';
 
 @NgModule({
 	imports: [
@@ -149,7 +150,8 @@ import { RecurringComponent } from './pages/products/tabs/recurring/recurring.co
 		PaymentsFormComponent,
 		EMHTVComponent,
 		OptionComponent,
-		RecurringComponent
+		RecurringComponent,
+		DiscountComponent
 	]
 })
 export class AdminModule { }
