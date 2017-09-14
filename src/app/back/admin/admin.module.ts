@@ -74,6 +74,7 @@ import { EMHTVComponent } from './pages/emhtv/emhtv.component';
 import { OptionComponent } from './pages/products/tabs/option/option.component';
 import { RecurringComponent } from './pages/products/tabs/recurring/recurring.component';
 import { DiscountComponent } from './pages/products/tabs/discount/discount.component';
+import { SpecialComponent } from './pages/products/tabs/special/special.component';
 
 @NgModule({
 	imports: [
@@ -151,7 +152,8 @@ import { DiscountComponent } from './pages/products/tabs/discount/discount.compo
 		EMHTVComponent,
 		OptionComponent,
 		RecurringComponent,
-		DiscountComponent
+		DiscountComponent,
+		SpecialComponent
 	]
 })
 export class AdminModule { }
