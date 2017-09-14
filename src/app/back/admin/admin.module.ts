@@ -76,6 +76,7 @@ import { RecurringComponent } from './pages/products/tabs/recurring/recurring.co
 import { DiscountComponent } from './pages/products/tabs/discount/discount.component';
 import { SpecialComponent } from './pages/products/tabs/special/special.component';
 import { ImageComponent } from './pages/products/tabs/image/image.component';
+import { RewardPointsComponent } from './pages/products/tabs/reward-points/reward-points.component';
 
 @NgModule({
 	imports: [
@@ -155,7 +156,8 @@ import { ImageComponent } from './pages/products/tabs/image/image.component';
 		RecurringComponent,
 		DiscountComponent,
 		SpecialComponent,
-		ImageComponent
+		ImageComponent,
+		RewardPointsComponent
 	]
 })
 export class AdminModule { }
