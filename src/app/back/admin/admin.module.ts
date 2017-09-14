@@ -77,6 +77,7 @@ import { DiscountComponent } from './pages/products/tabs/discount/discount.compo
 import { SpecialComponent } from './pages/products/tabs/special/special.component';
 import { ImageComponent } from './pages/products/tabs/image/image.component';
 import { RewardPointsComponent } from './pages/products/tabs/reward-points/reward-points.component';
+import { DesignComponent } from './pages/products/tabs/design/design.component';
 
 @NgModule({
 	imports: [
@@ -157,7 +158,8 @@ import { RewardPointsComponent } from './pages/products/tabs/reward-points/rewar
 		DiscountComponent,
 		SpecialComponent,
 		ImageComponent,
-		RewardPointsComponent
+		RewardPointsComponent,
+		DesignComponent
 	]
 })
 export class AdminModule { }
