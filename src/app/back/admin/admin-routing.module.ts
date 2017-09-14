@@ -44,6 +44,7 @@ import { CollaborationComponent } from './pages/collaboration/collaboration.comp
 import { ShippingComponent } from './pages/shipping/shipping.component';
 import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscription-plan-list.component';
 import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
+import { PaymentsListComponent } from './pages/payments/payments-list.component';
 
 const routes: Routes = [
 	{
@@ -383,7 +384,15 @@ const routes: Routes = [
 				component: SubscriptionPlanFormComponent,
 				data: {
 					title: 'Subscription Plan',
-					breadcrumbm: [ ['Home', 'dashboard'], ['Subscription Plan', 'subscription-plan'] ]
+					breadcrumb: [ ['Home', 'dashboard'], ['Subscription Plan', 'subscription-plan'] ]
+				}
+			},
+			{
+				path: 'payments',
+				component: PaymentsListComponent,
+				data: {
+					title: 'Payments',
+					breadcrumb: [ ['Home', 'dashboard'], ['Payments', 'payments'] ]
 				}
 			}
 		]

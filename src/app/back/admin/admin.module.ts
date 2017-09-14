@@ -68,6 +68,7 @@ import { CollaborationComponent } from './pages/collaboration/collaboration.comp
 import { ShippingComponent } from './pages/shipping/shipping.component';
 import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscription-plan-list.component';
 import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
+import { PaymentsListComponent } from './pages/payments/payments-list.component';
 
 @NgModule({
 	imports: [
@@ -139,7 +140,8 @@ import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscri
 		CollaborationComponent,
 		ShippingComponent,
 		SubscriptionPlanListComponent,
-		SubscriptionPlanFormComponent
+		SubscriptionPlanFormComponent,
+		PaymentsListComponent
 	]
 })
 export class AdminModule { }
