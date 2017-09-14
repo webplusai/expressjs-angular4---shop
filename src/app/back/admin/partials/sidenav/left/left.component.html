@@ -6,17 +6,32 @@
 					<md-icon [ngStyle]="{'vertical-align': 'middle'}"> {{ item.icon }} </md-icon>
 					{{ item.text }}
 				</p>
-				<md-icon class="arrow-right" *ngIf="item.subMenuItems">keyboard_arrow_right</md-icon>
-				<md-icon class="arrow-down" *ngIf="item.subMenuItems">keyboard_arrow_down</md-icon>
+				<md-icon class="arrow-right sub-menu-arrow" *ngIf="item.subMenuItems">keyboard_arrow_right</md-icon>
+				<md-icon class="arrow-down sub-menu-arrow" *ngIf="item.subMenuItems">keyboard_arrow_down</md-icon>
 			</button>
 		</a>
 		<md-list *ngIf="item.subMenuItems" class="full-width sub-menu">
 			<md-list-item *ngFor="let subItem of item.subMenuItems">
-				<a [routerLink]="['/admin/' + subItem.link]" class="full-size">
-					<button md-button class="full-size" (click)="toggleSubMenuItem($event)" [ngStyle]="{'padding-left': '50px'}">
-						{{ subItem.text }}
+				<a [routerLink]="subItem.link ? ['/admin/' + subItem.link] : null" class="full-size">
+					<button md-button class="full-size" (click)="toggleSubMenuItem($event, subItem)" [ngStyle]="{'padding-left': '50px'}">
+						<p class="button-content inline" [ngStyle]="{'flex': '1'}">
+							<md-icon *ngIf="subItem.icon" [ngStyle]="{'vertical-align': 'middle'}"> {{ subItem.icon }} </md-icon>
+							{{ subItem.text }}
+						</p>
+						<md-icon class="arrow-right sub-sub-menu-arrow" *ngIf="subItem.subMenuItems">keyboard_arrow_right</md-icon>
+						<md-icon class="arrow-down sub-sub-menu-arrow" *ngIf="subItem.subMenuItems">keyboard_arrow_down</md-icon>
 					</button>
 				</a>
+
+				<md-list *ngIf="subItem.subMenuItems" class="full-width sub-sub-menu">
+					<md-list-item *ngFor="let subsubItem of subItem.subMenuItems">
+						<a [routerLink]="['/admin' + subsubItem.link]" class="full-size">
+							<button md-button class="full-size" [ngStyle]="{'padding-left': '80px'}" (click)="toggleSubSubMenuItem($event)">
+								{{ subsubItem.text }}
+							</button>
+						</a>
+					</md-list-item>
+				</md-list>
 			</md-list-item>
 		</md-list>
 	</md-list-item>

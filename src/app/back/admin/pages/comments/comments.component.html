@@ -5,11 +5,6 @@
 	</h3>
 </div>
 
-<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
-	<a [routerLink]="['/admin/comments/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
-	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
-</div>
-
 <md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
 
 	<!-- Rating Column -->

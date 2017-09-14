@@ -46,6 +46,7 @@ import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscri
 import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
 import { PaymentsListComponent } from './pages/payments/payments-list.component';
 import { PaymentsFormComponent } from './pages/payments/payments-form.component';
+import { EMHTVComponent } from './pages/emhtv/emhtv.component';
 
 const routes: Routes = [
 	{
@@ -402,6 +403,14 @@ const routes: Routes = [
 				data: {
 					title: 'Payments',
 					breadcrumb: [ ['Home', 'dashboard'], ['Payments', 'payments'] ]
+				}
+			},
+			{
+				path: 'emh-tv',
+				component: EMHTVComponent,
+				data: {
+					title: 'EMH TV',
+					breadcrumb: [ ['Home', 'dashboard'], ['EMH TV', 'emhtv'] ]
 				}
 			}
 		]

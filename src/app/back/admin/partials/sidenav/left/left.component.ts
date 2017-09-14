@@ -71,11 +71,23 @@ export class LeftSidenavComponent implements OnInit {
 																				{ text: 'Landing page',			link: 'landing-page' }
 																			] },
 		{ icon: 'shopping_basket',		text: 'Subscription plan',			link: 'subscription-plan' },
-		{ icon: 'shopping_basket',		text: 'EMH TV',						link: 'emh_tv' },
+		{ icon: 'shopping_basket',		text: 'EMH TV',						link: 'emh-tv' },
 		{ icon: 'settings', 			text: 'System Management', 			
 																			subMenuItems: [ 
+																				{ icon: 'settings', text: 'Localisations',
+																					subMenuItems: [
+																						{ text: 'Store Locations', link: 'store-locations' },
+																						{ text: 'Languages', link: 'languages' },
+																						{ text: 'Currencies', link: 'currencies' },
+																						{ text: 'Stock Statuses', link: 'stock-statuses' },
+																						{ text: 'Order Statuses', link: 'order-statuses' }
+																					] 
+																				},
 																				{ text: 'Setting', link: 'setting' },
-																				{ text: 'Localisations', link: 'localisations' }
+																				{ text: 'Tools', link: 'tools' },
+																				{ text: 'Social Links', link: 'social-links' },
+																				{ text: 'Badge', link: 'badge' },
+																				{ text: 'Tax', link: 'tax' }
 																			] },
 		{ icon: 'shopping_basket', 		text: 'Reports', 					
 																			subMenuItems: [ 
@@ -105,8 +117,21 @@ export class LeftSidenavComponent implements OnInit {
 		}
 	}
 
-	toggleSubMenuItem($event) {
-		$('admin-leftnav .mat-list-item .sub-menu .mat-list-item').removeClass('selected');
+	toggleSubMenuItem($event, item) {
+		var e = $($event.target).closest('.mat-list-item');
+
+		$(e).parent().find(".mat-list-item").removeClass('selected');
+		e.addClass('selected');
+
+		if (!e.hasClass('opened'))
+			$(e).parent().find(".mat-list-item").removeClass('opened');
+		if (item.subMenuItems) {
+			e.toggleClass('opened');
+		}
+	}
+
+	toggleSubSubMenuItem($event) {
+		$('admin-leftnav .mat-list-item .sub-menu .mat-list-item .sub-sub-menu .mat-list-item').removeClass('selected');
 		$($event.target).closest('.mat-list-item').addClass('selected');
 	}
 

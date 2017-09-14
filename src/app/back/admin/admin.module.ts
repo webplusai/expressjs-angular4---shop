@@ -70,6 +70,7 @@ import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscri
 import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
 import { PaymentsListComponent } from './pages/payments/payments-list.component';
 import { PaymentsFormComponent } from './pages/payments/payments-form.component';
+import { EMHTVComponent } from './pages/emhtv/emhtv.component';
 
 @NgModule({
 	imports: [
@@ -143,7 +144,8 @@ import { PaymentsFormComponent } from './pages/payments/payments-form.component'
 		SubscriptionPlanListComponent,
 		SubscriptionPlanFormComponent,
 		PaymentsListComponent,
-		PaymentsFormComponent
+		PaymentsFormComponent,
+		EMHTVComponent
 	]
 })
 export class AdminModule { }

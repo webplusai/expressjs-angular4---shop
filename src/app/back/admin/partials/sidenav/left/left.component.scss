@@ -27,7 +27,7 @@
 		min-height: 48px;
 	}
 
-	.sub-menu {
+	.sub-menu, .sub-sub-menu {
 		max-height: 0px;
 		overflow: hidden;
 
@@ -41,16 +41,32 @@
 
 .mat-list-item.opened {
 	.mat-button {
-		.arrow-down {
+		.arrow-down.sub-menu-arrow {
 			display: block;
 		}
 
-		.arrow-right {
+		.arrow-right.sub-menu-arrow {
 			display: none;
 		}
 	}
 
 	.sub-menu {
-		max-height: 200px;
+		max-height: 550px;
+
+		.mat-list-item.opened {
+			.mat-button {
+				.arrow-down.sub-sub-menu-arrow {
+					display: block;
+				}
+
+				.arrow-right.sub-sub-menu-arrow {
+					display: none;
+				}
+			}
+
+			.sub-sub-menu {
+				max-height: 300px;
+			}
+		}
 	}
 }

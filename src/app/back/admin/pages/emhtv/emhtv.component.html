@@ -1,0 +1,14 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<span> EMH TV </span>
+	</h3>
+</div>
+
+<video controls="controls" class="videoEMH"></video>
+
+<div fxLayout="row" [ngStyle]="{'margin-top': '30px'}">
+	<input placeholder="Video URL" [(ngModel)]="videoURL" (change)="showVideo()" class="form-control" [ngStyle]="{'width': '500px', 'display': 'inline-block'}">
+	<button md-button [ngStyle]="{'background': '#008447', 'color': '#fff'}"> Share Url </button>
+</div>
+
+<input type="file" [ngStyle]="{'margin-top': '30px'}">
