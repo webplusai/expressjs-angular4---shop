@@ -69,6 +69,7 @@ import { ShippingComponent } from './pages/shipping/shipping.component';
 import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscription-plan-list.component';
 import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
 import { PaymentsListComponent } from './pages/payments/payments-list.component';
+import { PaymentsFormComponent } from './pages/payments/payments-form.component';
 
 @NgModule({
 	imports: [
@@ -141,7 +142,8 @@ import { PaymentsListComponent } from './pages/payments/payments-list.component'
 		ShippingComponent,
 		SubscriptionPlanListComponent,
 		SubscriptionPlanFormComponent,
-		PaymentsListComponent
+		PaymentsListComponent,
+		PaymentsFormComponent
 	]
 })
 export class AdminModule { }
