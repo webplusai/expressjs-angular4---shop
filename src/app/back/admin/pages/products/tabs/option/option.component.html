@@ -1,3 +1,30 @@
-<p>
-  option works!
-</p>
+<md-tab-group headerPosition="left" [selectedIndex]="selectedIndex" [ngStyle]="{'margin-top': '30px'}">
+	<md-tab *ngFor="let option of optionsList; let i = index">
+		<ng-template md-tab-label>
+			<div class="label-content">
+				<md-icon (click)="removeTab(i)" [ngStyle]="{'margin-right': '5px'}">remove_circle</md-icon>
+				<span> {{ option.type }} </span>
+			</div>
+		</ng-template>
+
+		<admin-product-tab-option-tab-checkbox *ngIf="option.type=='Checkbox'"> </admin-product-tab-option-tab-checkbox>
+		<admin-product-tab-option-tab-date *ngIf="option.type=='Date'"> </admin-product-tab-option-tab-date>
+		<admin-product-tab-option-tab-date-time *ngIf="option.type=='Date & Time'"> </admin-product-tab-option-tab-date-time>
+		<admin-product-tab-option-tab-delivery-date *ngIf="option.type=='Delivery Time'"> </admin-product-tab-option-tab-delivery-date>
+		<admin-product-tab-option-tab-file *ngIf="option.type=='File'"> </admin-product-tab-option-tab-file> 
+	</md-tab>
+	<md-tab label="Tab 6">
+		<ng-template md-tab-label>
+			<div class="label-content full-size" (click)="clicked($event)">
+				<select (change)="addNewTab($event)" id="options" class="form-control full-size">
+					<option value=""> Select Option </option>
+					<option value="Checkbox"> Checkbox </option>
+					<option value="Date"> Date </option>
+					<option value="Date & Time"> Date & Time </option>
+					<option value="Delivery Time"> Delivery Time </option>
+					<option value="File"> File </option>
+				</select>
+			</div>
+		</ng-template>
+	</md-tab>
+</md-tab-group>

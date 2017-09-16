@@ -9,6 +9,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TinyMceModule } from 'angular-tinymce';
 import { tinymceDefaultSettings } from 'angular-tinymce';
 
+import { CalendarModule } from 'primeng/primeng';
+
 import { AdminRoutingModule } from './admin-routing.module';
 
 import { AdminComponent } from './admin.component';
@@ -78,6 +80,11 @@ import { SpecialComponent } from './pages/products/tabs/special/special.componen
 import { ImageComponent } from './pages/products/tabs/image/image.component';
 import { RewardPointsComponent } from './pages/products/tabs/reward-points/reward-points.component';
 import { DesignComponent } from './pages/products/tabs/design/design.component';
+import { CheckboxComponent } from './pages/products/tabs/option/tabs/checkbox/checkbox.component';
+import { DateComponent } from './pages/products/tabs/option/tabs/date/date.component';
+import { DateTimeComponent } from './pages/products/tabs/option/tabs/date-time/date-time.component';
+import { DeliveryDateComponent } from './pages/products/tabs/option/tabs/delivery-date/delivery-date.component';
+import { FileComponent } from './pages/products/tabs/option/tabs/file/file.component';
 
 @NgModule({
 	imports: [
@@ -90,8 +97,10 @@ import { DesignComponent } from './pages/products/tabs/design/design.component';
 		CdkTableModule,
 		MdDatepickerModule,
 		MdNativeDateModule,
+		CalendarModule,
 		TinyMceModule.forRoot(tinymceDefaultSettings())
 	],
+
 	declarations: [
 		AdminComponent,
 		LoginComponent,
@@ -159,7 +168,12 @@ import { DesignComponent } from './pages/products/tabs/design/design.component';
 		SpecialComponent,
 		ImageComponent,
 		RewardPointsComponent,
-		DesignComponent
+		DesignComponent,
+		CheckboxComponent,
+		DateComponent,
+		DateTimeComponent,
+		DeliveryDateComponent,
+		FileComponent
 	]
 })
 export class AdminModule { }

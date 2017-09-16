@@ -1,0 +1,17 @@
+<div class="tab-date product-tab">
+
+	<div class="form-group">
+		<label> Required </label>
+		<select class="form-control" placeholder="Required">
+			<option value="Yes"> Yes </option>
+			<option value="No"> No </option>
+		</select>
+	</div>
+
+	<md-form-field [ngStyle]="{'width': '300px'}">
+		<input mdInput [mdDatepicker]="picker" placeholder="Option Value">
+		<md-datepicker-toggle  mdSuffix [for]="picker"></md-datepicker-toggle>
+		<md-datepicker #picker></md-datepicker>
+	</md-form-field>
+
+</div>
