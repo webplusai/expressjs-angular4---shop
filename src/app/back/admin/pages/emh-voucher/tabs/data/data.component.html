@@ -1,0 +1,119 @@
+<div class="tab-data product-tab">
+	<md-form-field>
+		<input mdInput placeholder="Model">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="SKU">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="UPC">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="EAN">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="JAN">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="ISBN">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="MPN">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Location">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Price">
+	</md-form-field>
+
+	<md-select placeholder="Tax Class">
+		<md-option *ngFor="let tax of ['Taxable Goods', 'Downloadable Products']" value="{{tax}}">
+			{{ tax }}
+		</md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="Quantity">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Minimum Quantity">
+	</md-form-field>
+
+	<md-select placeholder="Subtract Stock">
+		<md-option value="Yes"> Yes </md-option>
+		<md-option value="No"> No </md-option>
+	</md-select>
+
+	<md-select placeholder="Out Of Stock Status">
+		<md-option *ngFor="let status of ['2-3 Days', 'In Stock', 'Out Of Stock', 'Pre-Order']" value="{{status}}">
+			{{ status }}
+		</md-option>
+	</md-select>
+
+	<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)', 'margin-right': '10px'}"> Requires Shipping </span>
+	<md-radio-group placeholder="Requires Shipping">
+		<md-radio-button value="Yes"> Yes </md-radio-button>
+		<md-radio-button value="No"> No </md-radio-button>
+	</md-radio-group>
+
+	<md-form-field>
+		<input mdInput placeholder="SEO URL">
+	</md-form-field>
+
+	<md-form-field [ngStyle]="{'width': '300px', 'margin-bottom': '10px'}">
+		<input mdInput [mdDatepicker]="picker" placeholder="Date Available">
+		<md-datepicker-toggle mdSuffix [for]="picker"></md-datepicker-toggle>
+		<md-datepicker #picker> </md-datepicker>
+	</md-form-field>
+
+	<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Dimensions ( L x W x H) </span>
+	<div fxLayout="row">
+		<md-form-field fxFlex="33">
+			<input mdInput placeholder="Length">
+		</md-form-field>
+
+		<md-form-field fxFlex="33">
+			<input mdInput placeholder="Width">
+		</md-form-field>
+
+		<md-form-field fxFlex="33">
+			<input mdInput placeholder="Height">
+		</md-form-field>
+	</div>
+
+	<md-select placeholder="Length Class">
+		<md-option value="Centimeter"> Centimeter </md-option>
+		<md-option value="Millimeter"> Millimeter </md-option>
+		<md-option value="Inch"> Inch </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="Weight">
+	</md-form-field>
+
+	<md-select placeholder="Weight Class">
+		<md-option value="Kilogram"> Kilogram </md-option>
+		<md-option value="Gram"> Gram </md-option>
+		<md-option value="Pound"> Pound </md-option>
+		<md-option value="Ounce"> Ounce </md-option>
+	</md-select>
+
+	<md-select placeholder="Status">
+		<md-option value="Yes"> Yes </md-option>
+		<md-option value="No"> No </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="Sort Order">
+	</md-form-field>
+</div>

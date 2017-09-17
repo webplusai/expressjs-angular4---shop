@@ -1,0 +1,21 @@
+admin-product-tab-option {
+
+	.label-content {
+		display: flex;
+		align-items: column;
+		width: 100%;
+	}
+
+	.mat-tab-body-wrapper {
+		flex: 1;
+	}
+
+	.mat-tab-group {
+		flex-direction: row;
+	}
+
+	.mat-tab-labels {
+		flex-direction: column;
+	}
+
+}

@@ -1,0 +1,64 @@
+<div class="tab-special product-tab">
+	<md-table [dataSource]="dataSource">
+		<ng-container mdColumnDef="customer_group">
+			<md-header-cell *mdHeaderCellDef> Customer Group </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="specialList[i].customer_group">
+					<option value="Default"> Default </option>
+				</select>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="quantity">
+			<md-header-cell *mdHeaderCellDef> Quantity </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="specialList[i].quantity" placeholder="Quantity">
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="priority">
+			<md-header-cell *mdHeaderCellDef> Priority </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="specialList[i].priority" placeholder="Priority">
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="price">
+			<md-header-cell *mdHeaderCellDef> Price </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="specialList[i].price" placeholder="Price">
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="date_start">
+			<md-header-cell *mdHeaderCellDef> Date Start </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<md-form-field *ngIf="!element.last">
+					<input mdInput [mdDatepicker]="startPicker" placeholder="Date Start" [(ngModel)]="specialList[i].date_start">
+					<md-datepicker-toggle mdSuffix [for]="startPicker"></md-datepicker-toggle>
+					<md-datepicker #startPicker></md-datepicker>
+				</md-form-field>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="date_end">
+			<md-header-cell *mdHeaderCellDef> Date End </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<md-form-field *ngIf="!element.last">
+					<input mdInput [mdDatepicker]="endPicker" placeholder="Date End" [(ngModel)]="specialList[i].date_end">
+					<md-datepicker-toggle mdSuffix [for]="endPicker"></md-datepicker-toggle>
+					<md-datepicker #endPicker></md-datepicker>
+				</md-form-field>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'flex': 'none', 'width': '60px'}">
+				<button md-button type="button" (click)="addRow()" class="action-button" *ngIf="element.last" [ngStyle]="{'background': '#f56b6b'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
+				</button>
+				<button md-button type="button" (click)="removeRow(i)" class="action-button" *ngIf="!element.last" [ngStyle]="{'background': '#1e91cf'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

@@ -1,0 +1,64 @@
+<div class="tab-links product-tab">
+	<md-select placeholder="Manufacturer">
+		<md-option *ngFor="let item of ['-- None --', 'Apple', 'Canon', 'HTC', 'Hewlett-Packard', 'Palm']" value="{{item}}">
+			{{ item }}
+		</md-option>
+	</md-select>
+
+	<md-select placeholder="Categories" (change)="selectChange(category, categoriesList)" [formControl]="category">
+		<md-option value="Cameras"> Cameras </md-option>
+		<md-option value="Components"> Components </md-option>
+		<md-option value="Components > Mice and Trackballs"> Components > Mice and Trackballs </md-option>
+		<md-option value="Components > Monitors"> Components > Monitors </md-option>
+		<md-option value="Components > Monitors > Test1"> Components > Monitors > Test1 </md-option>
+	</md-select>
+	<div class="categories-panel list-panel">
+		<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of categoriesList; let i = index" class="list-item">
+			<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(categoriesList, i)">remove_circle</md-icon>
+			<span [ngStyle]="{'font-size': '12px'}">{{item}}</span>
+		</div>
+	</div>
+
+	<md-select placeholder="Filters" (change)="selectChange(filter, filtersList)" [formControl]="filter">
+		<md-option value="Filter1"> Filter1 </md-option>
+		<md-option value="Filter2"> Filter2 </md-option>
+		<md-option value="Filter3"> Filter3 </md-option>
+	</md-select>
+	<div class="filters-panel list-panel">
+		<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of filtersList; let i = index" class="list-item">
+			<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(filtersList, i)">remove_circle</md-icon>
+			<span [ngStyle]="{'font-size': '12px'}">{{item}}</span>
+		</div>
+	</div>
+
+	<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)', 'display': 'block', 'margin-bottom': '20px'}"> Stores </span>
+	<div class="stores-panel list-panel">
+		<md-checkbox> Default </md-checkbox>
+	</div>
+
+	<md-select placeholder="Downloads" (change)="selectChange(download, downloadsList)" [formControl]="download">
+		<md-option value="Download1"> Download1 </md-option>
+		<md-option value="Download2"> Download2 </md-option>
+		<md-option value="Download3"> Download3 </md-option>
+	</md-select>
+	<div class="downloads-panel list-panel">
+		<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of downloadsList; let i = index" class="list-item">
+			<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(downloadsList, i)">remove_circle</md-icon>
+			<span [ngStyle]="{'font-size': '12px'}">{{item}}</span>
+		</div>
+	</div>
+
+	<md-select placeholder="Related Products" (change)="selectChange(relatedProduct, relatedProductsList)" [formControl]="relatedProduct">
+		<md-option value="Apple Cinema 30"> Apple Cinema 30" </md-option>
+		<md-option value="Canon EOS 5D"> Canon EOS 5D </md-option>
+		<md-option value="HP LP3065"> HP LP 3065 </md-option>
+		<md-option value="HTC Touch HD"> HTC Touch HD </md-option>
+		<md-option value="iMac"> iMac </md-option>
+	</md-select>
+	<div class="related-products-panel list-panel">
+		<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let item of relatedProductsList; let i = index" class="list-item">
+			<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(relatedProductsList, i)">remove_circle</md-icon>
+			<span [ngStyle]="{'font-size': '12px'}">{{item}}</span>
+		</div>
+	</div>
+</div>

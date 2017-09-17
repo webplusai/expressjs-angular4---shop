@@ -1,0 +1,70 @@
+<div class="tab-image product-tab">
+	<md-table [dataSource]="dataSourceMain">
+		<ng-container mdColumnDef="additional_images">
+			<md-header-cell *mdHeaderCellDef> Image </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<div *ngIf="!element.last" class="image">
+					<img width="100" height="100" class="additional-image" src="{{mainImage[i].additional_image}}" (click)="togglePopover($event)">
+					<div class="popover hidden" role="tooltip">
+						<div class="popover-arrow"> </div>
+						<div class="popover-content">
+							<input type="file" id="imgInput" (change)="readURL($event)" style="display:none" accept="image/*"/> 
+							<button md-button type="button" class="action-button" [ngStyle]="{'background': 'rgb(30, 145, 207)'}" (click)="uploadImage($event)"> <md-icon>create</md-icon> </button>
+							<button md-button type="button" class="action-button" [ngStyle]="{'background': 'rgb(245, 107, 107)'}" (click)="removeImage($event)"> <md-icon>delete</md-icon> </button>
+						</div>
+					</div>
+				</div>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="sort_order">
+			<md-header-cell *mdHeaderCellDef> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index"> </md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+
+	<md-table [dataSource]="dataSource" [ngStyle]="{'margin-top': '20px'}">
+		<ng-container mdColumnDef="additional_images">
+			<md-header-cell *mdHeaderCellDef> Additional Images </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<div *ngIf="!element.last" class="image">
+					<img width="100" height="100" class="additional-image" src="{{imageList[i].additional_image}}" (click)="togglePopover($event)">
+					<div class="popover hidden" role="tooltip">
+						<div class="popover-arrow"> </div>
+						<div class="popover-content">
+							<input type="file" id="imgInput" (change)="readURL($event)" style="display:none" accept="image/*"/> 
+							<button md-button type="button" class="action-button" [ngStyle]="{'background': 'rgb(30, 145, 207)'}" (click)="uploadImage($event)"> <md-icon>create</md-icon> </button>
+							<button md-button type="button" class="action-button" [ngStyle]="{'background': 'rgb(245, 107, 107)'}" (click)="removeImage($event)"> <md-icon>delete</md-icon> </button>
+						</div>
+					</div>
+				</div>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="sort_order">
+			<md-header-cell *mdHeaderCellDef> Sort Order </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="imageList[i].sort_order">
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'flex': 'none', 'width': '60px'}">
+				<button md-button type="button" (click)="addRow()" class="action-button" *ngIf="element.last" [ngStyle]="{'background': '#f56b6b'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
+				</button>
+				<button md-button type="button" (click)="removeRow(i)" class="action-button" *ngIf="!element.last" [ngStyle]="{'background': '#1e91cf'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

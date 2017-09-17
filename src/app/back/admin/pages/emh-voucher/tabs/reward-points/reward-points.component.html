@@ -1,0 +1,22 @@
+<div class="tab-reward-points product-tab">
+	<md-form-field>
+		<input mdInput placeholder="Points">
+	</md-form-field>
+
+	<md-table [dataSource]="dataSource">
+		<ng-container mdColumnDef="customer_group">
+			<md-header-cell *mdHeaderCellDef> Customer Group </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				{{ element.customer_group }}
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="reward_points">
+			<md-header-cell *mdHeaderCellDef> Customer Group </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input class="form-control" [(ngModel)]="rewardPointsList[i].reward_points">
+			</md-cell>
+		</ng-container>
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

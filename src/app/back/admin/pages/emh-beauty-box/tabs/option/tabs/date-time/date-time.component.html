@@ -1,0 +1,19 @@
+<div class="tab-date-time product-tab">
+
+	<div class="form-group">
+		<label> Required </label>
+		<select class="form-control" placeholder="Required">
+			<option value="Yes"> Yes </option>
+			<option value="No"> No </option>
+		</select>
+	</div>
+
+	<p-calendar [(ngModel)]="value" showTime="showTime" hourFormat="24" [showIcon]="true"></p-calendar>
+
+	<!-- <md-form-field [ngStyle]="{'width': '300px'}">
+		<input mdInput [mdDatepicker]="picker" placeholder="Option Value">
+		<md-datepicker-toggle  mdSuffix [for]="picker"></md-datepicker-toggle>
+		<md-datepicker #picker></md-datepicker>
+	</md-form-field> -->
+
+</div>

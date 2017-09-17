@@ -12,6 +12,10 @@ import { CategoriesListComponent } from './pages/categories/categories-list.comp
 import { CategoriesFormComponent } from './pages/categories/categories-form.component';
 import { ProductsListComponent } from './pages/products/products-list.component';
 import { ProductsFormComponent } from './pages/products/products-form.component';
+import { EmhVoucherListComponent } from './pages/emh-voucher/emh-voucher-list.component';
+import { EmhVoucherFormComponent } from './pages/emh-voucher/emh-voucher-form.component';
+import { EmhBeautyBoxListComponent } from './pages/emh-beauty-box/emh-beauty-box-list.component';
+import { EmhBeautyBoxFormComponent } from './pages/emh-beauty-box/emh-beauty-box-form.component';
 import { BloggersListComponent } from './pages/bloggers/bloggers-list.component';
 import { BloggersFormComponent } from './pages/bloggers/bloggers-form.component';
 import { NewsListComponent } from './pages/news/news-list.component';
@@ -115,6 +119,62 @@ const routes: Routes = [
 				data: {
 					title: 'Categories',
 					breadcrumb: [ ['Home', 'dashboard'], ['Categories', 'categories'] ]
+				}
+			},
+			{
+				path: 'products',
+				component: ProductsListComponent,
+				data: {
+					title: 'Products',
+					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
+				}
+			},
+			{
+				path: 'products/create',
+				component: ProductsFormComponent,
+				data: {
+					title: 'Products',
+					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
+				}
+			},
+			{
+				path: 'emh-voucher',
+				component: EmhVoucherListComponent,
+				data: {
+					title: 'Emh Voucher',
+					breadcrumb: [ ['Home', 'dashboard'], ['Emh Voucher', 'emh-voucher'] ]
+				}
+			},
+			{
+				path: 'emh-voucher/create',
+				component: EmhVoucherFormComponent,
+				data: {
+					title: 'Emh Voucher',
+					breadcrumb: [ ['Home', 'dashboard'], ['Emh Voucher', 'emh-voucher'] ]
+				}
+			},
+			{
+				path: 'emh-beauty-box',
+				component: EmhBeautyBoxListComponent,
+				data: {
+					title: 'Emh Beauty Box',
+					breadcrumb: [ ['Home', 'dashboard'], ['Emh Beauty Box', 'emh-beauty-box' ] ]
+				}
+			},
+			{
+				path: 'emh-beauty-box/create',
+				component: EmhBeautyBoxFormComponent,
+				data: {
+					title: 'Emh Beauty Box',
+					breadcrumb: [ ['Home', 'dashboard'], ['Emh Beauty Box', 'emh-beauty-box'] ]
+				}
+			},
+			{
+				path: 'products/create',
+				component: ProductsFormComponent,
+				data: {
+					title: 'Products',
+					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
 				}
 			},
 			{

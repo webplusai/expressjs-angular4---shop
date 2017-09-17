@@ -27,6 +27,10 @@ import { CategoriesListComponent } from './pages/categories/categories-list.comp
 import { CategoriesFormComponent } from './pages/categories/categories-form.component';
 import { ProductsListComponent } from './pages/products/products-list.component';
 import { ProductsFormComponent } from './pages/products/products-form.component';
+import { EmhVoucherListComponent } from './pages/emh-voucher/emh-voucher-list.component';
+import { EmhVoucherFormComponent } from './pages/emh-voucher/emh-voucher-form.component';
+import { EmhBeautyBoxListComponent } from './pages/emh-beauty-box/emh-beauty-box-list.component';
+import { EmhBeautyBoxFormComponent } from './pages/emh-beauty-box/emh-beauty-box-form.component';
 import { GeneralComponent } from './pages/products/tabs/general/general.component';
 import { DataComponent } from './pages/products/tabs/data/data.component';
 import { LinksComponent } from './pages/products/tabs/links/links.component';
@@ -116,6 +120,10 @@ import { FileComponent } from './pages/products/tabs/option/tabs/file/file.compo
 		CategoriesFormComponent,
 		ProductsListComponent,
 		ProductsFormComponent,
+		EmhVoucherListComponent,
+		EmhVoucherFormComponent,
+		EmhBeautyBoxListComponent,
+		EmhBeautyBoxFormComponent,
 		GeneralComponent,
 		DataComponent,
 		LinksComponent,

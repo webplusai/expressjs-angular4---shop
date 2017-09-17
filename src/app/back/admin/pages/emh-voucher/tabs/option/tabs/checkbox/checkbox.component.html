@@ -1,0 +1,89 @@
+<div class="tab-checkbox product-tab">
+
+	<div class="form-group">
+		<label> Required </label>
+		<select class="form-control" placeholder="Required">
+			<option value="Yes"> Yes </option>
+			<option value="No"> No </option>
+		</select>
+	</div>
+
+	<md-table [dataSource]="dataSource" [ngStyle]="{'margin-top': '30px'}">
+		<ng-container mdColumnDef="option_value">
+			<md-header-cell *mdHeaderCellDef> Option Value </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select class="form-control" *ngIf="!element.last" [(ngModel)]="checkboxList[i].option_value" placeholder="Checkbox">
+					<option value="Checkbox 1"> Checkbox 1 </option>
+					<option value="Checkbox 2"> Checkbox 2 </option>
+					<option value="Checkbox 3"> Checkbox 3 </option>
+					<option value="Checkbox 4"> Checkbox 4 </option>
+				</select>
+			</md-cell>
+		</ng-container>
+
+		<ng-container mdColumnDef="quantity">
+			<md-header-cell *mdHeaderCellDef> Quantity </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="checkboxList[i].quantity" placeholder="Quantity">
+			</md-cell>
+		</ng-container>
+
+		<ng-container mdColumnDef="subtract_stock">
+			<md-header-cell *mdHeaderCellDef> Subtract Stock </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="checkboxList[i].subtract_stock">
+					<option value="Yes"> Yes </option>
+					<option value="No"> No </option>
+				</select>
+			</md-cell>
+		</ng-container>
+
+		<ng-container mdColumnDef="price">
+			<md-header-cell *mdHeaderCellDef> Price </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="checkboxList[i].price_direction">
+					<option value="+"> + </option>
+					<option value="-"> - </option>
+				</select>
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="checkboxList[i].price" placeholder="Price">
+			</md-cell>
+		</ng-container>
+
+		<ng-container mdColumnDef="points">
+			<md-header-cell *mdHeaderCellDef> Points </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="checkboxList[i].points_direction">
+					<option value="+"> + </option>
+					<option value="-"> - </option>
+				</select>
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="checkboxList[i].points" placeholder="Points">
+			</md-cell>
+		</ng-container>
+
+		<ng-container mdColumnDef="weight">
+			<md-header-cell *mdHeaderCellDef> Weight </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="checkboxList[i].weight_direction">
+					<option value="+"> + </option>
+					<option value="-"> - </option>
+				</select>
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="checkboxList[i].weight" placeholder="Weight">
+			</md-cell>
+		</ng-container>
+
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'flex': 'none', 'width': '60px'}">
+				<button md-button type="button" (click)="addRow()" class="action-button" *ngIf="element.last" [ngStyle]="{'background': '#f56b6b'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
+				</button>
+				<button md-button type="button" (click)="removeRow(i)" class="action-button" *ngIf="!element.last" [ngStyle]="{'background': '#1e91cf'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

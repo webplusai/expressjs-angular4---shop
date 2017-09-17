@@ -1,0 +1,54 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> New seller </span>
+	</h3>
+</div>
+
+<form #productsForm="ngForm" (ngSubmit)="createProduct(productsForm)" [formGroup]="form">
+	<md-tab-group>
+		<md-tab label="General">
+			<admin-product-tab-general> </admin-product-tab-general>
+		</md-tab>
+
+		<md-tab label="Data">
+			<admin-product-tab-data> </admin-product-tab-data>
+		</md-tab>
+
+		<md-tab label="Links">
+			<admin-product-tab-links> </admin-product-tab-links>
+		</md-tab>
+
+		<md-tab label="Attribute">
+			<admin-product-tab-attribute> </admin-product-tab-attribute>
+		</md-tab>
+
+		<md-tab label="Option">
+			<admin-product-tab-option> </admin-product-tab-option>
+		</md-tab>
+
+		<md-tab label="Recurring">
+			<admin-product-tab-recurring> </admin-product-tab-recurring>
+		</md-tab>
+
+		<md-tab label="Discount">
+			<admin-product-tab-discount> </admin-product-tab-discount>
+		</md-tab>
+
+		<md-tab label="Special">
+			<admin-product-tab-special> </admin-product-tab-special>
+		</md-tab>
+
+		<md-tab label="Image">
+			<admin-product-tab-image> </admin-product-tab-image>
+		</md-tab>
+
+		<md-tab label="Reward Points">
+			<admin-product-tab-reward-points> </admin-product-tab-reward-points>
+		</md-tab>
+
+		<md-tab label="Design">
+			<admin-product-tab-design> </admin-product-tab-design>
+		</md-tab>
+	</md-tab-group>
+</form>
