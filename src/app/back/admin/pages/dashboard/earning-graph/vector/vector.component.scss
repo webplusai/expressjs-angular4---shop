@@ -1,0 +1,55 @@
+.region-earning-stats {
+    text-align: center;
+    color: #6d6d6d;
+    text-transform: uppercase;
+    padding: 40px 30px;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+
+    span {
+        display: block;
+        color: #b0c781;
+        font-size: 20px;
+    }
+}
+
+.location-earning-stats {
+    text-align: center;
+    font-family: 'Open Sans',sans-serif;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-left: 0;
+
+    li {
+        padding: 0px 15px;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 12px;
+
+        span {
+            display: block;
+            font-size: 14px;
+        }
+    }
+}
+
+.stat-divider {
+    border-right: #dadada 1px dashed;
+}
+
+.vector-stat {
+    height: 150px;
+    margin-top: 20px;
+}
+
+.first-city {
+    color: #7bd0d1;
+}
+
+.second-city {
+    color: #c5cc73;
+}
+
+.third-city {
+    color: #e47578;
+}

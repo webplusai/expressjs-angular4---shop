@@ -1,0 +1,58 @@
+.circle-sat ul {
+    text-align: center;
+
+    li {
+        display: inline-block;
+
+        span {
+            display: block;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.left-stat-label span, .right-stat-label span {
+    display: block;
+}
+
+.left-stat-label {
+    text-align: right;
+    font-size: 11px;
+    position: relative;
+    top: 10px;
+    padding-right: 10px;
+
+    .sell-percent {
+        color: #f9a10c;
+        font-size: 14px;
+    }
+}
+
+.right-stat-label {
+    text-align: left;
+    font-size: 11px;
+    position: relative;
+    top: 10px;
+    padding-left: 10px;
+
+    .sell-percent {
+        color: #36d8c0;
+        padding-top: 30px;
+        font-size: 14px;
+    }
+}
+
+#epie-chart {
+    position: relative;
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+
+.percent {
+    display: inline-block;
+    line-height: 80px;
+    z-index: 2;
+}

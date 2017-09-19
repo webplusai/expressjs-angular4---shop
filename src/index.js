@@ -3,6 +3,8 @@ var path = require('path');
 var bodyParser = require('body-parser');
 var app = express();
 
+app.use('/node_modules', express.static(path.join(__dirname + '/../node_modules')));
+app.use('/scripts', express.static(path.join(__dirname + '/assets/js')));
 app.use(express.static(path.join(__dirname + '/../dist')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({

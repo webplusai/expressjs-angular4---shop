@@ -1,0 +1,40 @@
+.weather-widget {
+    background: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+}
+
+.weather-info {
+    margin: 0px;
+
+    li {
+        font-size: 14px;
+        color: #ccc;
+        list-style: none;
+    }
+}
+
+.weather-icon {
+    margin-right: 10px;
+    padding-right: 10px;
+
+    canvas {
+        margin-top: 15px;
+    }
+}
+
+.weather-cent span {
+    font-size: 30px;
+    font-weight: 700;
+    color: #aec785;
+}
+
+.weather-cent span:after {
+    content: "o";
+    font-size: 16px;
+    position: relative;
+    top: -15px;
+}

@@ -1,0 +1,43 @@
+.huge {
+	font-size: 40px;
+}
+
+.panel-heading {
+	color: #fff;
+}
+
+.panel-green {
+	border-color: #5cb85c;
+
+	.panel-heading {
+		background-color: #5cb85c;
+	}
+
+	.panel-footer {
+		color: #5cb85c;
+	}
+}
+
+.panel-yellow {
+	border-color: #f0ad4e;
+
+	.panel-heading {
+		background-color: #f0ad4e;
+	}
+
+	.panel-footer {
+		color: #f0ad4e;
+	}
+}
+
+.panel-red {
+	border-color: #d9534f;
+
+	.panel-heading {
+		background-color: #d9534f;
+	}
+
+	.panel-footer {
+		color: #d9534f;
+	}
+}

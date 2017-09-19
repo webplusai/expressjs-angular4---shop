@@ -1,0 +1,83 @@
+.bar-legend {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding-left: 0;
+
+    li {
+        font-size: 11px;
+        margin-bottom: 5px;
+        list-style: none;
+    }
+}
+
+.bar-stats {
+    height: 80px;
+    margin-top: 20px;
+    border-bottom: #aec785 2px solid;
+    position: relative;
+}
+
+.progress-stat-bar {
+    padding-left: 10px;
+
+    li {
+        height: 78px;
+        width: 20px;
+        background: #f1f1f1;
+        position: relative;
+        margin-right: 5px;
+        float: left;
+        list-style: none;
+    }
+}
+
+.progress-stat-percent {
+    background: #aec785;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+.bar-legend-pointer {
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    margin-right: 5px;
+
+    green {
+        background: #AEC785;
+    }
+}
+
+.daily-sales-info {
+    color: #ccc;
+    padding-top: 6px;
+
+    span {
+        display: inline-block;    
+    }
+
+    span.sales-count {
+        font-size: 18px;
+        color: #aec785;
+        font-weight: 600;
+    }
+
+    span.sales-label {
+        position: relative;
+        top: -2px;
+    }
+}
+
+.pink {
+    background: #a48ad4 !important;
+}
+
+.yellow-b {
+    background: #fdd752 !important;
+}

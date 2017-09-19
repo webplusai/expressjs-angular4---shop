@@ -10,6 +10,8 @@ import { TinyMceModule } from 'angular-tinymce';
 import { tinymceDefaultSettings } from 'angular-tinymce';
 
 import { CalendarModule } from 'primeng/primeng';
+import { FlotModule } from 'ng2modules-flot';
+import { EasyPieChartModule } from 'ng2modules-easypiechart';
 
 import { AdminRoutingModule } from './admin-routing.module';
 
@@ -89,6 +91,22 @@ import { DateComponent } from './pages/products/tabs/option/tabs/date/date.compo
 import { DateTimeComponent } from './pages/products/tabs/option/tabs/date-time/date-time.component';
 import { DeliveryDateComponent } from './pages/products/tabs/option/tabs/delivery-date/delivery-date.component';
 import { FileComponent } from './pages/products/tabs/option/tabs/file/file.component';
+import { MiniStatisticsComponent } from './pages/dashboard/mini-statistics/mini-statistics.component';
+import { CalendarComponent } from './pages/dashboard/calendar/calendar.component';
+import { ChatComponent } from './pages/dashboard/chat/chat.component';
+import { StatisticsComponent } from './pages/dashboard/statistics/statistics.component';
+import { NotificationComponent } from './pages/dashboard/notification/notification.component';
+import { LatestMembersComponent } from './pages/dashboard/latest-members/latest-members.component';
+import { MorrisComponent } from './pages/dashboard/earning-graph/morris/morris.component';
+import { VectorComponent } from './pages/dashboard/earning-graph/vector/vector.component';
+import { MonthlyExpenseComponent } from './pages/dashboard/monthly-expense/monthly-expense.component';
+import { DailyVisitorsComponent } from './pages/dashboard/daily-visitors/daily-visitors.component';
+import { TopAdvertiseComponent } from './pages/dashboard/top-advertise/top-advertise.component';
+import { DailySalesComponent } from './pages/dashboard/daily-sales/daily-sales.component';
+import { MonthlyStatsComponent } from './pages/dashboard/monthly-stats/monthly-stats.component';
+import { SellComponent } from './pages/dashboard/sell/sell.component';
+import { ProspectiveLabelComponent } from './pages/dashboard/prospective-label/prospective-label.component';
+import { WeatherComponent } from './pages/dashboard/weather/weather.component';
 
 @NgModule({
 	imports: [
@@ -102,6 +120,8 @@ import { FileComponent } from './pages/products/tabs/option/tabs/file/file.compo
 		MdDatepickerModule,
 		MdNativeDateModule,
 		CalendarModule,
+		FlotModule,
+		EasyPieChartModule,
 		TinyMceModule.forRoot(tinymceDefaultSettings())
 	],
 
@@ -181,7 +201,23 @@ import { FileComponent } from './pages/products/tabs/option/tabs/file/file.compo
 		DateComponent,
 		DateTimeComponent,
 		DeliveryDateComponent,
-		FileComponent
+		FileComponent,
+		MiniStatisticsComponent,
+		CalendarComponent,
+		ChatComponent,
+		StatisticsComponent,
+		NotificationComponent,
+		LatestMembersComponent,
+		MorrisComponent,
+		VectorComponent,
+		MonthlyExpenseComponent,
+		DailyVisitorsComponent,
+		TopAdvertiseComponent,
+		DailySalesComponent,
+		MonthlyStatsComponent,
+		SellComponent,
+		ProspectiveLabelComponent,
+		WeatherComponent,
 	]
 })
 export class AdminModule { }

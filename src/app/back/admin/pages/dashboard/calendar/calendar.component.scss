@@ -1,0 +1,111 @@
+.event-calendar {
+    background: #1fb5ac;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    border-radius: 6px;
+    min-height: 474px;
+}
+
+.calendar-block {
+    float: right !important;
+    -webkit-border-radius: 0 5px 5px 0px;
+    -moz-border-radius: 0 5px 5px 0px;
+    border-radius: 0 5px 5px 0px;
+    background: #fff;
+    min-height: 474px;
+    z-index: 1000;
+}
+
+.event-list-block {
+    -webkit-border-radius: 5px 0px 0px 5px;
+    -moz-border-radius: 5px 0px 0px 5px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.calendar-block .clndr {
+    margin: 40px 0;
+}
+
+.calendar-block .clndr {
+    margin: 40px 0;
+}
+
+.calendar-block .clndr-controls {
+    margin: 45px 0px !important;
+}
+
+.calendar-block .day-contents {
+    width: 30px;
+    margin: auto;
+}
+
+.today .day-contents {
+    width: 30px;
+    background: #1fb0ab;
+    cursor: pointer;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.calendar-block .day-contents:hover {
+    width: 30px;
+    background: #1fb0ab;
+    cursor: pointer;
+    color: #fff;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.event-list {
+    padding-left: 0;
+}
+
+    .event-list li {
+        background: rgba(255,255,255,.2);
+        padding: 10px 30px 10px 10px;
+        color: #fff;
+        margin-bottom: 5px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        position: relative;
+        list-style: none;
+    }
+
+.event-close {
+    display: inline-block;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    right: 4px;
+    top: 8px;
+}
+
+.cal-day {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+    .cal-day span {
+        font-size: 14px;
+        display: block;
+    }
+
+.evnt-input, .evnt-input:focus {
+    background: none;
+    border: none;
+    border-bottom: #fff 1px solid;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    color: #fff;
+    padding-left: 0px;
+    margin-top: 10px;
+}

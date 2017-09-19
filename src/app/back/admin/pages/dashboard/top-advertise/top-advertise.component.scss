@@ -1,0 +1,15 @@
+.sm-pie {
+	margin-top: 30px;
+
+	.legendColorBox {
+	    padding-right: 5px;
+	}
+
+	.legendColorBox > div {
+	    border: #fff 0px solid !important;
+	}
+
+	.legendColorBox div {
+	    border-radius: 100% !important;
+	}
+}

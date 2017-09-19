@@ -1,0 +1,66 @@
+admin-dashboard {
+
+    .today .day-contents {
+        width: 30px;
+        background: #1fb0ab;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 3px;
+    }
+
+    .calendar-block  {
+        .clndr-controls {
+            margin: 45px 0px !important;
+        }
+
+        .day-contents {
+            margin: auto;
+        }
+    }
+
+    .calendar-block .day-contents:hover {
+        width: 30px;
+        background: #1fb0ab;
+        cursor: pointer;
+        color: #fff;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+    }
+
+    #epie-chart canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .panel {
+        margin-bottom: 20px;
+        background-color: #fff;
+        border-radius: 4px;
+    }
+
+    .top-stats-panel {
+        min-height: 164px;
+    }
+
+    .tools a {
+        margin-left: 10px;
+        color: #a7a7a7;
+        font-size: 12px;
+    }
+
+    .widget-h {
+        color: #afaebc;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0px 0px 10px 0px;
+        text-align: center;
+    }
+}
+
+#flotTip {
+    background: #fff;
+    border: #ccc 1px solid;
+    padding: 10px;
+}

@@ -1,0 +1,98 @@
+.alert-icon {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+
+    i {
+        width: 40px;
+        height: 40px;
+        display: block;
+        text-align: center;
+        line-height: 40px;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+
+.notification-info {
+    margin-left: 56px;
+    margin-top: -40px;
+
+    p {
+        margin: 0px;
+        color: #999;
+        font-size: 12px;
+    }
+}
+
+.notification-meta {
+    margin-bottom: 3px;
+    padding-left: 0;
+    list-style: none;
+}
+
+.alert-info .alert-icon {
+    background-color: #99cce3;
+}
+
+.alert-danger .alert-icon {
+    background-color: #fcb1ae;
+}
+
+.alert-success .alert-icon {
+    background-color: #98d7ad;
+}
+
+.alert-warning .alert-icon {
+    background-color: #ffe699;
+}
+
+.notification-sender {
+    color: #414147;
+}
+
+.notification-time {
+    font-style: italic;
+    color: #999;
+}
+
+.alert-info .notification-info a {
+    color: #45a2c9;
+}
+
+.alert-danger .notification-info a {
+    color: #fb6f6b;
+}
+
+.alert-success .notification-info a {
+    color: #42b663;
+}
+
+.alert-warning .notification-info a {
+    color: #e6cb76;
+}
+
+.alert-info.bucket-notification {
+    background-color: #eef7fd;
+}
+
+.alert-danger.bucket-notification {
+    background-color: #fef3f2;
+}
+
+.alert-success.bucket-notification {
+    background-color: #eef8f8;
+}
+
+.alert-warning.bucket-notification {
+    background-color: #fff7e1;
+}
+
+.tools a {
+    margin-left: 10px;
+    color: #a7a7a7;
+    font-size: 12px;
+}
