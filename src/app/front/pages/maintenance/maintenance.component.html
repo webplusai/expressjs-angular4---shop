@@ -1,0 +1,43 @@
+<div class="full-size wrapper" fxLayout="column">
+	<div class="header" fxLayout="row" fxLayoutAlign="start center">
+		<img class="logo" src="assets/img/logo.jpg">
+		<div class="social-icons">
+			<button md-icon-button [ngStyle]="{'background': '#3b5998'}"> <i class="fa fa-facebook"> </i> </button>
+			<button md-icon-button [ngStyle]="{'background': '#55acee'}"> <i class="fa fa-twitter"> </i> </button>
+			<button md-icon-button [ngStyle]="{'background': '#dd4b39'}"> <i class="fa fa-google-plus"> </i> </button>
+			<button md-icon-button [ngStyle]="{'background': '#cb2027'}"> <i class="fa fa-pinterest-p"> </i> </button>
+		</div>
+	</div>
+
+	<div class="content-wrapper" fxLayout="column" fxLayoutAlign="center center">
+		<button md-icon-button class="play-button" [ngStyle]="{'background': '#fff'}">
+			<md-icon class="play-icon">play_arrow</md-icon>
+		</button>
+		<br>
+		<div fxLayout="row" class="contact-panel">
+			<input class="form-control" placeholder="Your Name">
+			<input class="form-control" placeholder="Your Email">
+			<button md-button class="button-sell"> 
+				<span> Sell With Us </span>
+			</button>
+		</div>
+		<div fxLayout="row" class="countdown-timer">
+			<div class="countdown-widget">
+				<span class="countdown-number"> {{ days }} </span>
+				<span class="countdown-label"> Days </span>
+			</div>
+			<div class="countdown-widget">
+				<span class="countdown-number"> {{ hours }} </span>
+				<span class="countdown-label"> Hours </span>
+			</div>
+			<div class="countdown-widget">
+				<span class="countdown-number"> {{ minutes }} </span>
+				<span class="countdown-label"> Minutes </span>
+			</div>
+			<div class="countdown-widget">
+				<span class="countdown-number"> {{ seconds }} </span>
+				<span class="countdown-label"> Seconds </span>
+			</div>
+		</div>
+	</div>
+</div>

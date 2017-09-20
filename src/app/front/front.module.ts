@@ -35,6 +35,7 @@ import { ProductCardComponent } 				from 	'./partials/product-card/product-card.
 import { LoginComponent } 						from 	'./pages/login/login.component';
 import { LoginWrapperComponent } 				from 	'./login-wrapper.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 
 @NgModule({
 	imports: [
@@ -73,7 +74,8 @@ import { SignupComponent } from './pages/signup/signup.component';
 		ProductCardComponent,
 		LoginComponent,
 		LoginWrapperComponent,
-		SignupComponent
+		SignupComponent,
+		MaintenanceComponent
 	]
 })
 export class FrontModule { }

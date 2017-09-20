@@ -64,11 +64,11 @@
 	<ng-container cdkColumnDef="action">
 		<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '40px'}"> </md-header-cell>
 		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index" [ngStyle]="{'flex': 'none'}">
-			<button md-button *ngIf="row.last" class="icon-button" (click)="addRow()" [ngStyle]="{'background': '#1e91cf', 'color': '#1e91cf'}">
-				<md-icon [ngStyle]="{'color': '#fff'}">add_circle_outline</md-icon>
+			<button md-button *ngIf="row.last" class="action-button" (click)="addRow()" [ngStyle]="{'background': '#1e91cf', 'color': '#1e91cf'}">
+				<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
 			</button>
-			<button md-button *ngIf="!row.last" class="icon-button" (click)="removeRow(i)" [ngStyle]="{'background': '#f56b6b', 'color': '#f56b6b'}">
-				<md-icon [ngStyle]="{'color': '#fff'}">remove_circle_outline</md-icon>
+			<button md-button *ngIf="!row.last" class="action-button" (click)="removeRow(i)" [ngStyle]="{'background': '#f56b6b', 'color': '#f56b6b'}">
+				<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
 			</button>
 		</md-cell>
 	</ng-container>	

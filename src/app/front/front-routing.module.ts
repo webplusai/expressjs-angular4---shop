@@ -10,6 +10,7 @@ import { ProductComponent }			from 	'./pages/product/product.component';
 import { LoginComponent }			from 	'./pages/login/login.component';
 import { SignupComponent }			from 	'./pages/signup/signup.component';
 import { LoginWrapperComponent }	from 	'./login-wrapper.component';
+import { MaintenanceComponent }		from 	'./pages/maintenance/maintenance.component';
 
 const routes: Routes = [
 	{
@@ -88,6 +89,10 @@ const routes: Routes = [
 				outlet: 'login'
 			}
 		]
+	},
+	{
+		path: 'maintenance',
+		component: MaintenanceComponent
 	}
 ];
 

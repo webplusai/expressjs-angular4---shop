@@ -1,0 +1,70 @@
+.button-sell {
+	background: #02f8cf;
+	min-width: initial;
+	color: #fff;
+}
+
+.contact-panel > * {
+	margin: 0px 10px;
+	height: 45px;
+}
+
+.content-wrapper {
+	flex: 1;
+}
+
+.countdown-label {
+	font-size: 20px;
+}
+
+.countdown-number {
+	font-size: 60px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.countdown-timer {
+	margin-top: 20px;
+}
+
+.countdown-widget {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #fff;
+    border-radius: 5px;
+    width: 120px;
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.header {
+	padding: 20px 50px;
+    justify-content: space-between !important;
+}
+
+.logo {
+	height: 80px;
+}
+
+.play-button {
+	background: #fff;
+    width: 70px;
+    height: 70px;
+}
+
+.play-icon {
+	font-size: 50px;
+    line-height: 50px !important;
+    width: 50px;
+    height: 50px;
+}
+
+.social-icons {
+	color: #fff;
+}
+
+.wrapper {
+	background: linear-gradient(rgba(0, 255, 255, 0.4), rgba(0, 255, 255, 0.4)), url(../../../../assets/img/maintenance_back.png) no-repeat center center;
+    background-size: cover;
+}
