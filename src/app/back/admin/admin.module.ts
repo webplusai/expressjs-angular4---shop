@@ -107,6 +107,7 @@ import { MonthlyStatsComponent } from './pages/dashboard/monthly-stats/monthly-s
 import { SellComponent } from './pages/dashboard/sell/sell.component';
 import { ProspectiveLabelComponent } from './pages/dashboard/prospective-label/prospective-label.component';
 import { WeatherComponent } from './pages/dashboard/weather/weather.component';
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 
 @NgModule({
 	imports: [
@@ -218,6 +219,7 @@ import { WeatherComponent } from './pages/dashboard/weather/weather.component';
 		SellComponent,
 		ProspectiveLabelComponent,
 		WeatherComponent,
+		MaintenanceComponent,
 	]
 })
 export class AdminModule { }
