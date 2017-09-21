@@ -4,8 +4,8 @@
 	</a>
 </div>
 
-<div class="product-wrapper" fxLayout="column">
-	<div class="product-main">
+<div class="product-wrapper">
+	<div class="product-main" fxLayout="row">
 		<div class="product-images" fxFlex="17">
 			<img src="assets/img/product-image1.png">
 			<img src="assets/img/product-image2.png">
@@ -62,6 +62,6 @@
 	<app-store-summary> </app-store-summary>
 </div>
 
-<div class="related-products">
+<div class="related-products" fxLayout="row">
 	<app-product-card fxFlex="25" *ngFor="let i of [1, 2, 3, 4]"> </app-product-card>
 </div>

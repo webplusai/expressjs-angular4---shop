@@ -1,7 +1,7 @@
 <md-list fxHide.xs fxHide.sm>
     <md-list-item *ngFor="let menuItem of menuItems" class="color-primary">
         <button md-button fxLayout="row" class="full-size" xOffset="100" [mdMenuTriggerFor]="appMenu"> <p class="inline"> {{ menuItem }} </p> <md-icon>keyboard_arrow_right</md-icon> </button>
-        <md-menu #appMenu="mdMenu" xPosition="after">
+        <md-menu class="mega-menu" #appMenu="mdMenu" xPosition="after">
             <div fxLayout="column">
                 <div fxLayout="row" *ngFor="let i of [1, 2]">
                     <div style="min-width: 300px;" *ngFor="let j of [1, 2]">

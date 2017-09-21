@@ -252,8 +252,8 @@ app-left-sidenav, app-menu-mega, admin-leftnav {
 	}
 }
 
-/*.cdk-overlay-pane {
-	.mat-menu-panel {
+.cdk-overlay-pane {
+	.mat-menu-panel.mega-menu {
 		top: 80px;
 		position: fixed;
 		margin-left: 200px;
@@ -288,4 +288,4 @@ app-left-sidenav, app-menu-mega, admin-leftnav {
 			}
 		}
 	}	
-}*/
+}
