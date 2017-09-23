@@ -1,7 +1,18 @@
-.buyer-content {
+.buyer-wrapper {
+	height: 100%;
+}
+
+.content {
+	flex: 1;
+	padding: 30px;
+}
+
+.content-wrapper {
 	flex: 1;
 }
 
-.buyer-wrapper {
+.sidenav-wrapper {
 	height: 100%;
+    width: 240px;
+    background: #2f3a4c;	
 }

@@ -13,7 +13,7 @@
 
 	<md-list>
 		<md-list-item *ngFor="let item of listItems">
-			<a routerLink="['buyer' + '/' + item.link]" class="full-size">
+			<a [routerLink]="['/buyer/' + item.link]" class="full-size">
 				<button md-button class="full-height menu-button" (click)="toggleMenuItem($event)">
 					<p class="button-content inline" [ngStyle]="{'flex': '1'}">
 						{{ item.text }}

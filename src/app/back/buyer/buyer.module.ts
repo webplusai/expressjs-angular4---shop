@@ -8,6 +8,7 @@ import { BuyerRoutingModule } from './buyer-routing.module';
 import { BuyerComponent } from './buyer.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { SidenavComponent } from './partials/sidenav/sidenav.component';
+import { MyAccountComponent } from './pages/my-account/my-account.component';
 
 @NgModule({
 	imports: [
@@ -19,7 +20,8 @@ import { SidenavComponent } from './partials/sidenav/sidenav.component';
 	declarations: [
 		BuyerComponent,
 		HeaderComponent,
-		SidenavComponent
+		SidenavComponent,
+		MyAccountComponent
 	]
 })
 export class BuyerModule { }
