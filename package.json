@@ -52,6 +52,7 @@
     "serve-function": "^0.5.1",
     "skycons": "^1.0.0",
     "tinymce": "^4.6.6",
+    "underscore": "^1.8.3",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
