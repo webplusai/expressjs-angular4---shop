@@ -6,7 +6,13 @@ import { BuyerComponent } from './buyer.component';
 const routes: Routes = [
 	{
 		path: '',
-		component: BuyerComponent
+		component: BuyerComponent,
+		children: [
+			{
+				path: 'my-account',
+				component: MyAccountComponent
+			}
+		]
 	}
 ];
 
