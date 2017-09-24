@@ -10,9 +10,8 @@
 			<h4> Hamada S. <br> <small> Hamada </small> </h4>
 		</div>
 	</div>
-
 	<md-list>
-		<md-list-item *ngFor="let item of listItems">
+		<md-list-item *ngFor="let item of listItems" [class.selected]="item.link == page_alias">
 			<a [routerLink]="['/buyer/' + item.link]" class="full-size">
 				<button md-button class="full-height menu-button" (click)="toggleMenuItem($event)">
 					<p class="button-content inline" [ngStyle]="{'flex': '1'}">

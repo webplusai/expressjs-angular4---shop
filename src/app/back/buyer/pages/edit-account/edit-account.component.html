@@ -1,0 +1,23 @@
+<h1> My Account Information </h1>
+<h4> Your Personal Details </h4>
+
+<form #accountForm="ngForm" (submit)="editAccount(accountForm)">
+
+	<md-form-field>
+		<input mdInput placeholder="First Name*">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Last Name*">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Email*">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Telephone*">
+	</md-form-field>
+
+	<button md-button class="btn-primary"> Edit Account </button>
+</form>
