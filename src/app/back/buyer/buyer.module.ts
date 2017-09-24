@@ -12,6 +12,8 @@ import { SidenavComponent } from './partials/sidenav/sidenav.component';
 import { MyAccountComponent } from './pages/my-account/my-account.component';
 import { EditAccountComponent } from './pages/edit-account/edit-account.component';
 import { PasswordComponent } from './pages/password/password.component';
+import { AddressBookListComponent } from './pages/address-book/address-book-list.component';
+import { AddressBookFormComponent } from './pages/address-book/address-book-form.component';
 
 @NgModule({
 	imports: [
@@ -28,7 +30,9 @@ import { PasswordComponent } from './pages/password/password.component';
 		SidenavComponent,
 		MyAccountComponent,
 		EditAccountComponent,
-		PasswordComponent
+		PasswordComponent,
+		AddressBookListComponent,
+		AddressBookFormComponent
 	]
 })
 export class BuyerModule { }

@@ -1,0 +1,25 @@
+<h1> Address Book Entries </h1>
+
+<div fxLayout="row" fxLayoutAlign="end start">
+	<a [routerLink]="['/buyer/address-book/create']" md-button class="btn-primary"> New Address </a>
+</div>
+
+<br>
+
+<div class="entries">
+	<div class="entry" *ngFor="let entry of entries" fxLayout="row">
+		<div fxFlex="40">
+			<span> {{ entry.firstName }} </span>
+			<span> {{ entry.lastName }} </span>
+			<div> {{ entry.address1 }} </div>
+			<span> {{ entry.city }} </span>
+			<span> {{ entry.zipcode }} </span>
+			<div> {{ entry.province }} </div>
+			<div> {{ entry.country }} </div>
+		</div>
+		<div class="action-buttons" fxFlex="60" fxLayout="row" fxLayoutAlign="end start">
+			<button md-button class="action-button edit-button"> Edit </button>
+			<button md-button class="action-button delete-button"> Delete </button>
+		</div>
+	</div>
+</div>
