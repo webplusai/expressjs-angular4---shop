@@ -11,6 +11,7 @@ import { HeaderComponent } from './partials/header/header.component';
 import { SidenavComponent } from './partials/sidenav/sidenav.component';
 import { MyAccountComponent } from './pages/my-account/my-account.component';
 import { EditAccountComponent } from './pages/edit-account/edit-account.component';
+import { PasswordComponent } from './pages/password/password.component';
 
 @NgModule({
 	imports: [
@@ -26,7 +27,8 @@ import { EditAccountComponent } from './pages/edit-account/edit-account.componen
 		HeaderComponent,
 		SidenavComponent,
 		MyAccountComponent,
-		EditAccountComponent
+		EditAccountComponent,
+		PasswordComponent
 	]
 })
 export class BuyerModule { }

@@ -4,6 +4,7 @@ import { Router, RouterModule, Routes } from '@angular/router';
 import { BuyerComponent } from './buyer.component';
 import { MyAccountComponent } from './pages/my-account/my-account.component';
 import { EditAccountComponent } from './pages/edit-account/edit-account.component';
+import { PasswordComponent } from './pages/password/password.component';
 
 const routes: Routes = [
 	{
@@ -17,6 +18,10 @@ const routes: Routes = [
 			{
 				path: 'edit-account',
 				component: EditAccountComponent
+			},
+			{
+				path: 'password',
+				component: PasswordComponent
 			}
 		]
 	}
