@@ -7,6 +7,9 @@ import { EditAccountComponent } from './pages/edit-account/edit-account.componen
 import { PasswordComponent } from './pages/password/password.component';
 import { AddressBookListComponent } from './pages/address-book/address-book-list.component';
 import { AddressBookFormComponent } from './pages/address-book/address-book-form.component';
+import { WishListComponent } from './pages/wish-list/wish-list.component';
+import { OrderHistoryComponent } from './pages/order-history/order-history.component';
+import { DownloadsComponent } from './pages/downloads/downloads.component';
 
 const routes: Routes = [
 	{
@@ -32,6 +35,18 @@ const routes: Routes = [
 			{
 				path: 'address-book/create',
 				component: AddressBookFormComponent
+			},
+			{
+				path: 'wish-list',
+				component: WishListComponent
+			},
+			{
+				path: 'order-history',
+				component: OrderHistoryComponent
+			},
+			{
+				path: 'downloads',
+				component: DownloadsComponent
 			}
 		]
 	}

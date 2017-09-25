@@ -1,0 +1,119 @@
+<h1> Order History </h1>
+
+<div class="filter-panel" [ngStyle]="{'margin-top': '20px'}">
+	<div fxLayout="row" fxLayoutAlign="start center">
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #orderIDFilter placeholder="Order ID">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-select class="full-width" #orderStatusFilter placeholder="Status">
+				<md-option *ngFor="let status of orderStatuses" value="{{status}}"> {{ status }} </md-option>
+			</md-select>
+		</div>
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput [mdDatepicker]="dateAddedPicker" #dateAddedFilter placeholder="Date Added">
+				<md-datepicker-toggle mdSuffix [for]="dateAddedPicker"></md-datepicker-toggle>
+				<md-datepicker #dateAddedPicker></md-datepicker>
+			</md-form-field>
+		</div>
+
+	</div>
+
+	<div fxLayout="row" fxLayoutAlign="start center">
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #customerFilter placeholder="Customer">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput #totalFilter placeholder="Product">
+			</md-form-field>
+		</div>
+
+		<div fxFlex="33" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput [mdDatepicker]="dateModifiedPicker" #dateModifiedFilter placeholder="Date Modified">
+				<md-datepicker-toggle mdSuffix [for]="dateModifiedPicker"></md-datepicker-toggle>
+				<md-datepicker #dateModifiedPicker></md-datepicker>
+			</md-form-field>
+		</div>
+
+	</div>
+
+	<div fxLayout="row" fxLayoutAlign="end center">
+		<button md-button [ngStyle]="{'background': '#1e91cf'}"> <md-icon>autorenew</md-icon> Filter </button>
+	</div>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Order ID Column -->
+	<ng-container cdkColumnDef="order_id">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Order ID </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.order_id}} </md-cell>
+	</ng-container>
+
+	<!-- Customer Column -->
+	<ng-container cdkColumnDef="customer">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Customer </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.customer}} </md-cell>
+	</ng-container>
+
+	<!-- Seller Column -->
+	<ng-container cdkColumnDef="seller">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.seller}} </md-cell>
+	</ng-container>
+
+	<!-- Status Column -->
+	<ng-container cdkColumnDef="status">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.status}} </md-cell>
+	</ng-container>
+
+	<!-- Total Column -->
+	<ng-container cdkColumnDef="total">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Total </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.total}} </md-cell>
+	</ng-container>
+
+	<!-- Date Added Column -->
+	<ng-container cdkColumnDef="date_added">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date_added}} </md-cell>
+	</ng-container>
+
+	<!-- Date Modified Column -->
+	<ng-container cdkColumnDef="date_modified">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Modified </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date_modified}} </md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row"> 
+			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

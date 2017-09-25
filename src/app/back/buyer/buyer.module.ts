@@ -1,8 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CdkTableModule } from '@angular/cdk/table';
 import { MaterialModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MdDatepickerModule } from '@angular/material';
+import { MdNativeDateModule } from '@angular/material';
 
 import { BuyerRoutingModule } from './buyer-routing.module';
 
@@ -14,6 +17,9 @@ import { EditAccountComponent } from './pages/edit-account/edit-account.componen
 import { PasswordComponent } from './pages/password/password.component';
 import { AddressBookListComponent } from './pages/address-book/address-book-list.component';
 import { AddressBookFormComponent } from './pages/address-book/address-book-form.component';
+import { WishListComponent } from './pages/wish-list/wish-list.component';
+import { OrderHistoryComponent } from './pages/order-history/order-history.component';
+import { DownloadsComponent } from './pages/downloads/downloads.component';
 
 @NgModule({
 	imports: [
@@ -22,7 +28,10 @@ import { AddressBookFormComponent } from './pages/address-book/address-book-form
 		FlexLayoutModule,
 		FormsModule,
 		ReactiveFormsModule,
-		CommonModule
+		CommonModule,
+		CdkTableModule,
+		MdDatepickerModule,
+		MdNativeDateModule
 	],
 	declarations: [
 		BuyerComponent,
@@ -32,7 +41,10 @@ import { AddressBookFormComponent } from './pages/address-book/address-book-form
 		EditAccountComponent,
 		PasswordComponent,
 		AddressBookListComponent,
-		AddressBookFormComponent
+		AddressBookFormComponent,
+		WishListComponent,
+		OrderHistoryComponent,
+		DownloadsComponent
 	]
 })
 export class BuyerModule { }
