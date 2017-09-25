@@ -1,0 +1,34 @@
+<h1> Your Reward Points </h1>
+<div> Your total number of reward points is: <b> 0 </b> </div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Date Added Column -->
+	<ng-container cdkColumnDef="date_added">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date_added}} </md-cell>
+	</ng-container>
+
+	<!-- Description Column -->
+	<ng-container cdkColumnDef="description">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.description}} </md-cell>
+	</ng-container>
+
+	<!-- Points Column -->
+	<ng-container cdkColumnDef="points">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Points </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.points}} </md-cell>
+	</ng-container>	
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

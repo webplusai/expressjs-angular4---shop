@@ -10,6 +10,7 @@ import { AddressBookFormComponent } from './pages/address-book/address-book-form
 import { WishListComponent } from './pages/wish-list/wish-list.component';
 import { OrderHistoryComponent } from './pages/order-history/order-history.component';
 import { DownloadsComponent } from './pages/downloads/downloads.component';
+import { RewardPointsComponent } from './pages/reward-points/reward-points.component';
 
 const routes: Routes = [
 	{
@@ -47,6 +48,10 @@ const routes: Routes = [
 			{
 				path: 'downloads',
 				component: DownloadsComponent
+			},
+			{
+				path: 'reward-points',
+				component: RewardPointsComponent
 			}
 		]
 	}
