@@ -21,6 +21,8 @@ import { WishListComponent } from './pages/wish-list/wish-list.component';
 import { OrderHistoryComponent } from './pages/order-history/order-history.component';
 import { DownloadsComponent } from './pages/downloads/downloads.component';
 import { RewardPointsComponent } from './pages/reward-points/reward-points.component';
+import { ReturnsComponent } from './pages/returns/returns.component';
+import { TransactionsComponent } from './pages/transactions/transactions.component';
 
 @NgModule({
 	imports: [
@@ -46,7 +48,9 @@ import { RewardPointsComponent } from './pages/reward-points/reward-points.compo
 		WishListComponent,
 		OrderHistoryComponent,
 		DownloadsComponent,
-		RewardPointsComponent
+		RewardPointsComponent,
+		ReturnsComponent,
+		TransactionsComponent
 	]
 })
 export class BuyerModule { }

@@ -11,6 +11,8 @@ import { WishListComponent } from './pages/wish-list/wish-list.component';
 import { OrderHistoryComponent } from './pages/order-history/order-history.component';
 import { DownloadsComponent } from './pages/downloads/downloads.component';
 import { RewardPointsComponent } from './pages/reward-points/reward-points.component';
+import { ReturnsComponent } from './pages/returns/returns.component';
+import { TransactionsComponent } from './pages/transactions/transactions.component';
 
 const routes: Routes = [
 	{
@@ -52,6 +54,14 @@ const routes: Routes = [
 			{
 				path: 'reward-points',
 				component: RewardPointsComponent
+			},
+			{
+				path: 'returns',
+				component: ReturnsComponent
+			},
+			{
+				path: 'transactions',
+				component: TransactionsComponent
 			}
 		]
 	}
