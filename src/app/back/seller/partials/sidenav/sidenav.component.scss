@@ -1,0 +1,40 @@
+h4 {
+	color: #fff;
+}
+
+.mat-list-item.selected {
+	background: #10a9a9;
+	border-left: 4px solid #02bee5;
+}
+
+.menu-button {
+	text-align: left;
+    color: #ddd;
+    width: calc(100% + 32px);
+    margin: 0px -16px;
+}
+
+.logo {
+	border-radius: 5px;
+}
+
+.review {
+	color: #eab819;
+
+	.mat-icon {
+		font-size: 19px;
+	    width: 19px;
+	    height: 19px;
+	    line-height: 19px;
+	}
+}
+
+.shop-intro {
+	padding: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    margin: 0px 15px;
+}
+
+.shop-name, .review-count {
+	color: #2f6361;
+}

@@ -1,0 +1,11 @@
+<div class="seller-wrapper" fxLayout="column">
+	<seller-header> </seller-header>
+	<div class="content-wrapper" fxLayout="row">
+		<div class="sidenav-wrapper">
+			<seller-sidenav [page_alias]="page_alias"> </seller-sidenav>
+		</div>
+		<div class="content">
+			<router-outlet> </router-outlet>
+		</div>
+	</div>
+</div>

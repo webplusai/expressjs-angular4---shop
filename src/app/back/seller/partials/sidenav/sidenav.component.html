@@ -1,0 +1,21 @@
+<div class="sidenav-wrapper">
+	<div class="shop-intro" fxLayout="column" fxLayoutAlign="start center">
+		<img class="logo" src="assets/img/seller-logo.png">
+		<h4 class="shop-name"> Shoes Shop </h4>
+		<span class="review">
+			<md-icon *ngFor="let j of [1, 2, 3, 4, 5]">star</md-icon>
+		</span>
+		<span class="review-count"> (131) </span>
+	</div>
+	<md-list>
+		<md-list-item *ngFor="let item of listItems" [class.selected]="item.link == page_alias">
+			<a [routerLink]="['/buyer/' + item.link]" class="full-size">
+				<button md-button class="full-height menu-button" (click)="toggleMenuItem($event)">
+					<p class="button-content inline" [ngStyle]="{'flex': '1'}">
+						{{ item.text }}
+					</p>
+				</button> 
+			</a>
+		</md-list-item>
+	</md-list>
+</div>

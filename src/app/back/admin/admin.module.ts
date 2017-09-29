@@ -11,7 +11,6 @@ import { tinymceDefaultSettings } from 'angular-tinymce';
 
 import { CalendarModule } from 'primeng/primeng';
 import { FlotModule } from 'ng2modules-flot';
-import { EasyPieChartModule } from 'ng2modules-easypiechart';
 
 import { AdminRoutingModule } from './admin-routing.module';
 
@@ -122,7 +121,6 @@ import { MaintenanceComponent } from './pages/maintenance/maintenance.component'
 		MdNativeDateModule,
 		CalendarModule,
 		FlotModule,
-		EasyPieChartModule,
 		TinyMceModule.forRoot(tinymceDefaultSettings())
 	],
 

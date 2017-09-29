@@ -21,7 +21,7 @@ export class SidenavComponent implements OnInit {
 		{ text: 'Reward Points',		link: 'reward-points' },
 		{ text: 'Returns',				link: 'returns' },
 		{ text: 'Transactions',			link: 'transactions' },
-		{ text: 'Newsletter',			link: 'Newsletter' }
+		{ text: 'Newsletter',			link: 'newsletter' }
 	];
 
 	constructor() { }

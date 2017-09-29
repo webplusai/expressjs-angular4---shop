@@ -23,6 +23,8 @@ import { DownloadsComponent } from './pages/downloads/downloads.component';
 import { RewardPointsComponent } from './pages/reward-points/reward-points.component';
 import { ReturnsComponent } from './pages/returns/returns.component';
 import { TransactionsComponent } from './pages/transactions/transactions.component';
+import { NewsletterComponent } from './pages/newsletter/newsletter.component';
+import { RecurringPaymentsComponent } from './pages/recurring-payments/recurring-payments.component';
 
 @NgModule({
 	imports: [
@@ -50,7 +52,9 @@ import { TransactionsComponent } from './pages/transactions/transactions.compone
 		DownloadsComponent,
 		RewardPointsComponent,
 		ReturnsComponent,
-		TransactionsComponent
+		TransactionsComponent,
+		NewsletterComponent,
+		RecurringPaymentsComponent
 	]
 })
 export class BuyerModule { }

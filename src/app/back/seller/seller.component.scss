@@ -1,0 +1,66 @@
+seller {
+
+	a {
+		text-decoration: none !important;
+	}
+
+	.action-button {
+		border-radius: 5px;
+		padding: 0px 10px;
+	    min-width: initial;
+	    margin: 2px;
+	    color: #fff;
+	}
+
+	.action-button.delete-button {
+		background-color: #da4f49;
+	    background-image: linear-gradient(to bottom,#ee5f5b,#bd362f);
+	    background-repeat: repeat-x;
+	    border-color: #bd362f #bd362f #802420;
+	}
+
+	.action-button.edit-button {
+		background: #df5c39;
+		background-image: linear-gradient(to bottom,#e06342,#dc512c);
+	    background-repeat: repeat-x;
+	    border-color: #dc512c #dc512c #a2371a;
+	}
+
+	.btn-primary {
+		background: #229ac8;
+		color: #fff;
+	}
+
+	.seller-wrapper {
+		height: 100%;
+	}
+
+	.content {
+		flex: 1;
+		padding: 30px;
+	}
+
+	.content-wrapper {
+		flex: 1;
+	}
+
+	.mat-form-field {
+		display: block;
+		width: 100%;
+	}
+
+	.mat-select {
+		display: block;
+		width: 100%;
+	}
+
+	.mat-table {
+		border: 1px solid #ddd;
+	}
+
+	.sidenav-wrapper {
+		height: 100%;
+	    width: 240px;
+	    background: #01D8B6;	
+	}	
+}
