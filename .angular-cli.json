@@ -23,6 +23,7 @@
         "../node_modules/primeng/resources/primeng.min.css",
         "../node_modules/primeng/resources/themes/bootstrap/theme.css",
         "../node_modules/morris.js/morris.css",
+        "../node_modules/flag-icon-css/css/flag-icon.min.css",
 
         "../src/assets/css/clndr.css",
         "../src/assets/css/jquery-jvectormap-1.2.2.css",

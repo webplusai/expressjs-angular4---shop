@@ -1,0 +1,75 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Your Products </span>
+	</h3>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="end center">
+	<a [routerLink]="['/seller/products/create']"><button md-button class="btn-create">Create Product</button></a>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Product Column -->
+	<ng-container cdkColumnDef="product">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Product </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.product}} </md-cell>
+	</ng-container>
+
+	<!-- Price Column -->
+	<ng-container cdkColumnDef="price">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Price </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.price}} </md-cell>
+	</ng-container>
+
+	<!-- Sales Column -->
+	<ng-container cdkColumnDef="sales">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Sales </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.sales}} </md-cell>
+	</ng-container>
+
+	<!-- Earnings Column -->
+	<ng-container cdkColumnDef="earnings">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Earnings </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.earnings}} </md-cell>
+	</ng-container>
+
+	<!-- Status Column -->
+	<ng-container cdkColumnDef="status">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.status}} </md-cell>
+	</ng-container>
+
+	<!-- Date Added Column -->
+	<ng-container cdkColumnDef="date_added">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date added </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date_added}} </md-cell>
+	</ng-container>
+
+	<!-- Listing Until Column -->
+	<ng-container cdkColumnDef="listing_until">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Listing until </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.listing_until}} </md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row"> 
+			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<h5 *ngIf="tableData.data.length == 0"> No data available in table </h5>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>

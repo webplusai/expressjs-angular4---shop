@@ -1,0 +1,12 @@
+<div [ngStyle]="{'margin-bottom': '20px'}">
+	<div [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Image </div>
+	<img width="100" height="100" class="image" src="http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png" (click)="togglePopover()">
+	<div class="popover hidden" role="tooltip">
+		<div class="popover-arrow"> </div>
+		<div class="popover-content">
+			<input type="file" id="imgInput" (change)="readURL($event)" style="display:none" accept="image/*"/> 
+			<button md-button class="action-button" [ngStyle]="{'background': 'rgb(30, 145, 207)'}" (click)="uploadImage()"> <md-icon>create</md-icon> </button>
+			<button md-button class="action-button" [ngStyle]="{'background': 'rgb(245, 107, 107)'}" (click)="removeImage()"> <md-icon>delete</md-icon> </button>
+		</div>
+	</div>
+</div>

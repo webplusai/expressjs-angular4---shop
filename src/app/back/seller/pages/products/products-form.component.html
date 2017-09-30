@@ -1,0 +1,34 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> New seller </span>
+	</h3>
+</div>
+
+<form #productsForm="ngForm" (ngSubmit)="createProduct(productsForm)">
+	<md-tab-group>
+		<md-tab label="General">
+			<seller-product-tab-general> </seller-product-tab-general>
+		</md-tab>
+
+		<md-tab label="Shipping">
+			<seller-product-tab-shipping> </seller-product-tab-shipping>
+		</md-tab>
+
+		<md-tab label="Data">
+			<seller-product-tab-data> </seller-product-tab-data>
+		</md-tab>
+
+		<md-tab label="Options">
+			<seller-product-tab-options> </seller-product-tab-options>
+		</md-tab>
+
+		<md-tab label="Special prices">
+			<seller-product-tab-special-prices> </seller-product-tab-special-prices>
+		</md-tab>
+
+		<md-tab label="Quantity discounts">
+			<seller-product-tab-quantity-discounts> </seller-product-tab-quantity-discounts>
+		</md-tab>
+	</md-tab-group>
+</form>

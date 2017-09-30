@@ -1,0 +1,55 @@
+<div class="general-wrapper">
+	<md-tab-group>
+		<md-tab label="Tab GB">
+			<ng-template md-tab-label>
+				<div class="label-content">
+					<span class="flag-icon flag-icon-gb"></span>
+					<span> English </span>
+				</div>
+			</ng-template>
+			<seller-product-tab-general-tab-english> </seller-product-tab-general-tab-english>
+		</md-tab>
+		<md-tab label="Tab FR">
+			<ng-template md-tab-label>
+				<div class="label-content">
+					<span class="flag-icon flag-icon-fr"></span>
+					<span> Francais </span>
+				</div>
+			</ng-template>
+			<seller-product-tab-general-tab-french> </seller-product-tab-general-tab-french>
+		</md-tab>
+	</md-tab-group>
+
+	<div class="price-attributes">
+		<h4> Price & Attributes </h4>
+
+		<md-form-field>
+			<input mdInput placeholder="Price in $ *">
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Negociate Price in $ *">
+		</md-form-field>
+
+		<md-select placeholder="Category *">
+			<md-option value="Category 1"> Category 1 </md-option>
+			<md-option value="Category 2"> Category 2 </md-option>
+			<md-option value="Category 3"> Category 3 </md-option>
+			<md-option value="Category 4"> Category 4 </md-option>
+			<md-option value="Category 5"> Category 5 </md-option>
+		</md-select>
+
+		<md-form-field>
+			<input mdInput placeholder="Quantity *">
+		</md-form-field>
+	</div>
+
+	<div class="files">
+		<h4> Files </h4>
+
+		<image-selector> </image-selector>
+		<input type="file" value="Select files">
+		<h4> Message to the reviewer </h4>
+		<textarea></textarea>
+	</div>
+</div>
