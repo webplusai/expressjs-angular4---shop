@@ -1,3 +1,96 @@
-<p>
-  shipping works!
-</p>
+<div class="dimensions-height">
+	<h4> Dimensions and weight </h4>
+
+	<div class="dimension" fxLayout="row">
+		<md-form-field fxFlex="32">
+			<input mdInput placeholder="Length">
+		</md-form-field>
+		<span fxFlex="2"> x </span>
+		<md-form-field fxFlex="32">
+			<input mdInput placeholder="Width">
+		</md-form-field>
+		<span fxFlex="2"> x </span>
+		<md-form-field fxFlex="32">
+			<input mdInput placeholder="Height">
+		</md-form-field>
+	</div>
+
+	<md-select placeholder="Length class">
+		<md-option value="Centimeter"> Centimeter </md-option>
+		<md-option value="Decimeter"> Decimeter </md-option>
+		<md-option value="Meter"> Meter </md-option>
+		<md-option value="Milimeter"> Milimeter </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="Weight">
+	</md-form-field>
+
+	<md-select placeholder="Weight class">
+		<md-option value="Gram"> Gram </md-option>
+		<md-option value="Pound"> Pound </md-option>
+		<md-option value="Kilogram"> Kilogram </md-option>
+	</md-select>
+</div>
+
+<div class="shipping-methods">
+	<h4> *Shpping methods </h4>
+	<md-table #table [dataSource]="dataSource" mdSort>
+		<!-- Shipping Method Column -->
+		<ng-container cdkColumnDef="shipping_method">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Shipping Method </md-header-cell>
+			<md-cell *cdkCellDef="let row; let i = index">
+				<select class="form-control" [(ngModel)]="shippingList[i].shipping_method">
+					<option value="Default carrier"> Default carrier </option>
+				</select>
+			</md-cell>
+		</ng-container>
+
+		<!-- Comment Column -->
+		<ng-container cdkColumnDef="comment">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Comment </md-header-cell>
+			<md-cell *cdkCellDef="let row; let i = index">
+				<input class="form-control" [(ngModel)]="shippingList[i].comment" placeholder="Comment">
+			</md-cell>
+		</ng-container>
+
+		<!-- Cost Column -->
+		<ng-container cdkColumnDef="cost">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> *Cost </md-header-cell>
+			<md-cell *cdkCellDef="let row; let i = index">
+				<input class="form-control" [(ngModel)]="shippingList[i].cost" placeholder="Cost">
+			</md-cell>
+		</ng-container>
+
+		<!-- Geo Zone Column -->
+		<ng-container cdkColumnDef="geo_zone">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Geo Zone </md-header-cell>
+			<md-cell *cdkCellDef="let row; let i = index">
+				<select class="form-control" [(ngModel)]="shippingList[i].geo_zone">
+					<option value="UK Shipping"> UK Shipping </option>
+					<option value="US Shipping"> US Shipping </option>
+				</select>
+			</md-cell>
+		</ng-container>
+
+		<!-- Action Column -->
+		<ng-container cdkColumnDef="action">
+			<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '40px'}"> </md-header-cell>
+			<md-cell fxLayout="row" *cdkCellDef="let row; let i = index" [ngStyle]="{'flex': 'none', 'width': '40px'}">
+				<button md-button *ngIf="!row.last" class="icon-button" (click)="removeRow(i)" [ngStyle]="{'color': '#ff0000'}">
+					<md-icon>clear</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>	
+
+		<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+		<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+	</md-table>
+
+	<div fxLayout="row" fxLayout="row" fxLayoutAlign="end center" [ngStyle]="{'margin-top': '20px'}">
+		<button md-button (click)="addRow()" [ngStyle]="{'border': '1px solid #ccc'}">
+			<md-icon>add</md-icon>
+			Add Method
+		</button>
+	</div>
+</div>
