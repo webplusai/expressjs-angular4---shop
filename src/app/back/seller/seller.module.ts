@@ -10,6 +10,8 @@ import { SellerRoutingModule } from './seller-routing.module';
 import { SellerComponent } from './seller.component';
 import { HeaderComponent } from './partials/header/header.component';
 import { SidenavComponent } from './partials/sidenav/sidenav.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 @NgModule({
 	imports: [
@@ -24,7 +26,9 @@ import { SidenavComponent } from './partials/sidenav/sidenav.component';
 	declarations: [
 		SellerComponent,
 		HeaderComponent,
-		SidenavComponent
+		SidenavComponent,
+		DashboardComponent,
+		ProfileComponent
 	]
 })
 export class SellerModule { }

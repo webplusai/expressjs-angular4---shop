@@ -13,7 +13,7 @@ const routes: Routes = [
 	{
 		path: 'buyer',
 		loadChildren: './back/buyer/buyer.module#BuyerModule'
-	}*/
+	},*/
 	{
 		path: 'seller',
 		loadChildren: './back/seller/seller.module#SellerModule'

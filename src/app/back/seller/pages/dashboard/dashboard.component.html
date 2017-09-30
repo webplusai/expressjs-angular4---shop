@@ -1,0 +1,159 @@
+<div class="dashboard-wrapper" fxLayout="column" fxLayoutAlign="start center">
+	<div class="countdown-timer" fxLayout="column" fxLayoutAlign="start center">
+		<h4 [ngStyle]="{'color': '#3aa'}"> Your Account Valid For </h4>
+		<div class="timer-panel" fxLayout="row">
+			<div class="days-panel">
+				<div class="digits">
+					<div class="digit-box"> 2 </div>
+					<div class="digit-box"> 3 </div>
+					<div class="digit-box"> 9 </div>
+				</div>
+				<span> days </span>
+			</div>
+			<div class="hours-panel">
+				<div class="digits">
+					<div class="digit-box"> 1 </div>
+					<div class="digit-box"> 4 </div>
+				</div>
+				<span> hours </span>
+			</div>
+			<div class="separate-bar"> : </div>
+			<div class="minutes-panel">
+				<div class="digits">
+					<div class="digit-box"> 4 </div>
+					<div class="digit-box"> 5 </div>
+				</div>
+				<span> minutes </span>
+			</div>
+			<div class="separate-bar"> : </div>
+			<div class="seconds-panel">
+				<div class="digits">
+					<div class="digit-box"> 5 </div>
+					<div class="digit-box"> 9 </div>
+				</div>
+				<span> seconds </span>
+			</div>
+		</div>
+	</div>
+
+	<div class="dashboard-content" fxLayout="row">
+		<div fxFlex="33">
+			<h5 class="section-title"> Overview </h5>
+			<img class="company-logo" src="assets/img/company-logo.png">
+			<h5 [ngStyle]="{'font-weight': 'bold'}"> THE BUSINESS CENTER </h5>
+			<ul class="business-center">
+				<li> Date created: 17/12/2014 </li>
+				<li> Seller group: Particular </li>
+				<li> Listing fee: $0.00 + 0.00% </li>
+				<li> Sale fee: $0.00 + 0.00% </li>
+			</ul>
+		</div>
+
+		<div fxFlex="33">
+			<h5 class="section-title"> Stats </h5>
+			<ul class="stats">
+				<li> Current balance: $0.00 </li>
+				<li> Total sales: 0 </li>
+				<li> Total earnings: $0.00 </li>
+				<li> Sales this month: 0 </li>
+				<li> Earnings this month: $0.00 </li>
+			</ul>
+			<h5 class="section-title"> Badges </h5>
+			<ul class="badges">
+				<li> No badges yet </li>
+			</ul>
+		</div>
+
+		<div fxFlex="34">
+			<h5 class="section-title"> Quick navigation </h5>
+			<ul class="navigation">
+				<li *ngFor="let nav of navigationList">
+					<img src="assets/img/{{nav.icon}}">
+					<a [routerLink]="['/seller/' + nav.link]"> {{ nav.text }} </a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="last-orders full-width">
+		<h4> Last Orders </h4>
+
+		<md-table #mdSortOrder [dataSource]="dataSourceOrder" mdSort [ngStyle]="{'margin-top': '10px'}">
+			<!-- Order ID Column -->
+			<ng-container cdkColumnDef="order_id">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Order # </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.order_id}} </md-cell>
+			</ng-container>
+
+			<!-- Customer Column -->
+			<ng-container cdkColumnDef="customer">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Customer </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.customer}} </md-cell>
+			</ng-container>
+
+			<!-- Products Column -->
+			<ng-container cdkColumnDef="products">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Products </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.products}} </md-cell>
+			</ng-container>
+
+			<!-- Shipping Column -->
+			<ng-container cdkColumnDef="shipping">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Shipping </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.shipping}} </md-cell>
+			</ng-container>
+
+			<!-- Date Created Column -->
+			<ng-container cdkColumnDef="date_created">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Date created </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.date_created}} </md-cell>
+			</ng-container>
+
+			<!-- Total Amount Column -->
+			<ng-container cdkColumnDef="total_amount">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Total amount </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.total_amount}} </md-cell>
+			</ng-container>
+
+			<md-header-row *cdkHeaderRowDef="displayedColumnsOrder"></md-header-row>
+			<md-row *cdkRowDef="let row; columns: displayedColumnsOrder;"></md-row>
+		</md-table>
+
+		<h5 *ngIf="tableDataOrder.data.length == 0"> You don't have any orders yet! </h5>
+	</div>
+
+	<div class="last-comments full-width">
+		<h4> Last Comments </h4>
+
+		<md-table #mdSortComments [dataSource]="dataSourceComment" mdSort [ngStyle]="{'margin-top': '10px'}">
+			<!-- Name Column -->
+			<ng-container cdkColumnDef="name">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Name </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.name}} </md-cell>
+			</ng-container>
+
+			<!-- Product Column -->
+			<ng-container cdkColumnDef="product">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Product </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.product}} </md-cell>
+			</ng-container>
+
+			<!-- Comment Column -->
+			<ng-container cdkColumnDef="comment">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Comment </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.comment}} </md-cell>
+			</ng-container>
+
+			<!-- Date Column -->
+			<ng-container cdkColumnDef="date">
+				<md-header-cell *cdkHeaderCellDef md-sort-header> Date </md-header-cell>
+				<md-cell *cdkCellDef="let row"> {{row.date}} </md-cell>
+			</ng-container>
+
+			<md-header-row *cdkHeaderRowDef="displayedColumnsComment"></md-header-row>
+			<md-row *cdkRowDef="let row; columns: displayedColumnsComment;"></md-row>
+		</md-table>
+
+		<h5 *ngIf="tableDataComment.data.length == 0"> You don't have any comments yet! </h5>
+	</div>
+</div>

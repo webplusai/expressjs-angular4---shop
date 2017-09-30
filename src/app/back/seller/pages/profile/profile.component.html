@@ -1,0 +1,106 @@
+<div class="profile-wrapper">
+	<div class="active-status" fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'color': '#73c16f'}">check_circle</md-icon>
+		<span> Your seller account status is: Active </span>
+	</div>
+	<div class="profile-content" fxLayout="row">
+		<div fxFlex="50" [ngStyle]="{'padding': '0px 20px'}">
+			<h4> Company Name: <span> The business Centre </span> </h4>
+
+			<md-select placeholder="Store Type">
+				<md-option value="Bags"> Bags </md-option>
+				<md-option value="Shoes"> Shoes </md-option>
+			</md-select>
+
+			<md-form-field>
+				<input mdInput placeholder="Web URL">
+			</md-form-field>
+
+			<md-form-field>
+				<input mdInput placeholder="Facebook Like Link (only HTML Link)">
+			</md-form-field>
+
+			<md-select placeholder="Country">
+				<md-option value="Country 1"> Country 1 </md-option>
+				<md-option value="Country 2"> Country 2 </md-option>
+				<md-option value="Country 3"> Country 3 </md-option>
+				<md-option value="Country 4"> Country 4 </md-option>
+				<md-option value="Country 5"> Country 5 </md-option>
+			</md-select>
+
+			<md-select placeholder="Type of Vendor">
+				<md-option value="Particular"> Particular </md-option>
+				<md-option value="Normal"> Normal </md-option>
+			</md-select>
+
+			<md-form-field>
+				<input mdInput placeholder="Tweet Page URL">
+			</md-form-field>
+
+			<div class="store-for">
+				<label> Store For </label>
+				<md-checkbox> All </md-checkbox>
+				<md-checkbox> Men </md-checkbox>
+				<md-checkbox> Women </md-checkbox>
+				<md-checkbox> Children </md-checkbox>
+			</div>
+
+			<div class="textarea">
+				<div> Brand presentation </div>
+				<textarea></textarea>
+			</div>
+
+			<div class="select-logo">
+				<div> Select Logo </div>
+				<div class="image" [ngStyle]="{'margin-bottom': '20px'}">
+					<img width="100" height="100" class="logo-image" src="http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png" (click)="togglePopover()">
+					<div class="popover hidden" role="tooltip">
+						<div class="popover-arrow"> </div>
+						<div class="popover-content">
+							<input type="file" id="imgInput" (change)="readURL($event)" style="display:none" accept="image/*"/> 
+							<button md-button class="action-button" [ngStyle]="{'background': 'rgb(30, 145, 207)'}" (click)="uploadImage()"> <md-icon>create</md-icon> </button>
+							<button md-button class="action-button" [ngStyle]="{'background': 'rgb(245, 107, 107)'}" (click)="removeImage()"> <md-icon>delete</md-icon> </button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div fxFlex="50" [ngStyle]="{'padding': '0px 20px'}">
+			<h4> Plan: <span> 8 month plan - 8 month - $700.00 </span> </h4>
+			<md-form-field>
+				<input mdInput placeholder="Facebook Page URL">
+			</md-form-field>
+
+			<md-form-field>
+				<input mdInput placeholder="Tweet Like Link (only HTML Link)">
+			</md-form-field>
+
+			<md-select placeholder="Region/State">
+				<md-option value="Region 1"> Region 1 </md-option>
+				<md-option value="Region 2"> Region 2 </md-option>
+				<md-option value="Region 3"> Region 3 </md-option>
+				<md-option value="Region 4"> Region 4 </md-option>
+				<md-option value="Region 5"> Region 5 </md-option>
+			</md-select>
+
+			<md-form-field>
+				<input mdInput placeholder="Company">
+			</md-form-field>
+
+			<md-form-field>
+				<input mdInput placeholder="Paypal">
+			</md-form-field>
+
+			<div class="textarea">
+				<div> Advantages for clients to buy my products </div>
+				<textarea></textarea>
+			</div>
+
+			<div class="textarea">
+				<div> Description </div>
+				<textarea></textarea>
+			</div>
+		</div>
+	</div>
+</div>

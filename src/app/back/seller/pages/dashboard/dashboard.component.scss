@@ -1,0 +1,66 @@
+.dashboard-content {
+	margin-top: 20px;
+}
+
+.dashboard-content > div {
+	margin: 0px 30px;
+}
+
+.days-panel {
+	margin-right: 12px !important;
+}
+
+.digit-box {
+	font-size: 20px;
+    background: #606060;
+    color: #fff;
+    padding: 0px 7px;
+    margin: 0px 2px;
+    border-radius: 3px;
+}
+
+.digits {
+	flex-direction: row;
+	display: flex;
+}
+
+.last-orders, .last-comments {
+	text-align: center;
+	margin-top: 30px;
+}
+
+.section-title {
+	font-size: 17px;
+    font-weight: bold;
+}
+
+.separate-bar {
+	font-size: 20px;
+    font-weight: bold;
+}
+
+.timer-panel > div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0px 2px;
+}
+
+.timer-panel > div > span {
+	font-size: 12px;
+    margin-top: 3px;
+}
+
+ul {
+	list-style: none;
+	padding-left: 20px;
+
+	li {
+		white-space: nowrap;
+		padding: 3px 0px;
+
+		img {
+			width: 30px;
+		}
+	}
+}

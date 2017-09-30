@@ -1,0 +1,108 @@
+seller-profile {
+
+	.active-status {
+		background-color: #e7f3d5;
+	    border: 1px solid #c5ceaa;
+	    padding: 10px;
+	    border-radius: 5px;
+	    margin-bottom: 20px;
+
+		.mat-icon {
+	    	color: #73c16f;
+	    	margin-right: 10px;
+		}
+	}
+
+	h4 span {
+		color: #01D8B6;
+	}
+
+	.mat-form-field, .mat-input, .mat-select {
+		width: 100%;
+	}
+
+	.mat-input-element {
+	    height: 22px;
+	}
+
+	.mat-input-infix {
+		border-top: 16px solid transparent;
+    	padding: 4.5px 0px;
+	}
+
+	.mat-select {
+		margin-bottom: 17.5px;
+	}
+
+	.select-logo {
+		margin-top: 16px;
+
+		div {
+			color: rgba(0, 0, 0, 0.54);
+			margin-bottom: 10px;
+		}
+	}
+
+	.store-for {
+		margin: 16px 0px;
+
+		label {
+			margin-right: 10px;
+		}
+	}
+
+	textarea {
+		width: 100%;
+		height: 100px;
+		margin-top: 10px;
+	}
+
+	.textarea {
+		margin-top: 16px;
+
+		div {
+			color: rgba(0, 0, 0, 0.54);
+		}
+	}
+
+	.action-button {
+	    border-radius: 5px;
+	    padding: 0px 5px;
+	    min-width: initial;
+	    margin: 2px;
+	    color: #fff;
+	    font-size: 1px;
+
+	    .mat-icon {
+	        font-size: 15px;
+	        line-height: 15px;
+	        height: 15px;
+	    }
+	}
+
+	.logo-image {
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    cursor: pointer;
+	}
+
+	.popover {
+	    position: relative;
+	    display: inline-block;
+	    margin-left: 10px;
+	}
+
+	.popover-arrow {
+	    width: 15px;
+	    height: 15px;
+	    border: 1px solid rgba(0, 0, 0, 0.3);
+	    transform: rotate(45deg);
+	    position: absolute;
+	    top: 50%;
+	    margin-top: -8px;
+	    margin-left: -9px;
+	    background: #fff;
+	    border-right: none;
+	    border-top: none;
+	}
+}

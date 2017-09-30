@@ -1,11 +1,12 @@
-<div class="seller-wrapper" fxLayout="column">
+<md-sidenav-container [ngStyle]="{'height': '100%'}">
 	<seller-header> </seller-header>
-	<div class="content-wrapper" fxLayout="row">
-		<div class="sidenav-wrapper">
+
+	<md-sidenav-container id="leftSideNavContainer" [ngStyle]="{'height': 'calc(100% - 64px)', 'background': 'none'}">
+		<md-sidenav #leftsidenav mode="side" opened="true" [ngStyle]="{'width': '240px'}">
 			<seller-sidenav [page_alias]="page_alias"> </seller-sidenav>
-		</div>
-		<div class="content">
+		</md-sidenav>
+		<div class="admin-content" [ngStyle]="{'padding': '25px'}">
 			<router-outlet> </router-outlet>
 		</div>
-	</div>
-</div>
+	</md-sidenav-container>
+</md-sidenav-container>
