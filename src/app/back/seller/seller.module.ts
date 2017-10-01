@@ -26,6 +26,7 @@ import { SpecialPricesComponent } from './pages/products/tabs/special-prices/spe
 import { QuantityDiscountsComponent } from './pages/products/tabs/quantity-discounts/quantity-discounts.component';
 import { EnglishComponent } from './pages/products/tabs/general/tabs/english/english.component';
 import { FrenchComponent } from './pages/products/tabs/general/tabs/french/french.component';
+import { ShippingSettingsComponent } from './pages/shipping-settings/shipping-settings.component';
 
 @NgModule({
 	imports: [
@@ -56,7 +57,8 @@ import { FrenchComponent } from './pages/products/tabs/general/tabs/french/frenc
 		SpecialPricesComponent,
 		QuantityDiscountsComponent,
 		EnglishComponent,
-		FrenchComponent
+		FrenchComponent,
+		ShippingSettingsComponent
 	]
 })
 export class SellerModule { }

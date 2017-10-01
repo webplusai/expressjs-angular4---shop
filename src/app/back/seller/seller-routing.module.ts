@@ -6,6 +6,7 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ProfileComponent } from './pages/profile/profile.component';
 import { ProductsListComponent } from './pages/products/products-list.component';
 import { ProductsFormComponent } from './pages/products/products-form.component';
+import { ShippingSettingsComponent } from './pages/shipping-settings/shipping-settings.component';
 
 const routes: Routes = [
 	{
@@ -27,6 +28,10 @@ const routes: Routes = [
 			{
 				path: 'products/create',
 				component: ProductsFormComponent
+			},
+			{
+				path: 'shipping-settings',
+				component: ShippingSettingsComponent
 			}
 		]
 	}
