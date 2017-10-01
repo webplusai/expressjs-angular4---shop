@@ -27,6 +27,7 @@ import { QuantityDiscountsComponent } from './pages/products/tabs/quantity-disco
 import { EnglishComponent } from './pages/products/tabs/general/tabs/english/english.component';
 import { FrenchComponent } from './pages/products/tabs/general/tabs/french/french.component';
 import { ShippingSettingsComponent } from './pages/shipping-settings/shipping-settings.component';
+import { OrdersComponent } from './pages/orders/orders.component';
 
 @NgModule({
 	imports: [
@@ -58,7 +59,8 @@ import { ShippingSettingsComponent } from './pages/shipping-settings/shipping-se
 		QuantityDiscountsComponent,
 		EnglishComponent,
 		FrenchComponent,
-		ShippingSettingsComponent
+		ShippingSettingsComponent,
+		OrdersComponent
 	]
 })
 export class SellerModule { }
