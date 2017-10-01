@@ -1,3 +1,63 @@
-<p>
-  special-prices works!
-</p>
+<div class="shipping-methods">
+	<md-table #table [dataSource]="dataSource" mdSort>
+
+		<!-- Priority Column -->
+		<ng-container cdkColumnDef="priority">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Priority </md-header-cell>
+			<md-cell *cdkCellDef="let row; let i = index">
+				<input class="form-control" [(ngModel)]="specialPriceList[i].priority" placeholder="Priority">
+			</md-cell>
+		</ng-container>
+
+		<!-- Price Column -->
+		<ng-container cdkColumnDef="price">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Price </md-header-cell>
+			<md-cell *cdkCellDef="let row; let i = index">
+				<input class="form-control" [(ngModel)]="specialPriceList[i].price" placeholder="Price">
+			</md-cell>
+		</ng-container>
+
+		<!-- Start Date Column -->
+		<ng-container cdkColumnDef="start_date">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Start Date </md-header-cell>
+			<md-cell *cdkCellDef="let row; let i = index">
+				<md-form-field>
+					<input mdInput [mdDatepicker]="picker" placeholder="Start Date" [(ngModel)]="specialPriceList[i].start_date">
+					<md-datepicker-toggle mdSuffix [for]="picker"> </md-datepicker-toggle>
+					<md-datepicker #picker> </md-datepicker>
+				</md-form-field>
+			</md-cell>
+		</ng-container>
+
+		<!-- End Date Column -->
+		<ng-container cdkColumnDef="end_date">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> End Date </md-header-cell>
+			<md-cell *cdkCellDef="let row; let i = index">
+				<md-form-field>
+					<input mdInput [mdDatepicker]="picker" placeholder="End Date" [(ngModel)]="specialPriceList[i].end_date">
+					<md-datepicker-toggle mdSuffix [for]="picker"> </md-datepicker-toggle>
+					<md-datepicker #picker> </md-datepicker>
+				</md-form-field>
+			</md-cell>
+		</ng-container>
+
+		<!-- Action Column -->
+		<ng-container cdkColumnDef="action">
+			<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '40px'}"> </md-header-cell>
+			<md-cell fxLayout="row" *cdkCellDef="let row; let i = index" [ngStyle]="{'flex': 'none', 'width': '40px'}">
+				<button md-button *ngIf="!row.last" class="icon-button" (click)="removeRow(i)" [ngStyle]="{'color': '#ff0000'}">
+					<md-icon>clear</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>	
+
+		<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+		<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+	</md-table>
+
+	<div fxLayout="row" fxLayout="row" fxLayoutAlign="center center" [ngStyle]="{'margin-top': '20px'}">
+		<button md-button class="btn-accent" (click)="addRow()" [ngStyle]="{'border': '1px solid #ccc'}">
+			Define a new special price
+		</button>
+	</div>
+</div>

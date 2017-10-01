@@ -1,0 +1,41 @@
+.add-panel {
+	max-height: 20%;
+    margin-top: 10px;
+}
+
+.body {
+	padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.btn-remove {
+	color: #ff0000;
+}
+
+.colors-panel, .sizes-panel {
+	margin-top: 20px;
+}
+
+.header {
+	justify-content: space-between !important;
+	background-color: #ddd;
+    padding: 8px;
+}
+
+.list-item {
+	justify-content: space-between;
+	padding: 5px 0px;
+}
+
+.list-item > * {
+	margin: 0px 10px;
+}
+
+.price input {
+	flex: 1;
+}
+
+ul {
+	padding: 0px;
+	width: 100%;
+}

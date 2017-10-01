@@ -2,6 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CdkTableModule } from '@angular/cdk/table';
 import { MaterialModule } from '@angular/material';
+import { MdDatepickerModule } from '@angular/material';
+import { MdNativeDateModule } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
@@ -31,6 +33,8 @@ import { FrenchComponent } from './pages/products/tabs/general/tabs/french/frenc
 		SellerRoutingModule,
 		CdkTableModule,
 		MaterialModule,
+		MdDatepickerModule,
+		MdNativeDateModule,
 		FlexLayoutModule,
 		FormsModule,
 		ReactiveFormsModule

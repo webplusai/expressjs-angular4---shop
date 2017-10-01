@@ -5,7 +5,7 @@ const routes: Routes = [
 	/*{
 		path: '',
 		loadChildren: './front/front.module#FrontModule'
-	},
+	},*/
 	{
 		path: 'admin',
 		loadChildren: './back/admin/admin.module#AdminModule'
@@ -13,7 +13,7 @@ const routes: Routes = [
 	{
 		path: 'buyer',
 		loadChildren: './back/buyer/buyer.module#BuyerModule'
-	},*/
+	},
 	{
 		path: 'seller',
 		loadChildren: './back/seller/seller.module#SellerModule'

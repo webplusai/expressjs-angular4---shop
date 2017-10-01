@@ -1,3 +1,67 @@
-<p>
-  options works!
-</p>
+<div class="options-wrapper" fxLayout="column" fxLayoutAlign="start center">
+	<div *ngIf="colors != null" class="colors-panel full-width">
+		<div class="header" fxLayout="row" fxLayoutAlign="start center">
+			<md-icon [ngStyle]="{'color': '#779811'}">done</md-icon>
+			<label> Colors </label>
+			<md-icon class="btn-remove" (click)="colors = null">close</md-icon>
+		</div>
+		<div class="body" fxLayout="column" fxLayoutAlign="start start">
+			<ul>
+				<li class="list-item" *ngFor="let color of colors; let i = index" fxLayout="row" fxLayoutAlign="start center">
+					<span [ngStyle]="{'width': '200px'}"> {{ color.color }} </span>
+					<div class="price" fxLayout="row" fxLayoutAlign="start center">
+						<span> $ </span>
+						<input class="form-control" placeholder="Price" [(ngModel)]="color.price">
+					</div>
+					<input class="form-control" placeholder="Quantity" [(ngModel)]="color.quantity">
+					<md-icon class="btn-remove" (click)="removeColor(i)">close</md-icon>
+				</li>
+			</ul>
+			<div class="add-panel" fxFlex="20">
+				<select class="form-control" (change)="addColor($event)" [(ngModel)]="color">
+					<option value="+ Add value" selected disabled> + Add value </option>
+					<option value="Red"> Red </option>
+					<option value="Green"> Green </option>
+					<option value="Blue"> Blue </option>
+				</select>
+			</div>
+		</div>
+	</div>
+
+	<div *ngIf="sizes != null" class="sizes-panel full-width">
+		<div class="header" fxLayout="row" fxLayoutAlign="start center">
+			<md-icon [ngStyle]="{'color': '#779811'}">done</md-icon>
+			<label> Sizes </label>
+			<md-icon class="btn-remove" (click)="sizes = null">close</md-icon>
+		</div>
+		<div class="body" fxLayout="column" fxLayoutAlign="start start">
+			<ul>
+				<li class="list-item" *ngFor="let size of sizes; let i = index" fxLayout="row" fxLayoutAlign="start center">
+					<span [ngStyle]="{'width': '200px'}"> {{ size.size }} </span>
+					<div class="price" fxLayout="row" fxLayoutAlign="start center">
+						<span> $ </span>
+						<input class="form-control" placeholder="Price" [(ngModel)]="size.price">
+					</div>
+					<input class="form-control" placeholder="Quantity" [(ngModel)]="size.quantity">
+					<md-icon class="btn-remove" (click)="removeSize(i)">close</md-icon>
+				</li>
+			</ul>
+			<div class="add-panel" fxFlex="20">
+				<select class="form-control" (change)="addSize($event)" [(ngModel)]="size">
+					<option value="+ Add value" selected disabled> + Add value </option>
+					<option value="Small"> Small </option>
+					<option value="Medium"> Medium </option>
+					<option value="High"> High </option>
+				</select>
+			</div>
+		</div>
+	</div>
+	<div class="add-panel" fxFlex="20">
+		<div> Select your product option </div>
+		<select class="form-control" (change)="addOption($event)" [(ngModel)]="option">
+			<option value="+ Add option" disabled selected> + Add option </option>
+			<option value="Colors"> Colors </option>
+			<option value="Sizes"> Sizes </option>
+		</select>
+	</div>
+</div>
