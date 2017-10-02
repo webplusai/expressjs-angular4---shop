@@ -28,6 +28,10 @@ import { EnglishComponent } from './pages/products/tabs/general/tabs/english/eng
 import { FrenchComponent } from './pages/products/tabs/general/tabs/french/french.component';
 import { ShippingSettingsComponent } from './pages/shipping-settings/shipping-settings.component';
 import { OrdersComponent } from './pages/orders/orders.component';
+import { MessagesComponent } from './pages/messages/messages.component';
+import { InboxComponent } from './pages/messages/tabs/inbox/inbox.component';
+import { ComposeEmailComponent } from './pages/messages/tabs/compose-email/compose-email.component';
+import { FinancialRecordsComponent } from './pages/financial-records/financial-records.component';
 
 @NgModule({
 	imports: [
@@ -60,7 +64,11 @@ import { OrdersComponent } from './pages/orders/orders.component';
 		EnglishComponent,
 		FrenchComponent,
 		ShippingSettingsComponent,
-		OrdersComponent
+		OrdersComponent,
+		MessagesComponent,
+		InboxComponent,
+		ComposeEmailComponent,
+		FinancialRecordsComponent
 	]
 })
 export class SellerModule { }

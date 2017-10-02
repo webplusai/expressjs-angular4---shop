@@ -16,8 +16,7 @@ export class SidenavComponent implements OnInit {
 		{ text: 'Shipping Settings',	link: 'shipping-settings' },
 		{ text: 'Orders',				link: 'orders' },
 		{ text: 'Financial Records',	link: 'financial-records' },
-		{ text: 'Messages',				link: 'messages' },
-		{ text: 'Payout',				link: 'payouts' },
+		{ text: 'Messages',				link: 'messages' }
 	];
 
 	constructor() { }

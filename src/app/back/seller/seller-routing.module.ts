@@ -8,6 +8,8 @@ import { ProductsListComponent } from './pages/products/products-list.component'
 import { ProductsFormComponent } from './pages/products/products-form.component';
 import { ShippingSettingsComponent } from './pages/shipping-settings/shipping-settings.component';
 import { OrdersComponent } from './pages/orders/orders.component';
+import { MessagesComponent } from './pages/messages/messages.component';
+import { FinancialRecordsComponent } from './pages/financial-records/financial-records.component';
 
 const routes: Routes = [
 	{
@@ -37,6 +39,14 @@ const routes: Routes = [
 			{
 				path: 'orders',
 				component: OrdersComponent
+			},
+			{
+				path: 'messages',
+				component: MessagesComponent
+			},
+			{
+				path: 'financial-records',
+				component: FinancialRecordsComponent
 			}
 		]
 	}

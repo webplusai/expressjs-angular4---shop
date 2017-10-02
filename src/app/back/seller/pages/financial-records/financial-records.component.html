@@ -1,0 +1,129 @@
+<h1> Your Finances </h1>
+<div> Your current balance <b> $1, 105.00 </b> </div>
+<div> Your earnings to date: <b> $1, 200.00 </b> </div>
+
+<div class="balance-records">
+	<h2> Balance records </h2>
+	<md-table #table [dataSource]="dataSourceBalance" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+		<!-- Order Column -->
+		<ng-container cdkColumnDef="order">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Order </md-header-cell>
+			<md-cell *cdkCellDef="let row">
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.order}} </span>
+			</md-cell>
+		</ng-container>
+
+		<!-- Amount Column -->
+		<ng-container cdkColumnDef="amount">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Amount </md-header-cell>
+			<md-cell *cdkCellDef="let row">
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.amount}} </span>
+			</md-cell>
+		</ng-container>
+
+		<!-- Description Column -->
+		<ng-container cdkColumnDef="description">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>
+			<md-cell *cdkCellDef="let row"> 
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.description}} </span>
+			</md-cell>
+		</ng-container>
+
+		<!-- Date Created Column -->
+		<ng-container cdkColumnDef="date_created">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Date created </md-header-cell>
+			<md-cell *cdkCellDef="let row"> 
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.date_created}} </span>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *cdkHeaderRowDef="displayedColumnsBalance"></md-header-row>
+		<md-row *cdkRowDef="let row; columns: displayedColumnsBalance;"></md-row>
+	</md-table>
+
+	<md-paginator
+		#mdPaginatorBalance
+		[length]="tableDataBalance.data.length"
+		[pageIndex]="0"
+		[pageSize]="5"
+		[pageSizeOptions]="[5, 10, 25]">
+	</md-paginator>
+</div>
+
+<div class="payments">
+
+	<h2> Payments </h2>
+
+	<md-table #table [dataSource]="dataSourcePayments" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+		<!-- Order Column -->
+		<ng-container cdkColumnDef="order">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Order </md-header-cell>
+			<md-cell *cdkCellDef="let row">
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.order}} </span>
+			</md-cell>
+		</ng-container>
+
+		<!-- Type Column -->
+		<ng-container cdkColumnDef="type">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Type </md-header-cell>
+			<md-cell *cdkCellDef="let row">
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.type}} </span>
+			</md-cell>
+		</ng-container>
+
+		<!-- Amount Column -->
+		<ng-container cdkColumnDef="amount">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Amount </md-header-cell>
+			<md-cell *cdkCellDef="let row">
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.amount}} </span>
+			</md-cell>
+		</ng-container>
+
+		<!-- Description Column -->
+		<ng-container cdkColumnDef="description">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>
+			<md-cell *cdkCellDef="let row"> 
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.description}} </span>
+			</md-cell>
+		</ng-container>
+
+		<!-- Status Column -->
+		<ng-container cdkColumnDef="status">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>
+			<md-cell *cdkCellDef="let row"> 
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.status}} </span>
+			</md-cell>
+		</ng-container>
+
+		<!-- Date Paid Column -->
+		<ng-container cdkColumnDef="date_paid">
+			<md-header-cell *cdkHeaderCellDef md-sort-header> Date paid </md-header-cell>
+			<md-cell *cdkCellDef="let row"> 
+				<input class="form-control" *ngIf="row.filter_record">
+				<span *ngIf="!row.filter_record"> {{row.date_paid}} </span>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *cdkHeaderRowDef="displayedColumnsPayments"></md-header-row>
+		<md-row *cdkRowDef="let row; columns: displayedColumnsPayments;"></md-row>
+	</md-table>
+
+	<md-paginator
+		#mdPaginatorPayments
+		[length]="tableDataPayments.data.length"
+		[pageIndex]="0"
+		[pageSize]="5"
+		[pageSizeOptions]="[5, 10, 25]">
+	</md-paginator>
+</div>

@@ -1,0 +1,54 @@
+seller-messages {
+
+	.btn-compose, .btn-inbox {
+		background: #008447;
+	    color: #fff;
+	    width: 100%;
+	}
+
+	.btn-inbox {
+		display: none;
+	}
+
+	.mat-tab-body-wrapper {
+		flex: 1;
+		margin-left: 20px;
+	}
+
+	.mat-tab-group {
+		flex-direction: row;
+	}
+
+	.mat-tab-header {
+		width: 250px;
+	}
+
+	.mat-tab-labels {
+		flex-direction: column;
+	}
+
+	.mat-tab-label {
+		justify-content: space-between;
+
+		.label-content {
+			display: flex;
+			align-items: center;
+
+			.mat-icon {
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.mat-tab-label:first-child {
+		opacity: 1;
+		padding: 0px;
+		margin: 10px;
+	}
+
+	.mat-tab-label-active:not(:first-child) {
+		border-left: 4px solid #008447;
+		border-right: 4px solid #008447;
+		color: #008447;
+	}
+}

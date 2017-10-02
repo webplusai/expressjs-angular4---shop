@@ -1,0 +1,42 @@
+<h3>Compose Mail</h3>
+<div class="btn-emails" fxLayout="row" fxLayoutAlign="end center">
+	<button md-button class="btn-send">
+		<md-icon>done</md-icon> Send
+	</button>
+	<button md-button>
+		<md-icon>clear</md-icon> Discard
+	</button>
+	<button md-button> Draft </button>
+</div>
+
+<div fxLayout="row" fxLayoutAlign="start center">
+	<md-form-field [ngStyle]="{'flex': 1}">
+		<input mdInput placeholder="To">
+	</md-form-field>
+	<span class="cc" (click)="showCcInput()"> Cc </span>
+	<span class="bcc" (click)="showBccInput()"> Bcc </span>
+</div>
+
+<md-form-field class="full-width cc-input" [ngStyle]="{'display': 'none'}">
+	<input mdInput placeholder="Cc">
+</md-form-field>
+
+<md-form-field class="full-width bcc-input" [ngStyle]="{'display': 'none'}">
+	<input mdInput placeholder="Bcc">
+</md-form-field>
+
+<md-form-field class="full-width">
+	<input mdInput placeholder="Subject">
+</md-form-field>
+
+<textarea class="full-width" [ngStyle]="{'height': '150px'}"></textarea>
+<input type="file">
+<div class="btn-emails" fxLayout="row" fxLayoutAlign="start center">
+	<button md-button class="btn-send">
+		<md-icon>done</md-icon> Send
+	</button>
+	<button md-button>
+		<md-icon>clear</md-icon> Discard
+	</button>
+	<button md-button> Draft </button>
+</div>

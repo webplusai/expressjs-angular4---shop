@@ -13,56 +13,61 @@ import 'rxjs/add/observable/fromEvent';
 
 import { TableData } from '../../../../helper/table-data/table-data';
 
-const ordersList = [];
-const commentsList = [];
+const balanceList = [
+	{ filter_record: true },
+	{ order: 1, amount: '$5.00', description: 'Description', date_created: '16/04/2015' },
+	{ order: 1, amount: '$5.00', description: 'Description', date_created: '16/04/2015' },
+	{ order: 1, amount: '$5.00', description: 'Description', date_created: '16/04/2015' },
+	{ order: 1, amount: '$5.00', description: 'Description', date_created: '16/04/2015' },
+	{ order: 1, amount: '$5.00', description: 'Description', date_created: '16/04/2015' }
+];
+
+const paymentList = [
+	{ filter_record: true },
+	{ order: 1, type: 'Payout request', amount: '$100.00', description: 'Description', status: 'Paid', date_paid: '11/05/2015' }
+];
 
 @Component({
-	selector: 'seller-dashboard',
-	templateUrl: './dashboard.component.html',
-	styleUrls: [ './dashboard.component.scss' ]
+	selector: 'seller-financial-records',
+	templateUrl: './financial-records.component.html',
+	styleUrls: ['./financial-records.component.scss']
 })
-export class DashboardComponent implements OnInit {
+export class FinancialRecordsComponent implements OnInit {
 
-	navigationList = [
-		{ icon: 'icon-seller-profile.png', link: 'profile', text: 'Modify your seller profile' },
-		{ icon: 'icon-new-product.png', link: 'products/create', text: 'Create a new product' },
-		{ icon: 'icon-manage-products.png', link: 'products', text: 'Manage your products' },
-		{ icon: 'icon-shipping-settings.png', link: 'shipping-settings', text: 'Shipping settings' },
-		{ icon: 'icon-view-orders.png', link: 'orders', text: 'View your orders' },
-		{ icon: 'icon-financial-records.png', link: 'financial-records', text: 'View your financial records' },
-		{ icon: 'icon-messages.png', link: 'messages', text: 'Message' }
-	]
+	displayedColumnsBalance = ['order', 'amount', 'description', 'date_created'];
+	displayedColumnsPayments = ['order', 'type', 'amount', 'description', 'status', 'date_paid'];
+	tableDataBalance = new TableData();
+	tableDataPayments = new TableData();
+	dataSourceBalance: BalanceDataSource | null;
+	dataSourcePayments: PaymentsDataSource | null;
 
-	displayedColumnsOrder = ['order_id', 'customer',  'products', 'shipping', 'date_created', 'total_amount'];
-	displayedColumnsComment = ['name', 'product', 'comment', 'date'];
+	@ViewChild('mdPaginatorBalance') paginatorBalance: MdPaginator;
+	@ViewChild(MdSort) sortBalance: MdSort;
 
-	tableDataOrder = new TableData();
-	tableDataComment = new TableData();
-	dataSourceOrder: OrdersDataSource | null;
-	dataSourceComment: CommentsDataSource | null;
-
-	@ViewChild(MdSort) sortOrder: MdSort;
-	@ViewChild(MdSort) sortComment: MdSort;
+	@ViewChild('mdPaginatorPayments') paginatorPayments: MdPaginator;
+	@ViewChild(MdSort) sortPayments: MdSort;
 
 	constructor() { }
 
 	ngOnInit() {
-		this.tableDataOrder.setData(ordersList);
-		this.tableDataComment.setData(commentsList);
-		this.dataSourceOrder = new OrdersDataSource(this.tableDataOrder, this.sortOrder);
-		this.dataSourceComment = new CommentsDataSource(this.tableDataComment, this.sortComment);
+		this.tableDataBalance.setData(balanceList);
+		this.dataSourceBalance = new BalanceDataSource(this.tableDataBalance, this.paginatorBalance, this.sortBalance);
+
+		this.tableDataPayments.setData(paymentList);
+		this.dataSourcePayments = new PaymentsDataSource(this.tableDataPayments, this.paginatorPayments, this.sortPayments);
 	}
 }
 
-export class OrdersDataSource extends DataSource<any> {
+export class BalanceDataSource extends DataSource<any> {
 
 	displayDataChanges: any;
 
-	constructor(private _tableData: TableData, private _sort: MdSort) {
+	constructor(private _tableData: TableData, private  _paginator: MdPaginator, private _sort: MdSort) {
 		super();
 
 		this.displayDataChanges = [
 			_tableData.dataChange,
+			_paginator.page,
 			_sort.mdSortChange
 		]
 	}
@@ -70,6 +75,7 @@ export class OrdersDataSource extends DataSource<any> {
 	connect(): Observable<any> {
 
 		return Observable.merge(...this.displayDataChanges).map(() => {
+			const startIndex = this._paginator.pageIndex  * this._paginator.pageSize;
 			return this.getSortedData();
 		});
 	}
@@ -96,15 +102,16 @@ export class OrdersDataSource extends DataSource<any> {
 	}
 }
 
-export class CommentsDataSource extends DataSource<any> {
+export class PaymentsDataSource extends DataSource<any> {
 
 	displayDataChanges: any;
 
-	constructor(private _tableData: TableData, private _sort: MdSort) {
+	constructor(private _tableData: TableData, private  _paginator: MdPaginator, private _sort: MdSort) {
 		super();
 
 		this.displayDataChanges = [
 			_tableData.dataChange,
+			_paginator.page,
 			_sort.mdSortChange
 		]
 	}
@@ -112,6 +119,7 @@ export class CommentsDataSource extends DataSource<any> {
 	connect(): Observable<any> {
 
 		return Observable.merge(...this.displayDataChanges).map(() => {
+			const startIndex = this._paginator.pageIndex  * this._paginator.pageSize;
 			return this.getSortedData();
 		});
 	}
