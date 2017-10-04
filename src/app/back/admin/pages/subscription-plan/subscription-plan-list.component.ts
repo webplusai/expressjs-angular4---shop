@@ -14,9 +14,9 @@ import 'rxjs/add/observable/fromEvent';
 import { TableData } from '../../../../helper/table-data/table-data';
 
 const groupList = [
-	{ group_image: 'assets/img/gold.png', membership_group: 'Gold',  membership_type: 'One time Membership', no_of_products: '99', price: 199 },
-	{ group_image: 'assets/img/silver.png', membership_group: 'Silver',  membership_type: 'One time Membership', no_of_products: '50', price: 99 },
-	{ group_image: 'assets/img/bronze.png', membership_group: 'Bronze',  membership_type: 'One time Membership', no_of_products: '30', price: 15 }
+	{ group_image: 'assets/img/gold.png', membership_group: 'Gold',  membership_type: 'One time Membership', no_of_days: '99', price: 199 },
+	{ group_image: 'assets/img/silver.png', membership_group: 'Silver',  membership_type: 'One time Membership', no_of_days: '50', price: 99 },
+	{ group_image: 'assets/img/bronze.png', membership_group: 'Bronze',  membership_type: 'One time Membership', no_of_days: '30', price: 15 }
 ];
 
 @Component({
@@ -26,7 +26,7 @@ const groupList = [
 })
 export class SubscriptionPlanListComponent implements OnInit {
 
-	displayedColumns = ['group_image', 'membership_group', 'membership_type', 'no_of_products', 'price', 'action'];
+	displayedColumns = ['group_image', 'membership_group', 'membership_type', 'no_of_days', 'price', 'action'];
 	tableData = new TableData();
 	dataSource: SubscriptionPlanDataSource | null;
 

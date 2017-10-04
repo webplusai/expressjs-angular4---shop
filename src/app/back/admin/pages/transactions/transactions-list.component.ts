@@ -14,15 +14,15 @@ import 'rxjs/add/observable/fromEvent';
 import { TableData } from '../../../../helper/table-data/table-data';
 
 const transactionsList = [
-	{ index: 1, seller: 'Seller1', net_amount: '$100', description: 'Description', date: '2017-09-07'},
-	{ index: 2, seller: 'Seller2', net_amount: '$200', description: 'Description', date: '2017-09-07'},
-	{ index: 3, seller: 'Seller3', net_amount: '$300', description: 'Description', date: '2017-09-07'},
-	{ index: 4, seller: 'Seller4', net_amount: '$400', description: 'Description', date: '2017-09-07'},
-	{ index: 5, seller: 'Seller5', net_amount: '$500', description: 'Description', date: '2017-09-07'},
-	{ index: 6, seller: 'Seller6', net_amount: '$600', description: 'Description', date: '2017-09-07'},
-	{ index: 7, seller: 'Seller7', net_amount: '$700', description: 'Description', date: '2017-09-07'},
-	{ index: 8, seller: 'Seller8', net_amount: '$800', description: 'Description', date: '2017-09-07'},
-	{ index: 9, seller: 'Seller9', net_amount: '$900', description: 'Description', date: '2017-09-07'},
+	{ index: 1, image: 'avatar1.jpg', seller: 'Seller1', net_amount: '$100', description: 'Description', date: '2017-09-07'},
+	{ index: 2, image: 'avatar1.jpg', seller: 'Seller2', net_amount: '$200', description: 'Description', date: '2017-09-07'},
+	{ index: 3, image: 'avatar1.jpg', seller: 'Seller3', net_amount: '$300', description: 'Description', date: '2017-09-07'},
+	{ index: 4, image: 'avatar1.jpg', seller: 'Seller4', net_amount: '$400', description: 'Description', date: '2017-09-07'},
+	{ index: 5, image: 'avatar1.jpg', seller: 'Seller5', net_amount: '$500', description: 'Description', date: '2017-09-07'},
+	{ index: 6, image: 'avatar1.jpg', seller: 'Seller6', net_amount: '$600', description: 'Description', date: '2017-09-07'},
+	{ index: 7, image: 'avatar1.jpg', seller: 'Seller7', net_amount: '$700', description: 'Description', date: '2017-09-07'},
+	{ index: 8, image: 'avatar1.jpg', seller: 'Seller8', net_amount: '$800', description: 'Description', date: '2017-09-07'},
+	{ index: 9, image: 'avatar1.jpg', seller: 'Seller9', net_amount: '$900', description: 'Description', date: '2017-09-07'},
 ]
 
 @Component({
@@ -32,7 +32,7 @@ const transactionsList = [
 })
 export class TransactionsListComponent implements OnInit {
 
-	displayedColumns = ['index', 'seller', 'net_amount', 'description', 'date'];
+	displayedColumns = ['index', 'image', 'seller', 'net_amount', 'description', 'date'];
 	tableData = new TableData();
 	dataSource: TransactionsDataSource | null;
 

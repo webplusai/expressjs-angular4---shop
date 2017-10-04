@@ -1,11 +1,18 @@
 <md-tab-group fxLayout="column" fxLayoutAlign="end center" [selectedIndex]="selectedTab" (selectChange)="selectChange($event)">
 	<md-tab (window:resize)="onResize()" *ngFor="let i of [1, 2, 3, 4, 5]" label="{{ i }}">
 		<md-grid-list rowHeight="1:1" gutterSize="16" cols="{{cols}}">
-			<md-grid-tile *ngFor="let vendor of vendors">
+			<md-grid-tile *ngFor="let vendor of vendors; let i = index">
 				<a [routerLink]="['/store']" class="full-width">
-					<md-grid-tile-header>{{vendor}}</md-grid-tile-header>
+					<md-grid-tile-header fxLayout="row" fxLayoutAlign="center center">{{vendor}}</md-grid-tile-header>
 					<img src="assets/img/product.jpg">
-					<md-grid-tile-footer [ngStyle]="{'background-color': '#000'}"></md-grid-tile-footer>
+					<md-grid-tile-footer [ngStyle]="{'background-color': colors[i]}" fxLayout="row" fxLayoutAlign="center center">
+						<div class="countdown-timer">
+							<span> 90d </span>
+							<span> 19h </span>
+							<span> 20m </span>
+							<span> 40s </span>
+						</div>
+					</md-grid-tile-footer>
 				</a>
 			</md-grid-tile>
 		</md-grid-list>

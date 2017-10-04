@@ -52,6 +52,14 @@
 		<md-cell *cdkCellDef="let row"> {{row.index}} </md-cell>
 	</ng-container>
 
+	<!-- Image Column -->
+	<ng-container cdkColumnDef="image">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Image </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			<img class="avatar" src="assets/img/{{row.image}}">
+		</md-cell>
+	</ng-container>
+
 	<!-- Seller Column -->
 	<ng-container cdkColumnDef="seller">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>

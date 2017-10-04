@@ -20,6 +20,10 @@ export class ProductFilterSidebarComponent implements OnInit {
 		{
 			title: 'Brand',
 			items: [ 'Brand 1', 'Brand 2', 'Brand 3', 'Brand 4', 'Brand 5' ]
+		},
+		{
+			title: 'Size',
+			items: [ 'Small', 'Medium', 'Large' ]
 		}
 	];
 

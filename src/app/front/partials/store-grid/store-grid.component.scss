@@ -42,6 +42,13 @@ app-store-grid {
 
 	.mat-grid-tile-header {
 		text-transform: uppercase;
+		background: #000 !important;
+	}
+
+	.mat-grid-tile-footer {
+		.countdown-timer {
+			font-size: 20px;
+		}
 	}
 }
 
