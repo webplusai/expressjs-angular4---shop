@@ -25,7 +25,7 @@
 
 				<md-list *ngIf="subItem.subMenuItems" class="full-width sub-sub-menu">
 					<md-list-item *ngFor="let subsubItem of subItem.subMenuItems">
-						<a [routerLink]="['/admin' + subsubItem.link]" class="full-size">
+						<a [routerLink]="['/admin/' + subsubItem.link]" class="full-size">
 							<button md-button class="full-size" [ngStyle]="{'padding-left': '80px'}" (click)="toggleSubSubMenuItem($event)">
 								{{ subsubItem.text }}
 							</button>

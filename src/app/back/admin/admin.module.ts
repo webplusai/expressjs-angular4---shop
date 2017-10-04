@@ -107,6 +107,9 @@ import { SellComponent } from './pages/dashboard/sell/sell.component';
 import { ProspectiveLabelComponent } from './pages/dashboard/prospective-label/prospective-label.component';
 import { WeatherComponent } from './pages/dashboard/weather/weather.component';
 import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
+import { StoreLocationsListComponent } from './pages/store-locations/store-locations-list.component';
+import { StoreLocationsFormComponent } from './pages/store-locations/store-locations-form.component';
+import { LanguagesListComponent } from './pages/languages/languages-list.component';
 
 @NgModule({
 	imports: [
@@ -218,6 +221,9 @@ import { MaintenanceComponent } from './pages/maintenance/maintenance.component'
 		ProspectiveLabelComponent,
 		WeatherComponent,
 		MaintenanceComponent,
+		StoreLocationsListComponent,
+		StoreLocationsFormComponent,
+		LanguagesListComponent
 	]
 })
 export class AdminModule { }

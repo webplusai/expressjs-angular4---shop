@@ -4,7 +4,7 @@ import { Routes, RouterModule, Router } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { LoginComponent } from  './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { BuyersListComponent } from './pages/buyers/buyers-list.component';
+/*import { BuyersListComponent } from './pages/buyers/buyers-list.component';
 import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
 import { VendorsListComponent } from './pages/vendors/vendors-list.component';
 import { VendorsFormComponent } from './pages/vendors/vendors-form.component';
@@ -51,7 +51,10 @@ import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscri
 import { PaymentsListComponent } from './pages/payments/payments-list.component';
 import { PaymentsFormComponent } from './pages/payments/payments-form.component';
 import { EMHTVComponent } from './pages/emhtv/emhtv.component';
-import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';*/
+import { StoreLocationsListComponent } from './pages/store-locations/store-locations-list.component';
+import { StoreLocationsFormComponent } from './pages/store-locations/store-locations-form.component';
+import { LanguagesListComponent } from './pages/languages/languages-list.component';
 
 const routes: Routes = [
 	{
@@ -74,7 +77,7 @@ const routes: Routes = [
 					breadcrumb: [ ['Home', 'dashboard'], ['Dashboard', 'dashboard'] ]
 				}
 			},
-			{
+			/*{
 				path: 'buyers',
 				component: BuyersListComponent,
 				data: {
@@ -481,6 +484,18 @@ const routes: Routes = [
 					title: 'Maintenance',
 					breadcrumb: [ ['Home', 'dashboard'], ['Landing Page', 'landing-page'] ]
 				}
+			},*/
+			{
+				path: 'store-locations',
+				component: StoreLocationsListComponent
+			},
+			{
+				path: 'store-locations/create',
+				component: StoreLocationsFormComponent
+			},
+			{
+				path: 'languages',
+				component: LanguagesListComponent
 			}
 		]
 	},
