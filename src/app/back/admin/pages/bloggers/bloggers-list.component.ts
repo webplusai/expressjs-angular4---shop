@@ -14,14 +14,14 @@ import 'rxjs/add/observable/fromEvent';
 import { TableData } from '../../../../helper/table-data/table-data';
 
 const sellerList = [
-	{seller: 'Seller1', email: 'user1@email.com', products: 'Product1', sales: '1', earnings: '$100', balance: '$200', status: 'Enabled', date_created: '2017-09-03'},
-	{seller: 'Seller2', email: 'user2@email.com', products: 'Product2', sales: '2', earnings: '$200', balance: '$300', status: 'Enabled', date_created: '2017-09-03'},
-	{seller: 'Seller3', email: 'user3@email.com', products: 'Product3', sales: '3', earnings: '$300', balance: '$400', status: 'Enabled', date_created: '2017-09-03'},
-	{seller: 'Seller4', email: 'user4@email.com', products: 'Product4', sales: '4', earnings: '$400', balance: '$500', status: 'Enabled', date_created: '2017-09-03'},
-	{seller: 'Seller5', email: 'user5@email.com', products: 'Product5', sales: '5', earnings: '$500', balance: '$600', status: 'Enabled', date_created: '2017-09-03'},
-	{seller: 'Seller6', email: 'user6@email.com', products: 'Product6', sales: '6', earnings: '$600', balance: '$700', status: 'Enabled', date_created: '2017-09-03'},
-	{seller: 'Seller7', email: 'user7@email.com', products: 'Product7', sales: '7', earnings: '$700', balance: '$800', status: 'Enabled', date_created: '2017-09-03'},
-	{seller: 'Seller8', email: 'user7@email.com', products: 'Product8', sales: '8', earnings: '$800', balance: '$900', status: 'Enabled', date_created: '2017-09-03'}
+	{seller: 'Seller1', image: 'avatar1.jpg', email: 'user1@email.com', products: 'Product1', sales: '1', earnings: '$100', balance: '$200', status: 'Enabled', date_created: '2017-09-03'},
+	{seller: 'Seller2', image: 'avatar1.jpg', email: 'user2@email.com', products: 'Product2', sales: '2', earnings: '$200', balance: '$300', status: 'Enabled', date_created: '2017-09-03'},
+	{seller: 'Seller3', image: 'avatar1.jpg', email: 'user3@email.com', products: 'Product3', sales: '3', earnings: '$300', balance: '$400', status: 'Enabled', date_created: '2017-09-03'},
+	{seller: 'Seller4', image: 'avatar1.jpg', email: 'user4@email.com', products: 'Product4', sales: '4', earnings: '$400', balance: '$500', status: 'Enabled', date_created: '2017-09-03'},
+	{seller: 'Seller5', image: 'avatar1.jpg', email: 'user5@email.com', products: 'Product5', sales: '5', earnings: '$500', balance: '$600', status: 'Enabled', date_created: '2017-09-03'},
+	{seller: 'Seller6', image: 'avatar1.jpg', email: 'user6@email.com', products: 'Product6', sales: '6', earnings: '$600', balance: '$700', status: 'Enabled', date_created: '2017-09-03'},
+	{seller: 'Seller7', image: 'avatar1.jpg', email: 'user7@email.com', products: 'Product7', sales: '7', earnings: '$700', balance: '$800', status: 'Enabled', date_created: '2017-09-03'},
+	{seller: 'Seller8', image: 'avatar1.jpg', email: 'user7@email.com', products: 'Product8', sales: '8', earnings: '$800', balance: '$900', status: 'Enabled', date_created: '2017-09-03'}
 ];
 
 @Component({
@@ -31,7 +31,7 @@ const sellerList = [
 })
 export class BloggersListComponent implements OnInit {
 
-	displayedColumns = ['seller', 'email', 'product', 'sales', 'earnings', 'balance', 'status', 'date_created', 'action'];
+	displayedColumns = ['seller', 'image', 'email', 'product', 'sales', 'earnings', 'balance', 'status', 'date_created', 'action'];
 	tableData = new TableData();
 	dataSource: UserDataSource | null;
 

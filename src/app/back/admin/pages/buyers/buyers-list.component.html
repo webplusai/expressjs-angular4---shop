@@ -76,6 +76,14 @@
 		<md-cell *cdkCellDef="let row"> {{row.customer_name}} </md-cell>
 	</ng-container>
 
+	<!-- Image Column -->
+	<ng-container cdkColumnDef="image">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Image </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			<img class="avatar" src="assets/img/{{row.image}}">
+		</md-cell>
+	</ng-container>
+
 	<!-- E-Mail Column -->
 	<ng-container cdkColumnDef="email">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> E-Mail </md-header-cell>

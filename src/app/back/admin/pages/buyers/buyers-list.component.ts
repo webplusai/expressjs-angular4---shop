@@ -14,14 +14,14 @@ import 'rxjs/add/observable/fromEvent';
 import { TableData } from '../../../../helper/table-data/table-data';
 
 const userList = [
-	{customer_name: 'User1', email: 'user1@email.com', customer_group: 'Group1', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User2', email: 'user2@email.com', customer_group: 'Group2', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User3', email: 'user3@email.com', customer_group: 'Group3', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User4', email: 'user4@email.com', customer_group: 'Group4', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User5', email: 'user5@email.com', customer_group: 'Group5', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User6', email: 'user6@email.com', customer_group: 'Group6', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User7', email: 'user7@email.com', customer_group: 'Group7', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User8', email: 'user8@email.com', customer_group: 'Group8', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'}
+	{customer_name: 'User1', image: 'avatar1.jpg', email: 'user1@email.com', customer_group: 'Group1', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
+	{customer_name: 'User2', image: 'avatar1.jpg', email: 'user2@email.com', customer_group: 'Group2', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
+	{customer_name: 'User3', image: 'avatar1.jpg', email: 'user3@email.com', customer_group: 'Group3', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
+	{customer_name: 'User4', image: 'avatar1.jpg', email: 'user4@email.com', customer_group: 'Group4', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
+	{customer_name: 'User5', image: 'avatar1.jpg', email: 'user5@email.com', customer_group: 'Group5', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
+	{customer_name: 'User6', image: 'avatar1.jpg', email: 'user6@email.com', customer_group: 'Group6', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
+	{customer_name: 'User7', image: 'avatar1.jpg', email: 'user7@email.com', customer_group: 'Group7', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
+	{customer_name: 'User8', image: 'avatar1.jpg', email: 'user8@email.com', customer_group: 'Group8', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'}
 ];
 
 @Component({
@@ -31,7 +31,7 @@ const userList = [
 })
 export class BuyersListComponent implements OnInit {
 
-	displayedColumns = ['customer_name', 'email', 'customer_group', 'status', 'ip', 'date_added', 'action'];
+	displayedColumns = ['customer_name', 'image', 'email', 'customer_group', 'status', 'ip', 'date_added', 'action'];
 	tableData = new TableData();
 	dataSource: UserDataSource | null;
 
