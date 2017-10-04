@@ -55,6 +55,7 @@ import { MaintenanceComponent } from './pages/maintenance/maintenance.component'
 import { StoreLocationsListComponent } from './pages/store-locations/store-locations-list.component';
 import { StoreLocationsFormComponent } from './pages/store-locations/store-locations-form.component';
 import { LanguagesListComponent } from './pages/languages/languages-list.component';
+import { LanguagesFormComponent } from './pages/languages/languages-form.component';
 
 const routes: Routes = [
 	{
@@ -496,6 +497,10 @@ const routes: Routes = [
 			{
 				path: 'languages',
 				component: LanguagesListComponent
+			},
+			{
+				path: 'languages/create',
+				component: LanguagesFormComponent
 			}
 		]
 	},

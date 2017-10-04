@@ -110,6 +110,7 @@ import { MaintenanceComponent } from './pages/maintenance/maintenance.component'
 import { StoreLocationsListComponent } from './pages/store-locations/store-locations-list.component';
 import { StoreLocationsFormComponent } from './pages/store-locations/store-locations-form.component';
 import { LanguagesListComponent } from './pages/languages/languages-list.component';
+import { LanguagesFormComponent } from './pages/languages/languages-form.component';
 
 @NgModule({
 	imports: [
@@ -223,7 +224,8 @@ import { LanguagesListComponent } from './pages/languages/languages-list.compone
 		MaintenanceComponent,
 		StoreLocationsListComponent,
 		StoreLocationsFormComponent,
-		LanguagesListComponent
+		LanguagesListComponent,
+		LanguagesFormComponent
 	]
 })
 export class AdminModule { }

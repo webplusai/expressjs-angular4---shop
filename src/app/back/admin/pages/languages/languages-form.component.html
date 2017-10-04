@@ -1,0 +1,20 @@
+<div>
+	<md-form-field>
+		<input mdInput placeholder="Language Name*" [formControl]="languageName">
+		<md-error *ngIf="languageName.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-select placeholder="Code">
+		<md-option value="en"> en </md-option>
+		<md-option value="cn"> cn </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="Sort Order" [formControl]="sortOrder">
+		<md-error *ngIf="sortOrder.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+</div>
