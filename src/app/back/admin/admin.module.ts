@@ -120,6 +120,9 @@ import { OrderStatusesFormComponent } from './pages/order-statuses/order-statuse
 import { SettingListComponent } from './pages/setting/setting-list.component';
 import { SettingFormComponent } from './pages/setting/setting-form.component';
 import { SocialLinksComponent } from './pages/social-links/social-links.component';
+import { BadgeComponent } from './pages/badge/badge.component';
+import { TaxListComponent } from './pages/tax/tax-list.component';
+import { TaxFormComponent } from './pages/tax/tax-form.component';
 
 @NgModule({
 	imports: [
@@ -243,7 +246,10 @@ import { SocialLinksComponent } from './pages/social-links/social-links.componen
 		OrderStatusesFormComponent,
 		SettingListComponent,
 		SettingFormComponent,
-		SocialLinksComponent
+		SocialLinksComponent,
+		BadgeComponent,
+		TaxListComponent,
+		TaxFormComponent
 	]
 })
 export class AdminModule { }

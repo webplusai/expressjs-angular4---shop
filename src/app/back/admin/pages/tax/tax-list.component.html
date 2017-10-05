@@ -1,0 +1,49 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Tax Summary </span>
+	</h3>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/tax/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Tax Name Column -->
+	<ng-container cdkColumnDef="tax_name">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Name </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.tax_name}} </md-cell>
+	</ng-container>
+
+	<!-- Tax Rate Column -->
+	<ng-container cdkColumnDef="tax_rate">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Rate </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.tax_rate}} </md-cell>
+	</ng-container>
+
+	<!-- Tax Rate Type Column -->
+	<ng-container cdkColumnDef="tax_rate_type">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Rate Type </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.tax_rate_type}} </md-cell>
+	</ng-container>
+
+	<!-- Tax Amount Column -->
+	<ng-container cdkColumnDef="tax_amount">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Amount </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.tax_amount}} </md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

@@ -65,6 +65,9 @@ import { OrderStatusesFormComponent } from './pages/order-statuses/order-statuse
 import { SettingListComponent } from './pages/setting/setting-list.component';
 import { SettingFormComponent } from './pages/setting/setting-form.component';
 import { SocialLinksComponent } from './pages/social-links/social-links.component';
+import { BadgeComponent } from './pages/badge/badge.component';
+import { TaxListComponent } from './pages/tax/tax-list.component';
+import { TaxFormComponent } from './pages/tax/tax-form.component';
 
 const routes: Routes = [
 	{
@@ -546,6 +549,18 @@ const routes: Routes = [
 			{
 				path: 'social-links',
 				component: SocialLinksComponent
+			}, 
+			{
+				path: 'badge',
+				component: BadgeComponent
+			},
+			{
+				path: 'tax',
+				component: TaxListComponent
+			},
+			{
+				path: 'tax/create',
+				component: TaxFormComponent
 			}
 		]
 	},

@@ -1,0 +1,29 @@
+<div>
+	<md-form-field>
+		<input mdInput placeholder="Tax Name" [formControl]="taxName">
+		<md-error *ngIf="taxName.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Tax Rate" [formControl]="taxRate">
+		<md-error *ngIf="taxRate.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Tax Rate Type" [formControl]="taxRateType">
+		<md-error *ngIf="taxRateType.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Tax Amount" [formControl]="taxAmount">
+		<md-error *ngIf="taxAmount.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+</div>
