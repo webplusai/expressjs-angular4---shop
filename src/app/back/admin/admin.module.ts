@@ -114,6 +114,11 @@ import { LanguagesFormComponent } from './pages/languages/languages-form.compone
 import { CurrenciesListComponent } from './pages/currencies/currencies-list.component';
 import { CurrenciesFormComponent } from './pages/currencies/currencies-form.component';
 import { StockStatusesListComponent } from './pages/stock-statuses/stock-statuses-list.component';
+import { StockStatusesFormComponent } from './pages/stock-statuses/stock-statuses-form.component';
+import { OrderStatusesListComponent } from './pages/order-statuses/order-statuses-list.component';
+import { OrderStatusesFormComponent } from './pages/order-statuses/order-statuses-form.component';
+import { SettingListComponent } from './pages/setting/setting-list.component';
+import { SettingFormComponent } from './pages/setting/setting-form.component';
 
 @NgModule({
 	imports: [
@@ -231,7 +236,12 @@ import { StockStatusesListComponent } from './pages/stock-statuses/stock-statuse
 		LanguagesFormComponent,
 		CurrenciesListComponent,
 		CurrenciesFormComponent,
-		StockStatusesListComponent
+		StockStatusesListComponent,
+		StockStatusesFormComponent,
+		OrderStatusesListComponent,
+		OrderStatusesFormComponent,
+		SettingListComponent,
+		SettingFormComponent
 	]
 })
 export class AdminModule { }

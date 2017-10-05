@@ -1,0 +1,15 @@
+<div>
+	<md-form-field>
+		<input mdInput placeholder="Store Name*" [formControl]="storeName">
+		<md-error *ngIf="storeName.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Store URL" [formControl]="storeUrl">
+		<md-error *ngIf="storeUrl.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+</div>

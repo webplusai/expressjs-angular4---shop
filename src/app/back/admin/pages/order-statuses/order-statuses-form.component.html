@@ -1,0 +1,8 @@
+<div>
+	<md-form-field>
+		<input mdInput placeholder="Order Status Name*" [formControl]="orderStatusName">
+		<md-error *ngIf="orderStatusName.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+</div>
