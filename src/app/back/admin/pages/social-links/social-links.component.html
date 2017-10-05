@@ -1,0 +1,30 @@
+<md-table [dataSource]="dataSource">
+	<ng-container mdColumnDef="icon">
+		<md-header-cell *mdHeaderCellDef> SOCIAL LINKS </md-header-cell>
+		<md-cell *mdCellDef="let element; let i = index">
+			<i class="fa fa-{{socialLinksList[i].icon}} social-icon" [ngStyle]="{'color': socialLinksList[i].color }"> </i>
+		</md-cell>
+	</ng-container>
+	<ng-container mdColumnDef="link">
+		<md-header-cell *mdHeaderCellDef> </md-header-cell>
+		<md-cell *mdCellDef="let element; let i = index">
+			<input class="form-control" [(ngModel)]="socialLinksList[i].link" placeholder="Link">
+		</md-cell>
+	</ng-container>
+	<ng-container mdColumnDef="text">
+		<md-header-cell *mdHeaderCellDef> </md-header-cell>
+		<md-cell *mdCellDef="let element; let i = index">
+			<input class="form-control" [(ngModel)]="socialLinksList[i].text" placeholder="Text">
+		</md-cell>
+	</ng-container>
+	<ng-container mdColumnDef="action">
+		<md-header-cell *mdHeaderCellDef> </md-header-cell>
+		<md-cell *mdCellDef="let element; let i = index">
+			<button md-icon-button><i class="fa fa-caret-square-o-down fa-2x" (click)="orderDown(i)"> </i></button>
+			<button md-icon-button><i class="fa fa-caret-square-o-up fa-2x" (click)="orderUp(i)"> </i></button>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+	<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+</md-table>

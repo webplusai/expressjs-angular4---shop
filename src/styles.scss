@@ -168,6 +168,10 @@ admin {
 	.mat-form-field, .mat-select {
 		width: 100%;
 	}
+
+	.mat-cell {
+		padding: 0px 10px;
+	}
 }
 
 app {

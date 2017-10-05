@@ -64,6 +64,7 @@ import { OrderStatusesListComponent } from './pages/order-statuses/order-statuse
 import { OrderStatusesFormComponent } from './pages/order-statuses/order-statuses-form.component';
 import { SettingListComponent } from './pages/setting/setting-list.component';
 import { SettingFormComponent } from './pages/setting/setting-form.component';
+import { SocialLinksComponent } from './pages/social-links/social-links.component';
 
 const routes: Routes = [
 	{
@@ -541,6 +542,10 @@ const routes: Routes = [
 			{
 				path: 'setting/create',
 				component: SettingFormComponent
+			},
+			{
+				path: 'social-links',
+				component: SocialLinksComponent
 			}
 		]
 	},
