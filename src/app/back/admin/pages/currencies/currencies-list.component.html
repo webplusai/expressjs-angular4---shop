@@ -1,0 +1,49 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Currencies </span>
+	</h3>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/currencies/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Currency Title Column -->
+	<ng-container cdkColumnDef="currency_title">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Currency Title </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.currency_title}} </md-cell>
+	</ng-container>
+
+	<!-- Code Column -->
+	<ng-container cdkColumnDef="code">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Code </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.code}} </md-cell>
+	</ng-container>
+
+	<!-- Value Column -->
+	<ng-container cdkColumnDef="value">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Value </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.value}} </md-cell>
+	</ng-container>
+
+	<!-- Last Updated Column -->
+	<ng-container cdkColumnDef="last_updated">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Last Updated </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.last_updated}} </md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

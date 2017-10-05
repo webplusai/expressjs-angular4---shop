@@ -1,0 +1,26 @@
+<div>
+	<md-form-field>
+		<input mdInput placeholder="Currency Title*" [formControl]="currencyTitleInput">
+		<md-error *ngIf="currencyTitleInput.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-select placeholder="Code*">
+		<md-option value="en"> en </md-option>
+		<md-option value="cn"> cn </md-option>
+	</md-select>
+	
+	<md-form-field>
+		<input mdInput placeholder="Value" [formControl]="valueInput">
+		<md-error *ngIf="valueInput.hasError('required')">
+			This field is <strong> required </strong>
+		</md-error>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Last updated" [mdDatepicker]="picker">
+		<md-datepicker-toggle [for]="picker" mdSuffix> </md-datepicker-toggle>
+		<md-datepicker #picker> </md-datepicker>
+	</md-form-field>
+</div>

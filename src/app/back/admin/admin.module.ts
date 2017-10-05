@@ -111,6 +111,9 @@ import { StoreLocationsListComponent } from './pages/store-locations/store-locat
 import { StoreLocationsFormComponent } from './pages/store-locations/store-locations-form.component';
 import { LanguagesListComponent } from './pages/languages/languages-list.component';
 import { LanguagesFormComponent } from './pages/languages/languages-form.component';
+import { CurrenciesListComponent } from './pages/currencies/currencies-list.component';
+import { CurrenciesFormComponent } from './pages/currencies/currencies-form.component';
+import { StockStatusesListComponent } from './pages/stock-statuses/stock-statuses-list.component';
 
 @NgModule({
 	imports: [
@@ -225,7 +228,10 @@ import { LanguagesFormComponent } from './pages/languages/languages-form.compone
 		StoreLocationsListComponent,
 		StoreLocationsFormComponent,
 		LanguagesListComponent,
-		LanguagesFormComponent
+		LanguagesFormComponent,
+		CurrenciesListComponent,
+		CurrenciesFormComponent,
+		StockStatusesListComponent
 	]
 })
 export class AdminModule { }
