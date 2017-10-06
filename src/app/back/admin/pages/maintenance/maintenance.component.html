@@ -1,9 +1,91 @@
-<div fxLayout="row" fxLayoutAlign="center start" [ngStyle]="{'margin-top': '30px'}">
-	<img src="assets/img/maintenance_sample.png">
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Languages </span>
+	</h3>
 </div>
 
-<div fxLayout="row" [ngStyle]="{'margin-top': '30px', 'justify-content': 'space-evenly'}">
-	<a md-button href="/maintenance" [ngStyle]="{'background': '#01afe8', 'text-decoration': 'none', 'color': '#fff'}"> Preview </a>
-	<button md-button [ngStyle]="{'border': '1px solid #aaa'}"> Get Support </button>
-	<button md-button [ngStyle]="{'background': '#7ac438', 'color': '#fff'}"> More Products </button>
+<div class="row">
+    <div class="col-md-6">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Site-wide Alert</h3>
+            </div>
+            <div class="box-body">
+                <span class="help-block">Choose an alert message you want to show throughout the site. This will be shown on every single page and cannot be dismissed or hidden unless it's manually removed by an admin. HTML is supported.</span>
+                <div class="form-group">
+                    <label for="alert_type">Alert Type:</label>
+                    <select class="form-control" id="alert_type" name="alert_type"><option value="alert-danger">Danger Alert</option><option value="alert-warning">Warning Alert</option><option value="alert-info">Info Alert</option><option value="alert-primary">Primary Alert</option></select>
+                </div>
+                <span class="help-block"> Leave empty to not show any alert.</span>
+                <div class="form-group">
+                    <label for="alert_text">Alert Text:</label>
+                    <textarea class="form-control" rows="2" cols="" name="alert_text" id="alert_text"></textarea>
+                </div>
+                <span class="help-block">Sample Preview</span>
+                <div id="alert-preview" class="alert alert-success alert-theme-green">
+                    Sample message here...
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="box">
+            <div class="box-header with-border">
+                <h3 class="box-title">Site Maintenance</h3>
+            </div>                <div class="box-body">
+                <div class="form-group">
+                    <label for="offline_message">Site Offline Message:</label>
+                    <textarea class="form-control" rows="" cols="" name="offline_message" id="offline_message"></textarea>
+                </div>
+                <span class="help-block">Message to show when the site is offline to users.</span>
+                <table class="table table-striped">
+                    <tbody>
+                        <tr>
+                            <th>Action</th>
+                            <th>Result</th>
+                        </tr>
+                        <tr>
+                            <td>Site Online</td>
+                            <td width="100px">
+                                <div class="form-group has-success ">
+                                    <select class="form-control" name="site_online"><option value="0">No</option><option value="1" selected="selected">Yes</option></select>
+                                </div>
+                            </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
+
+<md-table [dataSource]="dataSource">
+	<ng-container mdColumnDef="icon">
+		<md-header-cell *mdHeaderCellDef> SOCIAL LINKS </md-header-cell>
+		<md-cell *mdCellDef="let element; let i = index">
+			<i class="fa fa-{{socialLinksList[i].icon}} social-icon" [ngStyle]="{'color': socialLinksList[i].color }"> </i>
+		</md-cell>
+	</ng-container>
+	<ng-container mdColumnDef="link">
+		<md-header-cell *mdHeaderCellDef> </md-header-cell>
+		<md-cell *mdCellDef="let element; let i = index">
+			<input class="form-control" [(ngModel)]="socialLinksList[i].link" placeholder="Link">
+		</md-cell>
+	</ng-container>
+	<ng-container mdColumnDef="text">
+		<md-header-cell *mdHeaderCellDef> </md-header-cell>
+		<md-cell *mdCellDef="let element; let i = index">
+			<input class="form-control" [(ngModel)]="socialLinksList[i].text" placeholder="Text">
+		</md-cell>
+	</ng-container>
+	<ng-container mdColumnDef="action">
+		<md-header-cell *mdHeaderCellDef> </md-header-cell>
+		<md-cell *mdCellDef="let element; let i = index">
+			<button md-icon-button><i class="fa fa-caret-square-o-down fa-2x" (click)="orderDown(i)"> </i></button>
+			<button md-icon-button><i class="fa fa-caret-square-o-up fa-2x" (click)="orderUp(i)"> </i></button>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+	<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+</md-table>

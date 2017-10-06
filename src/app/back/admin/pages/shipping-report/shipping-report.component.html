@@ -1,0 +1,90 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Shipping List </span>
+	</h3>
+</div>
+
+<div class="filter-panel" [ngStyle]="{'margin-top': '20px'}">
+	<div fxLayout="row" fxLayoutAlign="start center">
+		<div fxFlex="50" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput [mdDatepicker]="pickerStart" placeholder="Date Start" #dateStartFilter>
+				<md-datepicker-toggle mdSuffix [for]="pickerStart"> </md-datepicker-toggle>
+				<md-datepicker #pickerStart> </md-datepicker>
+			</md-form-field>
+		</div>
+
+		<div fxFlex="50" [ngStyle]="{'padding': '0px 10px'}">
+			<md-form-field class="full-width">
+				<input mdInput [mdDatepicker]="pickerEnd" placeholder="Date End" #dateEndFilter>
+				<md-datepicker-toggle mdSuffix [for]="pickerEnd"> </md-datepicker-toggle>
+				<md-datepicker #pickerEnd> </md-datepicker>
+			</md-form-field>
+		</div>
+	</div>
+
+	<div fxLayout="row" fxLayoutAlign="start center">
+		<div fxFlex="50" [ngStyle]="{'padding': '0px 10px'}">
+			<md-select placeholder="Group By" #groupByFilter>
+				<md-option *ngFor="let group of ['Years', 'Months', 'Weeks', 'Days']" value="{{group}}">
+					{{ group }}
+				</md-option>
+			</md-select>
+		</div>
+
+		<div fxFlex="50" [ngStyle]="{'padding': '0px 10px'}">
+			<md-select placeholder="Order Status" #orderStatusFilter>
+				<md-option *ngFor="let status of orderStatuses" value="{{status}}"> {{ status }} </md-option>
+			</md-select>
+		</div>
+	</div>
+
+	<div fxLayout="row" fxLayoutAlign="end center" [ngStyle]="{'margin-top': '10px'}">
+		<button md-button [ngStyle]="{'background': '#1e91cf'}"> <md-icon>autorenew</md-icon> Filter </button>
+	</div>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Date Start Column -->
+	<ng-container cdkColumnDef="date_start">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Start </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date_start}} </md-cell>
+	</ng-container>
+
+	<!-- Date End Column -->
+	<ng-container cdkColumnDef="date_end">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date End </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{ row.date_end }} </md-cell>
+	</ng-container>
+
+	<!-- Shipping Title Column -->
+	<ng-container cdkColumnDef="shipping_title">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Shipping Title </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.shipping_title}} </md-cell>
+	</ng-container>
+
+	<!-- No. Orders Column -->
+	<ng-container cdkColumnDef="no_orders">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> No. Orders </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.no_orders}} </md-cell>
+	</ng-container>
+
+	<!-- Total Column -->
+	<ng-container cdkColumnDef="total">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Total </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.total}} </md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

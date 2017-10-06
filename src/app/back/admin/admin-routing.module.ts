@@ -4,7 +4,7 @@ import { Routes, RouterModule, Router } from '@angular/router';
 import { AdminComponent } from './admin.component';
 import { LoginComponent } from  './pages/login/login.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-/*import { BuyersListComponent } from './pages/buyers/buyers-list.component';
+import { BuyersListComponent } from './pages/buyers/buyers-list.component';
 import { BuyersFormComponent } from './pages/buyers/buyers-form.component';
 import { VendorsListComponent } from './pages/vendors/vendors-list.component';
 import { VendorsFormComponent } from './pages/vendors/vendors-form.component';
@@ -45,13 +45,14 @@ import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
 import { SlideshowComponent } from './pages/slideshow/slideshow.component';
 import { PartnersComponent } from './pages/partners/partners.component';
 import { CollaborationComponent } from './pages/collaboration/collaboration.component';
-import { ShippingComponent } from './pages/shipping/shipping.component';
+import { ShippingSettingComponent } from './pages/shipping-setting/shipping-setting.component';
+import { ShippingReportComponent } from './pages/shipping-report/shipping-report.component';
 import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscription-plan-list.component';
 import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
 import { PaymentsListComponent } from './pages/payments/payments-list.component';
 import { PaymentsFormComponent } from './pages/payments/payments-form.component';
 import { EMHTVComponent } from './pages/emhtv/emhtv.component';
-import { MaintenanceComponent } from './pages/maintenance/maintenance.component';*/
+import { MaintenanceComponent } from './pages/maintenance/maintenance.component';
 import { StoreLocationsListComponent } from './pages/store-locations/store-locations-list.component';
 import { StoreLocationsFormComponent } from './pages/store-locations/store-locations-form.component';
 import { LanguagesListComponent } from './pages/languages/languages-list.component';
@@ -70,6 +71,7 @@ import { TaxListComponent } from './pages/tax/tax-list.component';
 import { TaxFormComponent } from './pages/tax/tax-form.component';
 import { RestorationComponent } from './pages/restoration/restoration.component';
 import { DebugErrorComponent } from './pages/debug-error/debug-error.component';
+import { StatisticsReportComponent } from './pages/statistics-report/statistics-report.component';
 
 const routes: Routes = [
 	{
@@ -92,7 +94,7 @@ const routes: Routes = [
 					breadcrumb: [ ['Home', 'dashboard'], ['Dashboard', 'dashboard'] ]
 				}
 			},
-			/*{
+			{
 				path: 'buyers',
 				component: BuyersListComponent,
 				data: {
@@ -445,12 +447,16 @@ const routes: Routes = [
 				}
 			},
 			{
-				path: 'shipping',
-				component: ShippingComponent,
+				path: 'shipping-setting',
+				component: ShippingSettingComponent,
 				data: {
 					title: 'Shipping',
 					breadcrumb: [ ['Home', 'dashboard'], ['Shipping', 'shipping'] ]
 				}
+			},
+			{
+				path: 'shipping-report',
+				component: ShippingReportComponent
 			},
 			{
 				path: 'subscription-plan',
@@ -499,7 +505,7 @@ const routes: Routes = [
 					title: 'Maintenance',
 					breadcrumb: [ ['Home', 'dashboard'], ['Landing Page', 'landing-page'] ]
 				}
-			},*/
+			},
 			{
 				path: 'store-locations',
 				component: StoreLocationsListComponent
@@ -571,6 +577,10 @@ const routes: Routes = [
 			{
 				path: 'debug-error',
 				component: DebugErrorComponent
+			},
+			{
+				path: 'statistics',
+				component: StatisticsReportComponent
 			}
 		]
 	},

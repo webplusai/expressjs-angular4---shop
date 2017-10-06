@@ -58,7 +58,11 @@ export class LeftSidenavComponent implements OnInit {
 																				{ text: 'Collaboration', 		link: 'collaboration' }
 																			] },
 		{ icon: 'monetization_on',		text: 'Payments',					link: 'payments' },
-		{ icon: 'child_friendly',		text: 'Shipping',					link: 'shipping' },
+		{ icon: 'child_friendly',		text: 'Shipping',					
+																			subMenuItems: [
+																				{ text: 'Shipping Setting',		link: 'shipping-setting' },
+																				{ text: 'Shipping Report',		link: 'shipping-report' }
+																			] },
 		{ icon: 'language',				text: 'Language Editor', 			
 																			subMenuItems: [ 
 																				{ text: 'English', 				link: 'english' },

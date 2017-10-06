@@ -14,11 +14,11 @@ import 'rxjs/add/observable/fromEvent';
 import { TableData } from '../../../../helper/table-data/table-data';
 
 @Component({
-	selector: 'admin-shipping',
-	templateUrl: './shipping.component.html',
-	styleUrls: ['./shipping.component.scss']
+	selector: 'admin-shipping-setting',
+	templateUrl: './shipping-setting.component.html',
+	styleUrls: ['./shipping-setting.component.scss']
 })
-export class ShippingComponent implements OnInit {
+export class ShippingSettingComponent implements OnInit {
 
 	shippingList = [];
 	list = [];

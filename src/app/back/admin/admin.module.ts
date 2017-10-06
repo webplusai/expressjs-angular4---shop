@@ -72,7 +72,7 @@ import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
 import { SlideshowComponent } from './pages/slideshow/slideshow.component';
 import { PartnersComponent } from './pages/partners/partners.component';
 import { CollaborationComponent } from './pages/collaboration/collaboration.component';
-import { ShippingComponent } from './pages/shipping/shipping.component';
+import { ShippingSettingComponent } from './pages/shipping-setting/shipping-setting.component';
 import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscription-plan-list.component';
 import { SubscriptionPlanFormComponent } from './pages/subscription-plan/subscription-plan-form.component';
 import { PaymentsListComponent } from './pages/payments/payments-list.component';
@@ -125,6 +125,13 @@ import { TaxListComponent } from './pages/tax/tax-list.component';
 import { TaxFormComponent } from './pages/tax/tax-form.component';
 import { RestorationComponent } from './pages/restoration/restoration.component';
 import { DebugErrorComponent } from './pages/debug-error/debug-error.component';
+import { StatisticsReportComponent } from './pages/statistics-report/statistics-report.component';
+import { ReportSummaryComponent } from './pages/statistics-report/report-summary/report-summary.component';
+import { RevenueOverTimeComponent } from './pages/statistics-report/revenue-over-time/revenue-over-time.component';
+import { StatisticRightSidebarComponent } from './pages/statistics-report/statistic-right-sidebar/statistic-right-sidebar.component';
+import { SalesTeamPerformanceComponent } from './pages/statistics-report/sales-team-performance/sales-team-performance.component';
+import { RevenueByQuarterComponent } from './pages/statistics-report/revenue-by-quarter/revenue-by-quarter.component';
+import { ShippingReportComponent } from './pages/shipping-report/shipping-report.component';
 
 @NgModule({
 	imports: [
@@ -201,7 +208,7 @@ import { DebugErrorComponent } from './pages/debug-error/debug-error.component';
 		SlideshowComponent,
 		PartnersComponent,
 		CollaborationComponent,
-		ShippingComponent,
+		ShippingSettingComponent,
 		SubscriptionPlanListComponent,
 		SubscriptionPlanFormComponent,
 		PaymentsListComponent,
@@ -253,7 +260,14 @@ import { DebugErrorComponent } from './pages/debug-error/debug-error.component';
 		TaxListComponent,
 		TaxFormComponent,
 		RestorationComponent,
-		DebugErrorComponent
+		DebugErrorComponent,
+		StatisticsReportComponent,
+		ReportSummaryComponent,
+		RevenueOverTimeComponent,
+		StatisticRightSidebarComponent,
+		SalesTeamPerformanceComponent,
+		RevenueByQuarterComponent,
+		ShippingReportComponent
 	]
 })
 export class AdminModule { }
