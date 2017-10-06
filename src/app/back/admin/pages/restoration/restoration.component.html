@@ -1,0 +1,29 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> BACKUP & RESTORE </span>
+	</h3>
+</div>
+
+<div class="row" [ngStyle]="{'margin-top': '20px'}">
+	<div class="col-md-2">
+		<label> Restore Backup </label>
+	</div>
+
+	<div class="col-md-10">
+		<input type="file">
+	</div>
+</div>
+
+<div class="row" [ngStyle]="{'margin-top': '20px'}">
+	<div class="col-md-2">
+		<label> Backtup </label>
+	</div>
+
+	<div class="col-md-10 backup-items">
+		<div *ngFor="let backup of backupList">
+			<md-checkbox> {{ backup }} </md-checkbox>
+			<br>
+		</div>
+	</div>
+</div>

@@ -68,6 +68,8 @@ import { SocialLinksComponent } from './pages/social-links/social-links.componen
 import { BadgeComponent } from './pages/badge/badge.component';
 import { TaxListComponent } from './pages/tax/tax-list.component';
 import { TaxFormComponent } from './pages/tax/tax-form.component';
+import { RestorationComponent } from './pages/restoration/restoration.component';
+import { DebugErrorComponent } from './pages/debug-error/debug-error.component';
 
 const routes: Routes = [
 	{
@@ -561,6 +563,14 @@ const routes: Routes = [
 			{
 				path: 'tax/create',
 				component: TaxFormComponent
+			},
+			{
+				path: 'restoration',
+				component: RestorationComponent
+			},
+			{
+				path: 'debug-error',
+				component: DebugErrorComponent
 			}
 		]
 	},

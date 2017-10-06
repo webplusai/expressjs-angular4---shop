@@ -123,6 +123,8 @@ import { SocialLinksComponent } from './pages/social-links/social-links.componen
 import { BadgeComponent } from './pages/badge/badge.component';
 import { TaxListComponent } from './pages/tax/tax-list.component';
 import { TaxFormComponent } from './pages/tax/tax-form.component';
+import { RestorationComponent } from './pages/restoration/restoration.component';
+import { DebugErrorComponent } from './pages/debug-error/debug-error.component';
 
 @NgModule({
 	imports: [
@@ -249,7 +251,9 @@ import { TaxFormComponent } from './pages/tax/tax-form.component';
 		SocialLinksComponent,
 		BadgeComponent,
 		TaxListComponent,
-		TaxFormComponent
+		TaxFormComponent,
+		RestorationComponent,
+		DebugErrorComponent
 	]
 })
 export class AdminModule { }

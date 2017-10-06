@@ -1,0 +1,11 @@
+.error-log {
+	height: 300px;
+	overflow: scroll;
+	background: #eee;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+
+	div {
+		white-space: nowrap;
+	}
+}
