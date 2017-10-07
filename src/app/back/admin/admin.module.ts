@@ -14,6 +14,8 @@ import { FlotModule } from 'ng2modules-flot';
 
 import { AdminRoutingModule } from './admin-routing.module';
 
+import { ImageSelectorComponent } from '../../common/image-selector/image-selector.component';
+
 import { AdminComponent } from './admin.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { LoginComponent } from './pages/login/login.component';
@@ -69,8 +71,10 @@ import { InboxComponent } from './pages/message/tabs/inbox/inbox.component';
 import { CommentsComponent } from './pages/comments/comments.component';
 import { MediaComponent } from './pages/media/media.component';
 import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
-import { SlideshowComponent } from './pages/slideshow/slideshow.component';
-import { PartnersComponent } from './pages/partners/partners.component';
+import { SlideshowListComponent } from './pages/slideshow/slideshow-list.component';
+import { SlideshowFormComponent } from './pages/slideshow/slideshow-form.component';
+import { PartnersListComponent } from './pages/partners/partners-list.component';
+import { PartnersFormComponent } from './pages/partners/partners-form.component';
 import { CollaborationComponent } from './pages/collaboration/collaboration.component';
 import { ShippingSettingComponent } from './pages/shipping-setting/shipping-setting.component';
 import { SubscriptionPlanListComponent } from './pages/subscription-plan/subscription-plan-list.component';
@@ -132,6 +136,10 @@ import { StatisticRightSidebarComponent } from './pages/statistics-report/statis
 import { SalesTeamPerformanceComponent } from './pages/statistics-report/sales-team-performance/sales-team-performance.component';
 import { RevenueByQuarterComponent } from './pages/statistics-report/revenue-by-quarter/revenue-by-quarter.component';
 import { ShippingReportComponent } from './pages/shipping-report/shipping-report.component';
+import { EnglishListComponent } from './pages/language-editor/english/english-list.component';
+import { FrenchListComponent } from './pages/language-editor/french/french-list.component';
+import { GermanListComponent } from './pages/language-editor/german/german-list.component';
+import { SpanishListComponent } from './pages/language-editor/spanish/spanish-list.component';
 
 @NgModule({
 	imports: [
@@ -150,6 +158,8 @@ import { ShippingReportComponent } from './pages/shipping-report/shipping-report
 	],
 
 	declarations: [
+		ImageSelectorComponent,
+
 		AdminComponent,
 		LoginComponent,
 		HeaderComponent,
@@ -205,8 +215,10 @@ import { ShippingReportComponent } from './pages/shipping-report/shipping-report
 		CommentsComponent,
 		MediaComponent,
 		NewsLetterComponent,
-		SlideshowComponent,
-		PartnersComponent,
+		SlideshowListComponent,
+		SlideshowFormComponent,
+		PartnersListComponent,
+		PartnersFormComponent,
 		CollaborationComponent,
 		ShippingSettingComponent,
 		SubscriptionPlanListComponent,
@@ -267,7 +279,11 @@ import { ShippingReportComponent } from './pages/shipping-report/shipping-report
 		StatisticRightSidebarComponent,
 		SalesTeamPerformanceComponent,
 		RevenueByQuarterComponent,
-		ShippingReportComponent
+		ShippingReportComponent,
+		EnglishListComponent,
+		FrenchListComponent,
+		GermanListComponent,
+		SpanishListComponent
 	]
 })
 export class AdminModule { }

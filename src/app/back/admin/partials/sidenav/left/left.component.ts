@@ -65,10 +65,10 @@ export class LeftSidenavComponent implements OnInit {
 																			] },
 		{ icon: 'language',				text: 'Language Editor', 			
 																			subMenuItems: [ 
-																				{ text: 'English', 				link: 'english' },
-																				{ text: 'Spanish', 				link: 'spanish' },
-																				{ text: 'German', 				link: 'german' },
-																				{ text: 'French', 				link: 'french' }
+																				{ text: 'English', 				link: 'language-editor/english' },
+																				{ text: 'Spanish', 				link: 'language-editor/spanish' },
+																				{ text: 'German', 				link: 'language-editor/german' },
+																				{ text: 'French', 				link: 'language-editor/french' }
 																			] },
 		{ icon: 'build',				text: 'Maintenance', 				
 																			subMenuItems: [ 

@@ -23,11 +23,11 @@ const languageList = [
 ];
 
 @Component({
-	selector: 'admin-english-list',
-	templateUrl: './english-list.component.html',
-	styleUrls: [ './english-list.component.scss' ]
+	selector: 'admin-french-list',
+	templateUrl: './french-list.component.html',
+	styleUrls: [ './french-list.component.scss' ]
 })
-export class EnglishListComponent implements OnInit {
+export class FrenchListComponent implements OnInit {
 
 	displayedColumns = ['module_name', 'action'];
 

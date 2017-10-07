@@ -22,7 +22,15 @@
 	<ng-container cdkColumnDef="title">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Title </md-header-cell>
 		<md-cell *cdkCellDef="let row; let i = index">
-			<input *ngIf="!row.last" class="form-control" [(ngModel)]="slideshowList[i].title" placeholder="Title">
+			<input class="form-control" [(ngModel)]="slideshowList[i].title" placeholder="Title">
+		</md-cell>
+	</ng-container>
+
+	<!-- Flag Column -->
+	<ng-container cdkColumnDef="flag">
+		<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '80px'}"> Locale </md-header-cell>
+		<md-cell *cdkCellDef="let row; let i = index" [ngStyle]="{'flex': 'none', 'width': '80px'}">
+			<span class="flag-icon flag-icon-{{slideshowList[i].locale}}"> </span>
 		</md-cell>
 	</ng-container>
 
@@ -30,7 +38,7 @@
 	<ng-container cdkColumnDef="link">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Link </md-header-cell>
 		<md-cell *cdkCellDef="let row; let i = index">
-			<input *ngIf="!row.last" class="form-control" [(ngModel)]="slideshowList[i].link" placeholder="Link">
+			<input class="form-control" [(ngModel)]="slideshowList[i].link" placeholder="Link">
 		</md-cell>
 	</ng-container>
 
@@ -38,7 +46,7 @@
 	<ng-container cdkColumnDef="image">
 		<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '120px'}"> Image </md-header-cell>
 		<md-cell fxLayout="row" *cdkCellDef="let row" [ngStyle]="{'flex': 'none', 'width': '120px'}">
-			<div *ngIf="!row.last" class="image" fxLayout="row" fxLayoutAlign="start center">
+			<div class="image" fxLayout="row" fxLayoutAlign="start center">
 				<img width="100" height="100" src="{{ row.image }}" (click)="togglePopover($event)">
 				<div class="popover hidden" role="tooltip">
 					<div class="popover-arrow"> </div>
@@ -56,19 +64,16 @@
 	<ng-container cdkColumnDef="sort_order">
 		<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '100px'}"> Sort Order </md-header-cell>
 		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index" [ngStyle]="{'flex': 'none', 'width': '100px'}">
-			<input *ngIf="!row.last" class="form-control" [(ngModel)]="slideshowList[i].sort_order" placeholder="Sort Order">
+			<input class="form-control" [(ngModel)]="slideshowList[i].sort_order" placeholder="Sort Order">
 		</md-cell>
 	</ng-container>
 
 	<!-- Action Column -->
 	<ng-container cdkColumnDef="action">
-		<md-header-cell *cdkHeaderCellDef md-sort-header [ngStyle]="{'flex': 'none', 'width': '40px'}"> </md-header-cell>
-		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index" [ngStyle]="{'flex': 'none'}">
-			<button md-button *ngIf="row.last" class="action-button" (click)="addRow()" [ngStyle]="{'background': '#1e91cf', 'color': '#1e91cf'}">
-				<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
-			</button>
-			<button md-button *ngIf="!row.last" class="action-button" (click)="removeRow(i)" [ngStyle]="{'background': '#f56b6b', 'color': '#f56b6b'}">
-				<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index">
+			<button md-button (click)="removeRow(i)" [ngStyle]="{'background': '#f56b6b', 'color': '#f56b6b'}">
+				<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon> <span [ngStyle]="{'color': '#fff'}"> Remove </span>
 			</button>
 		</md-cell>
 	</ng-container>	

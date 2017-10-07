@@ -11,38 +11,37 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { TableData } from '../../../../../helper/table-data/table-data';
+import { TableData } from '../../../../helper/table-data/table-data';
 
-const languageList = [
-	{ module_name: 'Easy Language Editor' },
-	{ module_name: 'Account' },
-	{ module_name: 'Affiliate' },
-	{ module_name: 'Banner' },
-	{ module_name: 'Bestsellers' },
-	{ module_name: 'Carousel' }
+const slideshowList = [
+	{ slide_name: 'Slide 1', status: 'Enabled' },
+	{ slide_name: 'Slide 2', status: 'Enabled' },
+	{ slide_name: 'Slide 3', status: 'Enabled' },
+	{ slide_name: 'Slide 4', status: 'Enabled' },
+	{ slide_name: 'Slide 5', status: 'Enabled' }
 ];
 
 @Component({
-	selector: 'admin-english-list',
-	templateUrl: './english-list.component.html',
-	styleUrls: [ './english-list.component.scss' ]
+	selector: 'admin-slideshow-list',
+	templateUrl: './slideshow-list.component.html',
+	styleUrls: [ './slideshow-list.component.scss' ]
 })
-export class EnglishListComponent implements OnInit {
+export class SlideshowListComponent implements OnInit {
 
-	displayedColumns = ['module_name', 'action'];
+	displayedColumns = ['slide_name', 'status', 'action'];
 
 	tableData = new TableData();
-	dataSource: LanguageDataSource | null;
+	dataSource: SlideshowDataSource | null;
 
 	constructor() { }
 
 	ngOnInit() {
-		this.tableData.setData(languageList);
-		this.dataSource = new LanguageDataSource(this.tableData);
+		this.tableData.setData(slideshowList);
+		this.dataSource = new SlideshowDataSource(this.tableData);
 	}
 }
 
-export class LanguageDataSource extends DataSource<any> {
+export class SlideshowDataSource extends DataSource<any> {
 
 	displayDataChanges: any;
 

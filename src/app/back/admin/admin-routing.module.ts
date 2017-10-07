@@ -42,8 +42,10 @@ import { MessageComponent } from './pages/message/message.component';
 import { CommentsComponent } from './pages/comments/comments.component';
 import { MediaComponent } from './pages/media/media.component';
 import { NewsLetterComponent } from './pages/newsletter/newsletter.component';
-import { SlideshowComponent } from './pages/slideshow/slideshow.component';
-import { PartnersComponent } from './pages/partners/partners.component';
+import { SlideshowListComponent } from './pages/slideshow/slideshow-list.component';
+import { SlideshowFormComponent } from './pages/slideshow/slideshow-form.component';
+import { PartnersListComponent } from './pages/partners/partners-list.component';
+import { PartnersFormComponent } from './pages/partners/partners-form.component';
 import { CollaborationComponent } from './pages/collaboration/collaboration.component';
 import { ShippingSettingComponent } from './pages/shipping-setting/shipping-setting.component';
 import { ShippingReportComponent } from './pages/shipping-report/shipping-report.component';
@@ -72,6 +74,10 @@ import { TaxFormComponent } from './pages/tax/tax-form.component';
 import { RestorationComponent } from './pages/restoration/restoration.component';
 import { DebugErrorComponent } from './pages/debug-error/debug-error.component';
 import { StatisticsReportComponent } from './pages/statistics-report/statistics-report.component';
+import { EnglishListComponent } from './pages/language-editor/english/english-list.component';
+import { FrenchListComponent } from './pages/language-editor/french/french-list.component';
+import { GermanListComponent } from './pages/language-editor/german/german-list.component';
+import { SpanishListComponent } from './pages/language-editor/spanish/spanish-list.component';
 
 const routes: Routes = [
 	{
@@ -424,19 +430,27 @@ const routes: Routes = [
 			},
 			{
 				path: 'slideshow',
-				component: SlideshowComponent,
+				component: SlideshowListComponent,
 				data: {
 					title: 'Slideshow',
 					breadcrumb: [ ['Home', 'dashboard'], ['Slideshow', 'slideshow'] ]
 				}
 			},
 			{
+				path: 'slideshow/:id',
+				component: SlideshowFormComponent
+			},
+			{
 				path: 'partners',
-				component: PartnersComponent,
+				component: PartnersListComponent,
 				data: {
 					title: 'Partners',
 					breadcrumb: [ ['Home', 'dashboard'], ['Partners', 'partners'] ]
 				}
+			},
+			{
+				path: 'partners/:id',
+				component: PartnersFormComponent
 			},
 			{
 				path: 'collaboration',
@@ -581,6 +595,22 @@ const routes: Routes = [
 			{
 				path: 'statistics',
 				component: StatisticsReportComponent
+			},
+			{
+				path: 'language-editor/english',
+				component: EnglishListComponent
+			},
+			{
+				path: 'language-editor/french',
+				component: FrenchListComponent
+			},
+			{
+				path: 'language-editor/german',
+				component: GermanListComponent
+			},
+			{
+				path: 'language-editor/spanish',
+				component: SpanishListComponent
 			}
 		]
 	},

@@ -14,40 +14,33 @@ import 'rxjs/add/observable/fromEvent';
 import { TableData } from '../../../../helper/table-data/table-data';
 
 @Component({
-	selector: 'admin-slideshow',
-	templateUrl: './slideshow.component.html',
-	styleUrls: ['./slideshow.component.scss']
+	selector: 'admin-partners-form',
+	templateUrl: './partners-form.component.html',
+	styleUrls: ['./partners-form.component.scss']
 })
-export class SlideshowComponent implements OnInit {
+export class PartnersFormComponent implements OnInit {
 
-	slideshowList = [];
-	list = [];
+	slideshowList = [
+		{ locale: 'gb', name: '', link: '', image: '', sort_order: '' },
+		{ locale: 'fr', name: '', link: '', image: '', sort_order: '' },
+		{ locale: 'de', name: '', link: '', image: '', sort_order: '' },
+		{ locale: 'es', name: '', link: '', image: '', sort_order: '' }
+	];
 
-	displayedColumns = ['title', 'link', 'image', 'sort_order', 'action'];
+	displayedColumns = ['name', 'flag', 'link', 'image', 'sort_order', 'action'];
 	tableData = new TableData();
 	dataSource: SlideshowDataSource | null;
 
 	constructor() { }
 
 	ngOnInit() {
-		this.list = JSON.parse(JSON.stringify(this.slideshowList));
-		this.list.push( {last: true} );
-		this.tableData.setData(this.list);
-		this.dataSource = new SlideshowDataSource(this.tableData);
+		this.redrawTable();
 	}
 
 	redrawTable() {
-		this.list = JSON.parse(JSON.stringify(this.slideshowList));
-		this.list.push( {last: true} );
-
 		this.tableData = new TableData();
-		this.tableData.setData(this.list);
+		this.tableData.setData(this.slideshowList);
 		this.dataSource = new SlideshowDataSource(this.tableData);
-	}
-
-	addRow() {
-		this.slideshowList.push( {title: '', link: '', image: 'http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png', sort_order: ''} );
-		this.redrawTable();
 	}
 
 	removeRow(index) {

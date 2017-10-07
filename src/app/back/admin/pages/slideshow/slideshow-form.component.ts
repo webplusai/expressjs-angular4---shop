@@ -14,44 +14,37 @@ import 'rxjs/add/observable/fromEvent';
 import { TableData } from '../../../../helper/table-data/table-data';
 
 @Component({
-	selector: 'admin-partners',
-	templateUrl: './partners.component.html',
-	styleUrls: ['./partners.component.scss']
+	selector: 'admin-slideshow-form',
+	templateUrl: './slideshow-form.component.html',
+	styleUrls: ['./slideshow-form.component.scss']
 })
-export class PartnersComponent implements OnInit {
+export class SlideshowFormComponent implements OnInit {
 
-	partnersList = [];
-	list = [];
+	slideshowList = [
+		{ locale: 'gb', title: '', link: '', image: '', sort_order: '' },
+		{ locale: 'fr', title: '', link: '', image: '', sort_order: '' },
+		{ locale: 'de', title: '', link: '', image: '', sort_order: '' },
+		{ locale: 'es', title: '', link: '', image: '', sort_order: '' }
+	];
 
-	displayedColumns = ['title', 'link', 'image', 'sort_order', 'action'];
+	displayedColumns = ['title', 'flag', 'link', 'image', 'sort_order', 'action'];
 	tableData = new TableData();
-	dataSource: PartnersDataSource | null;
+	dataSource: SlideshowDataSource | null;
 
 	constructor() { }
 
 	ngOnInit() {
-		this.list = JSON.parse(JSON.stringify(this.partnersList));
-		this.list.push( {last: true} );
-		this.tableData.setData(this.list);
-		this.dataSource = new PartnersDataSource(this.tableData);
-	}
-
-	redrawTable() {
-		this.list = JSON.parse(JSON.stringify(this.partnersList));
-		this.list.push( {last: true} );
-
-		this.tableData = new TableData();
-		this.tableData.setData(this.list);
-		this.dataSource = new PartnersDataSource(this.tableData);
-	}
-
-	addRow() {
-		this.partnersList.push( {title: '', link: '', image: 'http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png', sort_order: ''} );
 		this.redrawTable();
 	}
 
+	redrawTable() {
+		this.tableData = new TableData();
+		this.tableData.setData(this.slideshowList);
+		this.dataSource = new SlideshowDataSource(this.tableData);
+	}
+
 	removeRow(index) {
-		this.partnersList.splice(index, 1);
+		this.slideshowList.splice(index, 1);
 		this.redrawTable();
 	}
 
@@ -87,7 +80,7 @@ export class PartnersComponent implements OnInit {
 	}
 }
 
-export class PartnersDataSource extends DataSource<any> {
+export class SlideshowDataSource extends DataSource<any> {
 
 	displayDataChanges: any;
 

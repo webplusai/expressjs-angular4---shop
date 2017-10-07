@@ -1,31 +1,36 @@
 <div class="title">
 	<h3 fxLayout="row" fxLayoutAlign="start center">
 		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
-		<span> Easy Language Editor(v1.4) </span>
+		<span> Slideshow List </span>
 	</h3>
 </div>
 
 <div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
-	<a [routerLink]="['/admin/language-editor/english/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<a [routerLink]="['/admin/slideshow/0']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
 	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
 </div>
 
 <md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
 
-	<!-- Module Name Column -->
-	<ng-container cdkColumnDef="module_name">
-		<md-header-cell *cdkHeaderCellDef md-sort-header> Module Name </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.module_name}} </md-cell>
+	<!-- Slideshow Name Column -->
+	<ng-container cdkColumnDef="slide_name">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Slide Name </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.slide_name}} </md-cell>
+	</ng-container>
+
+	<!-- Status Column -->
+	<ng-container cdkColumnDef="status">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.status}} </md-cell>
 	</ng-container>
 
 	<!-- Action Column -->
 	<ng-container cdkColumnDef="action">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
-		<md-cell fxLayout="row" *cdkCellDef="let row">
-			<button md-button class="action-button" [ngStyle]="{'background': '#95b75d', 'color': '#95b75d'}">
-				<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
-			</button>
-			<button md-button class="action-button" [ngStyle]="{'background': '#1fb5ad'}"><md-icon>create</md-icon></button>
+		<md-cell fxLayout="row" *cdkCellDef="let row; let i = index">
+			<a [routerLink]="['/admin/slideshow/' + i]">
+				<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+			</a>
 		</md-cell>
 	</ng-container>
 
