@@ -34,8 +34,8 @@ import { EmhVoucherListComponent } from './pages/emh-voucher/emh-voucher-list.co
 import { EmhVoucherFormComponent } from './pages/emh-voucher/emh-voucher-form.component';
 import { EmhBeautyBoxListComponent } from './pages/emh-beauty-box/emh-beauty-box-list.component';
 import { EmhBeautyBoxFormComponent } from './pages/emh-beauty-box/emh-beauty-box-form.component';
-import { GeneralComponent } from './pages/products/tabs/general/general.component';
-import { DataComponent } from './pages/products/tabs/data/data.component';
+import { ProductGeneralComponent } from './pages/products/tabs/general/general.component';
+import { ProductDataComponent } from './pages/products/tabs/data/data.component';
 import { LinksComponent } from './pages/products/tabs/links/links.component';
 import { AttributeComponent } from './pages/products/tabs/attribute/attribute.component';
 import { BloggersListComponent } from './pages/bloggers/bloggers-list.component';
@@ -88,7 +88,7 @@ import { DiscountComponent } from './pages/products/tabs/discount/discount.compo
 import { SpecialComponent } from './pages/products/tabs/special/special.component';
 import { ImageComponent } from './pages/products/tabs/image/image.component';
 import { RewardPointsComponent } from './pages/products/tabs/reward-points/reward-points.component';
-import { DesignComponent } from './pages/products/tabs/design/design.component';
+import { ProductDesignComponent } from './pages/products/tabs/design/design.component';
 import { CheckboxComponent } from './pages/products/tabs/option/tabs/checkbox/checkbox.component';
 import { DateComponent } from './pages/products/tabs/option/tabs/date/date.component';
 import { DateTimeComponent } from './pages/products/tabs/option/tabs/date-time/date-time.component';
@@ -140,6 +140,14 @@ import { EnglishListComponent } from './pages/language-editor/english/english-li
 import { FrenchListComponent } from './pages/language-editor/french/french-list.component';
 import { GermanListComponent } from './pages/language-editor/german/german-list.component';
 import { SpanishListComponent } from './pages/language-editor/spanish/spanish-list.component';
+import { CategoryGeneralComponent } from './pages/categories/tabs/general/general.component';
+import { CategoryDataComponent } from './pages/categories/tabs/data/data.component';
+import { CategoryDesignComponent } from './pages/categories/tabs/design/design.component';
+import { CategoryFeesComponent } from './pages/categories/tabs/fees/fees.component';
+import { VendorGeneralComponent } from './pages/vendors/tabs/general/general.component';
+import { VendorFeesComponent } from './pages/vendors/tabs/fees/fees.component';
+import { BadgesComponent } from './pages/vendors/tabs/badges/badges.component';
+import { UserSettingsComponent } from './pages/vendors/tabs/user-settings/user-settings.component';
 
 @NgModule({
 	imports: [
@@ -178,8 +186,8 @@ import { SpanishListComponent } from './pages/language-editor/spanish/spanish-li
 		EmhVoucherFormComponent,
 		EmhBeautyBoxListComponent,
 		EmhBeautyBoxFormComponent,
-		GeneralComponent,
-		DataComponent,
+		ProductGeneralComponent,
+		ProductDataComponent,
 		LinksComponent,
 		AttributeComponent,
 		BloggersListComponent,
@@ -232,7 +240,7 @@ import { SpanishListComponent } from './pages/language-editor/spanish/spanish-li
 		SpecialComponent,
 		ImageComponent,
 		RewardPointsComponent,
-		DesignComponent,
+		ProductDesignComponent,
 		CheckboxComponent,
 		DateComponent,
 		DateTimeComponent,
@@ -283,7 +291,15 @@ import { SpanishListComponent } from './pages/language-editor/spanish/spanish-li
 		EnglishListComponent,
 		FrenchListComponent,
 		GermanListComponent,
-		SpanishListComponent
+		SpanishListComponent,
+		CategoryGeneralComponent,
+		CategoryDataComponent,
+		CategoryDesignComponent,
+		CategoryFeesComponent,
+		VendorFeesComponent,
+		VendorGeneralComponent,
+		BadgesComponent,
+		UserSettingsComponent
 	]
 })
 export class AdminModule { }

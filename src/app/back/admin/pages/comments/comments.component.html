@@ -15,13 +15,12 @@
 			<div> 
 				<span [ngStyle]="{'color': '#767676'}">
 					<md-icon *ngFor="let j of [1, 2, 3, 4, 5]" [ngStyle]="{'font-size': '21px'}">star_border</md-icon>
-				</span>
+						</span>
 			</div>
 			<div> {{ row.date }} </div>
 			<div> {{ row.customer }} </div>
 		</md-cell>
 	</ng-container>
-
 	<!-- Content Column -->
 	<ng-container cdkColumnDef="content">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> </md-header-cell>

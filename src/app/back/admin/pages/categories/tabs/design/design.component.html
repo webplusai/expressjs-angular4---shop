@@ -1,0 +1,22 @@
+<div class="tab-design" [ngStyle]="{'padding': '30px'}">
+	<md-table #table [dataSource]="dataSource">
+		<ng-container mdColumnDef="stores">
+			<md-header-cell *mdHeaderCellDef> Stores </md-header-cell>
+			<md-cell *mdCellDef="let element"> {{ element.stores }} </md-cell>
+		</ng-container>
+
+		<ng-container mdColumnDef="layout">
+			<md-header-cell *mdHeaderCellDef> Layout Overrides </md-header-cell>
+			<md-cell *mdCellDef="let element">
+				<md-select [ngStyle]="{'padding-top': '0px'}">
+					<md-option *ngFor="let layout of layouts" value="{{layout}}">
+						{{ layout }}
+					</md-option>
+				</md-select>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

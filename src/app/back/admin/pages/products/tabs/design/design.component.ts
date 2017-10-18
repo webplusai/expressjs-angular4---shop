@@ -9,7 +9,7 @@ import { TableData } from '../../../../../../helper/table-data/table-data';
 	templateUrl: './design.component.html',
 	styleUrls: ['./design.component.scss']
 })
-export class DesignComponent implements OnInit {
+export class ProductDesignComponent implements OnInit {
 
 	displayedColumns = ['stores', 'layout_override'];
 	tableData = new TableData();

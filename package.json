@@ -4,7 +4,7 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng build && nodemon ./src/index.js",
+    "start": "node ./src/index.js",
     "build": "ng build",
     "build:watch": "tsc -p src/ -w",
     "test": "ng test",
@@ -43,6 +43,9 @@
     "jquery-sparkline": "^2.4.0",
     "jvectormap": "^2.0.4",
     "moment": "^2.18.1",
+    "mongodb": "^2.2.33",
+    "mongodb-migrate": "^2.0.2",
+    "mongoose": "^4.12.2",
     "morgan": "^1.8.2",
     "morris.js": "^0.5.0",
     "ng2modules-flot": "0.0.1",

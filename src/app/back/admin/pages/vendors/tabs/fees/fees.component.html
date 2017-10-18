@@ -1,0 +1,42 @@
+<div class="tab-commissions-fees" [ngStyle]="{'padding': '30px'}">
+	<div class="sales-fee">
+		<label class="label-title"> Sales fee </label>
+
+		<md-form-field>
+			<input mdInput>
+		</md-form-field>
+
+		<label class="label-plus"> + </label>
+
+		<md-form-field>
+			<input mdInput>
+		</md-form-field>
+
+		<label class="label-percent"> % </label>
+	</div>
+
+	<div class="listing-fee">
+		<label class="label-title"> Listing fee / method </label>
+
+		<md-form-field>
+			<input mdInput>
+		</md-form-field>
+
+		<label class="label-plus"> + </label>
+
+		<md-form-field>
+			<input mdInput>
+		</md-form-field>
+
+		<label class="label-percent"> % </label>
+
+		<md-select placeholder="Payment method">
+			<md-option value="Seller balance">
+				Seller balance
+			</md-option>
+			<md-option value="[MM] Payment Gateways">
+				[MM] Payment Gateways
+			</md-option>
+		</md-select>
+	</div>
+</div>
