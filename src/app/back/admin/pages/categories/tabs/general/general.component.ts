@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CategoryGeneralComponent implements OnInit {
 
   constructor() { }
+  
 
   ngOnInit() {
   }

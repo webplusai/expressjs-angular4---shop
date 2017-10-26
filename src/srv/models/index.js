@@ -1,10 +1,49 @@
 
 module.exports = function(mongoose, connection) {
-	var result = {};
+	var models = {};
 
-	result.Category = require('./category.js')(mongoose, connection);
-	result.Product = require('./product.js')(mongoose, connection);
-	result.Buyer = require('./buyer.js')(mongoose, connection);
+	var modelNames = [
+		'Category',
+		'Product',
+		'Buyer',
+		'Seller',
+		'News',
+		'Order',
+		'Transaction',
+		'RecurringOrder',
+		'Return',
+		'User',
+		'UserGroup',
+		'AbstractCommission',
+		'HistoricalOrder',
+		'Advert',
+		'Message',
+		'Comment',
+		'Media',
+		'Newsletter',
+		'Slideshow',
+		'Partner',
+		'Collaboration',
+		'PaymentMethod',
+		'ShippingSetting',
+		'ShippingReport',
+		'LandingPage',
+		'SubscriptionGroup',
+		'StoreLocation',
+		'Language',
+		'Currency',
+		'StockStatus',
+		'OrderStatus',
+		'Store',
+		'SocialLink',
+		'Badge',
+		'TaxSummary',
+		'DebugError'
+	];
 
-	return result;
+	for (var i = 0; i < modelNames.length; i++) {
+		models[modelNames[i]] = require('./' + modelNames[i].toLowerCase() + '.js')(mongoose, connection);
+	}
+
+	return models;
 }

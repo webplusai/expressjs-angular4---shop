@@ -7324,7 +7324,7 @@ var UsersDataSource = (function (_super) {
 /***/ "../../../../../src/app/back/admin/pages/news/news-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add News </span>\r\n\t</h3>\r\n</div>\r\n\r\n<form #productsForm=\"ngForm\" (ngSubmit)=\"createProduct(productsForm)\">\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Title\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Description\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Author\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Category\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Date Posted\">\r\n\t</md-form-field>\r\n</form>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add News </span>\r\n\t</h3>\r\n</div>\r\n\r\n<form #productsForm=\"ngForm\" (ngSubmit)=\"createProduct(productsForm)\">\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Title\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Description\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Author\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Category\">\r\n\t</md-form-field>\r\n</form>"
 
 /***/ }),
 
@@ -15305,7 +15305,7 @@ var _a, _b, _c, _d, _e, _f;
 /***/ "../../../../../src/app/back/admin/pages/vendors/tabs/badges/badges.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"tab-user-settings\" [ngStyle]=\"{'padding-top': '30px'}\">\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Full name\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Address Line 1\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Address Line 2\">\t\t\t\t\t\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"City\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"State/Province/Region\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Zip/Postal Code\">\n\t</md-form-field>\n\n\t<md-select placeholder=\"Country\">\n\t\t<md-option *ngFor=\"let i of [1, 2, 3, 4, 5]\" value=\"Country {{i}}\">\n\t\t\tCountry {{i}}\n\t\t</md-option>\n\t</md-select>\n\n\t<h3> Information </h3>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Website\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Company\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Phone\">\n\t</md-form-field>\n</div>\n"
+module.exports = ""
 
 /***/ }),
 
@@ -15520,7 +15520,7 @@ VendorGeneralComponent = __decorate([
 /***/ "../../../../../src/app/back/admin/pages/vendors/tabs/user-settings/user-settings.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  user-settings works!\n</p>\n"
+module.exports = "<div class=\"tab-user-settings\" [ngStyle]=\"{'padding-top': '30px'}\">\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Full name\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Address Line 1\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Address Line 2\">\t\t\t\t\t\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"City\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"State/Province/Region\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Zip/Postal Code\">\n\t</md-form-field>\n\n\t<md-select placeholder=\"Country\">\n\t\t<md-option *ngFor=\"let i of [1, 2, 3, 4, 5]\" value=\"Country {{i}}\">\n\t\t\tCountry {{i}}\n\t\t</md-option>\n\t</md-select>\n\n\t<h3> Information </h3>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Website\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Company\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Phone\">\n\t</md-form-field>\n</div>\n"
 
 /***/ }),
 

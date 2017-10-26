@@ -1,6 +1,7 @@
 
 module.exports = function(mongoose, connection) {
 	var productSchema = mongoose.Schema({
+		product_type: Number,
 		general: {
 			name: {
 				english: {
@@ -200,6 +201,12 @@ module.exports = function(mongoose, connection) {
 				quantity: Number
 			} ]
 		} ]
+	},
+	{
+		timestamps: {
+			createdAt: 'created_at',
+			updatedAt: 'updated_at'
+		}
 	});
 
 	return connection.model('Product', productSchema);

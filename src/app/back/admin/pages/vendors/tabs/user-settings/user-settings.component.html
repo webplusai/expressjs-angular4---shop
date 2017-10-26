@@ -1,3 +1,45 @@
-<p>
-  user-settings works!
-</p>
+<div class="tab-user-settings" [ngStyle]="{'padding-top': '30px'}">
+	<md-form-field>
+		<input mdInput placeholder="Full name">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Address Line 1">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Address Line 2">					
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="City">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="State/Province/Region">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Zip/Postal Code">
+	</md-form-field>
+
+	<md-select placeholder="Country">
+		<md-option *ngFor="let i of [1, 2, 3, 4, 5]" value="Country {{i}}">
+			Country {{i}}
+		</md-option>
+	</md-select>
+
+	<h3> Information </h3>
+
+	<md-form-field>
+		<input mdInput placeholder="Website">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Company">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Phone">
+	</md-form-field>
+</div>

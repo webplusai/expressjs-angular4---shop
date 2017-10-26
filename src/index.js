@@ -7,14 +7,11 @@ var mongoose = require('mongoose');
 var connection = mongoose.createConnection('mongodb://localhost:27017/emh_db');
 var models = require('./srv/models/index.js')(mongoose, connection);
 
-// modules.Product.find({ "_id": "59e6660a8caa7714d4a97764" }).populate('categories').exec(function (err, docs) {
-// 	console.log(err);
-//   	console.log(JSON.stringify(docs));
-// });
 
-// one.save(function(err) {
-// 	console.log(err);
-// });
+
+one.save(function(err) {
+	console.log(err);
+});
 
 app.use('/node_modules', express.static(path.join(__dirname + '/../node_modules')));
 

@@ -7,7 +7,7 @@
 
 <div [ngStyle]="{'padding': '30px'}">
 	<md-form-field>
-		<input mdInput placeholder="Username" [formControl]="username">
+		<input mdInput placeholder="Username*" [formControl]="username*">
 		<md-error *ngIf="username.hasError('required')">
 			This field is <strong> required </strong>
 		</md-error>
@@ -19,21 +19,21 @@
 	</md-select>
 
 	<md-form-field>
-		<input mdInput placeholder="First Name" [formControl]="firstName">
+		<input mdInput placeholder="First Name*" [formControl]="firstName">
 		<md-error *ngIf="firstName.hasError('required')">
 			This field is <strong> required </strong>
 		</md-error>
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Last Name" [formControl]="lastName">
+		<input mdInput placeholder="Last Name*" [formControl]="lastName">
 		<md-error *ngIf="lastName.hasError('required')">
 			This field is <strong> required </strong>
 		</md-error>
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="E-Mail" [formControl]="email">
+		<input mdInput placeholder="E-Mail*" [formControl]="email">
 		<md-error *ngIf="email.hasError('required')">
 			This field is <strong> required </strong>
 		</md-error>
@@ -53,14 +53,14 @@
 	</div>
 
 	<md-form-field>
-		<input mdInput placeholder="Password" [formControl]="password">
+		<input mdInput placeholder="Password*" [formControl]="password">
 		<md-error *ngIf="password.hasError('required')">
 			This field is <strong> required </strong>
 		</md-error>
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Confirm" [formControl]="confirm">
+		<input mdInput placeholder="Confirm*" [formControl]="confirm">
 		<md-error *ngIf="confirm.hasError('required')">
 			This field is <strong> required </strong>
 		</md-error>

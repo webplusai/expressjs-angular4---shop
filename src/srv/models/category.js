@@ -51,7 +51,10 @@ module.exports = function(mongoose, connection) {
 		}
 	},
 	{
-		timestamps: true
+		timestamps: {
+			createdAt: 'created_at',
+			updatedAt: 'updated_at'
+		}
 	});
 
 	return connection.model('Category', categorySchema);

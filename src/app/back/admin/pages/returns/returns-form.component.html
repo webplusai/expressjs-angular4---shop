@@ -11,7 +11,7 @@
 
 	<div class="order-information" [ngStyle]="{'padding': '30px'}">
 		<md-form-field>
-			<input mdInput placeholder="Order ID" [formControl]="orderIDInput">
+			<input mdInput placeholder="Order ID*" [formControl]="orderIDInput">
 		</md-form-field>
 
 		<md-form-field [ngStyle]="{'width': '300px'}">
@@ -25,28 +25,28 @@
 		</md-form-field>
 
 		<md-form-field>
-			<input mdInput placeholder="First Name" [formControl]="firstNameInput">
+			<input mdInput placeholder="First Name*" [formControl]="firstNameInput">
 			<md-error *ngIf="firstNameInput.hasError('required')">
 				First name is <strong> required </strong>
 			</md-error>
 		</md-form-field>
 
 		<md-form-field>
-			<input mdInput placeholder="Last Name" [formControl]="lastNameInput">
+			<input mdInput placeholder="Last Name*" [formControl]="lastNameInput">
 			<md-error *ngIf="lastNameInput.hasError('requried')">
 				Last name is <strong> required </strong>
 			</md-error>
 		</md-form-field>
 
 		<md-form-field>
-			<input mdInput placeholder="E-Mail" [formControl]="emailInput">
+			<input mdInput placeholder="E-Mail*" [formControl]="emailInput">
 			<md-error *ngIf="emailInput.hasError('required')">
 				Email is <strong> required </strong>
 			</md-error>
 		</md-form-field>
 
 		<md-form-field>
-			<input mdInput placeholder="Telephone" [formControl]="telephoneInput">
+			<input mdInput placeholder="Telephone*" [formControl]="telephoneInput">
 			<md-error *ngIf="telephoneInput.hasError('required')">
 				Telephone is <strong> required </strong>
 			</md-error>
@@ -57,11 +57,11 @@
 
 	<div class="product-information" [ngStyle]="{'padding': '30px'}">
 		<md-form-field>
-			<input mdInput placeholder="Product" [formControl]="productInput">
+			<input mdInput placeholder="Product*" [formControl]="productInput">
 		</md-form-field>
 
 		<md-form-field>
-			<input mdInput placeholder="Model" [formControl]="modelInput">
+			<input mdInput placeholder="Model*" [formControl]="modelInput">
 		</md-form-field>
 
 		<md-form-field>
