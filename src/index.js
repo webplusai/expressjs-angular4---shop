@@ -9,9 +9,9 @@ var models = require('./srv/models/index.js')(mongoose, connection);
 
 
 
-one.save(function(err) {
-	console.log(err);
-});
+// one.save(function(err) {
+// 	console.log(err);
+// });
 
 app.use('/node_modules', express.static(path.join(__dirname + '/../node_modules')));
 
