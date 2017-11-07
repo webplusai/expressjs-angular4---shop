@@ -2,12 +2,19 @@
 module.exports = function(mongoose, connection) {
 
 	var buyerSchema = mongoose.Schema({
-		customer_group: String,
+		customer_group: {
+			type: mongoose.Schema.Types.ObjectId,
+			ref: 'CustomerGroup'
+		},
 		first_name: {
 			type: String,
 			required: true
 		},
 		last_name: {
+			type: String,
+			required: true
+		},
+		email: {
 			type: String,
 			required: true
 		},
@@ -24,10 +31,7 @@ module.exports = function(mongoose, connection) {
 			type: String,
 			required: true
 		},
-		newsletter: {
-			type: mongoose.Schema.Types.ObjectId,
-			ref: 'Newsletter'
-		},
+		newsletter: Boolean,
 		status: {
 			type: Number
 		},
@@ -67,7 +71,8 @@ module.exports = function(mongoose, connection) {
 				required: true
 			},
 			default_address: Boolean
-		} ]
+		} ],
+		newsletter_subscription: Boolean
 	},
 	{
 		timestamps: {

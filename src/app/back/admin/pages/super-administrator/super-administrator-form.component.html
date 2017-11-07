@@ -7,7 +7,7 @@
 
 <div [ngStyle]="{'padding': '30px'}">
 	<md-form-field>
-		<input mdInput placeholder="Username*" [formControl]="username*">
+		<input mdInput placeholder="Username*" [formControl]="username">
 		<md-error *ngIf="username.hasError('required')">
 			This field is <strong> required </strong>
 		</md-error>

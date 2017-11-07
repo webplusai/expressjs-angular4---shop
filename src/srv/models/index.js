@@ -38,7 +38,22 @@ module.exports = function(mongoose, connection) {
 		'SocialLink',
 		'Badge',
 		'TaxSummary',
-		'DebugError'
+		'DebugError',
+		'Wishlist',
+		'Download',
+		'RecurringPayment',
+		'RewardPoint',
+		'FilterGroup',
+		'Filter',
+		'Option',
+		'CustomerGroup',
+		'LengthClass',
+		'WeightClass',
+		'TaxClass',
+		'TaxRate',
+		'GeoZone',
+		'SellerGroup',
+		'VoucherTheme'
 	];
 
 	for (var i = 0; i < modelNames.length; i++) {

@@ -1,0 +1,31 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Tax Rate </span>
+	</h3>
+</div>
+
+<div class="content-wrapper">
+	<md-form-field>
+		<input mdInput placeholder="Tax Name *">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Tax Rate *">
+	</md-form-field>
+
+	<md-select placeholder="Type">
+		<md-option value="Fixed Amount"> Fixed Amount </md-option>
+		<md-option value="Percentage"> Percentage </md-option>
+	</md-select>
+
+	<div class="md-checkbox-container">
+		<label> Customer Group </label>
+		<md-checkbox> Default </md-checkbox>
+	</div>
+
+	<md-select placeholder="Geo Zone">
+		<md-option value="UK Shipping"> UK Shipping </md-option>
+		<md-option value="UK VAT Zone"> UK VAT Zone </md-option>
+	</md-select>
+</div>

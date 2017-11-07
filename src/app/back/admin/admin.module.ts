@@ -88,7 +88,6 @@ import { DiscountComponent } from './pages/products/tabs/discount/discount.compo
 import { SpecialComponent } from './pages/products/tabs/special/special.component';
 import { ImageComponent } from './pages/products/tabs/image/image.component';
 import { RewardPointsComponent } from './pages/products/tabs/reward-points/reward-points.component';
-import { ProductDesignComponent } from './pages/products/tabs/design/design.component';
 import { CheckboxComponent } from './pages/products/tabs/option/tabs/checkbox/checkbox.component';
 import { DateComponent } from './pages/products/tabs/option/tabs/date/date.component';
 import { DateTimeComponent } from './pages/products/tabs/option/tabs/date-time/date-time.component';
@@ -142,12 +141,32 @@ import { GermanListComponent } from './pages/language-editor/german/german-list.
 import { SpanishListComponent } from './pages/language-editor/spanish/spanish-list.component';
 import { CategoryGeneralComponent } from './pages/categories/tabs/general/general.component';
 import { CategoryDataComponent } from './pages/categories/tabs/data/data.component';
-import { CategoryDesignComponent } from './pages/categories/tabs/design/design.component';
 import { CategoryFeesComponent } from './pages/categories/tabs/fees/fees.component';
 import { VendorGeneralComponent } from './pages/vendors/tabs/general/general.component';
 import { VendorFeesComponent } from './pages/vendors/tabs/fees/fees.component';
 import { BadgesComponent } from './pages/vendors/tabs/badges/badges.component';
 import { UserSettingsComponent } from './pages/vendors/tabs/user-settings/user-settings.component';
+import { FiltersListComponent } from './pages/filters/filters-list.component';
+import { FiltersFormComponent } from './pages/filters/filters-form.component';
+import { OptionsListComponent } from './pages/options/options-list.component';
+import { OptionsFormComponent } from './pages/options/options-form.component';
+import { CustomerGroupsListComponent } from './pages/customer-groups/customer-groups-list.component';
+import { CustomerGroupsFormComponent } from './pages/customer-groups/customer-groups-form.component';
+import { LengthClassListComponent } from './pages/length-classes/length-classes-list.component';
+import { LengthClassFormComponent } from './pages/length-classes/length-classes-form.component';
+import { WeightClassListComponent } from './pages/weight-classes/weight-classes-list.component';
+import { WeightClassFormComponent } from './pages/weight-classes/weight-classes-form.component';
+import { TaxClassListComponent } from './pages/tax-classes/tax-classes-list.component';
+import { TaxClassFormComponent } from './pages/tax-classes/tax-classes-form.component';
+import { TaxRateListComponent } from './pages/tax-rates/tax-rates-list.component';
+import { TaxRateFormComponent } from './pages/tax-rates/tax-rates-form.component';
+import { GeoZoneListComponent } from './pages/geo-zones/geo-zones-list.component';
+import { GeoZoneFormComponent } from './pages/geo-zones/geo-zones-form.component';
+import { SellerGroupsListComponent } from './pages/seller-groups/seller-groups-list.component';
+import { SellerGroupsFormComponent } from './pages/seller-groups/seller-groups-form.component';
+import { AdminSellerGroupTabGeneralComponent } from './pages/seller-groups/tabs/admin-seller-group-tab-general/admin-seller-group-tab-general.component';
+import { GeneralComponent } from './pages/seller-groups/tabs/general/general.component';
+import { ComissionsFeesComponent } from './pages/seller-groups/tabs/comissions-fees/comissions-fees.component';
 
 @NgModule({
 	imports: [
@@ -240,7 +259,6 @@ import { UserSettingsComponent } from './pages/vendors/tabs/user-settings/user-s
 		SpecialComponent,
 		ImageComponent,
 		RewardPointsComponent,
-		ProductDesignComponent,
 		CheckboxComponent,
 		DateComponent,
 		DateTimeComponent,
@@ -294,12 +312,32 @@ import { UserSettingsComponent } from './pages/vendors/tabs/user-settings/user-s
 		SpanishListComponent,
 		CategoryGeneralComponent,
 		CategoryDataComponent,
-		CategoryDesignComponent,
 		CategoryFeesComponent,
 		VendorFeesComponent,
 		VendorGeneralComponent,
 		BadgesComponent,
-		UserSettingsComponent
+		UserSettingsComponent,
+		FiltersListComponent,
+		FiltersFormComponent,
+		OptionsListComponent,
+		OptionsFormComponent,
+		CustomerGroupsListComponent,
+		CustomerGroupsFormComponent,
+		LengthClassListComponent,
+		LengthClassFormComponent,
+		WeightClassListComponent,
+		WeightClassFormComponent,
+		TaxClassListComponent,
+		TaxClassFormComponent,
+		TaxRateListComponent,
+		TaxRateFormComponent,
+		GeoZoneListComponent,
+		GeoZoneFormComponent,
+		SellerGroupsListComponent,
+		SellerGroupsFormComponent,
+		AdminSellerGroupTabGeneralComponent,
+		GeneralComponent,
+		ComissionsFeesComponent,
 	]
 })
 export class AdminModule { }

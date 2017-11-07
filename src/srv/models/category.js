@@ -3,26 +3,54 @@ module.exports = function(mongoose, connection) {
 	var categorySchema = mongoose.Schema({
 		general: {
 			name: {
-				type: String,
-				required: 'Name cannot be blank'
+				english: {
+					type: String,
+					required: 'Name cannot be blank'
+				},
+				french: String,
+				german: String,
+				spanish: String
 			},
-			description: String,
+			description: {
+				english: String,
+				french: String,
+				german: String,
+				spanish: String
+			},
 			meta_tag_title: {
-				type: String,
-				required: 'Meta tag title cannot be blank'
+				english: {
+					type: String,
+					required: 'Meta tag title cannot be blank'
+				},
+				french: String,
+				german: String,
+				spanish: String
 			},
-			meta_tag_description: String,
-			meta_tag_keywords: String
+			meta_tag_description: {
+				english: String,
+				french: String,
+				german: String,
+				spanish: String
+			},
+			meta_tag_keywords: {
+				english: String,
+				french: String,
+				german: String,
+				spanish: String
+			}
 		},
 		data: {
 			parent: {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: 'category'
+				ref: 'Category'
 			},
-			filters: Array,
+			filters: [ {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'Filter'
+			} ],
 			stores: [ {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: 'store'
+				ref: 'Store'
 			} ],
 			seo_url: String,
 			image_url: String,
@@ -31,14 +59,6 @@ module.exports = function(mongoose, connection) {
 			sort_order: Number,
 			status: Number,
 		},
-		design: [{
-			store: {
-				type: mongoose.Schema.Types.ObjectId,
-				ref: 'store',
-				required: 'Store name cannot be blank'
-			},
-			layout_overrides: String
-		}],
 		fees: {
 			sales_fee_fixed: Number,
 			sales_fee_percent: Number,
@@ -46,7 +66,7 @@ module.exports = function(mongoose, connection) {
 			listing_fee_percent: Number,
 			payment_method: {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: 'payment_method'
+				ref: 'PaymentMethod'
 			}
 		}
 	},

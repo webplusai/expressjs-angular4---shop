@@ -1,0 +1,57 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Geo Zone </span>
+	</h3>
+</div>
+
+<div class="content-wrapper">
+	<md-form-field>
+		<input mdInput placeholder="Geo Zone Name *">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Description *">
+	</md-form-field>
+
+	<md-table [dataSource]="dataSource">
+		<ng-container mdColumnDef="country">
+			<md-header-cell *mdHeaderCellDef> Country </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="geoZonesList[i].country">
+					<option value="Country 1"> Country 1 </option>
+					<option value="Country 2"> Country 2 </option>
+					<option value="Country 3"> Country 3 </option>
+					<option value="Country 4"> Country 4 </option>
+					<option value="Country 5"> Country 5 </option>
+				</select>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="zone">
+			<md-header-cell *mdHeaderCellDef> Zone </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="geoZonesList[i].zone">
+					<option value="Zone 1"> Zone 1 </option>
+					<option value="Zone 2"> Zone 2 </option>
+					<option value="Zone 3"> Zone 3 </option>
+					<option value="Zone 4"> Zone 4 </option>
+					<option value="Zone 5"> Zone 5 </option>
+				</select>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'flex': 'none', 'width': '60px'}">
+				<button md-button type="button" (click)="addRow()" class="action-button" *ngIf="element.last" [ngStyle]="{'background': '#f56b6b'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
+				</button>
+				<button md-button type="button" (click)="removeRow(i)" class="action-button" *ngIf="!element.last" [ngStyle]="{'background': '#1e91cf'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

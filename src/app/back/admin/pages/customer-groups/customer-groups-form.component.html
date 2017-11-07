@@ -1,0 +1,25 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Customer Group </span>
+	</h3>
+</div>
+
+<div class="content-wrapper">
+	<md-form-field>
+		<input mdInput placeholder="Customer Group Name *">
+	</md-form-field>
+
+	<md-form-field>
+		<textarea mdInput placeholder="Description"></textarea>
+	</md-form-field>
+
+	<md-radio-group>
+		<md-radio-button value="Yes">Yes</md-radio-button>
+		<md-radio-button value="No">No</md-radio-button>
+	</md-radio-group>
+
+	<md-form-field>
+		<input mdInput placeholder="Sort Order">
+	</md-form-field>
+</div>

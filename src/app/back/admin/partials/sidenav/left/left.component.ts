@@ -9,10 +9,6 @@ import * as $ from 'jquery';
 })
 export class LeftSidenavComponent implements OnInit {
 
-	/*menuItems = [
-		{ icon: 'dashboard', 'text': 'Dashboard', 'link': 'dashboard', subMenuItems: [ { text: 'Sub', 'link': 'sub' } ] }
-	];*/
-
 	menuItems = [
 		{ icon: 'dashboard', 			text: 'Dashboard',					link: 'dashboard' },
 		{ icon: 'important_devices', 	text: 'EMH products Management', 	
@@ -62,6 +58,18 @@ export class LeftSidenavComponent implements OnInit {
 																			subMenuItems: [
 																				{ text: 'Shipping Setting',		link: 'shipping-setting' },
 																				{ text: 'Shipping Report',		link: 'shipping-report' }
+																			] },
+		{ icon: 'build',				text: 'Wang Tools',				
+																			subMenuItems: [
+																				{ text: 'Filters',				link: 'filters' },
+																				{ text: 'Options',				link: 'options' },
+																				{ text: 'Customer Groups',		link: 'customer-groups' },
+																				{ text: 'Length Classes', 		link: 'length-classes' },
+																				{ text: 'Weight Classes', 		link: 'weight-classes' },
+																				{ text: 'Tax Classes',			link: 'tax-classes' },
+																				{ text: 'Tax Rates',			link: 'tax-rates' },
+																				{ text: 'Geo Zones', 			link: 'geo-zones' },
+																				{ text: 'Seller Groups', 		link: 'seller-groups' }
 																			] },
 		{ icon: 'language',				text: 'Language Editor', 			
 																			subMenuItems: [ 

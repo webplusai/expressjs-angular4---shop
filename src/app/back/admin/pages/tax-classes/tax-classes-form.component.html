@@ -1,0 +1,58 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Tax Class </span>
+	</h3>
+</div>
+
+<div class="content-wrapper">
+	<md-form-field>
+		<input mdInput placeholder="Tax Class Title *">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Description *">
+	</md-form-field>
+
+	<md-table [dataSource]="dataSource">
+		<ng-container mdColumnDef="tax_rate">
+			<md-header-cell *mdHeaderCellDef> Tax Rate </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="taxClassesList[i].tax_rate">
+					<option value="Eco Tax (-2.00)"> Eco Tax (-2.00) </option>
+					<option value="VAT(20%)"> VAT(20%) </option>
+				</select>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="based_on">
+			<md-header-cell *mdHeaderCellDef> Based On </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="taxClassesList[i].based_on">
+					<option value="Shipping Address"> Shipping Address </option>
+					<option value="Payment Address"> Payment Address </option>
+					<option value="Store Address"> Store Address </option>
+				</select>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="priority">
+			<md-header-cell *mdHeaderCellDef> Priority </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="taxClassesList[i].priority" placeholder="Priority">
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'flex': 'none', 'width': '60px'}">
+				<button md-button type="button" (click)="addRow()" class="action-button" *ngIf="element.last" [ngStyle]="{'background': '#f56b6b'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
+				</button>
+				<button md-button type="button" (click)="removeRow(i)" class="action-button" *ngIf="!element.last" [ngStyle]="{'background': '#1e91cf'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

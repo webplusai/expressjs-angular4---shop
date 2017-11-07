@@ -1,0 +1,69 @@
+<div class="content-wrapper">
+	<md-form-field>
+		<input mdInput placeholder="Option Name *">
+	</md-form-field>
+
+	<md-select placeholder="Type" [(ngModel)]="optionType">
+		<md-option *ngFor="let type of optionTypes" value="{{type}}"> {{ type }} </md-option>
+	</md-select>
+
+	<md-select placeholder="Attach to seller">
+		<md-option value="All sellers"> -- All sellers -- </md-option>
+	</md-select>
+
+	<md-select placeholder="Status">
+		<md-option value="Active"> Active </md-option>
+		<md-option value="Inactive"> Inactive </md-option>
+		<md-option value="Approved"> Approved </md-option>
+		<md-option value="Disabled"> Disabled </md-option>
+	</md-select>
+
+	<md-form-field>
+		<input mdInput placeholder="Sort Order">
+	</md-form-field>
+
+	<md-table [dataSource]="dataSource" *ngIf="optionType == 'Select' || optionType == 'Radio' || optionType == 'Checkbox'">
+		<ng-container mdColumnDef="option_value_name">
+			<md-header-cell *mdHeaderCellDef> Option Value Name </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="optionValueList[i].option_value_name" placeholder="Option Value Name">
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="image">
+			<md-header-cell *mdHeaderCellDef> Image </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'padding': '5px 0px'}">
+				<div *ngIf="!element.last" class="image">
+					<img width="100" height="100" class="additional-image" src="{{optionValueList[i].image}}" (click)="togglePopover($event)">
+					<div class="popover hidden" role="tooltip">
+						<div class="popover-arrow"> </div>
+						<div class="popover-content">
+							<input type="file" id="imgInput" (change)="readURL($event)" style="display:none" accept="image/*"/> 
+							<button md-button type="button" class="action-button" [ngStyle]="{'background': 'rgb(30, 145, 207)'}" (click)="uploadImage($event)"> <md-icon>create</md-icon> </button>
+							<button md-button type="button" class="action-button" [ngStyle]="{'background': 'rgb(245, 107, 107)'}" (click)="removeImage($event)"> <md-icon>delete</md-icon> </button>
+						</div>
+					</div>
+				</div>
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="sort_order">
+			<md-header-cell *mdHeaderCellDef> Sort Order </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="optionValueList[i].sort_order" placeholder="Sort Order">
+			</md-cell>
+		</ng-container>
+		<ng-container mdColumnDef="action">
+			<md-header-cell *mdHeaderCellDef [ngStyle]="{'flex': 'none', 'width': '60px'}"> </md-header-cell>
+			<md-cell *mdCellDef="let element; let i = index" [ngStyle]="{'flex': 'none', 'width': '60px'}">
+				<button md-button type="button" (click)="addRow()" class="action-button" *ngIf="element.last" [ngStyle]="{'background': '#f56b6b'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">add_circle</md-icon>
+				</button>
+				<button md-button type="button" (click)="removeRow(i)" class="action-button" *ngIf="!element.last" [ngStyle]="{'background': '#1e91cf'}">
+					<md-icon [ngStyle]="{'color': '#fff'}">remove_circle</md-icon>
+				</button>
+			</md-cell>
+		</ng-container>
+
+		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
+		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
+	</md-table>
+</div>

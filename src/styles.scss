@@ -84,6 +84,14 @@ a {
 	padding: 8px;
 }
 
+.md-checkbox-container {
+	padding: 10px 0px;
+
+	.mat-checkbox {
+		margin-left: 15px;
+	}
+}
+
 admin {
 
 	.action-button {
@@ -142,8 +150,16 @@ admin {
 		}
 	}
 
+	.content-wrapper {
+		padding: 30px;
+	}
+
 	.header-content .mat-list-item-content {
 		height: initial !important;
+	}
+
+	.mat-select {
+		margin-bottom: 17.5px;
 	}
 
 	.mat-sidenav.mat-sidenav-opened {

@@ -15,7 +15,10 @@ module.exports = function(mongoose, connection) {
 				type: mongoose.Schema.Types.ObjectId,
 				ref: 'Buyer'
 			},
-			customer_gruop: Number,
+			customer_gruop: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'CustomerGroup'
+			},
 			first_name: {
 				type: String,
 				required: true
@@ -39,10 +42,14 @@ module.exports = function(mongoose, connection) {
 			product: {
 				type: mongoose.Schema.Types.ObjectId,
 				ref: 'Product'
-			}
+			},
+			model: String,
+			quantity: Number,
+			unit_price: Number,
+			total: Number
 		} ],
 		payment_details: {
-			address_id: Number,
+			address: Number,
 			first_name: {
 				type: String,
 				required: true
@@ -98,6 +105,19 @@ module.exports = function(mongoose, connection) {
 			}
 		},
 		totals: {
+			products: [ {
+				product: {
+					type: mongoose.Schema.Types.ObjectId,
+					ref: 'Product'
+				},
+				model: String,
+				quantity: Number,
+				unit_price: Number,
+				total: Number
+			} ],
+			sub_total: Number,
+			flat_shipping_rate: Number,
+			total: Number,
 			order_details: {
 				shipping_method: {
 					type: mongoose.Schema.Types.ObjectId,
@@ -109,15 +129,24 @@ module.exports = function(mongoose, connection) {
 					ref: 'PaymentMethod',
 					required: true
 				},
-				coupon: String,
-				voucher: String,
+				coupon: {
+					type: mongoose.Schema.Types.ObjectId,
+					ref: 'Coupon'
+				},
+				voucher: {
+					type: mongoose.Schema.Types.ObjectId,
+					ref: 'Voucher'
+				},
 				reward: String,
 				order_status: {
 					type: mongoose.Schema.Types.ObjectId,
 					ref: 'OrderStatus'
 				},
 				comment: String,
-				afilliate: String
+				afilliate: {
+					type: mongoose.Schema.Types.ObjectId,
+					ref: 'Affiliate'
+				}
 			}
 		}
 	},

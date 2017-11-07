@@ -1,10 +1,4 @@
 <div class="tab-links product-tab">
-	<md-select placeholder="Manufacturer">
-		<md-option *ngFor="let item of ['-- None --', 'Apple', 'Canon', 'HTC', 'Hewlett-Packard', 'Palm']" value="{{item}}">
-			{{ item }}
-		</md-option>
-	</md-select>
-
 	<md-select placeholder="Categories" (change)="selectChange(category, categoriesList)" [formControl]="category">
 		<md-option value="Cameras"> Cameras </md-option>
 		<md-option value="Components"> Components </md-option>

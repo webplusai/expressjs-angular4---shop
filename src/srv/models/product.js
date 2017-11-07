@@ -1,7 +1,7 @@
 
 module.exports = function(mongoose, connection) {
 	var productSchema = mongoose.Schema({
-		product_type: Number,
+		product_type: Number,		// Distinguish between normal product, emh voucher and emh beauty box
 		general: {
 			name: {
 				english: {
@@ -59,44 +59,55 @@ module.exports = function(mongoose, connection) {
 			mpn: String,
 			location: String,
 			price: Number,
-			tax_class: Number,
+			tax_class: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'TaxClass'
+			},
 			quantity: Number,
 			minimum_quantity: Number,
 			subtract_stock: Boolean,
-			out_of_stock_status: Number,
+			out_of_stock_status: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'StockStatus'
+			},
 			requires_shipping: Boolean,
 			seo_url: String,
 			date_available: Date,
 			length: Number,
 			width: Number,
 			height: Number,
-			length_class: Number,
+			length_class: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'LengthClass'
+			},
 			weight: Number,
-			weight_class: Number,
+			weight_class: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'WeightClass'
+			},
 			status: Number,
 			sort_order: Number
 		},
 		links: {
-			manufacturer: {
-				type: mongoose.Schema.Types.ObjectId,
-				ref: 'manufacturer'
-			},
 			categories: [ {
 				type: mongoose.Schema.Types.ObjectId,
 				ref: 'Category'
 			} ],
-			filters: Array,
+			filters: [ {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'Filter'
+			} ],
 			stores: [ {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: 'store'
+				ref: 'Store'
 			} ],
 			downloads: [ {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: 'download'
+				ref: 'Download'
 			} ],
 			related_products: [ {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: 'product'
+				ref: 'Product'
 			} ]
 		},
 		attribute: [ {
@@ -109,7 +120,10 @@ module.exports = function(mongoose, connection) {
 			}
 		} ],
 		option: [ {
-			type: String,
+			option: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'Option'
+			},
 			required: Boolean,
 			date_time: Date,
 			options: [ {
@@ -125,11 +139,20 @@ module.exports = function(mongoose, connection) {
 			} ]
 		} ],
 		recurring_profile: [ {
-			recurring_profile: String,
-			customer_group: String
+			recurring_profile: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'SubscriptionGroup'
+			},
+			customer_group: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'CustomerGroup'
+			}
 		} ],
 		discount: [ {
-			customer_group: String,
+			customer_group: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'CustomerGroup'
+			},
 			quantity: Number,
 			priority: Number,
 			price: Number,
@@ -137,7 +160,10 @@ module.exports = function(mongoose, connection) {
 			date_end: Date
 		} ],
 		special: [ {
-			customer_group: String,
+			customer_group: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'CustomerGroup'
+			},
 			priority: Number,
 			price: Number,
 			date_start: Date,
@@ -153,17 +179,13 @@ module.exports = function(mongoose, connection) {
 		reward_points: {
 			points: Number,
 			list: [ {
-				customer_group: String,
+				customer_group: {
+					type: mongoose.Schema.Types.ObjectId,
+					ref: 'CustomerGroup'
+				},
 				reward_points: Number
 			} ]
 		},
-		design: [ {
-			stores: {
-				type: mongoose.Schema.Types.ObjectId,
-				ref: 'store'
-			},
-			layout_override: String
-		} ],
 		seller_general: {
 			negotiate_price: Number,
 			message_to_the_reviewer: String,

@@ -1,0 +1,69 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Tax Rates List </span>
+	</h3>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/tax-rates/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Tax Name Column -->
+	<ng-container cdkColumnDef="tax_name">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Name </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.tax_name}} </md-cell>
+	</ng-container>
+
+	<!-- Tax Rate Column -->
+	<ng-container cdkColumnDef="tax_rate">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Rate </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.tax_rate}} </md-cell>
+	</ng-container>
+
+	<!-- Type Column -->
+	<ng-container cdkColumnDef="type">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Type </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.type}} </md-cell>
+	</ng-container>
+
+	<!-- Geo Zone Column -->
+	<ng-container cdkColumnDef="geo_zone">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Geo Zone </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.geo_zone}} </md-cell>
+	</ng-container>
+
+	<!-- date_added Column -->
+	<ng-container cdkColumnDef="date_added">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date_added}} </md-cell>
+	</ng-container>
+
+	<!-- date_modified Column -->
+	<ng-container cdkColumnDef="date_modified">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Modified </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.date_modified}} </md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row">
+			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

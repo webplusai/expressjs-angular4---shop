@@ -33,7 +33,10 @@ module.exports = function(mongoose, connection) {
 				required: true
 			},
 			seo_keyword: String,
-			seller_group: String,
+			seller_group: {
+				type: mongoose.Schema.Types.ObjectId,
+				ref: 'SellerGroup'
+			},
 			product_validation: Number,
 			description: {
 				english: String,
@@ -93,7 +96,7 @@ module.exports = function(mongoose, connection) {
 			facebook_like_link: String,
 			country_id: {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: 'Countryu'
+				ref: 'Country'
 			},
 			region_state: String,
 			company: String,
@@ -104,7 +107,8 @@ module.exports = function(mongoose, connection) {
 			advantages_for_clients: String,
 			brand_presentation: String,
 			description: String
-		}
+		},
+		valid_until: Date
 	},
 	{
 		timestamps: {

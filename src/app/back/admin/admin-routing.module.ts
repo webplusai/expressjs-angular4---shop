@@ -78,6 +78,24 @@ import { EnglishListComponent } from './pages/language-editor/english/english-li
 import { FrenchListComponent } from './pages/language-editor/french/french-list.component';
 import { GermanListComponent } from './pages/language-editor/german/german-list.component';
 import { SpanishListComponent } from './pages/language-editor/spanish/spanish-list.component';
+import { FiltersListComponent } from './pages/filters/filters-list.component';
+import { FiltersFormComponent } from './pages/filters/filters-form.component';
+import { OptionsListComponent } from './pages/options/options-list.component';
+import { OptionsFormComponent } from './pages/options/options-form.component';
+import { CustomerGroupsListComponent } from './pages/customer-groups/customer-groups-list.component';
+import { CustomerGroupsFormComponent } from './pages/customer-groups/customer-groups-form.component';
+import { LengthClassListComponent } from './pages/length-classes/length-classes-list.component';
+import { LengthClassFormComponent } from './pages/length-classes/length-classes-form.component';
+import { WeightClassListComponent } from './pages/weight-classes/weight-classes-list.component';
+import { WeightClassFormComponent } from './pages/weight-classes/weight-classes-form.component';
+import { TaxClassListComponent } from './pages/tax-classes/tax-classes-list.component';
+import { TaxClassFormComponent } from './pages/tax-classes/tax-classes-form.component';
+import { TaxRateListComponent } from './pages/tax-rates/tax-rates-list.component';
+import { TaxRateFormComponent } from './pages/tax-rates/tax-rates-form.component';
+import { GeoZoneListComponent } from './pages/geo-zones/geo-zones-list.component';
+import { GeoZoneFormComponent } from './pages/geo-zones/geo-zones-form.component';
+import { SellerGroupsListComponent } from './pages/seller-groups/seller-groups-list.component';
+import { SellerGroupsFormComponent } from './pages/seller-groups/seller-groups-form.component';
 
 const routes: Routes = [
 	{
@@ -95,346 +113,174 @@ const routes: Routes = [
 			{
 				path: 'dashboard',
 				component: DashboardComponent,
-				data: {
-					title: 'Dashboard111',
-					breadcrumb: [ ['Home', 'dashboard'], ['Dashboard', 'dashboard'] ]
-				}
 			},
 			{
 				path: 'buyers',
 				component: BuyersListComponent,
-				data: {
-					title: 'Buyers',
-					breadcrumb: [ ['Home', 'dashboard'], ['Buyers', 'buyers'] ]
-				}
 			},
 			{
 				path: 'buyers/create',
 				component: BuyersFormComponent,
-				data: {
-					title: 'Buyers',
-					breadcrumb: [ ['Home', 'dashboard'], ['Buyers', 'buyers'] ]
-				}
 			},
 			{
 				path: 'vendors',
 				component: VendorsListComponent,
-				data: {
-					title: 'Vendors',
-					breadcrumb: [ ['Home', 'dashboard'], ['Vendors', 'vendors'] ]
-				}
 			},
 			{
 				path: 'vendors/create',
 				component: VendorsFormComponent,
-				data: {
-					title: 'Vendors',
-					breadcrumb: [ ['Home', 'dashboard'], ['Vendors', 'vendors'] ]
-				}
 			},
 			{
 				path: 'categories',
 				component: CategoriesListComponent,
-				data: {
-					title: 'Categories',
-					breadcrumb: [ ['Home', 'dashboard'], ['Categories', 'categories'] ]
-				}
 			},
 			{
 				path: 'categories/create',
 				component: CategoriesFormComponent,
-				data: {
-					title: 'Categories',
-					breadcrumb: [ ['Home', 'dashboard'], ['Categories', 'categories'] ]
-				}
 			},
 			{
 				path: 'products',
 				component: ProductsListComponent,
-				data: {
-					title: 'Products',
-					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
-				}
 			},
 			{
 				path: 'products/create',
 				component: ProductsFormComponent,
-				data: {
-					title: 'Products',
-					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
-				}
 			},
 			{
 				path: 'emh-voucher',
 				component: EmhVoucherListComponent,
-				data: {
-					title: 'Emh Voucher',
-					breadcrumb: [ ['Home', 'dashboard'], ['Emh Voucher', 'emh-voucher'] ]
-				}
 			},
 			{
 				path: 'emh-voucher/create',
 				component: EmhVoucherFormComponent,
-				data: {
-					title: 'Emh Voucher',
-					breadcrumb: [ ['Home', 'dashboard'], ['Emh Voucher', 'emh-voucher'] ]
-				}
 			},
 			{
 				path: 'emh-beauty-box',
 				component: EmhBeautyBoxListComponent,
-				data: {
-					title: 'Emh Beauty Box',
-					breadcrumb: [ ['Home', 'dashboard'], ['Emh Beauty Box', 'emh-beauty-box' ] ]
-				}
 			},
 			{
 				path: 'emh-beauty-box/create',
 				component: EmhBeautyBoxFormComponent,
-				data: {
-					title: 'Emh Beauty Box',
-					breadcrumb: [ ['Home', 'dashboard'], ['Emh Beauty Box', 'emh-beauty-box'] ]
-				}
 			},
 			{
 				path: 'products/create',
 				component: ProductsFormComponent,
-				data: {
-					title: 'Products',
-					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
-				}
 			},
 			{
 				path: 'products',
 				component: ProductsListComponent,
-				data: {
-					title: 'Products',
-					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
-				}
 			},
 			{
 				path: 'products/create',
 				component: ProductsFormComponent,
-				data: {
-					title: 'Products',
-					breadcrumb: [ ['Home', 'dashboard'], ['Products', 'products'] ]
-				}
 			},
 			{
 				path: 'bloggers',
 				component: BloggersListComponent,
-				data: {
-					title: 'Bloggers',
-					breadcrumb: [ ['Home', 'dashboard'], ['Bloggers', 'bloggers'] ]
-				}
 			},
 			{
 				path: 'bloggers/create',
 				component: BloggersFormComponent,
-				data: {
-					title: 'Bloggers',
-					breadcrumb: [ ['Home', 'dashboard'], ['Bloggers', 'bloggers'] ]
-				}
 			},
 			{
 				path: 'news',
 				component: NewsListComponent,
-				data: {
-					title: 'News',
-					breadcrumb: [ ['Home', 'dashboard'], ['News', 'news'] ]
-				}
 			},
 			{
 				path: 'news/create',
 				component: NewsFormComponent,
-				data: {
-					title: 'News',
-					breadcrumb: [ ['Home', 'dashboard'], ['News', 'news'] ]
-				}
 			},
 			{
 				path: 'transactions',
 				component: TransactionsListComponent,
-				data: {
-					title: 'Transactions',
-					breadcrumb: [ ['Home', 'dashboard'], ['Transactions', 'transactions'] ]
-				}
 			},
 			{
 				path: 'transactions/create',
 				component: TransactionsFormComponent,
-				data: {
-					title: 'Transactions',
-					breadcrumbb: [ ['Home', 'dashboard'], ['Transactions', 'transactions'] ]
-				}
 			},
 			{
 				path: 'recurring-orders',
 				component: RecurringOrdersListComponent,
-				data: {
-					title: 'Recurring Orders',
-					breadcrumb: [ ['Home', 'dashboard'], ['Recurring Orders', 'recurring-orders'] ]
-				}
 			},
 			{
 				path: 'recurring-orders/create',
 				component: RecurringOrdersFormComponent,
-				data: {
-					title: 'Recurring Order',
-					breadcrumb: [ ['Home', 'dashboard'], ['Recurring Orders', 'recurring-orders'] ]
-				}
 			},
 			{
 				path: 'returns',
 				component: ReturnsListComponent,
-				data: {
-					title: 'Returns',
-					breadcrumb: [ ['Home', 'dashboard'], ['Returns', 'returns'] ]
-				}
 			},
 			{
 				path: 'returns/create',
 				component: ReturnsFormComponent,
-				data: {
-					title: 'Returns',
-					breadcrumb: [ ['Home', 'dashboard'], ['Returns', 'returns'] ]
-				}
 			},
 			{
 				path: 'orders',
 				component: OrdersListComponent,
-				data: {
-					title: 'Orders',
-					breadcrumb: [ ['Home', 'dashboard'], ['Orders', 'orders'] ]
-				}
 			},
 			{
 				path: 'orders/create',
 				component: OrdersFormComponent,
-				data: {
-					title: 'Orders',
-					breadcrumb: [ ['Home', 'dashboard'], ['Orders', 'orders'] ]
-				}
 			},
 			{
 				path: 'super-administrator',
 				component: SuperAdministratorListComponent,
-				data: {
-					title: 'Super Administrator',
-					breadcrumb: [ ['Home', 'dashboard'], ['Super Administrator', 'super-administrator'] ]
-				}
 			},
 			{
 				path: 'super-administrator/create',
 				component: SuperAdministratorFormComponent,
-				data: {
-					title: 'Super Administrator',
-					breadcrumb: [ ['Home', 'dashboard'], ['Super Administrator', 'super-administrator'] ]
-				}
 			},
 			{
 				path: 'moderators',
 				component: ModeratorsListComponent,
-				data: {
-					title: 'Moderators',
-					breadcrumb: [ ['Home', 'dashboard'], ['Moderators', 'moderators'] ]
-				}
 			},
 			{
 				path: 'moderators/create',
 				component: ModeratorsFormComponent,
-				data: {
-					title: 'Moderators',
-					breadcrumb: [ ['Home', 'dashboard'], ['Moderators', 'moderators'] ]
-				}
 			},
 			{
 				path: 'staff-setting',
 				component: StaffSettingListComponent,
-				data: {
-					title: 'Staff Setting',
-					breadcrumb: [ ['Home', 'dashboard'], ['Staff Setting', 'staff-setting'] ]
-				}
 			},
 			{
 				path: 'staff-setting/create',
 				component: StaffSettingFormComponent,
-				data: {
-					title: 'Staff Setting',
-					breadcrumb: [ ['Home', 'dashboard'], ['Staff Setting', 'staff-setting'] ]
-				}
 			}, 
 			{
 				path: 'affiliation',
 				component: AffiliationListComponent,
-				data: {
-					title: 'Affiliation',
-					breadcrumb: [ ['Home', 'dashboard'], ['Affiliation', 'affiliation'] ]
-				}
 			},
 			{
 				path: 'affiliation/create',
 				component: AffiliationFormComponent,
-				data: {
-					title: 'Affiliation',
-					breadcrumb: [ ['Home', 'dashboard'], ['Affiliation', 'affiliation'] ]
-				}
 			},
 			{
 				path: 'adverts',
 				component: AdvertsListComponent,
-				data: {
-					title: 'Adverts',
-					breadcrumb: [ ['Home', 'dashboard'], ['Adverts', 'adverts'] ]
-				}
 			},
 			{
 				path: 'adverts/create',
 				component: AdvertsFormComponent,
-				data: {
-					title: 'Adverts',
-					breadcrumb: [ ['Home', 'dashboard'], ['Adverts', 'toggle'] ]
-				}
 			},
 			{
 				path: 'message',
 				component: MessageComponent,
-				data: {
-					title: 'Message',
-					breadcrumb: [ ['Home', 'dashboard'], ['Message', 'message'] ]
-				}
 			},
 			{
 				path: 'comments',
 				component: CommentsComponent,
-				data: {
-					title: 'Comments',
-					breadcrumb: [ ['Home', 'dashboard'], ['Comments', 'comments'] ]
-				}
 			},
 			{
 				path: 'media',
 				component: MediaComponent,
-				data: {
-					title: 'Media',
-					breadcrumb: [ ['Home', 'dashboard'], ['Media', 'media'] ]
-				}
 			},
 			{
 				path: 'newsletter',
 				component: NewsLetterComponent,
-				data: {
-					title: 'NewsLetter',
-					breadcrumb: [ ['Home', 'dashboard'], ['NewsLetter', 'newsletter'] ]
-				}
 			},
 			{
 				path: 'slideshow',
 				component: SlideshowListComponent,
-				data: {
-					title: 'Slideshow',
-					breadcrumb: [ ['Home', 'dashboard'], ['Slideshow', 'slideshow'] ]
-				}
 			},
 			{
 				path: 'slideshow/:id',
@@ -443,10 +289,6 @@ const routes: Routes = [
 			{
 				path: 'partners',
 				component: PartnersListComponent,
-				data: {
-					title: 'Partners',
-					breadcrumb: [ ['Home', 'dashboard'], ['Partners', 'partners'] ]
-				}
 			},
 			{
 				path: 'partners/:id',
@@ -455,18 +297,10 @@ const routes: Routes = [
 			{
 				path: 'collaboration',
 				component: CollaborationComponent,
-				data: {
-					title: 'Collaboration',
-					breadcrumb: [ ['Home', 'dashboard'], ['Collaboration', 'collaboration'] ]
-				}
 			},
 			{
 				path: 'shipping-setting',
 				component: ShippingSettingComponent,
-				data: {
-					title: 'Shipping',
-					breadcrumb: [ ['Home', 'dashboard'], ['Shipping', 'shipping'] ]
-				}
 			},
 			{
 				path: 'shipping-report',
@@ -475,50 +309,26 @@ const routes: Routes = [
 			{
 				path: 'subscription-plan',
 				component: SubscriptionPlanListComponent,
-				data: {
-					title: 'Subscription Plan',
-					breadcrumb: [ ['Home', 'dashboard'], ['Subscription Plan', 'subscription-plan'] ]
-				}
 			},
 			{
 				path: 'subscription-plan/create',
 				component: SubscriptionPlanFormComponent,
-				data: {
-					title: 'Subscription Plan',
-					breadcrumb: [ ['Home', 'dashboard'], ['Subscription Plan', 'subscription-plan'] ]
-				}
 			},
 			{
 				path: 'payments',
 				component: PaymentsListComponent,
-				data: {
-					title: 'Payments',
-					breadcrumb: [ ['Home', 'dashboard'], ['Payments', 'payments'] ]
-				}
 			},
 			{
 				path: 'payments/create',
 				component: PaymentsFormComponent,
-				data: {
-					title: 'Payments',
-					breadcrumb: [ ['Home', 'dashboard'], ['Payments', 'payments'] ]
-				}
 			},
 			{
 				path: 'emh-tv',
 				component: EMHTVComponent,
-				data: {
-					title: 'EMH TV',
-					breadcrumb: [ ['Home', 'dashboard'], ['EMH TV', 'emhtv'] ]
-				}
 			},
 			{
 				path: 'landing-page',
 				component: MaintenanceComponent,
-				data: {
-					title: 'Maintenance',
-					breadcrumb: [ ['Home', 'dashboard'], ['Landing Page', 'landing-page'] ]
-				}
 			},
 			{
 				path: 'store-locations',
@@ -611,6 +421,78 @@ const routes: Routes = [
 			{
 				path: 'language-editor/spanish',
 				component: SpanishListComponent
+			},
+			{
+				path: 'filters',
+				component: FiltersListComponent
+			},
+			{
+				path: 'filters/create',
+				component: FiltersFormComponent
+			},
+			{
+				path: 'options',
+				component: OptionsListComponent
+			},
+			{
+				path: 'options/create',
+				component: OptionsFormComponent
+			},
+			{
+				path: 'customer-groups',
+				component: CustomerGroupsListComponent
+			},
+			{
+				path: 'customer-groups/create',
+				component: CustomerGroupsFormComponent
+			},
+			{
+				path: 'length-classes',
+				component: LengthClassListComponent
+			},
+			{
+				path: 'length-classes/create',
+				component: LengthClassFormComponent
+			},
+			{
+				path: 'weight-classes',
+				component: WeightClassListComponent
+			},
+			{
+				path: 'weight-classes/create',
+				component: WeightClassFormComponent
+			},
+			{
+				path: 'tax-classes',
+				component: TaxClassListComponent
+			},
+			{
+				path: 'tax-classes/create',
+				component: TaxClassFormComponent
+			},
+			{
+				path: 'tax-rates',
+				component: TaxRateListComponent
+			},
+			{
+				path: 'tax-rates/create',
+				component: TaxRateFormComponent
+			},
+			{
+				path: 'geo-zones',
+				component: GeoZoneListComponent
+			},
+			{
+				path: 'geo-zones/create',
+				component: GeoZoneFormComponent
+			},
+			{
+				path: 'seller-groups',
+				component: SellerGroupsListComponent
+			},
+			{
+				path: 'seller-groups/create',
+				component: SellerGroupsFormComponent
 			}
 		]
 	},
