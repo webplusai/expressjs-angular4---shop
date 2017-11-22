@@ -18,7 +18,7 @@
 
 	<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Stores </span>
 	<div class="stores">
-		<div *ngFor="let store of stores" value="{{ store._id }}">
+		<div *ngFor="let store of stores">
 			<md-checkbox *ngFor="let store of stores" value="{{ store._id }}"> {{ store.name }} </md-checkbox>
 		</div>
 	</div>
