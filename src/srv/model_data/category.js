@@ -2,7 +2,9 @@ var one = new modules.Category({
 	general: {
 		name: 'Computer',
 		description: 'My Computer',
-		meta_tag_title: 'Meta tag title',
+		meta_tag_title {
+			english : 'Meta tag title',
+		}
 		meta_tag_description: 'Meta tag description',
 		meta_tag_keywords: 'Meta tag keywords'
 	},

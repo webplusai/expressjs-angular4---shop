@@ -58,6 +58,10 @@ html, body {
 	height: 100% !important;
 }
 
+.gray-text {
+	color: rgba(0, 0, 0, 0.54);
+}
+
 .inline {
 	display: inline;
 }
@@ -93,21 +97,6 @@ a {
 }
 
 admin {
-
-	.action-button {
-		border-radius: 5px;
-		padding: 0px 5px;
-	    min-width: initial;
-	    margin: 2px;
-	    color: #fff;
-	    font-size: 1px;
-
-	    .mat-icon {
-			font-size: 15px;
-			line-height: 15px;
-			height: 15px;
-	    }
-	}
 
 	.action-buttons {
 		text-align: right;

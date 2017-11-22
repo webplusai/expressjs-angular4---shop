@@ -1,8 +1,10 @@
 import { NgModule } 				from 	'@angular/core';
 import { BrowserAnimationsModule } 	from 	'@angular/platform-browser/animations';
+import { NativeDateAdapter } 		from 	'@angular/material';
+import { HttpClientModule }    		from 	'@angular/common/http';
 
 import { AppRoutingModule } 		from 	'./app-routing.module';
-import { NativeDateAdapter } 		from 	'@angular/material';
+import { CRUDService }				from 	'./services/crud.service';
 
 import { AppComponent } 			from 	'./app.component';
 
@@ -12,9 +14,13 @@ import { AppComponent } 			from 	'./app.component';
 	],
 	imports: [
 		BrowserAnimationsModule,
-		AppRoutingModule
+		AppRoutingModule,
+		HttpClientModule
 	],
-	providers: [ NativeDateAdapter ],
+	providers: [ 
+		NativeDateAdapter,
+		CRUDService
+	],
 	bootstrap: [AppComponent]
 })
 export class AppModule { }

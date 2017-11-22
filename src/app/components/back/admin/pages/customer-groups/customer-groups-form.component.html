@@ -1,0 +1,35 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Customer Group </span>
+	</h3>
+</div>
+
+<div class="content-wrapper">
+	<form #customerGroupForm="ngForm" (ngSubmit)="saveCustomerGroup()" [formGroup]="form">
+		<md-form-field>
+			<input mdInput placeholder="Customer Group Name *" [formControl]="name">
+			<md-error *ngIf="name.hasError('required')">
+				Customer group name is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<textarea mdInput placeholder="Description" [formControl]="description"></textarea>
+		</md-form-field>
+
+		<div class="gray-text"> Approve New Customers </div>
+		<md-radio-group [formControl]="approve_new_customers">
+			<md-radio-button value="1">Yes</md-radio-button>
+			<md-radio-button value="0">No</md-radio-button>
+		</md-radio-group>
+
+		<md-form-field>
+			<input mdInput placeholder="Sort Order" [formControl]="sort_order">
+		</md-form-field>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button class="submit-button"> Save Customer Group </button>
+		</div>
+	</form>
+</div>

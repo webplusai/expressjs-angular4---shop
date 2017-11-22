@@ -1,0 +1,22 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Category </span>
+	</h3>
+</div>
+
+<form #categoryForm="ngForm" [formGroup]="form">
+	<md-tab-group>
+		<md-tab label="General">
+			<admin-category-tab-general [general]="form.controls.general"> </admin-category-tab-general>
+		</md-tab>
+
+		<md-tab label="Data">
+			<admin-category-tab-data [data]="form.controls.data"> </admin-category-tab-data>
+		</md-tab>
+
+		<md-tab label="Fees">
+			<admin-category-tab-fees [fees]="form.controls.fees"> </admin-category-tab-fees>
+		</md-tab>
+	</md-tab-group>
+</form>

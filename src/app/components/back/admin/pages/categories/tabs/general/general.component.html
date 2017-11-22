@@ -1,0 +1,20 @@
+<div class="tab-general" [ngStyle]="{'padding': '30px'}" [formGroup]="general">
+	<md-form-field>
+		<input mdInput placeholder="Category Name *" formControlName="name">
+	</md-form-field>
+
+	<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Description </span>
+	<angular-tinymce formControlName="description"> </angular-tinymce>
+
+	<md-form-field>
+		<input mdInput placeholder="Meta Tag Title *" formControlName="meta_tag_title">
+	</md-form-field>
+
+	<md-form-field>
+		<textarea mdInput placeholder="Meta Tag Description" formControlName="meta_tag_description"></textarea>
+	</md-form-field>
+
+	<md-form-field>
+		<textarea mdInput placeholder="Meta Tag Keywords" formControlName="meta_tag_keywords"></textarea>
+	</md-form-field>
+</div>

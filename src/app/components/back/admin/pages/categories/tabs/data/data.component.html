@@ -1,0 +1,48 @@
+<div class="tab-data" [ngStyle]="{'padding': '30px'}" [formGroup]="data">
+	<md-select placeholder="Parent" formControlName="parent">
+		<md-option *ngFor="let category of categories" value="category._id"> {{ category.name }} </md-option>
+	</md-select>
+
+	<md-select placeholder="Filters" (change)="selectChange(filter, selectedFilters)" [formControl]="filter">
+		<md-option *ngFor="let filter of filters" value="{{filter._id}}"> {{ filter.name }} </md-option>		
+	</md-select>
+
+	<input formControlName="filters" class="hidden">
+
+	<div class="filters">
+		<div fxLayout="row" fxLayoutAlign="start center" *ngFor="let filter of selectedFilters; let i = index" class="list-item">
+			<md-icon [ngStyle]="{'width': '15px', 'height': '15px', 'font-size': '15px', 'cursor': 'pointer'}" (click)="removeItem(selectedFilters, i)">remove_circle</md-icon>
+			<span [ngStyle]="{'font-size': '12px'}">{{filter.name}}</span>
+		</div>
+	</div>
+
+	<span [ngStyle]="{'color': 'rgba(0, 0, 0, 0.54)'}"> Stores </span>
+	<div class="stores">
+		<div *ngFor="let store of stores" value="{{ store._id }}">
+			<md-checkbox *ngFor="let store of stores" value="{{ store._id }}"> {{ store.name }} </md-checkbox>
+		</div>
+	</div>
+
+	<input formControlName="stores" class="hidden">
+
+	<md-form-field>
+		<input mdInput placeholder="SEO URL" formControlName="seo_url">
+	</md-form-field>
+
+	<image-selector> </image-selector>
+
+	<md-checkbox> Top </md-checkbox>
+
+	<md-form-field>
+		<input mdInput placeholder="Columns" formControlName="columns">
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Sort Order" formControlName="sort_order">
+	</md-form-field>
+
+	<md-select placeholder="Status" formControlName="status">
+		<md-option value="1"> Enabled </md-option>
+		<md-option value="0"> Disabled </md-option>
+	</md-select>
+</div>

@@ -12,8 +12,8 @@ module.exports = function(mongoose, connection) {
 		},
 		geo_zones: [
 			{
-				country: Number,
-				zone: Number
+				country: String,
+				zone: String
 			}
 		]
 	},

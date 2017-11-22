@@ -2,8 +2,8 @@
 module.exports = function(mongoose, connection) {
 
 	var storeSchema = mongoose.Schema({
-		store_name: String,
-		store_url: String
+		name: String,
+		url: String
 	},
 	{
 		timestamps: {

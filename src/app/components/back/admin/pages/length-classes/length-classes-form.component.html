@@ -1,0 +1,32 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Length Class </span>
+	</h3>
+</div>
+
+<div class="content-wrapper">
+	<form #lengthClassForm="ngForm" (ngSubmit)="saveLengthClass()" [formGroup]="form">
+		<md-form-field>
+			<input mdInput placeholder="Length Title *" [formControl]="length_title">
+			<md-error *ngIf="length_title.hasError('required')">
+				Length title is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Length Unit *" [formControl]="length_unit">
+			<md-error *ngIf="length_unit.hasError('required')">
+				Length unit is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Value" [formControl]="value">
+		</md-form-field>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button class="submit-button"> Save Length Class </button>
+		</div>
+	</form>
+</div>

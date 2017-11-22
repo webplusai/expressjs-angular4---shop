@@ -1,0 +1,53 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Weight Class List </span>
+	</h3>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/weight-classes/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Weight Title Column -->
+	<ng-container cdkColumnDef="weight_title">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Weight Title </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.weight_title}} </md-cell>
+	</ng-container>
+
+	<!-- Weight Unit Column -->
+	<ng-container cdkColumnDef="weight_unit">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Weight Unit </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.weight_unit}} </md-cell>
+	</ng-container>
+
+	<!-- Value Column -->
+	<ng-container cdkColumnDef="value">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Value </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.value}} </md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell fxLayout="row" *cdkCellDef="let row">
+			<a [routerLink]="['/admin/weight-classes/edit/' + row._id]">
+				<button class="action-button action-button-create" md-button><md-icon>create</md-icon></button>
+			</a>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

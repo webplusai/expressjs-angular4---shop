@@ -1,0 +1,40 @@
+admin {
+	a {
+		text-decoration: none;
+	}
+
+	h1 small > span:last-child {
+
+		a {
+			color: rgb(0, 132, 71);
+		}
+
+		span {
+			display: none;
+		}
+	}
+
+	.action-button {
+		border-radius: 5px;
+		padding: 0px 5px;
+	    min-width: initial;
+	    margin: 2px;
+	    color: #fff;
+	    font-size: 1px;
+
+	    .mat-icon {
+			font-size: 15px;
+			line-height: 15px;
+			height: 15px;
+	    }
+	}
+
+	.action-button-create {
+	 	background: #1e91cf;
+	}
+
+	.submit-button {
+		background: rgb(0, 132, 71);
+		color: #fff;
+	}
+}
