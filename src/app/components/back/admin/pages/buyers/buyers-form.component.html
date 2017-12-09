@@ -5,21 +5,21 @@
 	</h3>
 </div>
 
-<form #buyersForm="ngForm" (ngSubmit)="createBuyer(buyersForm)" [formGroup]="form" class="form-content" [ngStyle]="{'margin': '30px'}">
-	<md-select placeholder="Customer Group">
-		<md-option value="Default"> Default </md-option>
+<form #buyersForm="ngForm" (ngSubmit)="saveBuyer()" [formGroup]="form" class="form-content" [ngStyle]="{'margin': '30px'}">
+	<md-select placeholder="Customer Group" [formControl]="customer_group">
+		<md-option *ngFor="let customerGroup of customerGroups" value="{{customerGroup._id}}"> {{ customerGroup.name }} </md-option>
 	</md-select>
 
 	<md-form-field>
-		<input mdInput placeholder="First Name*" [formControl]="firstName">
-		<md-error *ngIf="firstName.hasError('required')">
+		<input mdInput placeholder="First Name*" [formControl]="first_name">
+		<md-error *ngIf="first_name.hasError('required')">
 			First name is <strong> required </strong>
 		</md-error>
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Last Name*" [formControl]="lastName">
-		<md-error *ngIf="lastName.hasError('required')">
+		<input mdInput placeholder="Last Name*" [formControl]="last_name">
+		<md-error *ngIf="last_name.hasError('required')">
 			Last name is <strong> required </strong>
 		</md-error>
 	</md-form-field>
@@ -42,41 +42,41 @@
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Fax">
+		<input mdInput placeholder="Fax" [formControl]="fax">
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Password*" [formControl]="password">
+		<input type="password" mdInput placeholder="Password*" [formControl]="password">
 		<md-error *ngIf="password.hasError('required')">
 			Password is <strong> required </strong>
 		</md-error>
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Confirm*" [formControl]="confirm">
-		<md-error *ngIf="password.hasError('required')">
+		<input type="password" mdInput placeholder="Confirm*" [formControl]="confirm_password">
+		<md-error *ngIf="confirm_password.hasError('required')">
 			Please confirm your password
 		</md-error>
 	</md-form-field>
 
-	<md-select placeholder="Newsletter">
-		<md-option value="Enabled"> Enabled </md-option>
-		<md-option value="Disabled"> Disabled </md-option>
+	<md-select placeholder="Newsletter" [formControl]="newsletter">
+		<md-option value="1"> Enabled </md-option>
+		<md-option value="0"> Disabled </md-option>
 	</md-select>
 
-	<md-select placeholder="Status">
-		<md-option value="Enabled"> Enabled </md-option>
-		<md-option value="Disabled"> Disabled </md-option>
+	<md-select placeholder="Status" [formControl]="status">
+		<md-option value="1"> Enabled </md-option>
+		<md-option value="0"> Disabled </md-option>
 	</md-select>
 
-	<md-select placeholder="Approved">
-		<md-option value="Yes"> Yes </md-option>
-		<md-option value="No"> No </md-option>
+	<md-select placeholder="Approved" [formControl]="approved">
+		<md-option value="1"> Yes </md-option>
+		<md-option value="0"> No </md-option>
 	</md-select>
 
-	<md-select placeholder="Safe">
-		<md-option value="Yes"> Yes </md-option>
-		<md-option value="No"> No </md-option>
+	<md-select placeholder="Safe" [formControl]="safe">
+		<md-option value="1"> Yes </md-option>
+		<md-option value="0"> No </md-option>
 	</md-select>
 
 	<div fxLayout="row" fxLayoutAlign="end center">

@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'admin-vendors-tab-fees',
-  templateUrl: './fees.component.html',
-  styleUrls: ['./fees.component.scss']
+	selector: 'admin-vendors-tab-fees',
+	templateUrl: './fees.component.html',
+	styleUrls: ['./fees.component.scss']
 })
 export class VendorFeesComponent implements OnInit {
 
-  constructor() { }
+	@Input() fees: FormGroup;
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

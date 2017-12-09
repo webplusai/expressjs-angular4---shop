@@ -68,8 +68,13 @@ export class LeftSidenavComponent implements OnInit {
 																				{ text: 'Weight Classes', 		link: 'weight-classes' },
 																				{ text: 'Tax Classes',			link: 'tax-classes' },
 																				{ text: 'Tax Rates',			link: 'tax-rates' },
+																				{ text: 'Countries',			link: 'countries' },
+																				{ text: 'Zones', 				link: 'zones' },
 																				{ text: 'Geo Zones', 			link: 'geo-zones' },
-																				{ text: 'Seller Groups', 		link: 'seller-groups' }
+																				{ text: 'Seller Groups', 		link: 'seller-groups' },
+																				{ text: 'Return Actions', link: 'return-actions' },
+																				{ text: 'Return Statuses', link: 'return-statuses' },
+																				{ text: 'Return Reasons', link: 'return-reasons' },
 																			] },
 		{ icon: 'language',				text: 'Language Editor', 			
 																			subMenuItems: [ 
@@ -92,7 +97,7 @@ export class LeftSidenavComponent implements OnInit {
 																						{ text: 'Languages', link: 'languages' },
 																						{ text: 'Currencies', link: 'currencies' },
 																						{ text: 'Stock Statuses', link: 'stock-statuses' },
-																						{ text: 'Order Statuses', link: 'order-statuses' }
+																						{ text: 'Order Statuses', link: 'order-statuses' },
 																					] 
 																				},
 																				{ text: 'Setting', link: 'setting' },

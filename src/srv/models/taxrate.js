@@ -2,19 +2,19 @@
 module.exports = function(mongoose, connection) {
 
 	var taxRateSchema = mongoose.Schema({
-		tax_name: {
+		name: {
 			type: String,
 			required: 'Name cannot be blank'
 		},
-		tax_rate: {
+		rate: {
 			type: String,
 			required: 'Tax Rate cannot be blank'
 		},
-		type: Number,
-		customer_group: {
+		type: String,
+		customer_groups: [{
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'CustomerGroup'
-		},
+		}],
 		geo_zone: {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'GeoZone'

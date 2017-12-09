@@ -5,22 +5,19 @@
 	</h3>
 </div>
 
-<form #buyersForm="ngForm" (ngSubmit)="createBuyer(buyersForm)" class="form-content" [ngStyle]="{'margin': '30px 0px'}">
+<form #buyersForm="ngForm" [formGroup]="form" (ngSubmit)="saveVendor()">
 	<md-tab-group>
 		<md-tab label="General">
-			<admin-vendors-tab-general> </admin-vendors-tab-general>
+			<admin-vendors-tab-general [general]="form.controls.general"> </admin-vendors-tab-general>
 		</md-tab>
-
-		<md-tab label="Commissions & fees">
-			<admin-vendors-tab-fees> </admin-vendors-tab-fees>
+		<md-tab label="Comissions & Fees">
+			<admin-vendors-tab-fees [fees]="form.controls.fees"> </admin-vendors-tab-fees>
 		</md-tab>
-
 		<md-tab label="Badges">
 			<admin-vendors-tab-badges> </admin-vendors-tab-badges>
 		</md-tab>
-
 		<md-tab label="User settings">
-			<admin-vendors-tab-user-settings> </admin-vendors-tab-user-settings>
+			<admin-vendors-tab-user-settings [settings]="form.controls.settings"> </admin-vendors-tab-user-settings>
 		</md-tab>
 	</md-tab-group>
 

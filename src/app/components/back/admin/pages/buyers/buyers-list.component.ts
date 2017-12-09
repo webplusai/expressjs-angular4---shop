@@ -1,9 +1,9 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/table';
-import { MdPaginator } from '@angular/material';
-import { MdSort } from '@angular/material';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Component, OnInit, ElementRef, ViewChild } 		from '@angular/core';
+import { DataSource } 										from '@angular/cdk/table';
+import { MdPaginator } 										from '@angular/material';
+import { MdSort } 											from '@angular/material';
+import { BehaviorSubject } 									from 'rxjs/BehaviorSubject';
+import { Observable } 										from 'rxjs/Observable';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
@@ -11,20 +11,8 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { CRUDService } from '../../../../../services/crud.service';
-
-import { TableData } from '../../../../helper/table-data/table-data';
-
-const userList = [
-	{customer_name: 'User1', image: 'avatar1.jpg', email: 'user1@email.com', customer_group: 'Group1', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User2', image: 'avatar1.jpg', email: 'user2@email.com', customer_group: 'Group2', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User3', image: 'avatar1.jpg', email: 'user3@email.com', customer_group: 'Group3', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User4', image: 'avatar1.jpg', email: 'user4@email.com', customer_group: 'Group4', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User5', image: 'avatar1.jpg', email: 'user5@email.com', customer_group: 'Group5', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User6', image: 'avatar1.jpg', email: 'user6@email.com', customer_group: 'Group6', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User7', image: 'avatar1.jpg', email: 'user7@email.com', customer_group: 'Group7', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'},
-	{customer_name: 'User8', image: 'avatar1.jpg', email: 'user8@email.com', customer_group: 'Group8', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>'}
-];
+import { CRUDService } 										from '../../../../../services/crud.service';
+import { TableData } 										from '../../../../helper/table-data/table-data';
 
 @Component({
 	selector: 'admin-buyers-list',
@@ -36,6 +24,8 @@ export class BuyersListComponent implements OnInit {
 	displayedColumns = ['customer_name', 'image', 'email', 'customer_group', 'status', 'ip', 'date_added', 'action'];
 	tableData = new TableData();
 	dataSource: UserDataSource | null;
+
+	statuses = [ 'No', 'Yes' ];
 
 	@ViewChild(MdPaginator) paginator: MdPaginator;
 	@ViewChild(MdSort) sort: MdSort;
@@ -51,11 +41,12 @@ export class BuyersListComponent implements OnInit {
 	constructor(private crudService: CRUDService) { }
 
 	ngOnInit() {
-		this.tableData.setData(userList);
-		this.dataSource = new UserDataSource(this.tableData, this.paginator, this.sort);
 
-		this.crudService.retrieve({ model_name: 'Buyer' }).subscribe(result => {
-			console.log(result);
+		this.crudService.retrieve( 'Buyer' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.tableData.setData(result.content);
+				this.dataSource = new UserDataSource(this.tableData, this.paginator, this.sort);
+			}
 		});
 
 		Observable.fromEvent(this.nameFilter.nativeElement, 'keyup')

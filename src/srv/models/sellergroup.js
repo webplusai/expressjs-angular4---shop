@@ -11,22 +11,16 @@ module.exports = function(mongoose, connection) {
 				type: String,
 				required: 'Description cannot be blank'
 			},
-			max_product_nubmer: Number
+			max_product_number: Number
 		},
-		commissions_fees: {
+		fees: {
 			sales_fee_fixed: Number,
 			sales_fee_percent: Number,
 			listing_fee_fixed: Number,
 			listing_fee_percent: Number,
-			listing_fee_payment: {
-				type: mongoose.Schema.Types.ObjectId,
-				ref: 'PaymentMethod'
-			},
-			singup_fee: Number,
-			signup_fee_payment: {
-				type: mongoose.Schema.Types.ObjectId,
-				ref: 'PaymentMethod'
-			}
+			listing_fee_payment: String,
+			signup_fee: Number,
+			signup_fee_payment: String
 		},
 		badges: [
 			{

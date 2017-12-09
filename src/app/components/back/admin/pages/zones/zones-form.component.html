@@ -1,0 +1,35 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Zone </span>
+	</h3>
+</div>
+
+
+<div>
+	<form #zoneForm="ngForm" (ngSubmit)="saveZone()" [formGroup]="form">
+		<md-form-field>
+			<input mdInput placeholder="Zone Name*" [formControl]="name">
+			<md-error *ngIf="name.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Zone Code" [formControl]="code">
+		</md-form-field>
+
+		<md-select placeholder="Country" [formControl]="country">
+			<md-option *ngFor="let country of countries" value="{{country._id}}"> {{ country.name }} </md-option>
+		</md-select>
+
+		<md-select placeholder="Status" [formControl]="status">
+			<md-option value="1"> Enabled </md-option>
+			<md-option value="0"> Disabled </md-option>
+		</md-select>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button class="submit-button"> Save Zone </button>
+		</div>
+	</form>
+</div>

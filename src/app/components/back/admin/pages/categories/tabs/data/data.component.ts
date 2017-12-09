@@ -50,9 +50,9 @@ export class CategoryDataComponent implements OnInit {
 	}
 
 	selectChange(component, list) {
-		var value = JSON.parse(component.value);
-		if (!this.isAlreadySelected(value, list))
-			list.push(value);
+		var id = JSON.parse(component.value);
+		if (!this.isAlreadySelected(id, list))
+			list.push(id);
 		component.setValue('');
 
 		console.log(this.data);

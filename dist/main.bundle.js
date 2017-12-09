@@ -48,7 +48,15 @@ var routes = [
     {
         path: 'admin',
         loadChildren: './components/back/admin/admin.module#AdminModule'
+    } /*,
+    {
+        path: 'buyer',
+        loadChildren: './components/back/buyer/buyer.module#BuyerModule'
     },
+    {
+        path: 'seller',
+        loadChildren: './components/back/seller/seller.module#SellerModule'
+    }*/
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {

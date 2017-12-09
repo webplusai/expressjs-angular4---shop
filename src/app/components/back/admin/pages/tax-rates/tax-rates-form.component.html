@@ -6,26 +6,33 @@
 </div>
 
 <div class="content-wrapper">
-	<md-form-field>
-		<input mdInput placeholder="Tax Name *">
-	</md-form-field>
+	<form #taxRateForm="ngForm" (ngSubmit)="saveTaxRate()" [formGroup]="form">
+		<md-form-field>
+			<input mdInput placeholder="Tax Name *" [formControl]="name">
+		</md-form-field>
 
-	<md-form-field>
-		<input mdInput placeholder="Tax Rate *">
-	</md-form-field>
+		<md-form-field>
+			<input mdInput placeholder="Tax Rate *" [formControl]="rate">
+		</md-form-field>
 
-	<md-select placeholder="Type">
-		<md-option value="Fixed Amount"> Fixed Amount </md-option>
-		<md-option value="Percentage"> Percentage </md-option>
-	</md-select>
+		<md-select placeholder="Type" [formControl]="type">
+			<md-option value="1"> Fixed Amount </md-option>
+			<md-option value="2"> Percentage </md-option>
+		</md-select>
 
-	<div class="md-checkbox-container">
-		<label> Customer Group </label>
-		<md-checkbox> Default </md-checkbox>
-	</div>
+		<div class="md-checkbox-container">
+			<label> Customer Group </label>
+			<div *ngFor="let customerGroup of customerGroups; let i = index">
+				<md-checkbox (change)="checkCustomerGroup($event, customerGroup)" [checked]="selectedCustomerGroups.indexOf(customerGroup._id) != -1"> {{ customerGroup.name }} </md-checkbox>
+			</div>
+		</div>
 
-	<md-select placeholder="Geo Zone">
-		<md-option value="UK Shipping"> UK Shipping </md-option>
-		<md-option value="UK VAT Zone"> UK VAT Zone </md-option>
-	</md-select>
+		<md-select placeholder="Geo Zone" [formControl]="geo_zone">
+			<md-option *ngFor="let geoZone of geoZones" value="{{geoZone._id}}"> {{ geoZone.name }} </md-option>
+		</md-select>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button class="submit-button"> Save Tax Rate </button>
+		</div>
+	</form>
 </div>

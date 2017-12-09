@@ -5,31 +5,27 @@
 	</h3>
 </div>
 
-<form #transactionsForm="ngForm" (ngSubmit)="createTransaction(transactionsForm)" [formGroup]="form" class="form-content" [ngStyle]="{'padding': '30px'}">
-	<md-select placeholder="From">
-		<md-option value="User1"> User1 </md-option>
-		<md-option value="User2"> User2 </md-option>
-		<md-option value="User3"> User3 </md-option>
+<form #transactionsForm="ngForm" (ngSubmit)="saveTransaction()" [formGroup]="form" class="form-content" [ngStyle]="{'padding': '30px'}">
+	<md-select placeholder="From" [formControl]="from">
+		<md-option *ngFor="let seller of sellers" value="{{seller._id}}"> {{ seller.general.nickname }} ( {{ seller.general.user ? seller.general.user.first_name + ' ' + seller.general.user.last_name : seller.general.first_name + ' ' + seller.general.last_name }} ) </md-option>
 	</md-select>
 
-	<md-select placeholder="To">
-		<md-option value="User1"> User1 </md-option>
-		<md-option value="User2"> User2 </md-option>
-		<md-option value="User3"> User3 </md-option>
+	<md-select placeholder="To" [formControl]="to">
+		<md-option *ngFor="let seller of sellers" value="{{seller._id}}"> {{ seller.general.nickname }} ( {{ seller.general.user ? seller.general.user.first_name + ' ' + seller.general.user.last_name : seller.general.first_name + ' ' + seller.general.last_name }} ) </md-option>
 	</md-select>
 
 	<md-form-field>
-		<input mdInput placeholder="Amount*" [formControl]="amountInput">
-		<md-error *ngIf="amountInput.hasError('required')">
+		<input mdInput placeholder="Amount*" [formControl]="amount">
+		<md-error *ngIf="amount.hasError('required')">
 			This field is <strong> required </strong>
 		</md-error>
 	</md-form-field>
 
 	<md-form-field>
-		<textarea mdInput placeholder="Description"></textarea>
+		<textarea mdInput placeholder="Description" [formControl]="description"></textarea>
 	</md-form-field>
 
-	<div class="submit-button" fxLayout="row" fxLayoutAlign="end center">
-		<button md-button [ngStyle]="{'background': 'rgb(0, 132, 71)', 'color': '#fff'}"> Create Transaction </button>
+	<div fxLayout="row" fxLayoutAlign="end center">
+		<button md-button class="submit-button"> Save Transaction </button>
 	</div>
 </form>

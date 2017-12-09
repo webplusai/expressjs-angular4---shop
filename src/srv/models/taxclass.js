@@ -1,7 +1,7 @@
 
 module.exports = function(mongoose, connection) {
 	var taxClassSchema = mongoose.Schema({
-		title: {
+		name: {
 			type: String,
 			required: 'Title cannot be blank'
 		},

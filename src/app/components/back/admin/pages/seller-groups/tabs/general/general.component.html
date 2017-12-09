@@ -1,3 +1,13 @@
-<p>
-  general works!
-</p>
+<div class="tab-general" [ngStyle]="{'padding': '30px'}" [formGroup]="general">
+	<md-form-field>
+		<input mdInput placeholder="Name *" formControlName="name">
+	</md-form-field>
+
+	<md-form-field>
+		<textarea mdInput placeholder="Description *" formControlName="description"></textarea>
+	</md-form-field>
+
+	<md-form-field>
+		<input mdInput placeholder="Max Product Number" formControlName="max_product_number">
+	</md-form-field>
+</div>

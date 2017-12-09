@@ -1,4 +1,6 @@
 
+var md5 = require('md5');
+
 module.exports = function(mongoose, connection) {
 
 	var buyerSchema = mongoose.Schema({
@@ -27,19 +29,15 @@ module.exports = function(mongoose, connection) {
 			type: String,
 			required: true
 		},
-		confirm_password: {
-			type: String,
-			required: true
-		},
-		newsletter: Boolean,
+		newsletter: String,
 		status: {
-			type: Number
+			type: String
 		},
 		approved: {
-			type: Boolean
+			type: String
 		},
 		safe:{
-			type: Boolean
+			type: String
 		},
 		addresses: [ {
 			first_name: {
@@ -79,6 +77,11 @@ module.exports = function(mongoose, connection) {
 			createdAt: 'created_at',
 			updatedAt: 'updated_at'
 		}
+	});
+
+	buyerSchema.pre('save', function(next) {
+		this.password = md5(this.password);
+		next();
 	});
 
 	return connection.model('Buyer', buyerSchema);

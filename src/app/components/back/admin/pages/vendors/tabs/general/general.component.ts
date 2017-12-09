@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
-import { FormControl, Validators, FormGroup } from '@angular/forms';
+import { Component, OnInit, Input } 					from '@angular/core';
+import { FormControl, Validators, FormGroup } 			from '@angular/forms';
+
+import { CRUDService } 									from 	'../../../../../../../services/crud.service';
 
 const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -10,46 +12,25 @@ const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA
 })
 export class VendorGeneralComponent implements OnInit {
 
-	constructor() { }
+	buyers = [];
+	seller_groups = [];
+
+	@Input() general: FormGroup;
+
+	constructor(private crudService: CRUDService) { }
 
 	ngOnInit() {
+		this.crudService.retrieve( 'Buyer' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.buyers = result.content;
+			}
+		});
+
+		this.crudService.retrieve( 'SellerGroup' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.seller_groups = result.content;
+			}
+		});
 	}
-
-	firstName = new FormControl('', [
-		Validators.required
-	]);
-
-	lastName=new FormControl('', [
-		Validators.required
-	]);
-
-	email = new FormControl('', [
-		Validators.required,
-		Validators.pattern(EMAIL_REGEX)
-	]);
-
-	password = new FormControl('', [
-		Validators.required
-	]);
-
-	confirm = new FormControl('', [
-		Validators.required
-	]);
-
-	nickname = new FormControl('', [
-		Validators.required
-	]);
-
-	tinyMCE = new FormControl('', []);
-
-	form = new FormGroup({
-		firstName	: this.firstName,
-		lastName	: this.lastName,
-		email 		: this.email,
-		password	: this.password,
-		confirm		: this.confirm,
-		nickname	: this.nickname,
-		tinyMCE		: this.tinyMCE
-	});
 
 }

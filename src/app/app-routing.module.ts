@@ -9,8 +9,8 @@ const routes: Routes = [
 	{
 		path: 'admin',
 		loadChildren: './components/back/admin/admin.module#AdminModule'
-	},
-	/*{
+	}/*,
+	{
 		path: 'buyer',
 		loadChildren: './components/back/buyer/buyer.module#BuyerModule'
 	},

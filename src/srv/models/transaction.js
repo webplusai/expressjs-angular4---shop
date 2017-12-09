@@ -2,13 +2,9 @@
 module.exports = function(mongoose, connection) {
 
 	var transactionSchema = mongoose.Schema({
-		from: {
+		seller: {
 			type: mongoose.Schema.Types.ObjectId,
-			ref: 'User'
-		},
-		to: {
-			type: mongoose.Schema.Types.ObjectId,
-			ref: 'User'
+			ref: 'Seller'
 		},
 		amount: Number,
 		description: String

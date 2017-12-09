@@ -1,9 +1,9 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/table';
-import { MdPaginator } from '@angular/material';
-import { MdSort } from '@angular/material';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Component, OnInit, ElementRef, ViewChild } 		from '@angular/core';
+import { DataSource } 										from '@angular/cdk/table';
+import { MdPaginator } 										from '@angular/material';
+import { MdSort } 											from '@angular/material';
+import { BehaviorSubject } 									from 'rxjs/BehaviorSubject';
+import { Observable } 										from 'rxjs/Observable';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
@@ -11,7 +11,8 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { TableData } from '../../../../helper/table-data/table-data';
+import { TableData } 										from '../../../../helper/table-data/table-data';
+import { CRUDService } 										from '../../../../../services/crud.service';
 
 const sellerList = [
 	{seller: 'Seller1', email: 'user1@email.com', products: 'Product1', sales: '1', earnings: '$100', balance: '$200', status: 'Enabled', date_created: '2017-09-03'},
@@ -47,19 +48,23 @@ export class VendorsListComponent implements OnInit {
 	@ViewChild('statusFilter')		statusFilter	: 	ElementRef;
 	@ViewChild('dateFilter')		dateFilter		: 	ElementRef;
 
-	constructor() { }
+	constructor(private crudService: CRUDService) { }
 
 	ngOnInit() {
-		this.tableData.setData(sellerList);
-		this.dataSource = new UserDataSource(this.tableData, this.paginator, this.sort);
+		this.crudService.retrieve( 'Seller' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.tableData.setData(result.content);
+				this.dataSource = new UserDataSource(this.tableData, this.paginator, this.sort);
 
-		Observable.fromEvent(this.sellerFilter.nativeElement, 'keyup')
-			.debounceTime(150)
-			.distinctUntilChanged()
-			.subscribe(() => {
-				if (!this.dataSource) return;
-				this.dataSource.sellerFilter = this.sellerFilter.nativeElement.value;
-			});
+				Observable.fromEvent(this.sellerFilter.nativeElement, 'keyup')
+				.debounceTime(150)
+				.distinctUntilChanged()
+				.subscribe(() => {
+					if (!this.dataSource) return;
+					this.dataSource.sellerFilter = this.sellerFilter.nativeElement.value;
+				});
+			}
+		});
 	}
 }
 

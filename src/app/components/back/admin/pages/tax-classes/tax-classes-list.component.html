@@ -15,14 +15,16 @@
 	<!-- Tax Class Title Column -->
 	<ng-container cdkColumnDef="tax_class_title">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Class Title </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.tax_class_title}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.name}} </md-cell>
 	</ng-container>
 
 	<!-- Action Column -->
 	<ng-container cdkColumnDef="action">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
 		<md-cell fxLayout="row" *cdkCellDef="let row">
-			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+			<a [routerLink]="['/admin/tax-classes/edit/' + row._id]">
+				<button class="action-button action-button-create" md-button><md-icon>create</md-icon></button>
+			</a>
 		</md-cell>
 	</ng-container>
 

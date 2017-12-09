@@ -1,9 +1,10 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/table';
-import { MdPaginator } from '@angular/material';
-import { MdSort } from '@angular/material';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Component, OnInit, ElementRef, ViewChild } 			from '@angular/core';
+import { DataSource } 											from '@angular/cdk/table';
+import { MdPaginator } 											from '@angular/material';
+import { MdSort } 												from '@angular/material';
+import { BehaviorSubject } 										from 'rxjs/BehaviorSubject';
+import { Observable } 											from 'rxjs/Observable';
+
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
@@ -11,7 +12,8 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { TableData } from '../../../../helper/table-data/table-data';
+import { TableData } 											from '../../../../helper/table-data/table-data';
+import { CRUDService } 											from 	'../../../../../services/crud.service';
 
 const taxRateList = [
 	{ tax_name: 'Eco Tax(-2.00)', tax_rate: '2.0000', type: 'Fixed Amount', geo_zone: 'UK VAT Zone', date_added: '21/09/2011', date_modified: '23/09/2011' },
@@ -26,17 +28,22 @@ const taxRateList = [
 export class TaxRateListComponent implements OnInit {
 
 	displayedColumns = ['tax_name', 'tax_rate', 'type', 'geo_zone', 'date_added', 'date_modified', 'action'];
+	taxRateTypes = [ '', 'Fixed Amount', 'Percentage' ];
 	tableData = new TableData();
 	dataSource: TaxRateDataSource | null;
 
 	@ViewChild(MdPaginator) paginator: MdPaginator;
 	@ViewChild(MdSort) sort: MdSort;
 
-	constructor() { }
+	constructor(private crudService: CRUDService) { }
 
 	ngOnInit() {
-		this.tableData.setData(taxRateList);
-		this.dataSource = new TaxRateDataSource(this.tableData, this.paginator, this.sort);
+		this.crudService.retrieve( 'TaxRate' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.tableData.setData(result.content);
+				this.dataSource = new TaxRateDataSource(this.tableData, this.paginator, this.sort);
+			}
+		});
 	}
 }
 

@@ -6,15 +6,21 @@
 </div>
 
 <div class="content-wrapper">
-	<md-tab-group>
-		<md-tab>
-			<admin-seller-groups-tab-general> </admin-seller-groups-tab-general>
-		</md-tab>
-		<md-tab>
-			<admin-seller-groups-tab-commissions-fees> </admin-seller-groups-tab-commissions-fees>
-		</md-tab>
-		<md-tab>
-			<admin-seller-groups-tab-badges> </admin-seller-groups-tab-badges>
-		</md-tab>
-	</md-tab-group>
+	<form #sellerGroupForm="ngForm" [formGroup]="form" (ngSubmit)="saveSellerGroup()">
+		<md-tab-group>
+			<md-tab label="General">
+				<admin-seller-groups-tab-general [general]="form.controls.general"> </admin-seller-groups-tab-general>
+			</md-tab>
+			<md-tab label="Comissions & Fees">
+				<admin-seller-groups-tab-commissions-fees [fees]="form.controls.fees"> </admin-seller-groups-tab-commissions-fees>
+			</md-tab>
+			<md-tab label="Badges">
+				<admin-seller-groups-tab-badges> </admin-seller-groups-tab-badges>
+			</md-tab>
+		</md-tab-group>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button class="submit-button"> Save Seller Group </button>
+		</div>
+	</form>
 </div>

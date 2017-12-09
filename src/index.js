@@ -10,10 +10,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use('/api', routes);
 
-// one.save(function(err) {
-// 	console.log(err);
-// });
-
 app.use('/node_modules', express.static(path.join(__dirname + '/../node_modules')));
 
 app.use('/scripts', express.static(path.join(__dirname + '/assets/js')));

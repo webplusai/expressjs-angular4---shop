@@ -2,14 +2,21 @@ var express = require('express');
 var router = express.Router();
 
 var models = require('../models/index.js');
+var populateList = require('../config/constants.js').populateList;
 
 router.get('/crud', function(req, res) {
 	var model_name = req.query.model;
 	var condition = req.query.condition;
+	var populate = req.query.populate;
 	
 	var query = models[model_name].find();
 	if (condition) {
 		query = query.where(condition);
+	}
+
+	// console.log(populateList[model_name]);
+	if (populateList[model_name]) {
+		populateList[model_name].forEach( function(model) { console.log(model); query = query.populate(model) } );
 	}
 
 	query.exec(function(err, result) {

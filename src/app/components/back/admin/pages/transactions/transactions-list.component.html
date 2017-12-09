@@ -49,7 +49,7 @@
 	<!-- Index Column -->
 	<ng-container cdkColumnDef="index">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> # </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.index}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row._id}} </md-cell>
 	</ng-container>
 
 	<!-- Image Column -->
@@ -63,13 +63,13 @@
 	<!-- Seller Column -->
 	<ng-container cdkColumnDef="seller">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.seller}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.seller.general.user ? row.seller.general.user.first_name + ' ' + row.seller.general.user.last_name : row.seller.general.first_name + ' ' + row.seller.general.last_name}} </md-cell>
 	</ng-container>
 
 	<!-- Net Amount Column -->
 	<ng-container cdkColumnDef="net_amount">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Net Amount </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.net_amount}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.amount}} </md-cell>
 	</ng-container>
 
 	<!-- Description Column -->

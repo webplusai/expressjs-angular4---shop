@@ -11,11 +11,7 @@ import { CRUDService } 											from 	'../../../../../services/crud.service';
 })
 export class CustomerGroupsFormComponent {
 
-	constructor(
-		private crudService: 	CRUDService,
-		private router: 		Router,
-		private route:			ActivatedRoute
-	) { }
+	private customerGroupId;
 
 	name 					= 	new FormControl('', [ Validators.required ]);
 	description 			= 	new FormControl('', []);
@@ -29,7 +25,11 @@ export class CustomerGroupsFormComponent {
 		sort_order: 			this.sort_order
 	});
 
-	private customerGroupId;
+	constructor(
+		private crudService: 	CRUDService,
+		private router: 		Router,
+		private route:			ActivatedRoute
+	) { }
 
 	ngOnInit() {
 		this.route.params.subscribe((params: Params) => {

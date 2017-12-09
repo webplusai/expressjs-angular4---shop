@@ -1,0 +1,53 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">list</md-icon> 
+		<span> Countries </span>
+	</h3>
+</div>
+
+<div class="action-buttons" [ngStyle]="{'margin-top': '30px'}">
+	<a [routerLink]="['/admin/countries/create']"><button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>add</md-icon></button></a>
+	<button class="action-button" md-button [ngStyle]="{'background': '#f56b6b'}"><md-icon>delete</md-icon></button>
+</div>
+
+<md-table #table [dataSource]="dataSource" mdSort [ngStyle]="{'margin-top': '10px'}">
+
+	<!-- Country Name Column -->
+	<ng-container cdkColumnDef="country_name">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Country Name </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.name}} </md-cell>
+	</ng-container>
+
+	<!-- ISO Code 2 Column -->
+	<ng-container cdkColumnDef="iso_code_2">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> ISO Code (2) </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.iso_code_2}} </md-cell>
+	</ng-container>
+
+	<!-- ISO Code 3 Column -->
+	<ng-container cdkColumnDef="iso_code_3">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> ISO Code (3) </md-header-cell>
+		<md-cell *cdkCellDef="let row"> {{row.iso_code_3}} </md-cell>
+	</ng-container>
+
+	<!-- Action Column -->
+	<ng-container cdkColumnDef="action">
+		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
+		<md-cell *cdkCellDef="let row"> 
+			<a [routerLink]="['/admin/countries/edit/' + row._id]">
+				<button class="action-button action-button-create" md-button><md-icon>create</md-icon></button>
+			</a>
+		</md-cell>
+	</ng-container>
+
+	<md-header-row *cdkHeaderRowDef="displayedColumns"></md-header-row>
+	<md-row *cdkRowDef="let row; columns: displayedColumns;"></md-row>
+</md-table>
+
+<md-paginator
+	[length]="tableData.data.length"
+	[pageIndex]="0"
+	[pageSize]="5"
+	[pageSizeOptions]="[5, 10, 25]">
+</md-paginator>
+

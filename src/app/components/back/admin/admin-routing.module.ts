@@ -26,6 +26,12 @@ import { RecurringOrdersListComponent } from './pages/recurring-orders/recurring
 import { RecurringOrdersFormComponent } from './pages/recurring-orders/recurring-orders-form.component';
 import { ReturnsListComponent } from './pages/returns/returns-list.component';
 import { ReturnsFormComponent } from './pages/returns/returns-form.component';
+import { ReturnActionsListComponent } from './pages/return-actions/return-actions-list.component';
+import { ReturnActionsFormComponent } from './pages/return-actions/return-actions-form.component';
+import { ReturnReasonsListComponent } from './pages/return-reasons/return-reasons-list.component';
+import { ReturnReasonsFormComponent } from './pages/return-reasons/return-reasons-form.component';
+import { ReturnStatusesListComponent } from './pages/return-statuses/return-statuses-list.component';
+import { ReturnStatusesFormComponent } from './pages/return-statuses/return-statuses-form.component';
 import { OrdersListComponent } from './pages/orders/orders-list.component';
 import { OrdersFormComponent } from './pages/orders/orders-form.component';
 import { SuperAdministratorListComponent } from './pages/super-administrator/super-administrator-list.component';
@@ -96,6 +102,10 @@ import { GeoZoneListComponent } from './pages/geo-zones/geo-zones-list.component
 import { GeoZoneFormComponent } from './pages/geo-zones/geo-zones-form.component';
 import { SellerGroupsListComponent } from './pages/seller-groups/seller-groups-list.component';
 import { SellerGroupsFormComponent } from './pages/seller-groups/seller-groups-form.component';
+import { CountriesListComponent } from './pages/countries/countries-list.component';
+import { CountriesFormComponent } from './pages/countries/countries-form.component';
+import { ZonesListComponent } from './pages/zones/zones-list.component';
+import { ZonesFormComponent } from './pages/zones/zones-form.component';
 
 const routes: Routes = [
 	{
@@ -123,12 +133,20 @@ const routes: Routes = [
 				component: BuyersFormComponent,
 			},
 			{
+				path: 'buyers/edit/:id',
+				component: BuyersFormComponent
+			},
+			{
 				path: 'vendors',
 				component: VendorsListComponent,
 			},
 			{
 				path: 'vendors/create',
 				component: VendorsFormComponent,
+			},
+			{
+				path: 'vendors/edit/:id',
+				component: VendorsFormComponent
 			},
 			{
 				path: 'categories',
@@ -213,6 +231,42 @@ const routes: Routes = [
 			{
 				path: 'returns/create',
 				component: ReturnsFormComponent,
+			},
+			{
+				path: 'return-actions',
+				component: ReturnActionsListComponent,
+			},
+			{
+				path: 'return-actions/create',
+				component: ReturnActionsFormComponent,
+			},
+			{
+				path: 'return-actions/edit/:id',
+				component: ReturnActionsFormComponent,
+			},
+			{
+				path: 'return-statuses',
+				component: ReturnStatusesListComponent,
+			},
+			{
+				path: 'return-statuses/create',
+				component: ReturnStatusesFormComponent,
+			},
+			{
+				path: 'return-statuses/edit/:id',
+				component: ReturnStatusesFormComponent,
+			},
+			{
+				path: 'return-reasons',
+				component: ReturnReasonsListComponent,
+			},
+			{
+				path: 'return-reasons/create',
+				component: ReturnReasonsFormComponent,
+			},
+			{
+				path: 'return-reasons/edit/:id',
+				component: ReturnReasonsFormComponent,
 			},
 			{
 				path: 'orders',
@@ -367,11 +421,19 @@ const routes: Routes = [
 				component: StockStatusesFormComponent
 			},
 			{
+				path: 'stock-statuses/edit/:id',
+				component: StockStatusesFormComponent
+			},
+			{
 				path: 'order-statuses',
 				component: OrderStatusesListComponent
 			},
 			{
 				path: 'order-statuses/create',
+				component: OrderStatusesFormComponent
+			},
+			{
+				path: 'order-statuses/edit/:id',
 				component: OrderStatusesFormComponent
 			},
 			{
@@ -491,11 +553,19 @@ const routes: Routes = [
 				component: TaxClassFormComponent
 			},
 			{
+				path: 'tax-classes/edit/:id',
+				component: TaxClassFormComponent
+			},
+			{
 				path: 'tax-rates',
 				component: TaxRateListComponent
 			},
 			{
 				path: 'tax-rates/create',
+				component: TaxRateFormComponent
+			},
+			{
+				path: 'tax-rates/edit/:id',
 				component: TaxRateFormComponent
 			},
 			{
@@ -517,6 +587,34 @@ const routes: Routes = [
 			{
 				path: 'seller-groups/create',
 				component: SellerGroupsFormComponent
+			},
+			{
+				path: 'seller-groups/edit/:id',
+				component: SellerGroupsFormComponent
+			},
+			{
+				path: 'countries',
+				component: CountriesListComponent
+			},
+			{
+				path: 'countries/create',
+				component: CountriesFormComponent
+			},
+			{
+				path: 'countries/edit/:id',
+				component: CountriesFormComponent
+			},
+			{
+				path: 'zones',
+				component: ZonesListComponent
+			},
+			{
+				path: 'zones/create',
+				component: ZonesFormComponent,
+			},
+			{
+				path: 'zones/edit/:id',
+				component: ZonesFormComponent
 			}
 		]
 	},

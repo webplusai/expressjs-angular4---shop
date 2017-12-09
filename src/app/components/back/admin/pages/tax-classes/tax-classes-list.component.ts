@@ -1,9 +1,10 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/table';
-import { MdPaginator } from '@angular/material';
-import { MdSort } from '@angular/material';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Component, OnInit, ElementRef, ViewChild } 		from '@angular/core';
+import { DataSource } 										from '@angular/cdk/table';
+import { MdPaginator } 										from '@angular/material';
+import { MdSort } 											from '@angular/material';
+import { BehaviorSubject } 									from 'rxjs/BehaviorSubject';
+import { Observable } 										from 'rxjs/Observable';
+
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
@@ -11,12 +12,8 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { TableData } from '../../../../helper/table-data/table-data';
-
-const taxClassList = [
-	{ tax_class_title: 'Downloadable Products' },
-	{ tax_class_title: 'Taxable Goods' }
-];
+import { TableData } 										from '../../../../helper/table-data/table-data';
+import { CRUDService } 										from '../../../../../services/crud.service';
 
 @Component({
 	selector: 'admin-tax-classes-list',
@@ -32,11 +29,15 @@ export class TaxClassListComponent implements OnInit {
 	@ViewChild(MdPaginator) paginator: MdPaginator;
 	@ViewChild(MdSort) sort: MdSort;
 
-	constructor() { }
+	constructor(private crudService: CRUDService) { }
 
 	ngOnInit() {
-		this.tableData.setData(taxClassList);
-		this.dataSource = new TaxClassDataSource(this.tableData, this.paginator, this.sort);
+		this.crudService.retrieve( 'TaxClass' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.tableData.setData(result.content);
+				this.dataSource = new TaxClassDataSource(this.tableData, this.paginator, this.sort);
+			}
+		});
 	}
 }
 

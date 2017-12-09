@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'admin-vendors-tab-user-settings',
-  templateUrl: './user-settings.component.html',
-  styleUrls: ['./user-settings.component.scss']
+	selector: 'admin-vendors-tab-user-settings',
+	templateUrl: './user-settings.component.html',
+	styleUrls: ['./user-settings.component.scss']
 })
 export class UserSettingsComponent implements OnInit {
 
-  constructor() { }
+	@Input() settings: FormGroup;
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

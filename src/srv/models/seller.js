@@ -1,33 +1,25 @@
 
+var md5 = require('md5');
+
 module.exports = function(mongoose, connection) {
 	var sellerSchema = mongoose.Schema({
-		user_data: {
+		general: {
 			user: {
 				type: mongoose.Schema.Types.ObjectId,
-				ref: 'User'
+				ref: 'Buyer'
 			},
 			first_name: {
 				type: String,
-				required: true,
 			},
 			last_name: {
 				type: String,
-				required: true
 			},
 			email: {
 				type: String,
-				required: true,
 			},
 			password: {
 				type: String,
-				required: true,
 			},
-			confirm_password: {
-				type: String,
-				required: true
-			}
-		},
-		seller_data: {
 			nickname: {
 				type: String,
 				required: true
@@ -37,40 +29,34 @@ module.exports = function(mongoose, connection) {
 				type: mongoose.Schema.Types.ObjectId,
 				ref: 'SellerGroup'
 			},
-			product_validation: Number,
+			product_validation: String,
 			description: {
 				english: String,
 				french: String,
 				german: String,
 				spanish: String
 			},
-			status: Number
+			status: String
 		},
-		fee: {
+		fees: {
 			sales_fee_fixed: Number,
 			sales_fee_percent: Number,
 			listing_fee_fixed: Number,
 			listing_fee_percent: Number,
-			payment_method: {
-				type: mongoose.Schema.Types.ObjectId,
-				ref: 'PaymentMethod'
-			}
+			listing_fee_method: String
 		},
 		badges: [ {
 			type: mongoose.Schema.Types.ObjectId,
 			ref: 'Badge'
 		} ],
-		user_settings: {
+		settings: {
 			full_name: String,
 			address_line1: String,
 			address_line2: String,
 			city: String,
 			state_province_region: String,
 			zip_postal_code: String,
-			country: [ {
-				type: mongoose.Schema.Types.ObjectId,
-				ref: 'Country'
-			} ],
+			country: String,
 			website: String,
 			company: String,
 			phone: String
@@ -115,6 +101,11 @@ module.exports = function(mongoose, connection) {
 			createdAt: 'created_at',
 			updatedAt: 'updated_at'
 		}
+	});
+
+	sellerSchema.pre('save', function(next) {
+		this.general.password = md5(this.general.password);
+		next();
 	});
 
 	return connection.model('Seller', sellerSchema);

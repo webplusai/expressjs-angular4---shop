@@ -1,5 +1,8 @@
-import { Component } from '@angular/core';
-import { FormControl, Validators, FormGroup } from '@angular/forms';
+import { Component } 											from 	'@angular/core';
+import { Router, ActivatedRoute, Params } 						from 	'@angular/router';
+import { FormGroup, Validators, FormControl } 					from 	'@angular/forms';
+
+import { CRUDService } 											from 	'../../../../../services/crud.service';
 
 const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
@@ -10,11 +13,17 @@ const EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA
 })
 export class BuyersFormComponent {
 
-	firstName = new FormControl('', [
+	private buyerId;
+
+	customerGroups = [];
+
+	customer_group = new FormControl('', []);
+
+	first_name = new FormControl('', [
 		Validators.required
 	]);
 
-	lastName=new FormControl('', [
+	last_name=new FormControl('', [
 		Validators.required
 	]);
 
@@ -27,24 +36,71 @@ export class BuyersFormComponent {
 		Validators.required
 	]);
 
+	fax = new FormControl('', []);
+
 	password = new FormControl('', [
 		Validators.required
 	]);
 
-	confirm = new FormControl('', [
+	confirm_password = new FormControl('', [
 		Validators.required
 	]);
 
+	newsletter = new FormControl('', []);
+
+	status = new FormControl('', []);
+
+	approved = new FormControl('', []);
+
+	safe = new FormControl('', []);
+
 	form = new FormGroup({
-		firstName	: this.firstName,
-		lastName	: this.lastName,
-		email 		: this.email,
-		telephone	: this.telephone,
-		password	: this.password,
-		confirm		: this.confirm
+		customer_group		:	this.customer_group,
+		first_name			: 	this.first_name,
+		last_name			: 	this.last_name,
+		email 				: 	this.email,
+		telephone			: 	this.telephone,
+		fax					:	this.fax,
+		password			: 	this.password,
+		confirm_password	: 	this.confirm_password,
+		newsletter			:	this.newsletter,
+		status				:	this.status,
+		approved			:	this.approved,
+		safe				:	this.safe
 	});
 
-	createBuyer(buyersForm) {
+	constructor(
+		private crudService: 	CRUDService,
+		private router: 		Router,
+		private route:			ActivatedRoute
+	) { }
 
+	ngOnInit() {
+		this.route.params.subscribe((params: Params) => {
+			this.buyerId = params['id'];
+
+			if (this.buyerId) {
+				this.crudService.retrieveOne( 'Buyer', this.buyerId )
+					.subscribe((result) => {
+						this.form.patchValue(result.content);
+					});
+			}
+		});
+
+		this.crudService.retrieve( 'CustomerGroup' )
+			.subscribe((result) => {
+				this.customerGroups = result.content;
+			});
+	}
+
+	saveBuyer() {
+		if (this.form.valid) {
+			this.form.value.model = 'Buyer';
+
+			let action = this.buyerId ? this.crudService.update( this.form.value, this.buyerId ) : this.crudService.create( this.form.value );
+			action.subscribe( buyer => {
+				this.router.navigate(['/admin/buyers']);
+			});
+		}
 	}
 }

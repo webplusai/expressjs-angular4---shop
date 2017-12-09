@@ -1,15 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'admin-seller-groups-tab-general',
-  templateUrl: './general.component.html',
-  styleUrls: ['./general.component.scss']
+	selector: 'admin-seller-groups-tab-general',
+	templateUrl: './general.component.html',
+	styleUrls: ['./general.component.scss']
 })
 export class SellerGroupGeneralComponent implements OnInit {
 
-  constructor() { }
+	@Input() general: FormGroup;
 
-  ngOnInit() {
-  }
+	constructor() { }
+
+	ngOnInit() {
+	}
 
 }

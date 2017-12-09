@@ -6,38 +6,43 @@
 </div>
 
 <div class="content-wrapper">
-	<md-form-field>
-		<input mdInput placeholder="Tax Class Title *">
-	</md-form-field>
+	<form #taxClassForm="ngForm" (ngSubmit)="saveTaxClass()" [formGroup]="form">
+		<md-form-field>
+			<input mdInput placeholder="Tax Class Title *" [formControl]="name">
+		</md-form-field>
 
-	<md-form-field>
-		<input mdInput placeholder="Description *">
-	</md-form-field>
+		<md-form-field>
+			<input mdInput placeholder="Description *" [formControl]="description">
+		</md-form-field>
+
+		<div class="hidden" fxLayout="row" fxLayoutAlign="end center">
+			<button md-button #saveButton class="submit-button"> Save Tax Class </button>
+		</div>
+	</form>
 
 	<md-table [dataSource]="dataSource">
 		<ng-container mdColumnDef="tax_rate">
 			<md-header-cell *mdHeaderCellDef> Tax Rate </md-header-cell>
 			<md-cell *mdCellDef="let element; let i = index">
-				<select *ngIf="!element.last" class="form-control" [(ngModel)]="taxClassesList[i].tax_rate">
-					<option value="Eco Tax (-2.00)"> Eco Tax (-2.00) </option>
-					<option value="VAT(20%)"> VAT(20%) </option>
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="taxRatesList[i].tax_rate">
+					<option *ngFor="let taxRate of taxRates" value="{{taxRate._id}}"> {{taxRate.name}} </option>
 				</select>
 			</md-cell>
 		</ng-container>
 		<ng-container mdColumnDef="based_on">
 			<md-header-cell *mdHeaderCellDef> Based On </md-header-cell>
 			<md-cell *mdCellDef="let element; let i = index">
-				<select *ngIf="!element.last" class="form-control" [(ngModel)]="taxClassesList[i].based_on">
-					<option value="Shipping Address"> Shipping Address </option>
-					<option value="Payment Address"> Payment Address </option>
-					<option value="Store Address"> Store Address </option>
+				<select *ngIf="!element.last" class="form-control" [(ngModel)]="taxRatesList[i].based_on">
+					<option value="1"> Shipping Address </option>
+					<option value="2"> Payment Address </option>
+					<option value="3"> Store Address </option>
 				</select>
 			</md-cell>
 		</ng-container>
 		<ng-container mdColumnDef="priority">
 			<md-header-cell *mdHeaderCellDef> Priority </md-header-cell>
 			<md-cell *mdCellDef="let element; let i = index">
-				<input *ngIf="!element.last" class="form-control" [(ngModel)]="taxClassesList[i].priority" placeholder="Priority">
+				<input *ngIf="!element.last" class="form-control" [(ngModel)]="taxRatesList[i].priority" placeholder="Priority">
 			</md-cell>
 		</ng-container>
 		<ng-container mdColumnDef="action">
@@ -55,4 +60,8 @@
 		<md-header-row *mdHeaderRowDef="displayedColumns"> </md-header-row>
 		<md-row *mdRowDef="let row; columns: displayedColumns;"> </md-row>
 	</md-table>
+
+	<div fxLayout="row" fxLayoutAlign="end center">
+		<button md-button class="submit-button" (click)="submitForm()"> Save Tax Class </button>
+	</div>
 </div>

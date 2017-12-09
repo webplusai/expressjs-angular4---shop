@@ -32,76 +32,86 @@ webpackJsonp(["admin.module"],{
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_recurring_orders_recurring_orders_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/recurring-orders/recurring-orders-form.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_returns_returns_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/returns/returns-list.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_returns_returns_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/returns/returns-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_orders_orders_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/orders-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_orders_orders_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/orders-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_super_administrator_super_administrator_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/super-administrator/super-administrator-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_super_administrator_super_administrator_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/super-administrator/super-administrator-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_moderators_moderators_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/moderators/moderators-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_moderators_moderators_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/moderators/moderators-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_staff_setting_staff_setting_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/staff-setting/staff-setting-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_staff_setting_staff_setting_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/staff-setting/staff-setting-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_affiliation_affiliation_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/affiliation/affiliation-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_affiliation_affiliation_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/affiliation/affiliation-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_adverts_adverts_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/adverts/adverts-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_adverts_adverts_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/adverts/adverts-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_message_message_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/message/message.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_comments_comments_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/comments/comments.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_media_media_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/media/media.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__pages_newsletter_newsletter_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/newsletter/newsletter.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__pages_slideshow_slideshow_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/slideshow/slideshow-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_slideshow_slideshow_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/slideshow/slideshow-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_partners_partners_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/partners/partners-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_partners_partners_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/partners/partners-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_collaboration_collaboration_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/collaboration/collaboration.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_shipping_setting_shipping_setting_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/shipping-setting/shipping-setting.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_shipping_report_shipping_report_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/shipping-report/shipping-report.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_subscription_plan_subscription_plan_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/subscription-plan/subscription-plan-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_subscription_plan_subscription_plan_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/subscription-plan/subscription-plan-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__pages_payments_payments_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/payments/payments-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__pages_payments_payments_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/payments/payments-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__pages_emhtv_emhtv_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/emhtv/emhtv.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__pages_maintenance_maintenance_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/maintenance/maintenance.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__pages_store_locations_store_locations_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/store-locations/store-locations-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__pages_store_locations_store_locations_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/store-locations/store-locations-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__pages_languages_languages_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/languages/languages-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__pages_languages_languages_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/languages/languages-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__pages_currencies_currencies_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/currencies/currencies-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__pages_currencies_currencies_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/currencies/currencies-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__pages_stock_statuses_stock_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__pages_stock_statuses_stock_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__pages_order_statuses_order_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__pages_order_statuses_order_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__pages_setting_setting_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/setting/setting-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__pages_setting_setting_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/setting/setting-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__pages_social_links_social_links_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/social-links/social-links.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__pages_badge_badge_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/badge/badge.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__pages_tax_tax_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax/tax-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__pages_tax_tax_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax/tax-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__pages_restoration_restoration_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/restoration/restoration.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__pages_debug_error_debug_error_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/debug-error/debug-error.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__pages_statistics_report_statistics_report_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/statistics-report.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__pages_language_editor_english_english_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/english/english-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__pages_language_editor_french_french_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/french/french-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__pages_language_editor_german_german_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/german/german-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__pages_language_editor_spanish_spanish_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/spanish/spanish-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__pages_filters_filters_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/filters/filters-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__pages_filters_filters_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/filters/filters-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__pages_options_options_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/options/options-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__pages_options_options_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/options/options-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__pages_customer_groups_customer_groups_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/customer-groups/customer-groups-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__pages_customer_groups_customer_groups_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/customer-groups/customer-groups-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__pages_length_classes_length_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/length-classes/length-classes-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__pages_length_classes_length_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/length-classes/length-classes-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__pages_weight_classes_weight_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/weight-classes/weight-classes-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__pages_weight_classes_weight_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/weight-classes/weight-classes-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__pages_tax_classes_tax_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__pages_tax_classes_tax_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__pages_tax_rates_tax_rates_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__pages_tax_rates_tax_rates_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__pages_geo_zones_geo_zones_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/geo-zones/geo-zones-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__pages_geo_zones_geo_zones_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/geo-zones/geo-zones-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__pages_seller_groups_seller_groups_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__pages_seller_groups_seller_groups_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_return_actions_return_actions_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-actions/return-actions-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_return_actions_return_actions_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-actions/return-actions-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_return_reasons_return_reasons_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_return_reasons_return_reasons_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_return_statuses_return_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_return_statuses_return_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_33__pages_orders_orders_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/orders-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__pages_orders_orders_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/orders-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__pages_super_administrator_super_administrator_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/super-administrator/super-administrator-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__pages_super_administrator_super_administrator_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/super-administrator/super-administrator-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__pages_moderators_moderators_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/moderators/moderators-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__pages_moderators_moderators_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/moderators/moderators-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_39__pages_staff_setting_staff_setting_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/staff-setting/staff-setting-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_staff_setting_staff_setting_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/staff-setting/staff-setting-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_affiliation_affiliation_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/affiliation/affiliation-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__pages_affiliation_affiliation_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/affiliation/affiliation-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__pages_adverts_adverts_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/adverts/adverts-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_adverts_adverts_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/adverts/adverts-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_message_message_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/message/message.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_comments_comments_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/comments/comments.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_media_media_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/media/media.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_newsletter_newsletter_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/newsletter/newsletter.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_slideshow_slideshow_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/slideshow/slideshow-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_slideshow_slideshow_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/slideshow/slideshow-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_partners_partners_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/partners/partners-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__pages_partners_partners_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/partners/partners-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__pages_collaboration_collaboration_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/collaboration/collaboration.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__pages_shipping_setting_shipping_setting_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/shipping-setting/shipping-setting.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__pages_shipping_report_shipping_report_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/shipping-report/shipping-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__pages_subscription_plan_subscription_plan_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/subscription-plan/subscription-plan-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__pages_subscription_plan_subscription_plan_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/subscription-plan/subscription-plan-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__pages_payments_payments_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/payments/payments-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__pages_payments_payments_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/payments/payments-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__pages_emhtv_emhtv_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/emhtv/emhtv.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__pages_maintenance_maintenance_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/maintenance/maintenance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__pages_store_locations_store_locations_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/store-locations/store-locations-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__pages_store_locations_store_locations_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/store-locations/store-locations-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__pages_languages_languages_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/languages/languages-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__pages_languages_languages_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/languages/languages-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__pages_currencies_currencies_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/currencies/currencies-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__pages_currencies_currencies_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/currencies/currencies-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__pages_stock_statuses_stock_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__pages_stock_statuses_stock_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__pages_order_statuses_order_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__pages_order_statuses_order_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__pages_setting_setting_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/setting/setting-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__pages_setting_setting_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/setting/setting-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__pages_social_links_social_links_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/social-links/social-links.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__pages_badge_badge_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/badge/badge.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__pages_tax_tax_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax/tax-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__pages_tax_tax_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax/tax-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__pages_restoration_restoration_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/restoration/restoration.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__pages_debug_error_debug_error_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/debug-error/debug-error.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__pages_statistics_report_statistics_report_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/statistics-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__pages_language_editor_english_english_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/english/english-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__pages_language_editor_french_french_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/french/french-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__pages_language_editor_german_german_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/german/german-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__pages_language_editor_spanish_spanish_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/spanish/spanish-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__pages_filters_filters_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/filters/filters-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__pages_filters_filters_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/filters/filters-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__pages_options_options_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/options/options-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__pages_options_options_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/options/options-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__pages_customer_groups_customer_groups_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/customer-groups/customer-groups-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__pages_customer_groups_customer_groups_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/customer-groups/customer-groups-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__pages_length_classes_length_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/length-classes/length-classes-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__pages_length_classes_length_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/length-classes/length-classes-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__pages_weight_classes_weight_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/weight-classes/weight-classes-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__pages_weight_classes_weight_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/weight-classes/weight-classes-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__pages_tax_classes_tax_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__pages_tax_classes_tax_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__pages_tax_rates_tax_rates_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__pages_tax_rates_tax_rates_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__pages_geo_zones_geo_zones_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/geo-zones/geo-zones-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_100__pages_geo_zones_geo_zones_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/geo-zones/geo-zones-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__pages_seller_groups_seller_groups_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__pages_seller_groups_seller_groups_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__pages_countries_countries_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/countries/countries-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__pages_countries_countries_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/countries/countries-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__pages_zones_zones_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/zones/zones-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__pages_zones_zones_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/zones/zones-form.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -111,6 +121,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -234,12 +254,20 @@ var routes = [
                 component: __WEBPACK_IMPORTED_MODULE_6__pages_buyers_buyers_form_component__["a" /* BuyersFormComponent */],
             },
             {
+                path: 'buyers/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_6__pages_buyers_buyers_form_component__["a" /* BuyersFormComponent */]
+            },
+            {
                 path: 'vendors',
                 component: __WEBPACK_IMPORTED_MODULE_7__pages_vendors_vendors_list_component__["a" /* VendorsListComponent */],
             },
             {
                 path: 'vendors/create',
                 component: __WEBPACK_IMPORTED_MODULE_8__pages_vendors_vendors_form_component__["a" /* VendorsFormComponent */],
+            },
+            {
+                path: 'vendors/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_8__pages_vendors_vendors_form_component__["a" /* VendorsFormComponent */]
             },
             {
                 path: 'categories',
@@ -326,308 +354,388 @@ var routes = [
                 component: __WEBPACK_IMPORTED_MODULE_26__pages_returns_returns_form_component__["a" /* ReturnsFormComponent */],
             },
             {
+                path: 'return-actions',
+                component: __WEBPACK_IMPORTED_MODULE_27__pages_return_actions_return_actions_list_component__["a" /* ReturnActionsListComponent */],
+            },
+            {
+                path: 'return-actions/create',
+                component: __WEBPACK_IMPORTED_MODULE_28__pages_return_actions_return_actions_form_component__["a" /* ReturnActionsFormComponent */],
+            },
+            {
+                path: 'return-actions/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_28__pages_return_actions_return_actions_form_component__["a" /* ReturnActionsFormComponent */],
+            },
+            {
+                path: 'return-statuses',
+                component: __WEBPACK_IMPORTED_MODULE_31__pages_return_statuses_return_statuses_list_component__["a" /* ReturnStatusesListComponent */],
+            },
+            {
+                path: 'return-statuses/create',
+                component: __WEBPACK_IMPORTED_MODULE_32__pages_return_statuses_return_statuses_form_component__["a" /* ReturnStatusesFormComponent */],
+            },
+            {
+                path: 'return-statuses/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_32__pages_return_statuses_return_statuses_form_component__["a" /* ReturnStatusesFormComponent */],
+            },
+            {
+                path: 'return-reasons',
+                component: __WEBPACK_IMPORTED_MODULE_29__pages_return_reasons_return_reasons_list_component__["a" /* ReturnReasonsListComponent */],
+            },
+            {
+                path: 'return-reasons/create',
+                component: __WEBPACK_IMPORTED_MODULE_30__pages_return_reasons_return_reasons_form_component__["a" /* ReturnReasonsFormComponent */],
+            },
+            {
+                path: 'return-reasons/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_30__pages_return_reasons_return_reasons_form_component__["a" /* ReturnReasonsFormComponent */],
+            },
+            {
                 path: 'orders',
-                component: __WEBPACK_IMPORTED_MODULE_27__pages_orders_orders_list_component__["a" /* OrdersListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_33__pages_orders_orders_list_component__["a" /* OrdersListComponent */],
             },
             {
                 path: 'orders/create',
-                component: __WEBPACK_IMPORTED_MODULE_28__pages_orders_orders_form_component__["a" /* OrdersFormComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_34__pages_orders_orders_form_component__["a" /* OrdersFormComponent */],
             },
             {
                 path: 'super-administrator',
-                component: __WEBPACK_IMPORTED_MODULE_29__pages_super_administrator_super_administrator_list_component__["a" /* SuperAdministratorListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_35__pages_super_administrator_super_administrator_list_component__["a" /* SuperAdministratorListComponent */],
             },
             {
                 path: 'super-administrator/create',
-                component: __WEBPACK_IMPORTED_MODULE_30__pages_super_administrator_super_administrator_form_component__["a" /* SuperAdministratorFormComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_36__pages_super_administrator_super_administrator_form_component__["a" /* SuperAdministratorFormComponent */],
             },
             {
                 path: 'moderators',
-                component: __WEBPACK_IMPORTED_MODULE_31__pages_moderators_moderators_list_component__["a" /* ModeratorsListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_37__pages_moderators_moderators_list_component__["a" /* ModeratorsListComponent */],
             },
             {
                 path: 'moderators/create',
-                component: __WEBPACK_IMPORTED_MODULE_32__pages_moderators_moderators_form_component__["a" /* ModeratorsFormComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_38__pages_moderators_moderators_form_component__["a" /* ModeratorsFormComponent */],
             },
             {
                 path: 'staff-setting',
-                component: __WEBPACK_IMPORTED_MODULE_33__pages_staff_setting_staff_setting_list_component__["a" /* StaffSettingListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_39__pages_staff_setting_staff_setting_list_component__["a" /* StaffSettingListComponent */],
             },
             {
                 path: 'staff-setting/create',
-                component: __WEBPACK_IMPORTED_MODULE_34__pages_staff_setting_staff_setting_form_component__["a" /* StaffSettingFormComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_40__pages_staff_setting_staff_setting_form_component__["a" /* StaffSettingFormComponent */],
             },
             {
                 path: 'affiliation',
-                component: __WEBPACK_IMPORTED_MODULE_35__pages_affiliation_affiliation_list_component__["a" /* AffiliationListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_41__pages_affiliation_affiliation_list_component__["a" /* AffiliationListComponent */],
             },
             {
                 path: 'affiliation/create',
-                component: __WEBPACK_IMPORTED_MODULE_36__pages_affiliation_affiliation_form_component__["a" /* AffiliationFormComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_42__pages_affiliation_affiliation_form_component__["a" /* AffiliationFormComponent */],
             },
             {
                 path: 'adverts',
-                component: __WEBPACK_IMPORTED_MODULE_37__pages_adverts_adverts_list_component__["a" /* AdvertsListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_43__pages_adverts_adverts_list_component__["a" /* AdvertsListComponent */],
             },
             {
                 path: 'adverts/create',
-                component: __WEBPACK_IMPORTED_MODULE_38__pages_adverts_adverts_form_component__["a" /* AdvertsFormComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_44__pages_adverts_adverts_form_component__["a" /* AdvertsFormComponent */],
             },
             {
                 path: 'message',
-                component: __WEBPACK_IMPORTED_MODULE_39__pages_message_message_component__["a" /* MessageComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_45__pages_message_message_component__["a" /* MessageComponent */],
             },
             {
                 path: 'comments',
-                component: __WEBPACK_IMPORTED_MODULE_40__pages_comments_comments_component__["a" /* CommentsComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_46__pages_comments_comments_component__["a" /* CommentsComponent */],
             },
             {
                 path: 'media',
-                component: __WEBPACK_IMPORTED_MODULE_41__pages_media_media_component__["a" /* MediaComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_47__pages_media_media_component__["a" /* MediaComponent */],
             },
             {
                 path: 'newsletter',
-                component: __WEBPACK_IMPORTED_MODULE_42__pages_newsletter_newsletter_component__["a" /* NewsLetterComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_48__pages_newsletter_newsletter_component__["a" /* NewsLetterComponent */],
             },
             {
                 path: 'slideshow',
-                component: __WEBPACK_IMPORTED_MODULE_43__pages_slideshow_slideshow_list_component__["a" /* SlideshowListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_49__pages_slideshow_slideshow_list_component__["a" /* SlideshowListComponent */],
             },
             {
                 path: 'slideshow/:id',
-                component: __WEBPACK_IMPORTED_MODULE_44__pages_slideshow_slideshow_form_component__["a" /* SlideshowFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_50__pages_slideshow_slideshow_form_component__["a" /* SlideshowFormComponent */]
             },
             {
                 path: 'partners',
-                component: __WEBPACK_IMPORTED_MODULE_45__pages_partners_partners_list_component__["a" /* PartnersListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_51__pages_partners_partners_list_component__["a" /* PartnersListComponent */],
             },
             {
                 path: 'partners/:id',
-                component: __WEBPACK_IMPORTED_MODULE_46__pages_partners_partners_form_component__["a" /* PartnersFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_52__pages_partners_partners_form_component__["a" /* PartnersFormComponent */]
             },
             {
                 path: 'collaboration',
-                component: __WEBPACK_IMPORTED_MODULE_47__pages_collaboration_collaboration_component__["a" /* CollaborationComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_53__pages_collaboration_collaboration_component__["a" /* CollaborationComponent */],
             },
             {
                 path: 'shipping-setting',
-                component: __WEBPACK_IMPORTED_MODULE_48__pages_shipping_setting_shipping_setting_component__["a" /* ShippingSettingComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_54__pages_shipping_setting_shipping_setting_component__["a" /* ShippingSettingComponent */],
             },
             {
                 path: 'shipping-report',
-                component: __WEBPACK_IMPORTED_MODULE_49__pages_shipping_report_shipping_report_component__["a" /* ShippingReportComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_55__pages_shipping_report_shipping_report_component__["a" /* ShippingReportComponent */]
             },
             {
                 path: 'subscription-plan',
-                component: __WEBPACK_IMPORTED_MODULE_50__pages_subscription_plan_subscription_plan_list_component__["a" /* SubscriptionPlanListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_56__pages_subscription_plan_subscription_plan_list_component__["a" /* SubscriptionPlanListComponent */],
             },
             {
                 path: 'subscription-plan/create',
-                component: __WEBPACK_IMPORTED_MODULE_51__pages_subscription_plan_subscription_plan_form_component__["a" /* SubscriptionPlanFormComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_57__pages_subscription_plan_subscription_plan_form_component__["a" /* SubscriptionPlanFormComponent */],
             },
             {
                 path: 'payments',
-                component: __WEBPACK_IMPORTED_MODULE_52__pages_payments_payments_list_component__["a" /* PaymentsListComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_58__pages_payments_payments_list_component__["a" /* PaymentsListComponent */],
             },
             {
                 path: 'payments/create',
-                component: __WEBPACK_IMPORTED_MODULE_53__pages_payments_payments_form_component__["a" /* PaymentsFormComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_59__pages_payments_payments_form_component__["a" /* PaymentsFormComponent */],
             },
             {
                 path: 'payments/edit/:id',
-                component: __WEBPACK_IMPORTED_MODULE_53__pages_payments_payments_form_component__["a" /* PaymentsFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_59__pages_payments_payments_form_component__["a" /* PaymentsFormComponent */]
             },
             {
                 path: 'emh-tv',
-                component: __WEBPACK_IMPORTED_MODULE_54__pages_emhtv_emhtv_component__["a" /* EMHTVComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_60__pages_emhtv_emhtv_component__["a" /* EMHTVComponent */],
             },
             {
                 path: 'landing-page',
-                component: __WEBPACK_IMPORTED_MODULE_55__pages_maintenance_maintenance_component__["a" /* MaintenanceComponent */],
+                component: __WEBPACK_IMPORTED_MODULE_61__pages_maintenance_maintenance_component__["a" /* MaintenanceComponent */],
             },
             {
                 path: 'store-locations',
-                component: __WEBPACK_IMPORTED_MODULE_56__pages_store_locations_store_locations_list_component__["a" /* StoreLocationsListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_62__pages_store_locations_store_locations_list_component__["a" /* StoreLocationsListComponent */]
             },
             {
                 path: 'store-locations/create',
-                component: __WEBPACK_IMPORTED_MODULE_57__pages_store_locations_store_locations_form_component__["a" /* StoreLocationsFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_63__pages_store_locations_store_locations_form_component__["a" /* StoreLocationsFormComponent */]
             },
             {
                 path: 'languages',
-                component: __WEBPACK_IMPORTED_MODULE_58__pages_languages_languages_list_component__["a" /* LanguagesListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_64__pages_languages_languages_list_component__["a" /* LanguagesListComponent */]
             },
             {
                 path: 'languages/create',
-                component: __WEBPACK_IMPORTED_MODULE_59__pages_languages_languages_form_component__["a" /* LanguagesFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_65__pages_languages_languages_form_component__["a" /* LanguagesFormComponent */]
             },
             {
                 path: 'currencies',
-                component: __WEBPACK_IMPORTED_MODULE_60__pages_currencies_currencies_list_component__["a" /* CurrenciesListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_66__pages_currencies_currencies_list_component__["a" /* CurrenciesListComponent */]
             },
             {
                 path: 'currencies/create',
-                component: __WEBPACK_IMPORTED_MODULE_61__pages_currencies_currencies_form_component__["a" /* CurrenciesFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_67__pages_currencies_currencies_form_component__["a" /* CurrenciesFormComponent */]
             },
             {
                 path: 'stock-statuses',
-                component: __WEBPACK_IMPORTED_MODULE_62__pages_stock_statuses_stock_statuses_list_component__["a" /* StockStatusesListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_68__pages_stock_statuses_stock_statuses_list_component__["a" /* StockStatusesListComponent */]
             },
             {
                 path: 'stock-statuses/create',
-                component: __WEBPACK_IMPORTED_MODULE_63__pages_stock_statuses_stock_statuses_form_component__["a" /* StockStatusesFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_69__pages_stock_statuses_stock_statuses_form_component__["a" /* StockStatusesFormComponent */]
+            },
+            {
+                path: 'stock-statuses/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_69__pages_stock_statuses_stock_statuses_form_component__["a" /* StockStatusesFormComponent */]
             },
             {
                 path: 'order-statuses',
-                component: __WEBPACK_IMPORTED_MODULE_64__pages_order_statuses_order_statuses_list_component__["a" /* OrderStatusesListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_70__pages_order_statuses_order_statuses_list_component__["a" /* OrderStatusesListComponent */]
             },
             {
                 path: 'order-statuses/create',
-                component: __WEBPACK_IMPORTED_MODULE_65__pages_order_statuses_order_statuses_form_component__["a" /* OrderStatusesFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_71__pages_order_statuses_order_statuses_form_component__["a" /* OrderStatusesFormComponent */]
+            },
+            {
+                path: 'order-statuses/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_71__pages_order_statuses_order_statuses_form_component__["a" /* OrderStatusesFormComponent */]
             },
             {
                 path: 'setting',
-                component: __WEBPACK_IMPORTED_MODULE_66__pages_setting_setting_list_component__["a" /* SettingListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_72__pages_setting_setting_list_component__["a" /* SettingListComponent */]
             },
             {
                 path: 'setting/create',
-                component: __WEBPACK_IMPORTED_MODULE_67__pages_setting_setting_form_component__["a" /* SettingFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_73__pages_setting_setting_form_component__["a" /* SettingFormComponent */]
             },
             {
                 path: 'social-links',
-                component: __WEBPACK_IMPORTED_MODULE_68__pages_social_links_social_links_component__["a" /* SocialLinksComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_74__pages_social_links_social_links_component__["a" /* SocialLinksComponent */]
             },
             {
                 path: 'badge',
-                component: __WEBPACK_IMPORTED_MODULE_69__pages_badge_badge_component__["a" /* BadgeComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_75__pages_badge_badge_component__["a" /* BadgeComponent */]
             },
             {
                 path: 'tax',
-                component: __WEBPACK_IMPORTED_MODULE_70__pages_tax_tax_list_component__["a" /* TaxListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_76__pages_tax_tax_list_component__["a" /* TaxListComponent */]
             },
             {
                 path: 'tax/create',
-                component: __WEBPACK_IMPORTED_MODULE_71__pages_tax_tax_form_component__["a" /* TaxFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_77__pages_tax_tax_form_component__["a" /* TaxFormComponent */]
             },
             {
                 path: 'restoration',
-                component: __WEBPACK_IMPORTED_MODULE_72__pages_restoration_restoration_component__["a" /* RestorationComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_78__pages_restoration_restoration_component__["a" /* RestorationComponent */]
             },
             {
                 path: 'debug-error',
-                component: __WEBPACK_IMPORTED_MODULE_73__pages_debug_error_debug_error_component__["a" /* DebugErrorComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_79__pages_debug_error_debug_error_component__["a" /* DebugErrorComponent */]
             },
             {
                 path: 'statistics',
-                component: __WEBPACK_IMPORTED_MODULE_74__pages_statistics_report_statistics_report_component__["a" /* StatisticsReportComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_80__pages_statistics_report_statistics_report_component__["a" /* StatisticsReportComponent */]
             },
             {
                 path: 'language-editor/english',
-                component: __WEBPACK_IMPORTED_MODULE_75__pages_language_editor_english_english_list_component__["a" /* EnglishListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_81__pages_language_editor_english_english_list_component__["a" /* EnglishListComponent */]
             },
             {
                 path: 'language-editor/french',
-                component: __WEBPACK_IMPORTED_MODULE_76__pages_language_editor_french_french_list_component__["a" /* FrenchListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_82__pages_language_editor_french_french_list_component__["a" /* FrenchListComponent */]
             },
             {
                 path: 'language-editor/german',
-                component: __WEBPACK_IMPORTED_MODULE_77__pages_language_editor_german_german_list_component__["a" /* GermanListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_83__pages_language_editor_german_german_list_component__["a" /* GermanListComponent */]
             },
             {
                 path: 'language-editor/spanish',
-                component: __WEBPACK_IMPORTED_MODULE_78__pages_language_editor_spanish_spanish_list_component__["a" /* SpanishListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_84__pages_language_editor_spanish_spanish_list_component__["a" /* SpanishListComponent */]
             },
             {
                 path: 'filters',
-                component: __WEBPACK_IMPORTED_MODULE_79__pages_filters_filters_list_component__["a" /* FiltersListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_85__pages_filters_filters_list_component__["a" /* FiltersListComponent */]
             },
             {
                 path: 'filters/create',
-                component: __WEBPACK_IMPORTED_MODULE_80__pages_filters_filters_form_component__["a" /* FiltersFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_86__pages_filters_filters_form_component__["a" /* FiltersFormComponent */]
             },
             {
                 path: 'filters/edit/:id',
-                component: __WEBPACK_IMPORTED_MODULE_80__pages_filters_filters_form_component__["a" /* FiltersFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_86__pages_filters_filters_form_component__["a" /* FiltersFormComponent */]
             },
             {
                 path: 'options',
-                component: __WEBPACK_IMPORTED_MODULE_81__pages_options_options_list_component__["a" /* OptionsListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_87__pages_options_options_list_component__["a" /* OptionsListComponent */]
             },
             {
                 path: 'options/create',
-                component: __WEBPACK_IMPORTED_MODULE_82__pages_options_options_form_component__["a" /* OptionsFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_88__pages_options_options_form_component__["a" /* OptionsFormComponent */]
             },
             {
                 path: 'customer-groups',
-                component: __WEBPACK_IMPORTED_MODULE_83__pages_customer_groups_customer_groups_list_component__["a" /* CustomerGroupsListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_89__pages_customer_groups_customer_groups_list_component__["a" /* CustomerGroupsListComponent */]
             },
             {
                 path: 'customer-groups/create',
-                component: __WEBPACK_IMPORTED_MODULE_84__pages_customer_groups_customer_groups_form_component__["a" /* CustomerGroupsFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_90__pages_customer_groups_customer_groups_form_component__["a" /* CustomerGroupsFormComponent */]
             },
             {
                 path: 'customer-groups/edit/:id',
-                component: __WEBPACK_IMPORTED_MODULE_84__pages_customer_groups_customer_groups_form_component__["a" /* CustomerGroupsFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_90__pages_customer_groups_customer_groups_form_component__["a" /* CustomerGroupsFormComponent */]
             },
             {
                 path: 'length-classes',
-                component: __WEBPACK_IMPORTED_MODULE_85__pages_length_classes_length_classes_list_component__["a" /* LengthClassListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_91__pages_length_classes_length_classes_list_component__["a" /* LengthClassListComponent */]
             },
             {
                 path: 'length-classes/create',
-                component: __WEBPACK_IMPORTED_MODULE_86__pages_length_classes_length_classes_form_component__["a" /* LengthClassFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_92__pages_length_classes_length_classes_form_component__["a" /* LengthClassFormComponent */]
             },
             {
                 path: 'length-classes/edit/:id',
-                component: __WEBPACK_IMPORTED_MODULE_86__pages_length_classes_length_classes_form_component__["a" /* LengthClassFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_92__pages_length_classes_length_classes_form_component__["a" /* LengthClassFormComponent */]
             },
             {
                 path: 'weight-classes',
-                component: __WEBPACK_IMPORTED_MODULE_87__pages_weight_classes_weight_classes_list_component__["a" /* WeightClassListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_93__pages_weight_classes_weight_classes_list_component__["a" /* WeightClassListComponent */]
             },
             {
                 path: 'weight-classes/create',
-                component: __WEBPACK_IMPORTED_MODULE_88__pages_weight_classes_weight_classes_form_component__["a" /* WeightClassFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_94__pages_weight_classes_weight_classes_form_component__["a" /* WeightClassFormComponent */]
             },
             {
                 path: 'weight-classes/edit/:id',
-                component: __WEBPACK_IMPORTED_MODULE_88__pages_weight_classes_weight_classes_form_component__["a" /* WeightClassFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_94__pages_weight_classes_weight_classes_form_component__["a" /* WeightClassFormComponent */]
             },
             {
                 path: 'tax-classes',
-                component: __WEBPACK_IMPORTED_MODULE_89__pages_tax_classes_tax_classes_list_component__["a" /* TaxClassListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_95__pages_tax_classes_tax_classes_list_component__["a" /* TaxClassListComponent */]
             },
             {
                 path: 'tax-classes/create',
-                component: __WEBPACK_IMPORTED_MODULE_90__pages_tax_classes_tax_classes_form_component__["a" /* TaxClassFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_96__pages_tax_classes_tax_classes_form_component__["a" /* TaxClassFormComponent */]
+            },
+            {
+                path: 'tax-classes/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_96__pages_tax_classes_tax_classes_form_component__["a" /* TaxClassFormComponent */]
             },
             {
                 path: 'tax-rates',
-                component: __WEBPACK_IMPORTED_MODULE_91__pages_tax_rates_tax_rates_list_component__["a" /* TaxRateListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_97__pages_tax_rates_tax_rates_list_component__["a" /* TaxRateListComponent */]
             },
             {
                 path: 'tax-rates/create',
-                component: __WEBPACK_IMPORTED_MODULE_92__pages_tax_rates_tax_rates_form_component__["a" /* TaxRateFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_98__pages_tax_rates_tax_rates_form_component__["a" /* TaxRateFormComponent */]
+            },
+            {
+                path: 'tax-rates/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_98__pages_tax_rates_tax_rates_form_component__["a" /* TaxRateFormComponent */]
             },
             {
                 path: 'geo-zones',
-                component: __WEBPACK_IMPORTED_MODULE_93__pages_geo_zones_geo_zones_list_component__["a" /* GeoZoneListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_99__pages_geo_zones_geo_zones_list_component__["a" /* GeoZoneListComponent */]
             },
             {
                 path: 'geo-zones/create',
-                component: __WEBPACK_IMPORTED_MODULE_94__pages_geo_zones_geo_zones_form_component__["a" /* GeoZoneFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_100__pages_geo_zones_geo_zones_form_component__["a" /* GeoZoneFormComponent */]
             },
             {
                 path: 'geo-zones/edit/:id',
-                component: __WEBPACK_IMPORTED_MODULE_94__pages_geo_zones_geo_zones_form_component__["a" /* GeoZoneFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_100__pages_geo_zones_geo_zones_form_component__["a" /* GeoZoneFormComponent */]
             },
             {
                 path: 'seller-groups',
-                component: __WEBPACK_IMPORTED_MODULE_95__pages_seller_groups_seller_groups_list_component__["a" /* SellerGroupsListComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_101__pages_seller_groups_seller_groups_list_component__["a" /* SellerGroupsListComponent */]
             },
             {
                 path: 'seller-groups/create',
-                component: __WEBPACK_IMPORTED_MODULE_96__pages_seller_groups_seller_groups_form_component__["a" /* SellerGroupsFormComponent */]
+                component: __WEBPACK_IMPORTED_MODULE_102__pages_seller_groups_seller_groups_form_component__["a" /* SellerGroupsFormComponent */]
+            },
+            {
+                path: 'seller-groups/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_102__pages_seller_groups_seller_groups_form_component__["a" /* SellerGroupsFormComponent */]
+            },
+            {
+                path: 'countries',
+                component: __WEBPACK_IMPORTED_MODULE_103__pages_countries_countries_list_component__["a" /* CountriesListComponent */]
+            },
+            {
+                path: 'countries/create',
+                component: __WEBPACK_IMPORTED_MODULE_104__pages_countries_countries_form_component__["a" /* CountriesFormComponent */]
+            },
+            {
+                path: 'countries/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_104__pages_countries_countries_form_component__["a" /* CountriesFormComponent */]
+            },
+            {
+                path: 'zones',
+                component: __WEBPACK_IMPORTED_MODULE_105__pages_zones_zones_list_component__["a" /* ZonesListComponent */]
+            },
+            {
+                path: 'zones/create',
+                component: __WEBPACK_IMPORTED_MODULE_106__pages_zones_zones_form_component__["a" /* ZonesFormComponent */],
+            },
+            {
+                path: 'zones/edit/:id',
+                component: __WEBPACK_IMPORTED_MODULE_106__pages_zones_zones_form_component__["a" /* ZonesFormComponent */]
             }
         ]
     },
@@ -793,131 +901,151 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_40__pages_recurring_orders_recurring_orders_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/recurring-orders/recurring-orders-form.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_41__pages_returns_returns_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/returns/returns-list.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_42__pages_returns_returns_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/returns/returns-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__pages_orders_orders_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/orders-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_orders_orders_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/orders-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_orders_tabs_customer_details_customer_details_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/customer-details/customer-details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_orders_tabs_products_products_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/products/products.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_orders_tabs_payment_details_payment_details_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/payment-details/payment-details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_orders_tabs_totals_totals_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/totals/totals.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_orders_tabs_shipping_details_shipping_details_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/shipping-details/shipping-details.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_super_administrator_super_administrator_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/super-administrator/super-administrator-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_super_administrator_super_administrator_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/super-administrator/super-administrator-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__pages_moderators_moderators_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/moderators/moderators-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__pages_moderators_moderators_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/moderators/moderators-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__pages_staff_setting_staff_setting_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/staff-setting/staff-setting-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__pages_staff_setting_staff_setting_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/staff-setting/staff-setting-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__pages_affiliation_affiliation_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/affiliation/affiliation-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__pages_affiliation_affiliation_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/affiliation/affiliation-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__pages_adverts_adverts_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/adverts/adverts-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__pages_adverts_adverts_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/adverts/adverts-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__pages_message_message_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/message/message.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__pages_message_tabs_compose_email_compose_email_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/message/tabs/compose-email/compose-email.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__pages_message_tabs_inbox_inbox_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/message/tabs/inbox/inbox.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__pages_comments_comments_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/comments/comments.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__pages_media_media_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/media/media.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__pages_newsletter_newsletter_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/newsletter/newsletter.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__pages_slideshow_slideshow_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/slideshow/slideshow-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__pages_slideshow_slideshow_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/slideshow/slideshow-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__pages_partners_partners_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/partners/partners-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__pages_partners_partners_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/partners/partners-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__pages_collaboration_collaboration_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/collaboration/collaboration.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__pages_shipping_setting_shipping_setting_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/shipping-setting/shipping-setting.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__pages_subscription_plan_subscription_plan_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/subscription-plan/subscription-plan-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__pages_subscription_plan_subscription_plan_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/subscription-plan/subscription-plan-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__pages_payments_payments_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/payments/payments-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__pages_payments_payments_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/payments/payments-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__pages_emhtv_emhtv_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/emhtv/emhtv.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__pages_products_tabs_option_option_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/option.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__pages_products_tabs_recurring_recurring_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/recurring/recurring.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__pages_products_tabs_discount_discount_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/discount/discount.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__pages_products_tabs_special_special_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/special/special.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__pages_products_tabs_image_image_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/image/image.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__pages_products_tabs_reward_points_reward_points_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/reward-points/reward-points.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__pages_products_tabs_option_tabs_checkbox_checkbox_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/checkbox/checkbox.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__pages_products_tabs_option_tabs_date_date_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/date/date.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__pages_products_tabs_option_tabs_date_time_date_time_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/date-time/date-time.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__pages_products_tabs_option_tabs_delivery_date_delivery_date_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/delivery-date/delivery-date.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__pages_products_tabs_option_tabs_file_file_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/file/file.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__pages_dashboard_mini_statistics_mini_statistics_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/mini-statistics/mini-statistics.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__pages_dashboard_calendar_calendar_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/calendar/calendar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__pages_dashboard_chat_chat_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/chat/chat.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__pages_dashboard_statistics_statistics_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/statistics/statistics.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__pages_dashboard_notification_notification_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/notification/notification.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__pages_dashboard_latest_members_latest_members_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/latest-members/latest-members.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__pages_dashboard_earning_graph_morris_morris_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/earning-graph/morris/morris.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__pages_dashboard_earning_graph_vector_vector_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/earning-graph/vector/vector.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__pages_dashboard_monthly_expense_monthly_expense_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/monthly-expense/monthly-expense.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__pages_dashboard_daily_visitors_daily_visitors_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/daily-visitors/daily-visitors.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__pages_dashboard_top_advertise_top_advertise_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/top-advertise/top-advertise.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__pages_dashboard_daily_sales_daily_sales_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/daily-sales/daily-sales.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_100__pages_dashboard_monthly_stats_monthly_stats_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/monthly-stats/monthly-stats.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__pages_dashboard_sell_sell_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/sell/sell.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__pages_dashboard_prospective_label_prospective_label_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/prospective-label/prospective-label.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__pages_dashboard_weather_weather_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/weather/weather.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__pages_maintenance_maintenance_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/maintenance/maintenance.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__pages_store_locations_store_locations_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/store-locations/store-locations-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__pages_store_locations_store_locations_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/store-locations/store-locations-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__pages_languages_languages_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/languages/languages-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_108__pages_languages_languages_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/languages/languages-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__pages_currencies_currencies_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/currencies/currencies-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__pages_currencies_currencies_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/currencies/currencies-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__pages_stock_statuses_stock_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__pages_stock_statuses_stock_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__pages_order_statuses_order_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__pages_order_statuses_order_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__pages_setting_setting_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/setting/setting-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__pages_setting_setting_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/setting/setting-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__pages_social_links_social_links_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/social-links/social-links.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__pages_badge_badge_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/badge/badge.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__pages_tax_tax_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax/tax-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_120__pages_tax_tax_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax/tax-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_121__pages_restoration_restoration_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/restoration/restoration.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_122__pages_debug_error_debug_error_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/debug-error/debug-error.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_123__pages_statistics_report_statistics_report_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/statistics-report.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_124__pages_statistics_report_report_summary_report_summary_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/report-summary/report-summary.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_125__pages_statistics_report_revenue_over_time_revenue_over_time_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/revenue-over-time/revenue-over-time.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_126__pages_statistics_report_statistic_right_sidebar_statistic_right_sidebar_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/statistic-right-sidebar/statistic-right-sidebar.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_127__pages_statistics_report_sales_team_performance_sales_team_performance_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/sales-team-performance/sales-team-performance.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_128__pages_statistics_report_revenue_by_quarter_revenue_by_quarter_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/revenue-by-quarter/revenue-by-quarter.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_129__pages_shipping_report_shipping_report_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/shipping-report/shipping-report.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_130__pages_language_editor_english_english_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/english/english-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_131__pages_language_editor_french_french_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/french/french-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_132__pages_language_editor_german_german_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/german/german-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_133__pages_language_editor_spanish_spanish_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/spanish/spanish-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_134__pages_categories_tabs_general_general_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/categories/tabs/general/general.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_135__pages_categories_tabs_data_data_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/categories/tabs/data/data.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_136__pages_categories_tabs_fees_fees_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/categories/tabs/fees/fees.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_137__pages_vendors_tabs_general_general_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/general/general.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_138__pages_vendors_tabs_fees_fees_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/fees/fees.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_139__pages_vendors_tabs_badges_badges_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/badges/badges.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_140__pages_vendors_tabs_user_settings_user_settings_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/user-settings/user-settings.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_141__pages_filters_filters_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/filters/filters-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_142__pages_filters_filters_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/filters/filters-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_143__pages_options_options_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/options/options-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_144__pages_options_options_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/options/options-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_145__pages_customer_groups_customer_groups_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/customer-groups/customer-groups-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_146__pages_customer_groups_customer_groups_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/customer-groups/customer-groups-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_147__pages_length_classes_length_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/length-classes/length-classes-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_148__pages_length_classes_length_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/length-classes/length-classes-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_149__pages_weight_classes_weight_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/weight-classes/weight-classes-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_150__pages_weight_classes_weight_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/weight-classes/weight-classes-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_151__pages_tax_classes_tax_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_152__pages_tax_classes_tax_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_153__pages_tax_rates_tax_rates_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_154__pages_tax_rates_tax_rates_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_155__pages_geo_zones_geo_zones_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/geo-zones/geo-zones-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_156__pages_geo_zones_geo_zones_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/geo-zones/geo-zones-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_157__pages_seller_groups_seller_groups_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-list.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_158__pages_seller_groups_seller_groups_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-form.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_159__pages_seller_groups_tabs_general_general_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/tabs/general/general.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_160__pages_seller_groups_tabs_comissions_fees_comissions_fees_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/tabs/comissions-fees/comissions-fees.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_161__pages_seller_groups_tabs_badges_badges_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/tabs/badges/badges.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_43__pages_return_actions_return_actions_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-actions/return-actions-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_44__pages_return_actions_return_actions_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-actions/return-actions-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_45__pages_return_reasons_return_reasons_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_46__pages_return_reasons_return_reasons_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_47__pages_return_statuses_return_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_48__pages_return_statuses_return_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_49__pages_orders_orders_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/orders-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_50__pages_orders_orders_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/orders-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_51__pages_orders_tabs_customer_details_customer_details_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/customer-details/customer-details.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_52__pages_orders_tabs_products_products_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/products/products.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__pages_orders_tabs_payment_details_payment_details_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/payment-details/payment-details.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__pages_orders_tabs_totals_totals_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/totals/totals.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__pages_orders_tabs_shipping_details_shipping_details_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/orders/tabs/shipping-details/shipping-details.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__pages_super_administrator_super_administrator_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/super-administrator/super-administrator-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_57__pages_super_administrator_super_administrator_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/super-administrator/super-administrator-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_58__pages_moderators_moderators_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/moderators/moderators-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_59__pages_moderators_moderators_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/moderators/moderators-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_60__pages_staff_setting_staff_setting_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/staff-setting/staff-setting-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_61__pages_staff_setting_staff_setting_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/staff-setting/staff-setting-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_62__pages_affiliation_affiliation_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/affiliation/affiliation-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_63__pages_affiliation_affiliation_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/affiliation/affiliation-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_64__pages_adverts_adverts_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/adverts/adverts-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_65__pages_adverts_adverts_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/adverts/adverts-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_66__pages_message_message_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/message/message.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_67__pages_message_tabs_compose_email_compose_email_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/message/tabs/compose-email/compose-email.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_68__pages_message_tabs_inbox_inbox_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/message/tabs/inbox/inbox.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_69__pages_comments_comments_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/comments/comments.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_70__pages_media_media_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/media/media.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_71__pages_newsletter_newsletter_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/newsletter/newsletter.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_72__pages_slideshow_slideshow_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/slideshow/slideshow-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_73__pages_slideshow_slideshow_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/slideshow/slideshow-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_74__pages_partners_partners_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/partners/partners-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_75__pages_partners_partners_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/partners/partners-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_76__pages_collaboration_collaboration_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/collaboration/collaboration.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_77__pages_shipping_setting_shipping_setting_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/shipping-setting/shipping-setting.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_78__pages_subscription_plan_subscription_plan_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/subscription-plan/subscription-plan-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_79__pages_subscription_plan_subscription_plan_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/subscription-plan/subscription-plan-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_80__pages_payments_payments_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/payments/payments-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_81__pages_payments_payments_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/payments/payments-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_82__pages_emhtv_emhtv_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/emhtv/emhtv.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_83__pages_products_tabs_option_option_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/option.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_84__pages_products_tabs_recurring_recurring_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/recurring/recurring.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_85__pages_products_tabs_discount_discount_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/discount/discount.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_86__pages_products_tabs_special_special_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/special/special.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_87__pages_products_tabs_image_image_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/image/image.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_88__pages_products_tabs_reward_points_reward_points_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/reward-points/reward-points.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_89__pages_products_tabs_option_tabs_checkbox_checkbox_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/checkbox/checkbox.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_90__pages_products_tabs_option_tabs_date_date_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/date/date.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_91__pages_products_tabs_option_tabs_date_time_date_time_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/date-time/date-time.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_92__pages_products_tabs_option_tabs_delivery_date_delivery_date_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/delivery-date/delivery-date.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_93__pages_products_tabs_option_tabs_file_file_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/products/tabs/option/tabs/file/file.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_94__pages_dashboard_mini_statistics_mini_statistics_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/mini-statistics/mini-statistics.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_95__pages_dashboard_calendar_calendar_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/calendar/calendar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_96__pages_dashboard_chat_chat_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/chat/chat.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_97__pages_dashboard_statistics_statistics_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/statistics/statistics.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_98__pages_dashboard_notification_notification_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/notification/notification.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_99__pages_dashboard_latest_members_latest_members_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/latest-members/latest-members.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_100__pages_dashboard_earning_graph_morris_morris_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/earning-graph/morris/morris.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_101__pages_dashboard_earning_graph_vector_vector_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/earning-graph/vector/vector.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_102__pages_dashboard_monthly_expense_monthly_expense_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/monthly-expense/monthly-expense.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_103__pages_dashboard_daily_visitors_daily_visitors_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/daily-visitors/daily-visitors.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_104__pages_dashboard_top_advertise_top_advertise_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/top-advertise/top-advertise.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_105__pages_dashboard_daily_sales_daily_sales_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/daily-sales/daily-sales.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_106__pages_dashboard_monthly_stats_monthly_stats_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/monthly-stats/monthly-stats.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_107__pages_dashboard_sell_sell_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/sell/sell.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_108__pages_dashboard_prospective_label_prospective_label_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/prospective-label/prospective-label.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_109__pages_dashboard_weather_weather_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/dashboard/weather/weather.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__pages_maintenance_maintenance_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/maintenance/maintenance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__pages_store_locations_store_locations_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/store-locations/store-locations-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__pages_store_locations_store_locations_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/store-locations/store-locations-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_113__pages_languages_languages_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/languages/languages-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_114__pages_languages_languages_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/languages/languages-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_115__pages_currencies_currencies_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/currencies/currencies-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__pages_currencies_currencies_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/currencies/currencies-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__pages_stock_statuses_stock_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__pages_stock_statuses_stock_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_119__pages_order_statuses_order_statuses_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_120__pages_order_statuses_order_statuses_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_121__pages_setting_setting_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/setting/setting-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_122__pages_setting_setting_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/setting/setting-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_123__pages_social_links_social_links_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/social-links/social-links.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_124__pages_badge_badge_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/badge/badge.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_125__pages_tax_tax_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax/tax-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_126__pages_tax_tax_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax/tax-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_127__pages_restoration_restoration_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/restoration/restoration.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_128__pages_debug_error_debug_error_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/debug-error/debug-error.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_129__pages_statistics_report_statistics_report_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/statistics-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_130__pages_statistics_report_report_summary_report_summary_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/report-summary/report-summary.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_131__pages_statistics_report_revenue_over_time_revenue_over_time_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/revenue-over-time/revenue-over-time.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_132__pages_statistics_report_statistic_right_sidebar_statistic_right_sidebar_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/statistic-right-sidebar/statistic-right-sidebar.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_133__pages_statistics_report_sales_team_performance_sales_team_performance_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/sales-team-performance/sales-team-performance.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_134__pages_statistics_report_revenue_by_quarter_revenue_by_quarter_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/statistics-report/revenue-by-quarter/revenue-by-quarter.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_135__pages_shipping_report_shipping_report_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/shipping-report/shipping-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_136__pages_language_editor_english_english_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/english/english-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_137__pages_language_editor_french_french_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/french/french-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_138__pages_language_editor_german_german_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/german/german-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_139__pages_language_editor_spanish_spanish_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/language-editor/spanish/spanish-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_140__pages_categories_tabs_general_general_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/categories/tabs/general/general.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_141__pages_categories_tabs_data_data_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/categories/tabs/data/data.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_142__pages_categories_tabs_fees_fees_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/categories/tabs/fees/fees.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_143__pages_vendors_tabs_general_general_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/general/general.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_144__pages_vendors_tabs_fees_fees_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/fees/fees.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_145__pages_vendors_tabs_badges_badges_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/badges/badges.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_146__pages_vendors_tabs_user_settings_user_settings_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/user-settings/user-settings.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_147__pages_filters_filters_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/filters/filters-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_148__pages_filters_filters_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/filters/filters-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_149__pages_options_options_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/options/options-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_150__pages_options_options_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/options/options-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_151__pages_customer_groups_customer_groups_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/customer-groups/customer-groups-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_152__pages_customer_groups_customer_groups_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/customer-groups/customer-groups-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_153__pages_length_classes_length_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/length-classes/length-classes-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_154__pages_length_classes_length_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/length-classes/length-classes-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_155__pages_weight_classes_weight_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/weight-classes/weight-classes-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_156__pages_weight_classes_weight_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/weight-classes/weight-classes-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_157__pages_tax_classes_tax_classes_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_158__pages_tax_classes_tax_classes_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_159__pages_tax_rates_tax_rates_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_160__pages_tax_rates_tax_rates_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_161__pages_geo_zones_geo_zones_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/geo-zones/geo-zones-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_162__pages_geo_zones_geo_zones_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/geo-zones/geo-zones-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_163__pages_seller_groups_seller_groups_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_164__pages_seller_groups_seller_groups_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_165__pages_seller_groups_tabs_general_general_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/tabs/general/general.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_166__pages_seller_groups_tabs_comissions_fees_comissions_fees_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/tabs/comissions-fees/comissions-fees.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_167__pages_seller_groups_tabs_badges_badges_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/tabs/badges/badges.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_168__pages_countries_countries_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/countries/countries-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_169__pages_countries_countries_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/countries/countries-form.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_170__pages_zones_zones_list_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/zones/zones-list.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_171__pages_zones_zones_form_component__ = __webpack_require__("../../../../../src/app/components/back/admin/pages/zones/zones-form.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1138,125 +1266,135 @@ AdminModule = __decorate([
             __WEBPACK_IMPORTED_MODULE_40__pages_recurring_orders_recurring_orders_form_component__["a" /* RecurringOrdersFormComponent */],
             __WEBPACK_IMPORTED_MODULE_41__pages_returns_returns_list_component__["a" /* ReturnsListComponent */],
             __WEBPACK_IMPORTED_MODULE_42__pages_returns_returns_form_component__["a" /* ReturnsFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_43__pages_orders_orders_list_component__["a" /* OrdersListComponent */],
-            __WEBPACK_IMPORTED_MODULE_44__pages_orders_orders_form_component__["a" /* OrdersFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_45__pages_orders_tabs_customer_details_customer_details_component__["a" /* CustomerDetailsComponent */],
-            __WEBPACK_IMPORTED_MODULE_46__pages_orders_tabs_products_products_component__["a" /* ProductsComponent */],
-            __WEBPACK_IMPORTED_MODULE_47__pages_orders_tabs_payment_details_payment_details_component__["a" /* PaymentDetailsComponent */],
-            __WEBPACK_IMPORTED_MODULE_48__pages_orders_tabs_totals_totals_component__["a" /* TotalsComponent */],
-            __WEBPACK_IMPORTED_MODULE_49__pages_orders_tabs_shipping_details_shipping_details_component__["a" /* ShippingDetailsComponent */],
-            __WEBPACK_IMPORTED_MODULE_50__pages_super_administrator_super_administrator_list_component__["a" /* SuperAdministratorListComponent */],
-            __WEBPACK_IMPORTED_MODULE_51__pages_super_administrator_super_administrator_form_component__["a" /* SuperAdministratorFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_52__pages_moderators_moderators_list_component__["a" /* ModeratorsListComponent */],
-            __WEBPACK_IMPORTED_MODULE_53__pages_moderators_moderators_form_component__["a" /* ModeratorsFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_54__pages_staff_setting_staff_setting_list_component__["a" /* StaffSettingListComponent */],
-            __WEBPACK_IMPORTED_MODULE_55__pages_staff_setting_staff_setting_form_component__["a" /* StaffSettingFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_56__pages_affiliation_affiliation_list_component__["a" /* AffiliationListComponent */],
-            __WEBPACK_IMPORTED_MODULE_57__pages_affiliation_affiliation_form_component__["a" /* AffiliationFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_58__pages_adverts_adverts_list_component__["a" /* AdvertsListComponent */],
-            __WEBPACK_IMPORTED_MODULE_59__pages_adverts_adverts_form_component__["a" /* AdvertsFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_60__pages_message_message_component__["a" /* MessageComponent */],
-            __WEBPACK_IMPORTED_MODULE_61__pages_message_tabs_compose_email_compose_email_component__["a" /* ComposeEmailComponent */],
-            __WEBPACK_IMPORTED_MODULE_62__pages_message_tabs_inbox_inbox_component__["a" /* InboxComponent */],
-            __WEBPACK_IMPORTED_MODULE_63__pages_comments_comments_component__["a" /* CommentsComponent */],
-            __WEBPACK_IMPORTED_MODULE_64__pages_media_media_component__["a" /* MediaComponent */],
-            __WEBPACK_IMPORTED_MODULE_65__pages_newsletter_newsletter_component__["a" /* NewsLetterComponent */],
-            __WEBPACK_IMPORTED_MODULE_66__pages_slideshow_slideshow_list_component__["a" /* SlideshowListComponent */],
-            __WEBPACK_IMPORTED_MODULE_67__pages_slideshow_slideshow_form_component__["a" /* SlideshowFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_68__pages_partners_partners_list_component__["a" /* PartnersListComponent */],
-            __WEBPACK_IMPORTED_MODULE_69__pages_partners_partners_form_component__["a" /* PartnersFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_70__pages_collaboration_collaboration_component__["a" /* CollaborationComponent */],
-            __WEBPACK_IMPORTED_MODULE_71__pages_shipping_setting_shipping_setting_component__["a" /* ShippingSettingComponent */],
-            __WEBPACK_IMPORTED_MODULE_72__pages_subscription_plan_subscription_plan_list_component__["a" /* SubscriptionPlanListComponent */],
-            __WEBPACK_IMPORTED_MODULE_73__pages_subscription_plan_subscription_plan_form_component__["a" /* SubscriptionPlanFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_74__pages_payments_payments_list_component__["a" /* PaymentsListComponent */],
-            __WEBPACK_IMPORTED_MODULE_75__pages_payments_payments_form_component__["a" /* PaymentsFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_76__pages_emhtv_emhtv_component__["a" /* EMHTVComponent */],
-            __WEBPACK_IMPORTED_MODULE_77__pages_products_tabs_option_option_component__["a" /* OptionComponent */],
-            __WEBPACK_IMPORTED_MODULE_78__pages_products_tabs_recurring_recurring_component__["a" /* RecurringComponent */],
-            __WEBPACK_IMPORTED_MODULE_79__pages_products_tabs_discount_discount_component__["a" /* DiscountComponent */],
-            __WEBPACK_IMPORTED_MODULE_80__pages_products_tabs_special_special_component__["a" /* SpecialComponent */],
-            __WEBPACK_IMPORTED_MODULE_81__pages_products_tabs_image_image_component__["a" /* ImageComponent */],
-            __WEBPACK_IMPORTED_MODULE_82__pages_products_tabs_reward_points_reward_points_component__["a" /* RewardPointsComponent */],
-            __WEBPACK_IMPORTED_MODULE_83__pages_products_tabs_option_tabs_checkbox_checkbox_component__["a" /* CheckboxComponent */],
-            __WEBPACK_IMPORTED_MODULE_84__pages_products_tabs_option_tabs_date_date_component__["a" /* DateComponent */],
-            __WEBPACK_IMPORTED_MODULE_85__pages_products_tabs_option_tabs_date_time_date_time_component__["a" /* DateTimeComponent */],
-            __WEBPACK_IMPORTED_MODULE_86__pages_products_tabs_option_tabs_delivery_date_delivery_date_component__["a" /* DeliveryDateComponent */],
-            __WEBPACK_IMPORTED_MODULE_87__pages_products_tabs_option_tabs_file_file_component__["a" /* FileComponent */],
-            __WEBPACK_IMPORTED_MODULE_88__pages_dashboard_mini_statistics_mini_statistics_component__["a" /* MiniStatisticsComponent */],
-            __WEBPACK_IMPORTED_MODULE_89__pages_dashboard_calendar_calendar_component__["a" /* CalendarComponent */],
-            __WEBPACK_IMPORTED_MODULE_90__pages_dashboard_chat_chat_component__["a" /* ChatComponent */],
-            __WEBPACK_IMPORTED_MODULE_91__pages_dashboard_statistics_statistics_component__["a" /* StatisticsComponent */],
-            __WEBPACK_IMPORTED_MODULE_92__pages_dashboard_notification_notification_component__["a" /* NotificationComponent */],
-            __WEBPACK_IMPORTED_MODULE_93__pages_dashboard_latest_members_latest_members_component__["a" /* LatestMembersComponent */],
-            __WEBPACK_IMPORTED_MODULE_94__pages_dashboard_earning_graph_morris_morris_component__["a" /* MorrisComponent */],
-            __WEBPACK_IMPORTED_MODULE_95__pages_dashboard_earning_graph_vector_vector_component__["a" /* VectorComponent */],
-            __WEBPACK_IMPORTED_MODULE_96__pages_dashboard_monthly_expense_monthly_expense_component__["a" /* MonthlyExpenseComponent */],
-            __WEBPACK_IMPORTED_MODULE_97__pages_dashboard_daily_visitors_daily_visitors_component__["a" /* DailyVisitorsComponent */],
-            __WEBPACK_IMPORTED_MODULE_98__pages_dashboard_top_advertise_top_advertise_component__["a" /* TopAdvertiseComponent */],
-            __WEBPACK_IMPORTED_MODULE_99__pages_dashboard_daily_sales_daily_sales_component__["a" /* DailySalesComponent */],
-            __WEBPACK_IMPORTED_MODULE_100__pages_dashboard_monthly_stats_monthly_stats_component__["a" /* MonthlyStatsComponent */],
-            __WEBPACK_IMPORTED_MODULE_101__pages_dashboard_sell_sell_component__["a" /* SellComponent */],
-            __WEBPACK_IMPORTED_MODULE_102__pages_dashboard_prospective_label_prospective_label_component__["a" /* ProspectiveLabelComponent */],
-            __WEBPACK_IMPORTED_MODULE_103__pages_dashboard_weather_weather_component__["a" /* WeatherComponent */],
-            __WEBPACK_IMPORTED_MODULE_104__pages_maintenance_maintenance_component__["a" /* MaintenanceComponent */],
-            __WEBPACK_IMPORTED_MODULE_105__pages_store_locations_store_locations_list_component__["a" /* StoreLocationsListComponent */],
-            __WEBPACK_IMPORTED_MODULE_106__pages_store_locations_store_locations_form_component__["a" /* StoreLocationsFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_107__pages_languages_languages_list_component__["a" /* LanguagesListComponent */],
-            __WEBPACK_IMPORTED_MODULE_108__pages_languages_languages_form_component__["a" /* LanguagesFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_109__pages_currencies_currencies_list_component__["a" /* CurrenciesListComponent */],
-            __WEBPACK_IMPORTED_MODULE_110__pages_currencies_currencies_form_component__["a" /* CurrenciesFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_111__pages_stock_statuses_stock_statuses_list_component__["a" /* StockStatusesListComponent */],
-            __WEBPACK_IMPORTED_MODULE_112__pages_stock_statuses_stock_statuses_form_component__["a" /* StockStatusesFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_113__pages_order_statuses_order_statuses_list_component__["a" /* OrderStatusesListComponent */],
-            __WEBPACK_IMPORTED_MODULE_114__pages_order_statuses_order_statuses_form_component__["a" /* OrderStatusesFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_115__pages_setting_setting_list_component__["a" /* SettingListComponent */],
-            __WEBPACK_IMPORTED_MODULE_116__pages_setting_setting_form_component__["a" /* SettingFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_117__pages_social_links_social_links_component__["a" /* SocialLinksComponent */],
-            __WEBPACK_IMPORTED_MODULE_118__pages_badge_badge_component__["a" /* BadgeComponent */],
-            __WEBPACK_IMPORTED_MODULE_119__pages_tax_tax_list_component__["a" /* TaxListComponent */],
-            __WEBPACK_IMPORTED_MODULE_120__pages_tax_tax_form_component__["a" /* TaxFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_121__pages_restoration_restoration_component__["a" /* RestorationComponent */],
-            __WEBPACK_IMPORTED_MODULE_122__pages_debug_error_debug_error_component__["a" /* DebugErrorComponent */],
-            __WEBPACK_IMPORTED_MODULE_123__pages_statistics_report_statistics_report_component__["a" /* StatisticsReportComponent */],
-            __WEBPACK_IMPORTED_MODULE_124__pages_statistics_report_report_summary_report_summary_component__["a" /* ReportSummaryComponent */],
-            __WEBPACK_IMPORTED_MODULE_125__pages_statistics_report_revenue_over_time_revenue_over_time_component__["a" /* RevenueOverTimeComponent */],
-            __WEBPACK_IMPORTED_MODULE_126__pages_statistics_report_statistic_right_sidebar_statistic_right_sidebar_component__["a" /* StatisticRightSidebarComponent */],
-            __WEBPACK_IMPORTED_MODULE_127__pages_statistics_report_sales_team_performance_sales_team_performance_component__["a" /* SalesTeamPerformanceComponent */],
-            __WEBPACK_IMPORTED_MODULE_128__pages_statistics_report_revenue_by_quarter_revenue_by_quarter_component__["a" /* RevenueByQuarterComponent */],
-            __WEBPACK_IMPORTED_MODULE_129__pages_shipping_report_shipping_report_component__["a" /* ShippingReportComponent */],
-            __WEBPACK_IMPORTED_MODULE_130__pages_language_editor_english_english_list_component__["a" /* EnglishListComponent */],
-            __WEBPACK_IMPORTED_MODULE_131__pages_language_editor_french_french_list_component__["a" /* FrenchListComponent */],
-            __WEBPACK_IMPORTED_MODULE_132__pages_language_editor_german_german_list_component__["a" /* GermanListComponent */],
-            __WEBPACK_IMPORTED_MODULE_133__pages_language_editor_spanish_spanish_list_component__["a" /* SpanishListComponent */],
-            __WEBPACK_IMPORTED_MODULE_134__pages_categories_tabs_general_general_component__["a" /* CategoryGeneralComponent */],
-            __WEBPACK_IMPORTED_MODULE_135__pages_categories_tabs_data_data_component__["a" /* CategoryDataComponent */],
-            __WEBPACK_IMPORTED_MODULE_136__pages_categories_tabs_fees_fees_component__["a" /* CategoryFeesComponent */],
-            __WEBPACK_IMPORTED_MODULE_138__pages_vendors_tabs_fees_fees_component__["a" /* VendorFeesComponent */],
-            __WEBPACK_IMPORTED_MODULE_137__pages_vendors_tabs_general_general_component__["a" /* VendorGeneralComponent */],
-            __WEBPACK_IMPORTED_MODULE_139__pages_vendors_tabs_badges_badges_component__["a" /* BadgesComponent */],
-            __WEBPACK_IMPORTED_MODULE_140__pages_vendors_tabs_user_settings_user_settings_component__["a" /* UserSettingsComponent */],
-            __WEBPACK_IMPORTED_MODULE_141__pages_filters_filters_list_component__["a" /* FiltersListComponent */],
-            __WEBPACK_IMPORTED_MODULE_142__pages_filters_filters_form_component__["a" /* FiltersFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_143__pages_options_options_list_component__["a" /* OptionsListComponent */],
-            __WEBPACK_IMPORTED_MODULE_144__pages_options_options_form_component__["a" /* OptionsFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_145__pages_customer_groups_customer_groups_list_component__["a" /* CustomerGroupsListComponent */],
-            __WEBPACK_IMPORTED_MODULE_146__pages_customer_groups_customer_groups_form_component__["a" /* CustomerGroupsFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_147__pages_length_classes_length_classes_list_component__["a" /* LengthClassListComponent */],
-            __WEBPACK_IMPORTED_MODULE_148__pages_length_classes_length_classes_form_component__["a" /* LengthClassFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_149__pages_weight_classes_weight_classes_list_component__["a" /* WeightClassListComponent */],
-            __WEBPACK_IMPORTED_MODULE_150__pages_weight_classes_weight_classes_form_component__["a" /* WeightClassFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_151__pages_tax_classes_tax_classes_list_component__["a" /* TaxClassListComponent */],
-            __WEBPACK_IMPORTED_MODULE_152__pages_tax_classes_tax_classes_form_component__["a" /* TaxClassFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_153__pages_tax_rates_tax_rates_list_component__["a" /* TaxRateListComponent */],
-            __WEBPACK_IMPORTED_MODULE_154__pages_tax_rates_tax_rates_form_component__["a" /* TaxRateFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_155__pages_geo_zones_geo_zones_list_component__["a" /* GeoZoneListComponent */],
-            __WEBPACK_IMPORTED_MODULE_156__pages_geo_zones_geo_zones_form_component__["a" /* GeoZoneFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_157__pages_seller_groups_seller_groups_list_component__["a" /* SellerGroupsListComponent */],
-            __WEBPACK_IMPORTED_MODULE_158__pages_seller_groups_seller_groups_form_component__["a" /* SellerGroupsFormComponent */],
-            __WEBPACK_IMPORTED_MODULE_161__pages_seller_groups_tabs_badges_badges_component__["a" /* SellerGroupBadgesComponent */],
-            __WEBPACK_IMPORTED_MODULE_159__pages_seller_groups_tabs_general_general_component__["a" /* SellerGroupGeneralComponent */],
-            __WEBPACK_IMPORTED_MODULE_160__pages_seller_groups_tabs_comissions_fees_comissions_fees_component__["a" /* SellerGroupComissionsFeesComponent */],
+            __WEBPACK_IMPORTED_MODULE_45__pages_return_reasons_return_reasons_list_component__["a" /* ReturnReasonsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_46__pages_return_reasons_return_reasons_form_component__["a" /* ReturnReasonsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_43__pages_return_actions_return_actions_list_component__["a" /* ReturnActionsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_44__pages_return_actions_return_actions_form_component__["a" /* ReturnActionsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_47__pages_return_statuses_return_statuses_list_component__["a" /* ReturnStatusesListComponent */],
+            __WEBPACK_IMPORTED_MODULE_48__pages_return_statuses_return_statuses_form_component__["a" /* ReturnStatusesFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_49__pages_orders_orders_list_component__["a" /* OrdersListComponent */],
+            __WEBPACK_IMPORTED_MODULE_50__pages_orders_orders_form_component__["a" /* OrdersFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_51__pages_orders_tabs_customer_details_customer_details_component__["a" /* CustomerDetailsComponent */],
+            __WEBPACK_IMPORTED_MODULE_52__pages_orders_tabs_products_products_component__["a" /* ProductsComponent */],
+            __WEBPACK_IMPORTED_MODULE_53__pages_orders_tabs_payment_details_payment_details_component__["a" /* PaymentDetailsComponent */],
+            __WEBPACK_IMPORTED_MODULE_54__pages_orders_tabs_totals_totals_component__["a" /* TotalsComponent */],
+            __WEBPACK_IMPORTED_MODULE_55__pages_orders_tabs_shipping_details_shipping_details_component__["a" /* ShippingDetailsComponent */],
+            __WEBPACK_IMPORTED_MODULE_56__pages_super_administrator_super_administrator_list_component__["a" /* SuperAdministratorListComponent */],
+            __WEBPACK_IMPORTED_MODULE_57__pages_super_administrator_super_administrator_form_component__["a" /* SuperAdministratorFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_58__pages_moderators_moderators_list_component__["a" /* ModeratorsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_59__pages_moderators_moderators_form_component__["a" /* ModeratorsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_60__pages_staff_setting_staff_setting_list_component__["a" /* StaffSettingListComponent */],
+            __WEBPACK_IMPORTED_MODULE_61__pages_staff_setting_staff_setting_form_component__["a" /* StaffSettingFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_62__pages_affiliation_affiliation_list_component__["a" /* AffiliationListComponent */],
+            __WEBPACK_IMPORTED_MODULE_63__pages_affiliation_affiliation_form_component__["a" /* AffiliationFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_64__pages_adverts_adverts_list_component__["a" /* AdvertsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_65__pages_adverts_adverts_form_component__["a" /* AdvertsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_66__pages_message_message_component__["a" /* MessageComponent */],
+            __WEBPACK_IMPORTED_MODULE_67__pages_message_tabs_compose_email_compose_email_component__["a" /* ComposeEmailComponent */],
+            __WEBPACK_IMPORTED_MODULE_68__pages_message_tabs_inbox_inbox_component__["a" /* InboxComponent */],
+            __WEBPACK_IMPORTED_MODULE_69__pages_comments_comments_component__["a" /* CommentsComponent */],
+            __WEBPACK_IMPORTED_MODULE_70__pages_media_media_component__["a" /* MediaComponent */],
+            __WEBPACK_IMPORTED_MODULE_71__pages_newsletter_newsletter_component__["a" /* NewsLetterComponent */],
+            __WEBPACK_IMPORTED_MODULE_72__pages_slideshow_slideshow_list_component__["a" /* SlideshowListComponent */],
+            __WEBPACK_IMPORTED_MODULE_73__pages_slideshow_slideshow_form_component__["a" /* SlideshowFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_74__pages_partners_partners_list_component__["a" /* PartnersListComponent */],
+            __WEBPACK_IMPORTED_MODULE_75__pages_partners_partners_form_component__["a" /* PartnersFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_76__pages_collaboration_collaboration_component__["a" /* CollaborationComponent */],
+            __WEBPACK_IMPORTED_MODULE_77__pages_shipping_setting_shipping_setting_component__["a" /* ShippingSettingComponent */],
+            __WEBPACK_IMPORTED_MODULE_78__pages_subscription_plan_subscription_plan_list_component__["a" /* SubscriptionPlanListComponent */],
+            __WEBPACK_IMPORTED_MODULE_79__pages_subscription_plan_subscription_plan_form_component__["a" /* SubscriptionPlanFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_80__pages_payments_payments_list_component__["a" /* PaymentsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_81__pages_payments_payments_form_component__["a" /* PaymentsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_82__pages_emhtv_emhtv_component__["a" /* EMHTVComponent */],
+            __WEBPACK_IMPORTED_MODULE_83__pages_products_tabs_option_option_component__["a" /* OptionComponent */],
+            __WEBPACK_IMPORTED_MODULE_84__pages_products_tabs_recurring_recurring_component__["a" /* RecurringComponent */],
+            __WEBPACK_IMPORTED_MODULE_85__pages_products_tabs_discount_discount_component__["a" /* DiscountComponent */],
+            __WEBPACK_IMPORTED_MODULE_86__pages_products_tabs_special_special_component__["a" /* SpecialComponent */],
+            __WEBPACK_IMPORTED_MODULE_87__pages_products_tabs_image_image_component__["a" /* ImageComponent */],
+            __WEBPACK_IMPORTED_MODULE_88__pages_products_tabs_reward_points_reward_points_component__["a" /* RewardPointsComponent */],
+            __WEBPACK_IMPORTED_MODULE_89__pages_products_tabs_option_tabs_checkbox_checkbox_component__["a" /* CheckboxComponent */],
+            __WEBPACK_IMPORTED_MODULE_90__pages_products_tabs_option_tabs_date_date_component__["a" /* DateComponent */],
+            __WEBPACK_IMPORTED_MODULE_91__pages_products_tabs_option_tabs_date_time_date_time_component__["a" /* DateTimeComponent */],
+            __WEBPACK_IMPORTED_MODULE_92__pages_products_tabs_option_tabs_delivery_date_delivery_date_component__["a" /* DeliveryDateComponent */],
+            __WEBPACK_IMPORTED_MODULE_93__pages_products_tabs_option_tabs_file_file_component__["a" /* FileComponent */],
+            __WEBPACK_IMPORTED_MODULE_94__pages_dashboard_mini_statistics_mini_statistics_component__["a" /* MiniStatisticsComponent */],
+            __WEBPACK_IMPORTED_MODULE_95__pages_dashboard_calendar_calendar_component__["a" /* CalendarComponent */],
+            __WEBPACK_IMPORTED_MODULE_96__pages_dashboard_chat_chat_component__["a" /* ChatComponent */],
+            __WEBPACK_IMPORTED_MODULE_97__pages_dashboard_statistics_statistics_component__["a" /* StatisticsComponent */],
+            __WEBPACK_IMPORTED_MODULE_98__pages_dashboard_notification_notification_component__["a" /* NotificationComponent */],
+            __WEBPACK_IMPORTED_MODULE_99__pages_dashboard_latest_members_latest_members_component__["a" /* LatestMembersComponent */],
+            __WEBPACK_IMPORTED_MODULE_100__pages_dashboard_earning_graph_morris_morris_component__["a" /* MorrisComponent */],
+            __WEBPACK_IMPORTED_MODULE_101__pages_dashboard_earning_graph_vector_vector_component__["a" /* VectorComponent */],
+            __WEBPACK_IMPORTED_MODULE_102__pages_dashboard_monthly_expense_monthly_expense_component__["a" /* MonthlyExpenseComponent */],
+            __WEBPACK_IMPORTED_MODULE_103__pages_dashboard_daily_visitors_daily_visitors_component__["a" /* DailyVisitorsComponent */],
+            __WEBPACK_IMPORTED_MODULE_104__pages_dashboard_top_advertise_top_advertise_component__["a" /* TopAdvertiseComponent */],
+            __WEBPACK_IMPORTED_MODULE_105__pages_dashboard_daily_sales_daily_sales_component__["a" /* DailySalesComponent */],
+            __WEBPACK_IMPORTED_MODULE_106__pages_dashboard_monthly_stats_monthly_stats_component__["a" /* MonthlyStatsComponent */],
+            __WEBPACK_IMPORTED_MODULE_107__pages_dashboard_sell_sell_component__["a" /* SellComponent */],
+            __WEBPACK_IMPORTED_MODULE_108__pages_dashboard_prospective_label_prospective_label_component__["a" /* ProspectiveLabelComponent */],
+            __WEBPACK_IMPORTED_MODULE_109__pages_dashboard_weather_weather_component__["a" /* WeatherComponent */],
+            __WEBPACK_IMPORTED_MODULE_110__pages_maintenance_maintenance_component__["a" /* MaintenanceComponent */],
+            __WEBPACK_IMPORTED_MODULE_111__pages_store_locations_store_locations_list_component__["a" /* StoreLocationsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_112__pages_store_locations_store_locations_form_component__["a" /* StoreLocationsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_113__pages_languages_languages_list_component__["a" /* LanguagesListComponent */],
+            __WEBPACK_IMPORTED_MODULE_114__pages_languages_languages_form_component__["a" /* LanguagesFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_115__pages_currencies_currencies_list_component__["a" /* CurrenciesListComponent */],
+            __WEBPACK_IMPORTED_MODULE_116__pages_currencies_currencies_form_component__["a" /* CurrenciesFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_117__pages_stock_statuses_stock_statuses_list_component__["a" /* StockStatusesListComponent */],
+            __WEBPACK_IMPORTED_MODULE_118__pages_stock_statuses_stock_statuses_form_component__["a" /* StockStatusesFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_119__pages_order_statuses_order_statuses_list_component__["a" /* OrderStatusesListComponent */],
+            __WEBPACK_IMPORTED_MODULE_120__pages_order_statuses_order_statuses_form_component__["a" /* OrderStatusesFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_121__pages_setting_setting_list_component__["a" /* SettingListComponent */],
+            __WEBPACK_IMPORTED_MODULE_122__pages_setting_setting_form_component__["a" /* SettingFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_123__pages_social_links_social_links_component__["a" /* SocialLinksComponent */],
+            __WEBPACK_IMPORTED_MODULE_124__pages_badge_badge_component__["a" /* BadgeComponent */],
+            __WEBPACK_IMPORTED_MODULE_125__pages_tax_tax_list_component__["a" /* TaxListComponent */],
+            __WEBPACK_IMPORTED_MODULE_126__pages_tax_tax_form_component__["a" /* TaxFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_127__pages_restoration_restoration_component__["a" /* RestorationComponent */],
+            __WEBPACK_IMPORTED_MODULE_128__pages_debug_error_debug_error_component__["a" /* DebugErrorComponent */],
+            __WEBPACK_IMPORTED_MODULE_129__pages_statistics_report_statistics_report_component__["a" /* StatisticsReportComponent */],
+            __WEBPACK_IMPORTED_MODULE_130__pages_statistics_report_report_summary_report_summary_component__["a" /* ReportSummaryComponent */],
+            __WEBPACK_IMPORTED_MODULE_131__pages_statistics_report_revenue_over_time_revenue_over_time_component__["a" /* RevenueOverTimeComponent */],
+            __WEBPACK_IMPORTED_MODULE_132__pages_statistics_report_statistic_right_sidebar_statistic_right_sidebar_component__["a" /* StatisticRightSidebarComponent */],
+            __WEBPACK_IMPORTED_MODULE_133__pages_statistics_report_sales_team_performance_sales_team_performance_component__["a" /* SalesTeamPerformanceComponent */],
+            __WEBPACK_IMPORTED_MODULE_134__pages_statistics_report_revenue_by_quarter_revenue_by_quarter_component__["a" /* RevenueByQuarterComponent */],
+            __WEBPACK_IMPORTED_MODULE_135__pages_shipping_report_shipping_report_component__["a" /* ShippingReportComponent */],
+            __WEBPACK_IMPORTED_MODULE_136__pages_language_editor_english_english_list_component__["a" /* EnglishListComponent */],
+            __WEBPACK_IMPORTED_MODULE_137__pages_language_editor_french_french_list_component__["a" /* FrenchListComponent */],
+            __WEBPACK_IMPORTED_MODULE_138__pages_language_editor_german_german_list_component__["a" /* GermanListComponent */],
+            __WEBPACK_IMPORTED_MODULE_139__pages_language_editor_spanish_spanish_list_component__["a" /* SpanishListComponent */],
+            __WEBPACK_IMPORTED_MODULE_140__pages_categories_tabs_general_general_component__["a" /* CategoryGeneralComponent */],
+            __WEBPACK_IMPORTED_MODULE_141__pages_categories_tabs_data_data_component__["a" /* CategoryDataComponent */],
+            __WEBPACK_IMPORTED_MODULE_142__pages_categories_tabs_fees_fees_component__["a" /* CategoryFeesComponent */],
+            __WEBPACK_IMPORTED_MODULE_144__pages_vendors_tabs_fees_fees_component__["a" /* VendorFeesComponent */],
+            __WEBPACK_IMPORTED_MODULE_143__pages_vendors_tabs_general_general_component__["a" /* VendorGeneralComponent */],
+            __WEBPACK_IMPORTED_MODULE_145__pages_vendors_tabs_badges_badges_component__["a" /* BadgesComponent */],
+            __WEBPACK_IMPORTED_MODULE_146__pages_vendors_tabs_user_settings_user_settings_component__["a" /* UserSettingsComponent */],
+            __WEBPACK_IMPORTED_MODULE_147__pages_filters_filters_list_component__["a" /* FiltersListComponent */],
+            __WEBPACK_IMPORTED_MODULE_148__pages_filters_filters_form_component__["a" /* FiltersFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_149__pages_options_options_list_component__["a" /* OptionsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_150__pages_options_options_form_component__["a" /* OptionsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_151__pages_customer_groups_customer_groups_list_component__["a" /* CustomerGroupsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_152__pages_customer_groups_customer_groups_form_component__["a" /* CustomerGroupsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_153__pages_length_classes_length_classes_list_component__["a" /* LengthClassListComponent */],
+            __WEBPACK_IMPORTED_MODULE_154__pages_length_classes_length_classes_form_component__["a" /* LengthClassFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_155__pages_weight_classes_weight_classes_list_component__["a" /* WeightClassListComponent */],
+            __WEBPACK_IMPORTED_MODULE_156__pages_weight_classes_weight_classes_form_component__["a" /* WeightClassFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_157__pages_tax_classes_tax_classes_list_component__["a" /* TaxClassListComponent */],
+            __WEBPACK_IMPORTED_MODULE_158__pages_tax_classes_tax_classes_form_component__["a" /* TaxClassFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_159__pages_tax_rates_tax_rates_list_component__["a" /* TaxRateListComponent */],
+            __WEBPACK_IMPORTED_MODULE_160__pages_tax_rates_tax_rates_form_component__["a" /* TaxRateFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_161__pages_geo_zones_geo_zones_list_component__["a" /* GeoZoneListComponent */],
+            __WEBPACK_IMPORTED_MODULE_162__pages_geo_zones_geo_zones_form_component__["a" /* GeoZoneFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_163__pages_seller_groups_seller_groups_list_component__["a" /* SellerGroupsListComponent */],
+            __WEBPACK_IMPORTED_MODULE_164__pages_seller_groups_seller_groups_form_component__["a" /* SellerGroupsFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_167__pages_seller_groups_tabs_badges_badges_component__["a" /* SellerGroupBadgesComponent */],
+            __WEBPACK_IMPORTED_MODULE_165__pages_seller_groups_tabs_general_general_component__["a" /* SellerGroupGeneralComponent */],
+            __WEBPACK_IMPORTED_MODULE_166__pages_seller_groups_tabs_comissions_fees_comissions_fees_component__["a" /* SellerGroupComissionsFeesComponent */],
+            __WEBPACK_IMPORTED_MODULE_168__pages_countries_countries_list_component__["a" /* CountriesListComponent */],
+            __WEBPACK_IMPORTED_MODULE_169__pages_countries_countries_form_component__["a" /* CountriesFormComponent */],
+            __WEBPACK_IMPORTED_MODULE_170__pages_zones_zones_list_component__["a" /* ZonesListComponent */],
+            __WEBPACK_IMPORTED_MODULE_171__pages_zones_zones_form_component__["a" /* ZonesFormComponent */],
         ]
     })
 ], AdminModule);
@@ -2168,7 +2306,7 @@ var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 /***/ "../../../../../src/app/components/back/admin/pages/buyers/buyers-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Customer </span>\r\n\t</h3>\r\n</div>\r\n\r\n<form #buyersForm=\"ngForm\" (ngSubmit)=\"createBuyer(buyersForm)\" [formGroup]=\"form\" class=\"form-content\" [ngStyle]=\"{'margin': '30px'}\">\r\n\t<md-select placeholder=\"Customer Group\">\r\n\t\t<md-option value=\"Default\"> Default </md-option>\r\n\t</md-select>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"First Name*\" [formControl]=\"firstName\">\r\n\t\t<md-error *ngIf=\"firstName.hasError('required')\">\r\n\t\t\tFirst name is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Last Name*\" [formControl]=\"lastName\">\r\n\t\t<md-error *ngIf=\"lastName.hasError('required')\">\r\n\t\t\tLast name is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"E-Mail*\" [formControl]=\"email\">\r\n\t\t<md-error *ngIf=\"email.hasError('required')\">\r\n\t\t\tEmail is <strong> required </strong>\r\n\t\t</md-error>\r\n\t\t<md-error *ngIf=\"email.hasError('pattern')\">\r\n\t\t\tPlease enter a valid email address\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Telephone*\" [formControl]=\"telephone\">\r\n\t\t<md-error *ngIf=\"telephone.hasError('required')\">\r\n\t\t\tTelephone is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Fax\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Password*\" [formControl]=\"password\">\r\n\t\t<md-error *ngIf=\"password.hasError('required')\">\r\n\t\t\tPassword is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Confirm*\" [formControl]=\"confirm\">\r\n\t\t<md-error *ngIf=\"password.hasError('required')\">\r\n\t\t\tPlease confirm your password\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-select placeholder=\"Newsletter\">\r\n\t\t<md-option value=\"Enabled\"> Enabled </md-option>\r\n\t\t<md-option value=\"Disabled\"> Disabled </md-option>\r\n\t</md-select>\r\n\r\n\t<md-select placeholder=\"Status\">\r\n\t\t<md-option value=\"Enabled\"> Enabled </md-option>\r\n\t\t<md-option value=\"Disabled\"> Disabled </md-option>\r\n\t</md-select>\r\n\r\n\t<md-select placeholder=\"Approved\">\r\n\t\t<md-option value=\"Yes\"> Yes </md-option>\r\n\t\t<md-option value=\"No\"> No </md-option>\r\n\t</md-select>\r\n\r\n\t<md-select placeholder=\"Safe\">\r\n\t\t<md-option value=\"Yes\"> Yes </md-option>\r\n\t\t<md-option value=\"No\"> No </md-option>\r\n\t</md-select>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button class=\"submit-button\"> Save Buyer </button>\r\n\t</div>\r\n</form>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Customer </span>\r\n\t</h3>\r\n</div>\r\n\r\n<form #buyersForm=\"ngForm\" (ngSubmit)=\"saveBuyer()\" [formGroup]=\"form\" class=\"form-content\" [ngStyle]=\"{'margin': '30px'}\">\r\n\t<md-select placeholder=\"Customer Group\" [formControl]=\"customer_group\">\r\n\t\t<md-option *ngFor=\"let customerGroup of customerGroups\" value=\"{{customerGroup._id}}\"> {{ customerGroup.name }} </md-option>\r\n\t</md-select>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"First Name*\" [formControl]=\"first_name\">\r\n\t\t<md-error *ngIf=\"first_name.hasError('required')\">\r\n\t\t\tFirst name is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Last Name*\" [formControl]=\"last_name\">\r\n\t\t<md-error *ngIf=\"last_name.hasError('required')\">\r\n\t\t\tLast name is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"E-Mail*\" [formControl]=\"email\">\r\n\t\t<md-error *ngIf=\"email.hasError('required')\">\r\n\t\t\tEmail is <strong> required </strong>\r\n\t\t</md-error>\r\n\t\t<md-error *ngIf=\"email.hasError('pattern')\">\r\n\t\t\tPlease enter a valid email address\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Telephone*\" [formControl]=\"telephone\">\r\n\t\t<md-error *ngIf=\"telephone.hasError('required')\">\r\n\t\t\tTelephone is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Fax\" [formControl]=\"fax\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input type=\"password\" mdInput placeholder=\"Password*\" [formControl]=\"password\">\r\n\t\t<md-error *ngIf=\"password.hasError('required')\">\r\n\t\t\tPassword is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input type=\"password\" mdInput placeholder=\"Confirm*\" [formControl]=\"confirm_password\">\r\n\t\t<md-error *ngIf=\"confirm_password.hasError('required')\">\r\n\t\t\tPlease confirm your password\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-select placeholder=\"Newsletter\" [formControl]=\"newsletter\">\r\n\t\t<md-option value=\"1\"> Enabled </md-option>\r\n\t\t<md-option value=\"0\"> Disabled </md-option>\r\n\t</md-select>\r\n\r\n\t<md-select placeholder=\"Status\" [formControl]=\"status\">\r\n\t\t<md-option value=\"1\"> Enabled </md-option>\r\n\t\t<md-option value=\"0\"> Disabled </md-option>\r\n\t</md-select>\r\n\r\n\t<md-select placeholder=\"Approved\" [formControl]=\"approved\">\r\n\t\t<md-option value=\"1\"> Yes </md-option>\r\n\t\t<md-option value=\"0\"> No </md-option>\r\n\t</md-select>\r\n\r\n\t<md-select placeholder=\"Safe\" [formControl]=\"safe\">\r\n\t\t<md-option value=\"1\"> Yes </md-option>\r\n\t\t<md-option value=\"0\"> No </md-option>\r\n\t</md-select>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button class=\"submit-button\"> Save Buyer </button>\r\n\t</div>\r\n</form>"
 
 /***/ }),
 
@@ -2196,47 +2334,94 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BuyersFormComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 
 
 var EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 var BuyersFormComponent = (function () {
-    function BuyersFormComponent() {
-        this.firstName = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
+    function BuyersFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
+        this.customerGroups = [];
+        this.customer_group = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.first_name = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required
         ]);
-        this.lastName = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
+        this.last_name = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required
         ]);
-        this.email = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required,
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].pattern(EMAIL_REGEX)
+        this.email = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required,
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].pattern(EMAIL_REGEX)
         ]);
-        this.telephone = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
+        this.telephone = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required
         ]);
-        this.password = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
+        this.fax = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.password = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required
         ]);
-        this.confirm = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
+        this.confirm_password = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required
         ]);
-        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
-            firstName: this.firstName,
-            lastName: this.lastName,
+        this.newsletter = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.status = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.approved = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.safe = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.form = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormGroup"]({
+            customer_group: this.customer_group,
+            first_name: this.first_name,
+            last_name: this.last_name,
             email: this.email,
             telephone: this.telephone,
+            fax: this.fax,
             password: this.password,
-            confirm: this.confirm
+            confirm_password: this.confirm_password,
+            newsletter: this.newsletter,
+            status: this.status,
+            approved: this.approved,
+            safe: this.safe
         });
     }
-    BuyersFormComponent.prototype.createBuyer = function (buyersForm) {
+    BuyersFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.buyerId = params['id'];
+            if (_this.buyerId) {
+                _this.crudService.retrieveOne('Buyer', _this.buyerId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+        this.crudService.retrieve('CustomerGroup')
+            .subscribe(function (result) {
+            _this.customerGroups = result.content;
+        });
+    };
+    BuyersFormComponent.prototype.saveBuyer = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'Buyer';
+            var action = this.buyerId ? this.crudService.update(this.form.value, this.buyerId) : this.crudService.create(this.form.value);
+            action.subscribe(function (buyer) {
+                _this.router.navigate(['/admin/buyers']);
+            });
+        }
     };
     return BuyersFormComponent;
 }());
@@ -2245,9 +2430,11 @@ BuyersFormComponent = __decorate([
         selector: 'admin-buyers-form',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/buyers/buyers-form.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/buyers/buyers-form.component.scss")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
 ], BuyersFormComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=buyers-form.component.js.map
 
 /***/ }),
@@ -2255,7 +2442,7 @@ BuyersFormComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/buyers/buyers-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \n\t\t<span> Customer List </span>\n\t</h3>\n</div>\n\n<div class=\"filter-panel\" [ngStyle]=\"{'margin-top': '20px'}\">\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-form-field class=\"full-width\">\n\t\t\t\t<input mdInput #nameFilter placeholder=\"Customer Name\">\n\t\t\t</md-form-field>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-select class=\"full-width\" placeholder=\"Customer Group\" #groupFilter>\n\t\t\t\t<md-option *ngFor=\"let i of [1, 2, 3, 4, 5, 6, 7, 8]\" value=\"Group{{i}}\">\n\t\t\t\t\tGroup {{i}}\n\t\t\t\t</md-option>\n\t\t\t</md-select>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-select class=\"full-width\" placeholder=\"Approved\" #approveFilter>\n\t\t\t\t<md-option value=\"Yes\"> Yes </md-option>\n\t\t\t\t<md-option value=\"No\"> No </md-option>\n\t\t\t</md-select>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-form-field class=\"full-width\">\n\t\t\t\t<input mdInput [mdDatepicker]=\"picker\" placeholder=\"Date Added\" #dateFilter>\n\t\t\t\t<md-datepicker-toggle mdSuffix [for]=\"picker\"> </md-datepicker-toggle>\n\t\t\t\t<md-datepicker #picker> </md-datepicker>\n\t\t\t</md-form-field>\n\t\t</div>\n\t</div>\n\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-form-field class=\"full-width\">\n\t\t\t\t<input mdInput #emailFilter placeholder=\"E-Mail\">\n\t\t\t</md-form-field>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-select placeholder=\"Status\" #statusFilter class=\"full-width\">\n\t\t\t\t<md-option value=\"Enabled\"> Enabled </md-option>\n\t\t\t\t<md-option value=\"Disabled\"> Disabled </md-option>\n\t\t\t</md-select>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-form-field class=\"full-width\">\n\t\t\t\t<input mdInput #ipFilter placeholder=\"IP\">\n\t\t\t</md-form-field>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" fxLayout=\"row\" fxLayoutAlign=\"end center\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<button md-button [ngStyle]=\"{'background': '#1e91cf'}\"> <md-icon>autorenew</md-icon> Filter </button>\n\t\t</div>\n\t</div>\n</div>\n\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\n\t<a [routerLink]=\"['/admin/buyers/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\n</div>\n\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\n\n\t<!-- Customer Name Column -->\n\t<ng-container cdkColumnDef=\"customer_name\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Customer Name </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.customer_name}} </md-cell>\n\t</ng-container>\n\n\t<!-- Image Column -->\n\t<ng-container cdkColumnDef=\"image\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Image </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> \n\t\t\t<img class=\"avatar\" src=\"assets/img/{{row.image}}\">\n\t\t</md-cell>\n\t</ng-container>\n\n\t<!-- E-Mail Column -->\n\t<ng-container cdkColumnDef=\"email\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> E-Mail </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.email}} </md-cell>\n\t</ng-container>\n\n\t<!-- Customer Group Column -->\n\t<ng-container cdkColumnDef=\"customer_group\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Customer Group </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.customer_group}} </md-cell>\n\t</ng-container>\n\n\t<!-- Status Column -->\n\t<ng-container cdkColumnDef=\"status\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.status}} </md-cell>\n\t</ng-container>\n\n\t<!-- IP Column -->\n\t<ng-container cdkColumnDef=\"ip\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> IP </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.ip}} </md-cell>\n\t</ng-container>\n\n\t<!-- Date Added Column -->\n\t<ng-container cdkColumnDef=\"date_added\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.date_added}} </md-cell>\n\t</ng-container>\n\n\t<!-- Action Column -->\n\t<ng-container cdkColumnDef=\"action\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\"> \n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#8fbb6c'}\"><md-icon>thumb_up</md-icon></button>\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#5bc0de'}\"><md-icon>lock</md-icon></button>\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f38733'}\"><md-icon>lock_open</md-icon></button>\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>create</md-icon></button>\n\t\t</md-cell>\n\t</ng-container>\n\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\n</md-table>\n\n<md-paginator\n\t[length]=\"tableData.data.length\"\n\t[pageIndex]=\"0\"\n\t[pageSize]=\"5\"\n\t[pageSizeOptions]=\"[5, 10, 25]\">\n</md-paginator>\n\n"
+module.exports = "<div class=\"title\">\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \n\t\t<span> Customer List </span>\n\t</h3>\n</div>\n\n<div class=\"filter-panel\" [ngStyle]=\"{'margin-top': '20px'}\">\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-form-field class=\"full-width\">\n\t\t\t\t<input mdInput #nameFilter placeholder=\"Customer Name\">\n\t\t\t</md-form-field>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-select class=\"full-width\" placeholder=\"Customer Group\" #groupFilter>\n\t\t\t\t<md-option *ngFor=\"let i of [1, 2, 3, 4, 5, 6, 7, 8]\" value=\"Group{{i}}\">\n\t\t\t\t\tGroup {{i}}\n\t\t\t\t</md-option>\n\t\t\t</md-select>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-select class=\"full-width\" placeholder=\"Approved\" #approveFilter>\n\t\t\t\t<md-option value=\"Yes\"> Yes </md-option>\n\t\t\t\t<md-option value=\"No\"> No </md-option>\n\t\t\t</md-select>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-form-field class=\"full-width\">\n\t\t\t\t<input mdInput [mdDatepicker]=\"picker\" placeholder=\"Date Added\" #dateFilter>\n\t\t\t\t<md-datepicker-toggle mdSuffix [for]=\"picker\"> </md-datepicker-toggle>\n\t\t\t\t<md-datepicker #picker> </md-datepicker>\n\t\t\t</md-form-field>\n\t\t</div>\n\t</div>\n\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-form-field class=\"full-width\">\n\t\t\t\t<input mdInput #emailFilter placeholder=\"E-Mail\">\n\t\t\t</md-form-field>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-select placeholder=\"Status\" #statusFilter class=\"full-width\">\n\t\t\t\t<md-option value=\"Enabled\"> Enabled </md-option>\n\t\t\t\t<md-option value=\"Disabled\"> Disabled </md-option>\n\t\t\t</md-select>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<md-form-field class=\"full-width\">\n\t\t\t\t<input mdInput #ipFilter placeholder=\"IP\">\n\t\t\t</md-form-field>\n\t\t</div>\n\n\t\t<div fxFlex=\"25\" fxLayout=\"row\" fxLayoutAlign=\"end center\" [ngStyle]=\"{'padding': '0px 10px'}\">\n\t\t\t<button md-button [ngStyle]=\"{'background': '#1e91cf'}\"> <md-icon>autorenew</md-icon> Filter </button>\n\t\t</div>\n\t</div>\n</div>\n\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\n\t<a [routerLink]=\"['/admin/buyers/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\n</div>\n\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\n\n\t<!-- Customer Name Column -->\n\t<ng-container cdkColumnDef=\"customer_name\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Customer Name </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.first_name + ' ' + row.last_name}} </md-cell>\n\t</ng-container>\n\n\t<!-- Image Column -->\n\t<ng-container cdkColumnDef=\"image\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Image </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> \n\t\t\t<img class=\"avatar\" src=\"assets/img/{{row.image}}\">\n\t\t</md-cell>\n\t</ng-container>\n\n\t<!-- E-Mail Column -->\n\t<ng-container cdkColumnDef=\"email\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> E-Mail </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.email}} </md-cell>\n\t</ng-container>\n\n\t<!-- Customer Group Column -->\n\t<ng-container cdkColumnDef=\"customer_group\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Customer Group </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.customer_group.name}} </md-cell>\n\t</ng-container>\n\n\t<!-- Status Column -->\n\t<ng-container cdkColumnDef=\"status\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{statuses[row.status]}} </md-cell>\n\t</ng-container>\n\n\t<!-- IP Column -->\n\t<ng-container cdkColumnDef=\"ip\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> IP </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.ip}} </md-cell>\n\t</ng-container>\n\n\t<!-- Date Added Column -->\n\t<ng-container cdkColumnDef=\"date_added\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.created_at}} </md-cell>\n\t</ng-container>\n\n\t<!-- Action Column -->\n\t<ng-container cdkColumnDef=\"action\">\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\"> \n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#8fbb6c'}\"><md-icon>thumb_up</md-icon></button>\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#5bc0de'}\"><md-icon>lock</md-icon></button>\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f38733'}\"><md-icon>lock_open</md-icon></button>\n\t\t\t<a [routerLink]=\"['/admin/buyers/edit/' + row._id]\">\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\n\t\t\t</a>\n\t\t</md-cell>\n\t</ng-container>\n\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\n</md-table>\n\n<md-paginator\n\t[length]=\"tableData.data.length\"\n\t[pageIndex]=\"0\"\n\t[pageSize]=\"5\"\n\t[pageSizeOptions]=\"[5, 10, 25]\">\n</md-paginator>\n\n"
 
 /***/ }),
 
@@ -2337,28 +2524,20 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var userList = [
-    { customer_name: 'User1', image: 'avatar1.jpg', email: 'user1@email.com', customer_group: 'Group1', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>' },
-    { customer_name: 'User2', image: 'avatar1.jpg', email: 'user2@email.com', customer_group: 'Group2', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>' },
-    { customer_name: 'User3', image: 'avatar1.jpg', email: 'user3@email.com', customer_group: 'Group3', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>' },
-    { customer_name: 'User4', image: 'avatar1.jpg', email: 'user4@email.com', customer_group: 'Group4', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>' },
-    { customer_name: 'User5', image: 'avatar1.jpg', email: 'user5@email.com', customer_group: 'Group5', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>' },
-    { customer_name: 'User6', image: 'avatar1.jpg', email: 'user6@email.com', customer_group: 'Group6', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>' },
-    { customer_name: 'User7', image: 'avatar1.jpg', email: 'user7@email.com', customer_group: 'Group7', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>' },
-    { customer_name: 'User8', image: 'avatar1.jpg', email: 'user8@email.com', customer_group: 'Group8', status: 'Enabled', ip: '127.0.0.1', date_added: '2017-08-30', action: '<h1> AAAA </h1>' }
-];
 var BuyersListComponent = (function () {
     function BuyersListComponent(crudService) {
         this.crudService = crudService;
         this.displayedColumns = ['customer_name', 'image', 'email', 'customer_group', 'status', 'ip', 'date_added', 'action'];
         this.tableData = new __WEBPACK_IMPORTED_MODULE_12__helper_table_data_table_data__["a" /* TableData */]();
+        this.statuses = ['No', 'Yes'];
     }
     BuyersListComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.tableData.setData(userList);
-        this.dataSource = new UserDataSource(this.tableData, this.paginator, this.sort);
-        this.crudService.retrieve({ model_name: 'Buyer' }).subscribe(function (result) {
-            console.log(result);
+        this.crudService.retrieve('Buyer').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new UserDataSource(_this.tableData, _this.paginator, _this.sort);
+            }
         });
         __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__["Observable"].fromEvent(this.nameFilter.nativeElement, 'keyup')
             .debounceTime(150)
@@ -2863,9 +3042,9 @@ var CategoryDataComponent = (function () {
         });
     };
     CategoryDataComponent.prototype.selectChange = function (component, list) {
-        var value = JSON.parse(component.value);
-        if (!this.isAlreadySelected(value, list))
-            list.push(value);
+        var id = JSON.parse(component.value);
+        if (!this.isAlreadySelected(id, list))
+            list.push(id);
         component.setValue('');
         console.log(this.data);
         console.log(list);
@@ -3337,6 +3516,242 @@ var CommentDataSource = (function (_super) {
 
 var _a, _b;
 //# sourceMappingURL=comments.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/countries/countries-form.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n\t<form #countryForm=\"ngForm\" (ngSubmit)=\"saveCountry()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Country Name*\" [formControl]=\"name\">\r\n\t\t\t<md-error *ngIf=\"name.hasError('required')\">\r\n\t\t\t\tThis field is <strong> required </strong>\r\n\t\t\t</md-error>\r\n\t\t</md-form-field>\r\n\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"ISO Code(2)\" [formControl]=\"iso_code_2\">\r\n\t\t</md-form-field>\r\n\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"ISO Code(3)\" [formControl]=\"iso_code_3\">\r\n\t\t</md-form-field>\r\n\r\n\t\t<md-form-field>\r\n\t\t\t<textarea mdInput placeholder=\"Address Format\" [formControl]=\"address_format\"> </textarea>\r\n\t\t</md-form-field>\r\n\r\n\t\t<div class=\"gray-text\"> Postcode Required </div>\r\n\t\t<md-radio-group [formControl]=\"postcode_required\">\r\n\t\t\t<md-radio-button value=\"1\"> Yes </md-radio-button>\r\n\t\t\t<md-radio-button value=\"0\"> No </md-radio-button>\r\n\t\t</md-radio-group>\r\n\r\n\t\t<md-select placeholder=\"Status\" [formControl]=\"status\">\r\n\t\t\t<md-option value=\"1\"> Enabled </md-option>\r\n\t\t\t<md-option value=\"0\"> Disabled </md-option>\r\n\t\t</md-select>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Country </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/countries/countries-form.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/countries/countries-form.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CountriesFormComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var CountriesFormComponent = (function () {
+    function CountriesFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
+        this.name = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["Validators"].required]);
+        this.iso_code_2 = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.iso_code_3 = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.address_format = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.postcode_required = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.status = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormControl"]('', []);
+        this.form = new __WEBPACK_IMPORTED_MODULE_2__angular_forms__["FormGroup"]({
+            name: this.name,
+            iso_code_2: this.iso_code_2,
+            iso_code_3: this.iso_code_3,
+            address_format: this.address_format,
+            postcode_required: this.postcode_required,
+            status: this.status
+        });
+    }
+    CountriesFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.countryId = params['id'];
+            if (_this.countryId) {
+                _this.crudService.retrieveOne('Country', _this.countryId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+    };
+    CountriesFormComponent.prototype.saveCountry = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'Country';
+            var action = this.countryId ? this.crudService.update(this.form.value, this.countryId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/countries']);
+            });
+        }
+    };
+    return CountriesFormComponent;
+}());
+CountriesFormComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-countries-form',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/countries/countries-form.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/countries/countries-form.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
+], CountriesFormComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=countries-form.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/countries/countries-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Countries </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/countries/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Country Name Column -->\r\n\t<ng-container cdkColumnDef=\"country_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Country Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- ISO Code 2 Column -->\r\n\t<ng-container cdkColumnDef=\"iso_code_2\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> ISO Code (2) </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.iso_code_2}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- ISO Code 3 Column -->\r\n\t<ng-container cdkColumnDef=\"iso_code_3\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> ISO Code (3) </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.iso_code_3}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> \r\n\t\t\t<a [routerLink]=\"['/admin/countries/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/countries/countries-list.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/countries/countries-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CountriesListComponent; });
+/* unused harmony export CountriesDataSource */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__ = __webpack_require__("../../../cdk/@angular/cdk/table.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/add/operator/startWith.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/add/observable/merge.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/add/operator/debounceTime.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/add/operator/distinctUntilChanged.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+var CountriesListComponent = (function () {
+    function CountriesListComponent(crudService) {
+        this.crudService = crudService;
+        this.displayedColumns = ['country_name', 'iso_code_2', 'iso_code_3', 'action'];
+        this.tableData = new __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__["a" /* TableData */]();
+    }
+    CountriesListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.crudService.retrieve('Country').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new CountriesDataSource(_this.tableData);
+            }
+        });
+    };
+    return CountriesListComponent;
+}());
+CountriesListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-countries-list',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/countries/countries-list.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/countries/countries-list.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object])
+], CountriesListComponent);
+
+var CountriesDataSource = (function (_super) {
+    __extends(CountriesDataSource, _super);
+    function CountriesDataSource(_tableData) {
+        var _this = _super.call(this) || this;
+        _this._tableData = _tableData;
+        _this.displayDataChanges = [
+            _tableData.dataChange,
+        ];
+        return _this;
+    }
+    CountriesDataSource.prototype.connect = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].merge.apply(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"], this.displayDataChanges).map(function () {
+            return _this._tableData.data;
+        });
+    };
+    CountriesDataSource.prototype.disconnect = function () {
+    };
+    return CountriesDataSource;
+}(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
+
+var _a;
+//# sourceMappingURL=countries-list.component.js.map
 
 /***/ }),
 
@@ -9338,7 +9753,7 @@ var _a, _b;
 /***/ "../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Order Status Name*\" [formControl]=\"orderStatusName\">\r\n\t\t<md-error *ngIf=\"orderStatusName.hasError('required')\">\r\n\t\t\tThis field is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n</div>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Order Status </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div>\r\n\t<form #orderStatusForm=\"ngForm\" (ngSubmit)=\"saveOrderStatus()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Order Status Name*\" [formControl]=\"name\">\r\n\t\t\t<md-error *ngIf=\"name.hasError('required')\">\r\n\t\t\t\tThis field is <strong> required </strong>\r\n\t\t\t</md-error>\r\n\t\t</md-form-field>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Order Status </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
 
 /***/ }),
 
@@ -9367,20 +9782,53 @@ module.exports = module.exports.toString();
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return OrderStatusesFormComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 
 
 var OrderStatusesFormComponent = (function () {
-    function OrderStatusesFormComponent() {
-        this.orderStatusName = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
-        ]);
+    function OrderStatusesFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
+        this.name = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
+            name: this.name
+        });
     }
+    OrderStatusesFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.orderStatusId = params['id'];
+            if (_this.orderStatusId) {
+                _this.crudService.retrieveOne('OrderStatus', _this.orderStatusId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+    };
+    OrderStatusesFormComponent.prototype.saveOrderStatus = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'OrderStatus';
+            var action = this.orderStatusId ? this.crudService.update(this.form.value, this.orderStatusId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/order-statuses']);
+            });
+        }
+    };
     return OrderStatusesFormComponent;
 }());
 OrderStatusesFormComponent = __decorate([
@@ -9388,9 +9836,11 @@ OrderStatusesFormComponent = __decorate([
         selector: 'admin-order-statuses-form',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-form.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-form.component.scss")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
 ], OrderStatusesFormComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=order-statuses-form.component.js.map
 
 /***/ }),
@@ -9398,7 +9848,7 @@ OrderStatusesFormComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Order Statuses </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/order-statuses/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Order Status Name Column -->\r\n\t<ng-container cdkColumnDef=\"order_status_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Order Status Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.order_status_name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>create</md-icon></button>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Order Statuses </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/order-statuses/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Order Status Name Column -->\r\n\t<ng-container cdkColumnDef=\"order_status_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Order Status Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<a [routerLink]=\"['/admin/order-statuses/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
 
 /***/ }),
 
@@ -9443,6 +9893,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -9472,17 +9923,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var orderStatusesList = [
-    { order_status_name: 'Cancelled' }
-];
+
 var OrderStatusesListComponent = (function () {
-    function OrderStatusesListComponent() {
+    function OrderStatusesListComponent(crudService) {
+        this.crudService = crudService;
         this.displayedColumns = ['order_status_name', 'action'];
         this.tableData = new __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__["a" /* TableData */]();
     }
     OrderStatusesListComponent.prototype.ngOnInit = function () {
-        this.tableData.setData(orderStatusesList);
-        this.dataSource = new OrderStatusesDataSource(this.tableData);
+        var _this = this;
+        this.crudService.retrieve('OrderStatus').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new OrderStatusesDataSource(_this.tableData);
+            }
+        });
     };
     return OrderStatusesListComponent;
 }());
@@ -9492,7 +9947,7 @@ OrderStatusesListComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/order-statuses/order-statuses-list.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object])
 ], OrderStatusesListComponent);
 
 var OrderStatusesDataSource = (function (_super) {
@@ -9516,6 +9971,7 @@ var OrderStatusesDataSource = (function (_super) {
     return OrderStatusesDataSource;
 }(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
 
+var _a;
 //# sourceMappingURL=order-statuses-list.component.js.map
 
 /***/ }),
@@ -13120,6 +13576,690 @@ RestorationComponent = __decorate([
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/back/admin/pages/return-actions/return-actions-form.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n\t<form #returnActionForm=\"ngForm\" (ngSubmit)=\"saveReturnAction()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Return Action Name*\" [formControl]=\"name\">\r\n\t\t\t<md-error *ngIf=\"name.hasError('required')\">\r\n\t\t\t\tThis field is <strong> required </strong>\r\n\t\t\t</md-error>\r\n\t\t</md-form-field>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Return Action </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-actions/return-actions-form.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-actions/return-actions-form.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReturnActionsFormComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ReturnActionsFormComponent = (function () {
+    function ReturnActionsFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
+        this.name = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
+        ]);
+        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
+            name: this.name
+        });
+    }
+    ReturnActionsFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.returnActionId = params['id'];
+            if (_this.returnActionId) {
+                _this.crudService.retrieveOne('ReturnAction', _this.returnActionId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+    };
+    ReturnActionsFormComponent.prototype.saveReturnAction = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'ReturnAction';
+            var action = this.returnActionId ? this.crudService.update(this.form.value, this.returnActionId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/return-actions']);
+            });
+        }
+    };
+    return ReturnActionsFormComponent;
+}());
+ReturnActionsFormComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-return-actions-form',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/return-actions/return-actions-form.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/return-actions/return-actions-form.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
+], ReturnActionsFormComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=return-actions-form.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-actions/return-actions-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Return Actions </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/return-actions/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Stock Status Name Column -->\r\n\t<ng-container cdkColumnDef=\"return_action_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Return Action Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<a [routerLink]=\"['/admin/return-actions/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-actions/return-actions-list.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-actions/return-actions-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReturnActionsListComponent; });
+/* unused harmony export ReturnActionsDataSource */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__ = __webpack_require__("../../../cdk/@angular/cdk/table.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/add/operator/startWith.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/add/observable/merge.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/add/operator/debounceTime.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/add/operator/distinctUntilChanged.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+var ReturnActionsListComponent = (function () {
+    function ReturnActionsListComponent(crudService) {
+        this.crudService = crudService;
+        this.displayedColumns = ['return_action_name', 'action'];
+        this.tableData = new __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__["a" /* TableData */]();
+    }
+    ReturnActionsListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.crudService.retrieve('ReturnAction').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new ReturnActionsDataSource(_this.tableData);
+            }
+        });
+    };
+    return ReturnActionsListComponent;
+}());
+ReturnActionsListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-return-actions-list',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/return-actions/return-actions-list.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/return-actions/return-actions-list.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object])
+], ReturnActionsListComponent);
+
+var ReturnActionsDataSource = (function (_super) {
+    __extends(ReturnActionsDataSource, _super);
+    function ReturnActionsDataSource(_tableData) {
+        var _this = _super.call(this) || this;
+        _this._tableData = _tableData;
+        _this.displayDataChanges = [
+            _tableData.dataChange,
+        ];
+        return _this;
+    }
+    ReturnActionsDataSource.prototype.connect = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].merge.apply(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"], this.displayDataChanges).map(function () {
+            return _this._tableData.data;
+        });
+    };
+    ReturnActionsDataSource.prototype.disconnect = function () {
+    };
+    return ReturnActionsDataSource;
+}(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
+
+var _a;
+//# sourceMappingURL=return-actions-list.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-form.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n\t<form #returnReasonForm=\"ngForm\" (ngSubmit)=\"saveReturnReason()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Return Reason Name*\" [formControl]=\"name\">\r\n\t\t\t<md-error *ngIf=\"name.hasError('required')\">\r\n\t\t\t\tThis field is <strong> required </strong>\r\n\t\t\t</md-error>\r\n\t\t</md-form-field>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Return Reason </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-form.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-form.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReturnReasonsFormComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ReturnReasonsFormComponent = (function () {
+    function ReturnReasonsFormComponent(route, router, crudService) {
+        this.route = route;
+        this.router = router;
+        this.crudService = crudService;
+        this.name = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
+        ]);
+        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
+            name: this.name
+        });
+    }
+    ReturnReasonsFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.returnReasonId = params['id'];
+            if (_this.returnReasonId) {
+                _this.crudService.retrieveOne('ReturnReason', _this.returnReasonId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+    };
+    ReturnReasonsFormComponent.prototype.saveReturnReason = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'ReturnReason';
+            var action = this.returnReasonId ? this.crudService.update(this.form.value, this.returnReasonId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/return-reasons']);
+            });
+        }
+    };
+    return ReturnReasonsFormComponent;
+}());
+ReturnReasonsFormComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-return-reasons-form',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-form.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-form.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _c || Object])
+], ReturnReasonsFormComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=return-reasons-form.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Return Reasons </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/return-reasons/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Stock Status Name Column -->\r\n\t<ng-container cdkColumnDef=\"return_reason_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Return Reason Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<a [routerLink]=\"['/admin/return-reasons/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-list.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReturnReasonsListComponent; });
+/* unused harmony export ReturnReasonsDataSource */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__ = __webpack_require__("../../../cdk/@angular/cdk/table.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/add/operator/startWith.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/add/observable/merge.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/add/operator/debounceTime.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/add/operator/distinctUntilChanged.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+var ReturnReasonsListComponent = (function () {
+    function ReturnReasonsListComponent(crudService) {
+        this.crudService = crudService;
+        this.displayedColumns = ['return_reason_name', 'action'];
+        this.tableData = new __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__["a" /* TableData */]();
+    }
+    ReturnReasonsListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.crudService.retrieve('ReturnReason').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new ReturnReasonsDataSource(_this.tableData);
+            }
+        });
+    };
+    return ReturnReasonsListComponent;
+}());
+ReturnReasonsListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-return-reasons-list',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-list.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/return-reasons/return-reasons-list.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object])
+], ReturnReasonsListComponent);
+
+var ReturnReasonsDataSource = (function (_super) {
+    __extends(ReturnReasonsDataSource, _super);
+    function ReturnReasonsDataSource(_tableData) {
+        var _this = _super.call(this) || this;
+        _this._tableData = _tableData;
+        _this.displayDataChanges = [
+            _tableData.dataChange,
+        ];
+        return _this;
+    }
+    ReturnReasonsDataSource.prototype.connect = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].merge.apply(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"], this.displayDataChanges).map(function () {
+            return _this._tableData.data;
+        });
+    };
+    ReturnReasonsDataSource.prototype.disconnect = function () {
+    };
+    return ReturnReasonsDataSource;
+}(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
+
+var _a;
+//# sourceMappingURL=return-reasons-list.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-form.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div>\r\n\t<form #returnStatusForm=\"ngForm\" (ngSubmit)=\"saveReturnStatus()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Return Status Name*\" [formControl]=\"name\">\r\n\t\t\t<md-error *ngIf=\"name.hasError('required')\">\r\n\t\t\t\tThis field is <strong> required </strong>\r\n\t\t\t</md-error>\r\n\t\t</md-form-field>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Return Status </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-form.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-form.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReturnStatusesFormComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ReturnStatusesFormComponent = (function () {
+    function ReturnStatusesFormComponent(route, router, crudService) {
+        this.route = route;
+        this.router = router;
+        this.crudService = crudService;
+        this.name = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
+            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
+        ]);
+        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
+            name: this.name
+        });
+    }
+    ReturnStatusesFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.returnStatusId = params['id'];
+            if (_this.returnStatusId) {
+                _this.crudService.retrieveOne('ReturnStatus', _this.returnStatusId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+    };
+    ReturnStatusesFormComponent.prototype.saveReturnStatus = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'ReturnStatus';
+            var action = this.returnStatusId ? this.crudService.update(this.form.value, this.returnStatusId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/return-statuses']);
+            });
+        }
+    };
+    return ReturnStatusesFormComponent;
+}());
+ReturnStatusesFormComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-return-statuses-form',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-form.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-form.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _c || Object])
+], ReturnStatusesFormComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=return-statuses-form.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Return Statuse4s </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/return-statuses/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Stock Status Name Column -->\r\n\t<ng-container cdkColumnDef=\"return_status_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Return Status Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<a [routerLink]=\"['/admin/return-statuses/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-list.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReturnStatusesListComponent; });
+/* unused harmony export ReturnStatusesDataSource */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__ = __webpack_require__("../../../cdk/@angular/cdk/table.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/add/operator/startWith.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/add/observable/merge.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/add/operator/debounceTime.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/add/operator/distinctUntilChanged.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+var ReturnStatusesListComponent = (function () {
+    function ReturnStatusesListComponent(crudService) {
+        this.crudService = crudService;
+        this.displayedColumns = ['return_status_name', 'action'];
+        this.tableData = new __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__["a" /* TableData */]();
+    }
+    ReturnStatusesListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.crudService.retrieve('ReturnStatus').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new ReturnStatusesDataSource(_this.tableData);
+            }
+        });
+    };
+    return ReturnStatusesListComponent;
+}());
+ReturnStatusesListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-return-statuses-list',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-list.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/return-statuses/return-statuses-list.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object])
+], ReturnStatusesListComponent);
+
+var ReturnStatusesDataSource = (function (_super) {
+    __extends(ReturnStatusesDataSource, _super);
+    function ReturnStatusesDataSource(_tableData) {
+        var _this = _super.call(this) || this;
+        _this._tableData = _tableData;
+        _this.displayDataChanges = [
+            _tableData.dataChange,
+        ];
+        return _this;
+    }
+    ReturnStatusesDataSource.prototype.connect = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].merge.apply(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"], this.displayDataChanges).map(function () {
+            return _this._tableData.data;
+        });
+    };
+    ReturnStatusesDataSource.prototype.disconnect = function () {
+    };
+    return ReturnStatusesDataSource;
+}(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
+
+var _a;
+//# sourceMappingURL=return-statuses-list.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/back/admin/pages/returns/returns-form.component.html":
 /***/ (function(module, exports) {
 
@@ -13476,7 +14616,7 @@ var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 /***/ "../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Seller Group </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"content-wrapper\">\r\n\t<md-tab-group>\r\n\t\t<md-tab>\r\n\t\t\t<admin-seller-groups-tab-general> </admin-seller-groups-tab-general>\r\n\t\t</md-tab>\r\n\t\t<md-tab>\r\n\t\t\t<admin-seller-groups-tab-commissions-fees> </admin-seller-groups-tab-commissions-fees>\r\n\t\t</md-tab>\r\n\t\t<md-tab>\r\n\t\t\t<admin-seller-groups-tab-badges> </admin-seller-groups-tab-badges>\r\n\t\t</md-tab>\r\n\t</md-tab-group>\r\n</div>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Seller Group </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"content-wrapper\">\r\n\t<form #sellerGroupForm=\"ngForm\" [formGroup]=\"form\" (ngSubmit)=\"saveSellerGroup()\">\r\n\t\t<md-tab-group>\r\n\t\t\t<md-tab label=\"General\">\r\n\t\t\t\t<admin-seller-groups-tab-general [general]=\"form.controls.general\"> </admin-seller-groups-tab-general>\r\n\t\t\t</md-tab>\r\n\t\t\t<md-tab label=\"Comissions & Fees\">\r\n\t\t\t\t<admin-seller-groups-tab-commissions-fees [fees]=\"form.controls.fees\"> </admin-seller-groups-tab-commissions-fees>\r\n\t\t\t</md-tab>\r\n\t\t\t<md-tab label=\"Badges\">\r\n\t\t\t\t<admin-seller-groups-tab-badges> </admin-seller-groups-tab-badges>\r\n\t\t\t</md-tab>\r\n\t\t</md-tab-group>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Seller Group </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
 
 /***/ }),
 
@@ -13504,16 +14644,67 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SellerGroupsFormComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
 
 var SellerGroupsFormComponent = (function () {
-    function SellerGroupsFormComponent() {
+    function SellerGroupsFormComponent(fb, crudService, router, route) {
+        this.fb = fb;
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
     }
+    SellerGroupsFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.form = this.fb.group({
+            general: this.fb.group({
+                name: [''],
+                description: [''],
+                max_product_number: ['']
+            }),
+            fees: this.fb.group({
+                sales_fee_fixed: [''],
+                sales_fee_percent: [''],
+                listing_fee_fixed: [''],
+                listing_fee_percent: [''],
+                listing_fee_payment: [''],
+                signup_fee: [''],
+                signup_fee_payment: ['']
+            })
+        });
+        this.route.params.subscribe(function (params) {
+            _this.sellerGroupId = params['id'];
+            if (_this.sellerGroupId) {
+                _this.crudService.retrieveOne('SellerGroup', _this.sellerGroupId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+    };
+    SellerGroupsFormComponent.prototype.saveSellerGroup = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'SellerGroup';
+            var action = this.sellerGroupId ? this.crudService.update(this.form.value, this.sellerGroupId) : this.crudService.create(this.form.value);
+            action.subscribe(function (sellerGroup) {
+                _this.router.navigate(['/admin/seller-groups']);
+            });
+        }
+    };
     return SellerGroupsFormComponent;
 }());
 SellerGroupsFormComponent = __decorate([
@@ -13521,9 +14712,11 @@ SellerGroupsFormComponent = __decorate([
         selector: 'admin-seller-groups-form',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-form.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-form.component.scss")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormBuilder"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormBuilder"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _d || Object])
 ], SellerGroupsFormComponent);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=seller-groups-form.component.js.map
 
 /***/ }),
@@ -13531,7 +14724,7 @@ SellerGroupsFormComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Seller Group List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/seller-groups/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Name Column -->\r\n\t<ng-container cdkColumnDef=\"name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Description Column -->\r\n\t<ng-container cdkColumnDef=\"description\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.description}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Actual fee rates Column -->\r\n\t<ng-container cdkColumnDef=\"actual_fee_rates\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Actual Fee Rates </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.actual_fee_rates}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>create</md-icon></button>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Seller Group List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/seller-groups/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Name Column -->\r\n\t<ng-container cdkColumnDef=\"name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.general.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Description Column -->\r\n\t<ng-container cdkColumnDef=\"description\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.general.description}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Actual fee rates Column -->\r\n\t<ng-container cdkColumnDef=\"actual_fee_rates\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Actual Fee Rates </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.fees.sales_fee_fixed}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<a [routerLink]=\"['/admin/seller-groups/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
 
 /***/ }),
 
@@ -13577,6 +14770,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -13608,17 +14802,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var sellerGroupList = [
-    { name: 'Default', description: 'Description', actual_fee_rates: '0.00%', sort_order: 1 },
-];
+
 var SellerGroupsListComponent = (function () {
-    function SellerGroupsListComponent() {
+    function SellerGroupsListComponent(crudService) {
+        this.crudService = crudService;
         this.displayedColumns = ['name', 'description', 'actual_fee_rates', 'action'];
         this.tableData = new __WEBPACK_IMPORTED_MODULE_10__helper_table_data_table_data__["a" /* TableData */]();
     }
     SellerGroupsListComponent.prototype.ngOnInit = function () {
-        this.tableData.setData(sellerGroupList);
-        this.dataSource = new SellerGroupDataSource(this.tableData, this.paginator, this.sort);
+        var _this = this;
+        this.crudService.retrieve('SellerGroup').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new SellerGroupDataSource(_this.tableData, _this.paginator, _this.sort);
+            }
+        });
     };
     return SellerGroupsListComponent;
 }());
@@ -13636,7 +14834,7 @@ SellerGroupsListComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/seller-groups/seller-groups-list.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_11__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_11__services_crud_service__["a" /* CRUDService */]) === "function" && _c || Object])
 ], SellerGroupsListComponent);
 
 var SellerGroupDataSource = (function (_super) {
@@ -13681,7 +14879,7 @@ var SellerGroupDataSource = (function (_super) {
     return SellerGroupDataSource;
 }(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=seller-groups-list.component.js.map
 
 /***/ }),
@@ -13750,7 +14948,7 @@ SellerGroupBadgesComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/seller-groups/tabs/comissions-fees/comissions-fees.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  comissions-fees works!\n</p>\n"
+module.exports = "<div class=\"tab-fees\" [ngStyle]=\"{'padding': '30px'}\" [formGroup]=\"fees\">\n\t<div class=\"sales-fee\">\n\t\t<label class=\"label-title\"> Sales fee </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"sales_fee_fixed\">\n\t\t</md-form-field>\n\n\t\t<label class=\"label-plus\"> + </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"sales_fee_percent\">\n\t\t</md-form-field>\n\n\t\t<label class=\"label-percent\"> % </label>\n\t</div>\n\n\t<div class=\"listing-fee\">\n\t\t<label class=\"label-title\"> Listing fee / method </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"listing_fee_fixed\">\n\t\t</md-form-field>\n\n\t\t<label class=\"label-plus\"> + </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"listing_fee_percent\">\n\t\t</md-form-field>\n\n\t\t<label class=\"label-percent\"> % </label>\n\n\t\t<md-select placeholder=\"Payment method\" formControlName=\"listing_fee_payment\">\n\t\t\t<md-option value=\"1\"> Seller balance </md-option>\n\t\t\t<md-option value=\"2\"> [MM] Payment Gateways </md-option>\n\t\t</md-select>\n\t</div>\n\n\t<div class=\"signup-fee\">\n\t\t<label class=\"label-title\"> Signup fee / method </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"signup_fee\">\n\t\t</md-form-field>\n\n\t\t<md-select placeholder=\"Payment method\" formControlName=\"signup_fee_payment\">\n\t\t\t<md-option value=\"1\"> Seller balance </md-option>\n\t\t\t<md-option value=\"2\"> [MM] Payment Gateways </md-option>\n\t\t</md-select>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -13762,7 +14960,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, "", ""]);
+exports.push([module.i, ".label-plus, .label-percent {\n  padding: 0px 10px; }\n\n.label-title {\n  width: 150px;\n  text-align: right;\n  margin-right: 30px; }\n\n.mat-form-field, .mat-select {\n  width: initial; }\n", ""]);
 
 // exports
 
@@ -13778,6 +14976,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SellerGroupComissionsFeesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13788,6 +14987,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SellerGroupComissionsFeesComponent = (function () {
     function SellerGroupComissionsFeesComponent() {
     }
@@ -13795,6 +14995,10 @@ var SellerGroupComissionsFeesComponent = (function () {
     };
     return SellerGroupComissionsFeesComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]) === "function" && _a || Object)
+], SellerGroupComissionsFeesComponent.prototype, "fees", void 0);
 SellerGroupComissionsFeesComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'admin-seller-groups-tab-commissions-fees',
@@ -13804,6 +15008,7 @@ SellerGroupComissionsFeesComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], SellerGroupComissionsFeesComponent);
 
+var _a;
 //# sourceMappingURL=comissions-fees.component.js.map
 
 /***/ }),
@@ -13811,7 +15016,7 @@ SellerGroupComissionsFeesComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/seller-groups/tabs/general/general.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  general works!\n</p>\n"
+module.exports = "<div class=\"tab-general\" [ngStyle]=\"{'padding': '30px'}\" [formGroup]=\"general\">\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Name *\" formControlName=\"name\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<textarea mdInput placeholder=\"Description *\" formControlName=\"description\"></textarea>\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Max Product Number\" formControlName=\"max_product_number\">\n\t</md-form-field>\n</div>"
 
 /***/ }),
 
@@ -13839,6 +15044,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SellerGroupGeneralComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -13849,6 +15055,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var SellerGroupGeneralComponent = (function () {
     function SellerGroupGeneralComponent() {
     }
@@ -13856,6 +15063,10 @@ var SellerGroupGeneralComponent = (function () {
     };
     return SellerGroupGeneralComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]) === "function" && _a || Object)
+], SellerGroupGeneralComponent.prototype, "general", void 0);
 SellerGroupGeneralComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'admin-seller-groups-tab-general',
@@ -13865,6 +15076,7 @@ SellerGroupGeneralComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], SellerGroupGeneralComponent);
 
+var _a;
 //# sourceMappingURL=general.component.js.map
 
 /***/ }),
@@ -15799,7 +17011,7 @@ StatisticsReportComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div>\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Stock Status Name*\" [formControl]=\"stockStatusName\">\r\n\t\t<md-error *ngIf=\"stockStatusName.hasError('required')\">\r\n\t\t\tThis field is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n</div>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Stock Status </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div>\r\n\t<form #stockStatusForm=\"ngForm\" (ngSubmit)=\"saveStockStatus()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Stock Status Name*\" [formControl]=\"name\">\r\n\t\t\t<md-error *ngIf=\"name.hasError('required')\">\r\n\t\t\t\tThis field is <strong> required </strong>\r\n\t\t\t</md-error>\r\n\t\t</md-form-field>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Stock Status </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
 
 /***/ }),
 
@@ -15828,20 +17040,53 @@ module.exports = module.exports.toString();
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return StockStatusesFormComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
 
 
 var StockStatusesFormComponent = (function () {
-    function StockStatusesFormComponent() {
-        this.stockStatusName = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
-        ]);
+    function StockStatusesFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
+        this.name = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
+            name: this.name
+        });
     }
+    StockStatusesFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.stockStatusId = params['id'];
+            if (_this.stockStatusId) {
+                _this.crudService.retrieveOne('StockStatus', _this.stockStatusId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+    };
+    StockStatusesFormComponent.prototype.saveStockStatus = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'StockStatus';
+            var action = this.stockStatusId ? this.crudService.update(this.form.value, this.stockStatusId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/stock-statuses']);
+            });
+        }
+    };
     return StockStatusesFormComponent;
 }());
 StockStatusesFormComponent = __decorate([
@@ -15849,9 +17094,11 @@ StockStatusesFormComponent = __decorate([
         selector: 'admin-stock-statuses-form',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-form.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-form.component.scss")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
 ], StockStatusesFormComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=stock-statuses-form.component.js.map
 
 /***/ }),
@@ -15859,7 +17106,7 @@ StockStatusesFormComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Stock Statuses </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/stock-statuses/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Stock Status Name Column -->\r\n\t<ng-container cdkColumnDef=\"stock_status_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Stock Status Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.stock_status_name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>create</md-icon></button>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Stock Statuses </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/stock-statuses/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Stock Status Name Column -->\r\n\t<ng-container cdkColumnDef=\"stock_status_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Stock Status Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<a [routerLink]=\"['/admin/stock-statuses/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
 
 /***/ }),
 
@@ -15904,6 +17151,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -15933,17 +17181,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var stockStatusesList = [
-    { stock_status_name: '2-3 Days' }
-];
+
 var StockStatusesListComponent = (function () {
-    function StockStatusesListComponent() {
+    function StockStatusesListComponent(crudService) {
+        this.crudService = crudService;
         this.displayedColumns = ['stock_status_name', 'action'];
         this.tableData = new __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__["a" /* TableData */]();
     }
     StockStatusesListComponent.prototype.ngOnInit = function () {
-        this.tableData.setData(stockStatusesList);
-        this.dataSource = new StockStatusesDataSource(this.tableData);
+        var _this = this;
+        this.crudService.retrieve('StockStatus').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new StockStatusesDataSource(_this.tableData);
+            }
+        });
     };
     return StockStatusesListComponent;
 }());
@@ -15953,7 +17205,7 @@ StockStatusesListComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/stock-statuses/stock-statuses-list.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object])
 ], StockStatusesListComponent);
 
 var StockStatusesDataSource = (function (_super) {
@@ -15977,6 +17229,7 @@ var StockStatusesDataSource = (function (_super) {
     return StockStatusesDataSource;
 }(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
 
+var _a;
 //# sourceMappingURL=stock-statuses-list.component.js.map
 
 /***/ }),
@@ -16663,7 +17916,7 @@ var UsersDataSource = (function (_super) {
 /***/ "../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Tax Class </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"content-wrapper\">\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Tax Class Title *\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Description *\">\r\n\t</md-form-field>\r\n\r\n\t<md-table [dataSource]=\"dataSource\">\r\n\t\t<ng-container mdColumnDef=\"tax_rate\">\r\n\t\t\t<md-header-cell *mdHeaderCellDef> Tax Rate </md-header-cell>\r\n\t\t\t<md-cell *mdCellDef=\"let element; let i = index\">\r\n\t\t\t\t<select *ngIf=\"!element.last\" class=\"form-control\" [(ngModel)]=\"taxClassesList[i].tax_rate\">\r\n\t\t\t\t\t<option value=\"Eco Tax (-2.00)\"> Eco Tax (-2.00) </option>\r\n\t\t\t\t\t<option value=\"VAT(20%)\"> VAT(20%) </option>\r\n\t\t\t\t</select>\r\n\t\t\t</md-cell>\r\n\t\t</ng-container>\r\n\t\t<ng-container mdColumnDef=\"based_on\">\r\n\t\t\t<md-header-cell *mdHeaderCellDef> Based On </md-header-cell>\r\n\t\t\t<md-cell *mdCellDef=\"let element; let i = index\">\r\n\t\t\t\t<select *ngIf=\"!element.last\" class=\"form-control\" [(ngModel)]=\"taxClassesList[i].based_on\">\r\n\t\t\t\t\t<option value=\"Shipping Address\"> Shipping Address </option>\r\n\t\t\t\t\t<option value=\"Payment Address\"> Payment Address </option>\r\n\t\t\t\t\t<option value=\"Store Address\"> Store Address </option>\r\n\t\t\t\t</select>\r\n\t\t\t</md-cell>\r\n\t\t</ng-container>\r\n\t\t<ng-container mdColumnDef=\"priority\">\r\n\t\t\t<md-header-cell *mdHeaderCellDef> Priority </md-header-cell>\r\n\t\t\t<md-cell *mdCellDef=\"let element; let i = index\">\r\n\t\t\t\t<input *ngIf=\"!element.last\" class=\"form-control\" [(ngModel)]=\"taxClassesList[i].priority\" placeholder=\"Priority\">\r\n\t\t\t</md-cell>\r\n\t\t</ng-container>\r\n\t\t<ng-container mdColumnDef=\"action\">\r\n\t\t\t<md-header-cell *mdHeaderCellDef [ngStyle]=\"{'flex': 'none', 'width': '60px'}\"> </md-header-cell>\r\n\t\t\t<md-cell *mdCellDef=\"let element; let i = index\" [ngStyle]=\"{'flex': 'none', 'width': '60px'}\">\r\n\t\t\t\t<button md-button type=\"button\" (click)=\"addRow()\" class=\"action-button\" *ngIf=\"element.last\" [ngStyle]=\"{'background': '#f56b6b'}\">\r\n\t\t\t\t\t<md-icon [ngStyle]=\"{'color': '#fff'}\">add_circle</md-icon>\r\n\t\t\t\t</button>\r\n\t\t\t\t<button md-button type=\"button\" (click)=\"removeRow(i)\" class=\"action-button\" *ngIf=\"!element.last\" [ngStyle]=\"{'background': '#1e91cf'}\">\r\n\t\t\t\t\t<md-icon [ngStyle]=\"{'color': '#fff'}\">remove_circle</md-icon>\r\n\t\t\t\t</button>\r\n\t\t\t</md-cell>\r\n\t\t</ng-container>\r\n\r\n\t\t<md-header-row *mdHeaderRowDef=\"displayedColumns\"> </md-header-row>\r\n\t\t<md-row *mdRowDef=\"let row; columns: displayedColumns;\"> </md-row>\r\n\t</md-table>\r\n</div>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Tax Class </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"content-wrapper\">\r\n\t<form #taxClassForm=\"ngForm\" (ngSubmit)=\"saveTaxClass()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Tax Class Title *\" [formControl]=\"name\">\r\n\t\t</md-form-field>\r\n\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Description *\" [formControl]=\"description\">\r\n\t\t</md-form-field>\r\n\r\n\t\t<div class=\"hidden\" fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button #saveButton class=\"submit-button\"> Save Tax Class </button>\r\n\t\t</div>\r\n\t</form>\r\n\r\n\t<md-table [dataSource]=\"dataSource\">\r\n\t\t<ng-container mdColumnDef=\"tax_rate\">\r\n\t\t\t<md-header-cell *mdHeaderCellDef> Tax Rate </md-header-cell>\r\n\t\t\t<md-cell *mdCellDef=\"let element; let i = index\">\r\n\t\t\t\t<select *ngIf=\"!element.last\" class=\"form-control\" [(ngModel)]=\"taxRatesList[i].tax_rate\">\r\n\t\t\t\t\t<option *ngFor=\"let taxRate of taxRates\" value=\"{{taxRate._id}}\"> {{taxRate.name}} </option>\r\n\t\t\t\t</select>\r\n\t\t\t</md-cell>\r\n\t\t</ng-container>\r\n\t\t<ng-container mdColumnDef=\"based_on\">\r\n\t\t\t<md-header-cell *mdHeaderCellDef> Based On </md-header-cell>\r\n\t\t\t<md-cell *mdCellDef=\"let element; let i = index\">\r\n\t\t\t\t<select *ngIf=\"!element.last\" class=\"form-control\" [(ngModel)]=\"taxRatesList[i].based_on\">\r\n\t\t\t\t\t<option value=\"1\"> Shipping Address </option>\r\n\t\t\t\t\t<option value=\"2\"> Payment Address </option>\r\n\t\t\t\t\t<option value=\"3\"> Store Address </option>\r\n\t\t\t\t</select>\r\n\t\t\t</md-cell>\r\n\t\t</ng-container>\r\n\t\t<ng-container mdColumnDef=\"priority\">\r\n\t\t\t<md-header-cell *mdHeaderCellDef> Priority </md-header-cell>\r\n\t\t\t<md-cell *mdCellDef=\"let element; let i = index\">\r\n\t\t\t\t<input *ngIf=\"!element.last\" class=\"form-control\" [(ngModel)]=\"taxRatesList[i].priority\" placeholder=\"Priority\">\r\n\t\t\t</md-cell>\r\n\t\t</ng-container>\r\n\t\t<ng-container mdColumnDef=\"action\">\r\n\t\t\t<md-header-cell *mdHeaderCellDef [ngStyle]=\"{'flex': 'none', 'width': '60px'}\"> </md-header-cell>\r\n\t\t\t<md-cell *mdCellDef=\"let element; let i = index\" [ngStyle]=\"{'flex': 'none', 'width': '60px'}\">\r\n\t\t\t\t<button md-button type=\"button\" (click)=\"addRow()\" class=\"action-button\" *ngIf=\"element.last\" [ngStyle]=\"{'background': '#f56b6b'}\">\r\n\t\t\t\t\t<md-icon [ngStyle]=\"{'color': '#fff'}\">add_circle</md-icon>\r\n\t\t\t\t</button>\r\n\t\t\t\t<button md-button type=\"button\" (click)=\"removeRow(i)\" class=\"action-button\" *ngIf=\"!element.last\" [ngStyle]=\"{'background': '#1e91cf'}\">\r\n\t\t\t\t\t<md-icon [ngStyle]=\"{'color': '#fff'}\">remove_circle</md-icon>\r\n\t\t\t\t</button>\r\n\t\t\t</md-cell>\r\n\t\t</ng-container>\r\n\r\n\t\t<md-header-row *mdHeaderRowDef=\"displayedColumns\"> </md-header-row>\r\n\t\t<md-row *mdRowDef=\"let row; columns: displayedColumns;\"> </md-row>\r\n\t</md-table>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button class=\"submit-button\" (click)=\"submitForm()\"> Save Tax Class </button>\r\n\t</div>\r\n</div>"
 
 /***/ }),
 
@@ -16695,9 +17948,12 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_cdk_collections__ = __webpack_require__("../../../cdk/@angular/cdk/collections.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_observable_of__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -16722,40 +17978,90 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
 var TaxClassFormComponent = (function () {
-    function TaxClassFormComponent() {
+    function TaxClassFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
         this.displayedColumns = ['tax_rate', 'based_on', 'priority', 'action'];
-        this.tableData = new __WEBPACK_IMPORTED_MODULE_4__helper_table_data_table_data__["a" /* TableData */]();
-        this.taxClassesList = [];
+        this.tableData = new __WEBPACK_IMPORTED_MODULE_6__helper_table_data_table_data__["a" /* TableData */]();
+        this.taxRatesList = [];
         this.list = [];
+        this.taxRates = [];
+        this.name = new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["Validators"].required]);
+        this.description = new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_3__angular_forms__["Validators"].required]);
+        this.form = new __WEBPACK_IMPORTED_MODULE_3__angular_forms__["FormGroup"]({
+            name: this.name,
+            description: this.description
+        });
     }
     TaxClassFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
         this.redrawTable();
+        this.route.params.subscribe(function (params) {
+            _this.taxClassId = params['id'];
+            if (_this.taxClassId) {
+                _this.crudService.retrieveOne('TaxClass', _this.taxClassId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                    if (result.content.tax_rates) {
+                        _this.taxRatesList = result.content.tax_rates;
+                    }
+                    _this.redrawTable();
+                });
+            }
+        });
+        this.crudService.retrieve('TaxRate').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.taxRates = result.content;
+            }
+        });
     };
     TaxClassFormComponent.prototype.redrawTable = function () {
-        this.list = JSON.parse(JSON.stringify(this.taxClassesList));
+        this.list = JSON.parse(JSON.stringify(this.taxRatesList));
         this.list.push({ last: true });
-        this.tableData = new __WEBPACK_IMPORTED_MODULE_4__helper_table_data_table_data__["a" /* TableData */]();
+        this.tableData = new __WEBPACK_IMPORTED_MODULE_6__helper_table_data_table_data__["a" /* TableData */]();
         this.tableData.setData(this.list);
         this.dataSource = new TaxClassesDataSource(this.tableData);
     };
     TaxClassFormComponent.prototype.addRow = function () {
-        this.taxClassesList.push({ tax_rate: '', based_on: '', priority: '' });
+        this.taxRatesList.push({ tax_rate: '', based_on: '', priority: '' });
         this.redrawTable();
     };
     TaxClassFormComponent.prototype.removeRow = function (index) {
-        this.taxClassesList.splice(index, 1);
+        this.taxRatesList.splice(index, 1);
         this.redrawTable();
+    };
+    TaxClassFormComponent.prototype.saveTaxClass = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'TaxClass';
+            this.form.value.tax_rates = this.taxRatesList;
+            var action = this.taxClassId ? this.crudService.update(this.form.value, this.taxClassId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/tax-classes']);
+            });
+        }
+    };
+    TaxClassFormComponent.prototype.submitForm = function () {
+        this.saveButton._elementRef.nativeElement.click();
     };
     return TaxClassFormComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])('saveButton'),
+    __metadata("design:type", Object)
+], TaxClassFormComponent.prototype, "saveButton", void 0);
 TaxClassFormComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'admin-tax-classes-form',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-form.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-form.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_7__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
 ], TaxClassFormComponent);
 
 var TaxClassesDataSource = (function (_super) {
@@ -16779,6 +18085,7 @@ var TaxClassesDataSource = (function (_super) {
     return TaxClassesDataSource;
 }(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_collections__["a" /* DataSource */]));
 
+var _a, _b, _c;
 //# sourceMappingURL=tax-classes-form.component.js.map
 
 /***/ }),
@@ -16786,7 +18093,7 @@ var TaxClassesDataSource = (function (_super) {
 /***/ "../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Tax Class List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/tax-classes/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Tax Class Title Column -->\r\n\t<ng-container cdkColumnDef=\"tax_class_title\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Class Title </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.tax_class_title}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>create</md-icon></button>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Tax Class List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/tax-classes/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Tax Class Title Column -->\r\n\t<ng-container cdkColumnDef=\"tax_class_title\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Class Title </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<a [routerLink]=\"['/admin/tax-classes/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
 
 /***/ }),
 
@@ -16832,6 +18139,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -16863,18 +18171,21 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var taxClassList = [
-    { tax_class_title: 'Downloadable Products' },
-    { tax_class_title: 'Taxable Goods' }
-];
+
 var TaxClassListComponent = (function () {
-    function TaxClassListComponent() {
+    function TaxClassListComponent(crudService) {
+        this.crudService = crudService;
         this.displayedColumns = ['tax_class_title', 'action'];
         this.tableData = new __WEBPACK_IMPORTED_MODULE_10__helper_table_data_table_data__["a" /* TableData */]();
     }
     TaxClassListComponent.prototype.ngOnInit = function () {
-        this.tableData.setData(taxClassList);
-        this.dataSource = new TaxClassDataSource(this.tableData, this.paginator, this.sort);
+        var _this = this;
+        this.crudService.retrieve('TaxClass').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new TaxClassDataSource(_this.tableData, _this.paginator, _this.sort);
+            }
+        });
     };
     return TaxClassListComponent;
 }());
@@ -16892,7 +18203,7 @@ TaxClassListComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/tax-classes/tax-classes-list.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_11__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_11__services_crud_service__["a" /* CRUDService */]) === "function" && _c || Object])
 ], TaxClassListComponent);
 
 var TaxClassDataSource = (function (_super) {
@@ -16937,7 +18248,7 @@ var TaxClassDataSource = (function (_super) {
     return TaxClassDataSource;
 }(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=tax-classes-list.component.js.map
 
 /***/ }),
@@ -16945,7 +18256,7 @@ var _a, _b;
 /***/ "../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Tax Rate </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"content-wrapper\">\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Tax Name *\">\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Tax Rate *\">\r\n\t</md-form-field>\r\n\r\n\t<md-select placeholder=\"Type\">\r\n\t\t<md-option value=\"Fixed Amount\"> Fixed Amount </md-option>\r\n\t\t<md-option value=\"Percentage\"> Percentage </md-option>\r\n\t</md-select>\r\n\r\n\t<div class=\"md-checkbox-container\">\r\n\t\t<label> Customer Group </label>\r\n\t\t<md-checkbox> Default </md-checkbox>\r\n\t</div>\r\n\r\n\t<md-select placeholder=\"Geo Zone\">\r\n\t\t<md-option value=\"UK Shipping\"> UK Shipping </md-option>\r\n\t\t<md-option value=\"UK VAT Zone\"> UK VAT Zone </md-option>\r\n\t</md-select>\r\n</div>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Tax Rate </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"content-wrapper\">\r\n\t<form #taxRateForm=\"ngForm\" (ngSubmit)=\"saveTaxRate()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Tax Name *\" [formControl]=\"name\">\r\n\t\t</md-form-field>\r\n\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Tax Rate *\" [formControl]=\"rate\">\r\n\t\t</md-form-field>\r\n\r\n\t\t<md-select placeholder=\"Type\" [formControl]=\"type\">\r\n\t\t\t<md-option value=\"1\"> Fixed Amount </md-option>\r\n\t\t\t<md-option value=\"2\"> Percentage </md-option>\r\n\t\t</md-select>\r\n\r\n\t\t<div class=\"md-checkbox-container\">\r\n\t\t\t<label> Customer Group </label>\r\n\t\t\t<div *ngFor=\"let customerGroup of customerGroups; let i = index\">\r\n\t\t\t\t<md-checkbox (change)=\"checkCustomerGroup($event, customerGroup)\" [checked]=\"selectedCustomerGroups.indexOf(customerGroup._id) != -1\"> {{ customerGroup.name }} </md-checkbox>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\r\n\t\t<md-select placeholder=\"Geo Zone\" [formControl]=\"geo_zone\">\r\n\t\t\t<md-option *ngFor=\"let geoZone of geoZones\" value=\"{{geoZone._id}}\"> {{ geoZone.name }} </md-option>\r\n\t\t</md-select>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Tax Rate </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
 
 /***/ }),
 
@@ -16973,16 +18284,84 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TaxRateFormComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
 
 var TaxRateFormComponent = (function () {
-    function TaxRateFormComponent() {
+    function TaxRateFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
+        this.geoZones = [];
+        this.customerGroups = [];
+        this.selectedCustomerGroups = [];
+        this.name = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        this.rate = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        this.type = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', []);
+        this.geo_zone = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', []);
+        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
+            name: this.name,
+            rate: this.rate,
+            type: this.type,
+            customer_groups: new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormArray"]([]),
+            geo_zone: this.geo_zone,
+        });
     }
+    TaxRateFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.taxRateId = params['id'];
+            if (_this.taxRateId) {
+                _this.crudService.retrieveOne('TaxRate', _this.taxRateId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                    _this.selectedCustomerGroups = result.content.customer_groups || [];
+                    console.log(_this.selectedCustomerGroups);
+                    console.log(_this.form.value);
+                });
+            }
+        });
+        this.crudService.retrieve('CustomerGroup').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.customerGroups = result.content;
+            }
+        });
+        this.crudService.retrieve('GeoZone').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.geoZones = result.content;
+            }
+        });
+    };
+    TaxRateFormComponent.prototype.checkCustomerGroup = function (event, customerGroup) {
+        if (event.checked == true)
+            this.selectedCustomerGroups.push(customerGroup._id);
+        else
+            this.selectedCustomerGroups = this.selectedCustomerGroups.filter(function (id) { return id != customerGroup._id; });
+    };
+    TaxRateFormComponent.prototype.saveTaxRate = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'TaxRate';
+            this.form.value.customer_groups = this.selectedCustomerGroups;
+            var action = this.taxRateId ? this.crudService.update(this.form.value, this.taxRateId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/tax-rates']);
+            });
+        }
+    };
     return TaxRateFormComponent;
 }());
 TaxRateFormComponent = __decorate([
@@ -16990,9 +18369,11 @@ TaxRateFormComponent = __decorate([
         selector: 'admin-tax-rates-form',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-form.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-form.component.scss")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
 ], TaxRateFormComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=tax-rates-form.component.js.map
 
 /***/ }),
@@ -17000,7 +18381,7 @@ TaxRateFormComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Tax Rates List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/tax-rates/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Tax Name Column -->\r\n\t<ng-container cdkColumnDef=\"tax_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.tax_name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Tax Rate Column -->\r\n\t<ng-container cdkColumnDef=\"tax_rate\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Rate </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.tax_rate}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Type Column -->\r\n\t<ng-container cdkColumnDef=\"type\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Type </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.type}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Geo Zone Column -->\r\n\t<ng-container cdkColumnDef=\"geo_zone\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Geo Zone </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.geo_zone}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- date_added Column -->\r\n\t<ng-container cdkColumnDef=\"date_added\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.date_added}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- date_modified Column -->\r\n\t<ng-container cdkColumnDef=\"date_modified\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date Modified </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.date_modified}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>create</md-icon></button>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Tax Rates List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/tax-rates/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Tax Name Column -->\r\n\t<ng-container cdkColumnDef=\"tax_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Tax Rate Column -->\r\n\t<ng-container cdkColumnDef=\"tax_rate\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Rate </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.rate}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Type Column -->\r\n\t<ng-container cdkColumnDef=\"type\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Type </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{taxRateTypes[row.type]}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Geo Zone Column -->\r\n\t<ng-container cdkColumnDef=\"geo_zone\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Geo Zone </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.geo_zone.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- date_added Column -->\r\n\t<ng-container cdkColumnDef=\"date_added\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.created_at}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- date_modified Column -->\r\n\t<ng-container cdkColumnDef=\"date_modified\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date Modified </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.updated_at}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\">\r\n\t\t\t<a [routerLink]=\"['/admin/tax-rates/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
 
 /***/ }),
 
@@ -17046,6 +18427,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_rxjs_add_observable_fromEvent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -17077,18 +18459,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var taxRateList = [
     { tax_name: 'Eco Tax(-2.00)', tax_rate: '2.0000', type: 'Fixed Amount', geo_zone: 'UK VAT Zone', date_added: '21/09/2011', date_modified: '23/09/2011' },
     { tax_name: 'VAT (20%)', tax_rate: '20.0000', type: 'Percentage', geo_zone: 'UK VAT Zone', date_added: '21/09/2011', date_modified: '23/09/2011' },
 ];
 var TaxRateListComponent = (function () {
-    function TaxRateListComponent() {
+    function TaxRateListComponent(crudService) {
+        this.crudService = crudService;
         this.displayedColumns = ['tax_name', 'tax_rate', 'type', 'geo_zone', 'date_added', 'date_modified', 'action'];
+        this.taxRateTypes = ['', 'Fixed Amount', 'Percentage'];
         this.tableData = new __WEBPACK_IMPORTED_MODULE_10__helper_table_data_table_data__["a" /* TableData */]();
     }
     TaxRateListComponent.prototype.ngOnInit = function () {
-        this.tableData.setData(taxRateList);
-        this.dataSource = new TaxRateDataSource(this.tableData, this.paginator, this.sort);
+        var _this = this;
+        this.crudService.retrieve('TaxRate').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new TaxRateDataSource(_this.tableData, _this.paginator, _this.sort);
+            }
+        });
     };
     return TaxRateListComponent;
 }());
@@ -17106,7 +18496,7 @@ TaxRateListComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/tax-rates/tax-rates-list.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_11__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_11__services_crud_service__["a" /* CRUDService */]) === "function" && _c || Object])
 ], TaxRateListComponent);
 
 var TaxRateDataSource = (function (_super) {
@@ -17151,7 +18541,7 @@ var TaxRateDataSource = (function (_super) {
     return TaxRateDataSource;
 }(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
 
-var _a, _b;
+var _a, _b, _c;
 //# sourceMappingURL=tax-rates-list.component.js.map
 
 /***/ }),
@@ -17357,7 +18747,7 @@ var TaxDataSource = (function (_super) {
 /***/ "../../../../../src/app/components/back/admin/pages/transactions/transactions-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> New transaction </span>\r\n\t</h3>\r\n</div>\r\n\r\n<form #transactionsForm=\"ngForm\" (ngSubmit)=\"createTransaction(transactionsForm)\" [formGroup]=\"form\" class=\"form-content\" [ngStyle]=\"{'padding': '30px'}\">\r\n\t<md-select placeholder=\"From\">\r\n\t\t<md-option value=\"User1\"> User1 </md-option>\r\n\t\t<md-option value=\"User2\"> User2 </md-option>\r\n\t\t<md-option value=\"User3\"> User3 </md-option>\r\n\t</md-select>\r\n\r\n\t<md-select placeholder=\"To\">\r\n\t\t<md-option value=\"User1\"> User1 </md-option>\r\n\t\t<md-option value=\"User2\"> User2 </md-option>\r\n\t\t<md-option value=\"User3\"> User3 </md-option>\r\n\t</md-select>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Amount*\" [formControl]=\"amountInput\">\r\n\t\t<md-error *ngIf=\"amountInput.hasError('required')\">\r\n\t\t\tThis field is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<textarea mdInput placeholder=\"Description\"></textarea>\r\n\t</md-form-field>\r\n\r\n\t<div class=\"submit-button\" fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button [ngStyle]=\"{'background': 'rgb(0, 132, 71)', 'color': '#fff'}\"> Create Transaction </button>\r\n\t</div>\r\n</form>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> New transaction </span>\r\n\t</h3>\r\n</div>\r\n\r\n<form #transactionsForm=\"ngForm\" (ngSubmit)=\"saveTransaction()\" [formGroup]=\"form\" class=\"form-content\" [ngStyle]=\"{'padding': '30px'}\">\r\n\t<md-select placeholder=\"From\" [formControl]=\"from\">\r\n\t\t<md-option *ngFor=\"let seller of sellers\" value=\"{{seller._id}}\"> {{ seller.general.nickname }} ( {{ seller.general.user ? seller.general.user.first_name + ' ' + seller.general.user.last_name : seller.general.first_name + ' ' + seller.general.last_name }} ) </md-option>\r\n\t</md-select>\r\n\r\n\t<md-select placeholder=\"To\" [formControl]=\"to\">\r\n\t\t<md-option *ngFor=\"let seller of sellers\" value=\"{{seller._id}}\"> {{ seller.general.nickname }} ( {{ seller.general.user ? seller.general.user.first_name + ' ' + seller.general.user.last_name : seller.general.first_name + ' ' + seller.general.last_name }} ) </md-option>\r\n\t</md-select>\r\n\r\n\t<md-form-field>\r\n\t\t<input mdInput placeholder=\"Amount*\" [formControl]=\"amount\">\r\n\t\t<md-error *ngIf=\"amount.hasError('required')\">\r\n\t\t\tThis field is <strong> required </strong>\r\n\t\t</md-error>\r\n\t</md-form-field>\r\n\r\n\t<md-form-field>\r\n\t\t<textarea mdInput placeholder=\"Description\" [formControl]=\"description\"></textarea>\r\n\t</md-form-field>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button class=\"submit-button\"> Save Transaction </button>\r\n\t</div>\r\n</form>"
 
 /***/ }),
 
@@ -17386,23 +18776,70 @@ module.exports = module.exports.toString();
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TransactionsFormComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__ = __webpack_require__("../../../../rxjs/add/observable/of.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_of__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin__ = __webpack_require__("../../../../rxjs/add/observable/forkJoin.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_observable_forkJoin__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
 
 
 var TransactionsFormComponent = (function () {
-    function TransactionsFormComponent() {
-        this.amountInput = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
-        ]);
+    function TransactionsFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
+        this.sellers = [];
+        this.from = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        this.to = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        this.amount = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        this.description = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', []);
         this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
-            amountInput: this.amountInput
+            from: this.from,
+            to: this.to,
+            amount: this.amount,
+            description: this.description
         });
     }
+    TransactionsFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.crudService.retrieve('Seller').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.sellers = result.content;
+            }
+        });
+    };
+    TransactionsFormComponent.prototype.saveTransaction = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'Transaction';
+            var queue = [];
+            this.form.value.seller = this.form.value.to;
+            queue.push(this.crudService.create(JSON.parse(JSON.stringify(this.form.value))));
+            this.form.value.seller = this.form.value.from;
+            this.form.value.amount = -this.form.value.amount;
+            queue.push(this.crudService.create(this.form.value));
+            __WEBPACK_IMPORTED_MODULE_3_rxjs_Observable__["Observable"].forkJoin(queue).subscribe(function (res) {
+                _this.router.navigate(['/admin/transactions']);
+            });
+        }
+    };
     return TransactionsFormComponent;
 }());
 TransactionsFormComponent = __decorate([
@@ -17410,9 +18847,11 @@ TransactionsFormComponent = __decorate([
         selector: 'admin-transactions-form',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/transactions/transactions-form.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/transactions/transactions-form.component.scss")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_6__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
 ], TransactionsFormComponent);
 
+var _a, _b, _c;
 //# sourceMappingURL=transactions-form.component.js.map
 
 /***/ }),
@@ -17420,7 +18859,7 @@ TransactionsFormComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/transactions/transactions-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Transactions List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"filter-panel\" [ngStyle]=\"{'margin-top': '20px'}\">\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #sellerFilter placeholder=\"Seller\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #netAmountFilter placeholder=\"Net Amount\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #descriptionFilter placeholder=\"Description\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #dateFilter placeholder=\"Date\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t</div>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button [ngStyle]=\"{'background': '#1e91cf'}\"> <md-icon>autorenew</md-icon> Filter </button>\r\n\t</div>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/transactions/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Index Column -->\r\n\t<ng-container cdkColumnDef=\"index\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> # </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.index}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Image Column -->\r\n\t<ng-container cdkColumnDef=\"image\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Image </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> \r\n\t\t\t<img class=\"avatar\" src=\"assets/img/{{row.image}}\">\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Seller Column -->\r\n\t<ng-container cdkColumnDef=\"seller\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.seller}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Net Amount Column -->\r\n\t<ng-container cdkColumnDef=\"net_amount\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Net Amount </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.net_amount}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Description Column -->\r\n\t<ng-container cdkColumnDef=\"description\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.description}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Date Column -->\r\n\t<ng-container cdkColumnDef=\"date\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.date}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Transactions List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"filter-panel\" [ngStyle]=\"{'margin-top': '20px'}\">\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #sellerFilter placeholder=\"Seller\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #netAmountFilter placeholder=\"Net Amount\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #descriptionFilter placeholder=\"Description\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #dateFilter placeholder=\"Date\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t</div>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button [ngStyle]=\"{'background': '#1e91cf'}\"> <md-icon>autorenew</md-icon> Filter </button>\r\n\t</div>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/transactions/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Index Column -->\r\n\t<ng-container cdkColumnDef=\"index\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> # </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row._id}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Image Column -->\r\n\t<ng-container cdkColumnDef=\"image\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Image </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> \r\n\t\t\t<img class=\"avatar\" src=\"assets/img/{{row.image}}\">\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Seller Column -->\r\n\t<ng-container cdkColumnDef=\"seller\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.seller.general.user ? row.seller.general.user.first_name + ' ' + row.seller.general.user.last_name : row.seller.general.first_name + ' ' + row.seller.general.last_name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Net Amount Column -->\r\n\t<ng-container cdkColumnDef=\"net_amount\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Net Amount </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.amount}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Description Column -->\r\n\t<ng-container cdkColumnDef=\"description\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Description </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.description}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Date Column -->\r\n\t<ng-container cdkColumnDef=\"date\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.date}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
 
 /***/ }),
 
@@ -17468,6 +18907,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_fromEvent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -17500,33 +18940,28 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var transactionsList = [
-    { index: 1, image: 'avatar1.jpg', seller: 'Seller1', net_amount: '$100', description: 'Description', date: '2017-09-07' },
-    { index: 2, image: 'avatar1.jpg', seller: 'Seller2', net_amount: '$200', description: 'Description', date: '2017-09-07' },
-    { index: 3, image: 'avatar1.jpg', seller: 'Seller3', net_amount: '$300', description: 'Description', date: '2017-09-07' },
-    { index: 4, image: 'avatar1.jpg', seller: 'Seller4', net_amount: '$400', description: 'Description', date: '2017-09-07' },
-    { index: 5, image: 'avatar1.jpg', seller: 'Seller5', net_amount: '$500', description: 'Description', date: '2017-09-07' },
-    { index: 6, image: 'avatar1.jpg', seller: 'Seller6', net_amount: '$600', description: 'Description', date: '2017-09-07' },
-    { index: 7, image: 'avatar1.jpg', seller: 'Seller7', net_amount: '$700', description: 'Description', date: '2017-09-07' },
-    { index: 8, image: 'avatar1.jpg', seller: 'Seller8', net_amount: '$800', description: 'Description', date: '2017-09-07' },
-    { index: 9, image: 'avatar1.jpg', seller: 'Seller9', net_amount: '$900', description: 'Description', date: '2017-09-07' },
-];
+
 var TransactionsListComponent = (function () {
-    function TransactionsListComponent() {
+    function TransactionsListComponent(crudService) {
+        this.crudService = crudService;
         this.displayedColumns = ['index', 'image', 'seller', 'net_amount', 'description', 'date'];
         this.tableData = new __WEBPACK_IMPORTED_MODULE_11__helper_table_data_table_data__["a" /* TableData */]();
     }
     TransactionsListComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.tableData.setData(transactionsList);
-        this.dataSource = new TransactionsDataSource(this.tableData, this.paginator, this.sort);
-        __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__["Observable"].fromEvent(this.sellerFilter.nativeElement, 'keyup')
-            .debounceTime(150)
-            .distinctUntilChanged()
-            .subscribe(function () {
-            if (!_this.dataSource)
-                return;
-            _this.dataSource.sellerFilter = _this.sellerFilter.nativeElement.value;
+        this.crudService.retrieve('Transaction').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new TransactionsDataSource(_this.tableData, _this.paginator, _this.sort);
+                __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__["Observable"].fromEvent(_this.sellerFilter.nativeElement, 'keyup')
+                    .debounceTime(150)
+                    .distinctUntilChanged()
+                    .subscribe(function () {
+                    if (!_this.dataSource)
+                        return;
+                    _this.dataSource.sellerFilter = _this.sellerFilter.nativeElement.value;
+                });
+            }
         });
     };
     return TransactionsListComponent;
@@ -17561,7 +18996,7 @@ TransactionsListComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/transactions/transactions-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/transactions/transactions-list.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_12__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_12__services_crud_service__["a" /* CRUDService */]) === "function" && _g || Object])
 ], TransactionsListComponent);
 
 var TransactionsDataSource = (function (_super) {
@@ -17638,7 +19073,7 @@ var TransactionsDataSource = (function (_super) {
     return TransactionsDataSource;
 }(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
 
-var _a, _b, _c, _d, _e, _f;
+var _a, _b, _c, _d, _e, _f, _g;
 //# sourceMappingURL=transactions-list.component.js.map
 
 /***/ }),
@@ -17707,7 +19142,7 @@ BadgesComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/vendors/tabs/fees/fees.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"tab-commissions-fees\" [ngStyle]=\"{'padding': '30px'}\">\n\t<div class=\"sales-fee\">\n\t\t<label class=\"label-title\"> Sales fee </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput>\n\t\t</md-form-field>\n\n\t\t<label class=\"label-plus\"> + </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput>\n\t\t</md-form-field>\n\n\t\t<label class=\"label-percent\"> % </label>\n\t</div>\n\n\t<div class=\"listing-fee\">\n\t\t<label class=\"label-title\"> Listing fee / method </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput>\n\t\t</md-form-field>\n\n\t\t<label class=\"label-plus\"> + </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput>\n\t\t</md-form-field>\n\n\t\t<label class=\"label-percent\"> % </label>\n\n\t\t<md-select placeholder=\"Payment method\">\n\t\t\t<md-option value=\"Seller balance\">\n\t\t\t\tSeller balance\n\t\t\t</md-option>\n\t\t\t<md-option value=\"[MM] Payment Gateways\">\n\t\t\t\t[MM] Payment Gateways\n\t\t\t</md-option>\n\t\t</md-select>\n\t</div>\n</div>"
+module.exports = "<div class=\"tab-commissions-fees\" [ngStyle]=\"{'padding': '30px'}\" [formGroup]=\"fees\">\n\t<div class=\"sales-fee\">\n\t\t<label class=\"label-title\"> Sales fee </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"sales_fee_fixed\">\n\t\t</md-form-field>\n\n\t\t<label class=\"label-plus\"> + </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"sales_fee_percent\">\n\t\t</md-form-field>\n\n\t\t<label class=\"label-percent\"> % </label>\n\t</div>\n\n\t<div class=\"listing-fee\">\n\t\t<label class=\"label-title\"> Listing fee / method </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"listing_fee_fixed\">\n\t\t</md-form-field>\n\n\t\t<label class=\"label-plus\"> + </label>\n\n\t\t<md-form-field>\n\t\t\t<input mdInput formControlName=\"listing_fee_percent\">\n\t\t</md-form-field>\n\n\t\t<label class=\"label-percent\"> % </label>\n\n\t\t<md-select placeholder=\"Payment method\" formControlName=\"listing_fee_method\">\n\t\t\t<md-option value=\"1\"> Seller balance </md-option>\n\t\t\t<md-option value=\"2\"> [MM] Payment Gateways </md-option>\n\t\t</md-select>\n\t</div>\n</div>"
 
 /***/ }),
 
@@ -17735,6 +19170,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VendorFeesComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17745,6 +19181,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var VendorFeesComponent = (function () {
     function VendorFeesComponent() {
     }
@@ -17752,6 +19189,10 @@ var VendorFeesComponent = (function () {
     };
     return VendorFeesComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]) === "function" && _a || Object)
+], VendorFeesComponent.prototype, "fees", void 0);
 VendorFeesComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'admin-vendors-tab-fees',
@@ -17761,6 +19202,7 @@ VendorFeesComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], VendorFeesComponent);
 
+var _a;
 //# sourceMappingURL=fees.component.js.map
 
 /***/ }),
@@ -17768,7 +19210,7 @@ VendorFeesComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/vendors/tabs/general/general.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"tab-general\" [formGroup]=\"form\">\n\t<h3> User Data </h3>\n\n\t<md-select placeholder=\"User\">\n\t\t<md-option value=\"User1\"> User1 </md-option>\n\t\t<md-option value=\"User2\"> User2 </md-option>\n\t\t<md-option value=\"User3\"> User3 </md-option>\n\t</md-select>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"First Name*\" [formControl]=\"firstName\">\n\t\t<md-error *ngIf=\"firstName.hasError('required')\">\n\t\t\tFirst name is <strong> required </strong>\n\t\t</md-error>\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Last Name*\" [formControl]=\"lastName\">\n\t\t<md-error *ngIf=\"lastName.hasError('required')\">\n\t\t\tLast name is <strong> required </strong>\n\t\t</md-error>\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"E-Mail*\" [formControl]=\"email\">\n\t\t<md-error *ngIf=\"email.hasError('required')\">\n\t\t\tEmail is <strong> required </strong>\n\t\t</md-error>\n\t\t<md-error *ngIf=\"email.hasError('pattern')\">\n\t\t\tPlease enter a valid email address\n\t\t</md-error>\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Password*\" [formControl]=\"password\">\n\t\t<md-error *ngIf=\"password.hasError('required')\">\n\t\t\tPassword is <strong> required </strong>\n\t\t</md-error>\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Confirm*\" [formControl]=\"confirm\">\n\t\t<md-error *ngIf=\"password.hasError('required')\">\n\t\t\tPlease confirm your password\n\t\t</md-error>\n\t</md-form-field>\n\n\t<h3> Seller Data </h3>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Nickname*\" [formControl]=\"nickname\">\n\t\t<md-error *ngIf=\"nickname.hasError('required')\">\n\t\t\tNickname is <strong> required </strong>\n\t\t</md-error>\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"SEO keyword\">\n\t</md-form-field>\n\n\t<md-select placeholder=\"Seller Group\">\n\t\t<md-option value=\"Group1\"> Group1 </md-option>\n\t\t<md-option value=\"Group2\"> Group2 </md-option>\n\t</md-select>\n\n\t<md-select placeholder=\"Product validation\">\n\t\t<md-option value=\"No validation\"> No validation </md-option>\n\t\t<md-option value=\"Manual approval\"> Manual approval </md-option>\n\t</md-select>\n\n\t<div class=\"tiny-mce\" [ngStyle]=\"{'margin-top': '20px'}\">\n\t\t<span [ngStyle]=\"{'color': 'rgba(0, 0, 0, 0.54)'}\"> Description </span>\n\t\t<angular-tinymce [formControl]='tinyMCE'> </angular-tinymce>\n\t</div>\n\n\t<md-select placeholder=\"Status\">\n\t\t<md-option value=\"Active\"> Active </md-option>\n\t\t<md-option value=\"Inactive\"> Inactive </md-option>\n\t\t<md-option value=\"Disabled\"> Disabled </md-option>\n\t\t<md-option value=\"Deleted\"> Deleted </md-option>\n\t\t<md-option value=\"Unpaid signup fee\"> Unpaid signup fee </md-option>\n\t\t<md-option value=\"Incomplete\"> Incomplete </md-option>\n\t</md-select>\n</div>"
+module.exports = "<div class=\"tab-general\" [formGroup]=\"general\">\n\t<h3> User Data </h3>\n\n\t<md-select placeholder=\"User\" formControlName=\"user\">\n\t\t<md-option value=\"\"> Create a new user </md-option>\n\t\t<md-option *ngFor=\"let buyer of buyers\" value=\"{{buyer._id}}\"> {{ buyer.first_name + ' ' + buyer.last_name }} </md-option>\n\t</md-select>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"First Name*\" formControlName=\"first_name\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Last Name*\" formControlName=\"last_name\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"E-Mail*\" formControlName=\"email\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Password*\" formControlName=\"password\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Confirm*\" formControlName=\"confirm_password\">\n\t</md-form-field>\n\n\n\t<h3> Seller Data </h3>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Nickname*\" formControlName=\"nickname\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"SEO keyword\" formControlName=\"seo_keyword\">\n\t</md-form-field>\n\n\t<md-select placeholder=\"Seller Group\" formControlName=\"seller_group\">\n\t\t<md-option *ngFor=\"let group of seller_groups\" value=\"{{group._id}}\"> {{ group.general.name }} </md-option>\n\t</md-select>\n\n\t<md-select placeholder=\"Product validation\" formControlName=\"product_validation\">\n\t\t<md-option value=\"1\"> No validation </md-option>\n\t\t<md-option value=\"2\"> Manual approval </md-option>\n\t</md-select>\n\n\t<div class=\"tiny-mce\" [ngStyle]=\"{'margin-top': '20px'}\">\n\t\t<span [ngStyle]=\"{'color': 'rgba(0, 0, 0, 0.54)'}\"> Description </span>\n\t\t<angular-tinymce formControlName='description'> </angular-tinymce>\n\t</div>\n\n\t<md-select placeholder=\"Status\" formControlName=\"status\">\n\t\t<md-option value=\"1\"> Active </md-option>\n\t\t<md-option value=\"2\"> Inactive </md-option>\n\t\t<md-option value=\"3\"> Disabled </md-option>\n\t\t<md-option value=\"4\"> Deleted </md-option>\n\t\t<md-option value=\"5\"> Unpaid signup fee </md-option>\n\t\t<md-option value=\"6\"> Incomplete </md-option>\n\t</md-select>\n</div>"
 
 /***/ }),
 
@@ -17797,6 +19239,7 @@ module.exports = module.exports.toString();
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VendorGeneralComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17808,52 +19251,43 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 var EMAIL_REGEX = /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 var VendorGeneralComponent = (function () {
-    function VendorGeneralComponent() {
-        this.firstName = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
-        ]);
-        this.lastName = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
-        ]);
-        this.email = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required,
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].pattern(EMAIL_REGEX)
-        ]);
-        this.password = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
-        ]);
-        this.confirm = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
-        ]);
-        this.nickname = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [
-            __WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required
-        ]);
-        this.tinyMCE = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', []);
-        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
-            firstName: this.firstName,
-            lastName: this.lastName,
-            email: this.email,
-            password: this.password,
-            confirm: this.confirm,
-            nickname: this.nickname,
-            tinyMCE: this.tinyMCE
-        });
+    function VendorGeneralComponent(crudService) {
+        this.crudService = crudService;
+        this.buyers = [];
+        this.seller_groups = [];
     }
     VendorGeneralComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.crudService.retrieve('Buyer').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.buyers = result.content;
+            }
+        });
+        this.crudService.retrieve('SellerGroup').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.seller_groups = result.content;
+            }
+        });
     };
     return VendorGeneralComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]) === "function" && _a || Object)
+], VendorGeneralComponent.prototype, "general", void 0);
 VendorGeneralComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'admin-vendors-tab-general',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/general/general.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/tabs/general/general.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__services_crud_service__["a" /* CRUDService */]) === "function" && _b || Object])
 ], VendorGeneralComponent);
 
+var _a, _b;
 //# sourceMappingURL=general.component.js.map
 
 /***/ }),
@@ -17861,7 +19295,7 @@ VendorGeneralComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/vendors/tabs/user-settings/user-settings.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"tab-user-settings\" [ngStyle]=\"{'padding-top': '30px'}\">\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Full name\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Address Line 1\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Address Line 2\">\t\t\t\t\t\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"City\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"State/Province/Region\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Zip/Postal Code\">\n\t</md-form-field>\n\n\t<md-select placeholder=\"Country\">\n\t\t<md-option *ngFor=\"let i of [1, 2, 3, 4, 5]\" value=\"Country {{i}}\">\n\t\t\tCountry {{i}}\n\t\t</md-option>\n\t</md-select>\n\n\t<h3> Information </h3>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Website\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Company\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Phone\">\n\t</md-form-field>\n</div>\n"
+module.exports = "<div class=\"tab-user-settings\" [ngStyle]=\"{'padding-top': '30px'}\" [formGroup]=\"settings\">\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Full name\" formControlName=\"full_name\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Address Line 1\" formControlName=\"address_line1\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Address Line 2\" formControlName=\"address_line2\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"City\" formControlName=\"city\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"State/Province/Region\" formControlName=\"state_province_region\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Zip/Postal Code\" formControlName=\"zip_postal_code\">\n\t</md-form-field>\n\n\t<md-select placeholder=\"Country\" formControlName=\"country\">\n\t\t<md-option *ngFor=\"let i of [1, 2, 3, 4, 5]\" value=\"Country {{i}}\">\n\t\t\tCountry {{i}}\n\t\t</md-option>\n\t</md-select>\n\n\t<h3> Information </h3>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Website\" formControlName=\"website\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Company\" formControlName=\"company\">\n\t</md-form-field>\n\n\t<md-form-field>\n\t\t<input mdInput placeholder=\"Phone\" formControlName=\"phone\">\n\t</md-form-field>\n</div>\n"
 
 /***/ }),
 
@@ -17889,6 +19323,7 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return UserSettingsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -17899,6 +19334,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 
+
 var UserSettingsComponent = (function () {
     function UserSettingsComponent() {
     }
@@ -17906,6 +19342,10 @@ var UserSettingsComponent = (function () {
     };
     return UserSettingsComponent;
 }());
+__decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Input"])(),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]) === "function" && _a || Object)
+], UserSettingsComponent.prototype, "settings", void 0);
 UserSettingsComponent = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
         selector: 'admin-vendors-tab-user-settings',
@@ -17915,6 +19355,7 @@ UserSettingsComponent = __decorate([
     __metadata("design:paramtypes", [])
 ], UserSettingsComponent);
 
+var _a;
 //# sourceMappingURL=user-settings.component.js.map
 
 /***/ }),
@@ -17922,7 +19363,7 @@ UserSettingsComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/vendors/vendors-form.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> New seller </span>\r\n\t</h3>\r\n</div>\r\n\r\n<form #buyersForm=\"ngForm\" (ngSubmit)=\"createBuyer(buyersForm)\" class=\"form-content\" [ngStyle]=\"{'margin': '30px 0px'}\">\r\n\t<md-tab-group>\r\n\t\t<md-tab label=\"General\">\r\n\t\t\t<admin-vendors-tab-general> </admin-vendors-tab-general>\r\n\t\t</md-tab>\r\n\r\n\t\t<md-tab label=\"Commissions & fees\">\r\n\t\t\t<admin-vendors-tab-fees> </admin-vendors-tab-fees>\r\n\t\t</md-tab>\r\n\r\n\t\t<md-tab label=\"Badges\">\r\n\t\t\t<admin-vendors-tab-badges> </admin-vendors-tab-badges>\r\n\t\t</md-tab>\r\n\r\n\t\t<md-tab label=\"User settings\">\r\n\t\t\t<admin-vendors-tab-user-settings> </admin-vendors-tab-user-settings>\r\n\t\t</md-tab>\r\n\t</md-tab-group>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button class=\"submit-button\"> Save Vendor </button>\r\n\t</div>\r\n</form>"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> New seller </span>\r\n\t</h3>\r\n</div>\r\n\r\n<form #buyersForm=\"ngForm\" [formGroup]=\"form\" (ngSubmit)=\"saveVendor()\">\r\n\t<md-tab-group>\r\n\t\t<md-tab label=\"General\">\r\n\t\t\t<admin-vendors-tab-general [general]=\"form.controls.general\"> </admin-vendors-tab-general>\r\n\t\t</md-tab>\r\n\t\t<md-tab label=\"Comissions & Fees\">\r\n\t\t\t<admin-vendors-tab-fees [fees]=\"form.controls.fees\"> </admin-vendors-tab-fees>\r\n\t\t</md-tab>\r\n\t\t<md-tab label=\"Badges\">\r\n\t\t\t<admin-vendors-tab-badges> </admin-vendors-tab-badges>\r\n\t\t</md-tab>\r\n\t\t<md-tab label=\"User settings\">\r\n\t\t\t<admin-vendors-tab-user-settings [settings]=\"form.controls.settings\"> </admin-vendors-tab-user-settings>\r\n\t\t</md-tab>\r\n\t</md-tab-group>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t<button md-button class=\"submit-button\"> Save Vendor </button>\r\n\t</div>\r\n</form>"
 
 /***/ }),
 
@@ -17950,17 +19391,87 @@ module.exports = module.exports.toString();
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VendorsFormComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
 
 var VendorsFormComponent = (function () {
-    function VendorsFormComponent() {
+    function VendorsFormComponent(fb, crudService, router, route) {
+        this.fb = fb;
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
     }
-    VendorsFormComponent.prototype.createBuyer = function (buyersForm) {
+    VendorsFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.form = this.fb.group({
+            general: this.fb.group({
+                user: [''],
+                first_name: [''],
+                last_name: [''],
+                email: [''],
+                password: [''],
+                confirm_password: [''],
+                nickname: [''],
+                seo_keyword: [''],
+                seller_group: [''],
+                product_validation: [''],
+                description: [''],
+                status: ['']
+            }),
+            fees: this.fb.group({
+                sales_fee_fixed: [''],
+                sales_fee_percent: [''],
+                listing_fee_fixed: [''],
+                listing_fee_percent: [''],
+                listing_fee_method: [''],
+            }),
+            settings: this.fb.group({
+                full_name: [''],
+                address_line1: [''],
+                address_line2: [''],
+                city: [''],
+                state_province_region: [''],
+                zip_postal_code: [''],
+                country: [''],
+                website: [''],
+                company: [''],
+                phone: ['']
+            })
+        });
+        this.route.params.subscribe(function (params) {
+            _this.vendorId = params['id'];
+            if (_this.vendorId) {
+                _this.crudService.retrieveOne('Seller', _this.vendorId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+    };
+    VendorsFormComponent.prototype.saveVendor = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'Seller';
+            if (!this.form.value.general.user)
+                delete this.form.value.general.user;
+            var action = this.vendorId ? this.crudService.update(this.form.value, this.vendorId) : this.crudService.create(this.form.value);
+            action.subscribe(function (sellerGroup) {
+                _this.router.navigate(['/admin/vendors']);
+            });
+        }
     };
     return VendorsFormComponent;
 }());
@@ -17969,9 +19480,11 @@ VendorsFormComponent = __decorate([
         selector: 'admin-vendors-form',
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/vendors-form.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/vendors-form.component.scss")]
-    })
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormBuilder"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormBuilder"]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _d || Object])
 ], VendorsFormComponent);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=vendors-form.component.js.map
 
 /***/ }),
@@ -17979,7 +19492,7 @@ VendorsFormComponent = __decorate([
 /***/ "../../../../../src/app/components/back/admin/pages/vendors/vendors-list.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Vendors List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"filter-panel\" [ngStyle]=\"{'margin-top': '20px'}\">\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #sellerFilter placeholder=\"Seller\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #emailFilter placeholder=\"E-Mail\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #productFilter placeholder=\"Product\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #salesFilter placeholder=\"Sales\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #balanceFilter placeholder=\"Balance\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-select class=\"full-width\" placeholder=\"Customer Group\" #groupFilter>\r\n\t\t\t\t<md-option *ngFor=\"let status of ['Active', 'Inactive', 'Disabled', 'Deleted', 'Unpaid listing fee']\" value=\"{{status}}\">\r\n\t\t\t\t\t{{ status }}\r\n\t\t\t\t</md-option>\r\n\t\t\t</md-select>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #dateFilter placeholder=\"Date Created\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" fxLayout=\"row\" fxLayoutAlign=\"end center\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<button md-button [ngStyle]=\"{'background': '#1e91cf'}\"> <md-icon>autorenew</md-icon> Filter </button>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/vendors/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Seller Column -->\r\n\t<ng-container cdkColumnDef=\"seller\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.seller}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- E-Mail Column -->\r\n\t<ng-container cdkColumnDef=\"email\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> E-Mail </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.email}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Products Column -->\r\n\t<ng-container cdkColumnDef=\"product\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Products </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.product}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Sales Column -->\r\n\t<ng-container cdkColumnDef=\"sales\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Sales </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.sales}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Earnings Column -->\r\n\t<ng-container cdkColumnDef=\"earnings\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Earnings </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.earnings}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Balance Column -->\r\n\t<ng-container cdkColumnDef=\"balance\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Balance <br> (Total/Available) </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.balance}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Status Column -->\r\n\t<ng-container cdkColumnDef=\"status\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.status}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Date Created Column -->\r\n\t<ng-container cdkColumnDef=\"date_created\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date created </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.date_created}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\"> \r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#8fbb6c'}\"><md-icon>thumb_up</md-icon></button>\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#5bc0de'}\"><md-icon>lock</md-icon></button>\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f38733'}\"><md-icon>lock_open</md-icon></button>\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>create</md-icon></button>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Vendors List </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"filter-panel\" [ngStyle]=\"{'margin-top': '20px'}\">\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #sellerFilter placeholder=\"Seller\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #emailFilter placeholder=\"E-Mail\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #productFilter placeholder=\"Product\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #salesFilter placeholder=\"Sales\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\t</div>\r\n\r\n\t<div fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #balanceFilter placeholder=\"Balance\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-select class=\"full-width\" placeholder=\"Customer Group\" #groupFilter>\r\n\t\t\t\t<md-option *ngFor=\"let status of ['Active', 'Inactive', 'Disabled', 'Deleted', 'Unpaid listing fee']\" value=\"{{status}}\">\r\n\t\t\t\t\t{{ status }}\r\n\t\t\t\t</md-option>\r\n\t\t\t</md-select>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<md-form-field class=\"full-width\">\r\n\t\t\t\t<input mdInput #dateFilter placeholder=\"Date Created\">\r\n\t\t\t</md-form-field>\r\n\t\t</div>\r\n\r\n\t\t<div fxFlex=\"25\" fxLayout=\"row\" fxLayoutAlign=\"end center\" [ngStyle]=\"{'padding': '0px 10px'}\">\r\n\t\t\t<button md-button [ngStyle]=\"{'background': '#1e91cf'}\"> <md-icon>autorenew</md-icon> Filter </button>\r\n\t\t</div>\r\n\t</div>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/vendors/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Seller Column -->\r\n\t<ng-container cdkColumnDef=\"seller\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.general.user ? (row.general.user.first_name + ' ' + row.general.user.last_name) : (row.general.first_name + ' ' + row.general.last_name)}} {{ row.general.nickname }} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- E-Mail Column -->\r\n\t<ng-container cdkColumnDef=\"email\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> E-Mail </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.general.email}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Products Column -->\r\n\t<ng-container cdkColumnDef=\"product\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Products </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.product}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Sales Column -->\r\n\t<ng-container cdkColumnDef=\"sales\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Sales </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.sales}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Earnings Column -->\r\n\t<ng-container cdkColumnDef=\"earnings\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Earnings </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.earnings}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Balance Column -->\r\n\t<ng-container cdkColumnDef=\"balance\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Balance <br> (Total/Available) </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.balance}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Status Column -->\r\n\t<ng-container cdkColumnDef=\"status\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.status}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Date Created Column -->\r\n\t<ng-container cdkColumnDef=\"date_created\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Date created </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.created_at}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell fxLayout=\"row\" *cdkCellDef=\"let row\"> \r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#8fbb6c'}\"><md-icon>thumb_up</md-icon></button>\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#5bc0de'}\"><md-icon>lock</md-icon></button>\r\n\t\t\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f38733'}\"><md-icon>lock_open</md-icon></button>\r\n\t\t\t<a [routerLink]=\"['/admin/vendors/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
 
 /***/ }),
 
@@ -18027,6 +19540,7 @@ module.exports = module.exports.toString();
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_10_rxjs_add_observable_fromEvent__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
 var __extends = (this && this.__extends) || (function () {
     var extendStatics = Object.setPrototypeOf ||
         ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
@@ -18059,6 +19573,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var sellerList = [
     { seller: 'Seller1', email: 'user1@email.com', products: 'Product1', sales: '1', earnings: '$100', balance: '$200', status: 'Enabled', date_created: '2017-09-03' },
     { seller: 'Seller2', email: 'user2@email.com', products: 'Product2', sales: '2', earnings: '$200', balance: '$300', status: 'Enabled', date_created: '2017-09-03' },
@@ -18070,21 +19585,26 @@ var sellerList = [
     { seller: 'Seller8', email: 'user7@email.com', products: 'Product8', sales: '8', earnings: '$800', balance: '$900', status: 'Enabled', date_created: '2017-09-03' }
 ];
 var VendorsListComponent = (function () {
-    function VendorsListComponent() {
+    function VendorsListComponent(crudService) {
+        this.crudService = crudService;
         this.displayedColumns = ['seller', 'email', 'product', 'sales', 'earnings', 'balance', 'status', 'date_created', 'action'];
         this.tableData = new __WEBPACK_IMPORTED_MODULE_11__helper_table_data_table_data__["a" /* TableData */]();
     }
     VendorsListComponent.prototype.ngOnInit = function () {
         var _this = this;
-        this.tableData.setData(sellerList);
-        this.dataSource = new UserDataSource(this.tableData, this.paginator, this.sort);
-        __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__["Observable"].fromEvent(this.sellerFilter.nativeElement, 'keyup')
-            .debounceTime(150)
-            .distinctUntilChanged()
-            .subscribe(function () {
-            if (!_this.dataSource)
-                return;
-            _this.dataSource.sellerFilter = _this.sellerFilter.nativeElement.value;
+        this.crudService.retrieve('Seller').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new UserDataSource(_this.tableData, _this.paginator, _this.sort);
+                __WEBPACK_IMPORTED_MODULE_4_rxjs_Observable__["Observable"].fromEvent(_this.sellerFilter.nativeElement, 'keyup')
+                    .debounceTime(150)
+                    .distinctUntilChanged()
+                    .subscribe(function () {
+                    if (!_this.dataSource)
+                        return;
+                    _this.dataSource.sellerFilter = _this.sellerFilter.nativeElement.value;
+                });
+            }
         });
     };
     return VendorsListComponent;
@@ -18135,7 +19655,7 @@ VendorsListComponent = __decorate([
         template: __webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/vendors-list.component.html"),
         styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/vendors/vendors-list.component.scss")]
     }),
-    __metadata("design:paramtypes", [])
+    __metadata("design:paramtypes", [typeof (_l = typeof __WEBPACK_IMPORTED_MODULE_12__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_12__services_crud_service__["a" /* CRUDService */]) === "function" && _l || Object])
 ], VendorsListComponent);
 
 var UserDataSource = (function (_super) {
@@ -18240,7 +19760,7 @@ var UserDataSource = (function (_super) {
     return UserDataSource;
 }(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
 
-var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
+var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k, _l;
 //# sourceMappingURL=vendors-list.component.js.map
 
 /***/ }),
@@ -18507,6 +20027,244 @@ var _a, _b, _c;
 
 /***/ }),
 
+/***/ "../../../../../src/app/components/back/admin/pages/zones/zones-form.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">create</md-icon> \r\n\t\t<span> Add Zone </span>\r\n\t</h3>\r\n</div>\r\n\r\n\r\n<div>\r\n\t<form #zoneForm=\"ngForm\" (ngSubmit)=\"saveZone()\" [formGroup]=\"form\">\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Zone Name*\" [formControl]=\"name\">\r\n\t\t\t<md-error *ngIf=\"name.hasError('required')\">\r\n\t\t\t\tThis field is <strong> required </strong>\r\n\t\t\t</md-error>\r\n\t\t</md-form-field>\r\n\r\n\t\t<md-form-field>\r\n\t\t\t<input mdInput placeholder=\"Zone Code\" [formControl]=\"code\">\r\n\t\t</md-form-field>\r\n\r\n\t\t<md-select placeholder=\"Country\" [formControl]=\"country\">\r\n\t\t\t<md-option *ngFor=\"let country of countries\" value=\"{{country._id}}\"> {{ country.name }} </md-option>\r\n\t\t</md-select>\r\n\r\n\t\t<md-select placeholder=\"Status\" [formControl]=\"status\">\r\n\t\t\t<md-option value=\"1\"> Enabled </md-option>\r\n\t\t\t<md-option value=\"0\"> Disabled </md-option>\r\n\t\t</md-select>\r\n\r\n\t\t<div fxLayout=\"row\" fxLayoutAlign=\"end center\">\r\n\t\t\t<button md-button class=\"submit-button\"> Save Zone </button>\r\n\t\t</div>\r\n\t</form>\r\n</div>"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/zones/zones-form.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/zones/zones-form.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZonesFormComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__("../../../forms/@angular/forms.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var ZonesFormComponent = (function () {
+    function ZonesFormComponent(crudService, router, route) {
+        this.crudService = crudService;
+        this.router = router;
+        this.route = route;
+        this.countries = [];
+        this.name = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', [__WEBPACK_IMPORTED_MODULE_1__angular_forms__["Validators"].required]);
+        this.code = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', []);
+        this.country = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', []);
+        this.status = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormControl"]('', []);
+        this.form = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["FormGroup"]({
+            name: this.name,
+            code: this.code,
+            country: this.country,
+            status: this.status
+        });
+    }
+    ZonesFormComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.route.params.subscribe(function (params) {
+            _this.zoneId = params['id'];
+            if (_this.zoneId) {
+                _this.crudService.retrieveOne('Zone', _this.zoneId)
+                    .subscribe(function (result) {
+                    _this.form.patchValue(result.content);
+                });
+            }
+        });
+        this.crudService.retrieve('Country').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.countries = result.content;
+            }
+        });
+    };
+    ZonesFormComponent.prototype.saveZone = function () {
+        var _this = this;
+        if (this.form.valid) {
+            this.form.value.model = 'Zone';
+            var action = this.zoneId ? this.crudService.update(this.form.value, this.zoneId) : this.crudService.create(this.form.value);
+            action.subscribe(function (customerGroup) {
+                _this.router.navigate(['/admin/zones']);
+            });
+        }
+    };
+    return ZonesFormComponent;
+}());
+ZonesFormComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-zones-form',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/zones/zones-form.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/zones/zones-form.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["Router"]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_router__["ActivatedRoute"]) === "function" && _c || Object])
+], ZonesFormComponent);
+
+var _a, _b, _c;
+//# sourceMappingURL=zones-form.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/zones/zones-list.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"title\">\r\n\t<h3 fxLayout=\"row\" fxLayoutAlign=\"start center\">\r\n\t\t<md-icon [ngStyle]=\"{'margin-right': '10px'}\">list</md-icon> \r\n\t\t<span> Zones </span>\r\n\t</h3>\r\n</div>\r\n\r\n<div class=\"action-buttons\" [ngStyle]=\"{'margin-top': '30px'}\">\r\n\t<a [routerLink]=\"['/admin/zones/create']\"><button class=\"action-button\" md-button [ngStyle]=\"{'background': '#1e91cf'}\"><md-icon>add</md-icon></button></a>\r\n\t<button class=\"action-button\" md-button [ngStyle]=\"{'background': '#f56b6b'}\"><md-icon>delete</md-icon></button>\r\n</div>\r\n\r\n<md-table #table [dataSource]=\"dataSource\" mdSort [ngStyle]=\"{'margin-top': '10px'}\">\r\n\r\n\t<!-- Country Column -->\r\n\t<ng-container cdkColumnDef=\"country\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Country </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.country.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Zone Name Column -->\r\n\t<ng-container cdkColumnDef=\"zone_name\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Zone Name </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.name}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Zone Code Column -->\r\n\t<ng-container cdkColumnDef=\"zone_code\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Zone Code </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> {{row.code}} </md-cell>\r\n\t</ng-container>\r\n\r\n\t<!-- Action Column -->\r\n\t<ng-container cdkColumnDef=\"action\">\r\n\t\t<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>\r\n\t\t<md-cell *cdkCellDef=\"let row\"> \r\n\t\t\t<a [routerLink]=\"['/admin/zones/edit/' + row._id]\">\r\n\t\t\t\t<button class=\"action-button action-button-create\" md-button><md-icon>create</md-icon></button>\r\n\t\t\t</a>\r\n\t\t</md-cell>\r\n\t</ng-container>\r\n\r\n\t<md-header-row *cdkHeaderRowDef=\"displayedColumns\"></md-header-row>\r\n\t<md-row *cdkRowDef=\"let row; columns: displayedColumns;\"></md-row>\r\n</md-table>\r\n\r\n<md-paginator\r\n\t[length]=\"tableData.data.length\"\r\n\t[pageIndex]=\"0\"\r\n\t[pageSize]=\"5\"\r\n\t[pageSizeOptions]=\"[5, 10, 25]\">\r\n</md-paginator>\r\n\r\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/zones/zones-list.component.scss":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/components/back/admin/pages/zones/zones-list.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ZonesListComponent; });
+/* unused harmony export ZonesDataSource */
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__ = __webpack_require__("../../../cdk/@angular/cdk/table.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__ = __webpack_require__("../../../../rxjs/Observable.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__ = __webpack_require__("../../../../rxjs/add/operator/startWith.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_rxjs_add_operator_startWith__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__ = __webpack_require__("../../../../rxjs/add/observable/merge.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_rxjs_add_observable_merge__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__ = __webpack_require__("../../../../rxjs/add/operator/map.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_add_operator_map__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__ = __webpack_require__("../../../../rxjs/add/operator/debounceTime.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_rxjs_add_operator_debounceTime__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__ = __webpack_require__("../../../../rxjs/add/operator/distinctUntilChanged.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_7_rxjs_add_operator_distinctUntilChanged__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__ = __webpack_require__("../../../../rxjs/add/observable/fromEvent.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_8_rxjs_add_observable_fromEvent__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__ = __webpack_require__("../../../../../src/app/components/helper/table-data/table-data.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__services_crud_service__ = __webpack_require__("../../../../../src/app/services/crud.service.ts");
+var __extends = (this && this.__extends) || (function () {
+    var extendStatics = Object.setPrototypeOf ||
+        ({ __proto__: [] } instanceof Array && function (d, b) { d.__proto__ = b; }) ||
+        function (d, b) { for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p]; };
+    return function (d, b) {
+        extendStatics(d, b);
+        function __() { this.constructor = d; }
+        d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+    };
+})();
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+
+
+
+
+
+
+
+var ZonesListComponent = (function () {
+    function ZonesListComponent(crudService) {
+        this.crudService = crudService;
+        this.displayedColumns = ['country', 'zone_name', 'zone_code', 'action'];
+        this.tableData = new __WEBPACK_IMPORTED_MODULE_9__helper_table_data_table_data__["a" /* TableData */]();
+    }
+    ZonesListComponent.prototype.ngOnInit = function () {
+        var _this = this;
+        this.crudService.retrieve('Zone').subscribe(function (result) {
+            if (result.status == 'ok') {
+                _this.tableData.setData(result.content);
+                _this.dataSource = new ZonesDataSource(_this.tableData);
+            }
+        });
+    };
+    return ZonesListComponent;
+}());
+ZonesListComponent = __decorate([
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'admin-zones-list',
+        template: __webpack_require__("../../../../../src/app/components/back/admin/pages/zones/zones-list.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/components/back/admin/pages/zones/zones-list.component.scss")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_10__services_crud_service__["a" /* CRUDService */]) === "function" && _a || Object])
+], ZonesListComponent);
+
+var ZonesDataSource = (function (_super) {
+    __extends(ZonesDataSource, _super);
+    function ZonesDataSource(_tableData) {
+        var _this = _super.call(this) || this;
+        _this._tableData = _tableData;
+        _this.displayDataChanges = [
+            _tableData.dataChange,
+        ];
+        return _this;
+    }
+    ZonesDataSource.prototype.connect = function () {
+        var _this = this;
+        return __WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"].merge.apply(__WEBPACK_IMPORTED_MODULE_2_rxjs_Observable__["Observable"], this.displayDataChanges).map(function () {
+            return _this._tableData.data;
+        });
+    };
+    ZonesDataSource.prototype.disconnect = function () {
+    };
+    return ZonesDataSource;
+}(__WEBPACK_IMPORTED_MODULE_1__angular_cdk_table__["n" /* DataSource */]));
+
+var _a;
+//# sourceMappingURL=zones-list.component.js.map
+
+/***/ }),
+
 /***/ "../../../../../src/app/components/back/admin/partials/header/header.component.html":
 /***/ (function(module, exports) {
 
@@ -18606,7 +20364,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 
 
 // module
-exports.push([module.i, ".mat-button {\n  text-align: left;\n  padding: 0px 0px 0px 20px;\n  font-size: 12px;\n  color: #fff; }\n  .mat-button .arrow-down {\n    display: none; }\n  .mat-button .arrow-right {\n    display: block; }\n  .mat-button .mat-icon {\n    margin-right: 5px; }\n\n.mat-list-item .mat-button {\n  transition: all .3s ease;\n  min-height: 48px; }\n\n.mat-list-item .sub-menu, .mat-list-item .sub-sub-menu {\n  max-height: 0px;\n  overflow: hidden;\n  transition: all .5s ease; }\n\n.mat-list-item.opened .mat-button .arrow-down.sub-menu-arrow {\n  display: block; }\n\n.mat-list-item.opened .mat-button .arrow-right.sub-menu-arrow {\n  display: none; }\n\n.mat-list-item.opened .sub-menu {\n  max-height: 550px; }\n  .mat-list-item.opened .sub-menu .mat-list-item.opened .mat-button .arrow-down.sub-sub-menu-arrow {\n    display: block; }\n  .mat-list-item.opened .sub-menu .mat-list-item.opened .mat-button .arrow-right.sub-sub-menu-arrow {\n    display: none; }\n  .mat-list-item.opened .sub-menu .mat-list-item.opened .sub-sub-menu {\n    max-height: 300px; }\n", ""]);
+exports.push([module.i, ".mat-button {\n  text-align: left;\n  padding: 0px 0px 0px 20px;\n  font-size: 12px;\n  color: #fff; }\n  .mat-button .arrow-down {\n    display: none; }\n  .mat-button .arrow-right {\n    display: block; }\n  .mat-button .mat-icon {\n    margin-right: 5px; }\n\n.mat-list-item .mat-button {\n  transition: all .3s ease;\n  min-height: 48px; }\n\n.mat-list-item .sub-menu, .mat-list-item .sub-sub-menu {\n  max-height: 0px;\n  overflow: hidden;\n  transition: all .5s ease; }\n\n.mat-list-item.opened .mat-button .arrow-down.sub-menu-arrow {\n  display: block; }\n\n.mat-list-item.opened .mat-button .arrow-right.sub-menu-arrow {\n  display: none; }\n\n.mat-list-item.opened .sub-menu {\n  max-height: 1000px; }\n  .mat-list-item.opened .sub-menu .mat-list-item.opened .mat-button .arrow-down.sub-sub-menu-arrow {\n    display: block; }\n  .mat-list-item.opened .sub-menu .mat-list-item.opened .mat-button .arrow-right.sub-sub-menu-arrow {\n    display: none; }\n  .mat-list-item.opened .sub-menu .mat-list-item.opened .sub-sub-menu {\n    max-height: 500px; }\n", ""]);
 
 // exports
 
@@ -18699,8 +20457,13 @@ var LeftSidenavComponent = (function () {
                     { text: 'Weight Classes', link: 'weight-classes' },
                     { text: 'Tax Classes', link: 'tax-classes' },
                     { text: 'Tax Rates', link: 'tax-rates' },
+                    { text: 'Countries', link: 'countries' },
+                    { text: 'Zones', link: 'zones' },
                     { text: 'Geo Zones', link: 'geo-zones' },
-                    { text: 'Seller Groups', link: 'seller-groups' }
+                    { text: 'Seller Groups', link: 'seller-groups' },
+                    { text: 'Return Actions', link: 'return-actions' },
+                    { text: 'Return Statuses', link: 'return-statuses' },
+                    { text: 'Return Reasons', link: 'return-reasons' },
                 ] },
             { icon: 'language', text: 'Language Editor',
                 subMenuItems: [
@@ -18723,7 +20486,7 @@ var LeftSidenavComponent = (function () {
                             { text: 'Languages', link: 'languages' },
                             { text: 'Currencies', link: 'currencies' },
                             { text: 'Stock Statuses', link: 'stock-statuses' },
-                            { text: 'Order Statuses', link: 'order-statuses' }
+                            { text: 'Order Statuses', link: 'order-statuses' },
                         ]
                     },
                     { text: 'Setting', link: 'setting' },

@@ -1,8 +1,21 @@
+<div class="title">
+	<h3 fxLayout="row" fxLayoutAlign="start center">
+		<md-icon [ngStyle]="{'margin-right': '10px'}">create</md-icon> 
+		<span> Add Order Status </span>
+	</h3>
+</div>
+
 <div>
-	<md-form-field>
-		<input mdInput placeholder="Order Status Name*" [formControl]="orderStatusName">
-		<md-error *ngIf="orderStatusName.hasError('required')">
-			This field is <strong> required </strong>
-		</md-error>
-	</md-form-field>
+	<form #orderStatusForm="ngForm" (ngSubmit)="saveOrderStatus()" [formGroup]="form">
+		<md-form-field>
+			<input mdInput placeholder="Order Status Name*" [formControl]="name">
+			<md-error *ngIf="name.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button class="submit-button"> Save Order Status </button>
+		</div>
+	</form>
 </div>

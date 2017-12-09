@@ -15,44 +15,46 @@
 	<!-- Tax Name Column -->
 	<ng-container cdkColumnDef="tax_name">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Name </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.tax_name}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.name}} </md-cell>
 	</ng-container>
 
 	<!-- Tax Rate Column -->
 	<ng-container cdkColumnDef="tax_rate">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Tax Rate </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.tax_rate}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.rate}} </md-cell>
 	</ng-container>
 
 	<!-- Type Column -->
 	<ng-container cdkColumnDef="type">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Type </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.type}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{taxRateTypes[row.type]}} </md-cell>
 	</ng-container>
 
 	<!-- Geo Zone Column -->
 	<ng-container cdkColumnDef="geo_zone">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Geo Zone </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.geo_zone}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.geo_zone.name}} </md-cell>
 	</ng-container>
 
 	<!-- date_added Column -->
 	<ng-container cdkColumnDef="date_added">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.date_added}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.created_at}} </md-cell>
 	</ng-container>
 
 	<!-- date_modified Column -->
 	<ng-container cdkColumnDef="date_modified">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Modified </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.date_modified}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.updated_at}} </md-cell>
 	</ng-container>
 
 	<!-- Action Column -->
 	<ng-container cdkColumnDef="action">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
 		<md-cell fxLayout="row" *cdkCellDef="let row">
-			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+			<a [routerLink]="['/admin/tax-rates/edit/' + row._id]">
+				<button class="action-button action-button-create" md-button><md-icon>create</md-icon></button>
+			</a>
 		</md-cell>
 	</ng-container>
 

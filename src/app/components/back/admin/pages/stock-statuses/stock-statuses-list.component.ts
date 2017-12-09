@@ -1,9 +1,9 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/table';
-import { MdPaginator } from '@angular/material';
-import { MdSort } from '@angular/material';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Component, OnInit, ElementRef, ViewChild } 	from 	'@angular/core';
+import { DataSource } 									from 	'@angular/cdk/table';
+import { MdPaginator } 									from 	'@angular/material';
+import { MdSort } 										from 	'@angular/material';
+import { BehaviorSubject } 								from 	'rxjs/BehaviorSubject';
+import { Observable } 									from 	'rxjs/Observable';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
@@ -11,11 +11,8 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { TableData } from '../../../../helper/table-data/table-data';
-
-const stockStatusesList = [
-	{ stock_status_name: '2-3 Days' }
-];
+import { TableData } 									from 	'../../../../helper/table-data/table-data';
+import { CRUDService } 									from 	'../../../../../services/crud.service';
 
 @Component({
 	selector: 'admin-stock-statuses-list',
@@ -29,11 +26,15 @@ export class StockStatusesListComponent implements OnInit {
 	tableData = new TableData();
 	dataSource: StockStatusesDataSource | null;
 
-	constructor() { }
+	constructor(private crudService: CRUDService) { }
 
 	ngOnInit() {
-		this.tableData.setData(stockStatusesList);
-		this.dataSource = new StockStatusesDataSource(this.tableData);
+		this.crudService.retrieve( 'StockStatus' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.tableData.setData(result.content);
+				this.dataSource = new StockStatusesDataSource(this.tableData);
+			}
+		});
 	}
 }
 

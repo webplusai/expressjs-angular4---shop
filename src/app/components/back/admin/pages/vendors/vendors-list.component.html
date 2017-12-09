@@ -70,13 +70,13 @@
 	<!-- Seller Column -->
 	<ng-container cdkColumnDef="seller">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Seller </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.seller}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.general.user ? (row.general.user.first_name + ' ' + row.general.user.last_name) : (row.general.first_name + ' ' + row.general.last_name)}} {{ row.general.nickname }} </md-cell>
 	</ng-container>
 
 	<!-- E-Mail Column -->
 	<ng-container cdkColumnDef="email">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> E-Mail </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.email}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.general.email}} </md-cell>
 	</ng-container>
 
 	<!-- Products Column -->
@@ -112,7 +112,7 @@
 	<!-- Date Created Column -->
 	<ng-container cdkColumnDef="date_created">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Date created </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.date_created}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.created_at}} </md-cell>
 	</ng-container>
 
 	<!-- Action Column -->
@@ -122,7 +122,9 @@
 			<button class="action-button" md-button [ngStyle]="{'background': '#8fbb6c'}"><md-icon>thumb_up</md-icon></button>
 			<button class="action-button" md-button [ngStyle]="{'background': '#5bc0de'}"><md-icon>lock</md-icon></button>
 			<button class="action-button" md-button [ngStyle]="{'background': '#f38733'}"><md-icon>lock_open</md-icon></button>
-			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+			<a [routerLink]="['/admin/vendors/edit/' + row._id]">
+				<button class="action-button action-button-create" md-button><md-icon>create</md-icon></button>
+			</a>
 		</md-cell>
 	</ng-container>
 

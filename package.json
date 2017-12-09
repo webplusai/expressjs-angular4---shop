@@ -42,6 +42,7 @@
     "jquery-flot": "^0.8.3",
     "jquery-sparkline": "^2.4.0",
     "jvectormap": "^2.0.4",
+    "md5": "^2.2.1",
     "moment": "^2.18.1",
     "mongodb": "^2.2.33",
     "mongodb-migrate": "^2.0.2",

@@ -1,9 +1,9 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/table';
-import { MdPaginator } from '@angular/material';
-import { MdSort } from '@angular/material';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Component, OnInit, ElementRef, ViewChild }		from 	'@angular/core';
+import { DataSource } 									from 	'@angular/cdk/table';
+import { MdPaginator } 									from 	'@angular/material';
+import { MdSort } 										from 	'@angular/material';
+import { BehaviorSubject } 								from 	'rxjs/BehaviorSubject';
+import { Observable } 									from 	'rxjs/Observable';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
@@ -11,19 +11,8 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { TableData } from '../../../../helper/table-data/table-data';
-
-const transactionsList = [
-	{ index: 1, image: 'avatar1.jpg', seller: 'Seller1', net_amount: '$100', description: 'Description', date: '2017-09-07'},
-	{ index: 2, image: 'avatar1.jpg', seller: 'Seller2', net_amount: '$200', description: 'Description', date: '2017-09-07'},
-	{ index: 3, image: 'avatar1.jpg', seller: 'Seller3', net_amount: '$300', description: 'Description', date: '2017-09-07'},
-	{ index: 4, image: 'avatar1.jpg', seller: 'Seller4', net_amount: '$400', description: 'Description', date: '2017-09-07'},
-	{ index: 5, image: 'avatar1.jpg', seller: 'Seller5', net_amount: '$500', description: 'Description', date: '2017-09-07'},
-	{ index: 6, image: 'avatar1.jpg', seller: 'Seller6', net_amount: '$600', description: 'Description', date: '2017-09-07'},
-	{ index: 7, image: 'avatar1.jpg', seller: 'Seller7', net_amount: '$700', description: 'Description', date: '2017-09-07'},
-	{ index: 8, image: 'avatar1.jpg', seller: 'Seller8', net_amount: '$800', description: 'Description', date: '2017-09-07'},
-	{ index: 9, image: 'avatar1.jpg', seller: 'Seller9', net_amount: '$900', description: 'Description', date: '2017-09-07'},
-]
+import { TableData } 									from 	'../../../../helper/table-data/table-data';
+import { CRUDService } 									from 	'../../../../../services/crud.service';
 
 @Component({
 	selector: 'admin-transactions-list',
@@ -44,19 +33,23 @@ export class TransactionsListComponent implements OnInit {
 	@ViewChild('descriptionFilter')		descriptionFilter		: 	ElementRef;
 	@ViewChild('dateFilter')			dateFilter				: 	ElementRef;
 
-	constructor() { }
+	constructor(private crudService: CRUDService) { }
 
 	ngOnInit() {
-		this.tableData.setData(transactionsList);
-		this.dataSource = new TransactionsDataSource(this.tableData, this.paginator, this.sort);
+		this.crudService.retrieve( 'Transaction' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.tableData.setData(result.content);
+				this.dataSource = new TransactionsDataSource(this.tableData, this.paginator, this.sort);
 
-		Observable.fromEvent(this.sellerFilter.nativeElement, 'keyup')
-			.debounceTime(150)
-			.distinctUntilChanged()
-			.subscribe(() => {
-				if (!this.dataSource) return;
-				this.dataSource.sellerFilter = this.sellerFilter.nativeElement.value;
-			});
+				Observable.fromEvent(this.sellerFilter.nativeElement, 'keyup')
+				.debounceTime(150)
+				.distinctUntilChanged()
+				.subscribe(() => {
+					if (!this.dataSource) return;
+					this.dataSource.sellerFilter = this.sellerFilter.nativeElement.value;
+				});
+			}
+		});
 	}
 }
 

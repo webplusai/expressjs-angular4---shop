@@ -73,7 +73,7 @@
 	<!-- Customer Name Column -->
 	<ng-container cdkColumnDef="customer_name">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Customer Name </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.customer_name}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.first_name + ' ' + row.last_name}} </md-cell>
 	</ng-container>
 
 	<!-- Image Column -->
@@ -93,13 +93,13 @@
 	<!-- Customer Group Column -->
 	<ng-container cdkColumnDef="customer_group">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Customer Group </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.customer_group}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.customer_group.name}} </md-cell>
 	</ng-container>
 
 	<!-- Status Column -->
 	<ng-container cdkColumnDef="status">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Status </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.status}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{statuses[row.status]}} </md-cell>
 	</ng-container>
 
 	<!-- IP Column -->
@@ -111,7 +111,7 @@
 	<!-- Date Added Column -->
 	<ng-container cdkColumnDef="date_added">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Date Added </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.date_added}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.created_at}} </md-cell>
 	</ng-container>
 
 	<!-- Action Column -->
@@ -121,7 +121,9 @@
 			<button class="action-button" md-button [ngStyle]="{'background': '#8fbb6c'}"><md-icon>thumb_up</md-icon></button>
 			<button class="action-button" md-button [ngStyle]="{'background': '#5bc0de'}"><md-icon>lock</md-icon></button>
 			<button class="action-button" md-button [ngStyle]="{'background': '#f38733'}"><md-icon>lock_open</md-icon></button>
-			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+			<a [routerLink]="['/admin/buyers/edit/' + row._id]">
+				<button class="action-button action-button-create" md-button><md-icon>create</md-icon></button>
+			</a>
 		</md-cell>
 	</ng-container>
 

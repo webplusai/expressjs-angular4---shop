@@ -13,6 +13,9 @@ var modelNames = [
 	'Transaction',
 	'RecurringOrder',
 	'Return',
+	'ReturnAction',
+	'ReturnReason',
+	'ReturnStatus',
 	'User',
 	'UserGroup',
 	'AbstractCommission',
@@ -54,7 +57,9 @@ var modelNames = [
 	'TaxRate',
 	'GeoZone',
 	'SellerGroup',
-	'VoucherTheme'
+	'VoucherTheme',
+	'Country',
+	'Zone'
 ];
 
 for (var i = 0; i < modelNames.length; i++) {

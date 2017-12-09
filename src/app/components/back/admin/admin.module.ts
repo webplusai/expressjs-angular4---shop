@@ -48,6 +48,12 @@ import { RecurringOrdersListComponent } from './pages/recurring-orders/recurring
 import { RecurringOrdersFormComponent } from './pages/recurring-orders/recurring-orders-form.component';
 import { ReturnsListComponent } from './pages/returns/returns-list.component';
 import { ReturnsFormComponent } from './pages/returns/returns-form.component';
+import { ReturnActionsListComponent } from './pages/return-actions/return-actions-list.component';
+import { ReturnActionsFormComponent } from './pages/return-actions/return-actions-form.component';
+import { ReturnReasonsListComponent } from './pages/return-reasons/return-reasons-list.component';
+import { ReturnReasonsFormComponent } from './pages/return-reasons/return-reasons-form.component';
+import { ReturnStatusesListComponent } from './pages/return-statuses/return-statuses-list.component';
+import { ReturnStatusesFormComponent } from './pages/return-statuses/return-statuses-form.component';
 import { OrdersListComponent } from './pages/orders/orders-list.component';
 import { OrdersFormComponent } from './pages/orders/orders-form.component';
 import { CustomerDetailsComponent } from './pages/orders/tabs/customer-details/customer-details.component';
@@ -167,6 +173,10 @@ import { SellerGroupsFormComponent } from './pages/seller-groups/seller-groups-f
 import { SellerGroupGeneralComponent } from './pages/seller-groups/tabs/general/general.component';
 import { SellerGroupComissionsFeesComponent } from './pages/seller-groups/tabs/comissions-fees/comissions-fees.component';
 import { SellerGroupBadgesComponent } from './pages/seller-groups/tabs/badges/badges.component';
+import { CountriesListComponent } from './pages/countries/countries-list.component';
+import { CountriesFormComponent } from './pages/countries/countries-form.component';
+import { ZonesListComponent } from './pages/zones/zones-list.component';
+import { ZonesFormComponent } from './pages/zones/zones-form.component';
 
 @NgModule({
 	imports: [
@@ -219,6 +229,12 @@ import { SellerGroupBadgesComponent } from './pages/seller-groups/tabs/badges/ba
 		RecurringOrdersFormComponent,
 		ReturnsListComponent,
 		ReturnsFormComponent,
+		ReturnReasonsListComponent,
+		ReturnReasonsFormComponent,
+		ReturnActionsListComponent,
+		ReturnActionsFormComponent,
+		ReturnStatusesListComponent,
+		ReturnStatusesFormComponent,
 		OrdersListComponent,
 		OrdersFormComponent,
 		CustomerDetailsComponent,
@@ -338,6 +354,10 @@ import { SellerGroupBadgesComponent } from './pages/seller-groups/tabs/badges/ba
 		SellerGroupBadgesComponent,
 		SellerGroupGeneralComponent,
 		SellerGroupComissionsFeesComponent,
+		CountriesListComponent,
+		CountriesFormComponent,
+		ZonesListComponent,
+		ZonesFormComponent,
 	]
 })
 export class AdminModule { }

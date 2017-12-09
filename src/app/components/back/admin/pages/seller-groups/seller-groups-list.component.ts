@@ -1,9 +1,9 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/table';
-import { MdPaginator } from '@angular/material';
-import { MdSort } from '@angular/material';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Component, OnInit, ElementRef, ViewChild } 		from '@angular/core';
+import { DataSource } 										from '@angular/cdk/table';
+import { MdPaginator } 										from '@angular/material';
+import { MdSort } 											from '@angular/material';
+import { BehaviorSubject } 									from 'rxjs/BehaviorSubject';
+import { Observable } 										from 'rxjs/Observable';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
@@ -11,11 +11,8 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { TableData } from '../../../../helper/table-data/table-data';
-
-const sellerGroupList = [
-	{ name: 'Default', description: 'Description', actual_fee_rates: '0.00%', sort_order: 1 },
-];
+import { TableData } 										from '../../../../helper/table-data/table-data';
+import { CRUDService } 										from '../../../../../services/crud.service';
 
 @Component({
 	selector: 'admin-seller-groups-list',
@@ -31,11 +28,15 @@ export class SellerGroupsListComponent implements OnInit {
 	@ViewChild(MdPaginator) paginator: MdPaginator;
 	@ViewChild(MdSort) sort: MdSort;
 
-	constructor() { }
+	constructor(private crudService: CRUDService) { }
 
 	ngOnInit() {
-		this.tableData.setData(sellerGroupList);
-		this.dataSource = new SellerGroupDataSource(this.tableData, this.paginator, this.sort);
+		this.crudService.retrieve( 'SellerGroup' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.tableData.setData(result.content);
+				this.dataSource = new SellerGroupDataSource(this.tableData, this.paginator, this.sort);
+			}
+		});
 	}
 }
 

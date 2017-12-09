@@ -1,29 +1,29 @@
-<div class="tab-user-settings" [ngStyle]="{'padding-top': '30px'}">
+<div class="tab-user-settings" [ngStyle]="{'padding-top': '30px'}" [formGroup]="settings">
 	<md-form-field>
-		<input mdInput placeholder="Full name">
+		<input mdInput placeholder="Full name" formControlName="full_name">
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Address Line 1">
+		<input mdInput placeholder="Address Line 1" formControlName="address_line1">
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Address Line 2">					
+		<input mdInput placeholder="Address Line 2" formControlName="address_line2">
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="City">
+		<input mdInput placeholder="City" formControlName="city">
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="State/Province/Region">
+		<input mdInput placeholder="State/Province/Region" formControlName="state_province_region">
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Zip/Postal Code">
+		<input mdInput placeholder="Zip/Postal Code" formControlName="zip_postal_code">
 	</md-form-field>
 
-	<md-select placeholder="Country">
+	<md-select placeholder="Country" formControlName="country">
 		<md-option *ngFor="let i of [1, 2, 3, 4, 5]" value="Country {{i}}">
 			Country {{i}}
 		</md-option>
@@ -32,14 +32,14 @@
 	<h3> Information </h3>
 
 	<md-form-field>
-		<input mdInput placeholder="Website">
+		<input mdInput placeholder="Website" formControlName="website">
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Company">
+		<input mdInput placeholder="Company" formControlName="company">
 	</md-form-field>
 
 	<md-form-field>
-		<input mdInput placeholder="Phone">
+		<input mdInput placeholder="Phone" formControlName="phone">
 	</md-form-field>
 </div>
