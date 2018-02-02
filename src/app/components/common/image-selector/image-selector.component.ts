@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } 	from '@angular/core';
 import { FileUploader } 		from 'ng2-file-upload/ng2-file-upload';
 
-const UPLOAD_URL = 'http://localhost:3000/api/upload';
+const UPLOAD_URL = 'http://vps472567.ovh.net:3000/api/upload';
 const DEFAULT_IMAGE = 'http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png';
 
 @Component({

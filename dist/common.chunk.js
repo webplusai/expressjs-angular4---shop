@@ -44,7 +44,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
-var UPLOAD_URL = 'http://localhost:3000/api/upload';
+var UPLOAD_URL = 'http://vps472567.ovh.net:3000/api/upload';
 var DEFAULT_IMAGE = 'http://www.sharejesusgeneva.com/image/cache/no_image-100x100.png';
 var ImageSelectorComponent = (function () {
     function ImageSelectorComponent() {
