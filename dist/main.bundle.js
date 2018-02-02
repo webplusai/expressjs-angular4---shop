@@ -6,14 +6,30 @@ webpackJsonp(["main"],{
 var map = {
 	"./components/back/admin/admin.module": [
 		"../../../../../src/app/components/back/admin/admin.module.ts",
-		"admin.module"
+		"admin.module",
+		"common"
+	],
+	"./components/back/buyer/buyer.module": [
+		"../../../../../src/app/components/back/buyer/buyer.module.ts",
+		"common",
+		"buyer.module"
+	],
+	"./components/back/seller/seller.module": [
+		"../../../../../src/app/components/back/seller/seller.module.ts",
+		"common",
+		"seller.module"
+	],
+	"./components/front/front.module": [
+		"../../../../../src/app/components/front/front.module.ts",
+		"front.module",
+		"common"
 	]
 };
 function webpackAsyncContext(req) {
 	var ids = map[req];
 	if(!ids)
 		return Promise.reject(new Error("Cannot find module '" + req + "'."));
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		return __webpack_require__(ids[0]);
 	});
 };
@@ -41,14 +57,14 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 var routes = [
-    /*{
+    {
         path: '',
         loadChildren: './components/front/front.module#FrontModule'
-    },*/
+    },
     {
         path: 'admin',
         loadChildren: './components/back/admin/admin.module#AdminModule'
-    } /*,
+    },
     {
         path: 'buyer',
         loadChildren: './components/back/buyer/buyer.module#BuyerModule'
@@ -56,7 +72,7 @@ var routes = [
     {
         path: 'seller',
         loadChildren: './components/back/seller/seller.module#SellerModule'
-    }*/
+    }
 ];
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
