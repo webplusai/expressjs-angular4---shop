@@ -1,15 +1,60 @@
 <div>
-	<md-form-field>
-		<input mdInput placeholder="Store Name*" [formControl]="storeName">
-		<md-error *ngIf="storeName.hasError('required')">
-			This field is <strong> required </strong>
-		</md-error>
-	</md-form-field>
+	<form #storeLocationsForm="ngForm" (ngSubmit)="saveStoreLocation()" [formGroup]="form">
+		<md-form-field>
+			<input mdInput placeholder="Store Name*" [formControl]="name">
+			<md-error *ngIf="name.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
 
-	<md-form-field>
-		<input mdInput placeholder="Address" [formControl]="address">
-		<md-error *ngIf="address.hasError('required')">
-			This field is <strong> required </strong>
-		</md-error>
-	</md-form-field>
+		<md-form-field>
+			<input mdInput placeholder="Address*" [formControl]="address">
+			<md-error *ngIf="address.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Geocode" [formControl]="geocode">
+			<md-error *ngIf="geocode.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Telephone*" [formControl]="telephone">
+			<md-error *ngIf="telephone.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Fax" [formControl]="fax">
+			<md-error *ngIf="fax.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<input type="hidden" id="imageURL" placeholder="Image" [formControl]="image">
+
+		<image-selector for="imageURL"> </image-selector>
+
+		<md-form-field>
+			<textarea mdInput placeholder="Opening Times" [formControl]="opening_times"></textarea>
+			<md-error *ngIf="opening_times.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<textarea mdInput placeholder="Comment*" [formControl]="comment"></textarea>
+			<md-error *ngIf="comment.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button class="submit-button"> Save Store Location </button>
+		</div>
+	</form>
 </div>

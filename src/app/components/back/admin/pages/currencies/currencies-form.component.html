@@ -1,26 +1,54 @@
 <div>
-	<md-form-field>
-		<input mdInput placeholder="Currency Title*" [formControl]="currencyTitleInput">
-		<md-error *ngIf="currencyTitleInput.hasError('required')">
-			This field is <strong> required </strong>
-		</md-error>
-	</md-form-field>
+	<form #currencyForm="ngForm" (ngSubmit)="saveCurrency()" [formGroup]="form">
+		<md-form-field>
+			<input mdInput placeholder="Currency Title*" [formControl]="title">
+			<md-error *ngIf="title.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
 
-	<md-select placeholder="Code*">
-		<md-option value="en"> en </md-option>
-		<md-option value="cn"> cn </md-option>
-	</md-select>
-	
-	<md-form-field>
-		<input mdInput placeholder="Value" [formControl]="valueInput">
-		<md-error *ngIf="valueInput.hasError('required')">
-			This field is <strong> required </strong>
-		</md-error>
-	</md-form-field>
+		<md-form-field>
+			<input mdInput placeholder="Code*" [formControl]="code">
+			<md-error *ngIf="code.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
 
-	<md-form-field>
-		<input mdInput placeholder="Last updated" [mdDatepicker]="picker">
-		<md-datepicker-toggle [for]="picker" mdSuffix> </md-datepicker-toggle>
-		<md-datepicker #picker> </md-datepicker>
-	</md-form-field>
+		<md-form-field>
+			<input mdInput placeholder="Symbol Left" [formControl]="symbol_left">
+			<md-error *ngIf="symbol_left.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Symbol Right" [formControl]="symbol_right">
+			<md-error *ngIf="symbol_right.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-form-field>
+			<input mdInput placeholder="Decimal Places" [formControl]="decimal_places">
+			<md-error *ngIf="decimal_places.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+		
+		<md-form-field>
+			<input mdInput placeholder="Value" [formControl]="value">
+			<md-error *ngIf="value.hasError('required')">
+				This field is <strong> required </strong>
+			</md-error>
+		</md-form-field>
+
+		<md-select placeholder="Status" [formControl]="status">
+			<md-option value="1"> Enabled </md-option>
+			<md-option value="0"> Disabled </md-option>
+		</md-select>
+
+		<div fxLayout="row" fxLayoutAlign="end center">
+			<button md-button class="submit-button"> Save Currency </button>
+		</div>
+	</form>
 </div>

@@ -4,12 +4,17 @@ module.exports = function(mongoose, connection) {
 	var currencySchema = mongoose.Schema({
 		title: String,
 		code: String,
+		symbol_left: String,
+		symbol_right: String,
+		decimal_places: Number,
 		value: Number,
-		last_updated: Date
+		status: String
 	},
 	{
-		createdAt: 'created_at',
-		updatedAt: 'updated_at'
+		timestamps: {
+			createdAt: 'created_at',
+			updatedAt: 'updated_at'
+		}
 	});
 
 	return connection.model('Currency', currencySchema);

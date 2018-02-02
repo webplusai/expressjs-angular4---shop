@@ -1,9 +1,9 @@
-import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { DataSource } from '@angular/cdk/table';
-import { MdPaginator } from '@angular/material';
-import { MdSort } from '@angular/material';
-import { BehaviorSubject } from 'rxjs/BehaviorSubject';
-import { Observable } from 'rxjs/Observable';
+import { Component, OnInit, ElementRef, ViewChild } 	from 	'@angular/core';
+import { DataSource } 									from 	'@angular/cdk/table';
+import { MdPaginator } 									from 	'@angular/material';
+import { MdSort } 										from 	'@angular/material';
+import { BehaviorSubject } 								from 	'rxjs/BehaviorSubject';
+import { Observable } 									from 	'rxjs/Observable';
 import 'rxjs/add/operator/startWith';
 import 'rxjs/add/observable/merge';
 import 'rxjs/add/operator/map';
@@ -11,11 +11,8 @@ import 'rxjs/add/operator/debounceTime';
 import 'rxjs/add/operator/distinctUntilChanged';
 import 'rxjs/add/observable/fromEvent';
 
-import { TableData } from '../../../../helper/table-data/table-data';
-
-const languagesList = [
-	{ language_name: 'English(Default)', code: 'en', sort_order: 1 }
-];
+import { TableData } 									from 	'../../../../helper/table-data/table-data';
+import { CRUDService } 									from 	'../../../../../services/crud.service';
 
 @Component({
 	selector: 'admin-languages-list',
@@ -29,11 +26,15 @@ export class LanguagesListComponent implements OnInit {
 	tableData = new TableData();
 	dataSource: LanguagesDataSource | null;
 
-	constructor() { }
+	constructor( private crudService: CRUDService) { }
 
 	ngOnInit() {
-		this.tableData.setData(languagesList);
-		this.dataSource = new LanguagesDataSource(this.tableData);
+		this.crudService.retrieve( 'Language' ).subscribe( result => {
+			if (result.status == 'ok') {
+				this.tableData.setData(result.content);
+				this.dataSource = new LanguagesDataSource(this.tableData);
+			}
+		});
 	}
 }
 

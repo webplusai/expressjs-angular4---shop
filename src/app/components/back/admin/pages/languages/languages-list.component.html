@@ -15,7 +15,7 @@
 	<!-- Language Name Column -->
 	<ng-container cdkColumnDef="language_name">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Language Name </md-header-cell>
-		<md-cell *cdkCellDef="let row"> {{row.language_name}} </md-cell>
+		<md-cell *cdkCellDef="let row"> {{row.name}} </md-cell>
 	</ng-container>
 
 	<!-- Code Column -->
@@ -33,8 +33,10 @@
 	<!-- Action Column -->
 	<ng-container cdkColumnDef="action">
 		<md-header-cell *cdkHeaderCellDef md-sort-header> Action </md-header-cell>
-		<md-cell fxLayout="row" *cdkCellDef="let row">
-			<button class="action-button" md-button [ngStyle]="{'background': '#1e91cf'}"><md-icon>create</md-icon></button>
+		<md-cell *cdkCellDef="let row"> 
+			<a [routerLink]="['/admin/languages/edit/' + row._id]">
+				<button class="action-button action-button-create" md-button><md-icon>create</md-icon></button>
+			</a>
 		</md-cell>
 	</ng-container>
 

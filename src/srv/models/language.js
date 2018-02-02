@@ -4,6 +4,8 @@ module.exports = function(mongoose, connection) {
 	var languageSchema = mongoose.Schema({
 		name: String,
 		code: String,
+		locale: String,
+		status: String,
 		sort_order: Number
 	},
 	{

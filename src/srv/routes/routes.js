@@ -1,8 +1,34 @@
 var express = require('express');
 var router = express.Router();
+var multer = require('multer');
 
 var models = require('../models/index.js');
 var populateList = require('../config/constants.js').populateList;
+
+var DIR = './src/uploads/';
+
+var storage = multer.diskStorage({
+  	destination: function (req, file, cb) {
+    	cb(null, DIR)
+  	},
+  	filename: function (req, file, cb) {
+  		var ext = file.originalname.split('.');
+    	cb(null, file.fieldname + '-' + Date.now() + '.' + ext[ext.length - 1]);
+  	}
+});
+ 
+var upload = multer({ storage: storage }).single('image');
+
+router.post('/upload', function (req, res, next) {
+	var path = '';
+	upload(req, res, function (err) {
+        if (err) {
+			console.log(err);
+			return res.status(422).send("an Error occured")
+		}
+		return res.send({filename: req.file.filename}); 
+	});
+})
 
 router.get('/crud', function(req, res) {
 	var model_name = req.query.model;
@@ -14,7 +40,6 @@ router.get('/crud', function(req, res) {
 		query = query.where(condition);
 	}
 
-	// console.log(populateList[model_name]);
 	if (populateList[model_name]) {
 		populateList[model_name].forEach( function(model) { console.log(model); query = query.populate(model) } );
 	}
@@ -57,6 +82,8 @@ router.put('/crud/:id', function(req, res) {
 router.post('/crud', function(req, res) {
 	var model_name = req.body.model;
 	var data = models[model_name](req.body);
+
+	console.log(req.body);
 
 	data.save(function(err) {
 		if (!err) {

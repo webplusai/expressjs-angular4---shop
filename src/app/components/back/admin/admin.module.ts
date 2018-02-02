@@ -8,6 +8,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TinyMceModule } from 'angular-tinymce';
 import { tinymceDefaultSettings } from 'angular-tinymce';
+import { FileSelectDirective } from 'ng2-file-upload';
 
 import { CalendarModule } from 'primeng/primeng';
 import { FlotModule } from 'ng2modules-flot';
@@ -195,6 +196,7 @@ import { ZonesFormComponent } from './pages/zones/zones-form.component';
 	],
 
 	declarations: [
+		FileSelectDirective,
 		ImageSelectorComponent,
 
 		AdminComponent,

@@ -397,6 +397,10 @@ const routes: Routes = [
 				component: StoreLocationsFormComponent
 			},
 			{
+				path: 'store-locations/edit/:id',
+				component: StoreLocationsFormComponent
+			},
+			{
 				path: 'languages',
 				component: LanguagesListComponent
 			},
@@ -405,11 +409,19 @@ const routes: Routes = [
 				component: LanguagesFormComponent
 			},
 			{
+				path: 'languages/edit/:id',
+				component: LanguagesFormComponent
+			},
+			{
 				path: 'currencies',
 				component: CurrenciesListComponent
 			},
 			{
 				path: 'currencies/create',
+				component: CurrenciesFormComponent
+			},
+			{
+				path: 'currencies/edit/:id',
 				component: CurrenciesFormComponent
 			},
 			{
